@@ -1,6 +1,6 @@
 # Premier League Prop Sheet Generator - Development Progress
 
-## Last Updated: 2026-02-04 22:27
+## Last Updated: 2026-02-04 22:31
 
 ## Current Phase: Phase 1 - Project Setup & Planning
 
@@ -25,7 +25,7 @@ Build the player/team analyzers now that data access is in place.
 
 ## Next Steps:
 1. Implement player analyzer (eligibility + stat thresholds using consecutive starts).
-2. Implement team analyzer (Line-2 logic using available odds lines).
+2. Implement team analyzer (Line-2 logic for shots + shots on target only).
 3. Create virtual environment and install dependencies.
 
 ## Blockers/Questions:
@@ -66,9 +66,6 @@ Not started.
 - Player fouls won/drawn: type_id 96 (Fouls Drawn)
 - Team shots total: type_id 42
 - Team shots on target: type_id 86
-- Team corners: type_id 34
-- Team goal kicks: type_id 53
-- Team free kicks: type_id 55
 
 ## Notes
-- odds_outcomes currently contains team_shots and team_shots_on_target markets, but no corners/goal_kicks/free_kicks lines. Those team props will require either expanding odds ingestion or a separate odds API fetch.
+- Team props scope trimmed to shots + shots on target only (corners/goal kicks/free kicks removed).
