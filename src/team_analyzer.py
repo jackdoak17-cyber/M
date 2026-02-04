@@ -68,6 +68,9 @@ def get_qualifying_team_stats(
         if line is None:
             continue
         line_minus_two = line - 2
+        if line_minus_two < 1:
+            # Skip meaningless thresholds like 0+.
+            continue
         wins = sum(
             1
             for fixture_id in fixture_ids
