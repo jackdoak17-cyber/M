@@ -1,12 +1,13 @@
 # Premier League Prop Sheet Generator - Development Progress
 
-## Last Updated: 2026-02-04 22:31
+## Last Updated: 2026-02-04 22:39
 
-## Current Phase: Phase 1 - Project Setup & Planning
+## Current Phase: Phase 6 - Integration & Main Script
 
 ## Completed Phases:
 - [ ] Phase 1: Initial Setup
   - [x] Created project structure
+  - [x] Created requirements.txt
   - [ ] Set up virtual environment
   - [ ] Installed dependencies
   - [x] Created config template
@@ -21,25 +22,25 @@
 - [ ] Phase 9: Documentation & Handoff
 
 ## Current Task:
-Build the player/team analyzers now that data access is in place.
+Verify analyzer outputs with sample runs and document results.
 
 ## Next Steps:
-1. Implement player analyzer (eligibility + stat thresholds using consecutive starts).
-2. Implement team analyzer (Line-2 logic for shots + shots on target only).
-3. Create virtual environment and install dependencies.
+1. Run a sample prop sheet generation and spot-check players/teams.
+2. Create virtual environment and install dependencies.
+3. Start Phase 7 testing checklist and document results.
 
 ## Blockers/Questions:
-- Fallback when Bet365 line is missing (skip or alternate book)?
+- None (missing Bet365 line will be skipped).
 
 ## Testing Notes:
 Not started.
 
 ## Code Files Status:
-- data_fetcher.py: Not Started
-- player_analyzer.py: Not Started
-- team_analyzer.py: Not Started
-- formatter.py: Not Started
-- main.py: Not Started
+- data_fetcher.py: Complete (core queries in place)
+- player_analyzer.py: Complete (needs validation)
+- team_analyzer.py: Complete (needs validation)
+- formatter.py: Complete (needs validation)
+- main.py: Complete (needs validation)
 
 ## Configuration Decisions Made:
 - Stack: Python
