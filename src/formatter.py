@@ -173,9 +173,6 @@ def generate_full_prop_sheet(
         output_lines.append(section)
         if index < len(sections_list) - 1:
             output_lines.append("")
-            output_lines.append("---")
-    output_lines.append("")
-    output_lines.append("---")
     output_lines.append("")
     output_lines.append(outro)
     return "\n".join(output_lines)
