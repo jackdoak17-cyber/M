@@ -109,7 +109,7 @@ def _qualifying_hits(
     values: List[float],
     thresholds: Iterable[int],
     stat_key: str,
-    min_rate: float = 0.8,
+    min_rate: float = 0.75,
     min_games: int = 5,
 ) -> List[StatHit]:
     total = len(values)

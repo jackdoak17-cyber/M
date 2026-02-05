@@ -44,7 +44,7 @@ def _load_team_stat_values(
 def get_qualifying_team_stats(
     team_id: int,
     fixture_id: int,
-    min_rate: float = 0.8,
+    min_rate: float = 0.75,
     min_games: int = 5,
 ) -> List[TeamStatHit]:
     fixtures = data_fetcher.get_recent_team_fixtures(team_id, limit=20)
