@@ -13,14 +13,17 @@ Manchester United vs Tottenham Hotspur - 12:30pm
 ✅ Luke Shaw 1+ fouls committed (won in 17/20)
 ✅ Casemiro 1+ fouls committed (won in 15/18)
 ✅ Cristian Romero 1+ fouls committed (won in 12/15)
+✅ Xavi Simons 1+ fouls committed (won in 9/12)
 
 ⚠️ FOULS WON:
 ✅ Amad Diallo 1+ fouls won (won in 13/14)
 ✅ Matheus Cunha 1+ fouls won (won in 13/14)
 ✅ Xavi Simons 1+ fouls won (won in 10/12)
+✅ João Palhinha 1+ fouls won (won in 10/13)
 
 📈 TEAM PROPS:
 ✅ Manchester United 3+ SOT (won in 17/20)
+✅ Tottenham Hotspur 3+ corners (won in 15/20)
 
 ---
 
@@ -28,6 +31,7 @@ Wolverhampton Wanderers vs Chelsea - 3:00pm
 
 ⚽ SHOTS:
 ✅ Liam Delap 2+ shots (won in 6/7)
+✅ Enzo Fernández 2+ shots (won in 14/18)
 
 🎯 SHOTS ON TARGET:
 ✅ Mateus Mané SOT (won in 6/7)
@@ -42,6 +46,7 @@ Wolverhampton Wanderers vs Chelsea - 3:00pm
 ✅ Yerson Mosquera 1+ fouls won (won in 11/12)
 ✅ Moisés Caicedo 1+ fouls won (won in 12/14)
 ✅ Liam Delap 1+ fouls won (won in 6/7)
+✅ Alejandro Garnacho 1+ fouls won (won in 9/12)
 
 📈 TEAM PROPS:
 ✅ Chelsea 3+ corners (won in 16/20)
@@ -49,6 +54,9 @@ Wolverhampton Wanderers vs Chelsea - 3:00pm
 ---
 
 Fulham vs Everton - 3:00pm
+
+⚽ SHOTS:
+✅ Harry Wilson 2+ shots (won in 15/19)
 
 ⚠️ FOULS COMMITTED:
 ✅ Thierno Barry 1+ fouls committed (won in 12/15)
@@ -70,9 +78,14 @@ Burnley vs West Ham United - 3:00pm
 ✅ Tomáš Souček 1+ fouls committed (won in 7/7)
 ✅ Florentino 1+ fouls committed (won in 17/18)
 ✅ Crysencio Summerville 1+ fouls committed (won in 15/16)
+✅ Jaidon Anthony 1+ fouls committed (won in 11/14)
+✅ Lucas Pires 1+ fouls committed (won in 7/9)
+✅ Lyle Foster 1+ fouls committed (won in 6/8)
+✅ Crysencio Summerville 2+ fouls committed (won in 12/16)
 
 ⚠️ FOULS WON:
 ✅ Crysencio Summerville 1+ fouls won (won in 16/16)
+✅ Jaidon Anthony 1+ fouls won (won in 11/14)
 
 📈 TEAM PROPS:
 ✅ West Ham United 3+ corners (won in 18/20)
@@ -81,20 +94,26 @@ Burnley vs West Ham United - 3:00pm
 
 AFC Bournemouth vs Aston Villa - 3:00pm
 
+⚽ SHOTS:
+✅ Ian Maatsen 1+ shots (won in 7/9)
+
 ⚠️ FOULS COMMITTED:
 ✅ Amine Adli 1+ fouls committed (won in 6/6)
 ✅ Lamare Bogarde 1+ fouls committed (won in 5/5)
 ✅ Matty Cash 1+ fouls committed (won in 17/20)
+✅ Morgan Rogers 1+ fouls committed (won in 15/20)
 ✅ Amine Adli 2+ fouls committed (won in 5/6)
 
 ⚠️ FOULS WON:
 ✅ Amine Adli 1+ fouls won (won in 6/6)
 ✅ Lamare Bogarde 1+ fouls won (won in 5/5)
 ✅ Morgan Rogers 1+ fouls won (won in 17/20)
+✅ Ezri Konsa 1+ fouls won (won in 15/20)
 
 📈 TEAM PROPS:
 ✅ AFC Bournemouth 3+ corners (won in 19/20)
 ✅ Aston Villa 3+ corners (won in 19/20)
+✅ Aston Villa 10+ shots (won in 15/20)
 
 ---
 
@@ -102,6 +121,9 @@ Arsenal vs Sunderland - 3:00pm
 
 ⚽ SHOTS:
 ✅ Bukayo Saka 2+ shots (won in 13/16)
+
+🎯 SHOTS ON TARGET:
+✅ Bukayo Saka SOT (won in 12/16)
 
 ⚠️ FOULS COMMITTED:
 ✅ Reinildo Mandava 1+ fouls committed (won in 10/11)
@@ -111,6 +133,8 @@ Arsenal vs Sunderland - 3:00pm
 ✅ Reinildo Mandava 1+ fouls won (won in 10/11)
 ✅ Brian Brobbey 1+ fouls won (won in 9/10)
 ✅ Bukayo Saka 1+ fouls won (won in 13/16)
+✅ Leandro Trossard 1+ fouls won (won in 11/14)
+✅ Gabriel Magalhães 1+ fouls won (won in 10/13)
 
 📈 TEAM PROPS:
 ✅ Arsenal 3+ corners (won in 19/20)
@@ -119,6 +143,9 @@ Arsenal vs Sunderland - 3:00pm
 ---
 
 Newcastle United vs Brentford - 5:30pm
+
+⚽ SHOTS:
+✅ Harvey Barnes 2+ shots (won in 7/9)
 
 ⚠️ FOULS COMMITTED:
 ✅ Igor Thiago 1+ fouls committed (won in 16/19)
@@ -131,6 +158,7 @@ Newcastle United vs Brentford - 5:30pm
 ✅ Kevin Schade 1+ fouls won (won in 16/19)
 ✅ Anthony Gordon 1+ fouls won (won in 12/15)
 ✅ Joelinton 1+ fouls won (won in 12/15)
+✅ Bruno Guimarães 1+ fouls won (won in 13/17)
 
 📈 TEAM PROPS:
 ✅ Newcastle United 3+ corners (won in 18/20)
