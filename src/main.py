@@ -140,9 +140,9 @@ def _build_fixture_section(fixture: data_fetcher.FixtureRow) -> str:
         player_lines.extend(_collect_player_lines(team_id))
         team_lines.extend(_collect_team_lines(team_id, fixture.id))
 
-    fixture_label = f"{context.home_name} vs {context.away_name}"
     return formatter.format_game_section(
-        fixture_label=fixture_label,
+        home_team=context.home_name,
+        away_team=context.away_name,
         kickoff_time=context.kickoff_time,
         player_lines=player_lines,
         team_lines=team_lines,

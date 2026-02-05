@@ -39,6 +39,31 @@ PLAYER_SECTION_HEADERS: Dict[str, str] = {
 
 TEAM_SECTION_HEADER = "📈 TEAM PROPS:"
 
+TEAM_COLOURS: Dict[str, str] = {
+    "Arsenal": "🔴",
+    "Aston Villa": "🟣",
+    "Bournemouth": "🔴",
+    "AFC Bournemouth": "🔴",
+    "Brentford": "🔴",
+    "Brighton": "🔵",
+    "Brighton & Hove Albion": "🔵",
+    "Burnley": "🟣",
+    "Chelsea": "🔵",
+    "Crystal Palace": "🔴",
+    "Everton": "🔵",
+    "Fulham": "⚪",
+    "Leeds United": "⚪",
+    "Liverpool": "🔴",
+    "Manchester City": "🔵",
+    "Manchester United": "🔴",
+    "Newcastle United": "⚫",
+    "Nottingham Forest": "🔴",
+    "Sunderland": "🔴",
+    "Tottenham Hotspur": "⚪",
+    "West Ham United": "🟣",
+    "Wolverhampton Wanderers": "🟠",
+}
+
 
 def format_player_stat_line(line: PlayerStatLine) -> str:
     if line.stat_key == "shots_on_target":
@@ -51,7 +76,7 @@ def format_player_stat_line(line: PlayerStatLine) -> str:
         label = f"{line.threshold}+ fouls won"
     else:
         label = f"{line.threshold}+ {line.stat_key.replace('_', ' ')}"
-    return f"✅ {line.player_name} {label} (won in {line.wins}/{line.total})"
+    return f"{line.player_name} {label} (won in {line.wins}/{line.total})"
 
 
 def format_team_stat_line(line: TeamStatLine) -> str:
@@ -59,7 +84,7 @@ def format_team_stat_line(line: TeamStatLine) -> str:
         label = f"{line.threshold}+ SOT"
     else:
         label = f"{line.threshold}+ {line.stat_key.replace('_', ' ')}"
-    return f"✅ {line.team_name} {label} (won in {line.wins}/{line.total})"
+    return f"{line.team_name} {label} (won in {line.wins}/{line.total})"
 
 
 def _sorted_player_lines(lines: Iterable[PlayerStatLine]) -> List[PlayerStatLine]:
@@ -86,7 +111,8 @@ def _sorted_team_lines(lines: Iterable[TeamStatLine]) -> List[TeamStatLine]:
 
 
 def format_game_section(
-    fixture_label: str,
+    home_team: str,
+    away_team: str,
     kickoff_time: str,
     player_lines: Iterable[PlayerStatLine],
     team_lines: Iterable[TeamStatLine],
@@ -116,7 +142,10 @@ def format_game_section(
     if not sections:
         return ""
 
-    output_lines = [f"{fixture_label} - {kickoff_time}"]
+    home_emoji = TEAM_COLOURS.get(home_team, "")
+    away_emoji = TEAM_COLOURS.get(away_team, "")
+    fixture_label = f"{home_emoji} {home_team} vs {away_team} {away_emoji} - {kickoff_time}".strip()
+    output_lines = [fixture_label]
     for section in sections:
         output_lines.append("")
         output_lines.append(section)
@@ -127,16 +156,26 @@ def generate_full_prop_sheet(
     day_label: str,
     sections: Iterable[str],
 ) -> str:
-    header = f"📊 {day_label.upper()} PREMIER LEAGUE PROP SHEET"
+    header = f"📊 DATA-BACKED PREMIER LEAGUE PROPS LIST ({day_label.upper()})"
+    intro = (
+        f"I've analysed the data for {day_label}'s fixtures and identified the most consistent props. "
+        "All data-driven, all based on recent form.\n\n"
+        "If you find this useful please leave a like and remember to bookmark 🔖"
+    )
+    outro = (
+        "Using these? Make sure you bookmark for later 🔖\n\n"
+        "Good luck with your bets 🎯"
+    )
     sections_list = [section for section in sections if section]
-    if not sections_list:
-        return header
-
-    output_lines = [header]
+    output_lines = [header, "", intro]
     for index, section in enumerate(sections_list):
         output_lines.append("")
         output_lines.append(section)
         if index < len(sections_list) - 1:
             output_lines.append("")
             output_lines.append("---")
+    output_lines.append("")
+    output_lines.append("---")
+    output_lines.append("")
+    output_lines.append(outro)
     return "\n".join(output_lines)

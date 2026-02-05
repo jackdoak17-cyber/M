@@ -1,6 +1,6 @@
 # Premier League Prop Sheet Generator - Development Progress
 
-## Last Updated: 2026-02-05 18:55
+## Last Updated: 2026-02-05 19:40
 
 ## Current Phase: Phase 8 - Automation Setup
 
@@ -50,6 +50,7 @@ Not started.
 - Bet365 bookmaker_id: 2 (from statswebsite-web bookmaker map)
 - Defender detection: use lineup_detailed_position_name if present, else detailed_position_name/position_name, else position_abbr. Treat positions containing "Back" or "Defender", or abbr in {CB, LB, RB, LWB, RWB} as defenders.
 - Automation: GitHub Actions runs hourly on Thursdays and only generates at 10:00 UK time; outputs are committed to the repo.
+- Threshold: 75% hit rate for all props (player + team), minimum sample size 5.
 
 ## Verified Data Sources (Supabase)
 - fixtures: schedule + scores (starting_at, home/away_team_id, status)
