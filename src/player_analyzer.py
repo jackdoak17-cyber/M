@@ -67,23 +67,26 @@ def _build_player_window(player_id: int, team_id: int) -> Optional[PlayerWindow]
         if int(row["player_id"]) == player_id:
             row_by_fixture[int(row["fixture_id"])] = row
 
-    consecutive_fixtures: List[int] = []
+    last_fixture_id = fixture_ids[0]
+    last_row = row_by_fixture.get(last_fixture_id)
+    if not last_row or not last_row.get("is_starter"):
+        return None
+
+    started_fixtures: List[int] = []
     position_row: Optional[Dict] = None
     for fixture in fixtures:
         row = row_by_fixture.get(fixture.id)
         if row and row.get("is_starter"):
-            consecutive_fixtures.append(fixture.id)
+            started_fixtures.append(fixture.id)
             if position_row is None:
                 position_row = row
-        else:
-            break
 
-    if len(consecutive_fixtures) < 5:
+    if len(started_fixtures) < 5:
         return None
 
     position_row = position_row or {}
     return PlayerWindow(
-        fixture_ids=consecutive_fixtures,
+        fixture_ids=started_fixtures,
         position_abbr=position_row.get("position_abbr"),
         position_name=position_row.get("position_name"),
         detailed_position_name=position_row.get("detailed_position_name"),
