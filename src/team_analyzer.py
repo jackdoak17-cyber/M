@@ -2,13 +2,14 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from math import floor
-from typing import Dict, Iterable, List
+from typing import Dict, Iterable, List, Optional
 
 from src import data_fetcher
 
 
 TYPE_SHOTS_TOTAL = 42
 TYPE_SHOTS_ON_TARGET = 86
+TYPE_CORNERS = 34
 
 MARKET_KEYS = {
     "shots": "team_shots",
@@ -22,8 +23,8 @@ class TeamStatHit:
     threshold: int
     wins: int
     total: int
-    line: float
-    line_minus_two: float
+    line: Optional[float]
+    line_minus_two: Optional[float]
 
     @property
     def rate(self) -> float:
@@ -57,6 +58,7 @@ def get_qualifying_team_stats(
 
     shots_values = _load_team_stat_values(fixture_ids, team_id, TYPE_SHOTS_TOTAL)
     sot_values = _load_team_stat_values(fixture_ids, team_id, TYPE_SHOTS_ON_TARGET)
+    corners_values = _load_team_stat_values(fixture_ids, team_id, TYPE_CORNERS)
 
     hits: List[TeamStatHit] = []
     for stat_key, values_by_fixture in (
@@ -76,8 +78,12 @@ def get_qualifying_team_stats(
             for fixture_id in fixture_ids
             if values_by_fixture.get(fixture_id, 0.0) >= line_minus_two
         )
+        threshold = max(0, floor(line_minus_two))
+        if stat_key == "shots" and threshold < 9:
+            continue
+        if stat_key == "shots_on_target" and threshold < 3:
+            continue
         if wins / total >= min_rate:
-            threshold = max(0, floor(line_minus_two))
             hits.append(
                 TeamStatHit(
                     stat_key=stat_key,
@@ -88,5 +94,23 @@ def get_qualifying_team_stats(
                     line_minus_two=line_minus_two,
                 ),
             )
+
+    corners_threshold = 3
+    corners_wins = sum(
+        1
+        for fixture_id in fixture_ids
+        if corners_values.get(fixture_id, 0.0) >= corners_threshold
+    )
+    if corners_wins / total >= min_rate:
+        hits.append(
+            TeamStatHit(
+                stat_key="corners",
+                threshold=corners_threshold,
+                wins=corners_wins,
+                total=total,
+                line=None,
+                line_minus_two=None,
+            ),
+        )
 
     return hits
