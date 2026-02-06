@@ -60,43 +60,26 @@ def _collect_team_lines(team_id: int) -> List[PlayerPropLine]:
     if not player_rows:
         return []
 
-    last_fixture_id = fixture_ids[0]
-    last_starters = {
-        int(row["player_id"])
-        for row in player_rows
-        if row.get("player_id") is not None
-        and int(row["fixture_id"]) == last_fixture_id
-        and row.get("is_starter")
-    }
-    if not last_starters:
-        return []
-
-    sidelined_ids = set(data_fetcher.get_sidelined_player_ids(team_id))
-    candidate_ids = {pid for pid in last_starters if pid not in sidelined_ids}
-    if not candidate_ids:
-        return []
-
     rows_by_fixture: Dict[int, List[Dict]] = {}
     for row in player_rows:
         fixture_id = int(row["fixture_id"])
         rows_by_fixture.setdefault(fixture_id, []).append(row)
 
-    started_by_player: Dict[int, List[int]] = {pid: [] for pid in candidate_ids}
+    started_by_player: Dict[int, List[int]] = {}
     for fixture in fixtures:
         for row in rows_by_fixture.get(fixture.id, []):
             player_id = row.get("player_id")
             if player_id is None:
                 continue
             player_id = int(player_id)
-            if player_id not in started_by_player:
-                continue
             if row.get("is_starter"):
-                started_by_player[player_id].append(fixture.id)
+                started_by_player.setdefault(player_id, []).append(fixture.id)
 
+    sidelined_ids = set(data_fetcher.get_sidelined_player_ids(team_id))
     last_five_by_player = {
         pid: starts[:5]
         for pid, starts in started_by_player.items()
-        if len(starts) >= 5
+        if len(starts) >= 5 and pid not in sidelined_ids
     }
     if not last_five_by_player:
         return []
