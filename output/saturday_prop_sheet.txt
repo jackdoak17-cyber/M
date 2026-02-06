@@ -22,8 +22,8 @@ Xavi Simons 1+ fouls committed (won in 9/12)
 ⚠️ FOULS WON:
 Amad Diallo 1+ fouls won (won in 13/14)
 Matheus Cunha 1+ fouls won (won in 13/14)
+João Palhinha 1+ fouls won (won in 10/12)
 Xavi Simons 1+ fouls won (won in 10/12)
-João Palhinha 1+ fouls won (won in 10/13)
 
 📈 TEAM PROPS:
 Manchester United 3+ SOT (won in 18/20)
@@ -43,11 +43,13 @@ Moisés Caicedo 1+ fouls committed (won in 14/14)
 João Gomes 1+ fouls committed (won in 16/17)
 Yerson Mosquera 1+ fouls committed (won in 11/12)
 Mateus Mané 1+ fouls committed (won in 6/7)
+Santiago Bueno 1+ fouls committed (won in 10/13)
 
 ⚠️ FOULS WON:
 Yerson Mosquera 1+ fouls won (won in 11/12)
 Moisés Caicedo 1+ fouls won (won in 12/14)
 Liam Delap 1+ fouls won (won in 6/7)
+Cole Palmer 1+ fouls won (won in 8/10)
 Alejandro Garnacho 1+ fouls won (won in 9/12)
 
 📈 TEAM PROPS:
@@ -97,7 +99,7 @@ Ian Maatsen 1+ shots (won in 7/9)
 ⚠️ FOULS COMMITTED:
 Amine Adli 1+ fouls committed (won in 6/6)
 Lamare Bogarde 1+ fouls committed (won in 5/5)
-Matty Cash 1+ fouls committed (won in 17/20)
+Matty Cash 1+ fouls committed (won in 17/19)
 Morgan Rogers 1+ fouls committed (won in 15/20)
 Amine Adli 2+ fouls committed (won in 5/6)
 
@@ -115,19 +117,17 @@ Aston Villa 10+ shots (won in 16/20)
 🔴 Arsenal vs Sunderland 🔴 - 3:00pm
 
 ⚽ SHOTS:
-Bukayo Saka 2+ shots (won in 13/16)
-
-🎯 SHOTS ON TARGET:
-Bukayo Saka SOT (won in 12/16)
+Dan Ballard 1+ shots (won in 11/14)
 
 ⚠️ FOULS COMMITTED:
+Jurriën Timber 1+ fouls committed (won in 17/18)
 Reinildo Mandava 1+ fouls committed (won in 10/11)
-Jurriën Timber 1+ fouls committed (won in 17/19)
+Dan Ballard 1+ fouls committed (won in 11/14)
 
 ⚠️ FOULS WON:
 Reinildo Mandava 1+ fouls won (won in 10/11)
 Brian Brobbey 1+ fouls won (won in 9/10)
-Bukayo Saka 1+ fouls won (won in 13/16)
+Dan Ballard 1+ fouls won (won in 11/14)
 Leandro Trossard 1+ fouls won (won in 11/14)
 Gabriel Magalhães 1+ fouls won (won in 10/13)
 
@@ -145,14 +145,11 @@ Harvey Barnes 2+ shots (won in 7/9)
 Igor Thiago 1+ fouls committed (won in 16/19)
 Kevin Schade 1+ fouls committed (won in 16/19)
 Dan Burn 1+ fouls committed (won in 10/12)
-Joelinton 1+ fouls committed (won in 12/15)
 
 ⚠️ FOULS WON:
 Dango Ouattara 1+ fouls won (won in 10/11)
 Kevin Schade 1+ fouls won (won in 16/19)
 Anthony Gordon 1+ fouls won (won in 12/15)
-Joelinton 1+ fouls won (won in 12/15)
-Bruno Guimarães 1+ fouls won (won in 13/17)
 
 📈 TEAM PROPS:
 Newcastle United 3+ corners (won in 18/20)

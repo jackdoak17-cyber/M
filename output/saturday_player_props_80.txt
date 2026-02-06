@@ -1,0 +1,22 @@
+I've collated Premier League 2+ player stats (80% hit-rates) based on their last 5 games.
+Leave a like if you find these useful.
+
+📊2+ Fouls Committed in ≥4/5📊
+- Amine Adli (AFC Bournemouth) = 3, 3, 2, 3, 2
+- Álex Jiménez (AFC Bournemouth) = 2, 2, 0, 3, 3
+- Jurriën Timber (Arsenal) = 2, 2, 2, 4, 2
+- Morgan Rogers (Aston Villa) = 2, 2, 4, 0, 2
+- Liam Delap (Chelsea) = 2, 3, 2, 2, 1
+- Raúl Jiménez (Fulham) = 0, 3, 2, 3, 2
+- Crysencio Summerville (West Ham United) = 2, 1, 2, 2, 4
+- Tomáš Souček (West Ham United) = 3, 1, 2, 3, 2
+
+📊2+ Fouls Drawn in ≥4/5📊
+- Alex Scott (AFC Bournemouth) = 2, 3, 2, 4, 2
+- Leandro Trossard (Arsenal) = 2, 2, 2, 0, 3
+- Jaidon Anthony (Burnley) = 3, 1, 2, 3, 4
+- Cole Palmer (Chelsea) = 3, 2, 3, 2, 3
+- James Tarkowski (Everton) = 2, 3, 1, 2, 3
+- Xavi Simons (Tottenham Hotspur) = 4, 2, 3, 2, 0
+- Crysencio Summerville (West Ham United) = 2, 2, 2, 1, 4
+- Yerson Mosquera (Wolverhampton Wanderers) = 2, 2, 1, 5, 2
