@@ -1,6 +1,6 @@
 # Premier League Prop Sheet Generator - Development Progress
 
-## Last Updated: 2026-02-06 18:01
+## Last Updated: 2026-02-06 18:14
 
 ## Current Phase: Phase 8 - Automation Setup
 
@@ -51,6 +51,7 @@ Not started.
 - Defender detection: use lineup_detailed_position_name if present, else detailed_position_name/position_name, else position_abbr. Treat positions containing "Back" or "Defender", or abbr in {CB, LB, RB, LWB, RWB} as defenders.
 - Automation: GitHub Actions runs hourly on Thursdays and only generates at 10:00 UK time; outputs are committed to the repo.
 - Threshold: 75% hit rate for all props (player + team), minimum sample size 5.
+- Team line-2 logic: wins are counted against the floored threshold (e.g., 3+ means >= 3.0).
 
 ## Verified Data Sources (Supabase)
 - fixtures: schedule + scores (starting_at, home/away_team_id, status)

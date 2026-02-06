@@ -73,16 +73,16 @@ def get_qualifying_team_stats(
         if line_minus_two < 1:
             # Skip meaningless thresholds like 0+.
             continue
-        wins = sum(
-            1
-            for fixture_id in fixture_ids
-            if values_by_fixture.get(fixture_id, 0.0) >= line_minus_two
-        )
         threshold = max(0, floor(line_minus_two))
         if stat_key == "shots" and threshold < 9:
             continue
         if stat_key == "shots_on_target" and threshold < 3:
             continue
+        wins = sum(
+            1
+            for fixture_id in fixture_ids
+            if values_by_fixture.get(fixture_id, 0.0) >= threshold
+        )
         if wins / total >= min_rate:
             hits.append(
                 TeamStatHit(
