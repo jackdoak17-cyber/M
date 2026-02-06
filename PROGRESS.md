@@ -1,6 +1,6 @@
 # Premier League Prop Sheet Generator - Development Progress
 
-## Last Updated: 2026-02-06 21:53
+## Last Updated: 2026-02-06 21:56
 
 ## Current Phase: Phase 8 - Automation Setup
 
@@ -53,7 +53,7 @@ Not started.
 - Threshold: 75% hit rate for all props (player + team), minimum sample size 5.
 - Team line-2 logic: wins are counted against the floored threshold (e.g., 3+ means >= 3.0).
 - Weekend player props: last 5 starts only (skip non-starts), 1+ stats require 5/5, 2+ stats require >=4/5.
-- Weekend player props do not require starting the most recent match; any player with 5 starts in last 20 is eligible.
+- Weekend player props require starting the most recent match, then use last 5 starts for hit-rate.
 
 ## Verified Data Sources (Supabase)
 - fixtures: schedule + scores (starting_at, home/away_team_id, status)
