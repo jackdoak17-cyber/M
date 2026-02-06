@@ -156,7 +156,7 @@ def generate_full_prop_sheet(
     day_label: str,
     sections: Iterable[str],
 ) -> str:
-    header = f"📊 DATA-BACKED PREMIER LEAGUE PROPS LIST ({day_label.upper()})"
+    header = f"📊 PREMIER LEAGUE PROPS STAT LIST BY FIXTURE ({day_label.upper()})"
     intro = (
         f"I've analysed the data for {day_label}'s fixtures and identified the most consistent props. "
         "All data-driven, all based on recent form.\n\n"
@@ -171,8 +171,6 @@ def generate_full_prop_sheet(
     for index, section in enumerate(sections_list):
         output_lines.append("")
         output_lines.append(section)
-        if index < len(sections_list) - 1:
-            output_lines.append("")
     output_lines.append("")
     output_lines.append(outro)
     return "\n".join(output_lines)
