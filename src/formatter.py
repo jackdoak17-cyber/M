@@ -72,6 +72,7 @@ WEEKEND_HEADERS_100 = [
 ]
 
 WEEKEND_HEADERS_80 = [
+    ("shots", "📊2+ Shots in ≥4/5📊"),
     ("shots_on_target", "📊2+ Shots on Target in ≥4/5📊"),
     ("fouls_committed", "📊2+ Fouls Committed in ≥4/5📊"),
     ("fouls_drawn", "📊2+ Fouls Drawn in ≥4/5📊"),

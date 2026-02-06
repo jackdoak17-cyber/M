@@ -6,11 +6,13 @@ from typing import Dict, Iterable, List
 from src import data_fetcher
 
 
+TYPE_SHOTS_TOTAL = 42
 TYPE_SHOTS_ON_TARGET = 86
 TYPE_FOULS_COMMITTED = 56
 TYPE_FOULS_DRAWN = 96
 
 STAT_TYPE_MAP = {
+    "shots": TYPE_SHOTS_TOTAL,
     "shots_on_target": TYPE_SHOTS_ON_TARGET,
     "fouls_committed": TYPE_FOULS_COMMITTED,
     "fouls_drawn": TYPE_FOULS_DRAWN,
