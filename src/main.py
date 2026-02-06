@@ -8,7 +8,7 @@ from typing import Iterable, List, Optional
 from zoneinfo import ZoneInfo
 
 from config import get_settings
-from src import data_fetcher, formatter, player_analyzer, team_analyzer
+from src import data_fetcher, formatter, player_analyzer, team_analyzer, weekend_player_props
 
 
 settings = get_settings()
@@ -155,6 +155,21 @@ def generate_prop_sheet_for_day(day: date, day_label: str) -> str:
     return formatter.generate_full_prop_sheet(day_label, sections)
 
 
+def generate_weekend_player_posts(day: date) -> tuple[str, str]:
+    lines = weekend_player_props.collect_player_props_for_day(day)
+    hundred, eighty = weekend_player_props.split_props_by_tier(lines)
+    return (
+        formatter.format_weekend_props_post(hundred, "100"),
+        formatter.format_weekend_props_post(eighty, "80"),
+    )
+
+
+def generate_weekend_player_post_combined(day: date) -> str:
+    lines = weekend_player_props.collect_player_props_for_day(day)
+    hundred, eighty = weekend_player_props.split_props_by_tier(lines)
+    return formatter.format_weekend_props_combined(hundred, eighty)
+
+
 def _write_output(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
@@ -183,10 +198,15 @@ def main(args: Optional[Iterable[str]] = None) -> None:
 
     saturday_sheet = generate_prop_sheet_for_day(saturday, "Saturday")
     sunday_sheet = generate_prop_sheet_for_day(sunday, "Sunday")
+    saturday_hundred, saturday_eighty = generate_weekend_player_posts(saturday)
+    sunday_combined = generate_weekend_player_post_combined(sunday)
 
     output_dir = Path(parsed.output_dir)
     _write_output(output_dir / "saturday_prop_sheet.txt", saturday_sheet)
     _write_output(output_dir / "sunday_prop_sheet.txt", sunday_sheet)
+    _write_output(output_dir / "saturday_player_props_100.txt", saturday_hundred)
+    _write_output(output_dir / "saturday_player_props_80.txt", saturday_eighty)
+    _write_output(output_dir / "sunday_player_props.txt", sunday_combined)
 
 
 if __name__ == "__main__":

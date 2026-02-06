@@ -1,8 +1,9 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Dict, Iterable, List
+from typing import Dict, Iterable, List, Sequence
 
+from src.weekend_player_props import PlayerPropLine
 
 @dataclass(frozen=True)
 class PlayerStatLine:
@@ -64,6 +65,18 @@ TEAM_COLOURS: Dict[str, str] = {
     "Wolverhampton Wanderers": "🟠",
 }
 
+WEEKEND_HEADERS_100 = [
+    ("shots_on_target", "📊1+ Shots on Target in ≥5/5📊"),
+    ("fouls_drawn", "📊1+ Fouls Drawn in ≥5/5📊"),
+    ("fouls_committed", "📊1+ Fouls Committed in ≥5/5📊"),
+]
+
+WEEKEND_HEADERS_80 = [
+    ("shots_on_target", "📊2+ Shots on Target in ≥4/5📊"),
+    ("fouls_committed", "📊2+ Fouls Committed in ≥4/5📊"),
+    ("fouls_drawn", "📊2+ Fouls Drawn in ≥4/5📊"),
+]
+
 
 def format_player_stat_line(line: PlayerStatLine) -> str:
     if line.stat_key == "shots_on_target":
@@ -87,6 +100,24 @@ def format_team_stat_line(line: TeamStatLine) -> str:
     return f"{line.team_name} {label} (won in {line.wins}/{line.total})"
 
 
+def _format_weekend_values(values: Sequence[float]) -> str:
+    formatted: List[str] = []
+    for value in values:
+        if value is None:
+            formatted.append("0")
+            continue
+        if abs(value - round(value)) < 0.01:
+            formatted.append(str(int(round(value))))
+        else:
+            formatted.append(f"{value:g}")
+    return ", ".join(formatted)
+
+
+def format_weekend_player_line(line: PlayerPropLine) -> str:
+    values_text = _format_weekend_values(line.values)
+    return f"- {line.player_name} ({line.team_name}) = {values_text}"
+
+
 def _sorted_player_lines(lines: Iterable[PlayerStatLine]) -> List[PlayerStatLine]:
     return sorted(
         lines,
@@ -106,6 +137,16 @@ def _sorted_team_lines(lines: Iterable[TeamStatLine]) -> List[TeamStatLine]:
             -item.rate,
             -item.total,
             item.team_name.lower(),
+        ),
+    )
+
+
+def _sorted_weekend_lines(lines: Iterable[PlayerPropLine]) -> List[PlayerPropLine]:
+    return sorted(
+        lines,
+        key=lambda item: (
+            item.team_name.lower(),
+            item.player_name.lower(),
         ),
     )
 
@@ -171,3 +212,51 @@ def generate_full_prop_sheet(
     output_lines.append("")
     output_lines.append(outro)
     return "\n".join(output_lines)
+
+
+def format_weekend_props_post(
+    lines_by_stat: Dict[str, List[PlayerPropLine]],
+    tier: str,
+) -> str:
+    if tier == "100":
+        intro = (
+            "As usual I've collated Premier League 1+ player stats (100% hit-rates) "
+            "based on their last 5 games.\n"
+            "Leave a like if you find these useful."
+        )
+        headers = WEEKEND_HEADERS_100
+    else:
+        intro = (
+            "I've collated Premier League 2+ player stats (80% hit-rates) "
+            "based on their last 5 games.\n"
+            "Leave a like if you find these useful."
+        )
+        headers = WEEKEND_HEADERS_80
+
+    sections: List[str] = []
+    for stat_key, header in headers:
+        lines = _sorted_weekend_lines(lines_by_stat.get(stat_key, []))
+        if not lines:
+            continue
+        rendered = [header]
+        rendered.extend(format_weekend_player_line(item) for item in lines)
+        sections.append("\n".join(rendered))
+
+    if not sections:
+        return intro
+
+    return intro + "\n\n" + "\n\n".join(sections)
+
+
+def format_weekend_props_combined(
+    hundred_lines: Dict[str, List[PlayerPropLine]],
+    eighty_lines: Dict[str, List[PlayerPropLine]],
+) -> str:
+    blocks: List[str] = []
+    if any(hundred_lines.values()):
+        blocks.append(format_weekend_props_post(hundred_lines, "100"))
+    if any(eighty_lines.values()):
+        blocks.append(format_weekend_props_post(eighty_lines, "80"))
+    if not blocks:
+        return format_weekend_props_post(hundred_lines, "100")
+    return "\n\n".join(blocks)

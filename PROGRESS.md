@@ -1,6 +1,6 @@
 # Premier League Prop Sheet Generator - Development Progress
 
-## Last Updated: 2026-02-06 18:14
+## Last Updated: 2026-02-06 19:41
 
 ## Current Phase: Phase 8 - Automation Setup
 
@@ -22,10 +22,10 @@
 - [ ] Phase 9: Documentation & Handoff
 
 ## Current Task:
-Verify analyzer outputs with sample runs and document results.
+Add weekend player props posts (last 5 starts, 100%/80% tiers).
 
 ## Next Steps:
-1. Run a sample prop sheet generation and spot-check players/teams.
+1. Run the generator and spot-check weekend player props output.
 2. Create virtual environment and install dependencies.
 3. Start Phase 7 testing checklist and document results.
 
@@ -52,6 +52,7 @@ Not started.
 - Automation: GitHub Actions runs hourly on Thursdays and only generates at 10:00 UK time; outputs are committed to the repo.
 - Threshold: 75% hit rate for all props (player + team), minimum sample size 5.
 - Team line-2 logic: wins are counted against the floored threshold (e.g., 3+ means >= 3.0).
+- Weekend player props: last 5 starts only (skip non-starts), 1+ stats require 5/5, 2+ stats require >=4/5.
 
 ## Verified Data Sources (Supabase)
 - fixtures: schedule + scores (starting_at, home/away_team_id, status)
