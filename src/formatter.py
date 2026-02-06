@@ -162,10 +162,7 @@ def generate_full_prop_sheet(
         "All data-driven, all based on recent form.\n\n"
         "If you find this useful please leave a like and remember to bookmark 🔖"
     )
-    outro = (
-        "Using these? Make sure you bookmark for later 🔖\n\n"
-        "Good luck with your bets 🎯"
-    )
+    outro = "Make sure you bookmark for later 🔖\n\nGood luck with your bets 🎯"
     sections_list = [section for section in sections if section]
     output_lines = [header, "", intro]
     for index, section in enumerate(sections_list):
