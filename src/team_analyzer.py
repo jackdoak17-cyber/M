@@ -95,22 +95,21 @@ def get_qualifying_team_stats(
                 ),
             )
 
-    corners_threshold = 3
-    corners_wins = sum(
-        1
-        for fixture_id in fixture_ids
-        if corners_values.get(fixture_id, 0.0) >= corners_threshold
-    )
-    if corners_wins / total >= min_rate:
-        hits.append(
-            TeamStatHit(
-                stat_key="corners",
-                threshold=corners_threshold,
-                wins=corners_wins,
-                total=total,
-                line=None,
-                line_minus_two=None,
-            ),
-        )
+    corner_series = [corners_values.get(fixture_id, 0.0) for fixture_id in fixture_ids]
+    max_corners = max(corner_series) if corner_series else 0.0
+    if max_corners >= 3:
+        for threshold in range(3, int(floor(max_corners)) + 1):
+            corners_wins = sum(1 for value in corner_series if value >= threshold)
+            if corners_wins / total >= min_rate:
+                hits.append(
+                    TeamStatHit(
+                        stat_key="corners",
+                        threshold=threshold,
+                        wins=corners_wins,
+                        total=total,
+                        line=None,
+                        line_minus_two=None,
+                    ),
+                )
 
     return hits

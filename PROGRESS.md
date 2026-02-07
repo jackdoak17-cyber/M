@@ -1,6 +1,6 @@
 # Premier League Prop Sheet Generator - Development Progress
 
-## Last Updated: 2026-02-06 22:01
+## Last Updated: 2026-02-07 09:21
 
 ## Current Phase: Phase 8 - Automation Setup
 
@@ -55,6 +55,7 @@ Not started.
 - Weekend player props: last 5 starts only (skip non-starts), 1+ stats require 5/5, 2+ stats require >=4/5.
 - Weekend player props require starting the most recent match, then use last 5 starts for hit-rate.
 - Weekend 80% post now includes 2+ shots (total) alongside 2+ SOT and fouls.
+- Team corners now emit all qualifying thresholds (3+ and higher) instead of only 3+.
 
 ## Verified Data Sources (Supabase)
 - fixtures: schedule + scores (starting_at, home/away_team_id, status)
