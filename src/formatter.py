@@ -199,38 +199,27 @@ def format_game_section(
     player_lines: Iterable[PlayerStatLine],
     team_lines: Iterable[TeamStatLine],
 ) -> str:
-    player_sections: Dict[str, List[PlayerStatLine]] = {
-        key: [] for key in PLAYER_SECTION_HEADERS
-    }
+    player_sections: Dict[str, List[PlayerStatLine]] = {key: [] for key in PLAYER_SECTION_HEADERS}
     for line in player_lines:
         if line.stat_key in player_sections:
             player_sections[line.stat_key].append(line)
 
-    sections: List[str] = []
-    for stat_key, header in PLAYER_SECTION_HEADERS.items():
+    flat_lines: List[str] = []
+    for stat_key in PLAYER_SECTION_HEADERS:
         lines = _sorted_player_lines(player_sections[stat_key])
-        if not lines:
-            continue
-        rendered = [header]
-        rendered.extend(format_player_stat_line(item) for item in lines)
-        sections.append("\n".join(rendered))
+        flat_lines.extend(format_player_stat_line(item) for item in lines)
 
     team_lines_sorted = _sorted_team_lines(team_lines)
-    if team_lines_sorted:
-        rendered = [TEAM_SECTION_HEADER]
-        rendered.extend(format_team_stat_line(item) for item in team_lines_sorted)
-        sections.append("\n".join(rendered))
+    flat_lines.extend(format_team_stat_line(item) for item in team_lines_sorted)
 
-    if not sections:
+    if not flat_lines:
         return ""
 
     home_emoji = TEAM_COLOURS.get(home_team, "")
     away_emoji = TEAM_COLOURS.get(away_team, "")
     fixture_label = f"{home_emoji} {home_team} vs {away_team} {away_emoji} - {kickoff_time}".strip()
-    output_lines = [fixture_label]
-    for section in sections:
-        output_lines.append("")
-        output_lines.append(section)
+    output_lines = [fixture_label, ""]
+    output_lines.extend(flat_lines)
     return "\n".join(output_lines)
 
 
