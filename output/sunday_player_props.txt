@@ -1,22 +1,24 @@
-As usual I've collated Premier League 1+ player stats (100% hit-rates) based on their last 5 games.
+As usual I've collated todays Premier League 1+ player stats (100% hit-rates) based on their last 5 games.
+
 Leave a like if you find these useful.
 
 📊1+ Fouls Drawn in ≥5/5📊
-- Rayan Cherki (Man City) = 2, 3, 2, 2, 1
+- R. Cherki (Man City) = 2, 3, 2, 2, 1
 
-I've collated Premier League 2+ player stats (80% hit-rates) based on their last 5 games.
+I've collated todays Premier League 2+ player stats (80% hit-rates) based on their last 5 games.
+
 Leave a like if you find these useful.
 
 📊2+ Shots in ≥4/5📊
-- Danny Welbeck (Brighton) = 3, 2, 0, 3, 2
-- Ismaïla Sarr (Palace) = 3, 2, 2, 0, 2
-- Hugo Ekitiké (Liverpool) = 6, 6, 4, 4, 1
-- Mohamed Salah (Liverpool) = 2, 3, 4, 3, 3
-- Erling Haaland (Man City) = 2, 2, 8, 5, 2
-- Rayan Cherki (Man City) = 3, 2, 2, 0, 4
+- D. Welbeck (Brighton) = 3, 2, 0, 3, 2
+- I. Sarr (Palace) = 3, 2, 2, 0, 2
+- H. Ekitiké (Liverpool) = 6, 6, 4, 4, 1
+- M. Salah (Liverpool) = 2, 3, 4, 3, 3
+- E. Haaland (Man City) = 2, 2, 8, 5, 2
+- R. Cherki (Man City) = 3, 2, 2, 0, 4
 
 📊2+ Fouls Committed in ≥4/5📊
-- Danny Welbeck (Brighton) = 2, 0, 2, 3, 2
+- D. Welbeck (Brighton) = 2, 0, 2, 3, 2
 
 📊2+ Fouls Drawn in ≥4/5📊
-- Rayan Cherki (Man City) = 2, 3, 2, 2, 1
+- R. Cherki (Man City) = 2, 3, 2, 2, 1
