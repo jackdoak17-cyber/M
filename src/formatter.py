@@ -142,12 +142,12 @@ def _shorten_player_name(name: str) -> str:
     if not clean:
         return name
     parts = clean.split()
-    if any(part.endswith(".") for part in parts):
-        return clean
-    if len(clean) <= 18 and len(parts) <= 2:
-        return clean
     if len(parts) >= 2:
-        return f"{parts[0][0]}. {parts[-1]}"
+        first = parts[0].replace(".", "")
+        last = parts[-1]
+        if not first:
+            return clean
+        return f"{first[0].upper()}. {last}"
     return clean
 
 
@@ -260,15 +260,15 @@ def format_weekend_props_post(
 ) -> str:
     if tier == "100":
         intro = (
-            "As usual I've collated Premier League 1+ player stats (100% hit-rates) "
-            "based on their last 5 games.\n"
+            "As usual I've collated todays Premier League 1+ player stats (100% hit-rates) "
+            "based on their last 5 games.\n\n"
             "Leave a like if you find these useful."
         )
         headers = WEEKEND_HEADERS_100
     else:
         intro = (
-            "I've collated Premier League 2+ player stats (80% hit-rates) "
-            "based on their last 5 games.\n"
+            "I've collated todays Premier League 2+ player stats (80% hit-rates) "
+            "based on their last 5 games.\n\n"
             "Leave a like if you find these useful."
         )
         headers = WEEKEND_HEADERS_80
