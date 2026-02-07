@@ -2,27 +2,27 @@ As usual I've collated Premier League 1+ player stats (100% hit-rates) based on 
 Leave a like if you find these useful.
 
 📊1+ Shots on Target in ≥5/5📊
-- Bryan Mbeumo (Manchester United) = 1, 1, 2, 2, 4
+- Bryan Mbeumo (Man Utd) = 1, 1, 2, 2, 4
 
 📊1+ Fouls Drawn in ≥5/5📊
-- Alex Scott (AFC Bournemouth) = 2, 3, 2, 4, 2
-- Amine Adli (AFC Bournemouth) = 1, 1, 1, 2, 2
+- Alex Scott (Bournemouth) = 2, 3, 2, 4, 2
+- Amine Adli (Bournemouth) = 1, 1, 1, 2, 2
 - Lamare Bogarde (Aston Villa) = 1, 1, 1, 3, 2
 - Jaidon Anthony (Burnley) = 3, 1, 2, 3, 4
 - Cole Palmer (Chelsea) = 3, 2, 3, 2, 3
 - Moisés Caicedo (Chelsea) = 1, 4, 1, 4, 2
 - James Tarkowski (Everton) = 2, 3, 1, 2, 3
 - Harry Wilson (Fulham) = 1, 1, 1, 1, 1
-- Amad Diallo (Manchester United) = 1, 1, 1, 3, 1
-- Matheus Cunha (Manchester United) = 2, 1, 1, 5, 1
-- Harvey Barnes (Newcastle United) = 1, 1, 2, 1, 2
+- Amad Diallo (Man Utd) = 1, 1, 1, 3, 1
+- Matheus Cunha (Man Utd) = 2, 1, 1, 5, 1
+- Harvey Barnes (Newcastle) = 1, 1, 2, 1, 2
 - Brian Brobbey (Sunderland) = 1, 2, 3, 2, 1
-- Crysencio Summerville (West Ham United) = 2, 2, 2, 1, 4
-- Hugo Bueno (Wolverhampton Wanderers) = 1, 2, 1, 1, 2
-- Yerson Mosquera (Wolverhampton Wanderers) = 2, 2, 1, 5, 2
+- C. Summerville (West Ham) = 2, 2, 2, 1, 4
+- Hugo Bueno (Wolves) = 1, 2, 1, 1, 2
+- Yerson Mosquera (Wolves) = 2, 2, 1, 5, 2
 
 📊1+ Fouls Committed in ≥5/5📊
-- Amine Adli (AFC Bournemouth) = 3, 3, 2, 3, 2
+- Amine Adli (Bournemouth) = 3, 3, 2, 3, 2
 - Jurriën Timber (Arsenal) = 2, 2, 2, 4, 2
 - Lamare Bogarde (Aston Villa) = 1, 2, 1, 1, 2
 - Igor Thiago (Brentford) = 2, 1, 2, 3, 1
@@ -32,12 +32,12 @@ Leave a like if you find these useful.
 - Lucas Pires (Burnley) = 1, 1, 2, 1, 1
 - Liam Delap (Chelsea) = 2, 3, 2, 2, 1
 - Moisés Caicedo (Chelsea) = 2, 2, 1, 1, 2
-- Luke Shaw (Manchester United) = 1, 2, 2, 1, 2
+- Luke Shaw (Man Utd) = 1, 2, 2, 1, 2
 - Dan Ballard (Sunderland) = 1, 2, 2, 1, 3
 - Trai Hume (Sunderland) = 1, 2, 1, 2, 1
-- Destiny Udogie (Tottenham Hotspur) = 1, 1, 1, 2, 2
-- Xavi Simons (Tottenham Hotspur) = 1, 1, 1, 1, 1
-- Crysencio Summerville (West Ham United) = 2, 1, 2, 2, 4
-- Tomáš Souček (West Ham United) = 3, 1, 2, 3, 2
-- João Gomes (Wolverhampton Wanderers) = 4, 4, 1, 2, 1
-- Yerson Mosquera (Wolverhampton Wanderers) = 1, 2, 2, 1, 1
+- Destiny Udogie (Spurs) = 1, 1, 1, 2, 2
+- Xavi Simons (Spurs) = 1, 1, 1, 1, 1
+- C. Summerville (West Ham) = 2, 1, 2, 2, 4
+- Tomáš Souček (West Ham) = 3, 1, 2, 3, 2
+- João Gomes (Wolves) = 4, 4, 1, 2, 1
+- Yerson Mosquera (Wolves) = 1, 2, 2, 1, 1
