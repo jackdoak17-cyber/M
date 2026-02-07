@@ -1,6 +1,6 @@
 # Premier League Prop Sheet Generator - Development Progress
 
-## Last Updated: 2026-02-07 11:41
+## Last Updated: 2026-02-07 12:13
 
 ## Current Phase: Phase 8 - Automation Setup
 
@@ -60,6 +60,7 @@ Not started.
 - Weekend player props now always use initial+surname (e.g., C. Palmer) and add a blank line in the intro copy.
 - Prop sheet player names now use initial+surname format to prevent line wraps.
 - Prop sheet fixture sections now render as flat lists (no section headers).
+- Prop sheet output filenames include `by_fixture` for easier scanning in GitHub.
 
 ## Verified Data Sources (Supabase)
 - fixtures: schedule + scores (starting_at, home/away_team_id, status)

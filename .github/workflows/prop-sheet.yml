@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name "prop-sheet-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -f output/saturday_prop_sheet.txt output/sunday_prop_sheet.txt \
+          git add -f output/saturday_prop_sheet_by_fixture.txt output/sunday_prop_sheet_by_fixture.txt \
             output/saturday_player_props_100.txt output/saturday_player_props_80.txt \
             output/sunday_player_props.txt
           if git diff --cached --quiet; then

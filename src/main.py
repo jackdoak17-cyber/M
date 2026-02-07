@@ -202,8 +202,8 @@ def main(args: Optional[Iterable[str]] = None) -> None:
     sunday_combined = generate_weekend_player_post_combined(sunday)
 
     output_dir = Path(parsed.output_dir)
-    _write_output(output_dir / "saturday_prop_sheet.txt", saturday_sheet)
-    _write_output(output_dir / "sunday_prop_sheet.txt", sunday_sheet)
+    _write_output(output_dir / "saturday_prop_sheet_by_fixture.txt", saturday_sheet)
+    _write_output(output_dir / "sunday_prop_sheet_by_fixture.txt", sunday_sheet)
     _write_output(output_dir / "saturday_player_props_100.txt", saturday_hundred)
     _write_output(output_dir / "saturday_player_props_80.txt", saturday_eighty)
     _write_output(output_dir / "sunday_player_props.txt", sunday_combined)
