@@ -65,6 +65,29 @@ TEAM_COLOURS: Dict[str, str] = {
     "Wolverhampton Wanderers": "🟠",
 }
 
+SHORT_TEAM_NAMES: Dict[str, str] = {
+    "AFC Bournemouth": "Bournemouth",
+    "Aston Villa": "Aston Villa",
+    "Brentford": "Brentford",
+    "Brighton & Hove Albion": "Brighton",
+    "Burnley": "Burnley",
+    "Chelsea": "Chelsea",
+    "Crystal Palace": "Palace",
+    "Everton": "Everton",
+    "Fulham": "Fulham",
+    "Leeds United": "Leeds",
+    "Liverpool": "Liverpool",
+    "Manchester City": "Man City",
+    "Manchester United": "Man Utd",
+    "Newcastle United": "Newcastle",
+    "Nottingham Forest": "Nottm Forest",
+    "Sunderland": "Sunderland",
+    "Tottenham Hotspur": "Spurs",
+    "West Ham United": "West Ham",
+    "Wolverhampton Wanderers": "Wolves",
+    "Arsenal": "Arsenal",
+}
+
 WEEKEND_HEADERS_100 = [
     ("shots_on_target", "📊1+ Shots on Target in ≥5/5📊"),
     ("fouls_drawn", "📊1+ Fouls Drawn in ≥5/5📊"),
@@ -114,9 +137,25 @@ def _format_weekend_values(values: Sequence[float]) -> str:
     return ", ".join(formatted)
 
 
+def _shorten_player_name(name: str) -> str:
+    clean = name.strip()
+    if not clean:
+        return name
+    parts = clean.split()
+    if any(part.endswith(".") for part in parts):
+        return clean
+    if len(clean) <= 18 and len(parts) <= 2:
+        return clean
+    if len(parts) >= 2:
+        return f"{parts[0][0]}. {parts[-1]}"
+    return clean
+
+
 def format_weekend_player_line(line: PlayerPropLine) -> str:
     values_text = _format_weekend_values(line.values)
-    return f"- {line.player_name} ({line.team_name}) = {values_text}"
+    player_name = _shorten_player_name(line.player_name)
+    team_name = SHORT_TEAM_NAMES.get(line.team_name, line.team_name)
+    return f"- {player_name} ({team_name}) = {values_text}"
 
 
 def _sorted_player_lines(lines: Iterable[PlayerStatLine]) -> List[PlayerStatLine]:
