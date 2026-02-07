@@ -7,6 +7,14 @@ Leave a like if you find these useful.
 I've collated Premier League 2+ player stats (80% hit-rates) based on their last 5 games.
 Leave a like if you find these useful.
 
+📊2+ Shots in ≥4/5📊
+- Danny Welbeck (Brighton & Hove Albion) = 3, 2, 0, 3, 2
+- Ismaïla Sarr (Crystal Palace) = 3, 2, 2, 0, 2
+- Hugo Ekitiké (Liverpool) = 6, 6, 4, 4, 1
+- Mohamed Salah (Liverpool) = 2, 3, 4, 3, 3
+- Erling Haaland (Manchester City) = 2, 2, 8, 5, 2
+- Rayan Cherki (Manchester City) = 3, 2, 2, 0, 4
+
 📊2+ Fouls Committed in ≥4/5📊
 - Danny Welbeck (Brighton & Hove Albion) = 2, 0, 2, 3, 2
 
