@@ -103,6 +103,7 @@ WEEKEND_HEADERS_80 = [
 
 
 def format_player_stat_line(line: PlayerStatLine) -> str:
+    player_name = _shorten_player_name(line.player_name)
     if line.stat_key == "shots_on_target":
         label = "SOT" if line.threshold == 1 else f"{line.threshold}+ SOT"
     elif line.stat_key == "shots":
@@ -113,7 +114,7 @@ def format_player_stat_line(line: PlayerStatLine) -> str:
         label = f"{line.threshold}+ fouls won"
     else:
         label = f"{line.threshold}+ {line.stat_key.replace('_', ' ')}"
-    return f"{line.player_name} {label} (won in {line.wins}/{line.total})"
+    return f"{player_name} {label} (won in {line.wins}/{line.total})"
 
 
 def format_team_stat_line(line: TeamStatLine) -> str:
