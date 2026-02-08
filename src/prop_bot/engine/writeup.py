@@ -65,9 +65,10 @@ def build_writeup_context(pick: Dict) -> Dict:
     if vs_games is None:
         vs_games = 0
     vs_examples = vs_similar.get("similar_teams_examples", []) or []
-    if (vs_games or 0) == 0 or vs_hit_rate < 60:
+    include_vs_similar = (vs_games or 0) > 0 and vs_hit_rate >= 60
+    if not include_vs_similar:
         vs_examples = []
-    vs_examples_text = ", ".join(vs_examples) if vs_examples else "none"
+    vs_examples_text = ", ".join(vs_examples) if vs_examples else ""
 
     return {
         "player": pick["player_name"],
@@ -99,6 +100,7 @@ def build_writeup_context(pick: Dict) -> Dict:
         "vs_similar_games": vs_games,
         "vs_similar_examples": vs_examples,
         "vs_similar_examples_text": vs_examples_text,
+        "include_vs_similar": include_vs_similar,
         "odds": pick.get("odds"),
         "bookmaker": pick.get("bookmaker"),
     }
@@ -135,26 +137,35 @@ def generate_writeup(context: Dict) -> str:
         "📊 14/20 (70%)\n"
         "💰 1.80"
     )
-    user_prompt = (
-        f"Player: {context['player']} ({context['team']}) vs {context['opponent_name']} "
-        f"({context['league']})\n"
-        f"Market: {context['market']}\n"
-        f"Baseline per90: {context['baseline']['weighted_per90']:.2f}\n"
-        f"Last 5 avg: {context['baseline']['last_5_avg']:.2f}\n"
-        f"Venue: {context['venue']}\n"
-        f"Venue avg: {context['venue_avg']:.2f}\n"
-        f"Other venue avg: {context['other_venue_avg']:.2f}\n"
-        f"Hit rate last 5: {context['hit_rates']['last_5']}\n"
-        f"Hit rate last 20: {context['hit_rates']['last_20']}\n"
-        f"{context['opponent_stats_line']}\n"
-        f"{context['opponent_rank_line']}\n"
-        f"Similar hit rate: {context.get('vs_similar_hit_rate')}% over {context.get('vs_similar_games')} games\n"
-        f"Similar opponents examples: {context.get('vs_similar_examples_text')}\n"
-        f"Opponent name (must be used exactly): {context['opponent_name']}\n"
-        f"Bookmaker: {context.get('bookmaker')}\n"
-        f"Book odds: {context.get('odds')}\n"
-        "Write the note."
+    lines = [
+        f"Player: {context['player']} ({context['team']}) vs {context['opponent_name']} ({context['league']})",
+        f"Market: {context['market']}",
+        f"Baseline per90: {context['baseline']['weighted_per90']:.2f}",
+        f"Last 5 avg: {context['baseline']['last_5_avg']:.2f}",
+        f"Venue: {context['venue']}",
+        f"Venue avg: {context['venue_avg']:.2f}",
+        f"Other venue avg: {context['other_venue_avg']:.2f}",
+        f"Hit rate last 5: {context['hit_rates']['last_5']}",
+        f"Hit rate last 20: {context['hit_rates']['last_20']}",
+    ]
+    if context["opponent_stats_line"]:
+        lines.append(context["opponent_stats_line"])
+    if context["opponent_rank_line"]:
+        lines.append(context["opponent_rank_line"])
+    if context.get("include_vs_similar"):
+        lines.append(
+            f"Similar hit rate: {context.get('vs_similar_hit_rate')}% over {context.get('vs_similar_games')} games"
+        )
+        lines.append(f"Similar opponents examples: {context.get('vs_similar_examples_text')}")
+    lines.extend(
+        [
+            f"Opponent name (must be used exactly): {context['opponent_name']}",
+            f"Bookmaker: {context.get('bookmaker')}",
+            f"Book odds: {context.get('odds')}",
+            "Write the note.",
+        ]
     )
+    user_prompt = "\n".join(lines)
 
     response = client.messages.create(
         model=settings.model_name,

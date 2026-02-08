@@ -30,8 +30,9 @@ def save_picks_to_file(picks: List[Dict], output_dir: str = "picks") -> str:
         "picks_count": len(picks),
         "picks": _json_safe(picks),
     }
+    payload = _json_safe(payload)
     filepath = Path(output_dir) / f"{date_str}.json"
-    filepath.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
+    filepath.write_text(json.dumps(payload, indent=2, ensure_ascii=False, default=_json_safe))
     return str(filepath)
 
 
