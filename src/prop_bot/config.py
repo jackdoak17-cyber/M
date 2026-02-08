@@ -49,6 +49,7 @@ class Settings:
     min_edge_pct: float
     min_confidence: float
     max_candidates: int
+    include_similar: bool
     use_telegram: bool
     telegram_bot_token: str | None
     telegram_chat_id: str | None
@@ -64,6 +65,7 @@ def get_settings() -> Settings:
         min_edge_pct=float(os.environ.get("PROP_MIN_EDGE_PCT", "10")),
         min_confidence=float(os.environ.get("PROP_MIN_CONFIDENCE", "65")),
         max_candidates=int(os.environ.get("PROP_MAX_PICKS", "10")),
+        include_similar=os.environ.get("PROP_INCLUDE_SIMILAR", "0") == "1",
         use_telegram=bool(os.environ.get("TELEGRAM_BOT_TOKEN") and os.environ.get("TELEGRAM_CHAT_ID")),
         telegram_bot_token=os.environ.get("TELEGRAM_BOT_TOKEN"),
         telegram_chat_id=os.environ.get("TELEGRAM_CHAT_ID"),

@@ -38,7 +38,6 @@ def _build_candidate(
     league_avg: float,
     opp_rank: Dict,
     share_data: Dict | None,
-    vs_similar: Dict,
     win_prob: float,
 ) -> Dict | None:
     venue_aligned = (
@@ -96,6 +95,7 @@ def _build_candidate(
         "player_name": player.player_name,
         "team_id": player.team_id,
         "team_name": player.team_name,
+        "opponent_id": fixture.away_team_id if fixture.home_team_id == player.team_id else fixture.home_team_id,
         "opponent_name": opponent_name,
         "fixture_id": fixture.fixture_id,
         "fixture_date": fixture.starting_at,
@@ -113,7 +113,7 @@ def _build_candidate(
             "rank": opp_rank.get("rank"),
             "total_teams": opp_rank.get("total_teams"),
         },
-        "vs_similar": vs_similar,
+        "vs_similar": {},
         "projection": projection,
         "confidence": conf,
         "probability": probability,
@@ -139,6 +139,8 @@ def run() -> None:
     candidates: List[Dict] = []
 
     for fixture in upcoming_fixtures:
+        opponent_context_cache: Dict[tuple[int, int, int], Dict] = {}
+        team_win_odds_cache: Dict[int, float | None] = {}
         log.info(
             "Fixture %s vs %s (%s)",
             fixture.home_team,
@@ -152,11 +154,13 @@ def run() -> None:
             is_home = fixture.home_team_id == player.team_id
             opponent_id = fixture.away_team_id if is_home else fixture.home_team_id
 
-            win_odds = odds.get_team_win_odds(
-                fixture.fixture_id,
-                player.team_id,
-                is_home,
-            )
+            if player.team_id not in team_win_odds_cache:
+                team_win_odds_cache[player.team_id] = odds.get_team_win_odds(
+                    fixture.fixture_id,
+                    player.team_id,
+                    is_home,
+                )
+            win_odds = team_win_odds_cache[player.team_id]
             win_prob = 1 / win_odds if win_odds else 0.0
 
             for market in MARKETS:
@@ -164,11 +168,23 @@ def run() -> None:
                 if not base or base["sample_size"] < settings.min_appearances:
                     continue
 
-                opp_profile = opponent.get_opponent_profile(opponent_id, market.stat_type_id, fixture.league_id)
-                if not opp_profile:
+                opp_key = (opponent_id, market.stat_type_id, fixture.league_id)
+                if opp_key not in opponent_context_cache:
+                    opp_profile = opponent.get_opponent_profile(opponent_id, market.stat_type_id, fixture.league_id)
+                    if not opp_profile:
+                        opponent_context_cache[opp_key] = {"opp_profile": None}
+                    else:
+                        opponent_context_cache[opp_key] = {
+                            "opp_profile": opp_profile,
+                            "league_avg": opponent.get_league_average(market.stat_type_id, fixture.league_id),
+                            "opp_rank": opponent.get_opponent_rank(opponent_id, market.stat_type_id, fixture.league_id),
+                        }
+                cached_context = opponent_context_cache[opp_key]
+                if not cached_context.get("opp_profile"):
                     continue
-                league_avg = opponent.get_league_average(market.stat_type_id, fixture.league_id)
-                opp_rank = opponent.get_opponent_rank(opponent_id, market.stat_type_id, fixture.league_id)
+                opp_profile = cached_context["opp_profile"]
+                league_avg = cached_context["league_avg"]
+                opp_rank = cached_context["opp_rank"]
 
                 share_data = share.get_player_team_share(
                     player.player_id,
@@ -178,14 +194,6 @@ def run() -> None:
                 )
 
                 for threshold in market.thresholds:
-                    vs_similar = similar.get_performance_vs_similar(
-                        player.player_id,
-                        player.team_id,
-                        opponent_id,
-                        market.stat_type_id,
-                        threshold,
-                        fixture.league_id,
-                    )
                     candidate = _build_candidate(
                         fixture,
                         player,
@@ -196,7 +204,6 @@ def run() -> None:
                         league_avg,
                         opp_rank,
                         share_data,
-                        vs_similar,
                         win_prob,
                     )
                     if candidate:
@@ -213,6 +220,17 @@ def run() -> None:
         log.info("No qualifying picks today.")
         send_telegram("No qualifying picks today.")
         return
+
+    if settings.include_similar:
+        for pick in top_picks:
+            pick["vs_similar"] = similar.get_performance_vs_similar(
+                pick["player_id"],
+                pick["team_id"],
+                pick["opponent_id"],
+                pick["stat_type_id"],
+                pick["threshold"],
+                pick["league_id"],
+            )
 
     for idx, pick in enumerate(top_picks, start=1):
         pick["rank"] = idx

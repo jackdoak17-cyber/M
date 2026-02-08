@@ -1,6 +1,6 @@
 # Premier League Prop Sheet Generator - Development Progress
 
-## Last Updated: 2026-02-08 10:08
+## Last Updated: 2026-02-08 13:05
 
 ## Current Phase: Phase 8 - Automation Setup
 
@@ -22,7 +22,7 @@
 - [ ] Phase 9: Documentation & Handoff
 
 ## Current Task:
-Add weekend player props posts (last 5 starts, 100%/80% tiers).
+Optimize prop bot runtime for Daily Prop Picks (reduce per-fixture query load).
 
 ## Next Steps:
 1. Run the generator and spot-check weekend player props output.
@@ -118,3 +118,5 @@ Implement v1 engine per handoff docs (fixtures → candidates → top 10 → wri
 - Leagues: 8, 9, 72, 82, 301, 384, 390, 444, 501, 564, 568, 600
 - Markets: shots, SOT, fouls committed, fouls drawn, tackles
 - Filters: min 8 appearances, confidence ≥ 65, edge ≥ 10%
+- Prop bot uses pooled DB connections to avoid per-query reconnect cost.
+- Similar-opponent analysis now runs only for final top picks when `PROP_INCLUDE_SIMILAR=1`.

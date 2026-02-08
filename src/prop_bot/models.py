@@ -33,6 +33,7 @@ class Pick:
     player_name: str
     team_id: int
     team_name: str
+    opponent_id: int
     opponent_name: str
     fixture_id: int
     fixture_date: datetime

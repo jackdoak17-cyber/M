@@ -19,6 +19,7 @@ Optional:
 ```
 TELEGRAM_BOT_TOKEN=...
 TELEGRAM_CHAT_ID=...
+PROP_INCLUDE_SIMILAR=0
 ```
 
 Install dependencies:
