@@ -112,10 +112,11 @@ def get_opponent_rank(opponent_team_id: int, stat_type_id: int, league_id: int) 
                 def_team_id,
                 avg_conceded,
                 rank() over (order by avg_conceded desc) as rank_most_conceded,
+                rank() over (order by avg_conceded asc) as rank_fewest_conceded,
                 count(*) over () as total_teams
             from team_concessions
         )
-        select rank_most_conceded, total_teams, avg_conceded
+        select rank_most_conceded, rank_fewest_conceded, total_teams, avg_conceded
         from ranked
         where def_team_id = %s;
     """
@@ -125,7 +126,8 @@ def get_opponent_rank(opponent_team_id: int, stat_type_id: int, league_id: int) 
     if not row:
         return {}
     return {
-        "rank": int(row["rank_most_conceded"]),
+        "rank_most_conceded": int(row["rank_most_conceded"]),
+        "rank_fewest_conceded": int(row["rank_fewest_conceded"]),
         "total_teams": int(row["total_teams"]),
         "avg_conceded": float(row["avg_conceded"] or 0.0),
     }

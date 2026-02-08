@@ -45,6 +45,30 @@ def build_writeup_context(pick: Dict) -> Dict:
     elif "fouls drawn" in market_label:
         opponent_label = "Opponent fouls committed per game"
 
+    opponent_stats = pick.get("opponent", {})
+    rank_fewest = opponent_stats.get("rank_fewest_conceded")
+    include_opponent_stats = rank_fewest != 1 and opponent_stats.get("avg_conceded") is not None
+    opponent_stats_line = (
+        f"{opponent_label}: {opponent_stats.get('avg_conceded')}" if include_opponent_stats else ""
+    )
+    opponent_rank_line = (
+        f"Opponent rank (most conceded): {opponent_stats.get('rank_most_conceded')} of {opponent_stats.get('total_teams')}"
+        if include_opponent_stats
+        else ""
+    )
+
+    vs_similar = pick.get("vs_similar", {})
+    vs_hit_rate = vs_similar.get("hitrate_vs_similar")
+    vs_games = vs_similar.get("games_vs_similar")
+    if vs_hit_rate is None:
+        vs_hit_rate = 0.0
+    if vs_games is None:
+        vs_games = 0
+    vs_examples = vs_similar.get("similar_teams_examples", []) or []
+    if (vs_games or 0) == 0 or vs_hit_rate < 60:
+        vs_examples = []
+    vs_examples_text = ", ".join(vs_examples) if vs_examples else "none"
+
     return {
         "player": pick["player_name"],
         "team": pick["team_name"],
@@ -68,13 +92,13 @@ def build_writeup_context(pick: Dict) -> Dict:
             "home_avg": pick["baseline"].get("home_avg"),
             "away_avg": pick["baseline"].get("away_avg"),
         },
-        "opponent_stats": {
-            "label": opponent_label,
-            "avg_conceded": pick["opponent"].get("avg_conceded"),
-            "rank": pick["opponent"].get("rank"),
-            "total_teams": pick["opponent"].get("total_teams"),
-        },
-        "vs_similar": pick.get("vs_similar", {}),
+        "opponent_stats_line": opponent_stats_line,
+        "opponent_rank_line": opponent_rank_line,
+        "vs_similar": vs_similar,
+        "vs_similar_hit_rate": vs_hit_rate,
+        "vs_similar_games": vs_games,
+        "vs_similar_examples": vs_examples,
+        "vs_similar_examples_text": vs_examples_text,
         "odds": pick.get("odds"),
         "bookmaker": pick.get("bookmaker"),
     }
@@ -97,6 +121,10 @@ def generate_writeup(context: Dict) -> str:
         "- Hit rates ALWAYS include the denominator: \"14 of his last 20\" not \"14 of his matches\".\n"
         "- Use the opponent name provided; never write \"opponent\" generically.\n"
         "- When vs_similar data includes team names, name them: \"against teams like X, Y, and Z\".\n"
+        "- If vs_similar hit rate is below 60%, DO NOT mention it at all.\n"
+        "- If the opponent ranks 1st for fewest conceded in the stat, do not frame it as a positive. "
+        "Either mention it honestly as a factor to consider or leave it out.\n"
+        "- Every sentence must include a number; no vague opinions like \"should create opportunities\".\n"
         "- Do NOT include any stat that argues against the pick. Lead with the reasons it's value.\n"
         "- Always include the bookmaker and odds at the end.\n\n"
         "EXAMPLE OF A GOOD POST:\n\n"
@@ -118,9 +146,10 @@ def generate_writeup(context: Dict) -> str:
         f"Other venue avg: {context['other_venue_avg']:.2f}\n"
         f"Hit rate last 5: {context['hit_rates']['last_5']}\n"
         f"Hit rate last 20: {context['hit_rates']['last_20']}\n"
-        f"{context['opponent_stats']['label']}: {context['opponent_stats'].get('avg_conceded')}\n"
-        f"Opponent rank: {context['opponent_stats'].get('rank')} of {context['opponent_stats'].get('total_teams')}\n"
-        f"Similar opponents examples: {', '.join(context['vs_similar'].get('similar_teams_examples', []))}\n"
+        f"{context['opponent_stats_line']}\n"
+        f"{context['opponent_rank_line']}\n"
+        f"Similar hit rate: {context.get('vs_similar_hit_rate')}% over {context.get('vs_similar_games')} games\n"
+        f"Similar opponents examples: {context.get('vs_similar_examples_text')}\n"
         f"Opponent name (must be used exactly): {context['opponent_name']}\n"
         f"Bookmaker: {context.get('bookmaker')}\n"
         f"Book odds: {context.get('odds')}\n"

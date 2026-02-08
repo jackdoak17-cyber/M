@@ -41,7 +41,8 @@ def _passes_hit_rate_filter(raw_values: List[float], threshold: int) -> bool:
         passes.append(sum(1 for v in values[:10] if v >= threshold) >= 7)
     if n > 10:
         hits_all = sum(1 for v in values if v >= threshold)
-        passes.append((hits_all / n) >= 0.70)
+        if (hits_all / n) < 0.70:
+            return False
     return any(passes)
 
 
@@ -65,7 +66,7 @@ def _build_candidate(
     context = {
         "opponent_avg_conceded": opp_profile.get("avg_conceded", 0.0),
         "opponent_sample_size": opp_profile.get("sample_size", 0),
-        "opponent_rank": opp_rank.get("rank"),
+        "opponent_rank": opp_rank.get("rank_most_conceded"),
         "league_avg": league_avg,
         "is_home": fixture.home_team_id == player.team_id,
         "team_win_probability": win_prob,
@@ -131,7 +132,9 @@ def _build_candidate(
         "opponent": {
             "avg_conceded": opp_profile.get("avg_conceded"),
             "league_avg": league_avg,
-            "rank": opp_rank.get("rank"),
+            "rank": opp_rank.get("rank_most_conceded"),
+            "rank_most_conceded": opp_rank.get("rank_most_conceded"),
+            "rank_fewest_conceded": opp_rank.get("rank_fewest_conceded"),
             "total_teams": opp_rank.get("total_teams"),
         },
         "vs_similar": {},
