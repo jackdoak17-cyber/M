@@ -15,6 +15,23 @@ def _hit_rate(values: list[float], threshold: int, window: int) -> str:
     return f"{hits}/{len(slice_values)}"
 
 
+def _summary_rate(values: list[float], threshold: int) -> tuple[str, int]:
+    if not values:
+        return "0/0", 0
+    if len(values) >= 20:
+        window = 20
+    elif len(values) >= 10:
+        window = 10
+    elif len(values) >= 7:
+        window = 7
+    else:
+        window = 5
+    slice_values = values[:window]
+    hits = sum(1 for value in slice_values if value >= threshold)
+    pct = int(round(hits / window * 100))
+    return f"{hits}/{window}", pct
+
+
 def build_writeup_context(pick: Dict) -> Dict:
     raw_values = [float(v) for v in pick["baseline"].get("raw_values", []) if v is not None]
     threshold = pick["threshold"]
@@ -31,11 +48,12 @@ def build_writeup_context(pick: Dict) -> Dict:
     return {
         "player": pick["player_name"],
         "team": pick["team_name"],
-        "opponent": pick["opponent_name"],
+        "opponent_name": pick["opponent_name"],
         "league": pick["league_name"],
         "market": pick["market_label"],
         "threshold": threshold,
         "sample_size": len(raw_values),
+        "raw_values": raw_values,
         "venue": "home" if is_home else "away",
         "venue_avg": venue_avg,
         "other_venue_avg": other_avg,
@@ -50,7 +68,7 @@ def build_writeup_context(pick: Dict) -> Dict:
             "home_avg": pick["baseline"].get("home_avg"),
             "away_avg": pick["baseline"].get("away_avg"),
         },
-        "opponent": {
+        "opponent_stats": {
             "label": opponent_label,
             "avg_conceded": pick["opponent"].get("avg_conceded"),
             "rank": pick["opponent"].get("rank"),
@@ -90,7 +108,7 @@ def generate_writeup(context: Dict) -> str:
         "💰 1.80"
     )
     user_prompt = (
-        f"Player: {context['player']} ({context['team']}) vs {context['opponent']} "
+        f"Player: {context['player']} ({context['team']}) vs {context['opponent_name']} "
         f"({context['league']})\n"
         f"Market: {context['market']}\n"
         f"Baseline per90: {context['baseline']['weighted_per90']:.2f}\n"
@@ -100,9 +118,10 @@ def generate_writeup(context: Dict) -> str:
         f"Other venue avg: {context['other_venue_avg']:.2f}\n"
         f"Hit rate last 5: {context['hit_rates']['last_5']}\n"
         f"Hit rate last 20: {context['hit_rates']['last_20']}\n"
-        f"{context['opponent']['label']}: {context['opponent'].get('avg_conceded')}\n"
-        f"Opponent rank: {context['opponent'].get('rank')} of {context['opponent'].get('total_teams')}\n"
+        f"{context['opponent_stats']['label']}: {context['opponent_stats'].get('avg_conceded')}\n"
+        f"Opponent rank: {context['opponent_stats'].get('rank')} of {context['opponent_stats'].get('total_teams')}\n"
         f"Similar opponents examples: {', '.join(context['vs_similar'].get('similar_teams_examples', []))}\n"
+        f"Opponent name (must be used exactly): {context['opponent_name']}\n"
         f"Bookmaker: {context.get('bookmaker')}\n"
         f"Book odds: {context.get('odds')}\n"
         "Write the note."
@@ -115,4 +134,29 @@ def generate_writeup(context: Dict) -> str:
         system=system_prompt,
         messages=[{"role": "user", "content": user_prompt}],
     )
-    return response.content[0].text.strip()
+    text = response.content[0].text.strip()
+    opponent_name = context["opponent_name"]
+    league_name = context["league"]
+    title_line = f"🎯 {context['player']} {context['market']} vs {opponent_name} ({league_name})"
+    summary_rate, summary_pct = _summary_rate(context.get("raw_values", []), context["threshold"])
+    summary_line = f"📊 {summary_rate} ({summary_pct}%)"
+    odds_line = f"💰 {context.get('bookmaker')} {context.get('odds')}"
+
+    if "vs Opponent" in text or "vs opponent" in text:
+        text = text.replace("vs Opponent", f"vs {opponent_name}")
+        text = text.replace("vs opponent", f"vs {opponent_name}")
+
+    lines = [line for line in text.splitlines() if line.strip() != ""]
+    if not lines or not lines[0].startswith("🎯"):
+        lines = [title_line, ""] + lines
+    if not any(line.startswith("📊") for line in lines):
+        lines.append("")
+        lines.append(summary_line)
+    if not any(line.startswith("💰") for line in lines):
+        lines.append(odds_line)
+    else:
+        # Ensure odds line is last.
+        odds_only = [line for line in lines if line.startswith("💰")]
+        lines = [line for line in lines if not line.startswith("💰")] + odds_only
+
+    return "\n".join(lines).strip()
