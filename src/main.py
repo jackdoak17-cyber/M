@@ -186,7 +186,7 @@ def main(args: Optional[Iterable[str]] = None) -> None:
     parser = argparse.ArgumentParser(description="Generate Premier League prop sheets.")
     parser.add_argument(
         "--saturday",
-        help="Override Saturday date (YYYY-MM-DD). Sunday will be the following day.",
+        help="Override scan start date (YYYY-MM-DD). Backward compatible alias.",
     )
     parser.add_argument(
         "--start-date",
@@ -206,10 +206,13 @@ def main(args: Optional[Iterable[str]] = None) -> None:
     parsed = parser.parse_args(args=args)
 
     today = datetime.now(ZoneInfo(settings.timezone)).date()
-    start_date = _parse_date(parsed.start_date) or today
+    override_date = _parse_date(parsed.saturday)
+    start_date = _parse_date(parsed.start_date) or override_date or today
     day_count = max(parsed.days, 1)
 
     output_dir = Path(parsed.output_dir)
+    by_fixture_dir = output_dir / "by_fixture"
+    player_props_dir = output_dir / "player_props"
     for offset in range(day_count):
         day = start_date + timedelta(days=offset)
         fixtures = data_fetcher.get_fixtures_for_day(day)
@@ -218,18 +221,27 @@ def main(args: Optional[Iterable[str]] = None) -> None:
         day_label = day.strftime("%A")
         sheet = generate_prop_sheet_for_fixtures(fixtures, day_label)
         filename = f"{day_label.lower()}_prop_sheet_by_fixture.txt"
-        _write_output(output_dir / filename, sheet)
+        _write_output(by_fixture_dir / filename, sheet)
 
-    override_date = _parse_date(parsed.saturday)
-    saturday = override_date or _next_saturday(today)
-    sunday = saturday + timedelta(days=1)
-    saturday_hundred, saturday_eighty = generate_weekend_player_posts(saturday)
-    sunday_combined = generate_weekend_player_post_combined(sunday)
-
-    output_dir = Path(parsed.output_dir)
-    _write_output(output_dir / "saturday_player_props_100.txt", saturday_hundred)
-    _write_output(output_dir / "saturday_player_props_80.txt", saturday_eighty)
-    _write_output(output_dir / "sunday_player_props.txt", sunday_combined)
+        player_lines = weekend_player_props.collect_player_props_for_day(day)
+        if not player_lines:
+            continue
+        hundred, eighty = weekend_player_props.split_props_by_tier(player_lines)
+        if any(hundred.values()):
+            _write_output(
+                player_props_dir / f"{day_label.lower()}_player_props_100.txt",
+                formatter.format_weekend_props_post(hundred, "100"),
+            )
+        if any(eighty.values()):
+            _write_output(
+                player_props_dir / f"{day_label.lower()}_player_props_80.txt",
+                formatter.format_weekend_props_post(eighty, "80"),
+            )
+        if day_label.lower() == "sunday" and (any(hundred.values()) or any(eighty.values())):
+            _write_output(
+                player_props_dir / "sunday_player_props.txt",
+                formatter.format_weekend_props_combined(hundred, eighty),
+            )
 
 
 if __name__ == "__main__":
