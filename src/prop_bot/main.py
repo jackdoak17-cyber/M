@@ -28,6 +28,24 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s: %(mes
 log = logging.getLogger(__name__)
 
 
+def _passes_hit_rate_filter(raw_values: List[float], threshold: int) -> bool:
+    values = [float(v) for v in raw_values if v is not None]
+    n = len(values)
+    if n < 5:
+        return False
+    if sum(1 for v in values[:5] if v >= threshold) < 4:
+        return False
+    if n >= 7 and sum(1 for v in values[:7] if v >= threshold) < 6:
+        return False
+    if n >= 10 and sum(1 for v in values[:10] if v >= threshold) < 7:
+        return False
+    if n > 10:
+        hits_all = sum(1 for v in values if v >= threshold)
+        if hits_all / n < 0.70:
+            return False
+    return True
+
+
 def _build_candidate(
     fixture,
     player,
@@ -53,6 +71,7 @@ def _build_candidate(
         "is_home": fixture.home_team_id == player.team_id,
         "team_win_probability": win_prob,
         "stat_type": market.label,
+        "threshold": threshold,
         "share_projection": (share_data.get("player_share") * opp_profile.get("avg_conceded", 0.0))
         if share_data
         else None,
@@ -82,6 +101,8 @@ def _build_candidate(
         threshold,
     )
     if not price:
+        return None
+    if not (1.8 <= price <= 4.0):
         return None
 
     edge_data = edge.calculate_value_edge(probability, price)
@@ -167,6 +188,15 @@ def run() -> None:
                 base = baseline.calculate_player_baseline(player.player_id, market.stat_type_id, fixture.league_id)
                 if not base or base["sample_size"] < settings.min_appearances:
                     continue
+                eligible_thresholds = []
+                for threshold in market.thresholds:
+                    if base["simple_avg"] < threshold * 0.5:
+                        continue
+                    if not _passes_hit_rate_filter(base["raw_values"], threshold):
+                        continue
+                    eligible_thresholds.append(threshold)
+                if not eligible_thresholds:
+                    continue
 
                 opp_key = (opponent_id, market.stat_type_id, fixture.league_id)
                 if opp_key not in opponent_context_cache:
@@ -193,7 +223,7 @@ def run() -> None:
                     fixture.league_id,
                 )
 
-                for threshold in market.thresholds:
+                for threshold in eligible_thresholds:
                     candidate = _build_candidate(
                         fixture,
                         player,
@@ -208,7 +238,9 @@ def run() -> None:
                     )
                     if candidate:
                         candidate["composite_score"] = round(
-                            candidate["confidence"]["score"] * candidate["edge"]["edge_percentage"],
+                            (candidate["confidence"]["score"] * 0.3)
+                            + (candidate["edge"]["our_probability"] * 100 * 0.5)
+                            + (candidate["edge"]["edge_percentage"] * 0.2),
                             2,
                         )
                         candidates.append(candidate)

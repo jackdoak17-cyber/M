@@ -118,5 +118,9 @@ Implement v1 engine per handoff docs (fixtures → candidates → top 10 → wri
 - Leagues: 8, 9, 72, 82, 301, 384, 390, 444, 501, 564, 568, 600
 - Markets: shots, SOT, fouls committed, fouls drawn, tackles
 - Filters: min 8 appearances, confidence ≥ 65, edge ≥ 10%
+- Filters: tiered recent hit-rate gate (4/5, 6/7, 7/10, 70% overall for 11–20 games)
+- Filters: odds range 1.80–4.00 and minimum avg ≥ 0.5 × threshold
+- Ranking: (confidence * 0.3) + (our_probability * 100 * 0.5) + (edge% * 0.2)
+- Output: one pick per player (dedup)
 - Prop bot uses pooled DB connections to avoid per-query reconnect cost.
 - Similar-opponent analysis now runs only for final top picks when `PROP_INCLUDE_SIMILAR=1`.

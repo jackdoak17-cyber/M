@@ -56,6 +56,17 @@ def calculate_confidence(baseline: Dict, context: Dict) -> Dict:
     else:
         score -= 3
 
+    threshold = context.get("threshold")
+    raw_values = baseline.get("raw_values", [])
+    if threshold is not None and raw_values:
+        window = raw_values[: min(10, len(raw_values))]
+        hits = sum(1 for v in window if float(v) >= threshold)
+        last_10_hitrate = hits / len(window)
+        if last_10_hitrate == 0:
+            score -= 40
+        elif last_10_hitrate < 0.3:
+            score -= 20
+
     score = max(0, min(100, score))
     tier = "PASS"
     if score >= 80:

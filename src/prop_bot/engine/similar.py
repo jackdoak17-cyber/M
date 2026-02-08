@@ -57,7 +57,7 @@ def get_performance_vs_similar(
         cur.execute(tier_query, (stat_type_id, league_id, cutoff, opponent_team_id))
         row = cur.fetchone()
     if not row:
-        return {}
+        return {"opponent_tier": None, "games_vs_similar": 0}
     tier = int(row["tier"])
 
     games_query = """
