@@ -1,0 +1,29 @@
+{
+  "last_updated": "2026-02-08T21:21:02.971948",
+  "total_picks": 1,
+  "total_hits": 0,
+  "overall_hit_rate": 0.0,
+  "total_pnl": -10.0,
+  "avg_odds": 1.84,
+  "by_confidence_tier": {
+    "LOCK": {
+      "total": 1,
+      "hits": 0,
+      "pnl": -10.0
+    }
+  },
+  "by_league": {
+    "Serie A": {
+      "total": 1,
+      "hits": 0,
+      "pnl": -10.0
+    }
+  },
+  "by_market": {
+    "2+ fouls committed": {
+      "total": 1,
+      "hits": 0,
+      "pnl": -10.0
+    }
+  }
+}

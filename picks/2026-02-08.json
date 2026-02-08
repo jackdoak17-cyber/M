@@ -1,0 +1,167 @@
+{
+  "date": "2026-02-08",
+  "generated_at": "2026-02-08T21:21:02.971158",
+  "picks_count": 1,
+  "picks": [
+    {
+      "player_id": 132259,
+      "player_name": "Gianluca Mancini",
+      "team_id": 37,
+      "team_name": "Roma",
+      "opponent_id": 585,
+      "opponent_name": "Cagliari",
+      "fixture_id": 19425119,
+      "fixture_date": "2026-02-09T19:45:00+00:00",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "2+ fouls committed",
+      "threshold": 2,
+      "baseline": {
+        "weighted_per90": 2.717434737375497,
+        "simple_avg": 2.5,
+        "last_5_avg": 3.0,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 19,
+          "2+": 17,
+          "3+": 10,
+          "4+": 2
+        },
+        "home_avg": 2.0,
+        "away_avg": 3.0,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 1.1920791213585393,
+        "coeff_of_variation": 0.47683164854341575,
+        "avg_minutes": 88.85,
+        "min_minutes": 74.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          2.0,
+          2.0,
+          3.0,
+          3.0,
+          5.0,
+          1.0,
+          5.0,
+          2.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          2.0,
+          0.0,
+          3.0,
+          3.0,
+          2.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          88.0,
+          90.0,
+          74.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          85.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 15.0,
+        "league_avg": 12.378612716763007,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 10,
+        "avg_vs_similar": 2.3,
+        "hitrate_vs_similar": 70.0,
+        "similar_teams_examples": [
+          "Cagliari",
+          "Cremonese",
+          "Juventus"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 2.72,
+        "adjusted_projection": 2.77,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.1270604716320336,
+            "concedes": 15.0,
+            "league_avg": 12.378612716763007,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.8666666666666667,
+            "venue_avg": 2.0,
+            "overall_avg": 2.5,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9872222222222221,
+            "avg_minutes": 88.85,
+            "times_subbed_early": 0,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.964
+      },
+      "confidence": {
+        "score": 82,
+        "tier": "LOCK"
+      },
+      "probability": 0.7638,
+      "edge": {
+        "our_probability": 0.7638,
+        "implied_probability": 0.5435,
+        "probability_edge": 0.2203,
+        "fair_odds": 1.31,
+        "bookmaker_odds": 1.84,
+        "expected_value": 0.4054,
+        "edge_percentage": 40.54,
+        "kelly_quarter": 0.1207,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.84,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 70.9,
+      "rank": 1,
+      "writeup": "🎯 Mancini 2+ Fouls Committed vs Cagliari (Serie A)\nHe's averaging 2.72 fouls per 90 this season and has committed at least 2 fouls in all 5 of his last 5 matches and 17 of his last 20 overall. His last 5 games have averaged 3.00 fouls per match, well above the 2+ line. Against similar opponents like Cagliari, Cremonese, and Juventus this season he's hit this in 7 out of 10 games (70%).\n📊 17/20 (85%)\n💰 Kambi 1.84",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
