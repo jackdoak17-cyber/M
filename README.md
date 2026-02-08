@@ -12,6 +12,7 @@ Create a `.env.local` (or export env vars) with:
 ```
 SUPABASE_DB_URL=postgresql://...
 ANTHROPIC_API_KEY=...
+PROP_MIN_APPEARANCES=5
 ```
 
 Optional:

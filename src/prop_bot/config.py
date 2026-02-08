@@ -66,7 +66,7 @@ def get_settings() -> Settings:
         anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY"),
         model_name=os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-20250514"),
         lookahead_hours=int(os.environ.get("PROP_LOOKAHEAD_HOURS", "48")),
-        min_appearances=int(os.environ.get("PROP_MIN_APPEARANCES", "8")),
+        min_appearances=int(os.environ.get("PROP_MIN_APPEARANCES", "5")),
         min_edge_pct=float(os.environ.get("PROP_MIN_EDGE_PCT", "10")),
         min_confidence=float(os.environ.get("PROP_MIN_CONFIDENCE", "65")),
         max_candidates=int(os.environ.get("PROP_MAX_PICKS", "10")),

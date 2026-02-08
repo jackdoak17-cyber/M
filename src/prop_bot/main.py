@@ -33,17 +33,16 @@ def _passes_hit_rate_filter(raw_values: List[float], threshold: int) -> bool:
     n = len(values)
     if n < 5:
         return False
-    if sum(1 for v in values[:5] if v >= threshold) < 4:
-        return False
-    if n >= 7 and sum(1 for v in values[:7] if v >= threshold) < 6:
-        return False
-    if n >= 10 and sum(1 for v in values[:10] if v >= threshold) < 7:
-        return False
+    passes = []
+    passes.append(sum(1 for v in values[:5] if v >= threshold) >= 4)
+    if n >= 7:
+        passes.append(sum(1 for v in values[:7] if v >= threshold) >= 6)
+    if n >= 10:
+        passes.append(sum(1 for v in values[:10] if v >= threshold) >= 7)
     if n > 10:
         hits_all = sum(1 for v in values if v >= threshold)
-        if hits_all / n < 0.70:
-            return False
-    return True
+        passes.append((hits_all / n) >= 0.70)
+    return any(passes)
 
 
 def _build_candidate(
@@ -193,7 +192,7 @@ def run() -> None:
                     continue
                 eligible_thresholds = []
                 for threshold in market.thresholds:
-                    if base["simple_avg"] < threshold * 0.5:
+                    if base["simple_avg"] < threshold:
                         continue
                     if not _passes_hit_rate_filter(base["raw_values"], threshold):
                         continue
