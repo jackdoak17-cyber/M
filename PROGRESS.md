@@ -1,6 +1,6 @@
 # Premier League Prop Sheet Generator - Development Progress
 
-## Last Updated: 2026-02-07 12:13
+## Last Updated: 2026-02-08 10:08
 
 ## Current Phase: Phase 8 - Automation Setup
 
@@ -82,3 +82,39 @@ Not started.
 
 ## Notes
 - Team props scope trimmed to shots + shots on target only (corners/goal kicks/free kicks removed).
+
+---
+
+# Automated Prop Bot (Multi-League) - Development Progress
+
+## Current Phase: Phase 1 - Foundation
+
+## Completed Phases:
+- [ ] Phase 1: Foundation (structure + core engine modules)
+- [ ] Phase 2: Engine Layers (baseline, opponent, adjustments, distribution)
+- [ ] Phase 3: Odds + Edge + Selection
+- [ ] Phase 4: Write-ups (Claude)
+- [ ] Phase 5: Output + Result Tracking
+- [ ] Phase 6: Automation + Docs
+
+## Current Task:
+Implement v1 engine per handoff docs (fixtures → candidates → top 10 → write-ups → JSON output).
+
+## Next Steps:
+1. Wire engine modules into the main runner and validate against Supabase data.
+2. Add workflows for daily picks and result checks.
+3. Validate with a dry run and inspect sample JSON output.
+
+## New Files Added (Prop Bot):
+- src/prop_bot/main.py (entry point)
+- src/prop_bot/check_results.py (result tracking)
+- src/prop_bot/engine/* (data + engine layers)
+- .github/workflows/daily_picks.yml
+- .github/workflows/check_results.yml
+
+## Configuration Decisions Made (Prop Bot):
+- Uses direct Supabase Postgres via `SUPABASE_DB_URL`
+- Model: claude-sonnet-4-20250514 (set `ANTHROPIC_API_KEY`)
+- Leagues: 8, 9, 72, 82, 301, 384, 390, 444, 501, 564, 568, 600
+- Markets: shots, SOT, fouls committed, fouls drawn, tackles
+- Filters: min 8 appearances, confidence ≥ 65, edge ≥ 10%
