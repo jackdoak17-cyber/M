@@ -61,6 +61,7 @@ Not started.
 - Prop sheet player names now use initial+surname format to prevent line wraps.
 - Prop sheet fixture sections now render as flat lists (no section headers).
 - Prop sheet output filenames include `by_fixture` for easier scanning in GitHub.
+- Prop sheet generator now scans the next 7 days and writes a sheet for any day with fixtures (e.g., Tuesday/Wednesday) using `{weekday}_prop_sheet_by_fixture.txt`.
 
 ## Verified Data Sources (Supabase)
 - fixtures: schedule + scores (starting_at, home/away_team_id, status)

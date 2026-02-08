@@ -151,6 +151,13 @@ def _build_fixture_section(fixture: data_fetcher.FixtureRow) -> str:
 
 def generate_prop_sheet_for_day(day: date, day_label: str) -> str:
     fixtures = data_fetcher.get_fixtures_for_day(day)
+    return generate_prop_sheet_for_fixtures(fixtures, day_label)
+
+
+def generate_prop_sheet_for_fixtures(
+    fixtures: Iterable[data_fetcher.FixtureRow],
+    day_label: str,
+) -> str:
     sections = [_build_fixture_section(fixture) for fixture in fixtures]
     return formatter.generate_full_prop_sheet(day_label, sections)
 
@@ -182,28 +189,44 @@ def main(args: Optional[Iterable[str]] = None) -> None:
         help="Override Saturday date (YYYY-MM-DD). Sunday will be the following day.",
     )
     parser.add_argument(
+        "--start-date",
+        help="Start date for fixture scans (YYYY-MM-DD). Defaults to today.",
+    )
+    parser.add_argument(
+        "--days",
+        type=int,
+        default=7,
+        help="Number of days to scan for fixtures.",
+    )
+    parser.add_argument(
         "--output-dir",
         default="output",
         help="Directory to write prop sheet files.",
     )
     parsed = parser.parse_args(args=args)
 
-    override_date = _parse_date(parsed.saturday)
-    if override_date:
-        saturday = override_date
-    else:
-        today = datetime.now(ZoneInfo(settings.timezone)).date()
-        saturday = _next_saturday(today)
-    sunday = saturday + timedelta(days=1)
+    today = datetime.now(ZoneInfo(settings.timezone)).date()
+    start_date = _parse_date(parsed.start_date) or today
+    day_count = max(parsed.days, 1)
 
-    saturday_sheet = generate_prop_sheet_for_day(saturday, "Saturday")
-    sunday_sheet = generate_prop_sheet_for_day(sunday, "Sunday")
+    output_dir = Path(parsed.output_dir)
+    for offset in range(day_count):
+        day = start_date + timedelta(days=offset)
+        fixtures = data_fetcher.get_fixtures_for_day(day)
+        if not fixtures:
+            continue
+        day_label = day.strftime("%A")
+        sheet = generate_prop_sheet_for_fixtures(fixtures, day_label)
+        filename = f"{day_label.lower()}_prop_sheet_by_fixture.txt"
+        _write_output(output_dir / filename, sheet)
+
+    override_date = _parse_date(parsed.saturday)
+    saturday = override_date or _next_saturday(today)
+    sunday = saturday + timedelta(days=1)
     saturday_hundred, saturday_eighty = generate_weekend_player_posts(saturday)
     sunday_combined = generate_weekend_player_post_combined(sunday)
 
     output_dir = Path(parsed.output_dir)
-    _write_output(output_dir / "saturday_prop_sheet_by_fixture.txt", saturday_sheet)
-    _write_output(output_dir / "sunday_prop_sheet_by_fixture.txt", sunday_sheet)
     _write_output(output_dir / "saturday_player_props_100.txt", saturday_hundred)
     _write_output(output_dir / "saturday_player_props_80.txt", saturday_eighty)
     _write_output(output_dir / "sunday_player_props.txt", sunday_combined)
