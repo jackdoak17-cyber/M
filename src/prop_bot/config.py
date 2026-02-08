@@ -37,6 +37,11 @@ MARKETS = [
 
 # Bookmaker IDs from OddsSearch data.
 BOOKMAKER_IDS = (2, 3, 4)  # Bet365, Kambi, Paddy Power
+BOOKMAKER_NAMES = {
+    2: "Bet365",
+    3: "Kambi",
+    4: "Paddy Power",
+}
 
 
 @dataclass(frozen=True)

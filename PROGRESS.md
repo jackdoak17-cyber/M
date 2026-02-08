@@ -122,5 +122,6 @@ Implement v1 engine per handoff docs (fixtures → candidates → top 10 → wri
 - Filters: odds range 1.80–4.00 and minimum avg ≥ 0.5 × threshold
 - Ranking: (confidence * 0.3) + (our_probability * 100 * 0.5) + (edge% * 0.2)
 - Output: one pick per player (dedup)
+- Writeups: opponent stats mirrored for fouls markets and bookmaker included; prompt excludes projections/edge.
 - Prop bot uses pooled DB connections to avoid per-query reconnect cost.
 - Similar-opponent analysis now runs only for final top picks when `PROP_INCLUDE_SIMILAR=1`.

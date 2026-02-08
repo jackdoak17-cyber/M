@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Optional, Sequence
 
-from src.prop_bot.config import BOOKMAKER_IDS
+from src.prop_bot.config import BOOKMAKER_IDS, BOOKMAKER_NAMES
 from src.prop_bot.db import db_cursor
 
 
@@ -16,10 +16,10 @@ def get_player_market_odds(
     market_key: str,
     threshold: int,
     bookmaker_ids: Sequence[int] = BOOKMAKER_IDS,
-) -> Optional[float]:
+) -> Optional[dict]:
     line = _threshold_to_line(threshold)
     query = """
-        select price_decimal
+        select price_decimal, bookmaker_id
         from odds_outcomes
         where fixture_id = %s
           and market_key = %s
@@ -35,7 +35,13 @@ def get_player_market_odds(
         row = cur.fetchone()
     if not row:
         return None
-    return float(row["price_decimal"] or 0.0)
+    price = float(row["price_decimal"] or 0.0)
+    bookmaker_id = int(row["bookmaker_id"]) if row["bookmaker_id"] is not None else None
+    return {
+        "price": price,
+        "bookmaker_id": bookmaker_id,
+        "bookmaker": BOOKMAKER_NAMES.get(bookmaker_id, "Unknown"),
+    }
 
 
 def get_team_win_odds(

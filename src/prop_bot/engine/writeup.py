@@ -7,20 +7,58 @@ from anthropic import Anthropic
 from src.prop_bot.config import get_settings
 
 
+def _hit_rate(values: list[float], threshold: int, window: int) -> str:
+    if not values:
+        return "0/0"
+    slice_values = values[: min(window, len(values))]
+    hits = sum(1 for value in slice_values if value >= threshold)
+    return f"{hits}/{len(slice_values)}"
+
+
 def build_writeup_context(pick: Dict) -> Dict:
+    raw_values = [float(v) for v in pick["baseline"].get("raw_values", []) if v is not None]
+    threshold = pick["threshold"]
+    market_label = pick["market_label"].lower()
+    is_home = bool(pick.get("is_home"))
+    venue_avg = pick["baseline"].get("home_avg") if is_home else pick["baseline"].get("away_avg")
+    other_avg = pick["baseline"].get("away_avg") if is_home else pick["baseline"].get("home_avg")
+    opponent_label = "Opponent avg conceded"
+    if "fouls committed" in market_label:
+        opponent_label = "Opponent fouls drawn per game"
+    elif "fouls drawn" in market_label:
+        opponent_label = "Opponent fouls committed per game"
+
     return {
         "player": pick["player_name"],
         "team": pick["team_name"],
         "opponent": pick["opponent_name"],
         "league": pick["league_name"],
         "market": pick["market_label"],
-        "baseline": pick["baseline"],
-        "opponent": pick["opponent"],
+        "threshold": threshold,
+        "sample_size": len(raw_values),
+        "venue": "home" if is_home else "away",
+        "venue_avg": venue_avg,
+        "other_venue_avg": other_avg,
+        "hit_rates": {
+            "last_5": _hit_rate(raw_values, threshold, 5),
+            "last_20": _hit_rate(raw_values, threshold, 20),
+        },
+        "baseline": {
+            "weighted_per90": pick["baseline"].get("weighted_per90"),
+            "simple_avg": pick["baseline"].get("simple_avg"),
+            "last_5_avg": pick["baseline"].get("last_5_avg"),
+            "home_avg": pick["baseline"].get("home_avg"),
+            "away_avg": pick["baseline"].get("away_avg"),
+        },
+        "opponent": {
+            "label": opponent_label,
+            "avg_conceded": pick["opponent"].get("avg_conceded"),
+            "rank": pick["opponent"].get("rank"),
+            "total_teams": pick["opponent"].get("total_teams"),
+        },
         "vs_similar": pick.get("vs_similar", {}),
-        "projection": pick["projection"],
-        "confidence": pick["confidence"],
-        "edge": pick["edge"],
         "odds": pick.get("odds"),
+        "bookmaker": pick.get("bookmaker"),
     }
 
 
@@ -33,8 +71,23 @@ def generate_writeup(context: Dict) -> str:
 
     system_prompt = (
         "You are a betting analyst who writes short, factual, data-backed prop notes. "
-        "No hype, no guarantees, no emojis. Use the numbers provided. "
-        "Write 3-5 sentences max."
+        "Use the numbers provided. Write 3-5 sentences max.\n\n"
+        "RULES:\n"
+        "- For fouls committed picks: reference how many fouls the opponent DRAWS, not commits.\n"
+        "- For fouls drawn picks: reference how many fouls the opponent COMMITS, not draws.\n"
+        "- NEVER mention projection numbers, edge percentages, or model outputs.\n"
+        "- Hit rates ALWAYS include the denominator: \"14 of his last 20\" not \"14 of his matches\".\n"
+        "- Use the opponent name provided; never write \"opponent\" generically.\n"
+        "- When vs_similar data includes team names, name them: \"against teams like X, Y, and Z\".\n"
+        "- Do NOT include any stat that argues against the pick. Lead with the reasons it's value.\n"
+        "- Always include the bookmaker and odds at the end.\n\n"
+        "EXAMPLE OF A GOOD POST:\n\n"
+        "🎯 Avdullahu 1+ Foul Committed vs Bayern Munich (Bundesliga)\n\n"
+        "He's averaging 1.27 fouls per 90 this season and has committed at least 1 foul in 5 of his last 5 and 14 of his last 20 overall. "
+        "Away from home he averages 1.1 per game compared to 0.7 at home — and this is an away trip to Munich. "
+        "Against similar opponents like Leverkusen, Gladbach, and Bayern this season he's hit this in 5 out of 6 games (83%). Looks good value to me.\n\n"
+        "📊 14/20 (70%)\n"
+        "💰 1.80"
     )
     user_prompt = (
         f"Player: {context['player']} ({context['team']}) vs {context['opponent']} "
@@ -42,13 +95,16 @@ def generate_writeup(context: Dict) -> str:
         f"Market: {context['market']}\n"
         f"Baseline per90: {context['baseline']['weighted_per90']:.2f}\n"
         f"Last 5 avg: {context['baseline']['last_5_avg']:.2f}\n"
-        f"Hit rates: {context['baseline']['hit_rates']}\n"
-        f"Opponent avg conceded: {context['opponent'].get('avg_conceded')}\n"
+        f"Venue: {context['venue']}\n"
+        f"Venue avg: {context['venue_avg']:.2f}\n"
+        f"Other venue avg: {context['other_venue_avg']:.2f}\n"
+        f"Hit rate last 5: {context['hit_rates']['last_5']}\n"
+        f"Hit rate last 20: {context['hit_rates']['last_20']}\n"
+        f"{context['opponent']['label']}: {context['opponent'].get('avg_conceded')}\n"
         f"Opponent rank: {context['opponent'].get('rank')} of {context['opponent'].get('total_teams')}\n"
-        f"Adjusted projection: {context['projection']['adjusted_projection']}\n"
-        f"Our probability: {context['edge']['our_probability']}\n"
+        f"Similar opponents examples: {', '.join(context['vs_similar'].get('similar_teams_examples', []))}\n"
+        f"Bookmaker: {context.get('bookmaker')}\n"
         f"Book odds: {context.get('odds')}\n"
-        f"Edge %: {context['edge']['edge_percentage']}\n"
         "Write the note."
     )
 

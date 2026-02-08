@@ -6,8 +6,18 @@ from typing import Dict
 from src.prop_bot.db import db_cursor
 
 
+def _effective_stat_type_id(stat_type_id: int) -> int:
+    # Mirror fouls markets for opponent context: committed -> drawn, drawn -> committed.
+    if stat_type_id == 56:
+        return 96
+    if stat_type_id == 96:
+        return 56
+    return stat_type_id
+
+
 def get_opponent_profile(opponent_team_id: int, stat_type_id: int, league_id: int) -> Dict | None:
     cutoff = datetime.utcnow() - timedelta(days=120)
+    effective_stat_type_id = _effective_stat_type_id(stat_type_id)
     query = """
         with opponent_conceded as (
             select
@@ -31,7 +41,7 @@ def get_opponent_profile(opponent_team_id: int, stat_type_id: int, league_id: in
     with db_cursor() as cur:
         cur.execute(
             query,
-            (opponent_team_id, stat_type_id, opponent_team_id, opponent_team_id, league_id, cutoff),
+            (opponent_team_id, effective_stat_type_id, opponent_team_id, opponent_team_id, league_id, cutoff),
         )
         row = cur.fetchone()
     if not row or row["sample_size"] is None or row["sample_size"] == 0:
@@ -44,6 +54,7 @@ def get_opponent_profile(opponent_team_id: int, stat_type_id: int, league_id: in
 
 def get_league_average(stat_type_id: int, league_id: int) -> float:
     cutoff = datetime.utcnow() - timedelta(days=120)
+    effective_stat_type_id = _effective_stat_type_id(stat_type_id)
     query = """
         with league_avg as (
             select f.id, sum(case when fps.type_id = %s then fps.value else 0 end) as total_stat
@@ -59,13 +70,14 @@ def get_league_average(stat_type_id: int, league_id: int) -> float:
         from league_avg;
     """
     with db_cursor() as cur:
-        cur.execute(query, (stat_type_id, league_id, cutoff))
+        cur.execute(query, (effective_stat_type_id, league_id, cutoff))
         row = cur.fetchone()
     return float(row["league_avg_per_team"] or 0.0) if row else 0.0
 
 
 def get_opponent_rank(opponent_team_id: int, stat_type_id: int, league_id: int) -> Dict:
     cutoff = datetime.utcnow() - timedelta(days=120)
+    effective_stat_type_id = _effective_stat_type_id(stat_type_id)
     query = """
         with team_concessions as (
             select
@@ -108,7 +120,7 @@ def get_opponent_rank(opponent_team_id: int, stat_type_id: int, league_id: int) 
         where def_team_id = %s;
     """
     with db_cursor() as cur:
-        cur.execute(query, (stat_type_id, league_id, cutoff, opponent_team_id))
+        cur.execute(query, (effective_stat_type_id, league_id, cutoff, opponent_team_id))
         row = cur.fetchone()
     if not row:
         return {}

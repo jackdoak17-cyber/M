@@ -94,14 +94,15 @@ def _build_candidate(
     if probability is None:
         return None
 
-    price = odds.get_player_market_odds(
+    odds_data = odds.get_player_market_odds(
         fixture.fixture_id,
         player.player_id,
         market.odds_market_key,
         threshold,
     )
-    if not price:
+    if not odds_data:
         return None
+    price = odds_data["price"]
     if not (1.8 <= price <= 4.0):
         return None
 
@@ -140,6 +141,8 @@ def _build_candidate(
         "probability": probability,
         "edge": edge_data,
         "odds": price,
+        "bookmaker": odds_data.get("bookmaker"),
+        "bookmaker_id": odds_data.get("bookmaker_id"),
     }
 
 
