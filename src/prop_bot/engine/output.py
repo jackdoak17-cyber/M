@@ -36,6 +36,18 @@ def save_picks_to_file(picks: List[Dict], output_dir: str = "picks") -> str:
     return str(filepath)
 
 
+def save_writeups_text(picks: List[Dict], output_dir: str = "picks") -> str:
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+    date_str = datetime.utcnow().strftime("%Y-%m-%d")
+    blocks = [pick.get("writeup", "").strip() for pick in picks if pick.get("writeup")]
+    content = "\n\n".join(blocks).strip()
+    filepath = Path(output_dir) / f"{date_str}_writeups.txt"
+    filepath.write_text(content, encoding="utf-8")
+    latest_path = Path(output_dir) / "LATEST_WRITEUPS.txt"
+    latest_path.write_text(content, encoding="utf-8")
+    return str(filepath)
+
+
 def load_all_picks(output_dir: str = "picks") -> List[Dict]:
     path = Path(output_dir)
     if not path.exists():

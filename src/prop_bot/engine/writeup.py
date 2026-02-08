@@ -36,26 +36,39 @@ def build_writeup_context(pick: Dict) -> Dict:
     raw_values = [float(v) for v in pick["baseline"].get("raw_values", []) if v is not None]
     threshold = pick["threshold"]
     market_label = pick["market_label"].lower()
+    stat_type_label = pick.get("stat_type_label", "")
+    is_fouls_committed = stat_type_label == "fouls_committed" or "fouls committed" in market_label
+    is_fouls_drawn = stat_type_label == "fouls_drawn" or "fouls drawn" in market_label
+    is_fouls_market = is_fouls_committed or is_fouls_drawn
+    is_shots_market = stat_type_label in {"shots", "shots_on_target"}
     is_home = bool(pick.get("is_home"))
     venue_avg = pick["baseline"].get("home_avg") if is_home else pick["baseline"].get("away_avg")
     other_avg = pick["baseline"].get("away_avg") if is_home else pick["baseline"].get("home_avg")
     opponent_label = "Opponent avg conceded"
-    if "fouls committed" in market_label:
+    if is_fouls_committed:
         opponent_label = "Opponent fouls drawn per game"
-    elif "fouls drawn" in market_label:
+    elif is_fouls_drawn:
         opponent_label = "Opponent fouls committed per game"
 
     opponent_stats = pick.get("opponent", {})
     rank_fewest = opponent_stats.get("rank_fewest_conceded")
-    include_opponent_stats = rank_fewest != 1 and opponent_stats.get("avg_conceded") is not None
-    opponent_stats_line = (
-        f"{opponent_label}: {opponent_stats.get('avg_conceded')}" if include_opponent_stats else ""
+    opponent_avg = opponent_stats.get("avg_conceded")
+    league_avg = opponent_stats.get("league_avg")
+    rank_most = opponent_stats.get("rank_most_conceded")
+    total_teams = opponent_stats.get("total_teams")
+    include_opponent_stats = (
+        opponent_avg is not None
+        and (is_fouls_market or rank_fewest != 1)
     )
-    opponent_rank_line = (
-        f"Opponent rank (most conceded): {opponent_stats.get('rank_most_conceded')} of {opponent_stats.get('total_teams')}"
-        if include_opponent_stats
-        else ""
-    )
+    opponent_stats_line = ""
+    if include_opponent_stats:
+        parts = [f"{opponent_label}: {float(opponent_avg):.1f} per game"]
+        if league_avg is not None:
+            parts.append(f"league avg {float(league_avg):.1f}")
+        if rank_most is not None and total_teams:
+            parts.append(f"rank most {int(rank_most)}/{int(total_teams)}")
+        opponent_stats_line = " (" + ", ".join(parts[1:]) + ")"
+        opponent_stats_line = f"{parts[0]}{opponent_stats_line}" if len(parts) > 1 else parts[0]
 
     vs_similar = pick.get("vs_similar", {})
     vs_hit_rate = vs_similar.get("hitrate_vs_similar")
@@ -65,7 +78,7 @@ def build_writeup_context(pick: Dict) -> Dict:
     if vs_games is None:
         vs_games = 0
     vs_examples = vs_similar.get("similar_teams_examples", []) or []
-    include_vs_similar = (vs_games or 0) > 0 and vs_hit_rate >= 60
+    include_vs_similar = is_shots_market and (vs_games or 0) > 0 and vs_hit_rate >= 60
     if not include_vs_similar:
         vs_examples = []
     vs_examples_text = ", ".join(vs_examples) if vs_examples else ""
@@ -93,8 +106,10 @@ def build_writeup_context(pick: Dict) -> Dict:
             "home_avg": pick["baseline"].get("home_avg"),
             "away_avg": pick["baseline"].get("away_avg"),
         },
+        "stat_type_label": stat_type_label,
+        "is_fouls_market": is_fouls_market,
         "opponent_stats_line": opponent_stats_line,
-        "opponent_rank_line": opponent_rank_line,
+        "opponent_stats_required": is_fouls_market and bool(opponent_stats_line),
         "vs_similar": vs_similar,
         "vs_similar_hit_rate": vs_hit_rate,
         "vs_similar_games": vs_games,
@@ -117,8 +132,11 @@ def generate_writeup(context: Dict) -> str:
         "You are a betting analyst who writes short, factual, data-backed prop notes. "
         "Use the numbers provided. Write 3-5 sentences max.\n\n"
         "RULES:\n"
+        "- Always mention the player's team (club) in the title or first sentence.\n"
         "- For fouls committed picks: reference how many fouls the opponent DRAWS, not commits.\n"
         "- For fouls drawn picks: reference how many fouls the opponent COMMITS, not draws.\n"
+        "- For fouls markets, always include the opponent foul context line when provided (avg, league avg, rank).\n"
+        "- Do NOT include vs_similar for fouls markets; it's only relevant for shots and SOT.\n"
         "- NEVER mention projection numbers, edge percentages, or model outputs.\n"
         "- Hit rates ALWAYS include the denominator: \"14 of his last 20\" not \"14 of his matches\".\n"
         "- Use the opponent name provided; never write \"opponent\" generically.\n"
@@ -127,15 +145,15 @@ def generate_writeup(context: Dict) -> str:
         "- If the opponent ranks 1st for fewest conceded in the stat, do not frame it as a positive. "
         "Either mention it honestly as a factor to consider or leave it out.\n"
         "- Every sentence must include a number; no vague opinions like \"should create opportunities\".\n"
+        "- Avoid filler like \"well above the line\"; let the numbers speak.\n"
         "- Do NOT include any stat that argues against the pick. Lead with the reasons it's value.\n"
         "- Always include the bookmaker and odds at the end.\n\n"
         "EXAMPLE OF A GOOD POST:\n\n"
-        "🎯 Avdullahu 1+ Foul Committed vs Bayern Munich (Bundesliga)\n\n"
-        "He's averaging 1.27 fouls per 90 this season and has committed at least 1 foul in 5 of his last 5 and 14 of his last 20 overall. "
-        "Away from home he averages 1.1 per game compared to 0.7 at home — and this is an away trip to Munich. "
-        "Against similar opponents like Leverkusen, Gladbach, and Bayern this season he's hit this in 5 out of 6 games (83%). Looks good value to me.\n\n"
-        "📊 14/20 (70%)\n"
-        "💰 1.80"
+        "🎯 Mancini (Roma) 2+ Fouls Committed vs Cagliari (Serie A)\n\n"
+        "He's averaging 2.72 fouls per 90 this season and has committed 2+ in all 5 of his last 5 and 17 of his last 20 overall. "
+        "Cagliari draw 15.0 fouls per game — most in Serie A vs the 12.4 league average. Looks good value to me.\n\n"
+        "📊 17/20 (85%)\n"
+        "💰 Kambi 1.84"
     )
     lines = [
         f"Player: {context['player']} ({context['team']}) vs {context['opponent_name']} ({context['league']})",
@@ -149,9 +167,8 @@ def generate_writeup(context: Dict) -> str:
         f"Hit rate last 20: {context['hit_rates']['last_20']}",
     ]
     if context["opponent_stats_line"]:
-        lines.append(context["opponent_stats_line"])
-    if context["opponent_rank_line"]:
-        lines.append(context["opponent_rank_line"])
+        prefix = "Opponent context (must use): " if context.get("opponent_stats_required") else ""
+        lines.append(f"{prefix}{context['opponent_stats_line']}")
     if context.get("include_vs_similar"):
         lines.append(
             f"Similar hit rate: {context.get('vs_similar_hit_rate')}% over {context.get('vs_similar_games')} games"
@@ -177,7 +194,7 @@ def generate_writeup(context: Dict) -> str:
     text = response.content[0].text.strip()
     opponent_name = context["opponent_name"]
     league_name = context["league"]
-    title_line = f"🎯 {context['player']} {context['market']} vs {opponent_name} ({league_name})"
+    title_line = f"🎯 {context['player']} ({context['team']}) {context['market']} vs {opponent_name} ({league_name})"
     summary_rate, summary_pct = _summary_rate(context.get("raw_values", []), context["threshold"])
     summary_line = f"📊 {summary_rate} ({summary_pct}%)"
     odds_line = f"💰 {context.get('bookmaker')} {context.get('odds')}"
@@ -187,8 +204,12 @@ def generate_writeup(context: Dict) -> str:
         text = text.replace("vs opponent", f"vs {opponent_name}")
 
     lines = [line for line in text.splitlines() if line.strip() != ""]
-    if not lines or not lines[0].startswith("🎯"):
+    if not lines:
+        lines = [title_line]
+    if not lines[0].startswith("🎯"):
         lines = [title_line, ""] + lines
+    else:
+        lines[0] = title_line
     if not any(line.startswith("📊") for line in lines):
         lines.append("")
         lines.append(summary_line)

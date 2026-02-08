@@ -127,3 +127,5 @@ Implement v1 engine per handoff docs (fixtures → candidates → top 10 → wri
 - Writeups: omit vs_similar when hit rate <60%; suppress opponent concession stats when opponent ranks #1 fewest.
 - Prop bot uses pooled DB connections to avoid per-query reconnect cost.
 - Similar-opponent analysis now runs only for final top picks when `PROP_INCLUDE_SIMILAR=1`.
+- Writeups now force team name in title, include opponent foul context for fouls markets, and skip vs_similar for fouls.
+- Daily picks now emit `picks/*_writeups.txt` plus `picks/LATEST_WRITEUPS.txt` for copy/paste.

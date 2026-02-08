@@ -276,6 +276,7 @@ def run() -> None:
         pick["result"] = {"actual_value": None, "hit": None, "checked_at": None}
 
     output_path = output.save_picks_to_file(top_picks, output_dir="picks")
+    output.save_writeups_text(top_picks, output_dir="picks")
     all_picks = output.load_all_picks(output_dir="picks")
     output.update_summary(all_picks, output_dir="picks")
     log.info("Saved picks to %s", output_path)
