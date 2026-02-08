@@ -2,8 +2,23 @@ from __future__ import annotations
 
 import json
 from datetime import datetime
+from decimal import Decimal
 from pathlib import Path
-from typing import Dict, List
+from typing import Any, Dict, List
+
+
+def _json_safe(value: Any) -> Any:
+    if isinstance(value, datetime):
+        return value.isoformat()
+    if isinstance(value, Decimal):
+        return float(value)
+    if isinstance(value, dict):
+        return {key: _json_safe(val) for key, val in value.items()}
+    if isinstance(value, list):
+        return [_json_safe(item) for item in value]
+    if isinstance(value, tuple):
+        return [_json_safe(item) for item in value]
+    return value
 
 
 def save_picks_to_file(picks: List[Dict], output_dir: str = "picks") -> str:
@@ -13,7 +28,7 @@ def save_picks_to_file(picks: List[Dict], output_dir: str = "picks") -> str:
         "date": date_str,
         "generated_at": datetime.utcnow().isoformat(),
         "picks_count": len(picks),
-        "picks": picks,
+        "picks": _json_safe(picks),
     }
     filepath = Path(output_dir) / f"{date_str}.json"
     filepath.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
