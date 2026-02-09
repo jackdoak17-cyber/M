@@ -8,15 +8,16 @@ Leave a like if you find these useful.
 📊1+ Fouls Drawn in ≥5/5📊
 - J. Anthony (Burnley) = 2, 3, 1, 2, 3
 - H. Wilson (Fulham) = 2, 1, 1, 1, 1
-- R. Cherki (Man City) = 2, 3, 2, 2, 1
 - M. Gibbs-White (Nottm Forest) = 2, 1, 2, 1, 4
 - B. Brobbey (Sunderland) = 2, 1, 2, 3, 2
 - H. Bueno (Wolves) = 1, 1, 2, 1, 1
 - Y. Mosquera (Wolves) = 2, 2, 2, 1, 5
 
 📊1+ Fouls Committed in ≥5/5📊
+- C. Baleba (Brighton) = 1, 1, 1, 1, 2
 - Florentino (Burnley) = 2, 1, 1, 2, 2
 - L. Ugochukwu (Burnley) = 2, 1, 1, 1, 2
 - J. Cuenca (Fulham) = 1, 1, 1, 1, 1
+- Rodri (Man City) = 1, 2, 2, 1, 1
 - I. Sangaré (Nottm Forest) = 3, 1, 2, 1, 1
 - Y. Mosquera (Wolves) = 2, 1, 2, 2, 1
