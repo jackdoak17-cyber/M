@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Mancini 2+ Fouls Committed vs Cagliari (Serie A)\nHe's averaging 2.72 fouls per 90 this season and has committed at least 2 fouls in all 5 of his last 5 matches and 17 of his last 20 overall. His last 5 games have averaged 3.00 fouls per match, well above the 2+ line. Against similar opponents like Cagliari, Cremonese, and Juventus this season he's hit this in 7 out of 10 games (70%).\n📊 17/20 (85%)\n💰 Kambi 1.84",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": false,
+        "checked_at": "2026-02-10T04:41:10.495990"
       }
     }
   ]
