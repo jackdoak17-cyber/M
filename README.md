@@ -4,6 +4,7 @@ This repo contains two automated workflows:
 
 1) Premier League prop sheets and weekend player posts (text outputs in `output/`)
 2) A multi-league prop betting bot that generates top 10 value picks (JSON in `picks/`)
+3) A Polymarket tracker for selected markets (JSON + markdown snapshots in `picks/polymarket/`)
 
 ## Local Setup
 
@@ -21,6 +22,7 @@ Optional:
 TELEGRAM_BOT_TOKEN=...
 TELEGRAM_CHAT_ID=...
 PROP_INCLUDE_SIMILAR=1
+POLYMARKET_GAMMA_BASE_URL=https://gamma-api.polymarket.com
 ```
 
 Install dependencies:
@@ -49,8 +51,58 @@ Check results:
 python -m src.prop_bot.check_results
 ```
 
+## Run Polymarket Tracker
+
+Track selected markets (excluding EPL Top Goalscorer) and write snapshots:
+
+```
+python -m src.polymarket_tracker
+```
+
+Generate a midweek-style post block with custom wording:
+
+```
+python -m src.polymarket_tracker --window-label "after this weekend"
+```
+
+Artifacts:
+
+- `picks/polymarket/latest.json`
+- `picks/polymarket/latest.md`
+- `picks/polymarket/previous.json`
+- `picks/polymarket/midweek_posts.txt`
+
+## Run Polymarket Weekly Posts
+
+Generate Tuesday posts and update weekly baseline:
+
+```
+python -m src.polymarket_posts --generate
+```
+
+Preview posts without updating baseline:
+
+```
+python -m src.polymarket_posts --preview
+```
+
+Force a specific baseline file:
+
+```
+python -m src.polymarket_posts --generate --baseline picks/polymarket/weekly_baseline.json
+```
+
+Artifacts:
+
+- `picks/polymarket/posts/pl_market_watch.txt`
+- `picks/polymarket/posts/biggest_mover_*.txt` (if triggered)
+- `picks/polymarket/posts/post_summary.json`
+- `picks/polymarket/weekly_baseline.json`
+
 ## GitHub Actions
 
 `Generate Premier League Prop Sheets` runs the existing prop sheets workflow.  
 `Daily Prop Picks` generates JSON picks daily.  
 `Check Prop Results` updates results once fixtures complete.
+`Track Polymarket Markets` snapshots selected Polymarket probabilities every 6 hours.
+`Generate Polymarket Weekly Posts` builds Tuesday-ready post copy and updates weekly baseline.
