@@ -1,5 +1,35 @@
-No tracked market changes met the posting threshold.
+🏆 Change in EPL Winner probability since last update:
 
-- Threshold: 0.5pp
-- Window: since last update
-- Generated: 2026-02-14T11:08:33Z
+• Arsenal: 67.5% -> 68.5%
+• Manchester City: 28.5% -> 28.5%
+• Aston Villa: 1.2% -> 1.2%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-winner
+
+🏆 Change in UCL Winner probability since last update:
+
+• Arsenal: 19.5% -> 19.5%
+• Bayern Munich: 16.5% -> 16.5%
+• Barcelona: 10.5% -> 11.5%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/uefa-champions-league-winner
+
+🏆 Change in PFA Player Of The Year probability since last update:
+
+• Declan Rice: 37% -> 36%
+• Erling Haaland: 26% -> 26%
+• Bruno Fernandes: 15% -> 14.5%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
+
+🏆 Change in EPL Top 4 probability since last update:
+
+• Arsenal (Top 4): 98.2% -> 98.2%
+• Manchester City (Top 4): 98% -> 97.3%
+• Aston Villa (Top 4): 63.2% -> 63.2%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-top-4-finish
