@@ -1,0 +1,167 @@
+{
+  "date": "2026-02-14",
+  "generated_at": "2026-02-14T08:05:55.710324",
+  "picks_count": 1,
+  "picks": [
+    {
+      "player_id": 37656089,
+      "player_name": "Jacobo Ramón",
+      "team_id": 268,
+      "team_name": "Como",
+      "opponent_id": 109,
+      "opponent_name": "Fiorentina",
+      "fixture_id": 19425122,
+      "fixture_date": "2026-02-14T14:00:00+00:00",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "is_home": true,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "1+ shots",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.5916179834484352,
+        "simple_avg": 1.25,
+        "last_5_avg": 1.8,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 5,
+          "3+": 2,
+          "4+": 2
+        },
+        "home_avg": 1.0909090909090908,
+        "away_avg": 1.4444444444444444,
+        "home_games": 11,
+        "away_games": 9,
+        "std_dev": 1.4823523268955432,
+        "coeff_of_variation": 1.1858818615164346,
+        "avg_minutes": 85.4,
+        "min_minutes": 44.0,
+        "times_subbed_early": 2,
+        "raw_values": [
+          6.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          4.0,
+          0.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          44.0,
+          90.0,
+          46.0,
+          88.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 13.666666666666666,
+        "league_avg": 12.51388888888889,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 4,
+        "avg_vs_similar": 1.25,
+        "hitrate_vs_similar": 100.0,
+        "similar_teams_examples": [
+          "Bologna",
+          "Empoli",
+          "Fiorentina"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.59,
+        "adjusted_projection": 1.31,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0552719200887901,
+            "concedes": 13.666666666666666,
+            "league_avg": 12.51388888888889,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.9125,
+            "venue_avg": 1.0909090909090908,
+            "overall_avg": 1.25,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.948888888888889,
+            "avg_minutes": 85.4,
+            "times_subbed_early": 2,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.914
+      },
+      "confidence": {
+        "score": 67,
+        "tier": "STRONG"
+      },
+      "probability": 0.6331,
+      "edge": {
+        "our_probability": 0.6331,
+        "implied_probability": 0.4902,
+        "probability_edge": 0.1429,
+        "fair_odds": 1.58,
+        "bookmaker_odds": 2.04,
+        "expected_value": 0.2915,
+        "edge_percentage": 29.15,
+        "kelly_quarter": 0.0701,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.04,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 57.58,
+      "rank": 1,
+      "writeup": "🎯 Jacobo Ramón (Como) 1+ shots vs Fiorentina (Serie A)\nThe Como midfielder is averaging 1.59 shots per 90 this season and has registered 1+ shots in 4 of his last 5 matches and 14 of his last 20 overall. Against teams like Bologna, Empoli, and Fiorentina, he's hit this line in all 4 games (100%). His shot output has increased recently with 1.80 per 90 over his last 5 appearances.\n📊 14/20 (70%)\n💰 Kambi 2.04",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
