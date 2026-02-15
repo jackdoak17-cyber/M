@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Jacobo Ramón (Como) 1+ shots vs Fiorentina (Serie A)\nThe Como midfielder is averaging 1.59 shots per 90 this season and has registered 1+ shots in 4 of his last 5 matches and 14 of his last 20 overall. Against teams like Bologna, Empoli, and Fiorentina, he's hit this line in all 4 games (100%). His shot output has increased recently with 1.80 per 90 over his last 5 appearances.\n📊 14/20 (70%)\n💰 Kambi 2.04",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-02-15T10:54:48.621976"
       }
     }
   ]
