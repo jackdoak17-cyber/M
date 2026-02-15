@@ -1,0 +1,147 @@
+{
+  "date": "2026-02-15",
+  "generated_at": "2026-02-15T07:51:01.314986",
+  "picks_count": 1,
+  "picks": [
+    {
+      "player_id": 21803033,
+      "player_name": "Azzedine Ounahi",
+      "team_id": 231,
+      "team_name": "Girona",
+      "opponent_id": 83,
+      "opponent_name": "FC Barcelona",
+      "fixture_id": 19439483,
+      "fixture_date": "2026-02-16T20:00:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": true,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "2+ shots",
+      "threshold": 2,
+      "baseline": {
+        "weighted_per90": 2.3310982667209332,
+        "simple_avg": 2.0,
+        "last_5_avg": 2.4,
+        "sample_size": 10,
+        "hit_rates": {
+          "1+": 9,
+          "2+": 7,
+          "3+": 3,
+          "4+": 1
+        },
+        "home_avg": 2.2,
+        "away_avg": 1.8,
+        "home_games": 5,
+        "away_games": 5,
+        "std_dev": 1.1547005383792515,
+        "coeff_of_variation": 0.5773502691896257,
+        "avg_minutes": 78.4,
+        "min_minutes": 31.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          2.0,
+          2.0,
+          3.0,
+          2.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          83.0,
+          82.0,
+          71.0,
+          90.0,
+          31.0,
+          90.0,
+          90.0,
+          75.0,
+          82.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 10.8,
+        "league_avg": 12.483660130718954,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 4,
+        "avg_vs_similar": 2.0,
+        "hitrate_vs_similar": 50.0,
+        "similar_teams_examples": [
+          "Celta de Vigo",
+          "Deportivo Alavés",
+          "FC Barcelona"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 2.33,
+        "adjusted_projection": 1.93,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9190785340314137,
+            "concedes": 10.8,
+            "league_avg": 12.483660130718954,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.05,
+            "venue_avg": 2.2,
+            "overall_avg": 2.0,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.8711111111111112,
+            "avg_minutes": 78.4,
+            "times_subbed_early": 1,
+            "sample_size": 10
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.841
+      },
+      "confidence": {
+        "score": 75,
+        "tier": "STRONG"
+      },
+      "probability": 0.5747,
+      "edge": {
+        "our_probability": 0.5747,
+        "implied_probability": 0.4484,
+        "probability_edge": 0.1263,
+        "fair_odds": 1.74,
+        "bookmaker_odds": 2.23,
+        "expected_value": 0.2816,
+        "edge_percentage": 28.16,
+        "kelly_quarter": 0.0572,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.23,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 56.87,
+      "rank": 1,
+      "writeup": "🎯 Azzedine Ounahi (Girona) 2+ shots vs FC Barcelona (La Liga)\nThe Girona midfielder is averaging 2.33 shots per 90 this season and has hit 2+ shots in 4 of his last 5 matches. He's been more active at home with 2.20 shots per 90 compared to just 1.80 away from home. However, he's only managed 2+ shots in 7 of his last 20 overall, showing some inconsistency in this market.\n📊 7/20 (35%)\n💰 Kambi 2.23",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}

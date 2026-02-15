@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-02-15T04:32:37.041932",
-  "total_picks": 2,
+  "last_updated": "2026-02-15T07:51:01.316218",
+  "total_picks": 3,
   "total_hits": 0,
   "overall_hit_rate": 0.0,
-  "total_pnl": -20.0,
-  "avg_odds": 1.94,
+  "total_pnl": -30.0,
+  "avg_odds": 2.04,
   "by_confidence_tier": {
     "LOCK": {
       "total": 1,
@@ -12,9 +12,9 @@
       "pnl": -10.0
     },
     "STRONG": {
-      "total": 1,
+      "total": 2,
       "hits": 0,
-      "pnl": -10.0
+      "pnl": -20.0
     }
   },
   "by_league": {
@@ -22,6 +22,11 @@
       "total": 2,
       "hits": 0,
       "pnl": -20.0
+    },
+    "La Liga": {
+      "total": 1,
+      "hits": 0,
+      "pnl": -10.0
     }
   },
   "by_market": {
@@ -31,6 +36,11 @@
       "pnl": -10.0
     },
     "1+ shots": {
+      "total": 1,
+      "hits": 0,
+      "pnl": -10.0
+    },
+    "2+ shots": {
       "total": 1,
       "hits": 0,
       "pnl": -10.0
