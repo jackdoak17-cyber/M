@@ -1,62 +1,44 @@
 🏆 Change in EPL Winner probability since last update:
 
-• Arsenal: 67.5% -> 68%
+• Arsenal: 68% -> 68.5%
 • Manchester City: 28.5% -> 28.5%
-• Aston Villa: 1.6% -> 1.4%
+• Aston Villa: 1.4% -> 1.2%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/english-premier-league-winner
 
 🏆 Change in La Liga Winner probability since last update:
 
-• Barcelona: 59.5% -> 57.5%
-• Real Madrid: 37.5% -> 38%
-• Villarreal: 0.2% -> 0.5%
+• Barcelona: 57.5% -> 59.5%
+• Real Madrid: 38% -> 38.5%
+• Villarreal: 0.5% -> 0.4%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/la-liga-winner-114
 
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 47% -> 43%
-• Erling Haaland: 23% -> 22.5%
-• Bruno Fernandes: 15.5% -> 15.5%
+• Declan Rice: 43% -> 43%
+• Erling Haaland: 22.5% -> 22.5%
+• Bruno Fernandes: 15.5% -> 14%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
-🏆 Change in Ballon d'Or Winner probability since last update:
-
-• Kylian Mbappé: 31% -> 31%
-• Lamine Yamal: 27.5% -> 27.5%
-• Harry Kane: 15.4% -> 14.7%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/ballon-dor-winner-2026
-
 🏆 Change in EPL Top 4 probability since last update:
 
-• Manchester City (Top 4): 98% -> 98%
+• Manchester City (Top 4): 98% -> 97.4%
 • Arsenal (Top 4): 97.2% -> 97.2%
-• Aston Villa (Top 4): 63.5% -> 65.2%
+• Aston Villa (Top 4): 65.2% -> 65.2%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/english-premier-league-top-4-finish
 
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 98.6% -> 97.5%
-• Burnley (Relegated): 96.4% -> 95.8%
-• West Ham (Relegated): 52% -> 52.5%
+• Wolves (Relegated): 97.5% -> 96%
+• Burnley (Relegated): 95.8% -> 95.9%
+• West Ham (Relegated): 52.5% -> 52%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
-
-🏆 Change in Next Man Utd Manager probability since last update:
-
-• Michael Carrick: 47.5% -> 45.5%
-• Oliver Glasner: 13.5% -> 14%
-• Luis Enrique: 8.6% -> 8.6%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/next-manchester-united-manager

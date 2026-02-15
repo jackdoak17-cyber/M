@@ -1,6 +1,6 @@
 # Polymarket Tracking Snapshot
 
-- Generated: `2026-02-15T12:49:44Z`
+- Generated: `2026-02-15T18:35:31Z`
 - Source: `https://gamma-api.polymarket.com`
 
 ## Markets
@@ -8,21 +8,21 @@
 ### EPL Winner
 - Slug: `english-premier-league-winner`
 - URL: https://polymarket.com/event/english-premier-league-winner
-- Status: `active=True` `closed=False` `end=2026-05-27T00:00:00Z` `volume=233824172.436425`
+- Status: `active=True` `closed=False` `end=2026-05-27T00:00:00Z` `volume=233999053.091671`
 
 | Outcome | Probability | Move |
 |---|---:|---:|
-| Arsenal | 68.0% | +0.5pp |
+| Arsenal | 68.5% | +0.5pp |
 | Manchester City | 28.5% | 0.0pp |
-| Aston Villa | 1.4% | -0.2pp |
-| Manchester United | 0.9% | 0.0pp |
+| Aston Villa | 1.2% | -0.1pp |
+| Manchester United | 0.9% | -0.1pp |
 | Liverpool | 0.2% | 0.0pp |
-| Chelsea | 0.2% | 0.0pp |
+| Brentford | 0.1% | new |
 
 ### UCL Winner
 - Slug: `uefa-champions-league-winner`
 - URL: https://polymarket.com/event/uefa-champions-league-winner
-- Status: `active=True` `closed=False` `end=2026-05-31T00:00:00Z` `volume=221479630.486055`
+- Status: `active=True` `closed=False` `end=2026-05-31T00:00:00Z` `volume=221715904.856764`
 
 | Outcome | Probability | Move |
 |---|---:|---:|
@@ -36,58 +36,58 @@
 ### La Liga Winner
 - Slug: `la-liga-winner-114`
 - URL: https://polymarket.com/event/la-liga-winner-114
-- Status: `active=True` `closed=False` `end=2026-05-30T00:00:00Z` `volume=87979867.056434`
+- Status: `active=True` `closed=False` `end=2026-05-30T00:00:00Z` `volume=88167915.046232`
 
 | Outcome | Probability | Move |
 |---|---:|---:|
-| Barcelona | 57.5% | -2.0pp |
-| Real Madrid | 38.0% | +0.5pp |
-| Villarreal | 0.5% | +0.3pp |
-| Atletico Madrid | 0.3% | 0.0pp |
-| Mallorca | 0.2% | -0.3pp |
+| Barcelona | 59.5% | +2.0pp |
+| Real Madrid | 38.5% | +0.5pp |
+| Villarreal | 0.4% | -0.1pp |
 | Athletic Bilbao | 0.2% | 0.0pp |
+| Celta Vigo | 0.1% | new |
+| Oviedo | 0.1% | new |
 
 ### PFA Player Of The Year
 - Slug: `2025-2026-pfa-players-player-of-the-year-winner`
 - URL: https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
-- Status: `active=True` `closed=False` `end=2026-08-31T23:55:00Z` `volume=7805.520371`
+- Status: `active=True` `closed=False` `end=2026-08-31T23:55:00Z` `volume=7833.667655`
 
 | Outcome | Probability | Move |
 |---|---:|---:|
-| Declan Rice | 43.0% | -4.0pp |
-| Erling Haaland | 22.5% | -0.5pp |
-| Bruno Fernandes | 15.5% | 0.0pp |
-| Phil Foden | 10.5% | new |
-| Rayan Cherki | 8.0% | new |
+| Declan Rice | 43.0% | 0.0pp |
+| Erling Haaland | 22.5% | 0.0pp |
+| Bruno Fernandes | 14.0% | -1.5pp |
+| Phil Foden | 10.5% | 0.0pp |
+| Rayan Cherki | 8.1% | +0.1pp |
 | Martin Zubimendi | 8.0% | 0.0pp |
 
 ### Ballon d'Or Winner
 - Slug: `ballon-dor-winner-2026`
 - URL: https://polymarket.com/event/ballon-dor-winner-2026
-- Status: `active=True` `closed=False` `end=2026-10-31T00:00:00Z` `volume=101322.967679`
+- Status: `active=True` `closed=False` `end=2026-10-31T00:00:00Z` `volume=101522.967679`
 
 | Outcome | Probability | Move |
 |---|---:|---:|
 | Kylian Mbappé | 31.0% | 0.0pp |
 | Lamine Yamal | 27.5% | 0.0pp |
-| Harry Kane | 14.7% | -0.8pp |
-| Erling Haaland | 13.5% | +1.0pp |
+| Harry Kane | 14.8% | +0.2pp |
+| Erling Haaland | 13.5% | 0.0pp |
 | Vinícius Júnior | 4.7% | 0.0pp |
-| Pedri | 2.4% | -0.1pp |
+| Pedri | 2.3% | -0.1pp |
 
 ### EPL Top 4
 - Slug: `english-premier-league-top-4-finish`
 - URL: https://polymarket.com/event/english-premier-league-top-4-finish
-- Status: `active=True` `closed=False` `end=2026-05-27T00:00:00Z` `volume=1039581.785354`
+- Status: `active=True` `closed=False` `end=2026-05-27T00:00:00Z` `volume=1039978.120538`
 
 | Outcome | Probability | Move |
 |---|---:|---:|
-| Manchester City (Top 4) | 98.0% | 0.0pp |
+| Manchester City (Top 4) | 97.4% | -0.7pp |
 | Arsenal (Top 4) | 97.2% | 0.0pp |
-| Aston Villa (Top 4) | 65.2% | +1.7pp |
-| Liverpool (Top 4) | 47.5% | +0.5pp |
+| Aston Villa (Top 4) | 65.2% | 0.0pp |
+| Liverpool (Top 4) | 47.5% | 0.0pp |
 | Manchester United (Top 4) | 46.0% | 0.0pp |
-| Chelsea (Top 4) | 39.5% | -1.0pp |
+| Chelsea (Top 4) | 39.5% | 0.0pp |
 
 ### EPL Relegation
 - Slug: `epl-which-clubs-get-relegated`
@@ -96,31 +96,31 @@
 
 | Outcome | Probability | Move |
 |---|---:|---:|
-| Wolves (Relegated) | 97.5% | -1.1pp |
-| Burnley (Relegated) | 95.8% | -0.6pp |
-| West Ham (Relegated) | 52.5% | +0.5pp |
-| Nottm Forest (Relegated) | 29.0% | -0.5pp |
-| Tottenham (Relegated) | 12.7% | +0.3pp |
-| Bournemouth (Relegated) | 11.6% | new |
+| Wolves (Relegated) | 96.0% | -1.4pp |
+| Burnley (Relegated) | 95.9% | +0.1pp |
+| West Ham (Relegated) | 52.0% | -0.5pp |
+| Nottm Forest (Relegated) | 29.5% | +0.5pp |
+| Tottenham (Relegated) | 12.6% | -0.1pp |
+| Leeds (Relegated) | 10.5% | new |
 
 ### Next Man Utd Manager
 - Slug: `next-manchester-united-manager`
 - URL: https://polymarket.com/event/next-manchester-united-manager
-- Status: `active=True` `closed=False` `end=2026-12-31T23:55:00Z` `volume=470657.98224`
+- Status: `active=True` `closed=False` `end=2026-12-31T23:55:00Z` `volume=470967.047`
 
 | Outcome | Probability | Move |
 |---|---:|---:|
-| Michael Carrick | 45.5% | -2.0pp |
-| Oliver Glasner | 14.0% | +0.5pp |
+| Michael Carrick | 45.5% | 0.0pp |
+| Oliver Glasner | 14.5% | +0.5pp |
 | Luis Enrique | 8.6% | 0.0pp |
 | Ole Gunnar Solskjær | 4.5% | 0.0pp |
 | Gareth Southgate | 3.8% | 0.0pp |
-| Enzo Maresca | 3.4% | 0.0pp |
+| Enzo Maresca | 3.3% | -0.1pp |
 
 ### TheUnitedStrand Haircut
 - Slug: `will-theunitedstrand-get-a-haircut-by-2025-26-season-end`
 - URL: https://polymarket.com/event/will-theunitedstrand-get-a-haircut-by-2025-26-season-end
-- Status: `active=True` `closed=False` `end=2026-05-25T00:00:00Z` `volume=48905.770895`
+- Status: `active=True` `closed=False` `end=2026-05-25T00:00:00Z` `volume=49565.850895`
 
 | Outcome | Probability | Move |
 |---|---:|---:|
