@@ -1,6 +1,24 @@
+🏆 Change in EPL Winner probability since last update:
+
+• Arsenal: 68.5% -> 68.5%
+• Manchester City: 28.5% -> 29.5%
+• Aston Villa: 1.1% -> 1.1%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-winner
+
+🏆 Change in UCL Winner probability since last update:
+
+• Arsenal: 19.5% -> 19.5%
+• Bayern Munich: 16.5% -> 16.5%
+• Barcelona: 10.5% -> 11.5%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/uefa-champions-league-winner
+
 🏆 Change in La Liga Winner probability since last update:
 
-• Barcelona: 58.5% -> 59%
+• Barcelona: 59% -> 58.5%
 • Real Madrid: 38.5% -> 38.5%
 • Athletic Bilbao: 0.2% -> 0.2%
 
@@ -9,27 +27,43 @@ https://polymarket.com/event/la-liga-winner-114
 
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 42.5% -> 42.5%
+• Declan Rice: 42.5% -> 43.5%
 • Erling Haaland: 25.5% -> 25.5%
-• Bruno Fernandes: 17% -> 16.5%
+• Bruno Fernandes: 16.5% -> 16.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
+🏆 Change in Ballon d'Or Winner probability since last update:
+
+• Kylian Mbappé: 31.5% -> 31.5%
+• Lamine Yamal: 27.5% -> 27.5%
+• Harry Kane: 14.7% -> 15.2%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/ballon-dor-winner-2026
+
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 96% -> 96.2%
-• Burnley (Relegated): 94.6% -> 94.8%
-• West Ham (Relegated): 52.5% -> 52%
+• Wolves (Relegated): 96.2% -> 96.2%
+• Burnley (Relegated): 94.8% -> 94.8%
+• West Ham (Relegated): 52% -> 52.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
 
 🏆 Change in Next Man Utd Manager probability since last update:
 
-• Michael Carrick: 44.5% -> 43.5%
+• Michael Carrick: 43.5% -> 42.5%
 • Oliver Glasner: 14.5% -> 14.5%
-• Luis Enrique: 8.8% -> 8.6%
+• Luis Enrique: 8.6% -> 8.4%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/next-manchester-united-manager
+
+🏆 Change in TheUnitedStrand Haircut probability since last update:
+
+• TheUnitedStrand: 11% -> 11.5%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/will-theunitedstrand-get-a-haircut-by-2025-26-season-end
