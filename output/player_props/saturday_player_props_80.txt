@@ -1,0 +1,26 @@
+I've collated todays Premier League 2+ player stats (80% hit-rates) based on their last 5 games.
+
+Leave a like if you find these useful.
+
+📊2+ Shots in ≥4/5📊
+- A. Scott (Bournemouth) = 0, 3, 2, 2, 2
+- Evanilson (Bournemouth) = 2, 4, 0, 3, 4
+- M. Rogers (Aston Villa) = 4, 1, 4, 2, 6
+- J. Anthony (Burnley) = 2, 2, 1, 2, 3
+- C. Palmer (Chelsea) = 5, 3, 3, 2, 2
+- E. Fernández (Chelsea) = 3, 3, 3, 2, 0
+- Estêvão (Chelsea) = 2, 4, 1, 4, 2
+- J. Pedro (Chelsea) = 7, 2, 2, 2, 0
+- E. Haaland (Man City) = 2, 3, 2, 2, 8
+- C. Summerville (West Ham) = 1, 2, 2, 2, 5
+
+📊2+ Fouls Committed in ≥4/5📊
+- I. Thiago (Brentford) = 2, 3, 2, 1, 2
+- Y. Yarmolyuk (Brentford) = 3, 2, 2, 1, 2
+- T. Castellanos (West Ham) = 2, 3, 0, 2, 3
+
+📊2+ Fouls Drawn in ≥4/5📊
+- A. Scott (Bournemouth) = 2, 1, 2, 3, 2
+- J. Hecke (Brighton) = 2, 2, 1, 2, 2
+- C. Palmer (Chelsea) = 3, 0, 3, 2, 3
+- C. Summerville (West Ham) = 1, 2, 2, 2, 2
