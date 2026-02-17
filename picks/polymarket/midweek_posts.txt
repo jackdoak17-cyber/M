@@ -1,7 +1,16 @@
+🏆 Change in EPL Winner probability since last update:
+
+• Arsenal: 67.5% -> 68.5%
+• Manchester City: 28.5% -> 28.5%
+• Aston Villa: 1.1% -> 1.1%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-winner
+
 🏆 Change in La Liga Winner probability since last update:
 
-• Real Madrid: 52.5% -> 52%
-• Barcelona: 44.5% -> 47%
+• Real Madrid: 52% -> 51.5%
+• Barcelona: 47% -> 46.5%
 • Athletic Bilbao: 0.2% -> 0.2%
 
 [🔮 via @Polymarket]
@@ -9,36 +18,27 @@ https://polymarket.com/event/la-liga-winner-114
 
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 43.5% -> 42.5%
-• Erling Haaland: 25.5% -> 25%
-• Bruno Fernandes: 17% -> 16.5%
+• Declan Rice: 42.5% -> 43%
+• Erling Haaland: 25% -> 25%
+• Bruno Fernandes: 16.5% -> 16.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Kylian Mbappé: 31.5% -> 31.5%
-• Harry Kane: 15.3% -> 18.9%
-• Lamine Yamal: 21% -> 17%
+• Kylian Mbappé: 31.5% -> 32.5%
+• Harry Kane: 18.9% -> 22.2%
+• Erling Haaland: 14% -> 14%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
 
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 96.8% -> 97.5%
-• Burnley (Relegated): 94.8% -> 94.1%
-• West Ham (Relegated): 52.5% -> 53%
+• Wolves (Relegated): 97.5% -> 98.3%
+• Burnley (Relegated): 94.1% -> 94.8%
+• West Ham (Relegated): 53% -> 52.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
-
-🏆 Change in Next Man Utd Manager probability since last update:
-
-• Michael Carrick: 43% -> 43.5%
-• Oliver Glasner: 14% -> 14%
-• Luis Enrique: 8.4% -> 8.4%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/next-manchester-united-manager
