@@ -138,9 +138,9 @@
       "rank": 1,
       "writeup": "🎯 Azzedine Ounahi (Girona) 2+ shots vs FC Barcelona (La Liga)\nThe Girona midfielder is averaging 2.33 shots per 90 this season and has hit 2+ shots in 4 of his last 5 matches. He's been more active at home with 2.20 shots per 90 compared to just 1.80 away from home. However, he's only managed 2+ shots in 7 of his last 20 overall, showing some inconsistency in this market.\n📊 7/20 (35%)\n💰 Kambi 2.23",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-02-17T11:12:48.796404"
       }
     }
   ]
