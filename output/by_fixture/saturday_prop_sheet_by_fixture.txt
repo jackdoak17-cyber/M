@@ -4,22 +4,6 @@ I've analysed the data for Saturday's fixtures and identified the most consisten
 
 If you find this useful please leave a like and remember to bookmark 🔖
 
-🟣 Aston Villa vs Leeds United ⚪ - 3:00pm
-
-I. Maatsen 1+ shots (won in 8/10)
-L. Nmecha SOT (won in 5/6)
-L. Nmecha 1+ fouls committed (won in 6/6)
-L. Bogarde 1+ fouls committed (won in 4/5)
-A. Onana 1+ fouls committed (won in 9/12)
-G. Gudmundsson 1+ fouls won (won in 18/18)
-L. Bogarde 1+ fouls won (won in 5/5)
-J. Justin 1+ fouls won (won in 8/9)
-M. Rogers 1+ fouls won (won in 17/20)
-E. Buendía 1+ fouls won (won in 9/12)
-Aston Villa 3+ corners (won in 20/20)
-Leeds United 3+ corners (won in 18/20)
-Aston Villa 4+ corners (won in 16/20)
-
 🔵 Chelsea vs Burnley 🟣 - 3:00pm
 
 E. Fernández 2+ shots (won in 15/18)
@@ -49,6 +33,22 @@ D. Ouattara 1+ fouls won (won in 10/12)
 J. Hecke 1+ fouls won (won in 14/18)
 Brentford 3+ corners (won in 17/20)
 Brighton & Hove Albion 3+ corners (won in 16/20)
+
+🟣 Aston Villa vs Leeds United ⚪ - 3:00pm
+
+I. Maatsen 1+ shots (won in 8/10)
+L. Nmecha SOT (won in 5/6)
+L. Nmecha 1+ fouls committed (won in 6/6)
+L. Bogarde 1+ fouls committed (won in 4/5)
+A. Onana 1+ fouls committed (won in 9/12)
+G. Gudmundsson 1+ fouls won (won in 18/18)
+L. Bogarde 1+ fouls won (won in 5/5)
+J. Justin 1+ fouls won (won in 8/9)
+M. Rogers 1+ fouls won (won in 17/20)
+E. Buendía 1+ fouls won (won in 9/12)
+Aston Villa 3+ corners (won in 20/20)
+Leeds United 3+ corners (won in 18/20)
+Aston Villa 4+ corners (won in 16/20)
 
 🟣 West Ham United vs AFC Bournemouth 🔴 - 5:30pm
 
