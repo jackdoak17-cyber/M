@@ -1,7 +1,16 @@
+🏆 Change in EPL Winner probability since last update:
+
+• Arsenal: 55.5% -> 56.5%
+• Manchester City: 42.5% -> 41.5%
+• Manchester United: 0.9% -> 0.6%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-winner
+
 🏆 Change in La Liga Winner probability since last update:
 
-• Barcelona: 57% -> 55.5%
-• Real Madrid: 39.5% -> 39.5%
+• Barcelona: 55.5% -> 57.5%
+• Real Madrid: 39.5% -> 40%
 • Villarreal: 0.7% -> 0.7%
 
 [🔮 via @Polymarket]
@@ -9,45 +18,27 @@ https://polymarket.com/event/la-liga-winner-114
 
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 47% -> 46.5%
-• Erling Haaland: 32% -> 32%
-• Bruno Fernandes: 13% -> 11%
+• Declan Rice: 46.5% -> 49%
+• Erling Haaland: 32% -> 30%
+• Bruno Fernandes: 11% -> 11%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
-🏆 Change in Ballon d'Or Winner probability since last update:
-
-• Kylian Mbappé: 33.5% -> 33.5%
-• Lamine Yamal: 21% -> 23%
-• Harry Kane: 19.1% -> 19.1%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/ballon-dor-winner-2026
-
 🏆 Change in EPL Top 4 probability since last update:
 
-• Manchester City (Top 4): 98.5% -> 98.8%
+• Manchester City (Top 4): 98.8% -> 98.8%
 • Arsenal (Top 4): 98% -> 98%
-• Aston Villa (Top 4): 54.6% -> 55.4%
+• Aston Villa (Top 4): 55.4% -> 57.2%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/english-premier-league-top-4-finish
 
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 99% -> 98.9%
-• Burnley (Relegated): 92.5% -> 93.7%
-• West Ham (Relegated): 50% -> 52.5%
+• Wolves (Relegated): 98.9% -> 98.9%
+• Burnley (Relegated): 93.7% -> 93.5%
+• West Ham (Relegated): 52.5% -> 52%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
-
-🏆 Change in Next Man Utd Manager probability since last update:
-
-• Michael Carrick: 48% -> 47.5%
-• Oliver Glasner: 12.5% -> 13%
-• Luis Enrique: 8.3% -> 8.3%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/next-manchester-united-manager
