@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+from urllib.parse import urlparse
 from dataclasses import dataclass
 
 from dotenv import load_dotenv
@@ -30,11 +31,35 @@ class PostingSettings:
     x_bearer_token: str | None
 
 
+def _derive_supabase_url() -> str | None:
+    raw_url = _get_env("SUPABASE_URL") or _get_env("NEXT_PUBLIC_SUPABASE_URL")
+    if raw_url:
+        if raw_url.endswith(".supabase.com"):
+            return raw_url.replace(".supabase.com", ".supabase.co")
+        return raw_url
+
+    db_url = _get_env("SUPABASE_DB_URL")
+    if not db_url:
+        return None
+
+    parsed = urlparse(db_url)
+    if not parsed.username:
+        return None
+
+    # SUPABASE_DB_URL username looks like "postgres.<project_ref>"
+    parts = parsed.username.split(".")
+    if len(parts) < 2:
+        return None
+    project_ref = parts[1]
+    return f"https://{project_ref}.supabase.co"
+
+
 def get_posting_settings() -> PostingSettings:
+    supabase_url = _derive_supabase_url()
+    if not supabase_url:
+        raise RuntimeError("Missing required env var: SUPABASE_URL (or NEXT_PUBLIC_SUPABASE_URL)")
     return PostingSettings(
-        supabase_url=_get_env("SUPABASE_URL")
-        or _get_env("NEXT_PUBLIC_SUPABASE_URL", required=True)
-        or "",
+        supabase_url=supabase_url,
         supabase_service_role_key=_get_env("SUPABASE_SERVICE_ROLE_KEY", required=True) or "",
         telegram_bot_token=_get_env("ODDS_ANALYST_X_POST_BOT_TOKEN", required=True) or "",
         telegram_chat_id=_get_env("TELEGRAM_CHAT_ID", required=True) or "",
