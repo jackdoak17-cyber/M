@@ -192,6 +192,10 @@ def _sorted_weekend_lines(lines: Iterable[PlayerPropLine]) -> List[PlayerPropLin
     )
 
 
+def count_weekend_prop_lines(lines_by_stat: Dict[str, List[PlayerPropLine]]) -> int:
+    return sum(len(lines) for lines in lines_by_stat.values())
+
+
 def format_game_section(
     home_team: str,
     away_team: str,
@@ -282,11 +286,39 @@ def format_weekend_props_combined(
     hundred_lines: Dict[str, List[PlayerPropLine]],
     eighty_lines: Dict[str, List[PlayerPropLine]],
 ) -> str:
-    blocks: List[str] = []
-    if any(hundred_lines.values()):
-        blocks.append(format_weekend_props_post(hundred_lines, "100"))
-    if any(eighty_lines.values()):
-        blocks.append(format_weekend_props_post(eighty_lines, "80"))
-    if not blocks:
+    total_100 = count_weekend_prop_lines(hundred_lines)
+    total_80 = count_weekend_prop_lines(eighty_lines)
+    if total_100 == 0 and total_80 == 0:
         return format_weekend_props_post(hundred_lines, "100")
-    return "\n\n".join(blocks)
+    if total_100 == 0:
+        return format_weekend_props_post(eighty_lines, "80")
+    if total_80 == 0:
+        return format_weekend_props_post(hundred_lines, "100")
+
+    intro = (
+        "As usual I've collated todays Premier League 1+ (100% hit-rates) and 2+ (80% hit-rates) "
+        "player stats based on their last 5 games.\n\n"
+        "Leave a like if you find these useful."
+    )
+
+    sections: List[str] = []
+    for stat_key, header in WEEKEND_HEADERS_100:
+        lines = _sorted_weekend_lines(hundred_lines.get(stat_key, []))
+        if not lines:
+            continue
+        rendered = [header]
+        rendered.extend(format_weekend_player_line(item) for item in lines)
+        sections.append("\n".join(rendered))
+
+    for stat_key, header in WEEKEND_HEADERS_80:
+        lines = _sorted_weekend_lines(eighty_lines.get(stat_key, []))
+        if not lines:
+            continue
+        rendered = [header]
+        rendered.extend(format_weekend_player_line(item) for item in lines)
+        sections.append("\n".join(rendered))
+
+    if not sections:
+        return intro
+
+    return intro + "\n\n" + "\n\n".join(sections)

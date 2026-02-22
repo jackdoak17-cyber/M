@@ -162,6 +162,8 @@ def _collect_team_lines(team_id: int) -> List[PlayerPropLine]:
 
 def collect_player_props_for_day(day) -> List[PlayerPropLine]:
     fixtures = data_fetcher.get_fixtures_for_day(day)
+    if len(fixtures) < 3:
+        return []
     team_ids = {fixture.home_team_id for fixture in fixtures} | {
         fixture.away_team_id for fixture in fixtures
     }

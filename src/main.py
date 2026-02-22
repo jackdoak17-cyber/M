@@ -227,21 +227,29 @@ def main(args: Optional[Iterable[str]] = None) -> None:
         if not player_lines:
             continue
         hundred, eighty = weekend_player_props.split_props_by_tier(player_lines)
-        if any(hundred.values()):
-            _write_output(
-                player_props_dir / f"{day_label.lower()}_player_props_100.txt",
-                formatter.format_weekend_props_post(hundred, "100"),
-            )
-        if any(eighty.values()):
-            _write_output(
-                player_props_dir / f"{day_label.lower()}_player_props_80.txt",
-                formatter.format_weekend_props_post(eighty, "80"),
-            )
-        if day_label.lower() == "sunday" and (any(hundred.values()) or any(eighty.values())):
-            _write_output(
-                player_props_dir / "sunday_player_props.txt",
-                formatter.format_weekend_props_combined(hundred, eighty),
-            )
+        total_100 = formatter.count_weekend_prop_lines(hundred)
+        total_80 = formatter.count_weekend_prop_lines(eighty)
+        combine_needed = total_100 < 24 or total_80 < 24
+        if combine_needed and (total_100 > 0 or total_80 > 0):
+            combined = formatter.format_weekend_props_combined(hundred, eighty)
+            combined_name = f"{day_label.lower()}_player_props.txt"
+            _write_output(player_props_dir / combined_name, combined)
+            if day_label.lower() == "sunday":
+                _write_output(
+                    player_props_dir / "sunday_player_props.txt",
+                    combined,
+                )
+        else:
+            if total_100 > 0:
+                _write_output(
+                    player_props_dir / f"{day_label.lower()}_player_props_100.txt",
+                    formatter.format_weekend_props_post(hundred, "100"),
+                )
+            if total_80 > 0:
+                _write_output(
+                    player_props_dir / f"{day_label.lower()}_player_props_80.txt",
+                    formatter.format_weekend_props_post(eighty, "80"),
+                )
 
 
 if __name__ == "__main__":
