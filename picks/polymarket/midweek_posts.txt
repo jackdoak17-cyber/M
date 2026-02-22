@@ -1,16 +1,7 @@
-🏆 Change in EPL Winner probability since last update:
-
-• Arsenal: 58.5% -> 55.5%
-• Manchester City: 39.5% -> 42.5%
-• Manchester United: 0.9% -> 0.8%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/english-premier-league-winner
-
 🏆 Change in La Liga Winner probability since last update:
 
-• Barcelona: 58.5% -> 57%
-• Real Madrid: 39% -> 39.5%
+• Barcelona: 57% -> 55.5%
+• Real Madrid: 39.5% -> 39.5%
 • Villarreal: 0.7% -> 0.7%
 
 [🔮 via @Polymarket]
@@ -18,9 +9,9 @@ https://polymarket.com/event/la-liga-winner-114
 
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 43% -> 47%
-• Erling Haaland: 30% -> 32%
-• Bruno Fernandes: 13% -> 13%
+• Declan Rice: 47% -> 46.5%
+• Erling Haaland: 32% -> 32%
+• Bruno Fernandes: 13% -> 11%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
@@ -28,25 +19,34 @@ https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 🏆 Change in Ballon d'Or Winner probability since last update:
 
 • Kylian Mbappé: 33.5% -> 33.5%
-• Lamine Yamal: 20.5% -> 21%
+• Lamine Yamal: 21% -> 23%
 • Harry Kane: 19.1% -> 19.1%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
 
+🏆 Change in EPL Top 4 probability since last update:
+
+• Manchester City (Top 4): 98.5% -> 98.8%
+• Arsenal (Top 4): 98% -> 98%
+• Aston Villa (Top 4): 54.6% -> 55.4%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-top-4-finish
+
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 98.9% -> 99%
-• Burnley (Relegated): 93.5% -> 92.5%
-• West Ham (Relegated): 46.5% -> 50%
+• Wolves (Relegated): 99% -> 98.9%
+• Burnley (Relegated): 92.5% -> 93.7%
+• West Ham (Relegated): 50% -> 52.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
 
 🏆 Change in Next Man Utd Manager probability since last update:
 
-• Michael Carrick: 48% -> 48%
-• Oliver Glasner: 13.5% -> 12.5%
+• Michael Carrick: 48% -> 47.5%
+• Oliver Glasner: 12.5% -> 13%
 • Luis Enrique: 8.3% -> 8.3%
 
 [🔮 via @Polymarket]
