@@ -28,7 +28,7 @@ jobs:
       - name: Poll approvals
         run: python -m src.posting.poll_telegram
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           ODDS_ANALYST_X_POST_BOT_TOKEN: ${{ secrets.ODDS_ANALYST_X_POST_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

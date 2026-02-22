@@ -32,7 +32,9 @@ class PostingSettings:
 
 def get_posting_settings() -> PostingSettings:
     return PostingSettings(
-        supabase_url=_get_env("SUPABASE_URL", required=True) or "",
+        supabase_url=_get_env("SUPABASE_URL")
+        or _get_env("NEXT_PUBLIC_SUPABASE_URL", required=True)
+        or "",
         supabase_service_role_key=_get_env("SUPABASE_SERVICE_ROLE_KEY", required=True) or "",
         telegram_bot_token=_get_env("ODDS_ANALYST_X_POST_BOT_TOKEN", required=True) or "",
         telegram_chat_id=_get_env("TELEGRAM_CHAT_ID", required=True) or "",
