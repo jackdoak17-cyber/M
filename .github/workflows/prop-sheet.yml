@@ -2,7 +2,7 @@ name: Generate Premier League Prop Sheets
 
 on:
   schedule:
-    - cron: "0 * * * 4"
+    - cron: "0 10 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -43,7 +43,7 @@ jobs:
 
           if os.getenv("GITHUB_EVENT_NAME") != "workflow_dispatch":
               now = datetime.now(ZoneInfo("Europe/London"))
-              if not (now.weekday() == 3 and now.hour == 10):
+              if now.hour != 10:
                   print("Skipping run: not 10:00 UK time.")
                   raise SystemExit(0)
           PY
