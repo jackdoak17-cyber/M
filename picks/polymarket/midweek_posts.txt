@@ -1,62 +1,53 @@
 🏆 Change in EPL Winner probability since last update:
 
-• Arsenal: 58.5% -> 58.5%
-• Manchester City: 38.5% -> 39.5%
-• Manchester United: 0.9% -> 0.9%
+• Arsenal: 58.5% -> 55.5%
+• Manchester City: 39.5% -> 42.5%
+• Manchester United: 0.9% -> 0.8%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/english-premier-league-winner
 
 🏆 Change in La Liga Winner probability since last update:
 
-• Barcelona: 46.5% -> 58.5%
-• Real Madrid: 51.5% -> 39%
-• Villarreal: 0.6% -> 0.7%
+• Barcelona: 58.5% -> 57%
+• Real Madrid: 39% -> 39.5%
+• Villarreal: 0.7% -> 0.7%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/la-liga-winner-114
 
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 47% -> 43%
-• Erling Haaland: 23.5% -> 30%
-• Bruno Fernandes: 14% -> 13%
+• Declan Rice: 43% -> 47%
+• Erling Haaland: 30% -> 32%
+• Bruno Fernandes: 13% -> 13%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Kylian Mbappé: 33% -> 33.5%
-• Lamine Yamal: 26% -> 20.5%
+• Kylian Mbappé: 33.5% -> 33.5%
+• Lamine Yamal: 20.5% -> 21%
 • Harry Kane: 19.1% -> 19.1%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
 
-🏆 Change in EPL Top 4 probability since last update:
-
-• Manchester City (Top 4): 97.4% -> 98.5%
-• Arsenal (Top 4): 98.4% -> 98.1%
-• Aston Villa (Top 4): 64.5% -> 54.4%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/english-premier-league-top-4-finish
-
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 97.5% -> 98.9%
-• Burnley (Relegated): 94.5% -> 93.5%
-• West Ham (Relegated): 53% -> 46.5%
+• Wolves (Relegated): 98.9% -> 99%
+• Burnley (Relegated): 93.5% -> 92.5%
+• West Ham (Relegated): 46.5% -> 50%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
 
 🏆 Change in Next Man Utd Manager probability since last update:
 
-• Michael Carrick: 45% -> 48%
-• Oliver Glasner: 14% -> 13.5%
-• Luis Enrique: 8.5% -> 8.3%
+• Michael Carrick: 48% -> 48%
+• Oliver Glasner: 13.5% -> 12.5%
+• Luis Enrique: 8.3% -> 8.3%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/next-manchester-united-manager
