@@ -20,13 +20,6 @@ Deno.serve(async (req) => {
   const chatId = cq.message?.chat?.id
   const messageId = cq.message?.message_id
 
-  // Answer immediately — this clears Telegram's loading spinner
-  await fetch(`${TELEGRAM_API}/answerCallbackQuery`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ callback_query_id: callbackQueryId })
-  })
-
   // Parse callback_data: "approve:post_type:YYYY-MM-DD" or "reject:..."
   const parts = data.split(':')
   if (parts.length !== 3 || !['approve', 'reject'].includes(parts[0])) {
@@ -38,6 +31,16 @@ Deno.serve(async (req) => {
   const label = action === 'approve'
     ? '✅ Approved — will post at scheduled time'
     : '❌ Rejected — post cancelled'
+
+  // Answer immediately — clears Telegram's spinner with a short confirmation
+  await fetch(`${TELEGRAM_API}/answerCallbackQuery`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      callback_query_id: callbackQueryId,
+      text: action === 'approve' ? 'Approved.' : 'Rejected.'
+    })
+  })
 
   // Update Supabase
   const serviceRoleKey =

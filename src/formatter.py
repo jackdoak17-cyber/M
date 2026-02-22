@@ -230,12 +230,14 @@ def format_game_section(
 def generate_full_prop_sheet(
     day_label: str,
     sections: Iterable[str],
+    fixture_count: int,
 ) -> str:
     header = "Todays Premier League stat list by fixture. All data driven based on recent form"
-    intro = "If you find this useful please leave a like and remember to bookmark 🔖"
     outro = "Make sure you bookmark for later 🔖\n\nGood luck with your bets 🎯"
     sections_list = [section for section in sections if section]
-    output_lines = [header, "", intro]
+    output_lines = [header]
+    if fixture_count > 2:
+        output_lines.extend(["", "If you find this useful please leave a like and remember to bookmark 🔖"])
     for index, section in enumerate(sections_list):
         output_lines.append("")
         output_lines.append(section)

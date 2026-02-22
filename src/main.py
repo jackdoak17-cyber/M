@@ -158,8 +158,9 @@ def generate_prop_sheet_for_fixtures(
     fixtures: Iterable[data_fetcher.FixtureRow],
     day_label: str,
 ) -> str:
-    sections = [_build_fixture_section(fixture) for fixture in fixtures]
-    return formatter.generate_full_prop_sheet(day_label, sections)
+    fixtures_list = list(fixtures)
+    sections = [_build_fixture_section(fixture) for fixture in fixtures_list]
+    return formatter.generate_full_prop_sheet(day_label, sections, len(fixtures_list))
 
 
 def generate_weekend_player_posts(day: date) -> tuple[str, str]:
