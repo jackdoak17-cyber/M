@@ -1,6 +1,8 @@
 create table if not exists post_approvals (
   post_key text primary key,
   slot text not null,
+  post_type text,
+  post_date date,
   scheduled_for date not null,
   status text not null check (status in ('pending','approved','rejected')),
   content_path text not null,

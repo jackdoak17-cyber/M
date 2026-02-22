@@ -13,6 +13,8 @@ from .settings import get_posting_settings
 class PostApproval:
     post_key: str
     slot: str
+    post_type: str | None = None
+    post_date: str | None = None
     scheduled_for: str
     status: str
     content_path: str

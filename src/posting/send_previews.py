@@ -25,9 +25,12 @@ def run(slot: str) -> int:
         return 0
 
     post_key = f"{info.scheduled_for.isoformat()}_{slot}"
+    post_date = info.scheduled_for.isoformat()
     payload = {
         "post_key": post_key,
         "slot": slot,
+        "post_type": slot,
+        "post_date": post_date,
         "scheduled_for": info.scheduled_for.isoformat(),
         "status": "pending",
         "content_path": str(info.path),
@@ -45,8 +48,8 @@ def run(slot: str) -> int:
     text = header + body
 
     buttons = [
-        [{"text": "✅ Approve", "callback_data": f"approve:{post_key}"}],
-        [{"text": "❌ Reject", "callback_data": f"reject:{post_key}"}],
+        [{"text": "✅ Approve", "callback_data": f"approve:{slot}:{post_date}"}],
+        [{"text": "❌ Reject", "callback_data": f"reject:{slot}:{post_date}"}],
     ]
     send_message(text, buttons=buttons)
     print(f"Preview sent for {post_key}")
