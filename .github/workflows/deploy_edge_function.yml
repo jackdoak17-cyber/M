@@ -23,4 +23,8 @@ jobs:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
           SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
         run: |
+          if ! echo "$SUPABASE_ACCESS_TOKEN" | grep -Eq '^sbp_[A-Za-z0-9_]+$'; then
+            echo "SUPABASE_ACCESS_TOKEN does not look like an sbp_ token."
+            exit 1
+          fi
           npx supabase@latest functions deploy telegram-webhook --project-ref "$SUPABASE_PROJECT_REF"
