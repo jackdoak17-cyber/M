@@ -1,0 +1,307 @@
+{
+  "date": "2026-02-22",
+  "generated_at": "2026-02-22T07:47:49.797049",
+  "picks_count": 2,
+  "picks": [
+    {
+      "player_id": 132259,
+      "player_name": "Gianluca Mancini",
+      "team_id": 37,
+      "team_name": "Roma",
+      "opponent_id": 10722,
+      "opponent_name": "Cremonese",
+      "fixture_id": 19425139,
+      "fixture_date": "2026-02-22T19:45:00+00:00",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "2+ fouls committed",
+      "threshold": 2,
+      "baseline": {
+        "weighted_per90": 2.375526771130987,
+        "simple_avg": 2.45,
+        "last_5_avg": 2.0,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 19,
+          "2+": 16,
+          "3+": 10,
+          "4+": 2
+        },
+        "home_avg": 1.9,
+        "away_avg": 3.0,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 1.234376040972246,
+        "coeff_of_variation": 0.5038269554988759,
+        "avg_minutes": 88.85,
+        "min_minutes": 74.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          2.0,
+          1.0,
+          2.0,
+          2.0,
+          3.0,
+          3.0,
+          5.0,
+          1.0,
+          5.0,
+          2.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          2.0,
+          0.0,
+          3.0,
+          3.0,
+          2.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          88.0,
+          90.0,
+          74.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          85.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 13.466666666666667,
+        "league_avg": 12.210382513661202,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 12,
+        "avg_vs_similar": 2.1666666666666665,
+        "hitrate_vs_similar": 66.7,
+        "similar_teams_examples": [
+          "Cagliari",
+          "Cremonese",
+          "Juventus"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 2.38,
+        "adjusted_projection": 2.28,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0617319310807787,
+            "concedes": 13.466666666666667,
+            "league_avg": 12.210382513661202,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.8503401360544217,
+            "venue_avg": 1.9,
+            "overall_avg": 2.45,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9872222222222221,
+            "avg_minutes": 88.85,
+            "times_subbed_early": 0,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.891
+      },
+      "confidence": {
+        "score": 72,
+        "tier": "STRONG"
+      },
+      "probability": 0.6645,
+      "edge": {
+        "our_probability": 0.6645,
+        "implied_probability": 0.5181,
+        "probability_edge": 0.1464,
+        "fair_odds": 1.5,
+        "bookmaker_odds": 1.93,
+        "expected_value": 0.2825,
+        "edge_percentage": 28.25,
+        "kelly_quarter": 0.0759,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.93,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 60.48,
+      "rank": 1,
+      "writeup": "🎯 Gianluca Mancini (Roma) 2+ fouls committed vs Cremonese (Serie A)\nHe's averaging 2.38 fouls per 90 this season and has committed 2+ in 4 of his last 5 matches and 16 of his last 20 overall. Cremonese draw 13.5 fouls per game — most in Serie A vs the 12.2 league average. Worth noting he averages just 1.90 fouls per 90 at home compared to 3.00 away.\n📊 16/20 (80%)\n💰 Kambi 1.93",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 21803033,
+      "player_name": "Azzedine Ounahi",
+      "team_id": 231,
+      "team_name": "Girona",
+      "opponent_id": 2975,
+      "opponent_name": "Deportivo Alavés",
+      "fixture_id": 19439494,
+      "fixture_date": "2026-02-23T20:00:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": false,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "2+ shots",
+      "threshold": 2,
+      "baseline": {
+        "weighted_per90": 2.3310982667209332,
+        "simple_avg": 2.0,
+        "last_5_avg": 2.4,
+        "sample_size": 10,
+        "hit_rates": {
+          "1+": 9,
+          "2+": 7,
+          "3+": 3,
+          "4+": 1
+        },
+        "home_avg": 2.2,
+        "away_avg": 1.8,
+        "home_games": 5,
+        "away_games": 5,
+        "std_dev": 1.1547005383792515,
+        "coeff_of_variation": 0.5773502691896257,
+        "avg_minutes": 78.4,
+        "min_minutes": 31.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          2.0,
+          2.0,
+          3.0,
+          2.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          83.0,
+          82.0,
+          71.0,
+          90.0,
+          31.0,
+          90.0,
+          90.0,
+          75.0,
+          82.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 13.866666666666667,
+        "league_avg": 12.656862745098039,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 4,
+        "avg_vs_similar": 2.0,
+        "hitrate_vs_similar": 50.0,
+        "similar_teams_examples": [
+          "Celta de Vigo",
+          "Deportivo Alavés",
+          "FC Barcelona"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 2.33,
+        "adjusted_projection": 2.23,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0573508907823395,
+            "concedes": 13.866666666666667,
+            "league_avg": 12.656862745098039,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.95,
+            "venue_avg": 1.8,
+            "overall_avg": 2.0,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.8711111111111112,
+            "avg_minutes": 78.4,
+            "times_subbed_early": 1,
+            "sample_size": 10
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.875
+      },
+      "confidence": {
+        "score": 67,
+        "tier": "STRONG"
+      },
+      "probability": 0.6527,
+      "edge": {
+        "our_probability": 0.6527,
+        "implied_probability": 0.495,
+        "probability_edge": 0.1577,
+        "fair_odds": 1.53,
+        "bookmaker_odds": 2.02,
+        "expected_value": 0.3185,
+        "edge_percentage": 31.85,
+        "kelly_quarter": 0.0781,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.02,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 59.11,
+      "rank": 2,
+      "writeup": "🎯 Azzedine Ounahi (Girona) 2+ shots vs Deportivo Alavés (La Liga)\nThe midfielder is averaging 2.33 shots per 90 this season and has hit 2+ shots in 4 of his last 5 matches. He's recorded 2+ shots in 7 of his last 20 overall, though his away average drops to 1.80 per 90 compared to 2.20 at home.\n📊 7/20 (35%)\n💰 Kambi 2.02",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
