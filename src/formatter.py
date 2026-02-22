@@ -227,7 +227,7 @@ def generate_full_prop_sheet(
     day_label: str,
     sections: Iterable[str],
 ) -> str:
-    header = f"📊 PREMIER LEAGUE PROPS STAT LIST BY FIXTURE ({day_label.upper()})"
+    header = f"📊 Premier League props stat list by fixture ({day_label.title()})"
     intro = (
         f"I've analysed the data for {day_label}'s fixtures and identified the most consistent props. "
         "All data-driven, all based on recent form.\n\n"
