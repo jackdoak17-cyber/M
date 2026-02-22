@@ -231,12 +231,8 @@ def generate_full_prop_sheet(
     day_label: str,
     sections: Iterable[str],
 ) -> str:
-    header = f"📊 Premier League props stat list by fixture ({day_label.title()})"
-    intro = (
-        f"I've analysed the data for {day_label}'s fixtures and identified the most consistent props. "
-        "All data-driven, all based on recent form.\n\n"
-        "If you find this useful please leave a like and remember to bookmark 🔖"
-    )
+    header = "Todays Premier League stat list by fixture. All data driven based on recent form"
+    intro = "If you find this useful please leave a like and remember to bookmark 🔖"
     outro = "Make sure you bookmark for later 🔖\n\nGood luck with your bets 🎯"
     sections_list = [section for section in sections if section]
     output_lines = [header, "", intro]

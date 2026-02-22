@@ -2,7 +2,7 @@ name: Poll Telegram Approvals
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "* * * * *"
   workflow_dispatch:
 
 permissions:
