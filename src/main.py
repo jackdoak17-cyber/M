@@ -219,8 +219,9 @@ def main(args: Optional[Iterable[str]] = None) -> None:
         if not fixtures:
             continue
         day_label = day.strftime("%A")
+        date_label = day.strftime("%Y-%m-%d")
         sheet = generate_prop_sheet_for_fixtures(fixtures, day_label)
-        filename = f"{day_label.lower()}_prop_sheet_by_fixture.txt"
+        filename = f"{date_label}_{day_label.lower()}_prop_sheet_by_fixture.txt"
         _write_output(by_fixture_dir / filename, sheet)
 
         player_lines = weekend_player_props.collect_player_props_for_day(day)
@@ -232,22 +233,22 @@ def main(args: Optional[Iterable[str]] = None) -> None:
         combine_needed = total_100 < 24 or total_80 < 24
         if combine_needed and (total_100 > 0 or total_80 > 0):
             combined = formatter.format_weekend_props_combined(hundred, eighty)
-            combined_name = f"{day_label.lower()}_player_props.txt"
+            combined_name = f"{date_label}_{day_label.lower()}_player_props.txt"
             _write_output(player_props_dir / combined_name, combined)
             if day_label.lower() == "sunday":
                 _write_output(
-                    player_props_dir / "sunday_player_props.txt",
+                    player_props_dir / f"{date_label}_sunday_player_props.txt",
                     combined,
                 )
         else:
             if total_100 > 0:
                 _write_output(
-                    player_props_dir / f"{day_label.lower()}_player_props_100.txt",
+                    player_props_dir / f"{date_label}_{day_label.lower()}_player_props_100.txt",
                     formatter.format_weekend_props_post(hundred, "100"),
                 )
             if total_80 > 0:
                 _write_output(
-                    player_props_dir / f"{day_label.lower()}_player_props_80.txt",
+                    player_props_dir / f"{date_label}_{day_label.lower()}_player_props_80.txt",
                     formatter.format_weekend_props_post(eighty, "80"),
                 )
 
