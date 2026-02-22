@@ -3,12 +3,16 @@ from __future__ import annotations
 import argparse
 
 from .supabase_client import fetch_post_approval, fetch_telegram_state, update_post_status, update_telegram_state
-from .telegram_client import answer_callback, get_updates
+from .telegram_client import answer_callback, delete_webhook, get_updates
 from .settings import get_posting_settings
 
 
 def run() -> int:
     settings = get_posting_settings()
+    try:
+        delete_webhook()
+    except Exception as exc:
+        print(f"Warning: failed to clear webhook: {exc}")
     state = fetch_telegram_state()
     offset = state.last_update_id + 1 if state.last_update_id else None
     updates = get_updates(offset=offset, timeout_sec=10)

@@ -35,6 +35,14 @@ def answer_callback(callback_id: str, text: str | None = None) -> None:
     response.raise_for_status()
 
 
+def delete_webhook(drop_pending_updates: bool = False) -> None:
+    payload: dict[str, Any] = {}
+    if drop_pending_updates:
+        payload["drop_pending_updates"] = True
+    response = requests.post(f"{_base_url()}/deleteWebhook", json=payload, timeout=20)
+    response.raise_for_status()
+
+
 def get_updates(offset: int | None = None, timeout_sec: int = 10) -> dict[str, Any]:
     payload: dict[str, Any] = {"timeout": timeout_sec}
     if offset is not None:
