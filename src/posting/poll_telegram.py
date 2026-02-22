@@ -48,17 +48,19 @@ def run() -> int:
                 answer_callback(callback_id, text="No matching post found.")
             continue
 
-        if action == "approve":
-            update_post_status(post_key, "approved")
+        response_text = "Unknown action."
+        try:
+            if action == "approve":
+                update_post_status(post_key, "approved")
+                response_text = "Approved."
+            elif action == "reject":
+                update_post_status(post_key, "rejected")
+                response_text = "Rejected."
+        except Exception as exc:
+            response_text = f"Failed: {exc}"
+        finally:
             if callback_id:
-                answer_callback(callback_id, text="Approved.")
-        elif action == "reject":
-            update_post_status(post_key, "rejected")
-            if callback_id:
-                answer_callback(callback_id, text="Rejected.")
-        else:
-            if callback_id:
-                answer_callback(callback_id, text="Unknown action.")
+                answer_callback(callback_id, text=response_text)
 
     if max_update_id != state.last_update_id:
         update_telegram_state(max_update_id)
