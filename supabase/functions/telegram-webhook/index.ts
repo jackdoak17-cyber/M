@@ -36,10 +36,13 @@ Deno.serve(async (req) => {
     : '❌ Rejected — post cancelled'
 
   // Update Supabase
-  const supabase = createClient(
-    Deno.env.get('SUPABASE_URL')!,
-    Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
-  )
+  const serviceRoleKey =
+    Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? Deno.env.get('SERVICE_ROLE_KEY')
+  if (!serviceRoleKey) {
+    throw new Error('Missing SERVICE_ROLE_KEY')
+  }
+
+  const supabase = createClient(Deno.env.get('SUPABASE_URL')!, serviceRoleKey)
 
   await supabase
     .from('post_approvals')
