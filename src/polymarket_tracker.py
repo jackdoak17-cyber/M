@@ -69,6 +69,22 @@ def _normalize_label(question: str, fallback: str) -> str:
     return fallback
 
 
+def _midpoint_price(market: dict, fallback: float) -> float:
+    """Return bid/ask midpoint, falling back to last trade or outcomePrices."""
+    try:
+        bid = float(market.get("bestBid", 0))
+        ask = float(market.get("bestAsk", 0))
+    except (TypeError, ValueError):
+        bid, ask = 0.0, 0.0
+    if bid > 0 and ask > 0:
+        return (bid + ask) / 2
+    try:
+        last = float(market.get("lastTradePrice", 0))
+    except (TypeError, ValueError):
+        last = 0.0
+    return last if last > 0 else fallback
+
+
 def _get_yes_probability(
     outcomes: list[str],
     prices: list[float],
@@ -108,9 +124,10 @@ def _extract_outcomes(event: dict, top_n: int) -> list[dict]:
         last_trade = market.get("lastTradePrice")
 
         if lower_outcomes == {"yes", "no"}:
-            probability = _get_yes_probability(normalized_outcomes, normalized_prices)
-            if probability is None:
+            fallback_price = _get_yes_probability(normalized_outcomes, normalized_prices)
+            if fallback_price is None:
                 continue
+            probability = _midpoint_price(market, fallback_price)
             rows.append(
                 {
                     "label": _normalize_label(question, question or "Yes"),
@@ -124,11 +141,11 @@ def _extract_outcomes(event: dict, top_n: int) -> list[dict]:
             )
             continue
 
-        for outcome, probability in zip(normalized_outcomes, normalized_prices):
+        for outcome, price in zip(normalized_outcomes, normalized_prices):
             rows.append(
                 {
                     "label": outcome,
-                    "probability": probability,
+                    "probability": _midpoint_price(market, price),
                     "question": question,
                     "best_bid": best_bid,
                     "best_ask": best_ask,
