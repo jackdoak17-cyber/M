@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Gianluca Mancini (Roma) 2+ fouls committed vs Cremonese (Serie A)\nHe's averaging 2.38 fouls per 90 this season and has committed 2+ in 4 of his last 5 matches and 16 of his last 20 overall. Cremonese draw 13.5 fouls per game — most in Serie A vs the 12.2 league average. Worth noting he averages just 1.90 fouls per 90 at home compared to 3.00 away.\n📊 16/20 (80%)\n💰 Kambi 1.93",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": false,
+        "checked_at": "2026-02-23T11:12:54.792692"
       }
     },
     {
