@@ -26,7 +26,7 @@ def _oauth() -> OAuth1:
     )
 
 
-def _split_text(text: str, max_len: int = 280) -> List[str]:
+def _split_text(text: str, max_len: int = 4000) -> List[str]:
     lines = text.splitlines() if text else []
     chunks: List[str] = []
     current: List[str] = []
