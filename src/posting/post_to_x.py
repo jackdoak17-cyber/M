@@ -23,7 +23,7 @@ def _content_hash(text: str) -> str:
 
 
 def run(slot: str, dry_run: bool) -> int:
-    target = resolve_target_date("post")
+    target = resolve_target_date("post", slot=slot)
     info = resolve_content(slot, target)
     if info is None:
         print(f"No content found for slot={slot} date={target}")

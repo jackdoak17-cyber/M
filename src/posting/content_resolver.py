@@ -22,6 +22,7 @@ class ContentInfo:
 OUTPUT_DIR = Path("output")
 BY_FIXTURE_DIR = OUTPUT_DIR / "by_fixture"
 PLAYER_PROPS_DIR = OUTPUT_DIR / "player_props"
+POLYMARKET_WEEKLY_DIR = OUTPUT_DIR / "polymarket" / "weekly"
 
 
 SLOTS = {
@@ -50,6 +51,12 @@ SLOTS = {
         "type": "player_weekday",
         "weekend": False,
     },
+    "polymarket_weekly": {
+        "label": "Polymarket PL Market Watch",
+        "type": "polymarket_weekly",
+        "weekend": None,
+        "same_day": True,
+    },
 }
 
 
@@ -61,10 +68,14 @@ def _date_label(target: date) -> str:
     return target.strftime("%Y-%m-%d")
 
 
-def resolve_target_date(mode: str) -> date:
+def resolve_target_date(mode: str, slot: str | None = None) -> date:
     settings = get_posting_settings()
     tz = ZoneInfo(settings.timezone)
     today = datetime.now(tz).date()
+    if slot:
+        slot_config = SLOTS.get(slot, {})
+        if slot_config.get("same_day"):
+            return today
     if mode == "preview":
         return today + timedelta(days=1)
     return today
@@ -76,14 +87,34 @@ def resolve_content(slot: str, target: date) -> ContentInfo | None:
         raise ValueError(f"Unknown slot: {slot}")
 
     is_weekend = target.weekday() >= 5
-    if slot_config["weekend"] is True and not is_weekend:
+    weekend_flag = slot_config.get("weekend")
+    if weekend_flag is True and not is_weekend:
         return None
-    if slot_config["weekend"] is False and is_weekend:
+    if weekend_flag is False and is_weekend:
         return None
 
     day_label = _day_label(target)
     date_label = _date_label(target)
     day_key = day_label.lower()
+
+    content_type = slot_config["type"]
+
+    if content_type == "polymarket_weekly":
+        content_path = POLYMARKET_WEEKLY_DIR / f"{date_label}_market_watch.txt"
+        if not content_path.exists():
+            return None
+        content = content_path.read_text(encoding="utf-8").strip()
+        if not content:
+            return None
+        return ContentInfo(
+            slot=slot,
+            scheduled_for=target,
+            day_label=day_label,
+            path=content_path,
+            content=content,
+            label=slot_config["label"],
+            combined=False,
+        )
 
     combined_path = PLAYER_PROPS_DIR / f"{date_label}_{day_key}_player_props.txt"
     fixture_path = BY_FIXTURE_DIR / f"{date_label}_{day_key}_prop_sheet_by_fixture.txt"
@@ -93,7 +124,6 @@ def resolve_content(slot: str, target: date) -> ContentInfo | None:
     content_path: Path | None = None
     combined = False
 
-    content_type = slot_config["type"]
     if content_type == "fixture":
         content_path = fixture_path
     elif content_type == "player_100":

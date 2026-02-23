@@ -25,7 +25,7 @@ def run(slot: str, target_date: str | None = None) -> int:
     if target_date:
         target = date.fromisoformat(target_date)
     else:
-        target = resolve_target_date("preview")
+        target = resolve_target_date("preview", slot=slot)
     info = resolve_content(slot, target)
     if info is None:
         print(f"No content found for slot={slot} date={target}")

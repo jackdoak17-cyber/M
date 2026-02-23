@@ -7,6 +7,7 @@ on:
     - cron: "0 11 * * *"
     - cron: "30 12 * * *"
     - cron: "30 13 * * *"
+    - cron: "0 11 * * 2"
   workflow_dispatch:
     inputs:
       slot:
@@ -20,6 +21,7 @@ on:
           - weekend_player_80
           - weekday_fixture
           - weekday_player
+          - polymarket_weekly
       target_date:
         description: "Override target date (YYYY-MM-DD). Leave blank for tomorrow."
         required: false
@@ -56,6 +58,7 @@ jobs:
               "0 11 * * *") SLOT="weekend_player_80" ;;
               "30 12 * * *") SLOT="weekday_fixture" ;;
               "30 13 * * *") SLOT="weekday_player" ;;
+              "0 11 * * 2") SLOT="polymarket_weekly" ;;
               *) SLOT="" ;;
             esac
           fi
