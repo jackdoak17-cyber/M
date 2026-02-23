@@ -1,0 +1,242 @@
+[
+  {
+    "fixture_id": 19427164,
+    "starting_at": "2026-02-27T20:00:00+00:00",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Aston Villa",
+    "selection_key": "away",
+    "price_decimal": 1.9
+  },
+  {
+    "fixture_id": 19427164,
+    "starting_at": "2026-02-27T20:00:00+00:00",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Aston Villa",
+    "selection_key": "draw",
+    "price_decimal": 3.7
+  },
+  {
+    "fixture_id": 19427164,
+    "starting_at": "2026-02-27T20:00:00+00:00",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Aston Villa",
+    "selection_key": "home",
+    "price_decimal": 3.9
+  },
+  {
+    "fixture_id": 19427156,
+    "starting_at": "2026-02-28T12:30:00+00:00",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Sunderland",
+    "selection_key": "away",
+    "price_decimal": 4.5
+  },
+  {
+    "fixture_id": 19427156,
+    "starting_at": "2026-02-28T12:30:00+00:00",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Sunderland",
+    "selection_key": "draw",
+    "price_decimal": 3.7
+  },
+  {
+    "fixture_id": 19427156,
+    "starting_at": "2026-02-28T12:30:00+00:00",
+    "home_team": "AFC Bournemouth",
+    "away_team": "Sunderland",
+    "selection_key": "home",
+    "price_decimal": 1.75
+  },
+  {
+    "fixture_id": 19427158,
+    "starting_at": "2026-02-28T15:00:00+00:00",
+    "home_team": "Burnley",
+    "away_team": "Brentford",
+    "selection_key": "away",
+    "price_decimal": 1.75
+  },
+  {
+    "fixture_id": 19427163,
+    "starting_at": "2026-02-28T15:00:00+00:00",
+    "home_team": "Newcastle United",
+    "away_team": "Everton",
+    "selection_key": "away",
+    "price_decimal": 4.333
+  },
+  {
+    "fixture_id": 19427161,
+    "starting_at": "2026-02-28T15:00:00+00:00",
+    "home_team": "Liverpool",
+    "away_team": "West Ham United",
+    "selection_key": "away",
+    "price_decimal": 7.0
+  },
+  {
+    "fixture_id": 19427163,
+    "starting_at": "2026-02-28T15:00:00+00:00",
+    "home_team": "Newcastle United",
+    "away_team": "Everton",
+    "selection_key": "draw",
+    "price_decimal": 3.8
+  },
+  {
+    "fixture_id": 19427158,
+    "starting_at": "2026-02-28T15:00:00+00:00",
+    "home_team": "Burnley",
+    "away_team": "Brentford",
+    "selection_key": "draw",
+    "price_decimal": 3.6
+  },
+  {
+    "fixture_id": 19427161,
+    "starting_at": "2026-02-28T15:00:00+00:00",
+    "home_team": "Liverpool",
+    "away_team": "West Ham United",
+    "selection_key": "draw",
+    "price_decimal": 4.75
+  },
+  {
+    "fixture_id": 19427163,
+    "starting_at": "2026-02-28T15:00:00+00:00",
+    "home_team": "Newcastle United",
+    "away_team": "Everton",
+    "selection_key": "home",
+    "price_decimal": 1.75
+  },
+  {
+    "fixture_id": 19427161,
+    "starting_at": "2026-02-28T15:00:00+00:00",
+    "home_team": "Liverpool",
+    "away_team": "West Ham United",
+    "selection_key": "home",
+    "price_decimal": 1.4
+  },
+  {
+    "fixture_id": 19427158,
+    "starting_at": "2026-02-28T15:00:00+00:00",
+    "home_team": "Burnley",
+    "away_team": "Brentford",
+    "selection_key": "home",
+    "price_decimal": 4.5
+  },
+  {
+    "fixture_id": 19427160,
+    "starting_at": "2026-02-28T17:30:00+00:00",
+    "home_team": "Leeds United",
+    "away_team": "Manchester City",
+    "selection_key": "away",
+    "price_decimal": 1.615
+  },
+  {
+    "fixture_id": 19427160,
+    "starting_at": "2026-02-28T17:30:00+00:00",
+    "home_team": "Leeds United",
+    "away_team": "Manchester City",
+    "selection_key": "draw",
+    "price_decimal": 4.0
+  },
+  {
+    "fixture_id": 19427160,
+    "starting_at": "2026-02-28T17:30:00+00:00",
+    "home_team": "Leeds United",
+    "away_team": "Manchester City",
+    "selection_key": "home",
+    "price_decimal": 5.0
+  },
+  {
+    "fixture_id": 19427157,
+    "starting_at": "2026-03-01T14:00:00+00:00",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Nottingham Forest",
+    "selection_key": "away",
+    "price_decimal": 3.3
+  },
+  {
+    "fixture_id": 19427162,
+    "starting_at": "2026-03-01T14:00:00+00:00",
+    "home_team": "Manchester United",
+    "away_team": "Crystal Palace",
+    "selection_key": "away",
+    "price_decimal": 5.5
+  },
+  {
+    "fixture_id": 19427159,
+    "starting_at": "2026-03-01T14:00:00+00:00",
+    "home_team": "Fulham",
+    "away_team": "Tottenham Hotspur",
+    "selection_key": "away",
+    "price_decimal": 3.25
+  },
+  {
+    "fixture_id": 19427159,
+    "starting_at": "2026-03-01T14:00:00+00:00",
+    "home_team": "Fulham",
+    "away_team": "Tottenham Hotspur",
+    "selection_key": "draw",
+    "price_decimal": 3.6
+  },
+  {
+    "fixture_id": 19427162,
+    "starting_at": "2026-03-01T14:00:00+00:00",
+    "home_team": "Manchester United",
+    "away_team": "Crystal Palace",
+    "selection_key": "draw",
+    "price_decimal": 4.333
+  },
+  {
+    "fixture_id": 19427157,
+    "starting_at": "2026-03-01T14:00:00+00:00",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Nottingham Forest",
+    "selection_key": "draw",
+    "price_decimal": 3.5
+  },
+  {
+    "fixture_id": 19427159,
+    "starting_at": "2026-03-01T14:00:00+00:00",
+    "home_team": "Fulham",
+    "away_team": "Tottenham Hotspur",
+    "selection_key": "home",
+    "price_decimal": 2.05
+  },
+  {
+    "fixture_id": 19427162,
+    "starting_at": "2026-03-01T14:00:00+00:00",
+    "home_team": "Manchester United",
+    "away_team": "Crystal Palace",
+    "selection_key": "home",
+    "price_decimal": 1.55
+  },
+  {
+    "fixture_id": 19427157,
+    "starting_at": "2026-03-01T14:00:00+00:00",
+    "home_team": "Brighton & Hove Albion",
+    "away_team": "Nottingham Forest",
+    "selection_key": "home",
+    "price_decimal": 2.1
+  },
+  {
+    "fixture_id": 19427155,
+    "starting_at": "2026-03-01T16:30:00+00:00",
+    "home_team": "Arsenal",
+    "away_team": "Chelsea",
+    "selection_key": "away",
+    "price_decimal": 5.5
+  },
+  {
+    "fixture_id": 19427155,
+    "starting_at": "2026-03-01T16:30:00+00:00",
+    "home_team": "Arsenal",
+    "away_team": "Chelsea",
+    "selection_key": "draw",
+    "price_decimal": 3.8
+  },
+  {
+    "fixture_id": 19427155,
+    "starting_at": "2026-03-01T16:30:00+00:00",
+    "home_team": "Arsenal",
+    "away_team": "Chelsea",
+    "selection_key": "home",
+    "price_decimal": 1.6
+  }
+]
