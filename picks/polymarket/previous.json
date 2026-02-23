@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-22T18:34:23Z",
+  "generated_at": "2026-02-23T02:05:29Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -11,7 +11,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-27T00:00:00Z",
-      "volume": 249445358.705264,
+      "volume": 251521238.322216,
       "top_outcomes": [
         {
           "label": "Arsenal",
@@ -19,43 +19,43 @@
           "question": "Will Arsenal win the 2025\u201326 English Premier League?",
           "best_bid": 0.62,
           "best_ask": 0.63,
-          "last_trade_price": 0.61,
+          "last_trade_price": 0.62,
           "outcome": "Yes",
-          "previous_probability": 0.565,
-          "delta_pp": 6.000000000000005
+          "previous_probability": 0.625,
+          "delta_pp": 0.0
         },
         {
           "label": "Manchester City",
-          "probability": 0.355,
+          "probability": 0.365,
           "question": "Will Manchester City win the 2025\u201326 English Premier League?",
-          "best_bid": 0.35,
-          "best_ask": 0.36,
-          "last_trade_price": 0.35,
+          "best_bid": 0.36,
+          "best_ask": 0.37,
+          "last_trade_price": 0.36,
           "outcome": "Yes",
-          "previous_probability": 0.415,
-          "delta_pp": -6.0
+          "previous_probability": 0.355,
+          "delta_pp": 1.0000000000000009
         },
         {
           "label": "Manchester United",
-          "probability": 0.0075,
+          "probability": 0.006,
           "question": "Will Manchester United win the 2025\u201326 English Premier League?",
-          "best_bid": 0.007,
-          "best_ask": 0.008,
-          "last_trade_price": 0.008,
+          "best_bid": 0.005,
+          "best_ask": 0.007,
+          "last_trade_price": 0.007,
           "outcome": "Yes",
-          "previous_probability": 0.006,
-          "delta_pp": 0.14999999999999997
+          "previous_probability": 0.0075,
+          "delta_pp": -0.14999999999999997
         },
         {
           "label": "Aston Villa",
-          "probability": 0.005,
+          "probability": 0.0035,
           "question": "Will Aston Villa win the 2025\u201326 English Premier League?",
-          "best_bid": 0.004,
-          "best_ask": 0.006,
-          "last_trade_price": 0.004,
+          "best_bid": 0.003,
+          "best_ask": 0.004,
+          "last_trade_price": 0.003,
           "outcome": "Yes",
-          "previous_probability": 0.006,
-          "delta_pp": -0.1
+          "previous_probability": 0.005,
+          "delta_pp": -0.15
         },
         {
           "label": "Liverpool",
@@ -88,7 +88,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-31T00:00:00Z",
-      "volume": 237674783.87665,
+      "volume": 238105133.103519,
       "top_outcomes": [
         {
           "label": "Arsenal",
@@ -107,7 +107,7 @@
           "question": "Will Bayern Munich win the 2025\u201326 Champions League?",
           "best_bid": 0.16,
           "best_ask": 0.17,
-          "last_trade_price": 0.17,
+          "last_trade_price": 0.16,
           "outcome": "Yes",
           "previous_probability": 0.165,
           "delta_pp": 0.0
@@ -151,10 +151,10 @@
           "question": "Will Liverpool win the 2025\u201326 Champions League?",
           "best_bid": 0.08,
           "best_ask": 0.09,
-          "last_trade_price": 0.09,
+          "last_trade_price": 0.08,
           "outcome": "Yes",
-          "previous_probability": null,
-          "delta_pp": null
+          "previous_probability": 0.085,
+          "delta_pp": 0.0
         }
       ]
     },
@@ -165,29 +165,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-30T00:00:00Z",
-      "volume": 97875538.506185,
+      "volume": 98037368.548254,
       "top_outcomes": [
         {
           "label": "Barcelona",
-          "probability": 0.535,
+          "probability": 0.58,
           "question": "Will Barcelona win the 2025\u201326 La Liga?",
-          "best_bid": 0.53,
-          "best_ask": 0.54,
-          "last_trade_price": 0.54,
+          "best_bid": 0.57,
+          "best_ask": 0.59,
+          "last_trade_price": 0.58,
           "outcome": "Yes",
-          "previous_probability": 0.575,
-          "delta_pp": -3.9999999999999925
+          "previous_probability": 0.535,
+          "delta_pp": 4.499999999999993
         },
         {
           "label": "Real Madrid",
-          "probability": 0.43,
+          "probability": 0.39,
           "question": "Will Real Madrid win the 2025\u201326 La Liga?",
-          "best_bid": 0.42,
-          "best_ask": 0.44,
-          "last_trade_price": 0.43,
+          "best_bid": 0.38,
+          "best_ask": 0.4,
+          "last_trade_price": 0.38,
           "outcome": "Yes",
-          "previous_probability": 0.4,
-          "delta_pp": 2.9999999999999973
+          "previous_probability": 0.43,
+          "delta_pp": -3.9999999999999982
         },
         {
           "label": "Villarreal",
@@ -217,7 +217,7 @@
           "question": "Will Betis win the 2025\u201326 La Liga?",
           "best_bid": 0.002,
           "best_ask": 0.003,
-          "last_trade_price": 0.003,
+          "last_trade_price": 0.002,
           "outcome": "Yes",
           "previous_probability": 0.0025,
           "delta_pp": 0.0
@@ -228,7 +228,7 @@
           "question": "Will Celta Vigo win the 2025\u201326 La Liga?",
           "best_bid": 0.001,
           "best_ask": 0.002,
-          "last_trade_price": 0.002,
+          "last_trade_price": 0.001,
           "outcome": "Yes",
           "previous_probability": 0.0015,
           "delta_pp": 0.0
@@ -242,73 +242,73 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 9314.820638,
+      "volume": 9953.650638,
       "top_outcomes": [
         {
           "label": "Declan Rice",
-          "probability": 0.485,
+          "probability": 0.445,
           "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
-          "best_bid": 0.44,
-          "best_ask": 0.53,
-          "last_trade_price": 0.44,
+          "best_bid": 0.37,
+          "best_ask": 0.52,
+          "last_trade_price": 0.47,
           "outcome": "Yes",
-          "previous_probability": 0.49,
-          "delta_pp": -0.5000000000000004
+          "previous_probability": 0.485,
+          "delta_pp": -3.9999999999999982
         },
         {
           "label": "Erling Haaland",
-          "probability": 0.295,
+          "probability": 0.275,
           "question": "Will Erling Haaland win the 2026 PFA Player of the Year?",
-          "best_bid": 0.22,
-          "best_ask": 0.37,
-          "last_trade_price": 0.29,
+          "best_bid": 0.24,
+          "best_ask": 0.31,
+          "last_trade_price": 0.21,
           "outcome": "Yes",
-          "previous_probability": 0.3,
-          "delta_pp": -0.5000000000000004
+          "previous_probability": 0.295,
+          "delta_pp": -1.9999999999999962
         },
         {
           "label": "Bruno Fernandes",
-          "probability": 0.12,
+          "probability": 0.145,
           "question": "Will Bruno Fernandes win the 2026 PFA Player of the Year?",
-          "best_bid": 0.09,
-          "best_ask": 0.15,
+          "best_bid": 0.1,
+          "best_ask": 0.19,
           "last_trade_price": 0.15,
           "outcome": "Yes",
-          "previous_probability": 0.11,
-          "delta_pp": 0.9999999999999996
+          "previous_probability": 0.12,
+          "delta_pp": 2.4999999999999996
         },
         {
-          "label": "Phil Foden",
-          "probability": 0.0845,
-          "question": "Will Phil Foden win the 2026 PFA Player of the Year?",
-          "best_bid": 0.01,
-          "best_ask": 0.159,
+          "label": "Martin Zubimendi",
+          "probability": 0.076,
+          "question": "Will Martin Zubimendi win the 2026 PFA Player of the Year?",
+          "best_bid": 0.015,
+          "best_ask": 0.137,
           "last_trade_price": 0.01,
-          "outcome": "Yes",
-          "previous_probability": 0.085,
-          "delta_pp": -0.050000000000000044
-        },
-        {
-          "label": "Dominik Szoboszlai",
-          "probability": 0.077,
-          "question": "Will Dominik Szoboszlai win the 2026 PFA Player of the Year?",
-          "best_bid": 0.01,
-          "best_ask": 0.144,
-          "last_trade_price": 0.012,
-          "outcome": "Yes",
-          "previous_probability": 0.0775,
-          "delta_pp": -0.050000000000000044
-        },
-        {
-          "label": "Moises Caicedo",
-          "probability": 0.077,
-          "question": "Will Moises Caicedo win the 2026 PFA Player of the Year?",
-          "best_bid": 0.01,
-          "best_ask": 0.144,
-          "last_trade_price": 0.011,
           "outcome": "Yes",
           "previous_probability": null,
           "delta_pp": null
+        },
+        {
+          "label": "Dominik Szoboszlai",
+          "probability": 0.076,
+          "question": "Will Dominik Szoboszlai win the 2026 PFA Player of the Year?",
+          "best_bid": 0.01,
+          "best_ask": 0.142,
+          "last_trade_price": 0.012,
+          "outcome": "Yes",
+          "previous_probability": 0.077,
+          "delta_pp": -0.10000000000000009
+        },
+        {
+          "label": "Phil Foden",
+          "probability": 0.0755,
+          "question": "Will Phil Foden win the 2026 PFA Player of the Year?",
+          "best_bid": 0.002,
+          "best_ask": 0.149,
+          "last_trade_price": 0.01,
+          "outcome": "Yes",
+          "previous_probability": 0.0845,
+          "delta_pp": -0.9000000000000008
         }
       ]
     },
@@ -319,7 +319,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 109261.012012,
+      "volume": 109307.982012,
       "top_outcomes": [
         {
           "label": "Kylian Mbapp\u00e9",
@@ -329,15 +329,15 @@
           "best_ask": 0.35,
           "last_trade_price": 0.35,
           "outcome": "Yes",
-          "previous_probability": 0.335,
-          "delta_pp": 0.5000000000000004
+          "previous_probability": 0.34,
+          "delta_pp": 0.0
         },
         {
           "label": "Lamine Yamal",
           "probability": 0.23,
           "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-          "best_bid": 0.21,
-          "best_ask": 0.25,
+          "best_bid": 0.22,
+          "best_ask": 0.24,
           "last_trade_price": 0.16,
           "outcome": "Yes",
           "previous_probability": 0.23,
@@ -345,14 +345,14 @@
         },
         {
           "label": "Harry Kane",
-          "probability": 0.193,
+          "probability": 0.1775,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.176,
-          "best_ask": 0.21,
-          "last_trade_price": 0.21,
+          "best_bid": 0.175,
+          "best_ask": 0.18,
+          "last_trade_price": 0.175,
           "outcome": "Yes",
-          "previous_probability": 0.191,
-          "delta_pp": 0.20000000000000018
+          "previous_probability": 0.193,
+          "delta_pp": -1.5500000000000014
         },
         {
           "label": "Erling Haaland",
@@ -373,19 +373,19 @@
           "best_ask": 0.021,
           "last_trade_price": 0.02,
           "outcome": "Yes",
-          "previous_probability": 0.0235,
-          "delta_pp": -0.29999999999999993
+          "previous_probability": 0.0205,
+          "delta_pp": 0.0
         },
         {
           "label": "Jude Bellingham",
-          "probability": 0.0195,
+          "probability": 0.02,
           "question": "Will Jude Bellingham win the 2026 Ballon d'Or?",
-          "best_bid": 0.006,
+          "best_bid": 0.007,
           "best_ask": 0.033,
           "last_trade_price": 0.005,
           "outcome": "Yes",
           "previous_probability": 0.0195,
-          "delta_pp": 0.0
+          "delta_pp": 0.050000000000000044
         }
       ]
     },
@@ -396,72 +396,72 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-27T00:00:00Z",
-      "volume": 1063002.30908,
+      "volume": 1067628.325849,
       "top_outcomes": [
         {
           "label": "Manchester City (Top 4)",
-          "probability": 0.988,
+          "probability": 0.9875,
           "question": "Will Manchester City finish in the top 4 of the EPL 2025\u201326 standings?",
           "best_bid": 0.979,
-          "best_ask": 0.997,
+          "best_ask": 0.996,
           "last_trade_price": 0.988,
           "outcome": "Yes",
-          "previous_probability": 0.9875,
-          "delta_pp": 0.04999999999999449
+          "previous_probability": 0.988,
+          "delta_pp": -0.04999999999999449
         },
         {
           "label": "Arsenal (Top 4)",
-          "probability": 0.98,
+          "probability": 0.9825,
           "question": "Will Arsenal finish in the top 4 of the EPL 2025\u201326 standings?",
-          "best_bid": 0.976,
-          "best_ask": 0.984,
-          "last_trade_price": 0.976,
+          "best_bid": 0.98,
+          "best_ask": 0.985,
+          "last_trade_price": 0.985,
           "outcome": "Yes",
           "previous_probability": 0.98,
-          "delta_pp": 0.0
+          "delta_pp": 0.2500000000000058
         },
         {
           "label": "Aston Villa (Top 4)",
-          "probability": 0.5835,
+          "probability": 0.6665,
           "question": "Will Aston Villa finish in the top 4 of the EPL 2025\u201326 standings?",
-          "best_bid": 0.528,
-          "best_ask": 0.639,
-          "last_trade_price": 0.639,
+          "best_bid": 0.581,
+          "best_ask": 0.752,
+          "last_trade_price": 0.589,
           "outcome": "Yes",
-          "previous_probability": 0.5725,
-          "delta_pp": 1.100000000000001
+          "previous_probability": 0.5835,
+          "delta_pp": 8.299999999999997
         },
         {
           "label": "Liverpool (Top 4)",
-          "probability": 0.5,
+          "probability": 0.485,
           "question": "Will Liverpool finish in the top 4 of the EPL 2025\u201326 standings?",
-          "best_bid": 0.48,
+          "best_bid": 0.45,
           "best_ask": 0.52,
-          "last_trade_price": 0.51,
+          "last_trade_price": 0.45,
           "outcome": "Yes",
           "previous_probability": 0.5,
-          "delta_pp": 0.0
+          "delta_pp": -1.5000000000000013
         },
         {
           "label": "Manchester United (Top 4)",
-          "probability": 0.5,
+          "probability": 0.485,
           "question": "Will Manchester United finish in the top 4 of the EPL 2025\u201326 standings?",
-          "best_bid": 0.49,
-          "best_ask": 0.51,
+          "best_bid": 0.48,
+          "best_ask": 0.49,
           "last_trade_price": 0.49,
           "outcome": "Yes",
           "previous_probability": 0.5,
-          "delta_pp": 0.0
+          "delta_pp": -1.5000000000000013
         },
         {
           "label": "Chelsea (Top 4)",
-          "probability": 0.355,
+          "probability": 0.345,
           "question": "Will Chelsea finish in the top 4 of the EPL 2025\u201326 standings?",
-          "best_bid": 0.33,
-          "best_ask": 0.38,
+          "best_bid": 0.3,
+          "best_ask": 0.39,
           "last_trade_price": 0.35,
           "outcome": "Yes",
-          "previous_probability": 0.365,
+          "previous_probability": 0.355,
           "delta_pp": -1.0000000000000009
         }
       ]
@@ -473,7 +473,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-27T00:00:00Z",
-      "volume": 216233.23105,
+      "volume": 216283.23105,
       "top_outcomes": [
         {
           "label": "Wolves (Relegated)",
@@ -483,52 +483,52 @@
           "best_ask": 0.993,
           "last_trade_price": 0.99,
           "outcome": "Yes",
-          "previous_probability": 0.9885,
-          "delta_pp": 0.24999999999999467
+          "previous_probability": 0.991,
+          "delta_pp": 0.0
         },
         {
           "label": "Burnley (Relegated)",
-          "probability": 0.9345,
+          "probability": 0.949,
           "question": "Will Burnley be relegated from the English Premier League after the 2025\u201326 season?",
-          "best_bid": 0.881,
+          "best_bid": 0.91,
           "best_ask": 0.988,
           "last_trade_price": 0.974,
           "outcome": "Yes",
           "previous_probability": 0.9345,
-          "delta_pp": 0.0
+          "delta_pp": 1.4499999999999957
         },
         {
           "label": "West Ham (Relegated)",
-          "probability": 0.525,
+          "probability": 0.535,
           "question": "Will West Ham be relegated from the English Premier League after the 2025\u201326 season?",
-          "best_bid": 0.5,
+          "best_bid": 0.52,
           "best_ask": 0.55,
-          "last_trade_price": 0.5,
+          "last_trade_price": 0.52,
           "outcome": "Yes",
-          "previous_probability": 0.52,
-          "delta_pp": 0.5000000000000004
+          "previous_probability": 0.525,
+          "delta_pp": 1.0000000000000009
         },
         {
           "label": "Nottm Forest (Relegated)",
-          "probability": 0.29,
+          "probability": 0.295,
           "question": "Will Nottm Forest be relegated from the English Premier League after the 2025\u201326 season?",
-          "best_bid": 0.27,
+          "best_bid": 0.28,
           "best_ask": 0.31,
           "last_trade_price": 0.26,
           "outcome": "Yes",
-          "previous_probability": 0.285,
+          "previous_probability": 0.29,
           "delta_pp": 0.5000000000000004
         },
         {
           "label": "Tottenham (Relegated)",
-          "probability": 0.137,
+          "probability": 0.1385,
           "question": "Will Tottenham be relegated from the English Premier League after the 2025\u201326 season?",
-          "best_bid": 0.124,
+          "best_bid": 0.127,
           "best_ask": 0.15,
           "last_trade_price": 0.149,
           "outcome": "Yes",
-          "previous_probability": 0.1235,
-          "delta_pp": 1.3500000000000012
+          "previous_probability": 0.137,
+          "delta_pp": 0.15000000000000013
         },
         {
           "label": "Leeds (Relegated)",
@@ -550,7 +550,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-12-31T23:55:00Z",
-      "volume": 475914.381392,
+      "volume": 476010.091392,
       "top_outcomes": [
         {
           "label": "Michael Carrick",
@@ -565,25 +565,25 @@
         },
         {
           "label": "Oliver Glasner",
-          "probability": 0.13,
+          "probability": 0.165,
           "question": "Will Oliver Glasner be appointed as manager of Manchester United?",
           "best_bid": 0.1,
-          "best_ask": 0.16,
+          "best_ask": 0.23,
           "last_trade_price": 0.14,
           "outcome": "Yes",
           "previous_probability": 0.13,
-          "delta_pp": 0.0
+          "delta_pp": 3.5000000000000004
         },
         {
           "label": "Luis Enrique",
-          "probability": 0.083,
+          "probability": 0.082,
           "question": "Will Luis Enrique be appointed as manager of Manchester United?",
           "best_bid": 0.003,
-          "best_ask": 0.163,
+          "best_ask": 0.161,
           "last_trade_price": 0.162,
           "outcome": "Yes",
           "previous_probability": 0.083,
-          "delta_pp": 0.0
+          "delta_pp": -0.10000000000000009
         },
         {
           "label": "Gareth Southgate",
@@ -597,6 +597,17 @@
           "delta_pp": 0.0
         },
         {
+          "label": "Xabi Alonso",
+          "probability": 0.037,
+          "question": "Will Xabi Alonso be appointed as manager of Manchester United?",
+          "best_bid": 0.003,
+          "best_ask": 0.071,
+          "last_trade_price": 0.071,
+          "outcome": "Yes",
+          "previous_probability": 0.036,
+          "delta_pp": 0.10000000000000009
+        },
+        {
           "label": "Ole Gunnar Solskj\u00e6r",
           "probability": 0.036,
           "question": "Will Ole Gunnar Solskj\u00e6r be appointed as manager of Manchester United?",
@@ -604,19 +615,8 @@
           "best_ask": 0.049,
           "last_trade_price": 0.024,
           "outcome": "Yes",
-          "previous_probability": 0.0365,
-          "delta_pp": -0.050000000000000044
-        },
-        {
-          "label": "Xabi Alonso",
-          "probability": 0.036,
-          "question": "Will Xabi Alonso be appointed as manager of Manchester United?",
-          "best_bid": 0.003,
-          "best_ask": 0.069,
-          "last_trade_price": 0.071,
-          "outcome": "Yes",
-          "previous_probability": 0.037,
-          "delta_pp": -0.10000000000000009
+          "previous_probability": 0.036,
+          "delta_pp": 0.0
         }
       ]
     },
