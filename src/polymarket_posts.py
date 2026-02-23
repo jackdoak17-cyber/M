@@ -16,17 +16,17 @@ MOVER_THRESHOLD_PP = 5.0
 
 PL_SECTION_CONFIG = (
     {
-        "title": "Title Race",
+        "title": "\U0001f3c6Title Race",
         "slug": "english-premier-league-winner",
         "count": 4,
     },
     {
-        "title": "Top 4 Race",
+        "title": "\U0001f3afTop 4 Race",
         "slug": "english-premier-league-top-4-finish",
         "count": 7,
     },
     {
-        "title": "Relegation Watch",
+        "title": "\U0001f480Relegation Watch",
         "slug": "epl-which-clubs-get-relegated",
         "count": 7,
     },
@@ -48,14 +48,20 @@ def _load_json(path: Path) -> dict[str, Any] | None:
         return None
 
 
-def _round_pct(probability: float) -> int:
-    return int(round(probability * 100))
+def _format_pct(probability: float) -> str:
+    pct = probability * 100
+    rounded = round(pct)
+    if rounded >= 1:
+        return f"{rounded}%"
+    if pct < 0.05:
+        return "0%"
+    return f"{pct:.1f}%"
 
 
-def _arrow(previous_pct: int, current_pct: int) -> str:
-    if current_pct > previous_pct:
+def _arrow(previous_prob: float, current_prob: float) -> str:
+    if current_prob > previous_prob + 1e-9:
         return "↑"
-    if current_pct < previous_pct:
+    if current_prob < previous_prob - 1e-9:
         return "↓"
     return "—"
 
@@ -112,7 +118,7 @@ def _market_from_snapshot(snapshot: dict[str, Any] | None, slug: str) -> dict[st
 
 
 def _render_pl_market_watch(current: dict[str, Any], baseline: dict[str, Any] | None) -> str:
-    lines: list[str] = ["Premier League Market Watch", ""]
+    lines: list[str] = ["\U0001f52e PL Market Watch | via Polymarket", ""]
     first_run = baseline is None
 
     section_blocks: list[str] = []
@@ -131,27 +137,23 @@ def _render_pl_market_watch(current: dict[str, Any], baseline: dict[str, Any] | 
         for row in current_rows:
             label = _clean_label(str(row.get("label") or "Unknown"))
             current_prob = float(row.get("probability") or 0.0)
-            current_pct = _round_pct(current_prob)
 
             if first_run:
-                block_lines.append(f"• {label}: {current_pct}%")
+                block_lines.append(f"\u2022 {label}: {_format_pct(current_prob)}")
                 continue
 
             previous_prob = baseline_probs.get(str(row.get("label")))
             if previous_prob is None:
-                block_lines.append(f"• {label}: {current_pct}%")
+                block_lines.append(f"\u2022 {label}: {_format_pct(current_prob)}")
                 continue
 
-            previous_pct = _round_pct(previous_prob)
             block_lines.append(
-                f"• {label}: {previous_pct}% → {current_pct}% {_arrow(previous_pct, current_pct)}"
+                f"\u2022 {label}: {_format_pct(previous_prob)} \u2192 {_format_pct(current_prob)} {_arrow(previous_prob, current_prob)}"
             )
         section_blocks.append("\n".join(block_lines))
 
     if section_blocks:
         lines.append("\n\n".join(section_blocks))
-        lines.append("")
-    lines.append("All odds via Polymarket")
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -182,9 +184,7 @@ def _render_mover_post(
         label = _clean_label(str(row.get("label") or "Unknown"))
         current_prob = float(row.get("probability") or 0.0)
         previous_prob = float(baseline_probs.get(str(row.get("label")), current_prob))
-        previous_pct = _round_pct(previous_prob)
-        current_pct = _round_pct(current_prob)
-        lines.append(f"• {label}: {previous_pct}% → {current_pct}% {_arrow(previous_pct, current_pct)}")
+        lines.append(f"\u2022 {label}: {_format_pct(previous_prob)} \u2192 {_format_pct(current_prob)} {_arrow(previous_prob, current_prob)}")
     lines.append("")
     lines.append("via Polymarket")
     return "\n".join(lines).rstrip() + "\n"

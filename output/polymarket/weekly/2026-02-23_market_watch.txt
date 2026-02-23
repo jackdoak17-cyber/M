@@ -1,12 +1,12 @@
-Premier League Market Watch
+🔮 PL Market Watch | via Polymarket
 
-Title Race
+🏆Title Race
 • Arsenal: 62%
 • Manchester City: 36%
 • Manchester United: 1%
-• Aston Villa: 0%
+• Aston Villa: 0.4%
 
-Top 4 Race
+🎯Top 4 Race
 • Manchester City: 100%
 • Arsenal: 98%
 • Aston Villa: 62%
@@ -15,13 +15,11 @@ Top 4 Race
 • Chelsea: 35%
 • Brentford: 3%
 
-Relegation Watch
+💀Relegation Watch
 • Wolves: 99%
 • Burnley: 96%
 • West Ham: 52%
 • Nottm Forest: 28%
 • Tottenham: 15%
 • Leeds: 10%
-• Sunderland: 7%
-
-All odds via Polymarket
+• Sunderland: 6%
