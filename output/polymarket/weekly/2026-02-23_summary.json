@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-23T19:13:55Z",
+  "generated_at": "2026-02-23T19:18:06Z",
   "baseline_date": null,
-  "current_date": "2026-02-23T19:13:55Z",
-  "mode": "preview",
+  "current_date": "2026-02-23T19:18:06Z",
+  "mode": "generate",
   "baseline_path": "output/polymarket/weekly_baseline.json",
   "markets_with_movement": [],
   "biggest_mover_triggered": false,
