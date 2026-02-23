@@ -3,23 +3,21 @@
 🏆Title Race
 • Arsenal: 62% → 62% —
 • Manchester City: 36% → 36% —
-• Manchester United: 1% → 1% ↓
+• Manchester United: 1% → 1% ↑
 • Aston Villa: 0.4% → 0.4% —
 
 🎯Top 4 Race
 • Manchester City: 100% → 100% —
 • Arsenal: 98% → 98% —
-• Aston Villa: 62% → 62% ↑
+• Aston Villa: 62% → 62% ↓
 • Liverpool: 52% → 52% —
-• Manchester United: 50% → 50% —
+• Manchester United: 50% → 50% ↓
 • Chelsea: 35% → 35% —
-• Fulham: 3% → 4% ↑
 
 💀Relegation Watch
 • Wolves: 99% → 99% —
 • Burnley: 96% → 96% —
 • West Ham: 52% → 52% —
 • Nottm Forest: 28% → 28% —
-• Tottenham: 15% → 16% ↑
-• Leeds: 10% → 10% —
-• Man Utd: 5% → 5% —
+• Tottenham: 16% → 15% ↓
+• Leeds: 10% → 9% ↓
