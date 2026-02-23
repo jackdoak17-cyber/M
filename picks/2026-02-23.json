@@ -1,0 +1,449 @@
+{
+  "date": "2026-02-23",
+  "generated_at": "2026-02-23T07:52:04.939233",
+  "picks_count": 3,
+  "picks": [
+    {
+      "player_id": 6513,
+      "player_name": "James Bree",
+      "team_id": 65,
+      "team_name": "Southampton",
+      "opponent_id": 47,
+      "opponent_name": "Queens Park Rangers",
+      "fixture_id": 19432145,
+      "fixture_date": "2026-02-24T20:00:00+00:00",
+      "league_id": 9,
+      "league_name": "Championship",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.5289191413328391,
+        "simple_avg": 1.3,
+        "last_5_avg": 1.4,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 7,
+          "3+": 2,
+          "4+": 1
+        },
+        "home_avg": 1.5,
+        "away_avg": 1.1666666666666667,
+        "home_games": 8,
+        "away_games": 12,
+        "std_dev": 1.0310954828418375,
+        "coeff_of_variation": 0.7931503714167981,
+        "avg_minutes": 83.5,
+        "min_minutes": 36.0,
+        "times_subbed_early": 2,
+        "raw_values": [
+          1.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          1.0,
+          0.0,
+          4.0,
+          1.0,
+          2.0,
+          2.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_minutes": [
+          90.0,
+          79.0,
+          90.0,
+          90.0,
+          90.0,
+          46.0,
+          90.0,
+          90.0,
+          84.0,
+          90.0,
+          90.0,
+          90.0,
+          78.0,
+          87.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          36.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 10.333333333333334,
+        "league_avg": 10.46812749003984,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 24
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 4,
+        "avg_vs_similar": 1.25,
+        "hitrate_vs_similar": 50.0,
+        "similar_teams_examples": [
+          "Birmingham City",
+          "Bristol City",
+          "Derby County"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.53,
+        "adjusted_projection": 1.35,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9922740247383445,
+            "concedes": 10.333333333333334,
+            "league_avg": 10.46812749003984,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0946745562130178,
+            "venue_avg": 1.5,
+            "overall_avg": 1.3,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9277777777777778,
+            "avg_minutes": 83.5,
+            "times_subbed_early": 2,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.008
+      },
+      "confidence": {
+        "score": 85,
+        "tier": "LOCK"
+      },
+      "probability": 0.7408,
+      "edge": {
+        "our_probability": 0.7408,
+        "implied_probability": 0.5456,
+        "probability_edge": 0.1952,
+        "fair_odds": 1.35,
+        "bookmaker_odds": 1.833,
+        "expected_value": 0.3579,
+        "edge_percentage": 35.79,
+        "kelly_quarter": 0.1074,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.833,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 69.7,
+      "rank": 1,
+      "writeup": "🎯 James Bree (Southampton) 1+ fouls committed vs Queens Park Rangers (Championship)\nBree has committed 1+ fouls in all 5 of his last 5 matches and 16 of his last 20 overall. He's averaging 1.53 fouls per 90 this season, rising to 1.50 at home compared to just 1.17 away. Queens Park Rangers draw 10.3 fouls per game, ranking as the team that draws the most fouls in the Championship against the 10.5 league average.\n📊 16/20 (80%)\n💰 Bet365 1.833",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 21803033,
+      "player_name": "Azzedine Ounahi",
+      "team_id": 231,
+      "team_name": "Girona",
+      "opponent_id": 2975,
+      "opponent_name": "Deportivo Alavés",
+      "fixture_id": 19439494,
+      "fixture_date": "2026-02-23T20:00:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": false,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "2+ shots",
+      "threshold": 2,
+      "baseline": {
+        "weighted_per90": 2.3310982667209332,
+        "simple_avg": 2.0,
+        "last_5_avg": 2.4,
+        "sample_size": 10,
+        "hit_rates": {
+          "1+": 9,
+          "2+": 7,
+          "3+": 3,
+          "4+": 1
+        },
+        "home_avg": 2.2,
+        "away_avg": 1.8,
+        "home_games": 5,
+        "away_games": 5,
+        "std_dev": 1.1547005383792515,
+        "coeff_of_variation": 0.5773502691896257,
+        "avg_minutes": 78.4,
+        "min_minutes": 31.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          2.0,
+          2.0,
+          3.0,
+          2.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          83.0,
+          82.0,
+          71.0,
+          90.0,
+          31.0,
+          90.0,
+          90.0,
+          75.0,
+          82.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 13.866666666666667,
+        "league_avg": 12.627450980392156,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 4,
+        "avg_vs_similar": 2.0,
+        "hitrate_vs_similar": 50.0,
+        "similar_teams_examples": [
+          "Celta de Vigo",
+          "Deportivo Alavés",
+          "FC Barcelona"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 2.33,
+        "adjusted_projection": 2.22,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0588819875776398,
+            "concedes": 13.866666666666667,
+            "league_avg": 12.627450980392156,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.95,
+            "venue_avg": 1.8,
+            "overall_avg": 2.0,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.8711111111111112,
+            "avg_minutes": 78.4,
+            "times_subbed_early": 1,
+            "sample_size": 10
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.876
+      },
+      "confidence": {
+        "score": 67,
+        "tier": "STRONG"
+      },
+      "probability": 0.6503,
+      "edge": {
+        "our_probability": 0.6503,
+        "implied_probability": 0.4902,
+        "probability_edge": 0.1601,
+        "fair_odds": 1.54,
+        "bookmaker_odds": 2.04,
+        "expected_value": 0.3266,
+        "edge_percentage": 32.66,
+        "kelly_quarter": 0.0785,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.04,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 59.15,
+      "rank": 2,
+      "writeup": "🎯 Azzedine Ounahi (Girona) 2+ shots vs Deportivo Alavés (La Liga)\nThe midfielder is averaging 2.33 shots per 90 this season and has hit 2+ shots in 4 of his last 5 matches. He's recorded 2+ shots in 7 of his last 20 overall, though his away average drops to 1.80 per 90 compared to 2.20 at home.\n📊 7/20 (35%)\n💰 Kambi 2.04",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 65516,
+      "player_name": "Ilias Chair",
+      "team_id": 47,
+      "team_name": "Queens Park Rangers",
+      "opponent_id": 65,
+      "opponent_name": "Southampton",
+      "fixture_id": 19432145,
+      "fixture_date": "2026-02-24T20:00:00+00:00",
+      "league_id": 9,
+      "league_name": "Championship",
+      "is_home": false,
+      "stat_type_id": 86,
+      "stat_type_label": "shots_on_target",
+      "market_label": "1+ shots on target",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.1848664113638383,
+        "simple_avg": 1.0,
+        "last_5_avg": 1.0,
+        "sample_size": 11,
+        "hit_rates": {
+          "1+": 9,
+          "2+": 2,
+          "3+": 0,
+          "4+": 0
+        },
+        "home_avg": 0.8,
+        "away_avg": 1.1666666666666667,
+        "home_games": 5,
+        "away_games": 6,
+        "std_dev": 0.6324555320336759,
+        "coeff_of_variation": 0.6324555320336759,
+        "avg_minutes": 72.72727272727273,
+        "min_minutes": 19.0,
+        "times_subbed_early": 4,
+        "raw_values": [
+          0.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          0.0
+        ],
+        "raw_minutes": [
+          45.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          62.0,
+          44.0,
+          19.0,
+          90.0,
+          90.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 4.066666666666666,
+        "league_avg": 4.187250996015936,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 24
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 5,
+        "avg_vs_similar": 1.2,
+        "hitrate_vs_similar": 100.0,
+        "similar_teams_examples": [
+          "Coventry City",
+          "Hull City",
+          "Ipswich Town"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.18,
+        "adjusted_projection": 0.83,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9827212178877259,
+            "concedes": 4.066666666666666,
+            "league_avg": 4.187250996015936,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0909090909090908,
+            "venue_avg": 1.1666666666666667,
+            "overall_avg": 1.0,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.8080808080808082,
+            "avg_minutes": 72.72727272727273,
+            "times_subbed_early": 4,
+            "sample_size": 11
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.866
+      },
+      "confidence": {
+        "score": 65,
+        "tier": "STRONG"
+      },
+      "probability": 0.564,
+      "edge": {
+        "our_probability": 0.564,
+        "implied_probability": 0.4878,
+        "probability_edge": 0.0762,
+        "fair_odds": 1.77,
+        "bookmaker_odds": 2.05,
+        "expected_value": 0.1562,
+        "edge_percentage": 15.62,
+        "kelly_quarter": 0.0372,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.05,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 50.82,
+      "rank": 3,
+      "writeup": "🎯 Ilias Chair (Queens Park Rangers) 1+ shots on target vs Southampton (Championship)\nChair is averaging 1.18 shots on target per 90 this season and has hit this line in 4 of his last 5 matches and 9 of his last 11 overall. Against similar opponents like Coventry City, Hull City, and Ipswich Town, he's recorded 1+ shots on target in all 5 games. His away form shows 1.17 shots on target per 90 compared to just 0.80 at home.\n📊 9/11 (82%)\n💰 Kambi 2.05",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
