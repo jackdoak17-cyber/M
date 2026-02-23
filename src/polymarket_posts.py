@@ -23,12 +23,12 @@ PL_SECTION_CONFIG = (
     {
         "title": "\U0001f3afTop 4 Race",
         "slug": "english-premier-league-top-4-finish",
-        "count": 7,
+        "count": 6,
     },
     {
         "title": "\U0001f480Relegation Watch",
         "slug": "epl-which-clubs-get-relegated",
-        "count": 7,
+        "count": 6,
     },
 )
 
