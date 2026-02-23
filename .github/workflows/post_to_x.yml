@@ -5,7 +5,7 @@ on:
     - cron: "0 9 * * *"
     - cron: "0 10 * * *"
     - cron: "0 11 * * *"
-    - cron: "40 18 * * *"
+    - cron: "55 18 * * *"
     - cron: "30 14 * * *"
   workflow_dispatch:
     inputs:
@@ -58,7 +58,7 @@ jobs:
               "0 9 * * *") SLOT="weekend_fixture" ;;
               "0 10 * * *") SLOT="weekend_player_100" ;;
               "0 11 * * *") SLOT="weekend_player_80" ;;
-              "40 18 * * *") SLOT="weekday_fixture" ;;
+              "55 18 * * *") SLOT="weekday_fixture" ;;
               "30 14 * * *") SLOT="weekday_player" ;;
               *) SLOT="" ;;
             esac
