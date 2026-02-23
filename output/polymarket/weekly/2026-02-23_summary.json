@@ -1,10 +1,16 @@
 {
-  "generated_at": "2026-02-23T21:13:23Z",
-  "baseline_date": "2026-02-23T19:55:17Z",
-  "current_date": "2026-02-23T21:13:23Z",
+  "generated_at": "2026-02-23T21:26:44Z",
+  "baseline_date": "2026-02-23T21:13:23Z",
+  "current_date": "2026-02-23T21:26:44Z",
   "mode": "generate",
   "baseline_path": "output/polymarket/weekly_baseline.json",
-  "markets_with_movement": [],
-  "biggest_mover_triggered": false,
+  "markets_with_movement": [
+    {
+      "slug": "uefa-champions-league-winner",
+      "label": "UCL Winner",
+      "max_move_pp": 100.0
+    }
+  ],
+  "biggest_mover_triggered": true,
   "errors": []
 }
