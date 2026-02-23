@@ -20,6 +20,10 @@ on:
           - weekend_player_80
           - weekday_fixture
           - weekday_player
+      target_date:
+        description: "Override target date (YYYY-MM-DD). Leave blank for tomorrow."
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -63,7 +67,11 @@ jobs:
             echo "No slot resolved."
             exit 0
           fi
-          python -m src.posting.send_previews --slot "$SLOT"
+          DATE_ARG=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.target_date }}" ]; then
+            DATE_ARG="--date ${{ inputs.target_date }}"
+          fi
+          python -m src.posting.send_previews --slot "$SLOT" $DATE_ARG
         env:
           SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
 from .content_resolver import resolve_content, resolve_target_date
 from .supabase_client import upsert_post_approval
@@ -21,8 +21,11 @@ def _content_hash(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
-def run(slot: str) -> int:
-    target = resolve_target_date("preview")
+def run(slot: str, target_date: str | None = None) -> int:
+    if target_date:
+        target = date.fromisoformat(target_date)
+    else:
+        target = resolve_target_date("preview")
     info = resolve_content(slot, target)
     if info is None:
         print(f"No content found for slot={slot} date={target}")
@@ -65,8 +68,9 @@ def run(slot: str) -> int:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Send Telegram previews for scheduled posts.")
     parser.add_argument("--slot", required=True)
+    parser.add_argument("--date", dest="target_date", help="Override target date (YYYY-MM-DD).")
     args = parser.parse_args()
-    raise SystemExit(run(args.slot))
+    raise SystemExit(run(args.slot, args.target_date))
 
 
 if __name__ == "__main__":
