@@ -5,4 +5,7 @@ __pycache__/
 .env
 .env.local
 .env.*.local
-output/
+output/*
+!output/polymarket/
+!output/by_fixture/
+!output/player_props/

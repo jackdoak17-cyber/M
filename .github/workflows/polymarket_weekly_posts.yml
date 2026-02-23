@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "polymarket-posts"
           git config user.email "actions@users.noreply.github.com"
-          git add picks/polymarket/
+          git add output/polymarket/
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0

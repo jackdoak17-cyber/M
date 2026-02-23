@@ -287,15 +287,21 @@ def run(
     min_change_pp: float,
     post_top_n: int,
 ) -> int:
-    out_dir.mkdir(parents=True, exist_ok=True)
-    latest_path = out_dir / "latest.json"
-    previous_path = out_dir / "previous.json"
-    markdown_path = out_dir / "latest.md"
-    posts_path = out_dir / "midweek_posts.txt"
+    snapshots_dir = out_dir / "snapshots"
+    tracker_dir = out_dir / "tracker"
+    snapshots_dir.mkdir(parents=True, exist_ok=True)
+    tracker_dir.mkdir(parents=True, exist_ok=True)
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    latest_path = snapshots_dir / "latest.json"
+    dated_snapshot_path = snapshots_dir / f"{today}_snapshot.json"
+    dated_previous_path = snapshots_dir / f"{today}_previous.json"
+    markdown_path = tracker_dir / f"{today}_tracker.md"
+    posts_path = tracker_dir / f"{today}_midweek_posts.txt"
 
     if latest_path.exists():
-        shutil.copyfile(latest_path, previous_path)
-    previous_probabilities = _load_previous_probabilities(previous_path)
+        shutil.copyfile(latest_path, dated_previous_path)
+    previous_probabilities = _load_previous_probabilities(dated_previous_path)
 
     generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     tracked_payload: list[dict] = []
@@ -333,6 +339,7 @@ def run(
     }
 
     latest_path.write_text(json.dumps(snapshot, indent=2), encoding="utf-8")
+    dated_snapshot_path.write_text(json.dumps(snapshot, indent=2), encoding="utf-8")
     markdown_path.write_text(_to_markdown(snapshot), encoding="utf-8")
     posts_path.write_text(
         _to_posts(
@@ -358,7 +365,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--out-dir",
-        default="picks/polymarket",
+        default="output/polymarket",
         help="Output directory for tracker artifacts.",
     )
     parser.add_argument(

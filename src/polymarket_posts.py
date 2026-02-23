@@ -10,8 +10,8 @@ from typing import Any
 from src.polymarket_tracker import DEFAULT_GAMMA_BASE_URL, TRACKED_MARKETS, _extract_outcomes, _fetch_event
 
 
-POSTS_DIR = Path("picks/polymarket/posts")
-DEFAULT_BASELINE_PATH = Path("picks/polymarket/weekly_baseline.json")
+POSTS_DIR = Path("output/polymarket/weekly")
+DEFAULT_BASELINE_PATH = Path("output/polymarket/weekly_baseline.json")
 MOVER_THRESHOLD_PP = 5.0
 
 PL_SECTION_CONFIG = (
@@ -151,7 +151,7 @@ def _render_pl_market_watch(current: dict[str, Any], baseline: dict[str, Any] | 
     if section_blocks:
         lines.append("\n\n".join(section_blocks))
         lines.append("")
-    lines.append("All odds via @Polymarket")
+    lines.append("All odds via Polymarket")
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -186,7 +186,7 @@ def _render_mover_post(
         current_pct = _round_pct(current_prob)
         lines.append(f"• {label}: {previous_pct}% → {current_pct}% {_arrow(previous_pct, current_pct)}")
     lines.append("")
-    lines.append("via @Polymarket")
+    lines.append("via Polymarket")
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -198,7 +198,7 @@ def _write_file(path: Path, content: str) -> None:
 def _clear_existing_mover_files(posts_dir: Path) -> None:
     if not posts_dir.exists():
         return
-    for path in posts_dir.glob("biggest_mover_*.txt"):
+    for path in posts_dir.glob("*biggest_mover_*.txt"):
         path.unlink()
 
 
@@ -208,6 +208,7 @@ def run(
     timeout_sec: int,
     base_url: str,
 ) -> int:
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     errors: list[dict[str, str]] = []
     baseline = _load_json(baseline_path)
     if baseline_path.exists() and baseline is None:
@@ -219,7 +220,7 @@ def run(
     pl_post = _render_pl_market_watch(current=current, baseline=baseline)
 
     _clear_existing_mover_files(POSTS_DIR)
-    _write_file(POSTS_DIR / "pl_market_watch.txt", pl_post)
+    _write_file(POSTS_DIR / f"{today}_market_watch.txt", pl_post)
 
     mover_candidates: list[dict[str, Any]] = []
     if baseline:
@@ -251,7 +252,7 @@ def run(
 
     mover_candidates.sort(key=lambda item: item["max_move_pp"], reverse=True)
     for index, mover in enumerate(mover_candidates, start=1):
-        _write_file(POSTS_DIR / f"biggest_mover_{index}.txt", mover["content"])
+        _write_file(POSTS_DIR / f"{today}_biggest_mover_{index}.txt", mover["content"])
 
     summary = {
         "generated_at": current.get("generated_at"),
@@ -270,7 +271,7 @@ def run(
         "biggest_mover_triggered": bool(mover_candidates),
         "errors": errors,
     }
-    _write_file(POSTS_DIR / "post_summary.json", json.dumps(summary, indent=2))
+    _write_file(POSTS_DIR / f"{today}_summary.json", json.dumps(summary, indent=2))
 
     if generate:
         baseline_path.parent.mkdir(parents=True, exist_ok=True)
