@@ -23,6 +23,7 @@ OUTPUT_DIR = Path("output")
 BY_FIXTURE_DIR = OUTPUT_DIR / "by_fixture"
 PLAYER_PROPS_DIR = OUTPUT_DIR / "player_props"
 POLYMARKET_WEEKLY_DIR = OUTPUT_DIR / "polymarket" / "weekly"
+ODDS_MOVEMENT_DIR = OUTPUT_DIR / "odds_movement"
 
 
 SLOTS = {
@@ -54,6 +55,18 @@ SLOTS = {
     "polymarket_weekly": {
         "label": "Polymarket PL Market Watch",
         "type": "polymarket_weekly",
+        "weekend": None,
+        "same_day": True,
+    },
+    "odds_movement_saturday": {
+        "label": "PL Odds Movement (Saturday)",
+        "type": "odds_movement",
+        "weekend": None,
+        "same_day": True,
+    },
+    "odds_movement_sunday": {
+        "label": "PL Odds Movement (Sunday)",
+        "type": "odds_movement",
         "weekend": None,
         "same_day": True,
     },
@@ -101,6 +114,23 @@ def resolve_content(slot: str, target: date) -> ContentInfo | None:
 
     if content_type == "polymarket_weekly":
         content_path = POLYMARKET_WEEKLY_DIR / f"{date_label}_market_watch.txt"
+        if not content_path.exists():
+            return None
+        content = content_path.read_text(encoding="utf-8").strip()
+        if not content:
+            return None
+        return ContentInfo(
+            slot=slot,
+            scheduled_for=target,
+            day_label=day_label,
+            path=content_path,
+            content=content,
+            label=slot_config["label"],
+            combined=False,
+        )
+
+    if content_type == "odds_movement":
+        content_path = ODDS_MOVEMENT_DIR / f"{date_label}_odds_movement.txt"
         if not content_path.exists():
             return None
         content = content_path.read_text(encoding="utf-8").strip()

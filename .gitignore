@@ -9,3 +9,4 @@ output/*
 !output/polymarket/
 !output/by_fixture/
 !output/player_props/
+!output/odds_movement/

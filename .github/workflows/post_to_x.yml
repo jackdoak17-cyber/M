@@ -8,6 +8,8 @@ on:
     - cron: "30 12 * * *"
     - cron: "30 14 * * *"
     - cron: "15 12 * * 2"
+    - cron: "0 11 * * 6"
+    - cron: "0 11 * * 0"
   workflow_dispatch:
     inputs:
       slot:
@@ -22,6 +24,8 @@ on:
           - weekday_fixture
           - weekday_player
           - polymarket_weekly
+          - odds_movement_saturday
+          - odds_movement_sunday
       dry_run:
         description: "Dry run (no post to X)"
         required: true
@@ -63,6 +67,8 @@ jobs:
               "30 12 * * *") SLOT="weekday_fixture" ;;
               "30 14 * * *") SLOT="weekday_player" ;;
               "15 12 * * 2") SLOT="polymarket_weekly" ;;
+              "0 11 * * 6") SLOT="odds_movement_saturday" ;;
+              "0 11 * * 0") SLOT="odds_movement_sunday" ;;
               *) SLOT="" ;;
             esac
           fi
