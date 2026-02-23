@@ -7,6 +7,7 @@ create table if not exists post_approvals (
   status text not null check (status in ('pending','approved','rejected')),
   content_path text not null,
   content text not null,
+  content_hash text,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
   approved_at timestamptz,

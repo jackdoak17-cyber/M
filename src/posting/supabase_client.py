@@ -17,6 +17,7 @@ class PostApproval:
     status: str
     content_path: str
     content: str
+    content_hash: str | None = None
     post_type: str | None = None
     post_date: str | None = None
     created_at: str | None = None

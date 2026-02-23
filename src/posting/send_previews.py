@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 from datetime import datetime, timezone
 
 from .content_resolver import resolve_content, resolve_target_date
@@ -16,6 +17,9 @@ def _truncate_text(text: str, limit: int = TELEGRAM_MAX) -> str:
         return text
     return text[: limit - 20].rstrip() + "\n\n[...truncated]"
 
+def _content_hash(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
 
 def run(slot: str) -> int:
     target = resolve_target_date("preview")
@@ -26,6 +30,7 @@ def run(slot: str) -> int:
 
     post_key = f"{info.scheduled_for.isoformat()}_{slot}"
     post_date = info.scheduled_for.isoformat()
+    content_hash = _content_hash(info.content)
     payload = {
         "post_key": post_key,
         "slot": slot,
@@ -35,6 +40,7 @@ def run(slot: str) -> int:
         "status": "pending",
         "content_path": str(info.path),
         "content": info.content,
+        "content_hash": content_hash,
         "updated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
     }
     upsert_post_approval(payload)
