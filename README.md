@@ -4,7 +4,7 @@ This repo contains two automated workflows:
 
 1) Premier League prop sheets and weekend player posts (text outputs in `output/`)
 2) A multi-league prop betting bot that generates top 10 value picks (JSON in `picks/`)
-3) A Polymarket tracker for selected markets (JSON + markdown snapshots in `picks/polymarket/`)
+3) A Polymarket tracker for selected markets (JSON + markdown snapshots in `output/polymarket/`)
 
 ## Local Setup
 
@@ -67,10 +67,10 @@ python -m src.polymarket_tracker --window-label "after this weekend"
 
 Artifacts:
 
-- `picks/polymarket/latest.json`
-- `picks/polymarket/latest.md`
-- `picks/polymarket/previous.json`
-- `picks/polymarket/midweek_posts.txt`
+- `output/polymarket/snapshots/{date}_snapshot.json`
+- `output/polymarket/snapshots/latest.json`
+- `output/polymarket/tracker/{date}_tracker.md`
+- `output/polymarket/tracker/{date}_midweek_posts.txt`
 
 ## Run Polymarket Weekly Posts
 
@@ -89,15 +89,15 @@ python -m src.polymarket_posts --preview
 Force a specific baseline file:
 
 ```
-python -m src.polymarket_posts --generate --baseline picks/polymarket/weekly_baseline.json
+python -m src.polymarket_posts --generate --baseline output/polymarket/weekly_baseline.json
 ```
 
 Artifacts:
 
-- `picks/polymarket/posts/pl_market_watch.txt`
-- `picks/polymarket/posts/biggest_mover_*.txt` (if triggered)
-- `picks/polymarket/posts/post_summary.json`
-- `picks/polymarket/weekly_baseline.json`
+- `output/polymarket/weekly/{date}_market_watch.txt`
+- `output/polymarket/weekly/{date}_biggest_mover_*.txt` (if triggered)
+- `output/polymarket/weekly/{date}_summary.json`
+- `output/polymarket/weekly_baseline.json`
 
 ## GitHub Actions
 
