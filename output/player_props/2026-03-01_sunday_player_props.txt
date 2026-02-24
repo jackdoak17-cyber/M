@@ -12,16 +12,16 @@ Leave a like if you find these useful.
 - M. Wieffer (Brighton) = 1, 1, 1, 2, 2
 - E. Fernández (Chelsea) = 1, 3, 1, 3, 1
 - R. Jiménez (Fulham) = 1, 3, 2, 1, 1
-- A. Diallo (Man Utd) = 1, 2, 1, 1, 1
-- H. Maguire (Man Utd) = 2, 1, 1, 2, 1
+- A. Diallo (Man Utd) = 1, 1, 2, 1, 1
+- H. Maguire (Man Utd) = 2, 2, 1, 1, 2
 - M. Gibbs-White (Nottm Forest) = 1, 2, 2, 1, 2
 - X. Simons (Spurs) = 1, 4, 2, 4, 2
 
 📊1+ Fouls Committed in ≥5/5📊
 - D. Gómez (Brighton) = 3, 1, 1, 1, 3
 - D. Muñoz (Palace) = 1, 1, 1, 1, 1
-- Casemiro (Man Utd) = 1, 1, 1, 1, 2
-- L. Shaw (Man Utd) = 1, 2, 1, 2, 2
+- Casemiro (Man Utd) = 1, 1, 1, 1, 1
+- L. Shaw (Man Utd) = 1, 1, 2, 1, 2
 - E. Anderson (Nottm Forest) = 1, 1, 3, 1, 1
 - I. Sangaré (Nottm Forest) = 4, 4, 3, 1, 2
 - P. Sarr (Spurs) = 1, 2, 3, 2, 2
@@ -33,7 +33,7 @@ Leave a like if you find these useful.
 - J. Pedro (Chelsea) = 3, 7, 2, 2, 2
 - I. Sarr (Palace) = 2, 2, 2, 3, 2
 - R. Jiménez (Fulham) = 2, 3, 2, 4, 3
-- B. Mbeumo (Man Utd) = 2, 3, 1, 2, 3
+- B. Mbeumo (Man Utd) = 3, 2, 3, 1, 2
 - M. Gibbs-White (Nottm Forest) = 2, 5, 2, 3, 0
 - X. Simons (Spurs) = 1, 3, 2, 5, 2
 
@@ -43,5 +43,6 @@ Leave a like if you find these useful.
 
 📊2+ Fouls Drawn in ≥4/5📊
 - A. Santos (Chelsea) = 3, 3, 2, 3, 0
+- K. Mainoo (Man Utd) = 2, 2, 2, 2, 0
 - C. Gallagher (Spurs) = 0, 3, 2, 2, 2
 - X. Simons (Spurs) = 1, 4, 2, 4, 2
