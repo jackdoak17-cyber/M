@@ -298,9 +298,9 @@
       "rank": 2,
       "writeup": "🎯 Azzedine Ounahi (Girona) 2+ shots vs Deportivo Alavés (La Liga)\nThe midfielder is averaging 2.33 shots per 90 this season and has hit 2+ shots in 4 of his last 5 matches. He's recorded 2+ shots in 7 of his last 20 overall, though his away average drops to 1.80 per 90 compared to 2.20 at home.\n📊 7/20 (35%)\n💰 Kambi 2.02",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 2.0,
+        "hit": true,
+        "checked_at": "2026-02-24T11:12:53.951708"
       }
     }
   ]
