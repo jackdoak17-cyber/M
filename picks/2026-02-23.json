@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 James Bree (Southampton) 1+ fouls committed vs Queens Park Rangers (Championship)\nBree has committed 1+ fouls in all 5 of his last 5 matches and 16 of his last 20 overall. He's averaging 1.53 fouls per 90 this season, rising to 1.50 at home compared to just 1.17 away. Queens Park Rangers draw 10.3 fouls per game, ranking as the team that draws the most fouls in the Championship against the 10.5 league average.\n📊 16/20 (80%)\n💰 Bet365 1.833",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-02-25T11:22:31.570792"
       }
     },
     {
@@ -440,9 +440,9 @@
       "rank": 3,
       "writeup": "🎯 Ilias Chair (Queens Park Rangers) 1+ shots on target vs Southampton (Championship)\nChair is averaging 1.18 shots on target per 90 this season and has hit this line in 4 of his last 5 matches and 9 of his last 11 overall. Against similar opponents like Coventry City, Hull City, and Ipswich Town, he's recorded 1+ shots on target in all 5 games. His away form shows 1.17 shots on target per 90 compared to just 0.80 at home.\n📊 9/11 (82%)\n💰 Kambi 2.05",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-02-25T11:22:31.757933"
       }
     }
   ]
