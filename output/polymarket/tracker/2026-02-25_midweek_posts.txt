@@ -1,17 +1,26 @@
+🏆 Change in La Liga Winner probability since last update:
+
+• Barcelona: 60.5% -> 60%
+• Real Madrid: 36.5% -> 36.5%
+• Athletic Bilbao: n/a -> 0.5%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/la-liga-winner-114
+
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 42.5% -> 43%
-• Erling Haaland: 29.5% -> 30.5%
-• Bruno Fernandes: 9.5% -> 9.5%
+• Declan Rice: 43% -> 44.5%
+• Erling Haaland: 30.5% -> 30%
+• Bruno Fernandes: 9.5% -> 12%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 99% -> 98.9%
-• Burnley (Relegated): 95.8% -> 95.8%
-• West Ham (Relegated): 51.5% -> 52.5%
+• Wolves (Relegated): 98.9% -> 99.2%
+• Burnley (Relegated): 95.8% -> 97.6%
+• West Ham (Relegated): 52.5% -> 53.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
