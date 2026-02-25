@@ -1,41 +1,25 @@
-name: Send Telegram Previews
+name: Send Instagram Telegram Previews
 
 on:
   schedule:
-    - cron: "0 9 * * *"
-    - cron: "0 10 * * *"
-    - cron: "0 11 * * *"
-    - cron: "30 12 * * *"
-    - cron: "30 13 * * *"
-    - cron: "0 8 * * 2"
-    - cron: "0 9 * * 6"
-    - cron: "0 9 * * 0"
     - cron: "0 16 * * 5"
     - cron: "0 17 * * 5"
     - cron: "30 6 * * 6"
-    - cron: "30 6 * * 0"
     - cron: "30 7 * * 6"
+    - cron: "30 6 * * 0"
     - cron: "30 7 * * 0"
   workflow_dispatch:
     inputs:
       slot:
-        description: "Preview slot"
+        description: "Instagram preview slot"
         required: true
-        default: "weekday_fixture"
+        default: "ig_shot_props_value"
         type: choice
         options:
-          - weekend_fixture
-          - weekend_player_100
-          - weekend_player_80
-          - weekday_fixture
-          - weekday_player
-          - polymarket_weekly
-          - odds_movement_saturday
-          - odds_movement_sunday
-          - shot_props_value
-          - shot_props_high_prob
+          - ig_shot_props_value
+          - ig_shot_props_high_prob
       target_date:
-        description: "Override target date (YYYY-MM-DD). Leave blank for tomorrow."
+        description: "Scheduled post date (YYYY-MM-DD). Leave blank for today."
         required: false
         default: ""
 
@@ -54,10 +38,18 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: npx -y playwright@1.52.0 install chromium
 
       - name: Resolve slot
         run: |
@@ -80,31 +72,28 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             SLOT="${{ inputs.slot }}"
           else
-            case "${{ github.event.schedule }}" in
-              "0 9 * * *") SLOT="weekend_fixture" ;;
-              "0 10 * * *") SLOT="weekend_player_100" ;;
-              "0 11 * * *") SLOT="weekend_player_80" ;;
-              "30 12 * * *") SLOT="weekday_fixture" ;;
-              "30 13 * * *") SLOT="weekday_player" ;;
-              "0 8 * * 2") SLOT="polymarket_weekly" ;;
-              "0 9 * * 6") SLOT="odds_movement_saturday" ;;
-              "0 9 * * 0") SLOT="odds_movement_sunday" ;;
-              "0 16 * * 5") SLOT="shot_props_value" ;;
-              "0 17 * * 5") SLOT="shot_props_value" ;;
-              "30 6 * * 6") SLOT="shot_props_high_prob" ;;
-              "30 6 * * 0") SLOT="shot_props_high_prob" ;;
-              "30 7 * * 6") SLOT="shot_props_high_prob" ;;
-              "30 7 * * 0") SLOT="shot_props_high_prob" ;;
-              *) SLOT="" ;;
-            esac
-            if [ -n "$SLOT" ] && ! is_valid_london_cron "${{ github.event.schedule }}"; then
-              echo "Skipping ${SLOT} for cron '${{ github.event.schedule }}' (wrong Europe/London offset)."
+            if [ "${{ vars.ENABLE_INSTAGRAM_AUTOMATION || 'false' }}" != "true" ]; then
+              echo "Instagram automation disabled via ENABLE_INSTAGRAM_AUTOMATION variable."
               SLOT=""
+            else
+              case "${{ github.event.schedule }}" in
+                "0 16 * * 5") SLOT="ig_shot_props_value" ;;
+                "0 17 * * 5") SLOT="ig_shot_props_value" ;;
+                "30 6 * * 6") SLOT="ig_shot_props_high_prob" ;;
+                "30 7 * * 6") SLOT="ig_shot_props_high_prob" ;;
+                "30 6 * * 0") SLOT="ig_shot_props_high_prob" ;;
+                "30 7 * * 0") SLOT="ig_shot_props_high_prob" ;;
+                *) SLOT="" ;;
+              esac
+              if [ -n "$SLOT" ] && ! is_valid_london_cron "${{ github.event.schedule }}"; then
+                echo "Skipping ${SLOT} for cron '${{ github.event.schedule }}' (wrong Europe/London offset)."
+                SLOT=""
+              fi
             fi
           fi
           echo "SLOT=$SLOT" >> "$GITHUB_ENV"
 
-      - name: Send preview
+      - name: Send Instagram preview
         run: |
           if [ -z "$SLOT" ]; then
             echo "No slot resolved."
@@ -114,11 +103,18 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.target_date }}" ]; then
             DATE_ARG="--date ${{ inputs.target_date }}"
           fi
-          python -m src.posting.send_previews --slot "$SLOT" $DATE_ARG
+          python -m src.posting.send_previews_instagram --slot "$SLOT" $DATE_ARG
         env:
           SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           ODDS_ANALYST_X_POST_BOT_TOKEN: ${{ secrets.ODDS_ANALYST_X_POST_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CLOUDFLARE_R2_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY }}
+          CLOUDFLARE_R2_SECRET_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_KEY }}
+          CLOUDFLARE_R2_BUCKET_NAME: ${{ secrets.CLOUDFLARE_R2_BUCKET_NAME }}
+          CLOUDFLARE_R2_PUBLIC_URL: ${{ secrets.CLOUDFLARE_R2_PUBLIC_URL }}
+          CLOUDFLARE_R2_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_R2_ACCOUNT_ID }}
+          S3_API_ENDPOINT: ${{ secrets.S3_API_ENDPOINT }}
           PROP_SHEET_TIMEZONE: ${{ vars.PROP_SHEET_TIMEZONE || 'Europe/London' }}
+

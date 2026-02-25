@@ -27,6 +27,36 @@ def send_message(text: str, buttons: list[list[dict[str, str]]] | None = None) -
     return response.json()
 
 
+def send_photo(
+    photo: str,
+    caption: str | None = None,
+    buttons: list[list[dict[str, str]]] | None = None,
+) -> dict[str, Any]:
+    settings = get_posting_settings()
+    payload: dict[str, Any] = {
+        "chat_id": settings.telegram_chat_id,
+        "photo": photo,
+    }
+    if caption:
+        payload["caption"] = caption
+    if buttons:
+        payload["reply_markup"] = json.dumps({"inline_keyboard": buttons})
+    response = requests.post(f"{_base_url()}/sendPhoto", json=payload, timeout=20)
+    response.raise_for_status()
+    return response.json()
+
+
+def send_media_group(media: list[dict[str, Any]]) -> dict[str, Any]:
+    settings = get_posting_settings()
+    payload: dict[str, Any] = {
+        "chat_id": settings.telegram_chat_id,
+        "media": media,
+    }
+    response = requests.post(f"{_base_url()}/sendMediaGroup", json=payload, timeout=30)
+    response.raise_for_status()
+    return response.json()
+
+
 def answer_callback(callback_id: str, text: str | None = None) -> None:
     payload: dict[str, Any] = {"callback_query_id": callback_id}
     if text:

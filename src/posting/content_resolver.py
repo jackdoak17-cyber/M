@@ -24,6 +24,7 @@ BY_FIXTURE_DIR = OUTPUT_DIR / "by_fixture"
 PLAYER_PROPS_DIR = OUTPUT_DIR / "player_props"
 POLYMARKET_WEEKLY_DIR = OUTPUT_DIR / "polymarket" / "weekly"
 ODDS_MOVEMENT_DIR = OUTPUT_DIR / "odds_movement"
+SHOT_PROPS_DIR = OUTPUT_DIR / "shot_props"
 
 
 SLOTS = {
@@ -67,6 +68,18 @@ SLOTS = {
     "odds_movement_sunday": {
         "label": "PL Odds Movement (Sunday)",
         "type": "odds_movement",
+        "weekend": None,
+        "same_day": True,
+    },
+    "shot_props_value": {
+        "label": "Shot Props Potential Value",
+        "type": "shot_props_value",
+        "weekend": None,
+        "same_day": True,
+    },
+    "shot_props_high_prob": {
+        "label": "Shot Props High Probability",
+        "type": "shot_props_high_prob",
         "weekend": None,
         "same_day": True,
     },
@@ -131,6 +144,40 @@ def resolve_content(slot: str, target: date) -> ContentInfo | None:
 
     if content_type == "odds_movement":
         content_path = ODDS_MOVEMENT_DIR / f"{date_label}_odds_movement.txt"
+        if not content_path.exists():
+            return None
+        content = content_path.read_text(encoding="utf-8").strip()
+        if not content:
+            return None
+        return ContentInfo(
+            slot=slot,
+            scheduled_for=target,
+            day_label=day_label,
+            path=content_path,
+            content=content,
+            label=slot_config["label"],
+            combined=False,
+        )
+
+    if content_type == "shot_props_value":
+        content_path = SHOT_PROPS_DIR / f"{date_label}_potential_value.txt"
+        if not content_path.exists():
+            return None
+        content = content_path.read_text(encoding="utf-8").strip()
+        if not content:
+            return None
+        return ContentInfo(
+            slot=slot,
+            scheduled_for=target,
+            day_label=day_label,
+            path=content_path,
+            content=content,
+            label=slot_config["label"],
+            combined=False,
+        )
+
+    if content_type == "shot_props_high_prob":
+        content_path = SHOT_PROPS_DIR / f"{date_label}_high_probability.txt"
         if not content_path.exists():
             return None
         content = content_path.read_text(encoding="utf-8").strip()

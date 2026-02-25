@@ -10,3 +10,4 @@ output/*
 !output/by_fixture/
 !output/player_props/
 !output/odds_movement/
+!output/shot_props/

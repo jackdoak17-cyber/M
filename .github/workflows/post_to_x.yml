@@ -10,6 +10,12 @@ on:
     - cron: "15 12 * * 2"
     - cron: "0 11 * * 6"
     - cron: "0 11 * * 0"
+    - cron: "0 17 * * 5"
+    - cron: "0 18 * * 5"
+    - cron: "15 8 * * 6"
+    - cron: "15 8 * * 0"
+    - cron: "15 9 * * 6"
+    - cron: "15 9 * * 0"
   workflow_dispatch:
     inputs:
       slot:
@@ -26,6 +32,8 @@ on:
           - polymarket_weekly
           - odds_movement_saturday
           - odds_movement_sunday
+          - shot_props_value
+          - shot_props_high_prob
       dry_run:
         description: "Dry run (no post to X)"
         required: true
@@ -57,6 +65,22 @@ jobs:
 
       - name: Resolve slot
         run: |
+          is_valid_london_cron() {
+            CRON_EXPR="$1"
+            LONDON_OFFSET="$(TZ='Europe/London' date +%z)"
+            case "$CRON_EXPR" in
+              "0 17 * * 5"|"15 8 * * 6"|"15 8 * * 0")
+                [ "$LONDON_OFFSET" = "+0100" ]
+                ;;
+              "0 18 * * 5"|"15 9 * * 6"|"15 9 * * 0")
+                [ "$LONDON_OFFSET" = "+0000" ]
+                ;;
+              *)
+                return 0
+                ;;
+            esac
+          }
+
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             SLOT="${{ inputs.slot }}"
           else
@@ -69,8 +93,18 @@ jobs:
               "15 12 * * 2") SLOT="polymarket_weekly" ;;
               "0 11 * * 6") SLOT="odds_movement_saturday" ;;
               "0 11 * * 0") SLOT="odds_movement_sunday" ;;
+              "0 17 * * 5") SLOT="shot_props_value" ;;
+              "0 18 * * 5") SLOT="shot_props_value" ;;
+              "15 8 * * 6") SLOT="shot_props_high_prob" ;;
+              "15 8 * * 0") SLOT="shot_props_high_prob" ;;
+              "15 9 * * 6") SLOT="shot_props_high_prob" ;;
+              "15 9 * * 0") SLOT="shot_props_high_prob" ;;
               *) SLOT="" ;;
             esac
+            if [ -n "$SLOT" ] && ! is_valid_london_cron "${{ github.event.schedule }}"; then
+              echo "Skipping ${SLOT} for cron '${{ github.event.schedule }}' (wrong Europe/London offset)."
+              SLOT=""
+            fi
           fi
           echo "SLOT=$SLOT" >> "$GITHUB_ENV"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
