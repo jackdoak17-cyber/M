@@ -1,0 +1,847 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "high_probability",
+  "generated_at": "2026-02-25T21:51:13+00:00",
+  "scheduled_for": "2026-02-28",
+  "source_target_date": "2026-02-28",
+  "fixture_dates": [
+    "2026-02-28"
+  ],
+  "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+  "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.9,
+    "min_odds": 1.3,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 17,
+    "by_section": {
+      "1+ Shot": 7,
+      "2+ Shots": 4,
+      "1+ SOT": 6
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19433682:766659:1+ Shot:1",
+          "player_id": 766659,
+          "player_name": "Edmond Tapsoba",
+          "team_id": 3321,
+          "team_name": "Bayer 04 Leverkusen",
+          "fixture_id": 19433682,
+          "fixture_label": "Bayer 04 Leverkusen vs FSV Mainz 05",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 10,
+          "hit_rate": 1.0,
+          "odds": 1.53,
+          "display": {
+            "rate": "10/10",
+            "odds": "@1.53",
+            "summary": "Edmond Tapsoba (Bayer 04 Leverkusen) won in 10/10 @1.53"
+          }
+        },
+        {
+          "id": "19467841:37316421:1+ Shot:1",
+          "player_id": 37316421,
+          "player_name": "Yassin Belkhdim",
+          "team_id": 776,
+          "team_name": "Angers SCO",
+          "fixture_id": 19467841,
+          "fixture_label": "Monaco vs Angers SCO",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 10,
+          "hit_rate": 1.0,
+          "odds": 1.53,
+          "display": {
+            "rate": "10/10",
+            "odds": "@1.53",
+            "summary": "Yassin Belkhdim (Angers SCO) won in 10/10 @1.53"
+          }
+        },
+        {
+          "id": "19427158:37316858:1+ Shot:1",
+          "player_id": 37316858,
+          "player_name": "Hannibal",
+          "team_id": 27,
+          "team_name": "Burnley",
+          "fixture_id": 19427158,
+          "fixture_label": "Burnley vs Brentford",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Hannibal (Burnley) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19433689:37315722:1+ Shot:1",
+          "player_id": 37315722,
+          "player_name": "Joel Chima Fujita",
+          "team_id": 353,
+          "team_name": "St. Pauli",
+          "fixture_id": 19433689,
+          "fixture_label": "TSG Hoffenheim vs St. Pauli",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Joel Chima Fujita (St. Pauli) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19427163:4536524:1+ Shot:1",
+          "player_id": 4536524,
+          "player_name": "James Garner",
+          "team_id": 13,
+          "team_name": "Everton",
+          "fixture_id": 19427163,
+          "fixture_label": "Newcastle United vs Everton",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.44,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.44",
+            "summary": "James Garner (Everton) won in 9/10 @1.44"
+          }
+        },
+        {
+          "id": "19443139:111694:1+ Shot:1",
+          "player_id": 111694,
+          "player_name": "Gaius Makouta",
+          "team_id": 347,
+          "team_name": "Alanyaspor",
+          "fixture_id": 19443139,
+          "fixture_label": "Galatasaray vs Alanyaspor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.44,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.44",
+            "summary": "Gaius Makouta (Alanyaspor) won in 9/10 @1.44"
+          }
+        },
+        {
+          "id": "19427163:540613:1+ Shot:1",
+          "player_id": 540613,
+          "player_name": "Kiernan Dewsbury-Hall",
+          "team_id": 13,
+          "team_name": "Everton",
+          "fixture_id": 19427163,
+          "fixture_label": "Newcastle United vs Everton",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Kiernan Dewsbury-Hall (Everton) won in 9/10 @1.33"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19439508:37526847:2+ Shots:2",
+          "player_id": 37526847,
+          "player_name": "Ilyas Chaira",
+          "team_id": 93,
+          "team_name": "Real Oviedo",
+          "fixture_id": 19439508,
+          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 10,
+          "sample": 10,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "10/10",
+            "odds": "@1.36",
+            "summary": "Ilyas Chaira (Real Oviedo) won in 10/10 @1.36"
+          }
+        },
+        {
+          "id": "19428211:37603838:2+ Shots:2",
+          "player_id": 37603838,
+          "player_name": "Amar Fatah",
+          "team_id": 282,
+          "team_name": "Dundee United",
+          "fixture_id": 19428211,
+          "fixture_label": "Motherwell vs Dundee United",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Amar Fatah (Dundee United) won in 9/10 @1.80"
+          }
+        },
+        {
+          "id": "19467846:37337715:2+ Shots:2",
+          "player_id": 37337715,
+          "player_name": "Issa Soumar\u00e9",
+          "team_id": 1055,
+          "team_name": "Le Havre",
+          "fixture_id": 19467846,
+          "fixture_label": "Le Havre vs Paris Saint Germain",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Issa Soumar\u00e9 (Le Havre) won in 9/10 @1.80"
+          }
+        },
+        {
+          "id": "19428208:7026565:2+ Shots:2",
+          "player_id": 7026565,
+          "player_name": "Tyreece John-Jules",
+          "team_id": 180,
+          "team_name": "Kilmarnock",
+          "fixture_id": 19428208,
+          "fixture_label": "Falkirk vs Kilmarnock",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.36,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.36",
+            "summary": "Tyreece John-Jules (Kilmarnock) won in 9/10 @1.36"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19443143:25709:1+ SOT:1",
+          "player_id": 25709,
+          "player_name": "Vaclav Cerny",
+          "team_id": 554,
+          "team_name": "Be\u015fikta\u015f",
+          "fixture_id": 19443143,
+          "fixture_label": "Kocaelispor vs Be\u015fikta\u015f",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 10,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "10/10",
+            "odds": "@1.36",
+            "summary": "Vaclav Cerny (Be\u015fikta\u015f) won in 10/10 @1.36"
+          }
+        },
+        {
+          "id": "19439508:37526847:1+ SOT:1",
+          "player_id": 37526847,
+          "player_name": "Ilyas Chaira",
+          "team_id": 93,
+          "team_name": "Real Oviedo",
+          "fixture_id": 19439508,
+          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Ilyas Chaira (Real Oviedo) won in 9/10 @1.80"
+          }
+        },
+        {
+          "id": "19429412:16475806:1+ SOT:1",
+          "player_id": 16475806,
+          "player_name": "Mohamed Ihattaren",
+          "team_id": 1459,
+          "team_name": "Fortuna Sittard",
+          "fixture_id": 19429412,
+          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.57,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.57",
+            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 9/10 @1.57"
+          }
+        },
+        {
+          "id": "19429412:30291:1+ SOT:1",
+          "player_id": 30291,
+          "player_name": "Kaj Sierhuis",
+          "team_id": 1459,
+          "team_name": "Fortuna Sittard",
+          "fixture_id": 19429412,
+          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Kaj Sierhuis (Fortuna Sittard) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19439504:186932:1+ SOT:1",
+          "player_id": 186932,
+          "player_name": "Mikel Oyarzabal",
+          "team_id": 594,
+          "team_name": "Real Sociedad",
+          "fixture_id": 19439504,
+          "fixture_label": "Mallorca vs Real Sociedad",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Mikel Oyarzabal (Real Sociedad) won in 9/10 @1.33"
+          }
+        },
+        {
+          "id": "19433683:24799984:1+ SOT:1",
+          "player_id": 24799984,
+          "player_name": "Michael Olise",
+          "team_id": 503,
+          "team_name": "FC Bayern M\u00fcnchen",
+          "fixture_id": 19433683,
+          "fixture_label": "Borussia Dortmund vs FC Bayern M\u00fcnchen",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Michael Olise (FC Bayern M\u00fcnchen) won in 9/10 @1.33"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 28 Feb 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 7\n\u2022 2+ Shots: 4\n\u2022 1+ SOT: 6\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "High Probability List",
+      "title_words": {
+        "primary": "HIGH",
+        "accent": "PROBABILITY"
+      },
+      "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+      "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+      "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
+      "fixture_window": "Sat 28 Feb 2026",
+      "stats": {
+        "total_players": 17,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 90
+      },
+      "slide_number": 1,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19433682:766659:1+ Shot:1",
+          "player_id": 766659,
+          "player_name": "Edmond Tapsoba",
+          "team_id": 3321,
+          "team_name": "Bayer 04 Leverkusen",
+          "fixture_id": 19433682,
+          "fixture_label": "Bayer 04 Leverkusen vs FSV Mainz 05",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 10,
+          "hit_rate": 1.0,
+          "odds": 1.53,
+          "display": {
+            "rate": "10/10",
+            "odds": "@1.53",
+            "summary": "Edmond Tapsoba (Bayer 04 Leverkusen) won in 10/10 @1.53"
+          }
+        },
+        {
+          "id": "19467841:37316421:1+ Shot:1",
+          "player_id": 37316421,
+          "player_name": "Yassin Belkhdim",
+          "team_id": 776,
+          "team_name": "Angers SCO",
+          "fixture_id": 19467841,
+          "fixture_label": "Monaco vs Angers SCO",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 10,
+          "hit_rate": 1.0,
+          "odds": 1.53,
+          "display": {
+            "rate": "10/10",
+            "odds": "@1.53",
+            "summary": "Yassin Belkhdim (Angers SCO) won in 10/10 @1.53"
+          }
+        },
+        {
+          "id": "19427158:37316858:1+ Shot:1",
+          "player_id": 37316858,
+          "player_name": "Hannibal",
+          "team_id": 27,
+          "team_name": "Burnley",
+          "fixture_id": 19427158,
+          "fixture_label": "Burnley vs Brentford",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Hannibal (Burnley) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19433689:37315722:1+ Shot:1",
+          "player_id": 37315722,
+          "player_name": "Joel Chima Fujita",
+          "team_id": 353,
+          "team_name": "St. Pauli",
+          "fixture_id": 19433689,
+          "fixture_label": "TSG Hoffenheim vs St. Pauli",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Joel Chima Fujita (St. Pauli) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19427163:4536524:1+ Shot:1",
+          "player_id": 4536524,
+          "player_name": "James Garner",
+          "team_id": 13,
+          "team_name": "Everton",
+          "fixture_id": 19427163,
+          "fixture_label": "Newcastle United vs Everton",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.44,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.44",
+            "summary": "James Garner (Everton) won in 9/10 @1.44"
+          }
+        },
+        {
+          "id": "19443139:111694:1+ Shot:1",
+          "player_id": 111694,
+          "player_name": "Gaius Makouta",
+          "team_id": 347,
+          "team_name": "Alanyaspor",
+          "fixture_id": 19443139,
+          "fixture_label": "Galatasaray vs Alanyaspor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.44,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.44",
+            "summary": "Gaius Makouta (Alanyaspor) won in 9/10 @1.44"
+          }
+        },
+        {
+          "id": "19427163:540613:1+ Shot:1",
+          "player_id": 540613,
+          "player_name": "Kiernan Dewsbury-Hall",
+          "team_id": 13,
+          "team_name": "Everton",
+          "fixture_id": 19427163,
+          "fixture_label": "Newcastle United vs Everton",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Kiernan Dewsbury-Hall (Everton) won in 9/10 @1.33"
+          }
+        }
+      ],
+      "section_total_rows": 7,
+      "slide_number": 2,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19439508:37526847:2+ Shots:2",
+          "player_id": 37526847,
+          "player_name": "Ilyas Chaira",
+          "team_id": 93,
+          "team_name": "Real Oviedo",
+          "fixture_id": 19439508,
+          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 10,
+          "sample": 10,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "10/10",
+            "odds": "@1.36",
+            "summary": "Ilyas Chaira (Real Oviedo) won in 10/10 @1.36"
+          }
+        },
+        {
+          "id": "19428211:37603838:2+ Shots:2",
+          "player_id": 37603838,
+          "player_name": "Amar Fatah",
+          "team_id": 282,
+          "team_name": "Dundee United",
+          "fixture_id": 19428211,
+          "fixture_label": "Motherwell vs Dundee United",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Amar Fatah (Dundee United) won in 9/10 @1.80"
+          }
+        },
+        {
+          "id": "19467846:37337715:2+ Shots:2",
+          "player_id": 37337715,
+          "player_name": "Issa Soumar\u00e9",
+          "team_id": 1055,
+          "team_name": "Le Havre",
+          "fixture_id": 19467846,
+          "fixture_label": "Le Havre vs Paris Saint Germain",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Issa Soumar\u00e9 (Le Havre) won in 9/10 @1.80"
+          }
+        },
+        {
+          "id": "19428208:7026565:2+ Shots:2",
+          "player_id": 7026565,
+          "player_name": "Tyreece John-Jules",
+          "team_id": 180,
+          "team_name": "Kilmarnock",
+          "fixture_id": 19428208,
+          "fixture_label": "Falkirk vs Kilmarnock",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.36,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.36",
+            "summary": "Tyreece John-Jules (Kilmarnock) won in 9/10 @1.36"
+          }
+        }
+      ],
+      "section_total_rows": 4,
+      "slide_number": 3,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19443143:25709:1+ SOT:1",
+          "player_id": 25709,
+          "player_name": "Vaclav Cerny",
+          "team_id": 554,
+          "team_name": "Be\u015fikta\u015f",
+          "fixture_id": 19443143,
+          "fixture_label": "Kocaelispor vs Be\u015fikta\u015f",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 10,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "10/10",
+            "odds": "@1.36",
+            "summary": "Vaclav Cerny (Be\u015fikta\u015f) won in 10/10 @1.36"
+          }
+        },
+        {
+          "id": "19439508:37526847:1+ SOT:1",
+          "player_id": 37526847,
+          "player_name": "Ilyas Chaira",
+          "team_id": 93,
+          "team_name": "Real Oviedo",
+          "fixture_id": 19439508,
+          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Ilyas Chaira (Real Oviedo) won in 9/10 @1.80"
+          }
+        },
+        {
+          "id": "19429412:16475806:1+ SOT:1",
+          "player_id": 16475806,
+          "player_name": "Mohamed Ihattaren",
+          "team_id": 1459,
+          "team_name": "Fortuna Sittard",
+          "fixture_id": 19429412,
+          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.57,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.57",
+            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 9/10 @1.57"
+          }
+        },
+        {
+          "id": "19429412:30291:1+ SOT:1",
+          "player_id": 30291,
+          "player_name": "Kaj Sierhuis",
+          "team_id": 1459,
+          "team_name": "Fortuna Sittard",
+          "fixture_id": 19429412,
+          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Kaj Sierhuis (Fortuna Sittard) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19439504:186932:1+ SOT:1",
+          "player_id": 186932,
+          "player_name": "Mikel Oyarzabal",
+          "team_id": 594,
+          "team_name": "Real Sociedad",
+          "fixture_id": 19439504,
+          "fixture_label": "Mallorca vs Real Sociedad",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Mikel Oyarzabal (Real Sociedad) won in 9/10 @1.33"
+          }
+        },
+        {
+          "id": "19433683:24799984:1+ SOT:1",
+          "player_id": 24799984,
+          "player_name": "Michael Olise",
+          "team_id": 503,
+          "team_name": "FC Bayern M\u00fcnchen",
+          "fixture_id": 19433683,
+          "fixture_label": "Borussia Dortmund vs FC Bayern M\u00fcnchen",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Michael Olise (FC Bayern M\u00fcnchen) won in 9/10 @1.33"
+          }
+        }
+      ],
+      "section_total_rows": 6,
+      "slide_number": 4,
+      "slide_count": 4
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "ddb91e70c2bbb337356c1f9861fea37a4ead71f99a0bf6bb91b15d9992325ae7"
+}
