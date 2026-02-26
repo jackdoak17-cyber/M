@@ -16,6 +16,7 @@ TYPE_FOULS_DRAWN = 96
 
 DEFENDER_ABBR = {"CB", "LB", "RB", "LWB", "RWB"}
 MIN_STARTER_SAMPLE_GAMES = 6
+MIN_PLAYER_HIT_RATE = 0.80
 
 
 @dataclass(frozen=True)
@@ -110,7 +111,7 @@ def _qualifying_hits(
     values: List[float],
     thresholds: Iterable[int],
     stat_key: str,
-    min_rate: float = 0.75,
+    min_rate: float = MIN_PLAYER_HIT_RATE,
     min_games: int = MIN_STARTER_SAMPLE_GAMES,
 ) -> List[StatHit]:
     hits: List[StatHit] = []
@@ -127,7 +128,7 @@ def _largest_qualifying_window(
     values: List[float],
     threshold: int,
     *,
-    min_rate: float = 0.75,
+    min_rate: float = MIN_PLAYER_HIT_RATE,
     min_games: int = MIN_STARTER_SAMPLE_GAMES,
 ) -> Optional[tuple[int, int]]:
     """Return (wins, total) for the largest recent prefix meeting the hit-rate rule."""

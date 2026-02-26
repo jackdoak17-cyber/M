@@ -10,6 +10,8 @@ from src import data_fetcher
 TYPE_SHOTS_TOTAL = 42
 TYPE_SHOTS_ON_TARGET = 86
 TYPE_CORNERS = 34
+MIN_TEAM_SAMPLE_GAMES = 5
+MIN_TEAM_HIT_RATE = 0.80
 
 MARKET_KEYS = {
     "shots": "team_shots",
@@ -44,8 +46,8 @@ def _load_team_stat_values(
 def get_qualifying_team_stats(
     team_id: int,
     fixture_id: int,
-    min_rate: float = 0.75,
-    min_games: int = 5,
+    min_rate: float = MIN_TEAM_HIT_RATE,
+    min_games: int = MIN_TEAM_SAMPLE_GAMES,
 ) -> List[TeamStatHit]:
     fixtures = data_fetcher.get_recent_team_fixtures(team_id, limit=20)
     if len(fixtures) < min_games:
@@ -78,18 +80,16 @@ def get_qualifying_team_stats(
             continue
         if stat_key == "shots_on_target" and threshold < 3:
             continue
-        wins = sum(
-            1
-            for fixture_id in fixture_ids
-            if values_by_fixture.get(fixture_id, 0.0) >= threshold
-        )
-        if wins / total >= min_rate:
+        series = [values_by_fixture.get(series_fixture_id, 0.0) for series_fixture_id in fixture_ids]
+        best_window = _largest_qualifying_window(series, threshold, min_rate=min_rate, min_games=min_games)
+        if best_window is not None:
+            wins, window_total = best_window
             hits.append(
                 TeamStatHit(
                     stat_key=stat_key,
                     threshold=threshold,
                     wins=wins,
-                    total=total,
+                    total=window_total,
                     line=line,
                     line_minus_two=line_minus_two,
                 ),
@@ -99,17 +99,47 @@ def get_qualifying_team_stats(
     max_corners = max(corner_series) if corner_series else 0.0
     if max_corners >= 3:
         for threshold in range(3, int(floor(max_corners)) + 1):
-            corners_wins = sum(1 for value in corner_series if value >= threshold)
-            if corners_wins / total >= min_rate:
+            best_window = _largest_qualifying_window(
+                corner_series,
+                threshold,
+                min_rate=min_rate,
+                min_games=min_games,
+            )
+            if best_window is not None:
+                corners_wins, window_total = best_window
                 hits.append(
                     TeamStatHit(
                         stat_key="corners",
                         threshold=threshold,
                         wins=corners_wins,
-                        total=total,
+                        total=window_total,
                         line=None,
                         line_minus_two=None,
                     ),
                 )
 
     return hits
+
+
+def _largest_qualifying_window(
+    values: List[float],
+    threshold: int,
+    *,
+    min_rate: float = MIN_TEAM_HIT_RATE,
+    min_games: int = MIN_TEAM_SAMPLE_GAMES,
+) -> Optional[tuple[int, int]]:
+    """Return (wins, total) for the largest recent prefix meeting the hit-rate rule."""
+    if len(values) < min_games:
+        return None
+
+    wins = 0
+    best: Optional[tuple[int, int]] = None
+    for total, value in enumerate(values, start=1):
+        if value >= threshold:
+            wins += 1
+        if total < min_games:
+            continue
+        if wins / total >= min_rate:
+            best = (wins, total)
+
+    return best
