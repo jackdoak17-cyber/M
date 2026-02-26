@@ -15,6 +15,7 @@ TYPE_FOULS_COMMITTED = 56
 TYPE_FOULS_DRAWN = 96
 
 DEFENDER_ABBR = {"CB", "LB", "RB", "LWB", "RWB"}
+MIN_STARTER_SAMPLE_GAMES = 6
 
 
 @dataclass(frozen=True)
@@ -81,7 +82,7 @@ def _build_player_window(player_id: int, team_id: int) -> Optional[PlayerWindow]
             if position_row is None:
                 position_row = row
 
-    if len(started_fixtures) < 5:
+    if len(started_fixtures) < MIN_STARTER_SAMPLE_GAMES:
         return None
 
     position_row = position_row or {}
@@ -110,17 +111,40 @@ def _qualifying_hits(
     thresholds: Iterable[int],
     stat_key: str,
     min_rate: float = 0.75,
-    min_games: int = 5,
+    min_games: int = MIN_STARTER_SAMPLE_GAMES,
 ) -> List[StatHit]:
-    total = len(values)
-    if total < min_games:
-        return []
     hits: List[StatHit] = []
     for threshold in thresholds:
-        wins = sum(1 for value in values if value >= threshold)
-        if total and wins / total >= min_rate:
-            hits.append(StatHit(stat_key=stat_key, threshold=threshold, wins=wins, total=total))
+        best_window = _largest_qualifying_window(values, threshold, min_rate=min_rate, min_games=min_games)
+        if best_window is None:
+            continue
+        wins, total = best_window
+        hits.append(StatHit(stat_key=stat_key, threshold=threshold, wins=wins, total=total))
     return hits
+
+
+def _largest_qualifying_window(
+    values: List[float],
+    threshold: int,
+    *,
+    min_rate: float = 0.75,
+    min_games: int = MIN_STARTER_SAMPLE_GAMES,
+) -> Optional[tuple[int, int]]:
+    """Return (wins, total) for the largest recent prefix meeting the hit-rate rule."""
+    if len(values) < min_games:
+        return None
+
+    wins = 0
+    best: Optional[tuple[int, int]] = None
+    for total, value in enumerate(values, start=1):
+        if value >= threshold:
+            wins += 1
+        if total < min_games:
+            continue
+        if wins / total >= min_rate:
+            best = (wins, total)
+
+    return best
 
 
 def is_player_eligible(
