@@ -118,11 +118,12 @@ def format_player_stat_line(line: PlayerStatLine) -> str:
 
 
 def format_team_stat_line(line: TeamStatLine) -> str:
+    team_name = SHORT_TEAM_NAMES.get(line.team_name, line.team_name)
     if line.stat_key == "shots_on_target":
         label = f"{line.threshold}+ SOT"
     else:
         label = f"{line.threshold}+ {line.stat_key.replace('_', ' ')}"
-    return f"{line.team_name} {label} (won in {line.wins}/{line.total})"
+    return f"{team_name} {label} (won in {line.wins}/{line.total})"
 
 
 def _format_weekend_values(values: Sequence[float]) -> str:
@@ -221,7 +222,9 @@ def format_game_section(
 
     home_emoji = TEAM_COLOURS.get(home_team, "")
     away_emoji = TEAM_COLOURS.get(away_team, "")
-    fixture_label = f"{home_emoji} {home_team} vs {away_team} {away_emoji} - {kickoff_time}".strip()
+    home_display = SHORT_TEAM_NAMES.get(home_team, home_team)
+    away_display = SHORT_TEAM_NAMES.get(away_team, away_team)
+    fixture_label = f"{home_emoji} {home_display} vs {away_display} {away_emoji} - {kickoff_time}".strip()
     output_lines = [fixture_label, ""]
     output_lines.extend(flat_lines)
     return "\n".join(output_lines)
