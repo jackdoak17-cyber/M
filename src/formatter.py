@@ -109,9 +109,9 @@ def format_player_stat_line(line: PlayerStatLine) -> str:
     elif line.stat_key == "shots":
         label = f"{line.threshold}+ shots"
     elif line.stat_key == "fouls_committed":
-        label = f"{line.threshold}+ fouls committed"
+        label = f"{line.threshold}+ foul committed" if line.threshold == 1 else f"{line.threshold}+ fouls committed"
     elif line.stat_key == "fouls_won":
-        label = f"{line.threshold}+ fouls won"
+        label = f"{line.threshold}+ foul won" if line.threshold == 1 else f"{line.threshold}+ fouls won"
     else:
         label = f"{line.threshold}+ {line.stat_key.replace('_', ' ')}"
     return f"{player_name} {label} (won in {line.wins}/{line.total})"

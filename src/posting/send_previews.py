@@ -12,10 +12,39 @@ from .telegram_client import send_message
 TELEGRAM_MAX = 3500
 
 
-def _truncate_text(text: str, limit: int = TELEGRAM_MAX) -> str:
+def _split_text(text: str, limit: int = TELEGRAM_MAX) -> list[str]:
     if len(text) <= limit:
-        return text
-    return text[: limit - 20].rstrip() + "\n\n[...truncated]"
+        return [text]
+
+    parts: list[str] = []
+    remaining = text
+    while len(remaining) > limit:
+        split_at = remaining.rfind("\n", 0, limit)
+        if split_at <= 0 or split_at < limit // 2:
+            split_at = limit
+        part = remaining[:split_at].rstrip()
+        if part:
+            parts.append(part)
+        remaining = remaining[split_at:].lstrip("\n")
+    if remaining:
+        parts.append(remaining)
+    return parts
+
+
+def _build_preview_messages(header: str, content: str, limit: int = TELEGRAM_MAX) -> list[str]:
+    # Reserve room for the header in the first Telegram message.
+    first_body_limit = max(1, limit - len(header))
+    if limit >= 200:
+        first_body_limit = max(200, first_body_limit)
+    first_body_limit = min(first_body_limit, limit)
+    body_parts = _split_text(content, first_body_limit)
+    if not body_parts:
+        return [header.rstrip()]
+
+    messages = [header + body_parts[0]]
+    for part in body_parts[1:]:
+        messages.append(part)
+    return messages
 
 def _content_hash(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
@@ -53,15 +82,19 @@ def run(slot: str, target_date: str | None = None) -> int:
         f"Date: {info.scheduled_for.isoformat()} ({info.day_label})\n"
         f"Key: {post_key}\n\n"
     )
-    body = _truncate_text(info.content)
-    text = header + body
+    messages = _build_preview_messages(header, info.content)
 
     buttons = [
         [{"text": "✅ Approve", "callback_data": f"approve:{slot}:{post_date}"}],
         [{"text": "❌ Reject", "callback_data": f"reject:{slot}:{post_date}"}],
     ]
-    send_message(text, buttons=buttons)
-    print(f"Preview sent for {post_key}")
+    if len(messages) == 1:
+        send_message(messages[0], buttons=buttons)
+    else:
+        for text in messages[:-1]:
+            send_message(text)
+        send_message(messages[-1], buttons=buttons)
+    print(f"Preview sent for {post_key} ({len(messages)} message(s))")
     return 0
 
 
