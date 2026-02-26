@@ -107,7 +107,7 @@ def _row_asset_uri(row: dict[str, Any], key: str) -> str | None:
     return text or None
 
 
-def _cover_featured_rows(manifest: dict[str, Any], limit: int = 3) -> list[dict[str, Any]]:
+def _cover_featured_rows(manifest: dict[str, Any], limit: int = 5) -> list[dict[str, Any]]:
     sections = ((manifest.get("sections") or {}).get("by_section") or {})
     picks: list[dict[str, Any]] = []
     seen_players: set[int] = set()
@@ -127,6 +127,27 @@ def _cover_featured_rows(manifest: dict[str, Any], limit: int = 3) -> list[dict[
             if len(picks) >= limit:
                 return picks
     return picks
+
+
+def _cover_section_counts(manifest: dict[str, Any]) -> list[tuple[str, int]]:
+    counts = ((manifest.get("counts") or {}).get("by_section") or {})
+    ordered: list[tuple[str, int]] = []
+    for slide in list(manifest.get("slides") or []):
+        if slide.get("slide_type") != "section":
+            continue
+        section = str(slide.get("section_label") or "")
+        if not section or any(existing == section for existing, _ in ordered):
+            continue
+        ordered.append((section, int(counts.get(section) or 0)))
+    return ordered
+
+
+def _cover_intro_compact(manifest: dict[str, Any]) -> str:
+    thresholds = manifest.get("thresholds") or {}
+    hit_pct = int(round(float(thresholds.get("min_hit_pct") or 0) * 100))
+    min_odds = float(thresholds.get("min_odds") or 0)
+    min_starts = int(thresholds.get("min_starts") or 0)
+    return f"Bet365 only · {hit_pct}%+ hit rate · odds >{min_odds:.2f} · starter-only · min n={min_starts}"
 
 
 def _render_header(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
@@ -159,7 +180,7 @@ def _render_header(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
 def _render_footer() -> str:
     return """
     <div class="card-footer">
-      <div class="footer-left">All odds Bet365 · Starter-only hit rate</div>
+      <div class="footer-left">Bet365 odds (current at build time) · starter-only hit rate</div>
       <div class="footer-right">@Odds_Analyst</div>
     </div>
     """
@@ -167,14 +188,11 @@ def _render_footer() -> str:
 
 def _render_cover_body(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
     stats = slide.get("stats") or {}
-    title_words = slide.get("title_words") or {}
-    primary = str(title_words.get("primary") or _title_words_for_manifest(manifest)[0])
-    accent = str(title_words.get("accent") or _title_words_for_manifest(manifest)[1])
     fixture_window = str(slide.get("fixture_window") or "")
     fixture_meta = (
         f'<div class="cover-fixture-window">{_html_escape(fixture_window)}</div>' if fixture_window else ""
     )
-    featured = _cover_featured_rows(manifest, limit=3)
+    featured = _cover_featured_rows(manifest, limit=5)
     featured_markup_parts: list[str] = []
     for row in featured:
         face_uri = _row_asset_uri(row, "player_face_uri")
@@ -196,40 +214,61 @@ def _render_cover_body(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
               <div class="cover-chip-avatar">{face_html}{badge_html}</div>
               <div class="cover-chip-text">
                 <div class="cover-chip-name">{_html_escape(player_name)}</div>
-                <div class="cover-chip-meta">{_html_escape((row.get('display') or {}).get('rate') or '')} · {_html_escape((row.get('display') or {}).get('odds') or '')}</div>
+                <div class="cover-chip-meta">{_html_escape(str(row.get("team_name") or ""))}</div>
               </div>
+              <div class="cover-chip-hit">{_html_escape((row.get('display') or {}).get('rate') or '')}</div>
+              <div class="cover-chip-odds">{_html_escape((row.get('display') or {}).get('odds') or '')}</div>
             </div>
             """
         )
     featured_markup = "".join(featured_markup_parts)
+    section_count_rows = []
+    for section_label, count in _cover_section_counts(manifest):
+        section_count_rows.append(
+            f"""
+            <div class="cover-count-row">
+              <div class="cover-count-label">{_html_escape(section_label)}</div>
+              <div class="cover-count-value">{count}</div>
+            </div>
+            """
+        )
+    section_count_markup = "".join(section_count_rows)
     return f"""
     <div class="cover-body">
-      <div class="cover-kicker">MODEL SNAPSHOT</div>
-      <div class="main-title cover-title">{_html_escape(primary)} <span>{_html_escape(accent)}</span></div>
-      <div class="cover-desc">{_html_escape(manifest.get("intro") or "")}</div>
-      {fixture_meta}
-      <div class="cover-stats">
-        <div class="cover-stat">
-          <div class="cover-stat-num">{int(stats.get("total_players") or 0)}</div>
-          <div class="cover-stat-label">Players</div>
+      <div class="cover-kicker">SHOT PROPS · DATA SNAPSHOT</div>
+      <div class="cover-desc">{_html_escape(_cover_intro_compact(manifest))}</div>
+      <div class="cover-top-grid">
+        <div class="cover-left">
+          {fixture_meta}
+          <div class="cover-stats">
+            <div class="cover-stat">
+              <div class="cover-stat-num">{int(stats.get("total_players") or 0)}</div>
+              <div class="cover-stat-label">Qualifiers</div>
+            </div>
+            <div class="cover-stat">
+              <div class="cover-stat-num">{int(stats.get("stat_types") or 0)}</div>
+              <div class="cover-stat-label">Sections</div>
+            </div>
+            <div class="cover-stat">
+              <div class="cover-stat-num">{int(stats.get("hit_rate_threshold_pct") or 0)}%+</div>
+              <div class="cover-stat-label">Threshold</div>
+            </div>
+          </div>
         </div>
-        <div class="cover-stat">
-          <div class="cover-stat-num">{int(stats.get("stat_types") or 0)}</div>
-          <div class="cover-stat-label">Stat Types</div>
-        </div>
-        <div class="cover-stat">
-          <div class="cover-stat-num">{int(stats.get("hit_rate_threshold_pct") or 0)}%+</div>
-          <div class="cover-stat-label">Hit Rate</div>
+        <div class="cover-counts-panel">
+          <div class="cover-panel-head">Rows per section</div>
+          <div class="cover-count-list">{section_count_markup}</div>
         </div>
       </div>
-      <div class="cover-panel">
-        <div class="cover-panel-head">Featured qualifiers</div>
-        <div class="cover-chip-list">{featured_markup or '<div class="cover-chip-empty">Qualifier faces will appear here when assets are available.</div>'}</div>
+      <div class="cover-panel cover-panel-data">
+        <div class="cover-panel-head cover-panel-grid-head">
+          <span>Top qualifiers</span>
+          <span>Hit</span>
+          <span>Bet365</span>
+        </div>
+        <div class="cover-chip-list">{featured_markup or '<div class="cover-chip-empty">No rows</div>'}</div>
       </div>
-      <div class="swipe-hint">
-        <div class="swipe-text">Swipe for player breakdowns</div>
-        <div class="swipe-arrow">→</div>
-      </div>
+      <div class="cover-disclaimer">All rows in carousel use Bet365 prices captured at generation time.</div>
     </div>
     """
 
@@ -265,16 +304,14 @@ def _render_section_rows(slide: dict[str, Any]) -> str:
       </div>
       <div class="player-info">
         <div class="player-name">{_html_escape(row.get("player_name"))}</div>
-        <div class="player-club">{_html_escape(team_name)}</div>
-        <div class="player-fixture">{_html_escape(fixture_meta)}</div>
-      </div>
-      <div class="player-right">
-        <div class="metric-stack">
-          <div class="metric-label">hit</div>
-          <div class="metric-value">{_html_escape(display.get("rate"))}</div>
+        <div class="player-meta-line">
+          <span class="player-club">{_html_escape(team_name)}</span>
+          <span class="meta-sep">·</span>
+          <span class="player-fixture">{_html_escape(fixture_meta)}</span>
         </div>
-        <div class="odds-pill">{_html_escape(display.get("odds"))}</div>
       </div>
+      <div class="player-hit">{_html_escape(display.get("rate"))}</div>
+      <div class="player-odds">{_html_escape(display.get("odds"))}</div>
     </div>
             """
         )
@@ -289,9 +326,14 @@ def _render_section_body(slide: dict[str, Any]) -> str:
     return f"""
     <div class="card-body">
       <div class="section-head">
-        <span class="section-label">{_html_escape(section_label + page_suffix)}</span>
-        <div class="section-divider"></div>
-        <span class="section-meta">Hit Rate · Odds</span>
+        <div class="section-head-left">
+          <span class="section-label">{_html_escape(section_label + page_suffix)}</span>
+          <span class="section-count">{int(slide.get('section_total_rows') or 0)} rows</span>
+        </div>
+        <div class="section-head-right">
+          <span class="section-col hit">Hit</span>
+          <span class="section-col odds">Bet365</span>
+        </div>
       </div>
       <div class="player-list">{_render_section_rows(slide)}</div>
     </div>
@@ -354,81 +396,73 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     flex-direction: column;
   }}
   .corner {{
-    position: absolute;
-    width: 110px;
-    height: 110px;
-    background: repeating-linear-gradient(
-      -45deg,
-      #F5C518 0px, #F5C518 5px,
-      transparent 5px, transparent 13px
-    );
-    opacity: 0.15;
-    pointer-events: none;
-    z-index: 0;
+    display: none;
   }}
   .corner.tr {{ top: -18px; right: -18px; }}
   .corner.bl {{ bottom: -18px; left: -18px; }}
   .card-header {{
-    padding: 18px 26px 14px;
-    border-bottom: 2px solid #F5C518;
+    padding: 14px 20px 10px;
+    border-bottom: 1px solid #f5c518;
     position: relative;
     z-index: 1;
     flex-shrink: 0;
+    background: linear-gradient(180deg, #0e1221 0%, #0a0f1b 100%);
   }}
   .header-top {{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }}
   .brand {{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.14em;
-    color: #3a3d52;
+    color: #7f88ad;
   }}
-  .brand span {{ color: #F5C518; opacity: 0.7; }}
+  .brand span {{ color: #F5C518; opacity: 1; }}
   .header-right {{
     display: flex;
     align-items: center;
     gap: 8px;
   }}
   .post-badge {{
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.12em;
     color: #0d0f1a;
     background: #F5C518;
-    padding: 2px 8px;
+    padding: 2px 7px;
     border-radius: 2px;
     text-transform: uppercase;
   }}
   .date-badge {{
     font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    color: #3a3d52;
+    font-size: 8px;
+    color: #c5cce8;
+    opacity: 0.75;
   }}
   .main-title {{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 42px;
-    letter-spacing: 0.05em;
+    font-size: 36px;
+    letter-spacing: 0.045em;
     color: #fff;
     line-height: 0.92;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }}
   .main-title span {{ color: #F5C518; }}
   .threshold-bar {{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
   }}
-  .tline {{ flex: 1; height: 1px; background: #F5C518; opacity: 0.25; }}
+  .tline {{ flex: 1; height: 1px; background: #f5c518; opacity: 0.2; }}
   .ttext {{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.1em;
+    font-size: 11px;
+    letter-spacing: 0.09em;
     color: #F5C518;
-    opacity: 0.75;
+    opacity: 0.95;
     white-space: nowrap;
   }}
   .slide-indicator {{
@@ -436,7 +470,7 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     align-items: center;
     justify-content: flex-end;
     gap: 4px;
-    margin-top: 8px;
+    margin-top: 5px;
   }}
   .dot {{
     width: 5px;
@@ -460,58 +494,80 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
   .section-head {{
     display: flex;
     align-items: center;
-    background: linear-gradient(180deg, #111426 0%, #0c1020 100%);
-    border-bottom: 1px solid #1e223b;
-    padding: 9px 26px;
-    gap: 10px;
+    justify-content: space-between;
+    background: #0c1020;
+    border-bottom: 1px solid #202742;
+    padding: 7px 16px 7px 18px;
     flex-shrink: 0;
+  }}
+  .section-head-left {{
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    min-width: 0;
   }}
   .section-label {{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     letter-spacing: 0.08em;
     color: #F5C518;
   }}
-  .section-divider {{ flex: 1; height: 1px; background: #252840; }}
-  .section-meta {{
+  .section-count {{
     font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    color: #5e6486;
+    font-size: 8px;
+    color: #c2caea;
+    opacity: 0.7;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+  }}
+  .section-head-right {{
+    display: grid;
+    grid-template-columns: 54px 64px;
+    gap: 6px;
+    align-items: center;
+    flex-shrink: 0;
+  }}
+  .section-col {{
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    color: #ffffff;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-align: right;
+  }}
+  .section-col.odds {{
+    text-align: center;
+    color: #f5c518;
+    opacity: 0.95;
   }}
   .player-list {{ flex: 1; overflow: hidden; }}
   .player-row {{
     display: flex;
     align-items: center;
-    padding: 0 22px 0 26px;
-    height: 58px;
-    border-bottom: 1px solid #101424;
-    background:
-      linear-gradient(90deg, rgba(245,197,24,0.05) 0, rgba(245,197,24,0.00) 84px),
-      #0d101c;
+    padding: 0 14px 0 18px;
+    height: 47px;
+    border-bottom: 1px solid #131a2d;
+    background: #0b0f1b;
   }}
   .player-row.alt {{
-    background:
-      linear-gradient(90deg, rgba(245,197,24,0.04) 0, rgba(245,197,24,0.00) 84px),
-      #0b0e18;
+    background: #0a0e18;
   }}
   .player-assets {{
     position: relative;
-    width: 42px;
-    min-width: 42px;
-    height: 42px;
-    margin-right: 12px;
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+    margin-right: 9px;
     flex-shrink: 0;
   }}
   .face-wrap {{
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
     overflow: hidden;
     background: linear-gradient(180deg, #1a223d 0%, #111725 100%);
     border: 1px solid #202945;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
   }}
   .player-face {{
     width: 100%;
@@ -525,7 +581,7 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     align-items: center;
     justify-content: center;
     font-family: 'DM Mono', monospace;
-    font-size: 13px;
+    font-size: 10px;
     color: #f1f4ff;
     letter-spacing: 0.04em;
   }}
@@ -533,8 +589,8 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     position: absolute;
     right: -3px;
     bottom: -3px;
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     border-radius: 999px;
     background: #0a0d16;
     border: 1px solid #2a314d;
@@ -542,7 +598,6 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.35);
   }}
   .club-badge {{
     width: 100%;
@@ -556,7 +611,7 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     align-items: center;
     justify-content: center;
     font-family: 'DM Mono', monospace;
-    font-size: 7px;
+    font-size: 6px;
     color: #F5C518;
     letter-spacing: 0.05em;
     background: #101423;
@@ -565,184 +620,249 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
   }}
   .player-info {{ flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; }}
   .player-name {{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
-    color: #e2e2e2;
+    color: #ffffff;
     letter-spacing: 0.02em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1;
+    line-height: 1.05;
+  }}
+  .player-meta-line {{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+    margin-top: 2px;
   }}
   .player-club {{
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 700;
     color: #f5c518;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.07em;
     text-transform: uppercase;
-    margin-top: 2px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    flex-shrink: 0;
+  }}
+  .meta-sep {{
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    color: #7e87ab;
+    flex-shrink: 0;
   }}
   .player-fixture {{
     font-family: 'DM Mono', monospace;
-    font-size: 8px;
-    color: #6b7293;
+    font-size: 7px;
+    color: #cfd5ee;
+    opacity: 0.65;
     letter-spacing: 0.02em;
-    margin-top: 1px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    min-width: 0;
+    flex: 1;
   }}
-  .player-right {{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    margin-left: 10px;
-  }}
-  .metric-stack {{
+  .player-hit {{
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: #ffffff;
     text-align: right;
+    width: 54px;
     min-width: 54px;
+    margin-left: 8px;
+    letter-spacing: 0.01em;
   }}
-  .metric-label {{
+  .player-odds {{
     font-family: 'DM Mono', monospace;
-    font-size: 8px;
-    color: #7981a6;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }}
-  .metric-value {{
-    font-family: 'DM Mono', monospace;
-    font-size: 12px;
-    color: #dbe2ff;
-    white-space: nowrap;
-    line-height: 1.1;
-  }}
-  .odds-pill {{
-    font-family: 'DM Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     color: #0a0d16;
-    background: linear-gradient(180deg, #ffd84b 0%, #f5c518 100%);
-    padding: 5px 10px;
-    border-radius: 5px;
-    min-width: 60px;
+    background: linear-gradient(180deg, #ffde5d 0%, #f5c518 100%);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 4px 7px;
+    border-radius: 4px;
+    width: 64px;
+    min-width: 64px;
     text-align: center;
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.18);
   }}
   .cover-body {{
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: center;
-    padding: 24px 26px 18px;
-    gap: 10px;
+    justify-content: flex-start;
+    padding: 12px 18px 10px;
+    gap: 8px;
     position: relative;
     z-index: 1;
     text-align: left;
   }}
   .cover-kicker {{
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.14em;
-    color: #7c85aa;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: #d1d7ef;
+    opacity: 0.9;
     text-transform: uppercase;
   }}
-  .cover-title {{ margin-bottom: 0; font-size: 38px; }}
   .cover-desc {{
-    font-size: 12px;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
     font-weight: 500;
-    color: #8e96b8;
+    color: #ffffff;
+    opacity: 0.78;
     text-align: left;
     letter-spacing: 0.03em;
-    line-height: 1.45;
+    line-height: 1.35;
     max-width: none;
+  }}
+  .cover-top-grid {{
+    display: grid;
+    grid-template-columns: 1.2fr 0.9fr;
+    gap: 8px;
+    align-items: stretch;
+  }}
+  .cover-left {{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
   }}
   .cover-fixture-window {{
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: #a7b0d4;
-    letter-spacing: 0.08em;
+    font-size: 9px;
+    color: #ffffff;
+    letter-spacing: 0.07em;
     text-transform: uppercase;
-    border: 1px solid #272d49;
-    background: linear-gradient(180deg, #12182a 0%, #0c1020 100%);
-    padding: 7px 12px;
+    border: 1px solid #263050;
+    background: #101628;
+    padding: 6px 8px;
     border-radius: 4px;
-    align-self: flex-start;
+    align-self: stretch;
   }}
   .cover-stats {{
-    display: flex;
-    gap: 10px;
-    margin-top: 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-top: 0;
   }}
   .cover-stat {{
-    background: linear-gradient(180deg, #131a2e 0%, #101526 100%);
-    border: 1px solid #232b49;
-    border-radius: 8px;
-    padding: 10px 12px;
+    background: #101628;
+    border: 1px solid #263050;
+    border-radius: 6px;
+    padding: 7px 6px 6px;
     text-align: center;
     min-width: 0;
-    flex: 1;
   }}
   .cover-stat-num {{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 28px;
-    color: #F5C518;
+    font-size: 22px;
+    color: #ffffff;
     letter-spacing: 0.04em;
     line-height: 1;
   }}
   .cover-stat-label {{
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 600;
-    color: #7680a8;
-    letter-spacing: 0.1em;
+    color: #f5c518;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-top: 2px;
   }}
+  .cover-counts-panel {{
+    border: 1px solid #263050;
+    background: #0f1526;
+    border-radius: 6px;
+    padding: 7px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }}
+  .cover-count-list {{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }}
+  .cover-count-row {{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    align-items: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    color: #ffffff;
+    padding: 3px 0;
+    border-bottom: 1px solid #1a233c;
+  }}
+  .cover-count-row:last-child {{ border-bottom: 0; }}
+  .cover-count-label {{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.9;
+  }}
+  .cover-count-value {{
+    color: #f5c518;
+    font-weight: 700;
+    opacity: 1;
+  }}
   .cover-panel {{
-    margin-top: 4px;
-    border: 1px solid #202744;
-    background:
-      linear-gradient(180deg, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0) 100%),
-      #0d1222;
-    border-radius: 10px;
-    padding: 10px;
+    border: 1px solid #263050;
+    background: #0f1526;
+    border-radius: 6px;
+    padding: 7px 8px;
   }}
   .cover-panel-head {{
     font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    color: #92a0d2;
-    letter-spacing: 0.12em;
+    font-size: 8px;
+    color: #ffffff;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    opacity: 0.82;
+  }}
+  .cover-panel-grid-head {{
+    display: grid;
+    grid-template-columns: 1fr 48px 56px;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 5px;
+  }}
+  .cover-panel-grid-head span:nth-child(2),
+  .cover-panel-grid-head span:nth-child(3) {{
+    text-align: right;
+  }}
+  .cover-panel-grid-head span:nth-child(3) {{
+    color: #f5c518;
+    opacity: 0.95;
   }}
   .cover-chip-list {{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }}
   .cover-chip {{
-    display: flex;
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr) 48px 56px;
     align-items: center;
-    gap: 8px;
-    background: #0b0f1b;
-    border: 1px solid #1a2139;
-    border-radius: 8px;
-    padding: 6px 8px;
+    gap: 6px;
+    background: #0b101d;
+    border: 1px solid #1b243d;
+    border-radius: 6px;
+    padding: 4px 6px;
   }}
   .cover-chip-avatar {{
     position: relative;
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
     flex-shrink: 0;
   }}
   .cover-chip-face {{
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
     object-fit: cover;
     object-position: center top;
     display: block;
@@ -754,15 +874,15 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     align-items: center;
     justify-content: center;
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
+    font-size: 8px;
     color: #eef2ff;
   }}
   .cover-chip-badge {{
     position: absolute;
     right: -2px;
     bottom: -2px;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border-radius: 999px;
     object-fit: contain;
     background: #fff;
@@ -773,7 +893,7 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     align-items: center;
     justify-content: center;
     font-family: 'DM Mono', monospace;
-    font-size: 6px;
+    font-size: 5px;
     color: #F5C518;
     background: #0d1222;
   }}
@@ -782,76 +902,73 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     flex: 1;
   }}
   .cover-chip-name {{
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
-    color: #e9edff;
+    color: #ffffff;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }}
   .cover-chip-meta {{
     font-family: 'DM Mono', monospace;
-    font-size: 8px;
-    color: #97a0c5;
+    font-size: 7px;
+    color: #ffffff;
+    opacity: 0.65;
     margin-top: 1px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }}
   .cover-chip-empty {{
-    font-size: 10px;
-    color: #7680a8;
+    font-size: 9px;
+    color: #cfd5ee;
+    opacity: 0.7;
     padding: 6px 4px;
   }}
-  .swipe-hint {{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 4px;
-    align-self: center;
-  }}
-  .swipe-text {{
-    font-size: 10px;
-    font-weight: 600;
-    color: #6f789f;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+  .cover-chip-hit,
+  .cover-chip-odds {{
     font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    color: #ffffff;
+    text-align: right;
+    white-space: nowrap;
   }}
-  .swipe-arrow {{
-    color: #F5C518;
-    font-size: 14px;
-    opacity: 0.5;
-    animation: nudge 1.5s ease-in-out infinite;
+  .cover-chip-odds {{
+    color: #f5c518;
+    font-weight: 700;
   }}
-  @keyframes nudge {{
-    0%, 100% {{ transform: translateX(0); opacity: 0.5; }}
-    50% {{ transform: translateX(4px); opacity: 1; }}
+  .cover-disclaimer {{
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    color: #ffffff;
+    opacity: 0.65;
+    line-height: 1.3;
   }}
   .card-footer {{
-    padding: 9px 26px;
+    padding: 7px 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #080a14;
+    background: #070a13;
     border-top: 1px solid #13162a;
     flex-shrink: 0;
     position: relative;
     z-index: 1;
   }}
   .footer-left {{
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    color: #282b3a;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    opacity: 0.45;
     text-transform: uppercase;
   }}
   .footer-right {{
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     color: #F5C518;
-    opacity: 0.45;
+    opacity: 0.7;
     text-transform: uppercase;
   }}
 </style>

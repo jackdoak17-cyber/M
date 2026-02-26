@@ -7,7 +7,7 @@ from datetime import date, datetime, timezone
 from typing import Any, Iterable
 
 
-DEFAULT_MAX_ROWS_PER_SECTION_SLIDE = 8
+DEFAULT_MAX_ROWS_PER_SECTION_SLIDE = 10
 
 
 @dataclass(frozen=True)
