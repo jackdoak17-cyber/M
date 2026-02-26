@@ -9,6 +9,7 @@ from .manifest_io import (
     manifest_summary,
     resolve_shot_props_manifest_for_target,
 )
+from .assets import enrich_manifest_with_cached_assets
 from .renderer import (
     PLAYWRIGHT_PKG_DEFAULT,
     render_carousel_images,
@@ -51,7 +52,7 @@ def _parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--image-ext",
-        default="jpeg",
+        default="png",
         choices=["jpeg", "jpg", "png"],
         help="Image format for Playwright screenshots.",
     )
@@ -69,6 +70,11 @@ def _parse_args() -> argparse.Namespace:
         "--skip-verify",
         action="store_true",
         help="Skip manifest verification before rendering.",
+    )
+    parser.add_argument(
+        "--with-assets",
+        action="store_true",
+        help="Enrich rows with cached player faces and club badges from DB image_path values before rendering.",
     )
     return parser.parse_args()
 
@@ -94,6 +100,14 @@ def main() -> None:
     if issues:
         joined = "\n".join(f"- {issue}" for issue in issues)
         raise SystemExit(f"Manifest verification failed for {manifest_path}:\n{joined}")
+    if args.with_assets:
+        manifest, report = enrich_manifest_with_cached_assets(manifest)
+        print(
+            "Assets: "
+            f"faces {report.player_cached}/{report.player_requested}, "
+            f"badges {report.team_cached}/{report.team_requested}, "
+            f"downloads={report.downloads}, failures={report.failures}"
+        )
 
     output_dir = Path(args.output_dir) if args.output_dir else _default_output_dir(manifest, manifest_path)
     output_dir.mkdir(parents=True, exist_ok=True)

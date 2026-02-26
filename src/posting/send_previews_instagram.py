@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from src.instagram.assets import enrich_manifest_with_cached_assets
 from src.instagram.manifest_io import load_manifest, shot_props_manifest_path
 from src.instagram.r2_storage import R2Settings, R2Storage
 from src.instagram.renderer import render_carousel_images
@@ -94,6 +95,13 @@ def _build_preview_summary(slot_label: str, scheduled_for: str, manifest: dict[s
     ]
     if count_bits:
         lines.append("Sections: " + ", ".join(count_bits))
+    asset_cache = manifest.get("asset_cache") or {}
+    if asset_cache:
+        lines.append(
+            "Assets: "
+            f"faces {asset_cache.get('player_cached', 0)}/{asset_cache.get('player_requested', 0)}, "
+            f"badges {asset_cache.get('team_cached', 0)}/{asset_cache.get('team_requested', 0)}"
+        )
     lines.append("")
     lines.append("Caption:")
     lines.append(_truncate_text(str(manifest.get("caption") or ""), limit=2000))
@@ -106,7 +114,7 @@ def run(
     *,
     slot: str,
     target_date: str | None = None,
-    image_ext: str = "jpeg",
+    image_ext: str = "png",
     playwright_channel: str | None = None,
     dry_run_upload: bool = False,
 ) -> int:
@@ -123,6 +131,7 @@ def run(
     issues = verify_shot_props_carousel_manifest(manifest)
     if issues:
         raise RuntimeError("Manifest verification failed:\n" + "\n".join(issues))
+    manifest, asset_report = enrich_manifest_with_cached_assets(manifest)
 
     slides = list(manifest.get("slides") or [])
     if len(slides) > INSTAGRAM_MAX_CAROUSEL_ITEMS:
@@ -179,6 +188,7 @@ def run(
         "render_manifest_path": str(render_manifest_path),
         "render_manifest": render_manifest,
         "uploaded_via_r2": not dry_run_upload,
+        "asset_cache": asset_report.as_dict(),
         "updated_at": _utc_now_iso(),
     }
 
@@ -214,7 +224,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Send Telegram previews for Instagram carousel posts.")
     parser.add_argument("--slot", required=True, choices=["ig_shot_props_value", "ig_shot_props_high_prob"])
     parser.add_argument("--date", dest="target_date", help="Scheduled post date (YYYY-MM-DD). Defaults to today.")
-    parser.add_argument("--image-ext", default="jpeg", choices=["jpeg", "jpg", "png"])
+    parser.add_argument("--image-ext", default="png", choices=["jpeg", "jpg", "png"])
     parser.add_argument("--playwright-channel", choices=["chrome", "chrome-beta", "msedge", "msedge-dev"])
     parser.add_argument(
         "--dry-run-upload",
@@ -235,4 +245,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
