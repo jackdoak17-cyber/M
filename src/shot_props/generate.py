@@ -6,7 +6,7 @@ import argparse
 import json
 import logging
 from collections import Counter
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -37,7 +37,7 @@ SECTION_ORDER = ["1+ Shot", "2+ Shots", "1+ SOT"]
 
 BET365_IDS = (2,)
 MIN_STARTS = 7
-MAX_STARTS = 10
+MAX_STARTS = 20
 
 VALUE_MIN_HIT_PCT = 0.80
 VALUE_MIN_ODDS = 1.72
@@ -75,6 +75,7 @@ class QualifyingPlayer:
     sample: int
     odds: float
     bookmaker_id: int | None = None
+    started_values: list[Any] | None = None
 
 
 @dataclass
@@ -198,8 +199,34 @@ def _recent_started_samples(
     return starts[:max_starts]
 
 
+def _best_qualifying_window(
+    candidate: QualifyingPlayer,
+    min_hit_pct: float,
+    *,
+    min_sample: int = MIN_STARTS,
+    max_sample: int = MAX_STARTS,
+) -> tuple[int, int] | None:
+    started_values = list(candidate.started_values or [])
+    if started_values:
+        cap = min(len(started_values), max_sample)
+        best: tuple[int, int] | None = None
+        for n in range(min_sample, cap + 1):
+            sample_values = started_values[:n]
+            hits = sum(1 for value in sample_values if float(value) >= candidate.threshold)
+            if hits / n >= min_hit_pct:
+                best = (hits, n)
+        return best
+
+    # Backward-compatible fallback for synthetic test candidates without started_values.
+    if candidate.sample >= min_sample and candidate.sample > 0 and (candidate.hits / candidate.sample) >= min_hit_pct:
+        return (candidate.hits, candidate.sample)
+    return None
+
+
 def _qualifies_for_thresholds(candidate: QualifyingPlayer, min_hit_pct: float, min_odds: float) -> bool:
-    return candidate.sample > 0 and (candidate.hits / candidate.sample) >= min_hit_pct and candidate.odds > min_odds
+    if candidate.odds <= min_odds:
+        return False
+    return _best_qualifying_window(candidate, min_hit_pct) is not None
 
 
 def _qualifies_value(candidate: QualifyingPlayer) -> bool:
@@ -211,7 +238,9 @@ def _qualifies_high_prob(candidate: QualifyingPlayer) -> bool:
 
 
 def _render_candidate_line(player: QualifyingPlayer) -> str:
-    return f"\u2192 {player.player_name} ({player.team_name}) won in {player.hits}/{player.sample} @{player.odds:.2f}"
+    tokens = [token for token in str(player.player_name or "").strip().split() if token]
+    short_name = tokens[-1] if tokens else str(player.player_name or "")
+    return f"\u2192 {short_name} ({player.team_name}) won in {player.hits}/{player.sample} @{player.odds:.2f}"
 
 
 def _select_candidates_for_post(
@@ -219,11 +248,17 @@ def _select_candidates_for_post(
     min_hit_pct: float,
     min_odds: float,
 ) -> dict[str, list[QualifyingPlayer]]:
-    filtered = [c for c in candidates if _qualifies_for_thresholds(c, min_hit_pct, min_odds)]
     sections: dict[str, list[QualifyingPlayer]] = {label: [] for label in SECTION_ORDER}
-    for candidate in filtered:
-        if candidate.stat_label in sections:
-            sections[candidate.stat_label].append(candidate)
+    for candidate in candidates:
+        if candidate.odds <= min_odds:
+            continue
+        best_window = _best_qualifying_window(candidate, min_hit_pct)
+        if best_window is None:
+            continue
+        hits, sample = best_window
+        selected = replace(candidate, hits=hits, sample=sample)
+        if selected.stat_label in sections:
+            sections[selected.stat_label].append(selected)
     for players in sections.values():
         players.sort(key=lambda p: (p.hits / p.sample, p.odds), reverse=True)
     return sections
@@ -533,6 +568,7 @@ def _get_candidates(fixtures, audit_rows: list[CandidateAuditRow] | None = None)
                     sample=sample,
                     odds=float(odds_data["price"]),
                     bookmaker_id=int(odds_data["bookmaker_id"]) if odds_data.get("bookmaker_id") is not None else None,
+                    started_values=_serialize_list(starter_only_values),
                 )
                 candidates.append(candidate)
 
