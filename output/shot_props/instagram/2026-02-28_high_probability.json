@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-02-27T19:08:34+00:00",
+  "generated_at": "2026-02-27T21:07:50+00:00",
   "scheduled_for": "2026-02-28",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -154,11 +154,11 @@
           "hits": 11,
           "sample": 12,
           "hit_rate": 0.9167,
-          "odds": 1.44,
+          "odds": 1.53,
           "display": {
             "rate": "11/12",
-            "odds": "@1.44",
-            "summary": "Yassin Belkhdim (Angers SCO) won in 11/12 @1.44"
+            "odds": "@1.53",
+            "summary": "Yassin Belkhdim (Angers SCO) won in 11/12 @1.53"
           }
         },
         {
@@ -672,11 +672,11 @@
           "hits": 11,
           "sample": 12,
           "hit_rate": 0.9167,
-          "odds": 1.44,
+          "odds": 1.53,
           "display": {
             "rate": "11/12",
-            "odds": "@1.44",
-            "summary": "Yassin Belkhdim (Angers SCO) won in 11/12 @1.44"
+            "odds": "@1.53",
+            "summary": "Yassin Belkhdim (Angers SCO) won in 11/12 @1.53"
           }
         },
         {
@@ -1063,5 +1063,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "7d6fb8edd61c8b6e24f2cd21939e670b6ccba0ae4c1154d626130959c569953a"
+  "content_fingerprint": "6c5ec9d8d46fd26160c06afefaee79aa45d9f510a0fc430b5a342c426ef53ff3"
 }

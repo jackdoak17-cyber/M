@@ -3,54 +3,54 @@
 Players hitting 1+, 2+ shots and 1+ SOT in 75%+ of recent games (min n=7) with odds >1.72 — any value here?
 
 🎯 1+ Shot
-→ Lacroix (Palace) won in 8/10 @2.10
-→ Crama (Millwall) won in 7/9 @2.00
-→ Tarkowski (Everton) won in 7/9 @1.83
-→ Anton (Borussia Dortmund) won in 7/9 @1.83
-→ Seko (Le Havre) won in 10/13 @2.10
-→ Hoorenbeeck (Heracles Almelo) won in 10/13 @2.00
-→ Stamenić (Swansea City) won in 10/13 @1.83
-→ Frese (Hellas Verona) won in 13/17 @1.80
-→ Tymon (Swansea City) won in 12/16 @2.10
-→ Dunne (Queens Park Rangers) won in 6/8 @2.00
-→ Lewis (Man City) won in 6/8 @2.00
-→ Wharton (Palace) won in 15/20 @1.83
-→ Witsel (Girona) won in 9/12 @1.83
-→ Keane (Everton) won in 9/12 @1.80
-→ Leliendal (FC Volendam) won in 9/12 @1.80
-→ Hume (Sunderland) won in 6/8 @1.73
-→ Ramadani (Lecce) won in 6/8 @1.73
-→ Koumetio (Dundee) won in 6/8 @1.73
+→ M.Lacroix (Palace) 8/10 @2.10
+→ T.Crama (Millwall) 7/9 @2.00
+→ J.Tarkowski (Everton) 7/9 @1.83
+→ W.Anton (Borussia Dortmund) 7/9 @1.83
+→ A.Seko (Le Havre) 10/13 @2.10
+→ A.Hoorenbeeck (Heracles Almelo) 10/13 @2.00
+→ M.Stamenić (Swansea City) 10/13 @1.83
+→ M.Frese (Hellas Verona) 13/17 @2.10
+→ J.Tymon (Swansea City) 12/16 @2.10
+→ J.Dunne (Queens Park Rangers) 6/8 @2.00
+→ R.Lewis (Man City) 6/8 @2.00
+→ A.Wharton (Palace) 15/20 @1.83
+→ A.Witsel (Girona) 9/12 @1.83
+→ M.Keane (Everton) 9/12 @1.80
+→ Y.Leliendal (FC Volendam) 9/12 @1.80
+→ T.Hume (Sunderland) 6/8 @1.73
+→ Y.Ramadani (Lecce) 6/8 @1.73
+→ B.Koumetio (Dundee) 6/8 @1.73
 
 🎯 2+ Shots
-→ Fernández (Chelsea) won in 15/19 @2.50
-→ Soumaré (Le Havre) won in 11/14 @1.80
-→ Héliton (Göztepe) won in 7/9 @2.10
-→ Pedro (Chelsea) won in 10/13 @2.10
-→ Ruan (Alanyaspor) won in 6/8 @2.10
-→ Mendes (Paris Saint Germain) won in 6/8 @1.91
-→ Brooks (Sheffield) won in 6/8 @1.83
-→ Raskin (Rangers) won in 6/8 @1.83
-→ Fatah (Dundee) won in 9/12 @1.80
-→ Moreira (Olympique Lyonnais) won in 6/8 @1.80
-→ Hamilton (Dundee) won in 6/8 @1.73
-→ Colombo (Genoa) won in 6/8 @1.73
+→ E.Fernández (Chelsea) 15/19 @2.50
+→ I.Soumaré (Le Havre) 11/14 @1.80
+→ Héliton (Göztepe) 7/9 @2.10
+→ J.Pedro (Chelsea) 10/13 @2.10
+→ Ruan (Alanyaspor) 6/8 @2.10
+→ N.Mendes (PSG) 6/8 @1.91
+→ A.Brooks (Sheffield) 6/8 @1.83
+→ N.Raskin (Rangers) 6/8 @1.83
+→ A.Fatah (Dundee) 9/12 @1.80
+→ A.Moreira (Lyon) 6/8 @1.80
+→ E.Hamilton (Dundee) 6/8 @1.73
+→ L.Colombo (Genoa) 6/8 @1.73
 
 🎯 1+ SOT
-→ Tolisso (Olympique Lyonnais) won in 15/18 @1.73
-→ Rooij (FC Twente) won in 7/9 @2.62
-→ Oosting (PEC Zwolle) won in 7/9 @1.73
-→ Summerville (West Ham) won in 10/13 @2.20
-→ Colombo (Genoa) won in 10/13 @2.20
-→ Bingöl (Kocaelispor) won in 13/17 @1.80
-→ Bisseck (Inter) won in 6/8 @2.25
-→ Pedro (Chelsea) won in 6/8 @2.00
-→ Amiri (FSV Mainz 05) won in 6/8 @1.83
-→ Sarr (Palace) won in 6/8 @1.83
-→ Doumbia (Brest) won in 6/8 @1.83
-→ Chaira (Real Oviedo) won in 9/12 @1.80
-→ Dykes (Charlton Athletic) won in 6/8 @1.73
-→ Vipotnik (Swansea City) won in 9/12 @1.73
-→ Palmer (Chelsea) won in 9/12 @1.73
+→ C.Tolisso (Lyon) 15/18 @1.73
+→ B.Rooij (FC Twente) 7/9 @2.62
+→ T.Oosting (PEC Zwolle) 7/9 @1.73
+→ C.Summerville (West Ham) 10/13 @2.20
+→ L.Colombo (Genoa) 10/13 @2.20
+→ T.Bingöl (Kocaelispor) 13/17 @1.91
+→ Y.Bisseck (Inter) 6/8 @2.25
+→ J.Pedro (Chelsea) 6/8 @2.00
+→ N.Amiri (Mainz) 6/8 @1.83
+→ I.Sarr (Palace) 6/8 @1.83
+→ K.Doumbia (Brest) 6/8 @1.83
+→ I.Chaira (Real Oviedo) 9/12 @1.80
+→ L.Dykes (Charlton Athletic) 6/8 @1.73
+→ Z.Vipotnik (Swansea City) 9/12 @1.73
+→ C.Palmer (Chelsea) 9/12 @1.73
 
 All odds Bet365

@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "potential_value",
-  "generated_at": "2026-02-27T19:08:34+00:00",
+  "generated_at": "2026-02-27T21:07:50+00:00",
   "scheduled_for": "2026-02-27",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -199,11 +199,11 @@
           "hits": 13,
           "sample": 17,
           "hit_rate": 0.7647,
-          "odds": 1.8,
+          "odds": 2.1,
           "display": {
             "rate": "13/17",
-            "odds": "@1.80",
-            "summary": "Martin Frese (Hellas Verona) won in 13/17 @1.80"
+            "odds": "@2.10",
+            "summary": "Martin Frese (Hellas Verona) won in 13/17 @2.10"
           }
         },
         {
@@ -819,11 +819,11 @@
           "hits": 13,
           "sample": 17,
           "hit_rate": 0.7647,
-          "odds": 1.8,
+          "odds": 1.91,
           "display": {
             "rate": "13/17",
-            "odds": "@1.80",
-            "summary": "Tayfur Bing\u00f6l (Kocaelispor) won in 13/17 @1.80"
+            "odds": "@1.91",
+            "summary": "Tayfur Bing\u00f6l (Kocaelispor) won in 13/17 @1.91"
           }
         },
         {
@@ -1223,11 +1223,11 @@
           "hits": 13,
           "sample": 17,
           "hit_rate": 0.7647,
-          "odds": 1.8,
+          "odds": 2.1,
           "display": {
             "rate": "13/17",
-            "odds": "@1.80",
-            "summary": "Martin Frese (Hellas Verona) won in 13/17 @1.80"
+            "odds": "@2.10",
+            "summary": "Martin Frese (Hellas Verona) won in 13/17 @2.10"
           }
         },
         {
@@ -1872,11 +1872,11 @@
           "hits": 13,
           "sample": 17,
           "hit_rate": 0.7647,
-          "odds": 1.8,
+          "odds": 1.91,
           "display": {
             "rate": "13/17",
-            "odds": "@1.80",
-            "summary": "Tayfur Bing\u00f6l (Kocaelispor) won in 13/17 @1.80"
+            "odds": "@1.91",
+            "summary": "Tayfur Bing\u00f6l (Kocaelispor) won in 13/17 @1.91"
           }
         },
         {
@@ -2098,5 +2098,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "0c222a01ebbaca857e064d5989b850b9fd6fe71521bb97127459b87393fb91fe"
+  "content_fingerprint": "4158c4a363d421dd59a55390f9270d3140a673faa1305f54f2ffac0e5d8ce11b"
 }
