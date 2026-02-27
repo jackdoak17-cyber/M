@@ -40,7 +40,7 @@ MIN_STARTS = 7
 MAX_STARTS = 20
 MAX_CANDIDATE_LINE_CHARS = 46
 
-VALUE_MIN_HIT_PCT = 0.75
+VALUE_MIN_HIT_PCT = 0.80
 VALUE_MIN_ODDS = 1.72
 HIGH_PROB_MIN_HIT_PCT = 0.90
 HIGH_PROB_MIN_ODDS = 1.30
@@ -49,8 +49,9 @@ MAX_TEAM_ML_ODDS = 5.0
 VALUE_TITLE = "\U0001f4c8 Tomorrow's Stats & Odds List | Potential Value \U0001f4dd"
 WEEKEND_VALUE_TITLE = "\U0001f4c8 This Weekend's Potential Value Stats & Odds List \U0001f4dd"
 VALUE_INTRO = (
-    "Players hitting 1+, 2+ shots and 1+ SOT in 75%+ of recent games "
-    "(min n=7) with odds >1.72 \u2014 any value here?"
+    "\U0001f4ca Weekend Shot Props list\n"
+    "Min 7 games \u00b7 80%+ hit rate \u00b7 Odds >1.72 \u00b7 All @Bet365\n"
+    "Any value here?"
 )
 HIGH_PROB_TITLE = "\U0001f4ca Today's High Probability Stats & Odds List \U0001f512"
 HIGH_PROB_INTRO = (
