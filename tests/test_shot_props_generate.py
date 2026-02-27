@@ -20,6 +20,7 @@ from src.shot_props.generate import (
     _passes_team_ml_filter,
     _value_scope_dates_for_target,
     _verify_post_matches_candidates,
+    _short_team_name,
 )
 
 
@@ -83,13 +84,17 @@ class ShotPropsGenerateTests(unittest.TestCase):
         )
         self.assertEqual(
             _render_candidate_line(candidate),
-            "→ Rogers (West Ham) won in 6/7 @1.80",
+            "→ M.Rogers (West Ham) 6/7 @1.80",
         )
 
     def test_passes_team_ml_filter(self) -> None:
         self.assertTrue(_passes_team_ml_filter(None))
         self.assertTrue(_passes_team_ml_filter(5.0))
         self.assertFalse(_passes_team_ml_filter(5.01))
+
+    def test_short_team_name_handles_non_pl_aliases(self) -> None:
+        self.assertEqual(_short_team_name("Paris Saint Germain"), "PSG")
+        self.assertEqual(_short_team_name("Olympique Lyonnais"), "Lyon")
 
     def test_value_scope_dates_weekend_behavior(self) -> None:
         self.assertEqual(
@@ -168,7 +173,7 @@ class ShotPropsGenerateTests(unittest.TestCase):
         )
         self.assertEqual(hp_issues, [])
 
-        broken_hp_post = hp_post.replace("→ B (Team B) won in 9/10 @1.45\n", "", 1)
+        broken_hp_post = hp_post.replace("→ P.B (Team B) 9/10 @1.45\n", "", 1)
         broken_issues = _verify_post_matches_candidates(
             broken_hp_post,
             candidates,

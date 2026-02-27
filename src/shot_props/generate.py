@@ -38,6 +38,7 @@ SECTION_ORDER = ["1+ Shot", "2+ Shots", "1+ SOT"]
 BET365_IDS = (2,)
 MIN_STARTS = 7
 MAX_STARTS = 20
+MAX_CANDIDATE_LINE_CHARS = 52
 
 VALUE_MIN_HIT_PCT = 0.75
 VALUE_MIN_ODDS = 1.72
@@ -69,6 +70,18 @@ SHORT_TEAM_NAMES: dict[str, str] = {
     "Tottenham Hotspur": "Spurs",
     "West Ham United": "West Ham",
     "Wolverhampton Wanderers": "Wolves",
+    "Paris Saint Germain": "PSG",
+    "Paris Saint-Germain": "PSG",
+    "Olympique Lyonnais": "Lyon",
+    "Olympique Marseille": "Marseille",
+    "Olympique de Marseille": "Marseille",
+    "Bayer 04 Leverkusen": "Leverkusen",
+    "FC Bayern München": "Bayern",
+    "FC Bayern Munich": "Bayern",
+    "FSV Mainz 05": "Mainz",
+    "TSG Hoffenheim": "Hoffenheim",
+    "Borussia Mönchengladbach": "Gladbach",
+    "Borussia Monchengladbach": "Gladbach",
 }
 
 
@@ -233,6 +246,27 @@ def _short_team_name(team_name: str) -> str:
     return shortened or name
 
 
+def _short_player_name(player_name: str) -> str:
+    tokens = [token for token in str(player_name or "").strip().split() if token]
+    if not tokens:
+        return str(player_name or "")
+    if len(tokens) == 1:
+        return tokens[0]
+    first = tokens[0]
+    surname = tokens[-1]
+    initial = first[0].upper() if first else ""
+    return f"{initial}.{surname}" if initial else surname
+
+
+def _trim_for_line(value: str, max_len: int) -> str:
+    text = str(value or "")
+    if len(text) <= max_len:
+        return text
+    if max_len <= 3:
+        return text[:max_len]
+    return text[: max_len - 3].rstrip() + "..."
+
+
 def _best_qualifying_window(
     candidate: QualifyingPlayer,
     min_hit_pct: float,
@@ -272,10 +306,21 @@ def _qualifies_high_prob(candidate: QualifyingPlayer) -> bool:
 
 
 def _render_candidate_line(player: QualifyingPlayer) -> str:
-    tokens = [token for token in str(player.player_name or "").strip().split() if token]
-    short_name = tokens[-1] if tokens else str(player.player_name or "")
+    short_name = _short_player_name(player.player_name)
     team_name = _short_team_name(player.team_name)
-    return f"\u2192 {short_name} ({team_name}) won in {player.hits}/{player.sample} @{player.odds:.2f}"
+    tail = f" {player.hits}/{player.sample} @{player.odds:.2f}"
+    line = f"\u2192 {short_name} ({team_name}){tail}"
+    if len(line) <= MAX_CANDIDATE_LINE_CHARS:
+        return line
+
+    team_name = _trim_for_line(team_name, 12)
+    line = f"\u2192 {short_name} ({team_name}){tail}"
+    if len(line) <= MAX_CANDIDATE_LINE_CHARS:
+        return line
+
+    remaining = MAX_CANDIDATE_LINE_CHARS - len("\u2192  ()") - len(team_name) - len(tail)
+    short_name = _trim_for_line(short_name, max(6, remaining))
+    return f"\u2192 {short_name} ({team_name}){tail}"
 
 
 def _select_candidates_for_post(
