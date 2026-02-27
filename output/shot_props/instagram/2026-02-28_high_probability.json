@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-02-25T21:51:13+00:00",
+  "generated_at": "2026-02-27T16:57:51+00:00",
   "scheduled_for": "2026-02-28",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -66,11 +66,33 @@
           "hits": 10,
           "sample": 10,
           "hit_rate": 1.0,
-          "odds": 1.53,
+          "odds": 1.44,
           "display": {
             "rate": "10/10",
-            "odds": "@1.53",
-            "summary": "Yassin Belkhdim (Angers SCO) won in 10/10 @1.53"
+            "odds": "@1.44",
+            "summary": "Yassin Belkhdim (Angers SCO) won in 10/10 @1.44"
+          }
+        },
+        {
+          "id": "19432165:37705618:1+ Shot:1",
+          "player_id": 37705618,
+          "player_name": "Djibril Soumar\u00e9",
+          "team_id": 21,
+          "team_name": "Sheffield United",
+          "fixture_id": 19432165,
+          "fixture_label": "Queens Park Rangers vs Sheffield United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 9,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "9/9",
+            "odds": "@1.36",
+            "summary": "Djibril Soumar\u00e9 (Sheffield United) won in 9/9 @1.36"
           }
         },
         {
@@ -88,11 +110,11 @@
           "hits": 7,
           "sample": 7,
           "hit_rate": 1.0,
-          "odds": 1.44,
+          "odds": 1.33,
           "display": {
             "rate": "7/7",
-            "odds": "@1.44",
-            "summary": "Hannibal (Burnley) won in 7/7 @1.44"
+            "odds": "@1.33",
+            "summary": "Hannibal (Burnley) won in 7/7 @1.33"
           }
         },
         {
@@ -154,33 +176,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.44,
+          "odds": 1.4,
           "display": {
             "rate": "9/10",
-            "odds": "@1.44",
-            "summary": "Gaius Makouta (Alanyaspor) won in 9/10 @1.44"
-          }
-        },
-        {
-          "id": "19427163:540613:1+ Shot:1",
-          "player_id": 540613,
-          "player_name": "Kiernan Dewsbury-Hall",
-          "team_id": 13,
-          "team_name": "Everton",
-          "fixture_id": 19427163,
-          "fixture_label": "Newcastle United vs Everton",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.33,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.33",
-            "summary": "Kiernan Dewsbury-Hall (Everton) won in 9/10 @1.33"
+            "odds": "@1.40",
+            "summary": "Gaius Makouta (Alanyaspor) won in 9/10 @1.40"
           }
         }
       ],
@@ -290,11 +290,33 @@
           "hits": 10,
           "sample": 10,
           "hit_rate": 1.0,
-          "odds": 1.36,
+          "odds": 1.4,
           "display": {
             "rate": "10/10",
-            "odds": "@1.36",
-            "summary": "Vaclav Cerny (Be\u015fikta\u015f) won in 10/10 @1.36"
+            "odds": "@1.40",
+            "summary": "Vaclav Cerny (Be\u015fikta\u015f) won in 10/10 @1.40"
+          }
+        },
+        {
+          "id": "19432165:1175:1+ SOT:1",
+          "player_id": 1175,
+          "player_name": "Patrick Bamford",
+          "team_id": 21,
+          "team_name": "Sheffield United",
+          "fixture_id": 19432165,
+          "fixture_label": "Queens Park Rangers vs Sheffield United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 10,
+          "hit_rate": 1.0,
+          "odds": 1.33,
+          "display": {
+            "rate": "10/10",
+            "odds": "@1.33",
+            "summary": "Patrick Bamford (Sheffield United) won in 10/10 @1.33"
           }
         },
         {
@@ -320,28 +342,6 @@
           }
         },
         {
-          "id": "19429412:16475806:1+ SOT:1",
-          "player_id": 16475806,
-          "player_name": "Mohamed Ihattaren",
-          "team_id": 1459,
-          "team_name": "Fortuna Sittard",
-          "fixture_id": 19429412,
-          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
-          "league_id": 72,
-          "league_name": "Eredivisie",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.57,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.57",
-            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 9/10 @1.57"
-          }
-        },
-        {
           "id": "19429412:30291:1+ SOT:1",
           "player_id": 30291,
           "player_name": "Kaj Sierhuis",
@@ -364,6 +364,28 @@
           }
         },
         {
+          "id": "19429412:16475806:1+ SOT:1",
+          "player_id": 16475806,
+          "player_name": "Mohamed Ihattaren",
+          "team_id": 1459,
+          "team_name": "Fortuna Sittard",
+          "fixture_id": 19429412,
+          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 9/10 @1.50"
+          }
+        },
+        {
           "id": "19439504:186932:1+ SOT:1",
           "player_id": 186932,
           "player_name": "Mikel Oyarzabal",
@@ -383,28 +405,6 @@
             "rate": "9/10",
             "odds": "@1.33",
             "summary": "Mikel Oyarzabal (Real Sociedad) won in 9/10 @1.33"
-          }
-        },
-        {
-          "id": "19433683:24799984:1+ SOT:1",
-          "player_id": 24799984,
-          "player_name": "Michael Olise",
-          "team_id": 503,
-          "team_name": "FC Bayern M\u00fcnchen",
-          "fixture_id": 19433683,
-          "fixture_label": "Borussia Dortmund vs FC Bayern M\u00fcnchen",
-          "league_id": 82,
-          "league_name": "Bundesliga",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.33,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.33",
-            "summary": "Michael Olise (FC Bayern M\u00fcnchen) won in 9/10 @1.33"
           }
         }
       ]
@@ -474,11 +474,33 @@
           "hits": 10,
           "sample": 10,
           "hit_rate": 1.0,
-          "odds": 1.53,
+          "odds": 1.44,
           "display": {
             "rate": "10/10",
-            "odds": "@1.53",
-            "summary": "Yassin Belkhdim (Angers SCO) won in 10/10 @1.53"
+            "odds": "@1.44",
+            "summary": "Yassin Belkhdim (Angers SCO) won in 10/10 @1.44"
+          }
+        },
+        {
+          "id": "19432165:37705618:1+ Shot:1",
+          "player_id": 37705618,
+          "player_name": "Djibril Soumar\u00e9",
+          "team_id": 21,
+          "team_name": "Sheffield United",
+          "fixture_id": 19432165,
+          "fixture_label": "Queens Park Rangers vs Sheffield United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 9,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "9/9",
+            "odds": "@1.36",
+            "summary": "Djibril Soumar\u00e9 (Sheffield United) won in 9/9 @1.36"
           }
         },
         {
@@ -496,11 +518,11 @@
           "hits": 7,
           "sample": 7,
           "hit_rate": 1.0,
-          "odds": 1.44,
+          "odds": 1.33,
           "display": {
             "rate": "7/7",
-            "odds": "@1.44",
-            "summary": "Hannibal (Burnley) won in 7/7 @1.44"
+            "odds": "@1.33",
+            "summary": "Hannibal (Burnley) won in 7/7 @1.33"
           }
         },
         {
@@ -562,33 +584,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.44,
+          "odds": 1.4,
           "display": {
             "rate": "9/10",
-            "odds": "@1.44",
-            "summary": "Gaius Makouta (Alanyaspor) won in 9/10 @1.44"
-          }
-        },
-        {
-          "id": "19427163:540613:1+ Shot:1",
-          "player_id": 540613,
-          "player_name": "Kiernan Dewsbury-Hall",
-          "team_id": 13,
-          "team_name": "Everton",
-          "fixture_id": 19427163,
-          "fixture_label": "Newcastle United vs Everton",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.33,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.33",
-            "summary": "Kiernan Dewsbury-Hall (Everton) won in 9/10 @1.33"
+            "odds": "@1.40",
+            "summary": "Gaius Makouta (Alanyaspor) won in 9/10 @1.40"
           }
         }
       ],
@@ -716,11 +716,33 @@
           "hits": 10,
           "sample": 10,
           "hit_rate": 1.0,
-          "odds": 1.36,
+          "odds": 1.4,
           "display": {
             "rate": "10/10",
-            "odds": "@1.36",
-            "summary": "Vaclav Cerny (Be\u015fikta\u015f) won in 10/10 @1.36"
+            "odds": "@1.40",
+            "summary": "Vaclav Cerny (Be\u015fikta\u015f) won in 10/10 @1.40"
+          }
+        },
+        {
+          "id": "19432165:1175:1+ SOT:1",
+          "player_id": 1175,
+          "player_name": "Patrick Bamford",
+          "team_id": 21,
+          "team_name": "Sheffield United",
+          "fixture_id": 19432165,
+          "fixture_label": "Queens Park Rangers vs Sheffield United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 10,
+          "hit_rate": 1.0,
+          "odds": 1.33,
+          "display": {
+            "rate": "10/10",
+            "odds": "@1.33",
+            "summary": "Patrick Bamford (Sheffield United) won in 10/10 @1.33"
           }
         },
         {
@@ -746,28 +768,6 @@
           }
         },
         {
-          "id": "19429412:16475806:1+ SOT:1",
-          "player_id": 16475806,
-          "player_name": "Mohamed Ihattaren",
-          "team_id": 1459,
-          "team_name": "Fortuna Sittard",
-          "fixture_id": 19429412,
-          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
-          "league_id": 72,
-          "league_name": "Eredivisie",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.57,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.57",
-            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 9/10 @1.57"
-          }
-        },
-        {
           "id": "19429412:30291:1+ SOT:1",
           "player_id": 30291,
           "player_name": "Kaj Sierhuis",
@@ -787,6 +787,28 @@
             "rate": "9/10",
             "odds": "@1.50",
             "summary": "Kaj Sierhuis (Fortuna Sittard) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19429412:16475806:1+ SOT:1",
+          "player_id": 16475806,
+          "player_name": "Mohamed Ihattaren",
+          "team_id": 1459,
+          "team_name": "Fortuna Sittard",
+          "fixture_id": 19429412,
+          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 9/10 @1.50"
           }
         },
         {
@@ -810,28 +832,6 @@
             "odds": "@1.33",
             "summary": "Mikel Oyarzabal (Real Sociedad) won in 9/10 @1.33"
           }
-        },
-        {
-          "id": "19433683:24799984:1+ SOT:1",
-          "player_id": 24799984,
-          "player_name": "Michael Olise",
-          "team_id": 503,
-          "team_name": "FC Bayern M\u00fcnchen",
-          "fixture_id": 19433683,
-          "fixture_label": "Borussia Dortmund vs FC Bayern M\u00fcnchen",
-          "league_id": 82,
-          "league_name": "Bundesliga",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.33,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.33",
-            "summary": "Michael Olise (FC Bayern M\u00fcnchen) won in 9/10 @1.33"
-          }
         }
       ],
       "section_total_rows": 6,
@@ -843,5 +843,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "ddb91e70c2bbb337356c1f9861fea37a4ead71f99a0bf6bb91b15d9992325ae7"
+  "content_fingerprint": "0d8020c16b5ad1553a4587cd0c9d3c5fc0f068e80ba286dd915cfebc46329873"
 }

@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "potential_value",
-  "generated_at": "2026-02-25T21:51:13+00:00",
+  "generated_at": "2026-02-27T16:57:51+00:00",
   "scheduled_for": "2026-02-27",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -89,11 +89,11 @@
           "hits": 8,
           "sample": 10,
           "hit_rate": 0.8,
-          "odds": 1.8,
+          "odds": 1.83,
           "display": {
             "rate": "8/10",
-            "odds": "@1.80",
-            "summary": "Marko Stameni\u0107 (Swansea City) won in 8/10 @1.80"
+            "odds": "@1.83",
+            "summary": "Marko Stameni\u0107 (Swansea City) won in 8/10 @1.83"
           }
         }
       ],
@@ -321,11 +321,11 @@
           "hits": 8,
           "sample": 10,
           "hit_rate": 0.8,
-          "odds": 1.8,
+          "odds": 1.83,
           "display": {
             "rate": "8/10",
-            "odds": "@1.80",
-            "summary": "Marko Stameni\u0107 (Swansea City) won in 8/10 @1.80"
+            "odds": "@1.83",
+            "summary": "Marko Stameni\u0107 (Swansea City) won in 8/10 @1.83"
           }
         }
       ],
@@ -492,5 +492,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "e2c10326cce29042bb5f68e292a2abc874425f0662e293e703865185f4d33a1f"
+  "content_fingerprint": "0d8de9b06a625ae8b197904d93b49d033338df4497b341bd7ba57344e65534a5"
 }
