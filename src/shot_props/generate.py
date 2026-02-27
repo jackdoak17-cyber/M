@@ -16,7 +16,7 @@ from src.instagram.shot_props_manifest import (
     build_shot_props_carousel_manifest,
 )
 from src.prop_bot.engine.baseline import calculate_player_baseline
-from src.prop_bot.engine.odds import get_player_market_odds
+from src.prop_bot.engine.odds import get_player_market_odds, get_team_win_odds
 from src.prop_bot.engine.players import get_eligible_players
 from src.prop_bot.config import LEAGUES
 from src.prop_bot.db import db_cursor
@@ -39,15 +39,16 @@ BET365_IDS = (2,)
 MIN_STARTS = 7
 MAX_STARTS = 20
 
-VALUE_MIN_HIT_PCT = 0.80
+VALUE_MIN_HIT_PCT = 0.75
 VALUE_MIN_ODDS = 1.72
 HIGH_PROB_MIN_HIT_PCT = 0.90
 HIGH_PROB_MIN_ODDS = 1.30
+MAX_TEAM_ML_ODDS = 5.0
 
 VALUE_TITLE = "\U0001f4c8 Tomorrow's Stats & Odds List | Potential Value \U0001f4dd"
 WEEKEND_VALUE_TITLE = "\U0001f4c8 This Weekend's Potential Value Stats & Odds List \U0001f4dd"
 VALUE_INTRO = (
-    "Players hitting 1+, 2+ shots and 1+ SOT in 80%+ of recent games "
+    "Players hitting 1+, 2+ shots and 1+ SOT in 75%+ of recent games "
     "(min n=7) with odds >1.72 \u2014 any value here?"
 )
 HIGH_PROB_TITLE = "\U0001f4ca Today's High Probability Stats & Odds List \U0001f512"
@@ -55,6 +56,20 @@ HIGH_PROB_INTRO = (
     "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games "
     "(min n=7) with odds >1.30 \u2014 any value here?"
 )
+
+SHORT_TEAM_NAMES: dict[str, str] = {
+    "AFC Bournemouth": "Bournemouth",
+    "Brighton & Hove Albion": "Brighton",
+    "Crystal Palace": "Palace",
+    "Leeds United": "Leeds",
+    "Manchester City": "Man City",
+    "Manchester United": "Man Utd",
+    "Newcastle United": "Newcastle",
+    "Nottingham Forest": "Nottm Forest",
+    "Tottenham Hotspur": "Spurs",
+    "West Ham United": "West Ham",
+    "Wolverhampton Wanderers": "Wolves",
+}
 
 
 @dataclass
@@ -199,6 +214,25 @@ def _recent_started_samples(
     return starts[:max_starts]
 
 
+def _passes_team_ml_filter(team_ml_odds: float | None) -> bool:
+    return team_ml_odds is None or team_ml_odds <= MAX_TEAM_ML_ODDS
+
+
+def _short_team_name(team_name: str) -> str:
+    name = str(team_name or "").strip()
+    if not name:
+        return name
+    if name in SHORT_TEAM_NAMES:
+        return SHORT_TEAM_NAMES[name]
+
+    shortened = name
+    for suffix in (" United", " FC", " CF", " AFC", " SC"):
+        if shortened.endswith(suffix) and len(shortened) > len(suffix):
+            shortened = shortened[: -len(suffix)].strip()
+            break
+    return shortened or name
+
+
 def _best_qualifying_window(
     candidate: QualifyingPlayer,
     min_hit_pct: float,
@@ -240,7 +274,8 @@ def _qualifies_high_prob(candidate: QualifyingPlayer) -> bool:
 def _render_candidate_line(player: QualifyingPlayer) -> str:
     tokens = [token for token in str(player.player_name or "").strip().split() if token]
     short_name = tokens[-1] if tokens else str(player.player_name or "")
-    return f"\u2192 {short_name} ({player.team_name}) won in {player.hits}/{player.sample} @{player.odds:.2f}"
+    team_name = _short_team_name(player.team_name)
+    return f"\u2192 {short_name} ({team_name}) won in {player.hits}/{player.sample} @{player.odds:.2f}"
 
 
 def _select_candidates_for_post(
@@ -381,12 +416,50 @@ def _write_or_remove_json(path: Path, payload: dict[str, Any] | None, empty_log_
 def _get_candidates(fixtures, audit_rows: list[CandidateAuditRow] | None = None) -> list[QualifyingPlayer]:
     """Get all candidates with Bet365 odds across all fixtures."""
     candidates: list[QualifyingPlayer] = []
+    team_ml_cache: dict[tuple[int, int], float | None] = {}
 
     for fixture in fixtures:
         players = get_eligible_players(fixture)
         fixture_label = _fixture_label(fixture)
 
         for player in players:
+            cache_key = (fixture.fixture_id, player.team_id)
+            if cache_key not in team_ml_cache:
+                is_home = int(player.team_id) == int(fixture.home_team_id)
+                team_ml_cache[cache_key] = get_team_win_odds(
+                    fixture.fixture_id,
+                    player.team_id,
+                    is_home=is_home,
+                    bookmaker_ids=BET365_IDS,
+                )
+            team_ml_odds = team_ml_cache[cache_key]
+            if not _passes_team_ml_filter(team_ml_odds):
+                if audit_rows is not None:
+                    for cfg in STAT_CONFIGS:
+                        audit_rows.append(
+                            CandidateAuditRow(
+                                fixture_id=fixture.fixture_id,
+                                fixture_label=fixture_label,
+                                league_id=fixture.league_id,
+                                league_name=fixture.league_name,
+                                player_id=player.player_id,
+                                player_name=player.player_name,
+                                team_id=player.team_id,
+                                team_name=player.team_name,
+                                stat_label=cfg["label"],
+                                stat_type_id=int(cfg["stat_type_id"]),
+                                market_key=str(cfg["market_key"]),
+                                threshold=int(cfg["threshold"]),
+                                raw_values=[],
+                                raw_minutes=[],
+                                starter_only_values=[],
+                                starter_only_minutes=[],
+                                status="excluded",
+                                reasons=["team_ml_over_5"],
+                            )
+                        )
+                continue
+
             # Cache baselines by stat_type_id to avoid duplicate DB calls
             baselines: dict[int, dict | None] = {}
 

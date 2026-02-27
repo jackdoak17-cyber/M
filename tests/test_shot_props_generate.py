@@ -17,6 +17,7 @@ from src.shot_props.generate import (
     _best_qualifying_window,
     _recent_started_samples,
     _render_candidate_line,
+    _passes_team_ml_filter,
     _value_scope_dates_for_target,
     _verify_post_matches_candidates,
 )
@@ -67,7 +68,7 @@ class ShotPropsGenerateTests(unittest.TestCase):
             player_id=1,
             player_name="Morgan Rogers",
             team_id=10,
-            team_name="Aston Villa",
+            team_name="West Ham United",
             fixture_id=100,
             fixture_label="Wolves vs Aston Villa",
             league_id=8,
@@ -82,8 +83,13 @@ class ShotPropsGenerateTests(unittest.TestCase):
         )
         self.assertEqual(
             _render_candidate_line(candidate),
-            "→ Rogers (Aston Villa) won in 6/7 @1.80",
+            "→ Rogers (West Ham) won in 6/7 @1.80",
         )
+
+    def test_passes_team_ml_filter(self) -> None:
+        self.assertTrue(_passes_team_ml_filter(None))
+        self.assertTrue(_passes_team_ml_filter(5.0))
+        self.assertFalse(_passes_team_ml_filter(5.01))
 
     def test_value_scope_dates_weekend_behavior(self) -> None:
         self.assertEqual(
