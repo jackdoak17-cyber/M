@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "potential_value",
-  "generated_at": "2026-02-27T22:07:58+00:00",
+  "generated_at": "2026-02-27T22:59:12+00:00",
   "scheduled_for": "2026-02-27",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -12,7 +12,7 @@
     "2026-03-01"
   ],
   "title": "\ud83d\udcc8 This Weekend's Potential Value Stats & Odds List \ud83d\udcdd",
-  "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 80%+ hit rate \u00b7 Odds >1.72 \u00b7 All @Bet365\nAny value here?",
+  "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 80%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
   "odds_source": "Bet365",
   "thresholds": {
     "min_hit_pct": 0.8,
@@ -421,7 +421,7 @@
         "accent": "VALUE"
       },
       "title": "\ud83d\udcc8 This Weekend's Potential Value Stats & Odds List \ud83d\udcdd",
-      "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 80%+ hit rate \u00b7 Odds >1.72 \u00b7 All @Bet365\nAny value here?",
+      "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 80%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
       "threshold_bar": "80%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
       "fixture_window": "Sat 28 Feb - Sun 01 Mar 2026",
       "stats": {
@@ -844,5 +844,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "5edd1d72862f27e6f205a0601517d8493447aff92ca55d92d3fc65b128867c2a"
+  "content_fingerprint": "de8d53147a558b434f7272a1f02f5ee4c3fa99dcc1f67cedff5cc4a0f380aa26"
 }

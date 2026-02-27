@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-02-27T22:07:58+00:00",
+  "generated_at": "2026-02-27T22:59:12+00:00",
   "scheduled_for": "2026-02-28",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -422,11 +422,11 @@
           "hits": 13,
           "sample": 14,
           "hit_rate": 0.9286,
-          "odds": 1.5,
+          "odds": 1.57,
           "display": {
             "rate": "13/14",
-            "odds": "@1.50",
-            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 13/14 @1.50"
+            "odds": "@1.57",
+            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 13/14 @1.57"
           }
         },
         {
@@ -936,11 +936,11 @@
           "hits": 13,
           "sample": 14,
           "hit_rate": 0.9286,
-          "odds": 1.5,
+          "odds": 1.57,
           "display": {
             "rate": "13/14",
-            "odds": "@1.50",
-            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 13/14 @1.50"
+            "odds": "@1.57",
+            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 13/14 @1.57"
           }
         },
         {
@@ -1019,5 +1019,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "a30a7945f21540e9daea38ad705d2256accebedd316df63ccc50361bc1015e14"
+  "content_fingerprint": "4d788bda6c3596cc8ccff835fbad2e5df1c991ad50762d658d6a355739a04c24"
 }
