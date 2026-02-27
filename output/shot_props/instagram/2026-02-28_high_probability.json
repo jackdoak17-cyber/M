@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-02-27T21:44:33+00:00",
+  "generated_at": "2026-02-27T22:07:58+00:00",
   "scheduled_for": "2026-02-28",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -19,11 +19,11 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 22,
+    "total_rows": 21,
     "by_section": {
       "1+ Shot": 8,
       "2+ Shots": 6,
-      "1+ SOT": 8
+      "1+ SOT": 7
     }
   },
   "sections": {
@@ -452,28 +452,6 @@
           }
         },
         {
-          "id": "19439504:186932:1+ SOT:1",
-          "player_id": 186932,
-          "player_name": "Mikel Oyarzabal",
-          "team_id": 594,
-          "team_name": "Real Sociedad",
-          "fixture_id": 19439504,
-          "fixture_label": "Mallorca vs Real Sociedad",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.33,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.33",
-            "summary": "Mikel Oyarzabal (Real Sociedad) won in 10/11 @1.33"
-          }
-        },
-        {
           "id": "19439508:37526847:1+ SOT:1",
           "player_id": 37526847,
           "player_name": "Ilyas Chaira",
@@ -520,7 +498,7 @@
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 28 Feb 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 8\n\u2022 2+ Shots: 6\n\u2022 1+ SOT: 8\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 28 Feb 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 8\n\u2022 2+ Shots: 6\n\u2022 1+ SOT: 7\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -534,7 +512,7 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 28 Feb 2026",
       "stats": {
-        "total_players": 22,
+        "total_players": 21,
         "stat_types": 3,
         "hit_rate_threshold_pct": 90
       },
@@ -988,28 +966,6 @@
           }
         },
         {
-          "id": "19439504:186932:1+ SOT:1",
-          "player_id": 186932,
-          "player_name": "Mikel Oyarzabal",
-          "team_id": 594,
-          "team_name": "Real Sociedad",
-          "fixture_id": 19439504,
-          "fixture_label": "Mallorca vs Real Sociedad",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.33,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.33",
-            "summary": "Mikel Oyarzabal (Real Sociedad) won in 10/11 @1.33"
-          }
-        },
-        {
           "id": "19439508:37526847:1+ SOT:1",
           "player_id": 37526847,
           "player_name": "Ilyas Chaira",
@@ -1054,7 +1010,7 @@
           }
         }
       ],
-      "section_total_rows": 8,
+      "section_total_rows": 7,
       "slide_number": 4,
       "slide_count": 4
     }
@@ -1063,5 +1019,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "6c5ec9d8d46fd26160c06afefaee79aa45d9f510a0fc430b5a342c426ef53ff3"
+  "content_fingerprint": "a30a7945f21540e9daea38ad705d2256accebedd316df63ccc50361bc1015e14"
 }
