@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "potential_value",
-  "generated_at": "2026-02-27T16:57:51+00:00",
+  "generated_at": "2026-02-27T18:31:31+00:00",
   "scheduled_for": "2026-02-27",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -20,16 +20,38 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 9,
+    "total_rows": 17,
     "by_section": {
-      "1+ Shot": 3,
-      "2+ Shots": 2,
-      "1+ SOT": 4
+      "1+ Shot": 6,
+      "2+ Shots": 4,
+      "1+ SOT": 7
     }
   },
   "sections": {
     "by_section": {
       "1+ Shot": [
+        {
+          "id": "19428207:37259161:1+ Shot:1",
+          "player_id": 37259161,
+          "player_name": "Billy Koumetio",
+          "team_id": 284,
+          "team_name": "Dundee",
+          "fixture_id": 19428207,
+          "fixture_label": "Dundee vs Hibernian",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 7,
+          "hit_rate": 0.8571,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/7",
+            "odds": "@1.73",
+            "summary": "Billy Koumetio (Dundee) won in 6/7 @1.73"
+          }
+        },
         {
           "id": "19467846:766687:1+ Shot:1",
           "player_id": 766687,
@@ -42,14 +64,58 @@
           "league_name": "Ligue 1",
           "stat_label": "1+ Shot",
           "threshold": 1,
-          "hits": 8,
-          "sample": 10,
+          "hits": 10,
+          "sample": 12,
+          "hit_rate": 0.8333,
+          "odds": 2.1,
+          "display": {
+            "rate": "10/12",
+            "odds": "@2.10",
+            "summary": "Ayumu Seko (Le Havre) won in 10/12 @2.10"
+          }
+        },
+        {
+          "id": "19432160:1596:1+ Shot:1",
+          "player_id": 1596,
+          "player_name": "Josh Tymon",
+          "team_id": 30,
+          "team_name": "Swansea City",
+          "fixture_id": 19432160,
+          "fixture_label": "Ipswich Town vs Swansea City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 15,
           "hit_rate": 0.8,
           "odds": 2.1,
           "display": {
-            "rate": "8/10",
+            "rate": "12/15",
             "odds": "@2.10",
-            "summary": "Ayumu Seko (Le Havre) won in 8/10 @2.10"
+            "summary": "Josh Tymon (Swansea City) won in 12/15 @2.10"
+          }
+        },
+        {
+          "id": "19425143:84512:1+ Shot:1",
+          "player_id": 84512,
+          "player_name": "Martin Frese",
+          "team_id": 1123,
+          "team_name": "Hellas Verona",
+          "fixture_id": 19425143,
+          "fixture_label": "Hellas Verona vs Napoli",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 15,
+          "hit_rate": 0.8,
+          "odds": 2.1,
+          "display": {
+            "rate": "12/15",
+            "odds": "@2.10",
+            "summary": "Martin Frese (Hellas Verona) won in 12/15 @2.10"
           }
         },
         {
@@ -99,25 +165,47 @@
       ],
       "2+ Shots": [
         {
-          "id": "19428211:37603838:2+ Shots:2",
-          "player_id": 37603838,
-          "player_name": "Amar Fatah",
-          "team_id": 282,
-          "team_name": "Dundee United",
-          "fixture_id": 19428211,
-          "fixture_label": "Motherwell vs Dundee United",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
+          "id": "19427155:28931574:2+ Shots:2",
+          "player_id": 28931574,
+          "player_name": "Jo\u00e3o Pedro",
+          "team_id": 18,
+          "team_name": "Chelsea",
+          "fixture_id": 19427155,
+          "fixture_label": "Arsenal vs Chelsea",
+          "league_id": 8,
+          "league_name": "Premier League",
           "stat_label": "2+ Shots",
           "threshold": 2,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.8,
+          "hits": 7,
+          "sample": 8,
+          "hit_rate": 0.875,
+          "odds": 2.1,
           "display": {
-            "rate": "9/10",
-            "odds": "@1.80",
-            "summary": "Amar Fatah (Dundee United) won in 9/10 @1.80"
+            "rate": "7/8",
+            "odds": "@2.10",
+            "summary": "Jo\u00e3o Pedro (Chelsea) won in 7/8 @2.10"
+          }
+        },
+        {
+          "id": "19443139:37654301:2+ Shots:2",
+          "player_id": 37654301,
+          "player_name": "Ruan",
+          "team_id": 347,
+          "team_name": "Alanyaspor",
+          "fixture_id": 19443139,
+          "fixture_label": "Galatasaray vs Alanyaspor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 7,
+          "hit_rate": 0.8571,
+          "odds": 2.1,
+          "display": {
+            "rate": "6/7",
+            "odds": "@2.10",
+            "summary": "Ruan (Alanyaspor) won in 6/7 @2.10"
           }
         },
         {
@@ -132,38 +220,82 @@
           "league_name": "Ligue 1",
           "stat_label": "2+ Shots",
           "threshold": 2,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
+          "hits": 11,
+          "sample": 13,
+          "hit_rate": 0.8462,
           "odds": 1.8,
           "display": {
-            "rate": "9/10",
+            "rate": "11/13",
             "odds": "@1.80",
-            "summary": "Issa Soumar\u00e9 (Le Havre) won in 9/10 @1.80"
+            "summary": "Issa Soumar\u00e9 (Le Havre) won in 11/13 @1.80"
+          }
+        },
+        {
+          "id": "19428211:37603838:2+ Shots:2",
+          "player_id": 37603838,
+          "player_name": "Amar Fatah",
+          "team_id": 282,
+          "team_name": "Dundee United",
+          "fixture_id": 19428211,
+          "fixture_label": "Motherwell vs Dundee United",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 11,
+          "hit_rate": 0.8182,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/11",
+            "odds": "@1.80",
+            "summary": "Amar Fatah (Dundee United) won in 9/11 @1.80"
           }
         }
       ],
       "1+ SOT": [
         {
-          "id": "19439508:37526847:1+ SOT:1",
-          "player_id": 37526847,
-          "player_name": "Ilyas Chaira",
-          "team_id": 93,
-          "team_name": "Real Oviedo",
-          "fixture_id": 19439508,
-          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
-          "league_id": 564,
-          "league_name": "La Liga",
+          "id": "19433682:32585:1+ SOT:1",
+          "player_id": 32585,
+          "player_name": "Nadiem Amiri",
+          "team_id": 794,
+          "team_name": "FSV Mainz 05",
+          "fixture_id": 19433682,
+          "fixture_label": "Bayer 04 Leverkusen vs FSV Mainz 05",
+          "league_id": 82,
+          "league_name": "Bundesliga",
           "stat_label": "1+ SOT",
           "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.8,
+          "hits": 6,
+          "sample": 7,
+          "hit_rate": 0.8571,
+          "odds": 1.83,
           "display": {
-            "rate": "9/10",
-            "odds": "@1.80",
-            "summary": "Ilyas Chaira (Real Oviedo) won in 9/10 @1.80"
+            "rate": "6/7",
+            "odds": "@1.83",
+            "summary": "Nadiem Amiri (FSV Mainz 05) won in 6/7 @1.83"
+          }
+        },
+        {
+          "id": "19432157:174296:1+ SOT:1",
+          "player_id": 174296,
+          "player_name": "Lyndon Dykes",
+          "team_id": 4,
+          "team_name": "Charlton Athletic",
+          "fixture_id": 19432157,
+          "fixture_label": "Charlton Athletic vs Wrexham",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 7,
+          "hit_rate": 0.8571,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/7",
+            "odds": "@1.73",
+            "summary": "Lyndon Dykes (Charlton Athletic) won in 6/7 @1.73"
           }
         },
         {
@@ -178,14 +310,14 @@
           "league_name": "Ligue 1",
           "stat_label": "1+ SOT",
           "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
+          "hits": 15,
+          "sample": 18,
+          "hit_rate": 0.8333,
           "odds": 1.73,
           "display": {
-            "rate": "9/10",
+            "rate": "15/18",
             "odds": "@1.73",
-            "summary": "Corentin Tolisso (Olympique Lyonnais) won in 9/10 @1.73"
+            "summary": "Corentin Tolisso (Olympique Lyonnais) won in 15/18 @1.73"
           }
         },
         {
@@ -200,14 +332,58 @@
           "league_name": "Premier League",
           "stat_label": "1+ SOT",
           "threshold": 1,
-          "hits": 8,
-          "sample": 10,
-          "hit_rate": 0.8,
+          "hits": 9,
+          "sample": 11,
+          "hit_rate": 0.8182,
           "odds": 2.2,
           "display": {
-            "rate": "8/10",
+            "rate": "9/11",
             "odds": "@2.20",
-            "summary": "Crysencio Summerville (West Ham United) won in 8/10 @2.20"
+            "summary": "Crysencio Summerville (West Ham United) won in 9/11 @2.20"
+          }
+        },
+        {
+          "id": "19439508:37526847:1+ SOT:1",
+          "player_id": 37526847,
+          "player_name": "Ilyas Chaira",
+          "team_id": 93,
+          "team_name": "Real Oviedo",
+          "fixture_id": 19439508,
+          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 11,
+          "hit_rate": 0.8182,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/11",
+            "odds": "@1.80",
+            "summary": "Ilyas Chaira (Real Oviedo) won in 9/11 @1.80"
+          }
+        },
+        {
+          "id": "19443143:201103:1+ SOT:1",
+          "player_id": 201103,
+          "player_name": "Tayfur Bing\u00f6l",
+          "team_id": 13860,
+          "team_name": "Kocaelispor",
+          "fixture_id": 19443143,
+          "fixture_label": "Kocaelispor vs Be\u015fikta\u015f",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 13,
+          "sample": 16,
+          "hit_rate": 0.8125,
+          "odds": 1.8,
+          "display": {
+            "rate": "13/16",
+            "odds": "@1.80",
+            "summary": "Tayfur Bing\u00f6l (Kocaelispor) won in 13/16 @1.80"
           }
         },
         {
@@ -235,7 +411,7 @@
       ]
     }
   },
-  "caption": "\ud83d\udcc8 This Weekend's Potential Value Stats & Odds List \ud83d\udcdd\n\nFixtures: Sat 28 Feb - Sun 01 Mar 2026\n80%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 3\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 4\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "caption": "\ud83d\udcc8 This Weekend's Potential Value Stats & Odds List \ud83d\udcdd\n\nFixtures: Sat 28 Feb - Sun 01 Mar 2026\n80%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 6\n\u2022 2+ Shots: 4\n\u2022 1+ SOT: 7\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
   "slides": [
     {
       "slide_type": "cover",
@@ -249,7 +425,7 @@
       "threshold_bar": "80%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
       "fixture_window": "Sat 28 Feb - Sun 01 Mar 2026",
       "stats": {
-        "total_players": 9,
+        "total_players": 17,
         "stat_types": 3,
         "hit_rate_threshold_pct": 80
       },
@@ -263,6 +439,28 @@
       "section_pages": 1,
       "rows": [
         {
+          "id": "19428207:37259161:1+ Shot:1",
+          "player_id": 37259161,
+          "player_name": "Billy Koumetio",
+          "team_id": 284,
+          "team_name": "Dundee",
+          "fixture_id": 19428207,
+          "fixture_label": "Dundee vs Hibernian",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 7,
+          "hit_rate": 0.8571,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/7",
+            "odds": "@1.73",
+            "summary": "Billy Koumetio (Dundee) won in 6/7 @1.73"
+          }
+        },
+        {
           "id": "19467846:766687:1+ Shot:1",
           "player_id": 766687,
           "player_name": "Ayumu Seko",
@@ -274,14 +472,58 @@
           "league_name": "Ligue 1",
           "stat_label": "1+ Shot",
           "threshold": 1,
-          "hits": 8,
-          "sample": 10,
+          "hits": 10,
+          "sample": 12,
+          "hit_rate": 0.8333,
+          "odds": 2.1,
+          "display": {
+            "rate": "10/12",
+            "odds": "@2.10",
+            "summary": "Ayumu Seko (Le Havre) won in 10/12 @2.10"
+          }
+        },
+        {
+          "id": "19432160:1596:1+ Shot:1",
+          "player_id": 1596,
+          "player_name": "Josh Tymon",
+          "team_id": 30,
+          "team_name": "Swansea City",
+          "fixture_id": 19432160,
+          "fixture_label": "Ipswich Town vs Swansea City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 15,
           "hit_rate": 0.8,
           "odds": 2.1,
           "display": {
-            "rate": "8/10",
+            "rate": "12/15",
             "odds": "@2.10",
-            "summary": "Ayumu Seko (Le Havre) won in 8/10 @2.10"
+            "summary": "Josh Tymon (Swansea City) won in 12/15 @2.10"
+          }
+        },
+        {
+          "id": "19425143:84512:1+ Shot:1",
+          "player_id": 84512,
+          "player_name": "Martin Frese",
+          "team_id": 1123,
+          "team_name": "Hellas Verona",
+          "fixture_id": 19425143,
+          "fixture_label": "Hellas Verona vs Napoli",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 15,
+          "hit_rate": 0.8,
+          "odds": 2.1,
+          "display": {
+            "rate": "12/15",
+            "odds": "@2.10",
+            "summary": "Martin Frese (Hellas Verona) won in 12/15 @2.10"
           }
         },
         {
@@ -329,7 +571,7 @@
           }
         }
       ],
-      "section_total_rows": 3,
+      "section_total_rows": 6,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -340,25 +582,47 @@
       "section_pages": 1,
       "rows": [
         {
-          "id": "19428211:37603838:2+ Shots:2",
-          "player_id": 37603838,
-          "player_name": "Amar Fatah",
-          "team_id": 282,
-          "team_name": "Dundee United",
-          "fixture_id": 19428211,
-          "fixture_label": "Motherwell vs Dundee United",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
+          "id": "19427155:28931574:2+ Shots:2",
+          "player_id": 28931574,
+          "player_name": "Jo\u00e3o Pedro",
+          "team_id": 18,
+          "team_name": "Chelsea",
+          "fixture_id": 19427155,
+          "fixture_label": "Arsenal vs Chelsea",
+          "league_id": 8,
+          "league_name": "Premier League",
           "stat_label": "2+ Shots",
           "threshold": 2,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.8,
+          "hits": 7,
+          "sample": 8,
+          "hit_rate": 0.875,
+          "odds": 2.1,
           "display": {
-            "rate": "9/10",
-            "odds": "@1.80",
-            "summary": "Amar Fatah (Dundee United) won in 9/10 @1.80"
+            "rate": "7/8",
+            "odds": "@2.10",
+            "summary": "Jo\u00e3o Pedro (Chelsea) won in 7/8 @2.10"
+          }
+        },
+        {
+          "id": "19443139:37654301:2+ Shots:2",
+          "player_id": 37654301,
+          "player_name": "Ruan",
+          "team_id": 347,
+          "team_name": "Alanyaspor",
+          "fixture_id": 19443139,
+          "fixture_label": "Galatasaray vs Alanyaspor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 7,
+          "hit_rate": 0.8571,
+          "odds": 2.1,
+          "display": {
+            "rate": "6/7",
+            "odds": "@2.10",
+            "summary": "Ruan (Alanyaspor) won in 6/7 @2.10"
           }
         },
         {
@@ -373,18 +637,40 @@
           "league_name": "Ligue 1",
           "stat_label": "2+ Shots",
           "threshold": 2,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
+          "hits": 11,
+          "sample": 13,
+          "hit_rate": 0.8462,
           "odds": 1.8,
           "display": {
-            "rate": "9/10",
+            "rate": "11/13",
             "odds": "@1.80",
-            "summary": "Issa Soumar\u00e9 (Le Havre) won in 9/10 @1.80"
+            "summary": "Issa Soumar\u00e9 (Le Havre) won in 11/13 @1.80"
+          }
+        },
+        {
+          "id": "19428211:37603838:2+ Shots:2",
+          "player_id": 37603838,
+          "player_name": "Amar Fatah",
+          "team_id": 282,
+          "team_name": "Dundee United",
+          "fixture_id": 19428211,
+          "fixture_label": "Motherwell vs Dundee United",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 11,
+          "hit_rate": 0.8182,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/11",
+            "odds": "@1.80",
+            "summary": "Amar Fatah (Dundee United) won in 9/11 @1.80"
           }
         }
       ],
-      "section_total_rows": 2,
+      "section_total_rows": 4,
       "slide_number": 3,
       "slide_count": 4
     },
@@ -395,25 +681,47 @@
       "section_pages": 1,
       "rows": [
         {
-          "id": "19439508:37526847:1+ SOT:1",
-          "player_id": 37526847,
-          "player_name": "Ilyas Chaira",
-          "team_id": 93,
-          "team_name": "Real Oviedo",
-          "fixture_id": 19439508,
-          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
-          "league_id": 564,
-          "league_name": "La Liga",
+          "id": "19433682:32585:1+ SOT:1",
+          "player_id": 32585,
+          "player_name": "Nadiem Amiri",
+          "team_id": 794,
+          "team_name": "FSV Mainz 05",
+          "fixture_id": 19433682,
+          "fixture_label": "Bayer 04 Leverkusen vs FSV Mainz 05",
+          "league_id": 82,
+          "league_name": "Bundesliga",
           "stat_label": "1+ SOT",
           "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.8,
+          "hits": 6,
+          "sample": 7,
+          "hit_rate": 0.8571,
+          "odds": 1.83,
           "display": {
-            "rate": "9/10",
-            "odds": "@1.80",
-            "summary": "Ilyas Chaira (Real Oviedo) won in 9/10 @1.80"
+            "rate": "6/7",
+            "odds": "@1.83",
+            "summary": "Nadiem Amiri (FSV Mainz 05) won in 6/7 @1.83"
+          }
+        },
+        {
+          "id": "19432157:174296:1+ SOT:1",
+          "player_id": 174296,
+          "player_name": "Lyndon Dykes",
+          "team_id": 4,
+          "team_name": "Charlton Athletic",
+          "fixture_id": 19432157,
+          "fixture_label": "Charlton Athletic vs Wrexham",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 7,
+          "hit_rate": 0.8571,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/7",
+            "odds": "@1.73",
+            "summary": "Lyndon Dykes (Charlton Athletic) won in 6/7 @1.73"
           }
         },
         {
@@ -428,14 +736,14 @@
           "league_name": "Ligue 1",
           "stat_label": "1+ SOT",
           "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
+          "hits": 15,
+          "sample": 18,
+          "hit_rate": 0.8333,
           "odds": 1.73,
           "display": {
-            "rate": "9/10",
+            "rate": "15/18",
             "odds": "@1.73",
-            "summary": "Corentin Tolisso (Olympique Lyonnais) won in 9/10 @1.73"
+            "summary": "Corentin Tolisso (Olympique Lyonnais) won in 15/18 @1.73"
           }
         },
         {
@@ -450,14 +758,58 @@
           "league_name": "Premier League",
           "stat_label": "1+ SOT",
           "threshold": 1,
-          "hits": 8,
-          "sample": 10,
-          "hit_rate": 0.8,
+          "hits": 9,
+          "sample": 11,
+          "hit_rate": 0.8182,
           "odds": 2.2,
           "display": {
-            "rate": "8/10",
+            "rate": "9/11",
             "odds": "@2.20",
-            "summary": "Crysencio Summerville (West Ham United) won in 8/10 @2.20"
+            "summary": "Crysencio Summerville (West Ham United) won in 9/11 @2.20"
+          }
+        },
+        {
+          "id": "19439508:37526847:1+ SOT:1",
+          "player_id": 37526847,
+          "player_name": "Ilyas Chaira",
+          "team_id": 93,
+          "team_name": "Real Oviedo",
+          "fixture_id": 19439508,
+          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 11,
+          "hit_rate": 0.8182,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/11",
+            "odds": "@1.80",
+            "summary": "Ilyas Chaira (Real Oviedo) won in 9/11 @1.80"
+          }
+        },
+        {
+          "id": "19443143:201103:1+ SOT:1",
+          "player_id": 201103,
+          "player_name": "Tayfur Bing\u00f6l",
+          "team_id": 13860,
+          "team_name": "Kocaelispor",
+          "fixture_id": 19443143,
+          "fixture_label": "Kocaelispor vs Be\u015fikta\u015f",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 13,
+          "sample": 16,
+          "hit_rate": 0.8125,
+          "odds": 1.8,
+          "display": {
+            "rate": "13/16",
+            "odds": "@1.80",
+            "summary": "Tayfur Bing\u00f6l (Kocaelispor) won in 13/16 @1.80"
           }
         },
         {
@@ -483,7 +835,7 @@
           }
         }
       ],
-      "section_total_rows": 4,
+      "section_total_rows": 7,
       "slide_number": 4,
       "slide_count": 4
     }
@@ -492,5 +844,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "0d8de9b06a625ae8b197904d93b49d033338df4497b341bd7ba57344e65534a5"
+  "content_fingerprint": "aeedfde54859a04aa671e1ef31840f51c35604a502fbb8cd1cb75bfe4310b91f"
 }
