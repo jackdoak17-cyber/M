@@ -40,17 +40,17 @@ MIN_STARTS = 7
 MAX_STARTS = 20
 MAX_CANDIDATE_LINE_CHARS = 46
 
-VALUE_MIN_HIT_PCT = 0.80
+VALUE_MIN_HIT_PCT = 0.75
 VALUE_MIN_ODDS = 1.72
 HIGH_PROB_MIN_HIT_PCT = 0.90
 HIGH_PROB_MIN_ODDS = 1.30
 MAX_TEAM_ML_ODDS = 5.0
 
-VALUE_TITLE = "\U0001f4c8 Tomorrow's Stats & Odds List | Potential Value \U0001f4dd"
-WEEKEND_VALUE_TITLE = "\U0001f4c8 This Weekend's Potential Value Stats & Odds List \U0001f4dd"
+VALUE_TITLE = ""
+WEEKEND_VALUE_TITLE = ""
 VALUE_INTRO = (
     "\U0001f4ca Weekend Shot Props list\n"
-    "Min 7 games \u00b7 80%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\n"
+    "Min 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\n"
     "Any value here?"
 )
 HIGH_PROB_TITLE = "\U0001f4ca Today's High Probability Stats & Odds List \U0001f512"
@@ -232,7 +232,8 @@ def _recent_started_samples(
 
 
 def _passes_team_ml_filter(team_ml_odds: float | None) -> bool:
-    return team_ml_odds is None or team_ml_odds <= MAX_TEAM_ML_ODDS
+    # Require an explicit team ML price so underdog suppression is always enforced.
+    return team_ml_odds is not None and team_ml_odds <= MAX_TEAM_ML_ODDS
 
 
 def _short_team_name(team_name: str) -> str:
@@ -362,7 +363,10 @@ def _filter_and_format(
     if not any(sections.values()):
         return ""
 
-    lines = [title, "", intro, ""]
+    lines: list[str] = []
+    if title.strip():
+        lines.extend([title, ""])
+    lines.extend([intro, ""])
 
     for label in SECTION_ORDER:
         players = sections[label]

@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-02-27T22:59:12+00:00",
+  "generated_at": "2026-02-27T23:18:48+00:00",
   "scheduled_for": "2026-02-28",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -19,11 +19,11 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 21,
+    "total_rows": 11,
     "by_section": {
-      "1+ Shot": 8,
-      "2+ Shots": 6,
-      "1+ SOT": 7
+      "1+ Shot": 5,
+      "2+ Shots": 3,
+      "1+ SOT": 3
     }
   },
   "sections": {
@@ -118,72 +118,6 @@
           }
         },
         {
-          "id": "19443139:111694:1+ Shot:1",
-          "player_id": 111694,
-          "player_name": "Gaius Makouta",
-          "team_id": 347,
-          "team_name": "Alanyaspor",
-          "fixture_id": 19443139,
-          "fixture_label": "Galatasaray vs Alanyaspor",
-          "league_id": 600,
-          "league_name": "Super Lig",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 12,
-          "sample": 13,
-          "hit_rate": 0.9231,
-          "odds": 1.4,
-          "display": {
-            "rate": "12/13",
-            "odds": "@1.40",
-            "summary": "Gaius Makouta (Alanyaspor) won in 12/13 @1.40"
-          }
-        },
-        {
-          "id": "19467841:37316421:1+ Shot:1",
-          "player_id": 37316421,
-          "player_name": "Yassin Belkhdim",
-          "team_id": 776,
-          "team_name": "Angers SCO",
-          "fixture_id": 19467841,
-          "fixture_label": "Monaco vs Angers SCO",
-          "league_id": 301,
-          "league_name": "Ligue 1",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 11,
-          "sample": 12,
-          "hit_rate": 0.9167,
-          "odds": 1.53,
-          "display": {
-            "rate": "11/12",
-            "odds": "@1.53",
-            "summary": "Yassin Belkhdim (Angers SCO) won in 11/12 @1.53"
-          }
-        },
-        {
-          "id": "19433689:37315722:1+ Shot:1",
-          "player_id": 37315722,
-          "player_name": "Joel Chima Fujita",
-          "team_id": 353,
-          "team_name": "St. Pauli",
-          "fixture_id": 19433689,
-          "fixture_label": "TSG Hoffenheim vs St. Pauli",
-          "league_id": 82,
-          "league_name": "Bundesliga",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.5,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.50",
-            "summary": "Joel Chima Fujita (St. Pauli) won in 10/11 @1.50"
-          }
-        },
-        {
           "id": "19427163:4536524:1+ Shot:1",
           "player_id": 4536524,
           "player_name": "James Garner",
@@ -252,50 +186,6 @@
           }
         },
         {
-          "id": "19467846:37337715:2+ Shots:2",
-          "player_id": 37337715,
-          "player_name": "Issa Soumar\u00e9",
-          "team_id": 1055,
-          "team_name": "Le Havre",
-          "fixture_id": 19467846,
-          "fixture_label": "Le Havre vs Paris Saint Germain",
-          "league_id": 301,
-          "league_name": "Ligue 1",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 11,
-          "sample": 12,
-          "hit_rate": 0.9167,
-          "odds": 1.8,
-          "display": {
-            "rate": "11/12",
-            "odds": "@1.80",
-            "summary": "Issa Soumar\u00e9 (Le Havre) won in 11/12 @1.80"
-          }
-        },
-        {
-          "id": "19439508:37526847:2+ Shots:2",
-          "player_id": 37526847,
-          "player_name": "Ilyas Chaira",
-          "team_id": 93,
-          "team_name": "Real Oviedo",
-          "fixture_id": 19439508,
-          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 11,
-          "sample": 12,
-          "hit_rate": 0.9167,
-          "odds": 1.36,
-          "display": {
-            "rate": "11/12",
-            "odds": "@1.36",
-            "summary": "Ilyas Chaira (Real Oviedo) won in 11/12 @1.36"
-          }
-        },
-        {
           "id": "19428208:7026565:2+ Shots:2",
           "player_id": 7026565,
           "player_name": "Tyreece John-Jules",
@@ -316,53 +206,9 @@
             "odds": "@1.36",
             "summary": "Tyreece John-Jules (Kilmarnock) won in 10/11 @1.36"
           }
-        },
-        {
-          "id": "19428211:37603838:2+ Shots:2",
-          "player_id": 37603838,
-          "player_name": "Amar Fatah",
-          "team_id": 282,
-          "team_name": "Dundee United",
-          "fixture_id": 19428211,
-          "fixture_label": "Motherwell vs Dundee United",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.8,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.80",
-            "summary": "Amar Fatah (Dundee United) won in 9/10 @1.80"
-          }
         }
       ],
       "1+ SOT": [
-        {
-          "id": "19427161:9939203:1+ SOT:1",
-          "player_id": 9939203,
-          "player_name": "Crysencio Summerville",
-          "team_id": 1,
-          "team_name": "West Ham United",
-          "fixture_id": 19427161,
-          "fixture_label": "Liverpool vs West Ham United",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 7,
-          "hit_rate": 1.0,
-          "odds": 2.2,
-          "display": {
-            "rate": "7/7",
-            "odds": "@2.20",
-            "summary": "Crysencio Summerville (West Ham United) won in 7/7 @2.20"
-          }
-        },
         {
           "id": "19428211:581047:1+ SOT:1",
           "player_id": 581047,
@@ -408,28 +254,6 @@
           }
         },
         {
-          "id": "19429412:16475806:1+ SOT:1",
-          "player_id": 16475806,
-          "player_name": "Mohamed Ihattaren",
-          "team_id": 1459,
-          "team_name": "Fortuna Sittard",
-          "fixture_id": 19429412,
-          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
-          "league_id": 72,
-          "league_name": "Eredivisie",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 13,
-          "sample": 14,
-          "hit_rate": 0.9286,
-          "odds": 1.57,
-          "display": {
-            "rate": "13/14",
-            "odds": "@1.57",
-            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 13/14 @1.57"
-          }
-        },
-        {
           "id": "19443143:25709:1+ SOT:1",
           "player_id": 25709,
           "player_name": "Vaclav Cerny",
@@ -450,55 +274,11 @@
             "odds": "@1.40",
             "summary": "Vaclav Cerny (Be\u015fikta\u015f) won in 11/12 @1.40"
           }
-        },
-        {
-          "id": "19439508:37526847:1+ SOT:1",
-          "player_id": 37526847,
-          "player_name": "Ilyas Chaira",
-          "team_id": 93,
-          "team_name": "Real Oviedo",
-          "fixture_id": 19439508,
-          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.8,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.80",
-            "summary": "Ilyas Chaira (Real Oviedo) won in 9/10 @1.80"
-          }
-        },
-        {
-          "id": "19429412:30291:1+ SOT:1",
-          "player_id": 30291,
-          "player_name": "Kaj Sierhuis",
-          "team_id": 1459,
-          "team_name": "Fortuna Sittard",
-          "fixture_id": 19429412,
-          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
-          "league_id": 72,
-          "league_name": "Eredivisie",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.5,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.50",
-            "summary": "Kaj Sierhuis (Fortuna Sittard) won in 9/10 @1.50"
-          }
         }
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 28 Feb 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 8\n\u2022 2+ Shots: 6\n\u2022 1+ SOT: 7\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 28 Feb 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 5\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 3\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -512,7 +292,7 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 28 Feb 2026",
       "stats": {
-        "total_players": 21,
+        "total_players": 11,
         "stat_types": 3,
         "hit_rate_threshold_pct": 90
       },
@@ -614,72 +394,6 @@
           }
         },
         {
-          "id": "19443139:111694:1+ Shot:1",
-          "player_id": 111694,
-          "player_name": "Gaius Makouta",
-          "team_id": 347,
-          "team_name": "Alanyaspor",
-          "fixture_id": 19443139,
-          "fixture_label": "Galatasaray vs Alanyaspor",
-          "league_id": 600,
-          "league_name": "Super Lig",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 12,
-          "sample": 13,
-          "hit_rate": 0.9231,
-          "odds": 1.4,
-          "display": {
-            "rate": "12/13",
-            "odds": "@1.40",
-            "summary": "Gaius Makouta (Alanyaspor) won in 12/13 @1.40"
-          }
-        },
-        {
-          "id": "19467841:37316421:1+ Shot:1",
-          "player_id": 37316421,
-          "player_name": "Yassin Belkhdim",
-          "team_id": 776,
-          "team_name": "Angers SCO",
-          "fixture_id": 19467841,
-          "fixture_label": "Monaco vs Angers SCO",
-          "league_id": 301,
-          "league_name": "Ligue 1",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 11,
-          "sample": 12,
-          "hit_rate": 0.9167,
-          "odds": 1.53,
-          "display": {
-            "rate": "11/12",
-            "odds": "@1.53",
-            "summary": "Yassin Belkhdim (Angers SCO) won in 11/12 @1.53"
-          }
-        },
-        {
-          "id": "19433689:37315722:1+ Shot:1",
-          "player_id": 37315722,
-          "player_name": "Joel Chima Fujita",
-          "team_id": 353,
-          "team_name": "St. Pauli",
-          "fixture_id": 19433689,
-          "fixture_label": "TSG Hoffenheim vs St. Pauli",
-          "league_id": 82,
-          "league_name": "Bundesliga",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.5,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.50",
-            "summary": "Joel Chima Fujita (St. Pauli) won in 10/11 @1.50"
-          }
-        },
-        {
           "id": "19427163:4536524:1+ Shot:1",
           "player_id": 4536524,
           "player_name": "James Garner",
@@ -702,7 +416,7 @@
           }
         }
       ],
-      "section_total_rows": 8,
+      "section_total_rows": 5,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -757,50 +471,6 @@
           }
         },
         {
-          "id": "19467846:37337715:2+ Shots:2",
-          "player_id": 37337715,
-          "player_name": "Issa Soumar\u00e9",
-          "team_id": 1055,
-          "team_name": "Le Havre",
-          "fixture_id": 19467846,
-          "fixture_label": "Le Havre vs Paris Saint Germain",
-          "league_id": 301,
-          "league_name": "Ligue 1",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 11,
-          "sample": 12,
-          "hit_rate": 0.9167,
-          "odds": 1.8,
-          "display": {
-            "rate": "11/12",
-            "odds": "@1.80",
-            "summary": "Issa Soumar\u00e9 (Le Havre) won in 11/12 @1.80"
-          }
-        },
-        {
-          "id": "19439508:37526847:2+ Shots:2",
-          "player_id": 37526847,
-          "player_name": "Ilyas Chaira",
-          "team_id": 93,
-          "team_name": "Real Oviedo",
-          "fixture_id": 19439508,
-          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 11,
-          "sample": 12,
-          "hit_rate": 0.9167,
-          "odds": 1.36,
-          "display": {
-            "rate": "11/12",
-            "odds": "@1.36",
-            "summary": "Ilyas Chaira (Real Oviedo) won in 11/12 @1.36"
-          }
-        },
-        {
           "id": "19428208:7026565:2+ Shots:2",
           "player_id": 7026565,
           "player_name": "Tyreece John-Jules",
@@ -821,31 +491,9 @@
             "odds": "@1.36",
             "summary": "Tyreece John-Jules (Kilmarnock) won in 10/11 @1.36"
           }
-        },
-        {
-          "id": "19428211:37603838:2+ Shots:2",
-          "player_id": 37603838,
-          "player_name": "Amar Fatah",
-          "team_id": 282,
-          "team_name": "Dundee United",
-          "fixture_id": 19428211,
-          "fixture_label": "Motherwell vs Dundee United",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.8,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.80",
-            "summary": "Amar Fatah (Dundee United) won in 9/10 @1.80"
-          }
         }
       ],
-      "section_total_rows": 6,
+      "section_total_rows": 3,
       "slide_number": 3,
       "slide_count": 4
     },
@@ -855,28 +503,6 @@
       "section_page": 1,
       "section_pages": 1,
       "rows": [
-        {
-          "id": "19427161:9939203:1+ SOT:1",
-          "player_id": 9939203,
-          "player_name": "Crysencio Summerville",
-          "team_id": 1,
-          "team_name": "West Ham United",
-          "fixture_id": 19427161,
-          "fixture_label": "Liverpool vs West Ham United",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 7,
-          "hit_rate": 1.0,
-          "odds": 2.2,
-          "display": {
-            "rate": "7/7",
-            "odds": "@2.20",
-            "summary": "Crysencio Summerville (West Ham United) won in 7/7 @2.20"
-          }
-        },
         {
           "id": "19428211:581047:1+ SOT:1",
           "player_id": 581047,
@@ -922,28 +548,6 @@
           }
         },
         {
-          "id": "19429412:16475806:1+ SOT:1",
-          "player_id": 16475806,
-          "player_name": "Mohamed Ihattaren",
-          "team_id": 1459,
-          "team_name": "Fortuna Sittard",
-          "fixture_id": 19429412,
-          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
-          "league_id": 72,
-          "league_name": "Eredivisie",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 13,
-          "sample": 14,
-          "hit_rate": 0.9286,
-          "odds": 1.57,
-          "display": {
-            "rate": "13/14",
-            "odds": "@1.57",
-            "summary": "Mohamed Ihattaren (Fortuna Sittard) won in 13/14 @1.57"
-          }
-        },
-        {
           "id": "19443143:25709:1+ SOT:1",
           "player_id": 25709,
           "player_name": "Vaclav Cerny",
@@ -964,53 +568,9 @@
             "odds": "@1.40",
             "summary": "Vaclav Cerny (Be\u015fikta\u015f) won in 11/12 @1.40"
           }
-        },
-        {
-          "id": "19439508:37526847:1+ SOT:1",
-          "player_id": 37526847,
-          "player_name": "Ilyas Chaira",
-          "team_id": 93,
-          "team_name": "Real Oviedo",
-          "fixture_id": 19439508,
-          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.8,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.80",
-            "summary": "Ilyas Chaira (Real Oviedo) won in 9/10 @1.80"
-          }
-        },
-        {
-          "id": "19429412:30291:1+ SOT:1",
-          "player_id": 30291,
-          "player_name": "Kaj Sierhuis",
-          "team_id": 1459,
-          "team_name": "Fortuna Sittard",
-          "fixture_id": 19429412,
-          "fixture_label": "NEC Nijmegen vs Fortuna Sittard",
-          "league_id": 72,
-          "league_name": "Eredivisie",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.5,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.50",
-            "summary": "Kaj Sierhuis (Fortuna Sittard) won in 9/10 @1.50"
-          }
         }
       ],
-      "section_total_rows": 7,
+      "section_total_rows": 3,
       "slide_number": 4,
       "slide_count": 4
     }
@@ -1019,5 +579,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "4d788bda6c3596cc8ccff835fbad2e5df1c991ad50762d658d6a355739a04c24"
+  "content_fingerprint": "31e2c1b31b2de1c4b602ec7205ea6af4d1ec14695495324580c9225b182e362d"
 }

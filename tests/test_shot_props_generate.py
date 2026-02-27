@@ -89,7 +89,7 @@ class ShotPropsGenerateTests(unittest.TestCase):
         )
 
     def test_passes_team_ml_filter(self) -> None:
-        self.assertTrue(_passes_team_ml_filter(None))
+        self.assertFalse(_passes_team_ml_filter(None))
         self.assertTrue(_passes_team_ml_filter(5.0))
         self.assertFalse(_passes_team_ml_filter(5.01))
 

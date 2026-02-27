@@ -50,6 +50,25 @@ def get_team_win_odds(
     is_home: bool,
     bookmaker_ids: Sequence[int] = BOOKMAKER_IDS,
 ) -> Optional[float]:
+    # Preferred source: explicit moneyline market keyed by team participant id.
+    moneyline_query = """
+        select price_decimal
+        from odds_outcomes
+        where fixture_id = %s
+          and market_key = 'moneyline'
+          and participant_type = 'team'
+          and participant_id = %s
+          and bookmaker_id = any(%s)
+        order by price_decimal desc
+        limit 1;
+    """
+    with db_cursor() as cur:
+        cur.execute(moneyline_query, (fixture_id, team_id, list(bookmaker_ids)))
+        row = cur.fetchone()
+    if row and row["price_decimal"] is not None:
+        return float(row["price_decimal"])
+
+    # Backward-compatible legacy key.
     query = """
         select price_decimal
         from odds_outcomes
@@ -79,6 +98,24 @@ def get_team_win_odds(
     """
     with db_cursor() as cur:
         cur.execute(fallback_query, (fixture_id, selection_key, list(bookmaker_ids)))
+        row = cur.fetchone()
+    if row and row["price_decimal"] is not None:
+        return float(row["price_decimal"])
+
+    # Final fallback: moneyline by side selection key.
+    side_key = "home" if is_home else "away"
+    side_fallback_query = """
+        select price_decimal
+        from odds_outcomes
+        where fixture_id = %s
+          and market_key = 'moneyline'
+          and selection_key = %s
+          and bookmaker_id = any(%s)
+        order by price_decimal desc
+        limit 1;
+    """
+    with db_cursor() as cur:
+        cur.execute(side_fallback_query, (fixture_id, side_key, list(bookmaker_ids)))
         row = cur.fetchone()
     if not row:
         return None
