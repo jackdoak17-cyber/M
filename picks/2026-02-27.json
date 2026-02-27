@@ -1,0 +1,167 @@
+{
+  "date": "2026-02-27",
+  "generated_at": "2026-02-27T08:12:22.729523",
+  "picks_count": 1,
+  "picks": [
+    {
+      "player_id": 30291,
+      "player_name": "Kaj Sierhuis",
+      "team_id": 1459,
+      "team_name": "Fortuna Sittard",
+      "opponent_id": 494,
+      "opponent_name": "NEC Nijmegen",
+      "fixture_id": 19429412,
+      "fixture_date": "2026-02-28T20:00:00+00:00",
+      "league_id": 72,
+      "league_name": "Eredivisie",
+      "is_home": false,
+      "stat_type_id": 86,
+      "stat_type_label": "shots_on_target",
+      "market_label": "1+ shots on target",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.248988203799352,
+        "simple_avg": 1.05,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 15,
+          "2+": 6,
+          "3+": 0,
+          "4+": 0
+        },
+        "home_avg": 0.8,
+        "away_avg": 1.3,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 0.7591546545162482,
+        "coeff_of_variation": 0.7230044328726174,
+        "avg_minutes": 67.6,
+        "min_minutes": 13.0,
+        "times_subbed_early": 9,
+        "raw_values": [
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          1.0,
+          0.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw_minutes": [
+          90.0,
+          80.0,
+          86.0,
+          90.0,
+          84.0,
+          90.0,
+          80.0,
+          89.0,
+          90.0,
+          71.0,
+          67.0,
+          82.0,
+          44.0,
+          13.0,
+          66.0,
+          46.0,
+          62.0,
+          54.0,
+          46.0,
+          22.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 4.714285714285714,
+        "league_avg": 5.2023809523809526,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 8,
+        "avg_vs_similar": 1.125,
+        "hitrate_vs_similar": 87.5,
+        "similar_teams_examples": [
+          "Ajax",
+          "Excelsior",
+          "FC Groningen"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.25,
+        "adjusted_projection": 1.04,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9452707856598016,
+            "concedes": 4.714285714285714,
+            "league_avg": 5.2023809523809526,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.1587301587301588,
+            "venue_avg": 1.3,
+            "overall_avg": 1.05,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.7511111111111111,
+            "avg_minutes": 67.6,
+            "times_subbed_early": 9,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.823
+      },
+      "confidence": {
+        "score": 70,
+        "tier": "STRONG"
+      },
+      "probability": 0.6465,
+      "edge": {
+        "our_probability": 0.6465,
+        "implied_probability": 0.5556,
+        "probability_edge": 0.0909,
+        "fair_odds": 1.55,
+        "bookmaker_odds": 1.8,
+        "expected_value": 0.1637,
+        "edge_percentage": 16.37,
+        "kelly_quarter": 0.0512,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.8,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 56.6,
+      "rank": 1,
+      "writeup": "🎯 Kaj Sierhuis (Fortuna Sittard) 1+ shots on target vs NEC Nijmegen (Eredivisie)\nSierhuis is averaging 1.25 shots on target per 90 this season and has hit this line in 4 of his last 5 matches and 15 of his last 20 overall. He performs significantly better away from home with 1.30 shots on target per 90 compared to just 0.80 at home. Against teams like Ajax, Excelsior, and FC Groningen, he's registered 1+ shots on target in 7 of 8 games (87.5%).\n📊 15/20 (75%)\n💰 Kambi 1.8",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
