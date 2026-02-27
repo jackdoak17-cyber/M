@@ -21,6 +21,7 @@ from src.shot_props.generate import (
     _value_scope_dates_for_target,
     _verify_post_matches_candidates,
     _short_team_name,
+    MAX_CANDIDATE_LINE_CHARS,
 )
 
 
@@ -95,6 +96,28 @@ class ShotPropsGenerateTests(unittest.TestCase):
     def test_short_team_name_handles_non_pl_aliases(self) -> None:
         self.assertEqual(_short_team_name("Paris Saint Germain"), "PSG")
         self.assertEqual(_short_team_name("Olympique Lyonnais"), "Lyon")
+        self.assertEqual(_short_team_name("Sheffield United"), "Sheff Utd")
+
+    def test_render_candidate_line_respects_char_cap(self) -> None:
+        candidate = QualifyingPlayer(
+            player_id=1,
+            player_name="Verylongfirstname Verylongsurname",
+            team_id=10,
+            team_name="Borussia Monchengladbach",
+            fixture_id=100,
+            fixture_label="A vs B",
+            league_id=8,
+            league_name="Premier League",
+            stat_label="1+ Shot",
+            stat_type_id=42,
+            market_key="player_shots",
+            threshold=1,
+            hits=15,
+            sample=20,
+            odds=2.1,
+        )
+        line = _render_candidate_line(candidate)
+        self.assertLessEqual(len(line), MAX_CANDIDATE_LINE_CHARS)
 
     def test_value_scope_dates_weekend_behavior(self) -> None:
         self.assertEqual(

@@ -38,7 +38,7 @@ SECTION_ORDER = ["1+ Shot", "2+ Shots", "1+ SOT"]
 BET365_IDS = (2,)
 MIN_STARTS = 7
 MAX_STARTS = 20
-MAX_CANDIDATE_LINE_CHARS = 52
+MAX_CANDIDATE_LINE_CHARS = 46
 
 VALUE_MIN_HIT_PCT = 0.75
 VALUE_MIN_ODDS = 1.72
@@ -78,10 +78,13 @@ SHORT_TEAM_NAMES: dict[str, str] = {
     "Bayer 04 Leverkusen": "Leverkusen",
     "FC Bayern München": "Bayern",
     "FC Bayern Munich": "Bayern",
+    "Borussia Dortmund": "Dortmund",
     "FSV Mainz 05": "Mainz",
     "TSG Hoffenheim": "Hoffenheim",
     "Borussia Mönchengladbach": "Gladbach",
     "Borussia Monchengladbach": "Gladbach",
+    "Sheffield United": "Sheff Utd",
+    "Sheffield Wednesday": "Sheff Wed",
 }
 
 
@@ -237,6 +240,8 @@ def _short_team_name(team_name: str) -> str:
         return name
     if name in SHORT_TEAM_NAMES:
         return SHORT_TEAM_NAMES[name]
+    if name.startswith("Sheffield "):
+        return name
 
     shortened = name
     for suffix in (" United", " FC", " CF", " AFC", " SC"):

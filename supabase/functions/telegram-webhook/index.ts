@@ -4,7 +4,9 @@ export const config = {
   auth: false,
 }
 
-const TELEGRAM_API = `https://api.telegram.org/bot${Deno.env.get('TELEGRAM_BOT_TOKEN')}`
+const BOT_TOKEN =
+  Deno.env.get('TELEGRAM_BOT_TOKEN') ?? Deno.env.get('ODDS_ANALYST_X_POST_BOT_TOKEN')
+const TELEGRAM_API = BOT_TOKEN ? `https://api.telegram.org/bot${BOT_TOKEN}` : ''
 
 Deno.serve(async (req) => {
   if (req.method !== 'POST') {
@@ -33,14 +35,16 @@ Deno.serve(async (req) => {
     : '❌ Rejected — post cancelled'
 
   // Answer immediately — clears Telegram's spinner with a short confirmation
-  await fetch(`${TELEGRAM_API}/answerCallbackQuery`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      callback_query_id: callbackQueryId,
-      text: action === 'approve' ? 'Approved.' : 'Rejected.'
+  if (TELEGRAM_API) {
+    await fetch(`${TELEGRAM_API}/answerCallbackQuery`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        callback_query_id: callbackQueryId,
+        text: action === 'approve' ? 'Approved.' : 'Rejected.'
+      })
     })
-  })
+  }
 
   // Update Supabase
   const serviceRoleKey =
@@ -58,17 +62,19 @@ Deno.serve(async (req) => {
     .eq('post_date', postDate)
 
   // Replace buttons with status label
-  await fetch(`${TELEGRAM_API}/editMessageReplyMarkup`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      chat_id: chatId,
-      message_id: messageId,
-      reply_markup: {
-        inline_keyboard: [[{ text: label, callback_data: 'done' }]]
-      }
+  if (TELEGRAM_API) {
+    await fetch(`${TELEGRAM_API}/editMessageReplyMarkup`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: chatId,
+        message_id: messageId,
+        reply_markup: {
+          inline_keyboard: [[{ text: label, callback_data: 'done' }]]
+        }
+      })
     })
-  })
+  }
 
   return new Response('ok', { status: 200 })
 })
