@@ -77,52 +77,11 @@ def _slide_dots(slide: dict[str, Any]) -> str:
     return "".join(dots)
 
 
-def _player_initials(name: str) -> str:
-    parts = [p for p in (name or "").replace(".", " ").split() if p]
-    if not parts:
-        return "?"
-    if len(parts) == 1:
-        return parts[0][:2].upper()
-    return (parts[0][0] + parts[-1][0]).upper()
-
-
-def _team_abbrev(name: str) -> str:
-    tokens = [t for t in str(name or "").replace("&", " ").split() if t]
-    if not tokens:
-        return "CLUB"
-    common_skip = {"fc", "afc", "cf", "sc", "the", "united", "hotspur"}
-    keep = [t for t in tokens if t.lower() not in common_skip]
-    source = keep or tokens
-    if len(source) == 1:
-        return source[0][:4].upper()
-    return "".join(tok[0] for tok in source[:3]).upper()
-
-
-def _row_asset_uri(row: dict[str, Any], key: str) -> str | None:
-    assets = row.get("assets") or {}
-    value = assets.get(key)
-    if not value:
-        return None
-    text = str(value).strip()
-    return text or None
-
-
-def _cover_featured_rows(manifest: dict[str, Any], limit: int = 5) -> list[dict[str, Any]]:
+def _cover_featured_rows(manifest: dict[str, Any], limit: int = 8) -> list[dict[str, Any]]:
     sections = ((manifest.get("sections") or {}).get("by_section") or {})
     picks: list[dict[str, Any]] = []
-    seen_players: set[int] = set()
     for rows in sections.values():
         for row in rows or []:
-            player_id = row.get("player_id")
-            if player_id is None:
-                continue
-            try:
-                pid = int(player_id)
-            except Exception:
-                continue
-            if pid in seen_players:
-                continue
-            seen_players.add(pid)
             picks.append(row)
             if len(picks) >= limit:
                 return picks
@@ -147,7 +106,10 @@ def _cover_intro_compact(manifest: dict[str, Any]) -> str:
     hit_pct = int(round(float(thresholds.get("min_hit_pct") or 0) * 100))
     min_odds = float(thresholds.get("min_odds") or 0)
     min_starts = int(thresholds.get("min_starts") or 0)
-    return f"Bet365 only · {hit_pct}%+ hit rate · odds >{min_odds:.2f} · starter-only · min n={min_starts}"
+    return (
+        f"Bet365 shot props only. {hit_pct}%+ hit rate, odds >{min_odds:.2f}, "
+        f"starter-only, min n={min_starts}."
+    )
 
 
 def _render_header(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
@@ -192,29 +154,20 @@ def _render_cover_body(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
     fixture_meta = (
         f'<div class="cover-fixture-window">{_html_escape(fixture_window)}</div>' if fixture_window else ""
     )
-    featured = _cover_featured_rows(manifest, limit=5)
+    featured = _cover_featured_rows(manifest, limit=8)
     featured_markup_parts: list[str] = []
     for row in featured:
-        face_uri = _row_asset_uri(row, "player_face_uri")
-        badge_uri = _row_asset_uri(row, "team_badge_uri")
         player_name = str(row.get("player_name") or "")
-        face_html = (
-            f'<img class="cover-chip-face" src="{_html_escape(face_uri)}" alt="" />'
-            if face_uri
-            else f'<div class="cover-chip-face fallback">{_html_escape(_player_initials(player_name))}</div>'
-        )
-        badge_html = (
-            f'<img class="cover-chip-badge" src="{_html_escape(badge_uri)}" alt="" />'
-            if badge_uri
-            else f'<div class="cover-chip-badge fallback">{_html_escape(_team_abbrev(str(row.get("team_name") or "")))}</div>'
-        )
+        team_name = str(row.get("team_name") or "")
+        stat_label = str(row.get("stat_label") or "")
+        threshold = int(row.get("threshold") or 0)
+        prop_label = f"{threshold}+ {stat_label}"
         featured_markup_parts.append(
             f"""
             <div class="cover-chip">
-              <div class="cover-chip-avatar">{face_html}{badge_html}</div>
               <div class="cover-chip-text">
                 <div class="cover-chip-name">{_html_escape(player_name)}</div>
-                <div class="cover-chip-meta">{_html_escape(str(row.get("team_name") or ""))}</div>
+                <div class="cover-chip-meta">{_html_escape(team_name)} · {_html_escape(prop_label)}</div>
               </div>
               <div class="cover-chip-hit">{_html_escape((row.get('display') or {}).get('rate') or '')}</div>
               <div class="cover-chip-odds">{_html_escape((row.get('display') or {}).get('odds') or '')}</div>
@@ -235,7 +188,7 @@ def _render_cover_body(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
     section_count_markup = "".join(section_count_rows)
     return f"""
     <div class="cover-body">
-      <div class="cover-kicker">SHOT PROPS · DATA SNAPSHOT</div>
+      <div class="cover-kicker">DATA SNAPSHOT</div>
       <div class="cover-desc">{_html_escape(_cover_intro_compact(manifest))}</div>
       <div class="cover-top-grid">
         <div class="cover-left">
@@ -262,7 +215,7 @@ def _render_cover_body(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
       </div>
       <div class="cover-panel cover-panel-data">
         <div class="cover-panel-head cover-panel-grid-head">
-          <span>Top qualifiers</span>
+          <span>Top rows</span>
           <span>Hit</span>
           <span>Bet365</span>
         </div>
@@ -279,35 +232,22 @@ def _render_section_rows(slide: dict[str, Any]) -> str:
     for idx, row in enumerate(rows):
         alt = " alt" if idx % 2 == 1 else ""
         display = row.get("display") or {}
-        face_uri = _row_asset_uri(row, "player_face_uri")
-        badge_uri = _row_asset_uri(row, "team_badge_uri")
         player_name = str(row.get("player_name") or "")
         team_name = str(row.get("team_name") or "")
         fixture_label = str(row.get("fixture_label") or "")
         fixture_meta = fixture_label.replace(" vs ", "  ·  ")
-        face_html = (
-            f'<img class="player-face" src="{_html_escape(face_uri)}" alt="" />'
-            if face_uri
-            else f'<div class="player-face fallback">{_html_escape(_player_initials(player_name))}</div>'
-        )
-        badge_html = (
-            f'<img class="club-badge" src="{_html_escape(badge_uri)}" alt="" />'
-            if badge_uri
-            else f'<div class="club-badge fallback">{_html_escape(_team_abbrev(team_name))}</div>'
-        )
+        stat_label = str(row.get("stat_label") or "")
+        threshold = int(row.get("threshold") or 0)
+        prop_label = f"{threshold}+ {stat_label}"
         rendered.append(
             f"""
     <div class="player-row{alt}">
-      <div class="player-assets">
-        <div class="face-wrap">{face_html}</div>
-        <div class="badge-wrap">{badge_html}</div>
-      </div>
       <div class="player-info">
-        <div class="player-name">{_html_escape(row.get("player_name"))}</div>
+        <div class="player-name">{_html_escape(player_name)}</div>
         <div class="player-meta-line">
-          <span class="player-club">{_html_escape(team_name)}</span>
+          <span class="player-club">{_html_escape(prop_label)}</span>
           <span class="meta-sep">·</span>
-          <span class="player-fixture">{_html_escape(fixture_meta)}</span>
+          <span class="player-fixture">{_html_escape(team_name)} · {_html_escape(fixture_meta)}</span>
         </div>
       </div>
       <div class="player-hit">{_html_escape(display.get("rate"))}</div>
@@ -522,14 +462,14 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
   }}
   .section-head-right {{
     display: grid;
-    grid-template-columns: 54px 64px;
+    grid-template-columns: 50px 58px;
     gap: 6px;
     align-items: center;
     flex-shrink: 0;
   }}
   .section-col {{
     font-family: 'DM Mono', monospace;
-    font-size: 8px;
+    font-size: 7px;
     color: #ffffff;
     opacity: 0.7;
     text-transform: uppercase;
@@ -545,102 +485,37 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
   .player-row {{
     display: flex;
     align-items: center;
-    padding: 0 14px 0 18px;
-    height: 47px;
+    padding: 0 10px 0 12px;
+    height: 38px;
     border-bottom: 1px solid #131a2d;
     background: #0b0f1b;
   }}
   .player-row.alt {{
     background: #0a0e18;
   }}
-  .player-assets {{
-    position: relative;
-    width: 34px;
-    min-width: 34px;
-    height: 34px;
-    margin-right: 9px;
-    flex-shrink: 0;
-  }}
-  .face-wrap {{
-    width: 34px;
-    height: 34px;
-    border-radius: 9px;
-    overflow: hidden;
-    background: linear-gradient(180deg, #1a223d 0%, #111725 100%);
-    border: 1px solid #202945;
-  }}
-  .player-face {{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-  }}
-  .player-face.fallback {{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: #f1f4ff;
-    letter-spacing: 0.04em;
-  }}
-  .badge-wrap {{
-    position: absolute;
-    right: -3px;
-    bottom: -3px;
-    width: 14px;
-    height: 14px;
-    border-radius: 999px;
-    background: #0a0d16;
-    border: 1px solid #2a314d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }}
-  .club-badge {{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-    background: #fff;
-  }}
-  .club-badge.fallback {{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'DM Mono', monospace;
-    font-size: 6px;
-    color: #F5C518;
-    letter-spacing: 0.05em;
-    background: #101423;
-    width: 100%;
-    height: 100%;
-  }}
   .player-info {{ flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; }}
   .player-name {{
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     color: #ffffff;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1.05;
+    line-height: 1;
   }}
   .player-meta-line {{
     display: flex;
     align-items: center;
     gap: 4px;
     min-width: 0;
-    margin-top: 2px;
+    margin-top: 1px;
   }}
   .player-club {{
-    font-size: 8px;
+    font-size: 7px;
     font-weight: 700;
     color: #f5c518;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
@@ -656,8 +531,8 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
   .player-fixture {{
     font-family: 'DM Mono', monospace;
     font-size: 7px;
-    color: #cfd5ee;
-    opacity: 0.65;
+    color: #ffffff;
+    opacity: 0.58;
     letter-spacing: 0.02em;
     white-space: nowrap;
     overflow: hidden;
@@ -667,25 +542,25 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
   }}
   .player-hit {{
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 10px;
     color: #ffffff;
     text-align: right;
-    width: 54px;
-    min-width: 54px;
+    width: 50px;
+    min-width: 50px;
     margin-left: 8px;
     letter-spacing: 0.01em;
   }}
   .player-odds {{
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
     color: #0a0d16;
     background: linear-gradient(180deg, #ffde5d 0%, #f5c518 100%);
     border: 1px solid rgba(255,255,255,0.2);
-    padding: 4px 7px;
+    padding: 3px 6px;
     border-radius: 4px;
-    width: 64px;
-    min-width: 64px;
+    width: 58px;
+    min-width: 58px;
     text-align: center;
   }}
   .cover-body {{
@@ -845,7 +720,7 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
   }}
   .cover-chip {{
     display: grid;
-    grid-template-columns: 30px minmax(0, 1fr) 48px 56px;
+    grid-template-columns: minmax(0, 1fr) 48px 56px;
     align-items: center;
     gap: 6px;
     background: #0b101d;
@@ -853,53 +728,8 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     border-radius: 6px;
     padding: 4px 6px;
   }}
-  .cover-chip-avatar {{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-  }}
-  .cover-chip-face {{
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-    border: 1px solid #202945;
-    background: #12192b;
-  }}
-  .cover-chip-face.fallback {{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'DM Mono', monospace;
-    font-size: 8px;
-    color: #eef2ff;
-  }}
-  .cover-chip-badge {{
-    position: absolute;
-    right: -2px;
-    bottom: -2px;
-    width: 12px;
-    height: 12px;
-    border-radius: 999px;
-    object-fit: contain;
-    background: #fff;
-    border: 1px solid #2a314d;
-  }}
-  .cover-chip-badge.fallback {{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'DM Mono', monospace;
-    font-size: 5px;
-    color: #F5C518;
-    background: #0d1222;
-  }}
   .cover-chip-text {{
     min-width: 0;
-    flex: 1;
   }}
   .cover-chip-name {{
     font-size: 10px;
@@ -913,7 +743,7 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     font-family: 'DM Mono', monospace;
     font-size: 7px;
     color: #ffffff;
-    opacity: 0.65;
+    opacity: 0.72;
     margin-top: 1px;
     white-space: nowrap;
     overflow: hidden;
@@ -928,7 +758,7 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
   .cover-chip-hit,
   .cover-chip-odds {{
     font-family: 'DM Mono', monospace;
-    font-size: 8px;
+    font-size: 9px;
     color: #ffffff;
     text-align: right;
     white-space: nowrap;
