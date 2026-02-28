@@ -1,10 +1,6 @@
 name: Post Instagram By Fixture
 
 on:
-  push:
-    paths:
-      - ".github/workflows/post_instagram_by_fixture.yml"
-      - "src/posting/post_instagram_by_fixture.py"
   workflow_dispatch:
     inputs:
       slot:
@@ -50,15 +46,9 @@ jobs:
 
       - name: Resolve slot/date
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            SLOT="${{ inputs.slot }}"
-            DRY_RUN="${{ inputs.dry_run }}"
-            DATE_ARG="--date ${{ inputs.target_date }}"
-          else
-            SLOT="weekend_fixture"
-            DRY_RUN="false"
-            DATE_ARG="--date 2026-03-01"
-          fi
+          SLOT="${{ inputs.slot }}"
+          DRY_RUN="${{ inputs.dry_run }}"
+          DATE_ARG="--date ${{ inputs.target_date }}"
           echo "SLOT=$SLOT" >> "$GITHUB_ENV"
           echo "DRY_RUN=$DRY_RUN" >> "$GITHUB_ENV"
           echo "DATE_ARG=$DATE_ARG" >> "$GITHUB_ENV"
