@@ -271,7 +271,7 @@ def _subject_market_display(
     if section_key == "corners":
         threshold_match = re.match(r"^(?P<threshold>\d+)\+", market)
         threshold = int(threshold_match.group("threshold")) if threshold_match else 0
-        return subject, f"{threshold}+"
+        return subject, f"{threshold}+ corners"
 
     return subject, market.strip()
 

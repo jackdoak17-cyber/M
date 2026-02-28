@@ -495,14 +495,17 @@ def _render_rich_section(section: dict[str, Any]) -> str:
         elif hit_rate >= 0.85:
             bar_opacity = 0.07
         market_display = str(row.get("market_display") or "").strip()
-        market_markup = f' <span class="mkt">{_html_escape(market_display)}</span>' if market_display else ""
+        subject_display = str(row.get("subject_display") or "")
         rows_markup.append(
             f"""
             <div class="stat-row">
               <div class="bar-fill" style="background:{_html_escape(_hex_to_rgba(color, bar_opacity))};width:{int(row.get('bar_pct') or 0)}%"></div>
               {_render_rich_row_icon(row, color)}
-              <div class="stat-text">{_html_escape(row.get("subject_display"))}{market_markup}</div>
-              <div class="stat-val" style="color:{_html_escape(color)}"><span class="won-label">in </span>{_html_escape(row.get("record"))}</div>
+              <div class="stat-copy">
+                <div class="subject-line">{_html_escape(subject_display)}</div>
+                <div class="market-line">{_html_escape(market_display)}</div>
+              </div>
+              <div class="stat-val" style="color:{_html_escape(color)};background:{_html_escape(_hex_to_rgba(color, 0.14))};border-color:{_html_escape(_hex_to_rgba(color, 0.28))}">{_html_escape(row.get("record"))}</div>
             </div>
             """
         )
@@ -586,7 +589,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     z-index: 10;
   }}
   .header {{
-    padding: 9px 16px 7px;
+    padding: 8px 15px 6px;
     border-bottom: 1px solid var(--border);
     flex-shrink: 0;
     z-index: 2;
@@ -626,7 +629,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     font-family: 'DM Mono', monospace;
   }}
   .fixture-hero {{
-    padding: 7px 16px 6px;
+    padding: 6px 16px 5px;
     border-bottom: 1px solid var(--border);
     flex-shrink: 0;
     z-index: 2;
@@ -641,14 +644,14 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     color: var(--gold);
     text-transform: uppercase;
     opacity: 0.6;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }}
   .teams-line {{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 7px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }}
   .team-badge {{
     width: 18px;
@@ -712,7 +715,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
   }}
   .body {{
     flex: 1;
-    padding: 3px 8px 2px;
+    padding: 2px 8px 1px;
     z-index: 2;
     position: relative;
     overflow: hidden;
@@ -732,11 +735,11 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 0 3px 1px;
+    padding: 0 3px 0;
   }}
   .section-title {{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 9px;
+    font-size: 9.5px;
     letter-spacing: 2px;
     text-transform: uppercase;
     white-space: nowrap;
@@ -758,10 +761,10 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
   .stat-row {{
     display: grid;
     grid-template-columns: 18px minmax(0, 1fr) auto;
-    gap: 5px;
+    gap: 6px;
     align-items: center;
     min-height: 0;
-    padding: 0 6px;
+    padding: 3px 6px;
     border-radius: 2px;
     position: relative;
     overflow: hidden;
@@ -793,57 +796,65 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     height: 100%;
     object-fit: cover;
   }}
-  .stat-text {{
-    font-size: 9.3px;
+  .stat-copy {{
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+    position: relative;
+    z-index: 1;
+  }}
+  .subject-line {{
+    font-size: 6.6px;
     font-weight: 600;
-    color: var(--text);
+    letter-spacing: 0.02em;
+    color: #a7b0cb;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    min-width: 0;
-    position: relative;
-    z-index: 1;
+    line-height: 1;
   }}
-  .stat-text .mkt {{
-    font-weight: 600;
-    color: var(--text);
-    font-size: 10.2px;
+  .market-line {{
+    font-size: 10.4px;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.02;
   }}
   .stat-val {{
     font-family: 'DM Mono', monospace;
-    font-size: 9.5px;
-    font-weight: 500;
-    letter-spacing: -0.5px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
     white-space: nowrap;
     position: relative;
     z-index: 1;
-    padding-left: 3px;
+    padding: 3px 5px;
     flex-shrink: 0;
-  }}
-  .won-label {{
-    font-size: 7px;
-    color: var(--muted);
-    font-weight: 400;
-    font-family: 'Barlow Condensed', sans-serif;
-    margin-right: 1px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    justify-self: end;
   }}
   .footer {{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 16px 8px;
+    padding: 4px 16px 6px;
     border-top: 1px solid var(--border);
     flex-shrink: 0;
     z-index: 2;
     position: relative;
   }}
   .footer-left {{
-    font-size: 6.5px;
+    font-size: 6.2px;
     font-weight: 600;
     letter-spacing: 0.8px;
     color: var(--muted);
     text-transform: uppercase;
-    line-height: 1.6;
+    line-height: 1.3;
     opacity: 0.6;
   }}
   .footer-handle {{
@@ -853,38 +864,38 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     color: var(--gold);
   }}
   .card.density-dense .stat-row {{
-    min-height: 18px;
-    padding: 0 5px;
+    min-height: 0;
+    padding: 2px 5px;
     gap: 4px;
   }}
-  .card.density-dense .stat-text {{
-    font-size: 8.6px;
+  .card.density-dense .subject-line {{
+    font-size: 6.1px;
   }}
-  .card.density-dense .stat-text .mkt {{
-    font-size: 9.2px;
-    color: var(--text);
+  .card.density-dense .market-line {{
+    font-size: 9.5px;
   }}
   .card.density-dense .stat-val {{
-    font-size: 8.8px;
+    font-size: 8.5px;
+    padding: 2px 5px;
   }}
   .card.density-dense .row-icon {{
     width: 15px;
     height: 15px;
   }}
   .card.density-xdense .stat-row {{
-    min-height: 17px;
-    padding: 0 5px;
+    min-height: 0;
+    padding: 2px 4px;
     gap: 3px;
   }}
-  .card.density-xdense .stat-text {{
-    font-size: 7.9px;
+  .card.density-xdense .subject-line {{
+    font-size: 5.8px;
   }}
-  .card.density-xdense .stat-text .mkt {{
-    font-size: 8.7px;
-    color: var(--text);
+  .card.density-xdense .market-line {{
+    font-size: 8.8px;
   }}
   .card.density-xdense .stat-val {{
-    font-size: 8.1px;
+    font-size: 7.9px;
+    padding: 2px 4px;
   }}
   .card.density-xdense .row-icon {{
     width: 14px;
@@ -918,7 +929,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
       <div class="dots">{_slide_dots(slide)}</div>
       <div class="body">{sections_html}</div>
       <div class="footer">
-        <div class="footer-left">Bet365 odds · current at build time<br>Starter-only hit rate</div>
+        <div class="footer-left">Bet365 odds at build time · starter-only hit rate</div>
         <div class="footer-handle">@Odds_Analyst</div>
       </div>
     </div>
