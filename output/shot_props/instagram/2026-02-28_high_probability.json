@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-02-27T23:39:32+00:00",
+  "generated_at": "2026-02-28T07:52:53+00:00",
   "scheduled_for": "2026-02-28",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -19,11 +19,11 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 11,
+    "total_rows": 13,
     "by_section": {
       "1+ Shot": 5,
       "2+ Shots": 3,
-      "1+ SOT": 3
+      "1+ SOT": 5
     }
   },
   "sections": {
@@ -52,28 +52,6 @@
           }
         },
         {
-          "id": "19432165:37705618:1+ Shot:1",
-          "player_id": 37705618,
-          "player_name": "Djibril Soumar\u00e9",
-          "team_id": 21,
-          "team_name": "Sheffield United",
-          "fixture_id": 19432165,
-          "fixture_label": "Queens Park Rangers vs Sheffield United",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 9,
-          "hit_rate": 1.0,
-          "odds": 1.36,
-          "display": {
-            "rate": "9/9",
-            "odds": "@1.36",
-            "summary": "Djibril Soumar\u00e9 (Sheffield United) won in 9/9 @1.36"
-          }
-        },
-        {
           "id": "19427158:37316858:1+ Shot:1",
           "player_id": 37316858,
           "player_name": "Hannibal",
@@ -93,6 +71,28 @@
             "rate": "7/7",
             "odds": "@1.33",
             "summary": "Hannibal (Burnley) won in 7/7 @1.33"
+          }
+        },
+        {
+          "id": "19432165:37705618:1+ Shot:1",
+          "player_id": 37705618,
+          "player_name": "Djibril Soumar\u00e9",
+          "team_id": 21,
+          "team_name": "Sheffield United",
+          "fixture_id": 19432165,
+          "fixture_label": "Queens Park Rangers vs Sheffield United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 9,
+          "hit_rate": 1.0,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/9",
+            "odds": "@1.33",
+            "summary": "Djibril Soumar\u00e9 (Sheffield United) won in 9/9 @1.33"
           }
         },
         {
@@ -232,25 +232,25 @@
           }
         },
         {
-          "id": "19432165:1175:1+ SOT:1",
-          "player_id": 1175,
-          "player_name": "Patrick Bamford",
-          "team_id": 21,
-          "team_name": "Sheffield United",
-          "fixture_id": 19432165,
-          "fixture_label": "Queens Park Rangers vs Sheffield United",
-          "league_id": 9,
-          "league_name": "Championship",
+          "id": "19433683:24799984:1+ SOT:1",
+          "player_id": 24799984,
+          "player_name": "Michael Olise",
+          "team_id": 503,
+          "team_name": "FC Bayern M\u00fcnchen",
+          "fixture_id": 19433683,
+          "fixture_label": "Borussia Dortmund vs FC Bayern M\u00fcnchen",
+          "league_id": 82,
+          "league_name": "Bundesliga",
           "stat_label": "1+ SOT",
           "threshold": 1,
-          "hits": 11,
-          "sample": 11,
-          "hit_rate": 1.0,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
           "odds": 1.33,
           "display": {
-            "rate": "11/11",
+            "rate": "12/13",
             "odds": "@1.33",
-            "summary": "Patrick Bamford (Sheffield United) won in 11/11 @1.33"
+            "summary": "Michael Olise (FC Bayern M\u00fcnchen) won in 12/13 @1.33"
           }
         },
         {
@@ -274,11 +274,55 @@
             "odds": "@1.40",
             "summary": "Vaclav Cerny (Be\u015fikta\u015f) won in 11/12 @1.40"
           }
+        },
+        {
+          "id": "19439504:186932:1+ SOT:1",
+          "player_id": 186932,
+          "player_name": "Mikel Oyarzabal",
+          "team_id": 594,
+          "team_name": "Real Sociedad",
+          "fixture_id": 19439504,
+          "fixture_label": "Mallorca vs Real Sociedad",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.33,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.33",
+            "summary": "Mikel Oyarzabal (Real Sociedad) won in 10/11 @1.33"
+          }
+        },
+        {
+          "id": "19439508:37526847:1+ SOT:1",
+          "player_id": 37526847,
+          "player_name": "Ilyas Chaira",
+          "team_id": 93,
+          "team_name": "Real Oviedo",
+          "fixture_id": 19439508,
+          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.73",
+            "summary": "Ilyas Chaira (Real Oviedo) won in 9/10 @1.73"
+          }
         }
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 28 Feb 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 5\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 3\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 28 Feb 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 5\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 5\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -292,7 +336,7 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 28 Feb 2026",
       "stats": {
-        "total_players": 11,
+        "total_players": 13,
         "stat_types": 3,
         "hit_rate_threshold_pct": 90
       },
@@ -328,28 +372,6 @@
           }
         },
         {
-          "id": "19432165:37705618:1+ Shot:1",
-          "player_id": 37705618,
-          "player_name": "Djibril Soumar\u00e9",
-          "team_id": 21,
-          "team_name": "Sheffield United",
-          "fixture_id": 19432165,
-          "fixture_label": "Queens Park Rangers vs Sheffield United",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 9,
-          "hit_rate": 1.0,
-          "odds": 1.36,
-          "display": {
-            "rate": "9/9",
-            "odds": "@1.36",
-            "summary": "Djibril Soumar\u00e9 (Sheffield United) won in 9/9 @1.36"
-          }
-        },
-        {
           "id": "19427158:37316858:1+ Shot:1",
           "player_id": 37316858,
           "player_name": "Hannibal",
@@ -369,6 +391,28 @@
             "rate": "7/7",
             "odds": "@1.33",
             "summary": "Hannibal (Burnley) won in 7/7 @1.33"
+          }
+        },
+        {
+          "id": "19432165:37705618:1+ Shot:1",
+          "player_id": 37705618,
+          "player_name": "Djibril Soumar\u00e9",
+          "team_id": 21,
+          "team_name": "Sheffield United",
+          "fixture_id": 19432165,
+          "fixture_label": "Queens Park Rangers vs Sheffield United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 9,
+          "hit_rate": 1.0,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/9",
+            "odds": "@1.33",
+            "summary": "Djibril Soumar\u00e9 (Sheffield United) won in 9/9 @1.33"
           }
         },
         {
@@ -526,25 +570,25 @@
           }
         },
         {
-          "id": "19432165:1175:1+ SOT:1",
-          "player_id": 1175,
-          "player_name": "Patrick Bamford",
-          "team_id": 21,
-          "team_name": "Sheffield United",
-          "fixture_id": 19432165,
-          "fixture_label": "Queens Park Rangers vs Sheffield United",
-          "league_id": 9,
-          "league_name": "Championship",
+          "id": "19433683:24799984:1+ SOT:1",
+          "player_id": 24799984,
+          "player_name": "Michael Olise",
+          "team_id": 503,
+          "team_name": "FC Bayern M\u00fcnchen",
+          "fixture_id": 19433683,
+          "fixture_label": "Borussia Dortmund vs FC Bayern M\u00fcnchen",
+          "league_id": 82,
+          "league_name": "Bundesliga",
           "stat_label": "1+ SOT",
           "threshold": 1,
-          "hits": 11,
-          "sample": 11,
-          "hit_rate": 1.0,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
           "odds": 1.33,
           "display": {
-            "rate": "11/11",
+            "rate": "12/13",
             "odds": "@1.33",
-            "summary": "Patrick Bamford (Sheffield United) won in 11/11 @1.33"
+            "summary": "Michael Olise (FC Bayern M\u00fcnchen) won in 12/13 @1.33"
           }
         },
         {
@@ -568,9 +612,53 @@
             "odds": "@1.40",
             "summary": "Vaclav Cerny (Be\u015fikta\u015f) won in 11/12 @1.40"
           }
+        },
+        {
+          "id": "19439504:186932:1+ SOT:1",
+          "player_id": 186932,
+          "player_name": "Mikel Oyarzabal",
+          "team_id": 594,
+          "team_name": "Real Sociedad",
+          "fixture_id": 19439504,
+          "fixture_label": "Mallorca vs Real Sociedad",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.33,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.33",
+            "summary": "Mikel Oyarzabal (Real Sociedad) won in 10/11 @1.33"
+          }
+        },
+        {
+          "id": "19439508:37526847:1+ SOT:1",
+          "player_id": 37526847,
+          "player_name": "Ilyas Chaira",
+          "team_id": 93,
+          "team_name": "Real Oviedo",
+          "fixture_id": 19439508,
+          "fixture_label": "Real Oviedo vs Atl\u00e9tico Madrid",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.73",
+            "summary": "Ilyas Chaira (Real Oviedo) won in 9/10 @1.73"
+          }
         }
       ],
-      "section_total_rows": 3,
+      "section_total_rows": 5,
       "slide_number": 4,
       "slide_count": 4
     }
@@ -579,5 +667,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "31e2c1b31b2de1c4b602ec7205ea6af4d1ec14695495324580c9225b182e362d"
+  "content_fingerprint": "b0d1223f0860bb787a679d90cdec11f64da4d21667daf2291952d80c325ef302"
 }
