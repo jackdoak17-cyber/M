@@ -19,6 +19,7 @@ from src.prop_bot.engine.baseline import calculate_player_baseline
 from src.prop_bot.engine.odds import get_player_market_odds, get_team_win_odds
 from src.prop_bot.engine.players import (
     get_eligible_players,
+    player_is_defender,
     player_is_currently_sidelined,
     player_started_last_completed_team_match,
 )
@@ -478,6 +479,7 @@ def _get_candidates(fixtures, audit_rows: list[CandidateAuditRow] | None = None)
     team_ml_cache: dict[tuple[int, int], float | None] = {}
     sidelined_cache: dict[tuple[int, int, date], bool] = {}
     last_start_cache: dict[tuple[int, int, int, int], bool] = {}
+    defender_cache: dict[tuple[int, int, int, int], bool] = {}
 
     for fixture in fixtures:
         players = get_eligible_players(fixture)
@@ -596,6 +598,41 @@ def _get_candidates(fixtures, audit_rows: list[CandidateAuditRow] | None = None)
 
             for cfg in STAT_CONFIGS:
                 stat_type_id = cfg["stat_type_id"]
+
+                if cfg["label"] == "1+ SOT":
+                    defender_key = (fixture.fixture_id, player.player_id, player.team_id, fixture.league_id)
+                    if defender_key not in defender_cache:
+                        defender_cache[defender_key] = player_is_defender(
+                            player.player_id,
+                            player.team_id,
+                            fixture.league_id,
+                            fixture.starting_at,
+                        )
+                    if defender_cache[defender_key]:
+                        if audit_rows is not None:
+                            audit_rows.append(
+                                CandidateAuditRow(
+                                    fixture_id=fixture.fixture_id,
+                                    fixture_label=fixture_label,
+                                    league_id=fixture.league_id,
+                                    league_name=fixture.league_name,
+                                    player_id=player.player_id,
+                                    player_name=player.player_name,
+                                    team_id=player.team_id,
+                                    team_name=player.team_name,
+                                    stat_label=cfg["label"],
+                                    stat_type_id=stat_type_id,
+                                    market_key=cfg["market_key"],
+                                    threshold=int(cfg["threshold"]),
+                                    raw_values=[],
+                                    raw_minutes=[],
+                                    starter_only_values=[],
+                                    starter_only_minutes=[],
+                                    status="excluded",
+                                    reasons=["defender_excluded_from_sot"],
+                                )
+                            )
+                        continue
 
                 if stat_type_id not in baselines:
                     baselines[stat_type_id] = calculate_player_baseline(
