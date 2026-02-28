@@ -377,7 +377,7 @@ def _filter_and_format(
             lines.append(_render_candidate_line(player))
         lines.append("")
 
-    lines.append("All odds Bet365")
+    lines.append("All odds correct at time of collation. Not tips just bets meeting a stat criteria")
 
     return "\n".join(lines).strip()
 
