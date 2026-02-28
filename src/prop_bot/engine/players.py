@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from typing import List
 
 from src.prop_bot.config import get_settings
@@ -46,3 +46,107 @@ def get_eligible_players(fixture: Fixture) -> List[EligiblePlayer]:
                 ),
             )
     return players
+
+
+def player_is_currently_sidelined(
+    player_id: int,
+    team_id: int,
+    on_date: date,
+    *,
+    lookback_days: int = 365,
+) -> bool:
+    """Return True when a recent injury/suspension record is active for the player."""
+    lookback_start = on_date - timedelta(days=lookback_days)
+    query = """
+        select 1
+        from sidelined_active
+        where player_id = %s
+          and team_id = %s
+          and lower(coalesce(category, '')) in ('injury', 'suspended')
+          and coalesce(completed, false) = false
+          and start_date <= %s
+          and (end_date is null or end_date >= %s)
+          and start_date >= %s
+        limit 1;
+    """
+    with db_cursor() as cur:
+        cur.execute(query, (player_id, team_id, on_date, on_date, lookback_start))
+        return cur.fetchone() is not None
+
+
+def player_started_last_completed_team_match(
+    player_id: int,
+    team_id: int,
+    league_id: int,
+    reference_time: datetime,
+) -> bool:
+    """
+    Return True only if player started the team's most recent completed league match.
+
+    Falls back to minutes-played stat when fixture lineups are missing.
+    """
+    query = """
+        with last_fixture as (
+            select id
+            from fixtures
+            where league_id = %s
+              and starting_at < %s
+              and home_score is not null
+              and away_score is not null
+              and (home_team_id = %s or away_team_id = %s)
+            order by starting_at desc
+            limit 1
+        ),
+        lineup as (
+            select fp.is_starter, fp.minutes_played
+            from fixture_players fp
+            join last_fixture lf on lf.id = fp.fixture_id
+            where fp.player_id = %s
+              and fp.team_id = %s
+            limit 1
+        ),
+        stat_minutes as (
+            select max(case when fps.type_id = 119 then fps.value end) as minutes_played
+            from fixture_player_statistics fps
+            join last_fixture lf on lf.id = fps.fixture_id
+            where fps.player_id = %s
+              and fps.team_id = %s
+        )
+        select
+            (select id from last_fixture) as fixture_id,
+            (select is_starter from lineup) as is_starter,
+            (select minutes_played from lineup) as lineup_minutes,
+            (select minutes_played from stat_minutes) as stat_minutes;
+    """
+    with db_cursor() as cur:
+        cur.execute(
+            query,
+            (
+                league_id,
+                reference_time,
+                team_id,
+                team_id,
+                player_id,
+                team_id,
+                player_id,
+                team_id,
+            ),
+        )
+        row = cur.fetchone()
+
+    if not row or row["fixture_id"] is None:
+        # No prior completed match for this team in-league; do not block.
+        return True
+
+    if row["is_starter"] is True:
+        return True
+    if row["is_starter"] is False:
+        return False
+
+    stat_minutes = row["stat_minutes"]
+    if stat_minutes is not None:
+        return float(stat_minutes) >= 60.0
+    lineup_minutes = row["lineup_minutes"]
+    if lineup_minutes is not None:
+        return float(lineup_minutes) >= 60.0
+    return False

@@ -17,7 +17,11 @@ from src.instagram.shot_props_manifest import (
 )
 from src.prop_bot.engine.baseline import calculate_player_baseline
 from src.prop_bot.engine.odds import get_player_market_odds, get_team_win_odds
-from src.prop_bot.engine.players import get_eligible_players
+from src.prop_bot.engine.players import (
+    get_eligible_players,
+    player_is_currently_sidelined,
+    player_started_last_completed_team_match,
+)
 from src.prop_bot.config import LEAGUES
 from src.prop_bot.db import db_cursor
 from src.prop_bot.models import Fixture
@@ -377,7 +381,7 @@ def _filter_and_format(
             lines.append(_render_candidate_line(player))
         lines.append("")
 
-    lines.append("All odds correct at time of collation. Not tips just bets meeting a stat criteria")
+    lines.append("All odds correct at time of collation. Not tips just bets meeting a odds and stat criteria")
 
     return "\n".join(lines).strip()
 
@@ -472,10 +476,13 @@ def _get_candidates(fixtures, audit_rows: list[CandidateAuditRow] | None = None)
     """Get all candidates with Bet365 odds across all fixtures."""
     candidates: list[QualifyingPlayer] = []
     team_ml_cache: dict[tuple[int, int], float | None] = {}
+    sidelined_cache: dict[tuple[int, int, date], bool] = {}
+    last_start_cache: dict[tuple[int, int, int, int], bool] = {}
 
     for fixture in fixtures:
         players = get_eligible_players(fixture)
         fixture_label = _fixture_label(fixture)
+        fixture_date = fixture.starting_at.date()
 
         for player in players:
             cache_key = (fixture.fixture_id, player.team_id)
@@ -511,6 +518,75 @@ def _get_candidates(fixtures, audit_rows: list[CandidateAuditRow] | None = None)
                                 starter_only_minutes=[],
                                 status="excluded",
                                 reasons=["team_ml_over_5"],
+                            )
+                        )
+                continue
+
+            sidelined_key = (player.player_id, player.team_id, fixture_date)
+            if sidelined_key not in sidelined_cache:
+                sidelined_cache[sidelined_key] = player_is_currently_sidelined(
+                    player.player_id,
+                    player.team_id,
+                    fixture_date,
+                )
+            if sidelined_cache[sidelined_key]:
+                if audit_rows is not None:
+                    for cfg in STAT_CONFIGS:
+                        audit_rows.append(
+                            CandidateAuditRow(
+                                fixture_id=fixture.fixture_id,
+                                fixture_label=fixture_label,
+                                league_id=fixture.league_id,
+                                league_name=fixture.league_name,
+                                player_id=player.player_id,
+                                player_name=player.player_name,
+                                team_id=player.team_id,
+                                team_name=player.team_name,
+                                stat_label=cfg["label"],
+                                stat_type_id=int(cfg["stat_type_id"]),
+                                market_key=str(cfg["market_key"]),
+                                threshold=int(cfg["threshold"]),
+                                raw_values=[],
+                                raw_minutes=[],
+                                starter_only_values=[],
+                                starter_only_minutes=[],
+                                status="excluded",
+                                reasons=["injured_or_suspended"],
+                            )
+                        )
+                continue
+
+            last_start_key = (fixture.fixture_id, player.player_id, player.team_id, fixture.league_id)
+            if last_start_key not in last_start_cache:
+                last_start_cache[last_start_key] = player_started_last_completed_team_match(
+                    player.player_id,
+                    player.team_id,
+                    fixture.league_id,
+                    fixture.starting_at,
+                )
+            if not last_start_cache[last_start_key]:
+                if audit_rows is not None:
+                    for cfg in STAT_CONFIGS:
+                        audit_rows.append(
+                            CandidateAuditRow(
+                                fixture_id=fixture.fixture_id,
+                                fixture_label=fixture_label,
+                                league_id=fixture.league_id,
+                                league_name=fixture.league_name,
+                                player_id=player.player_id,
+                                player_name=player.player_name,
+                                team_id=player.team_id,
+                                team_name=player.team_name,
+                                stat_label=cfg["label"],
+                                stat_type_id=int(cfg["stat_type_id"]),
+                                market_key=str(cfg["market_key"]),
+                                threshold=int(cfg["threshold"]),
+                                raw_values=[],
+                                raw_minutes=[],
+                                starter_only_values=[],
+                                starter_only_minutes=[],
+                                status="excluded",
+                                reasons=["last_match_not_started"],
                             )
                         )
                 continue
@@ -581,34 +657,6 @@ def _get_candidates(fixtures, audit_rows: list[CandidateAuditRow] | None = None)
                                 starter_only_minutes=_serialize_list(starter_only_minutes),
                                 status="empty_baseline",
                                 reasons=["empty_baseline"],
-                            )
-                        )
-                    continue
-
-                # Last match check: most recent game must be a start.
-                # Bench appearances are excluded from hit-rate numerator/denominator.
-                if raw_minutes[0] < 60:
-                    if audit_rows is not None:
-                        audit_rows.append(
-                            CandidateAuditRow(
-                                fixture_id=fixture.fixture_id,
-                                fixture_label=fixture_label,
-                                league_id=fixture.league_id,
-                                league_name=fixture.league_name,
-                                player_id=player.player_id,
-                                player_name=player.player_name,
-                                team_id=player.team_id,
-                                team_name=player.team_name,
-                                stat_label=cfg["label"],
-                                stat_type_id=stat_type_id,
-                                market_key=cfg["market_key"],
-                                threshold=int(cfg["threshold"]),
-                                raw_values=_serialize_list(raw_values),
-                                raw_minutes=_serialize_list(raw_minutes),
-                                starter_only_values=_serialize_list(starter_only_values),
-                                starter_only_minutes=_serialize_list(starter_only_minutes),
-                                status="excluded",
-                                reasons=["last_match_not_started"],
                             )
                         )
                     continue
