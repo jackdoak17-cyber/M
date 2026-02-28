@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-02-28T08:24:05+00:00",
+  "generated_at": "2026-02-28T09:06:36+00:00",
   "scheduled_for": "2026-02-28",
   "source_target_date": "2026-02-28",
   "fixture_dates": [
@@ -19,38 +19,16 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 13,
+    "total_rows": 10,
     "by_section": {
-      "1+ Shot": 5,
-      "2+ Shots": 3,
+      "1+ Shot": 3,
+      "2+ Shots": 2,
       "1+ SOT": 5
     }
   },
   "sections": {
     "by_section": {
       "1+ Shot": [
-        {
-          "id": "19433683:3862352:1+ Shot:1",
-          "player_id": 3862352,
-          "player_name": "Nico Schlotterbeck",
-          "team_id": 68,
-          "team_name": "Borussia Dortmund",
-          "fixture_id": 19433683,
-          "fixture_label": "Borussia Dortmund vs FC Bayern M\u00fcnchen",
-          "league_id": 82,
-          "league_name": "Bundesliga",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 7,
-          "hit_rate": 1.0,
-          "odds": 1.44,
-          "display": {
-            "rate": "7/7",
-            "odds": "@1.44",
-            "summary": "Nico Schlotterbeck (Borussia Dortmund) won in 7/7 @1.44"
-          }
-        },
         {
           "id": "19427158:37316858:1+ Shot:1",
           "player_id": 37316858,
@@ -93,28 +71,6 @@
             "rate": "9/9",
             "odds": "@1.33",
             "summary": "Djibril Soumar\u00e9 (Sheffield United) won in 9/9 @1.33"
-          }
-        },
-        {
-          "id": "19433682:766659:1+ Shot:1",
-          "player_id": 766659,
-          "player_name": "Edmond Tapsoba",
-          "team_id": 3321,
-          "team_name": "Bayer 04 Leverkusen",
-          "fixture_id": 19433682,
-          "fixture_label": "Bayer 04 Leverkusen vs FSV Mainz 05",
-          "league_id": 82,
-          "league_name": "Bundesliga",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 15,
-          "sample": 16,
-          "hit_rate": 0.9375,
-          "odds": 1.53,
-          "display": {
-            "rate": "15/16",
-            "odds": "@1.53",
-            "summary": "Edmond Tapsoba (Bayer 04 Leverkusen) won in 15/16 @1.53"
           }
         },
         {
@@ -183,28 +139,6 @@
             "rate": "7/7",
             "odds": "@1.36",
             "summary": "Millenic Alli (Portsmouth) won in 7/7 @1.36"
-          }
-        },
-        {
-          "id": "19428208:7026565:2+ Shots:2",
-          "player_id": 7026565,
-          "player_name": "Tyreece John-Jules",
-          "team_id": 180,
-          "team_name": "Kilmarnock",
-          "fixture_id": 19428208,
-          "fixture_label": "Falkirk vs Kilmarnock",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.36,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.36",
-            "summary": "Tyreece John-Jules (Kilmarnock) won in 10/11 @1.36"
           }
         }
       ],
@@ -322,7 +256,7 @@
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 28 Feb 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 5\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 5\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 28 Feb 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 3\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 5\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -336,7 +270,7 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 28 Feb 2026",
       "stats": {
-        "total_players": 13,
+        "total_players": 10,
         "stat_types": 3,
         "hit_rate_threshold_pct": 90
       },
@@ -349,28 +283,6 @@
       "section_page": 1,
       "section_pages": 1,
       "rows": [
-        {
-          "id": "19433683:3862352:1+ Shot:1",
-          "player_id": 3862352,
-          "player_name": "Nico Schlotterbeck",
-          "team_id": 68,
-          "team_name": "Borussia Dortmund",
-          "fixture_id": 19433683,
-          "fixture_label": "Borussia Dortmund vs FC Bayern M\u00fcnchen",
-          "league_id": 82,
-          "league_name": "Bundesliga",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 7,
-          "hit_rate": 1.0,
-          "odds": 1.44,
-          "display": {
-            "rate": "7/7",
-            "odds": "@1.44",
-            "summary": "Nico Schlotterbeck (Borussia Dortmund) won in 7/7 @1.44"
-          }
-        },
         {
           "id": "19427158:37316858:1+ Shot:1",
           "player_id": 37316858,
@@ -416,28 +328,6 @@
           }
         },
         {
-          "id": "19433682:766659:1+ Shot:1",
-          "player_id": 766659,
-          "player_name": "Edmond Tapsoba",
-          "team_id": 3321,
-          "team_name": "Bayer 04 Leverkusen",
-          "fixture_id": 19433682,
-          "fixture_label": "Bayer 04 Leverkusen vs FSV Mainz 05",
-          "league_id": 82,
-          "league_name": "Bundesliga",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 15,
-          "sample": 16,
-          "hit_rate": 0.9375,
-          "odds": 1.53,
-          "display": {
-            "rate": "15/16",
-            "odds": "@1.53",
-            "summary": "Edmond Tapsoba (Bayer 04 Leverkusen) won in 15/16 @1.53"
-          }
-        },
-        {
           "id": "19427163:4536524:1+ Shot:1",
           "player_id": 4536524,
           "player_name": "James Garner",
@@ -460,7 +350,7 @@
           }
         }
       ],
-      "section_total_rows": 5,
+      "section_total_rows": 3,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -513,31 +403,9 @@
             "odds": "@1.36",
             "summary": "Millenic Alli (Portsmouth) won in 7/7 @1.36"
           }
-        },
-        {
-          "id": "19428208:7026565:2+ Shots:2",
-          "player_id": 7026565,
-          "player_name": "Tyreece John-Jules",
-          "team_id": 180,
-          "team_name": "Kilmarnock",
-          "fixture_id": 19428208,
-          "fixture_label": "Falkirk vs Kilmarnock",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.36,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.36",
-            "summary": "Tyreece John-Jules (Kilmarnock) won in 10/11 @1.36"
-          }
         }
       ],
-      "section_total_rows": 3,
+      "section_total_rows": 2,
       "slide_number": 3,
       "slide_count": 4
     },
@@ -667,5 +535,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "b0d1223f0860bb787a679d90cdec11f64da4d21667daf2291952d80c325ef302"
+  "content_fingerprint": "0b61da3237c3a4f37078f620960d66b5a6b525e8cef05ef610e8d72b5ddb401a"
 }
