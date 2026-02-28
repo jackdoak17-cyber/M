@@ -1,0 +1,82 @@
+name: Send Instagram By Fixture Prototype
+
+on:
+  push:
+    paths:
+      - ".github/workflows/send_instagram_by_fixture_prototype.yml"
+      - "src/posting/send_instagram_by_fixture_prototype.py"
+      - "src/instagram/by_fixture_manifest.py"
+      - "src/instagram/renderer.py"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "By-fixture Instagram prototype slot"
+        required: true
+        default: "weekend_fixture"
+        type: choice
+        options:
+          - weekend_fixture
+          - weekday_fixture
+      target_date:
+        description: "Scheduled post date (YYYY-MM-DD). Leave blank to auto-resolve."
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  send-prototype:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: npx -y playwright@1.52.0 install chromium
+
+      - name: Resolve slot and date args
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SLOT="${{ inputs.slot }}"
+            if [ -n "${{ inputs.target_date }}" ]; then
+              DATE_ARG="--date ${{ inputs.target_date }}"
+            else
+              DATE_ARG=""
+            fi
+          else
+            SLOT="weekend_fixture"
+            DATE_ARG=""
+          fi
+          echo "SLOT=$SLOT" >> "$GITHUB_ENV"
+          echo "DATE_ARG=$DATE_ARG" >> "$GITHUB_ENV"
+
+      - name: Send by-fixture Instagram prototype
+        run: python -m src.posting.send_instagram_by_fixture_prototype --slot "$SLOT" $DATE_ARG
+        env:
+          SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ODDS_ANALYST_X_POST_BOT_TOKEN: ${{ secrets.ODDS_ANALYST_X_POST_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CLOUDFLARE_R2_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY }}
+          CLOUDFLARE_R2_SECRET_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_KEY }}
+          CLOUDFLARE_R2_BUCKET_NAME: ${{ secrets.CLOUDFLARE_R2_BUCKET_NAME }}
+          CLOUDFLARE_R2_PUBLIC_URL: ${{ secrets.CLOUDFLARE_R2_PUBLIC_URL }}
+          CLOUDFLARE_R2_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_R2_ACCOUNT_ID }}
+          S3_API_ENDPOINT: ${{ secrets.S3_API_ENDPOINT }}
+          PROP_SHEET_TIMEZONE: ${{ vars.PROP_SHEET_TIMEZONE || 'Europe/London' }}

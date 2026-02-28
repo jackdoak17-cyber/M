@@ -41,6 +41,8 @@ def _html_escape(value: Any) -> str:
 
 
 def _threshold_bar_from_manifest(manifest: dict[str, Any]) -> str:
+    if manifest.get("variant") == "by_fixture_text_prototype":
+        return "RECENT FORM DATA · PLAYER + TEAM STAT PROPS"
     thresholds = manifest.get("thresholds") or {}
     min_hit_pct = float(thresholds.get("min_hit_pct") or 0)
     min_odds = float(thresholds.get("min_odds") or 0)
@@ -49,12 +51,16 @@ def _threshold_bar_from_manifest(manifest: dict[str, Any]) -> str:
 
 
 def _title_words_for_manifest(manifest: dict[str, Any]) -> tuple[str, str]:
+    if manifest.get("variant") == "by_fixture_text_prototype":
+        return ("BY", "FIXTURE")
     if manifest.get("post_type") == "potential_value":
         return ("POTENTIAL", "VALUE")
     return ("HIGH", "PROBABILITY")
 
 
 def _post_badge_for_manifest(manifest: dict[str, Any]) -> str:
+    if manifest.get("variant") == "by_fixture_text_prototype":
+        return "Premier League"
     return "Stats & Odds List" if manifest.get("post_type") == "potential_value" else "High Probability List"
 
 
@@ -98,6 +104,12 @@ def _cover_section_counts(manifest: dict[str, Any]) -> list[tuple[str, int]]:
         if not section or any(existing == section for existing, _ in ordered):
             continue
         ordered.append((section, int(counts.get(section) or 0)))
+    if ordered:
+        return ordered
+    for section, count in counts.items():
+        section_label = str(section or "")
+        if section_label:
+            ordered.append((section_label, int(count or 0)))
     return ordered
 
 
@@ -106,6 +118,11 @@ def _cover_intro_compact(manifest: dict[str, Any]) -> str:
     hit_pct = int(round(float(thresholds.get("min_hit_pct") or 0) * 100))
     min_odds = float(thresholds.get("min_odds") or 0)
     min_starts = int(thresholds.get("min_starts") or 0)
+    if manifest.get("variant") == "fixture_per_slide_prototype":
+        return (
+            f"One fixture per slide. Bet365 shot props only. "
+            f"{hit_pct}%+ hit rate, odds >{min_odds:.2f}, starter-only, min n={min_starts}."
+        )
     return (
         f"Bet365 shot props only. {hit_pct}%+ hit rate, odds >{min_odds:.2f}, "
         f"starter-only, min n={min_starts}."
@@ -280,12 +297,118 @@ def _render_section_body(slide: dict[str, Any]) -> str:
     """
 
 
+def _fixture_page_suffix(slide: dict[str, Any]) -> str:
+    page = int(slide.get("fixture_page") or 1)
+    pages = int(slide.get("fixture_pages") or 1)
+    return f" · page {page}/{pages}" if pages > 1 else ""
+
+
+def _render_fixture_count_chips(slide: dict[str, Any]) -> str:
+    counts = slide.get("section_counts") or {}
+    ordered = sorted(counts.items(), key=lambda item: (-int(item[1] or 0), str(item[0] or "")))
+    chips: list[str] = []
+    for label, count in ordered:
+        chips.append(
+            f"""
+            <div class="fixture-chip">
+              <span class="fixture-chip-label">{_html_escape(label)}</span>
+              <span class="fixture-chip-value">{int(count or 0)}</span>
+            </div>
+            """
+        )
+    return "".join(chips)
+
+
+def _render_fixture_rows(slide: dict[str, Any]) -> str:
+    rows = list(slide.get("rows") or [])
+    rendered: list[str] = []
+    for idx, row in enumerate(rows):
+        alt = " alt" if idx % 2 == 1 else ""
+        display = row.get("display") or {}
+        rendered.append(
+            f"""
+    <div class="fixture-row{alt}">
+      <div class="fixture-player">
+        <div class="fixture-player-name">{_html_escape(row.get("player_name"))}</div>
+        <div class="fixture-player-team">{_html_escape(row.get("team_name"))}</div>
+      </div>
+      <div class="fixture-prop">{_html_escape(row.get("stat_label"))}</div>
+      <div class="fixture-hit">{_html_escape(display.get("rate"))}</div>
+      <div class="fixture-odds">{_html_escape(display.get("odds"))}</div>
+    </div>
+            """
+        )
+    return "".join(rendered)
+
+
+def _render_fixture_body(slide: dict[str, Any]) -> str:
+    fixture_index = int(slide.get("fixture_index") or 1)
+    fixture_count = int(slide.get("fixture_count") or 1)
+    fixture_rows = int(slide.get("fixture_row_count") or 0)
+    page_suffix = _fixture_page_suffix(slide)
+    return f"""
+    <div class="fixture-body">
+      <div class="fixture-hero">
+        <div class="fixture-kicker">Fixture {fixture_index}/{fixture_count}{_html_escape(page_suffix)}</div>
+        <div class="fixture-title">{_html_escape(slide.get("fixture_label"))}</div>
+        <div class="fixture-meta">
+          {_html_escape(slide.get("league_name"))} · {fixture_rows} qualifying props
+        </div>
+        <div class="fixture-chip-list">{_render_fixture_count_chips(slide)}</div>
+      </div>
+      <div class="fixture-table-head">
+        <span>Player</span>
+        <span>Prop</span>
+        <span>Hit</span>
+        <span>Bet365</span>
+      </div>
+      <div class="fixture-list">{_render_fixture_rows(slide)}</div>
+    </div>
+    """
+
+
+def _render_fixture_sheet_rows(slide: dict[str, Any]) -> str:
+    rows = list(slide.get("rows") or [])
+    parts: list[str] = []
+    for idx, row in enumerate(rows):
+        alt = " alt" if idx % 2 == 1 else ""
+        parts.append(
+            f"""
+    <div class="fixture-sheet-row{alt}">
+      <div class="fixture-sheet-label">{_html_escape(row.get("label"))}</div>
+      <div class="fixture-sheet-record">{_html_escape(row.get("record"))}</div>
+    </div>
+            """
+        )
+    return "".join(parts)
+
+
+def _render_fixture_sheet_body(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
+    intro = str(slide.get("subtitle") or manifest.get("subtitle") or "")
+    fixture_index = int(slide.get("fixture_index") or 1)
+    fixture_count = int(slide.get("fixture_count") or 1)
+    return f"""
+    <div class="fixture-sheet-body">
+      <div class="fixture-sheet-hero">
+        <div class="fixture-sheet-kicker">Fixture {fixture_index}/{fixture_count}</div>
+        <div class="fixture-sheet-title">{_html_escape(slide.get("header"))}</div>
+        <div class="fixture-sheet-subtitle">{_html_escape(intro)}</div>
+      </div>
+      <div class="fixture-sheet-list">{_render_fixture_sheet_rows(slide)}</div>
+    </div>
+    """
+
+
 def _build_slide_markup(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
-    body_markup = (
-        _render_cover_body(manifest, slide)
-        if slide.get("slide_type") == "cover"
-        else _render_section_body(slide)
-    )
+    slide_type = slide.get("slide_type")
+    if slide_type == "cover":
+        body_markup = _render_cover_body(manifest, slide)
+    elif slide_type == "fixture_sheet":
+        body_markup = _render_fixture_sheet_body(manifest, slide)
+    elif slide_type == "fixture":
+        body_markup = _render_fixture_body(slide)
+    else:
+        body_markup = _render_section_body(slide)
     return _render_header(manifest, slide) + body_markup + _render_footer()
 
 
@@ -562,6 +685,258 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     width: 58px;
     min-width: 58px;
     text-align: center;
+  }}
+  .fixture-body {{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 14px 10px;
+    gap: 8px;
+    overflow: hidden;
+  }}
+  .fixture-hero {{
+    border: 1px solid #263050;
+    background: linear-gradient(180deg, #101628 0%, #0b1020 100%);
+    border-radius: 8px;
+    padding: 10px 12px 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }}
+  .fixture-kicker {{
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    color: #cfd5ee;
+    opacity: 0.82;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }}
+  .fixture-title {{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    line-height: 0.95;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }}
+  .fixture-meta {{
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    color: #f5c518;
+    opacity: 0.95;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }}
+  .fixture-chip-list {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 1px;
+  }}
+  .fixture-chip {{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 6px;
+    border-radius: 999px;
+    background: #0a0f1b;
+    border: 1px solid #1f2742;
+  }}
+  .fixture-chip-label {{
+    font-family: 'DM Mono', monospace;
+    font-size: 7px;
+    color: #ffffff;
+    opacity: 0.78;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }}
+  .fixture-chip-value {{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+    color: #f5c518;
+    line-height: 1;
+  }}
+  .fixture-table-head {{
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.8fr) 48px 58px;
+    gap: 6px;
+    align-items: center;
+    padding: 0 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 7px;
+    color: #ffffff;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }}
+  .fixture-table-head span:nth-child(3),
+  .fixture-table-head span:nth-child(4) {{
+    text-align: right;
+  }}
+  .fixture-table-head span:nth-child(4) {{
+    color: #f5c518;
+    opacity: 0.95;
+  }}
+  .fixture-list {{
+    flex: 1;
+    overflow: hidden;
+    border: 1px solid #1b243d;
+    border-radius: 8px;
+    background: #090d18;
+  }}
+  .fixture-row {{
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.8fr) 48px 58px;
+    gap: 6px;
+    align-items: center;
+    padding: 0 10px;
+    min-height: 44px;
+    border-bottom: 1px solid #141b2f;
+    background: #0b0f1b;
+  }}
+  .fixture-row.alt {{
+    background: #090d18;
+  }}
+  .fixture-row:last-child {{
+    border-bottom: 0;
+  }}
+  .fixture-player {{
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }}
+  .fixture-player-name {{
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.05;
+  }}
+  .fixture-player-team {{
+    font-family: 'DM Mono', monospace;
+    font-size: 7px;
+    color: #cfd5ee;
+    opacity: 0.7;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }}
+  .fixture-prop {{
+    font-size: 9px;
+    font-weight: 700;
+    color: #f5c518;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }}
+  .fixture-hit {{
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: #ffffff;
+    text-align: right;
+  }}
+  .fixture-odds {{
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    color: #0a0d16;
+    background: linear-gradient(180deg, #ffde5d 0%, #f5c518 100%);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 3px 6px;
+    border-radius: 4px;
+    width: 58px;
+    min-width: 58px;
+    text-align: center;
+    justify-self: end;
+  }}
+  .fixture-sheet-body {{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 14px 10px;
+    gap: 8px;
+    overflow: hidden;
+  }}
+  .fixture-sheet-hero {{
+    border: 1px solid #263050;
+    background: linear-gradient(180deg, #101628 0%, #0b1020 100%);
+    border-radius: 8px;
+    padding: 9px 10px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }}
+  .fixture-sheet-kicker {{
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    color: #f5c518;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }}
+  .fixture-sheet-title {{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    line-height: 0.95;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }}
+  .fixture-sheet-subtitle {{
+    font-family: 'DM Mono', monospace;
+    font-size: 7px;
+    color: #cfd5ee;
+    opacity: 0.75;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+  }}
+  .fixture-sheet-list {{
+    flex: 1;
+    overflow: hidden;
+    border: 1px solid #1b243d;
+    border-radius: 8px;
+    background: #090d18;
+    display: flex;
+    flex-direction: column;
+  }}
+  .fixture-sheet-row {{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 62px;
+    gap: 8px;
+    align-items: center;
+    padding: 0 9px;
+    min-height: 22px;
+    border-bottom: 1px solid #131a2d;
+    background: #0b0f1b;
+  }}
+  .fixture-sheet-row.alt {{
+    background: #090d18;
+  }}
+  .fixture-sheet-row:last-child {{
+    border-bottom: 0;
+  }}
+  .fixture-sheet-label {{
+    font-size: 8px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.15;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }}
+  .fixture-sheet-record {{
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    font-weight: 700;
+    color: #f5c518;
+    text-align: right;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
   }}
   .cover-body {{
     flex: 1;
