@@ -83,3 +83,11 @@ jobs:
           S3_API_ENDPOINT: ${{ secrets.S3_API_ENDPOINT }}
           SPORTMONKS_API_TOKEN: ${{ secrets.SPORTMONKS_API_TOKEN }}
           PROP_SHEET_TIMEZONE: ${{ vars.PROP_SHEET_TIMEZONE || 'Europe/London' }}
+
+      - name: Upload delivery report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: instagram-by-fixture-delivery-report-${{ github.run_id }}
+          path: output/instagram_by_fixture/renders/**/delivery_report.json
+          if-no-files-found: ignore

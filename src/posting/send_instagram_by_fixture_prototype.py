@@ -5,6 +5,7 @@ import json
 import os
 from datetime import date, datetime, timezone
 from pathlib import Path
+from typing import Any
 
 from src.instagram.assets import enrich_manifest_with_cached_assets
 from src.instagram.by_fixture_manifest import build_by_fixture_manifest, verify_by_fixture_manifest
@@ -70,6 +71,42 @@ def _upload_prefix(slot: str, scheduled_for: str, fingerprint: str) -> str:
     return f"instagram/prototypes/by_fixture/{scheduled_for}/{slot}/{short}"
 
 
+def _masked_chat_id(value: Any) -> str:
+    text = str(value or "").strip()
+    if not text:
+        return "unknown"
+    if len(text) <= 4:
+        return text
+    return f"...{text[-4:]}"
+
+
+def _telegram_target_from_response(payload: Any) -> dict[str, str]:
+    chat: dict[str, Any] = {}
+    if isinstance(payload, list) and payload:
+        first = payload[0]
+        if isinstance(first, dict):
+            chat = (first.get("chat") or {}) if isinstance(first.get("chat"), dict) else {}
+    elif isinstance(payload, dict):
+        chat = (payload.get("chat") or {}) if isinstance(payload.get("chat"), dict) else {}
+    return {
+        "chat_id_masked": _masked_chat_id(chat.get("id")),
+        "chat_type": str(chat.get("type") or "unknown"),
+        "chat_title": str(chat.get("title") or ""),
+        "chat_username": str(chat.get("username") or ""),
+    }
+
+
+def _telegram_probe_marker(slot: str, scheduled_for: str) -> str:
+    run_id = os.getenv("GITHUB_RUN_ID", "local")
+    sha = os.getenv("GITHUB_SHA", "local")[:7]
+    return f"IG-FIXTURE-PROBE {scheduled_for} {slot} run={run_id} sha={sha}"
+
+
+def _write_delivery_report(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def run(
     *,
     slot: str,
@@ -127,13 +164,42 @@ def run(
         ]
     )
     image_urls = [upload.url for upload in uploads]
-    if image_urls:
-        send_media_group([{"type": "photo", "media": url} for url in image_urls])
+    probe = _telegram_probe_marker(slot, scheduled_str)
+    delivery_report: dict[str, Any] = {
+        "probe": probe,
+        "slot": slot,
+        "scheduled_for": scheduled_str,
+        "generated_at": _utc_now_iso(),
+        "image_count": len(image_urls),
+        "image_urls": image_urls,
+        "github_run_id": os.getenv("GITHUB_RUN_ID", ""),
+        "github_sha": os.getenv("GITHUB_SHA", ""),
+    }
+    probe_result = send_message(f"{probe}\nPreparing by-fixture Instagram prototype preview.")
+    delivery_report["probe_message"] = {
+        **_telegram_target_from_response((probe_result or {}).get("result") or {}),
+        "message_id": ((probe_result or {}).get("result") or {}).get("message_id"),
+    }
 
-    send_message(
+    if image_urls:
+        media_result = send_media_group([{"type": "photo", "media": url} for url in image_urls])
+        media_payload = media_result.get("result") if isinstance(media_result, dict) else media_result
+        message_ids: list[int] = []
+        if isinstance(media_payload, list):
+            for item in media_payload:
+                if isinstance(item, dict) and isinstance(item.get("message_id"), int):
+                    message_ids.append(item["message_id"])
+        delivery_report["media_group"] = {
+            **_telegram_target_from_response(media_payload),
+            "message_ids": message_ids,
+            "count": len(message_ids),
+        }
+
+    summary_result = send_message(
         "\n".join(
             [
                 "Instagram by-fixture prototype sent",
+                f"Probe: {probe}",
                 f"Slot: {slot}",
                 f"Date: {scheduled_str}",
                 f"Fixtures/slides: {len(manifest.get('slides') or [])}",
@@ -154,6 +220,22 @@ def run(
             )
         )
     )
+    delivery_report["summary_message"] = {
+        **_telegram_target_from_response((summary_result or {}).get("result") or {}),
+        "message_id": ((summary_result or {}).get("result") or {}).get("message_id"),
+    }
+    delivery_report_path = render_dir / "delivery_report.json"
+    _write_delivery_report(delivery_report_path, delivery_report)
+    target = delivery_report.get("summary_message") or delivery_report.get("probe_message") or {}
+    print(
+        "Telegram delivery target:",
+        f"type={target.get('chat_type', 'unknown')}",
+        f"title={target.get('chat_title', '') or '-'}",
+        f"username={target.get('chat_username', '') or '-'}",
+        f"id={target.get('chat_id_masked', 'unknown')}",
+    )
+    print(f"Telegram probe marker: {probe}")
+    print(f"Delivery report: {delivery_report_path}")
     print(f"Sent by-fixture Instagram prototype for {slot} {scheduled_str}")
     return 0
 
