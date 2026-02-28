@@ -824,13 +824,13 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     flex-shrink: 0;
   }}
   .row-face {{
-    width: 17px;
-    height: 17px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
   }}
   .row-badge {{
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: rgba(255,255,255,0.03);
   }}
@@ -844,7 +844,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     min-width: 0;
     position: relative;
     z-index: 1;
-    font-size: 8.3px;
+    font-size: 8.7px;
     font-weight: 700;
     color: #f2f4fa;
     white-space: nowrap;
@@ -856,7 +856,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     min-width: 0;
     position: relative;
     z-index: 1;
-    font-size: 9.2px;
+    font-size: 9.6px;
     font-weight: 700;
     color: #ffffff;
     white-space: nowrap;
@@ -878,13 +878,13 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     justify-self: end;
   }}
   .stat-record-label {{
-    font-size: 6px;
+    font-size: 6.2px;
     font-weight: 500;
     color: #9ea8c6;
     letter-spacing: 0.02em;
   }}
   .stat-record-value {{
-    font-size: 8.3px;
+    font-size: 8.6px;
     font-weight: 700;
     letter-spacing: -0.3px;
   }}
@@ -919,28 +919,28 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     gap: 4px;
   }}
   .card.density-dense .stat-player {{
-    font-size: 7.7px;
+    font-size: 8.1px;
   }}
   .card.density-dense .stat-market {{
-    font-size: 8.6px;
+    font-size: 8.9px;
   }}
   .card.density-dense .stat-record {{
     gap: 2px;
     padding: 2px 4px;
   }}
   .card.density-dense .stat-record-label {{
-    font-size: 5.6px;
+    font-size: 5.8px;
   }}
   .card.density-dense .stat-record-value {{
-    font-size: 7.7px;
+    font-size: 8px;
   }}
   .card.density-dense .row-face {{
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
   }}
   .card.density-dense .row-badge {{
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
   }}
   .card.density-xdense .stat-row {{
     min-height: 0;
@@ -948,28 +948,28 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     gap: 3px;
   }}
   .card.density-xdense .stat-player {{
-    font-size: 7px;
+    font-size: 7.3px;
   }}
   .card.density-xdense .stat-market {{
-    font-size: 7.8px;
+    font-size: 8.1px;
   }}
   .card.density-xdense .stat-record {{
     gap: 2px;
     padding: 2px 4px;
   }}
   .card.density-xdense .stat-record-label {{
-    font-size: 5.2px;
+    font-size: 5.4px;
   }}
   .card.density-xdense .stat-record-value {{
-    font-size: 7.1px;
+    font-size: 7.4px;
   }}
   .card.density-xdense .row-face {{
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
   }}
   .card.density-xdense .row-badge {{
-    width: 11px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
   }}
 </style>
 </head>
