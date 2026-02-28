@@ -26,7 +26,7 @@ SECTION_ORDER = ["shots", "fouls_committed", "fouls_won", "corners"]
 SECTION_META = {
     "shots": {"title": "Shots", "color": "#F5C518"},
     "fouls_committed": {"title": "Fouls Committed", "color": "#FF8C54"},
-    "fouls_won": {"title": "Fouls Won", "color": "#54B0FF"},
+    "fouls_won": {"title": "Fouls Drawn", "color": "#54B0FF"},
     "corners": {"title": "Corners", "color": "#A78BFA"},
 }
 TEAM_ACCENTS = {
@@ -247,13 +247,26 @@ def _subject_market_display(
 ) -> tuple[str, str]:
     if section_key == "shots":
         normalized_market = market.strip()
+        if normalized_market.upper().endswith("SOT"):
+            threshold_match = re.match(r"^(?P<threshold>\d+)\+\s+SOT$", normalized_market, re.IGNORECASE)
+            threshold = int(threshold_match.group("threshold")) if threshold_match else 1
+            noun = "shot on target" if threshold == 1 else "shots on target"
+            return subject, f"{threshold}+ {noun}"
+        threshold_match = re.match(r"^(?P<threshold>\d+)\+\s+shots$", normalized_market, re.IGNORECASE)
+        if threshold_match:
+            threshold = int(threshold_match.group("threshold"))
+            noun = "shot" if threshold == 1 else "shots"
+            return subject, f"{threshold}+ {noun}"
         return subject, normalized_market
 
     if section_key in {"fouls_committed", "fouls_won"}:
         threshold_match = re.match(r"^(?P<threshold>\d+)\+", market)
         threshold = int(threshold_match.group("threshold")) if threshold_match else 1
-        show_threshold = threshold != 1 or _normalize_name(subject) in duplicate_subjects
-        return subject, f"{threshold}+" if show_threshold else ""
+        if section_key == "fouls_committed":
+            noun = "foul committed" if threshold == 1 else "fouls committed"
+        else:
+            noun = "foul drawn" if threshold == 1 else "fouls drawn"
+        return subject, f"{threshold}+ {noun}"
 
     if section_key == "corners":
         threshold_match = re.match(r"^(?P<threshold>\d+)\+", market)

@@ -482,8 +482,10 @@ def _render_rich_row_icon(row: dict[str, Any], accent_color: str) -> str:
 
 def _render_rich_section(section: dict[str, Any]) -> str:
     color = str(section.get("color") or "#F5C518")
+    rows = list(section.get("rows") or [])
+    visual_rows = max(1, (len(rows) + 1) // 2)
     rows_markup: list[str] = []
-    for row in list(section.get("rows") or []):
+    for row in rows:
         hit_rate = float(row.get("hit_rate") or 0.0)
         bar_opacity = 0.05
         if hit_rate >= 0.95:
@@ -505,7 +507,7 @@ def _render_rich_section(section: dict[str, Any]) -> str:
             """
         )
     return f"""
-    <div class="section">
+    <div class="section" style="--section-flex:{visual_rows};">
       <div class="section-head">
         <div class="section-title" style="color:{_html_escape(color)}">{_html_escape(section.get("title"))}</div>
         <div class="section-rule"></div>
@@ -716,12 +718,15 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 4px;
+    min-height: 0;
   }}
   .section {{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr;
     gap: 1px;
+    flex: var(--section-flex) 1 0;
+    min-height: 0;
   }}
   .section-head {{
     display: flex;
@@ -745,13 +750,17 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px 4px;
+    min-height: 0;
+    height: 100%;
+    align-content: stretch;
+    grid-auto-rows: minmax(0, 1fr);
   }}
   .stat-row {{
     display: grid;
     grid-template-columns: 18px minmax(0, 1fr) auto;
     gap: 5px;
     align-items: center;
-    min-height: 20px;
+    min-height: 0;
     padding: 0 6px;
     border-radius: 2px;
     position: relative;
@@ -785,7 +794,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     object-fit: cover;
   }}
   .stat-text {{
-    font-size: 9.5px;
+    font-size: 9.3px;
     font-weight: 600;
     color: var(--text);
     white-space: nowrap;
@@ -796,9 +805,9 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     z-index: 1;
   }}
   .stat-text .mkt {{
-    font-weight: 400;
-    color: var(--muted);
-    font-size: 9px;
+    font-weight: 600;
+    color: var(--text);
+    font-size: 10.2px;
   }}
   .stat-val {{
     font-family: 'DM Mono', monospace;
@@ -849,10 +858,11 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     gap: 4px;
   }}
   .card.density-dense .stat-text {{
-    font-size: 8.7px;
+    font-size: 8.6px;
   }}
   .card.density-dense .stat-text .mkt {{
-    font-size: 8.2px;
+    font-size: 9.2px;
+    color: var(--text);
   }}
   .card.density-dense .stat-val {{
     font-size: 8.8px;
@@ -867,10 +877,11 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     gap: 3px;
   }}
   .card.density-xdense .stat-text {{
-    font-size: 8.1px;
+    font-size: 7.9px;
   }}
   .card.density-xdense .stat-text .mkt {{
-    font-size: 7.7px;
+    font-size: 8.7px;
+    color: var(--text);
   }}
   .card.density-xdense .stat-val {{
     font-size: 8.1px;
