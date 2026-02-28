@@ -29,9 +29,10 @@ Deno.serve(async (req) => {
   }
 
   const [action, postType, postDate] = parts
+  const postKey = `${postDate}_${postType}`
   const newStatus = action === 'approve' ? 'approved' : 'rejected'
   const label = action === 'approve'
-    ? '✅ Approved — will post at scheduled time'
+    ? '✅ Approved'
     : '❌ Rejected — post cancelled'
 
   // Answer immediately — clears Telegram's spinner with a short confirmation
@@ -55,11 +56,23 @@ Deno.serve(async (req) => {
 
   const supabase = createClient(Deno.env.get('SUPABASE_URL')!, serviceRoleKey)
 
+  const timestamp = new Date().toISOString()
+  const updatePayload: Record<string, string | null> = {
+    status: newStatus,
+    updated_at: timestamp,
+  }
+  if (action === 'approve') {
+    updatePayload.approved_at = timestamp
+    updatePayload.rejected_at = null
+  } else {
+    updatePayload.rejected_at = timestamp
+    updatePayload.approved_at = null
+  }
+
   await supabase
     .from('post_approvals')
-    .update({ status: newStatus, updated_at: new Date().toISOString() })
-    .eq('post_type', postType)
-    .eq('post_date', postDate)
+    .update(updatePayload)
+    .eq('post_key', postKey)
 
   // Replace buttons with status label
   if (TELEGRAM_API) {

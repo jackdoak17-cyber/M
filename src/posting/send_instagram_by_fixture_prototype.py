@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 from datetime import date, datetime, timezone
@@ -13,7 +14,9 @@ from src.instagram.r2_storage import R2Settings, R2Storage
 from src.instagram.renderer import render_carousel_images
 
 from .content_resolver import resolve_content, resolve_target_date
+from .instagram_slots import build_post_key
 from .settings import get_posting_settings
+from .supabase_client import upsert_post_approval
 from .telegram_client import send_media_group, send_message
 
 
@@ -28,6 +31,11 @@ def _content_type_for_ext(ext: str) -> str:
     if normalized == "png":
         return "image/png"
     raise ValueError(f"Unsupported image extension: {ext}")
+
+
+def _content_hash(payload: dict[str, Any]) -> str:
+    raw = json.dumps(payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
+    return hashlib.sha256(raw).hexdigest()
 
 
 def _require_r2_storage() -> R2Storage:
@@ -172,9 +180,52 @@ def run(
         ]
     )
     image_urls = [upload.url for upload in uploads]
+    image_keys = [upload.key for upload in uploads]
+    render_manifest_path = render_dir / "render_manifest.json"
+    render_manifest = (
+        json.loads(render_manifest_path.read_text(encoding="utf-8"))
+        if render_manifest_path.exists()
+        else {}
+    )
+    preview_payload = {
+        "channel": "instagram",
+        "slot": slot,
+        "post_type": slot,
+        "scheduled_for": scheduled_str,
+        "manifest_path": str(manifest_path),
+        "manifest_content_fingerprint": fingerprint,
+        "manifest_counts": manifest.get("counts") or {},
+        "caption": manifest.get("caption") or "",
+        "image_urls": image_urls,
+        "image_keys": image_keys,
+        "render_manifest_path": str(render_manifest_path),
+        "render_manifest": render_manifest,
+        "uploaded_via_r2": True,
+        "asset_cache": asset_report.as_dict() if asset_report is not None else {},
+        "updated_at": _utc_now_iso(),
+    }
+    post_key = build_post_key(slot, scheduled_for)
+    approval_payload = {
+        "post_key": post_key,
+        "slot": slot,
+        "post_type": slot,
+        "post_date": scheduled_str,
+        "scheduled_for": scheduled_str,
+        "status": "pending",
+        "content_path": str(manifest_path),
+        "content": json.dumps(preview_payload, ensure_ascii=False, sort_keys=True),
+        "content_hash": _content_hash(preview_payload),
+        "approved_at": None,
+        "rejected_at": None,
+        "posted_at": None,
+        "posted_tweet_id": None,
+        "updated_at": _utc_now_iso(),
+    }
+    upsert_post_approval(approval_payload)
     probe = _telegram_probe_marker(slot, scheduled_str)
     delivery_report: dict[str, Any] = {
         "probe": probe,
+        "post_key": post_key,
         "slot": slot,
         "scheduled_for": scheduled_str,
         "generated_at": _utc_now_iso(),
@@ -208,6 +259,7 @@ def run(
             [
                 "Instagram by-fixture prototype sent",
                 f"Probe: {probe}",
+                f"Approval key: {post_key}",
                 f"Slot: {slot}",
                 f"Date: {scheduled_str}",
                 f"Fixtures/slides: {len(manifest.get('slides') or [])}",
@@ -226,7 +278,11 @@ def run(
                 if asset_report is not None
                 else []
             )
-        )
+        ),
+        buttons=[
+            [{"text": "✅ Post to Instagram", "callback_data": f"approve:{slot}:{scheduled_str}"}],
+            [{"text": "❌ Skip", "callback_data": f"reject:{slot}:{scheduled_str}"}],
+        ],
     )
     delivery_report["summary_message"] = {
         **_telegram_target_from_response((summary_result or {}).get("result") or {}),
