@@ -150,3 +150,72 @@ def player_started_last_completed_team_match(
     if lineup_minutes is not None:
         return float(lineup_minutes) >= 60.0
     return False
+
+
+def player_is_defender(
+    player_id: int,
+    team_id: int,
+    league_id: int,
+    reference_time: datetime,
+) -> bool:
+    """Infer whether the player's recent position is defensive."""
+    query = """
+        select
+            fp.position_name,
+            fp.position_abbr,
+            fp.detailed_position_name,
+            fp.detailed_position_code,
+            fp.lineup_detailed_position_name,
+            fp.lineup_detailed_position_code
+        from fixture_players fp
+        join fixtures f on f.id = fp.fixture_id
+        where fp.player_id = %s
+          and fp.team_id = %s
+          and f.league_id = %s
+          and f.starting_at < %s
+          and f.home_score is not null
+          and f.away_score is not null
+        order by f.starting_at desc
+        limit 1;
+    """
+    with db_cursor() as cur:
+        cur.execute(query, (player_id, team_id, league_id, reference_time))
+        row = cur.fetchone()
+    if not row:
+        return False
+
+    abbr = str(row.get("position_abbr") or "").strip().upper()
+    if abbr in {"D", "CB", "LB", "RB", "LCB", "RCB", "LWB", "RWB", "SW"}:
+        return True
+
+    for field in (
+        row.get("position_name"),
+        row.get("detailed_position_name"),
+        row.get("detailed_position_code"),
+        row.get("lineup_detailed_position_name"),
+        row.get("lineup_detailed_position_code"),
+    ):
+        text = str(field or "").strip().lower()
+        if not text:
+            continue
+        if text == "defender":
+            return True
+        if any(
+            token in text
+            for token in (
+                "center back",
+                "centre back",
+                "center-back",
+                "centre-back",
+                "left back",
+                "right back",
+                "left-back",
+                "right-back",
+                "full back",
+                "full-back",
+                "wing back",
+                "wing-back",
+            )
+        ):
+            return True
+    return False
