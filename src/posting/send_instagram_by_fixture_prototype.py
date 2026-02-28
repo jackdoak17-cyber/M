@@ -68,7 +68,15 @@ def _render_dir(slot: str, scheduled_for: str, fingerprint: str) -> Path:
 
 def _upload_prefix(slot: str, scheduled_for: str, fingerprint: str) -> str:
     short = fingerprint[:12]
-    return f"instagram/prototypes/by_fixture/{scheduled_for}/{slot}/{short}"
+    return f"instagram/prototypes/by_fixture/{scheduled_for}/{slot}/{short}/{_render_revision()}"
+
+
+def _render_revision() -> str:
+    sha = os.getenv("GITHUB_SHA", "local")[:7] or "local"
+    run_id = os.getenv("GITHUB_RUN_ID", "").strip()
+    if run_id:
+        return f"{sha}-run{run_id}"
+    return f"{sha}-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}"
 
 
 def _masked_chat_id(value: Any) -> str:
