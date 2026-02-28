@@ -34,7 +34,7 @@ WHERE oo.market_key = 'moneyline'
 ORDER BY f.starting_at, oo.selection_key
 """
 
-SELECTION_ORDER = {"Home": 0, "Draw": 1, "Away": 2}
+SELECTION_ORDER = {"home": 0, "draw": 1, "away": 2}
 
 
 def _connect():
@@ -150,8 +150,8 @@ def generate_post(target: date | None = None) -> Path:
         lines.append(f"{home} vs {away} - {time_str}")
 
         current = current_by_fixture.get(fid, {})
-        for selection in ["Home", "Draw", "Away"]:
-            label = home if selection == "Home" else (away if selection == "Away" else "Draw")
+        for selection in ["home", "draw", "away"]:
+            label = home if selection == "home" else (away if selection == "away" else "Draw")
             mon_price = monday_odds.get((fid, selection))
             cur_price = current.get(selection)
             if mon_price is not None and cur_price is not None:
