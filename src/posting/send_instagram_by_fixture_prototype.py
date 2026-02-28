@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+from src.instagram.assets import enrich_manifest_with_cached_assets
 from src.instagram.by_fixture_manifest import build_by_fixture_manifest, verify_by_fixture_manifest
 from src.instagram.r2_storage import R2Settings, R2Storage
 from src.instagram.renderer import render_carousel_images
@@ -92,6 +94,9 @@ def run(
         slot=slot,
         label=info.label,
     )
+    asset_report = None
+    if os.getenv("SUPABASE_DB_URL"):
+        manifest, asset_report = enrich_manifest_with_cached_assets(manifest)
     issues = verify_by_fixture_manifest(manifest)
     if issues:
         raise RuntimeError("By-fixture manifest verification failed:\n" + "\n".join(issues))
@@ -138,6 +143,15 @@ def run(
                 f"Rendered at: {render_dir}",
                 f"Generated at: {_utc_now_iso()}",
             ]
+            + (
+                [
+                    "Assets: "
+                    f"faces {asset_report.player_cached}/{asset_report.player_requested}, "
+                    f"badges {asset_report.team_cached}/{asset_report.team_requested}",
+                ]
+                if asset_report is not None
+                else []
+            )
         )
     )
     print(f"Sent by-fixture Instagram prototype for {slot} {scheduled_str}")

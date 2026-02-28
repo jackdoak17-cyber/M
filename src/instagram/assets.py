@@ -162,6 +162,27 @@ def enrich_manifest_with_cached_assets(
             if assets:
                 row["assets"] = assets
 
+    def _attach_team_assets(team_payload: dict[str, Any] | None) -> None:
+        if not isinstance(team_payload, dict):
+            return
+        team_id = team_payload.get("team_id")
+        if team_id is None:
+            return
+        tdata = team_assets.get(int(team_id))
+        if not tdata:
+            return
+        team_payload["badge_url"] = tdata["url"]
+        team_payload["badge_path"] = tdata["path"]
+        team_payload["badge_uri"] = tdata["uri"]
+
+    for slide in list(manifest_copy.get("slides") or []):
+        _attach_team_assets(slide.get("home_team"))
+        _attach_team_assets(slide.get("away_team"))
+
+    for fixture in list(((manifest_copy.get("fixtures") or {}).get("items") or [])):
+        _attach_team_assets(fixture.get("home_team"))
+        _attach_team_assets(fixture.get("away_team"))
+
     report = AssetCacheReport(
         player_requested=len(player_ids),
         team_requested=len(team_ids),
@@ -176,20 +197,30 @@ def enrich_manifest_with_cached_assets(
 
 def _collect_row_refs(manifest: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
     refs: dict[str, list[dict[str, Any]]] = {}
-    sections = ((manifest.get("sections") or {}).get("by_section") or {})
-    for rows in sections.values():
+
+    def _append_rows(rows: list[dict[str, Any]] | None) -> None:
         for row in rows or []:
             row_id = str(row.get("id") or "")
             if row_id:
                 refs.setdefault(row_id, []).append(row)
 
+    sections = ((manifest.get("sections") or {}).get("by_section") or {})
+    for rows in sections.values():
+        _append_rows(list(rows or []))
+
     for slide in list(manifest.get("slides") or []):
-        if slide.get("slide_type") != "section":
+        slide_type = slide.get("slide_type")
+        if slide_type in {"section", "fixture"}:
+            _append_rows(list(slide.get("rows") or []))
             continue
-        for row in list(slide.get("rows") or []):
-            row_id = str(row.get("id") or "")
-            if row_id:
-                refs.setdefault(row_id, []).append(row)
+        if slide_type == "fixture_rich":
+            for section in list(slide.get("sections") or []):
+                _append_rows(list((section or {}).get("rows") or []))
+
+    for fixture in list(((manifest.get("fixtures") or {}).get("items") or [])):
+        _append_rows(list(fixture.get("rows") or []))
+        for section in list(fixture.get("sections") or []):
+            _append_rows(list((section or {}).get("rows") or []))
     return refs
 
 

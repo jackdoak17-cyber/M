@@ -399,6 +399,539 @@ def _render_fixture_sheet_body(manifest: dict[str, Any], slide: dict[str, Any]) 
     """
 
 
+def _asset_src(payload: dict[str, Any] | None, *keys: str) -> str:
+    if not isinstance(payload, dict):
+        return ""
+    for key in keys:
+        value = payload.get(key)
+        if value:
+            return str(value)
+    return ""
+
+
+def _hex_to_rgba(hex_color: str, alpha: float) -> str:
+    color = hex_color.strip().lstrip("#")
+    if len(color) != 6:
+        return f"rgba(245,197,24,{alpha})"
+    red = int(color[0:2], 16)
+    green = int(color[2:4], 16)
+    blue = int(color[4:6], 16)
+    return f"rgba({red},{green},{blue},{alpha})"
+
+
+def _initials(value: Any) -> str:
+    text = str(value or "").strip()
+    if not text:
+        return "?"
+    parts = [part for part in text.split() if part]
+    if len(parts) == 1:
+        return parts[0][:1].upper()
+    return (parts[0][:1] + parts[-1][:1]).upper()
+
+
+def _render_media(
+    *,
+    src: str,
+    fallback_text: str,
+    accent_color: str,
+    class_name: str,
+    img_class: str,
+) -> str:
+    if src:
+        return (
+            f'<div class="{class_name}" style="--accent:{_html_escape(accent_color)}">'
+            f'<img class="{img_class}" src="{_html_escape(src)}" alt="{_html_escape(fallback_text)}">'
+            "</div>"
+        )
+    return (
+        f'<div class="{class_name} media-fallback" style="--accent:{_html_escape(accent_color)}">'
+        f"<span>{_html_escape(fallback_text)}</span>"
+        "</div>"
+    )
+
+
+def _render_rich_team_badge(team: dict[str, Any]) -> str:
+    display_name = str(team.get("display_name") or team.get("name") or "")
+    accent = str(team.get("accent_color") or "#F5C518")
+    src = _asset_src(team, "badge_uri", "badge_url")
+    return _render_media(
+        src=src,
+        fallback_text=_initials(display_name),
+        accent_color=accent,
+        class_name="team-badge",
+        img_class="team-badge-img",
+    )
+
+
+def _render_rich_row_icon(row: dict[str, Any], accent_color: str) -> str:
+    assets = dict(row.get("assets") or {})
+    is_team_row = str(row.get("subject_type") or "") == "team"
+    src = (
+        _asset_src(assets, "team_badge_uri", "team_badge_url")
+        if is_team_row
+        else _asset_src(assets, "player_face_uri", "player_face_url", "team_badge_uri", "team_badge_url")
+    )
+    return _render_media(
+        src=src,
+        fallback_text=_initials(row.get("subject_display") or row.get("subject_name")),
+        accent_color=accent_color,
+        class_name="row-icon",
+        img_class="row-icon-img",
+    )
+
+
+def _render_rich_section(section: dict[str, Any]) -> str:
+    color = str(section.get("color") or "#F5C518")
+    rows_markup: list[str] = []
+    for row in list(section.get("rows") or []):
+        hit_rate = float(row.get("hit_rate") or 0.0)
+        bar_opacity = 0.05
+        if hit_rate >= 0.95:
+            bar_opacity = 0.10
+        elif hit_rate >= 0.90:
+            bar_opacity = 0.08
+        elif hit_rate >= 0.85:
+            bar_opacity = 0.07
+        market_display = str(row.get("market_display") or "").strip()
+        market_markup = f' <span class="mkt">{_html_escape(market_display)}</span>' if market_display else ""
+        rows_markup.append(
+            f"""
+            <div class="stat-row">
+              <div class="bar-fill" style="background:{_html_escape(_hex_to_rgba(color, bar_opacity))};width:{int(row.get('bar_pct') or 0)}%"></div>
+              {_render_rich_row_icon(row, color)}
+              <div class="stat-text">{_html_escape(row.get("subject_display"))}{market_markup}</div>
+              <div class="stat-val" style="color:{_html_escape(color)}"><span class="won-label">in </span>{_html_escape(row.get("record"))}</div>
+            </div>
+            """
+        )
+    return f"""
+    <div class="section">
+      <div class="section-head">
+        <div class="section-title" style="color:{_html_escape(color)}">{_html_escape(section.get("title"))}</div>
+        <div class="section-rule"></div>
+      </div>
+      <div class="rows-grid">
+        {''.join(rows_markup)}
+      </div>
+    </div>
+    """
+
+
+def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[str, Any]) -> str:
+    home_team = dict(slide.get("home_team") or {})
+    away_team = dict(slide.get("away_team") or {})
+    sections_html = "".join(_render_rich_section(section) for section in list(slide.get("sections") or []))
+    density = str(slide.get("density") or "default")
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{_html_escape(markup_title)}</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {{
+    --bg: #080b14;
+    --border: rgba(255,255,255,0.07);
+    --gold: #F5C518;
+    --text: #e8eaf0;
+    --muted: #4a5470;
+  }}
+  * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+  html, body {{
+    width: {CARD_WIDTH}px;
+    height: {CARD_HEIGHT}px;
+    overflow: hidden;
+    background: #040609;
+  }}
+  body {{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Barlow Condensed', sans-serif;
+  }}
+  body.ready::after {{ content: ''; }}
+  .canvas {{
+    width: {CARD_WIDTH}px;
+    height: {CARD_HEIGHT}px;
+    overflow: hidden;
+    background: #040609;
+  }}
+  .scale {{
+    width: {CARD_BASE_WIDTH}px;
+    height: {CARD_BASE_HEIGHT}px;
+    transform: scale(2);
+    transform-origin: top left;
+  }}
+  .card {{
+    width: {CARD_BASE_WIDTH}px;
+    height: {CARD_BASE_HEIGHT}px;
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(245,197,24,0.10);
+  }}
+  .card::after {{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+    z-index: 10;
+  }}
+  .header {{
+    padding: 9px 16px 7px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }}
+  .brand {{ display: flex; align-items: center; gap: 6px; }}
+  .brand-gem {{
+    width: 11px;
+    height: 11px;
+    background: var(--gold);
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  }}
+  .brand-name {{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--muted);
+  }}
+  .brand-name b {{ color: var(--gold); font-weight: 400; }}
+  .header-right {{ display: flex; align-items: center; gap: 8px; }}
+  .league-pill {{
+    background: var(--gold);
+    color: #000;
+    font-size: 7px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 2px;
+  }}
+  .date-text {{
+    font-size: 8px;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+  }}
+  .fixture-hero {{
+    padding: 7px 16px 6px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+    z-index: 2;
+    position: relative;
+    background: linear-gradient(180deg, rgba(245,197,24,0.03) 0%, transparent 100%);
+    text-align: center;
+  }}
+  .fixture-num {{
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: var(--gold);
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 2px;
+  }}
+  .teams-line {{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 2px;
+  }}
+  .team-badge {{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.22), rgba(255,255,255,0.04));
+    box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 45%, transparent);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(255,255,255,0.18);
+  }}
+  .team-badge-img {{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }}
+  .media-fallback {{
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, #121726), #0b1020);
+    color: #ffffff;
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    font-weight: 700;
+  }}
+  .teams-name {{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    color: var(--text);
+    line-height: 1;
+  }}
+  .teams-name .vs {{ color: var(--muted); font-size: 18px; margin: 0 4px; }}
+  .kickoff-label {{
+    font-size: 8.5px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: var(--muted);
+    text-transform: uppercase;
+  }}
+  .kickoff-label span {{ color: var(--gold); }}
+  .dots {{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px 0 3px;
+    flex-shrink: 0;
+    z-index: 2;
+    position: relative;
+  }}
+  .dot {{
+    height: 2px;
+    width: 14px;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.1);
+  }}
+  .dot.active {{
+    background: var(--gold);
+    width: 22px;
+  }}
+  .body {{
+    flex: 1;
+    padding: 3px 8px 2px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }}
+  .section {{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }}
+  .section-head {{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 3px 1px;
+  }}
+  .section-title {{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }}
+  .section-rule {{
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }}
+  .rows-grid {{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px 4px;
+  }}
+  .stat-row {{
+    display: grid;
+    grid-template-columns: 18px minmax(0, 1fr) auto;
+    gap: 5px;
+    align-items: center;
+    min-height: 20px;
+    padding: 0 6px;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255,255,255,0.02);
+  }}
+  .bar-fill {{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 2px;
+    pointer-events: none;
+  }}
+  .row-icon {{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(255,255,255,0.14);
+    flex-shrink: 0;
+  }}
+  .row-icon-img {{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }}
+  .stat-text {{
+    font-size: 9.5px;
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+  }}
+  .stat-text .mkt {{
+    font-weight: 400;
+    color: var(--muted);
+    font-size: 9px;
+  }}
+  .stat-val {{
+    font-family: 'DM Mono', monospace;
+    font-size: 9.5px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+    padding-left: 3px;
+    flex-shrink: 0;
+  }}
+  .won-label {{
+    font-size: 7px;
+    color: var(--muted);
+    font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-right: 1px;
+  }}
+  .footer {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 16px 8px;
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
+    z-index: 2;
+    position: relative;
+  }}
+  .footer-left {{
+    font-size: 6.5px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: var(--muted);
+    text-transform: uppercase;
+    line-height: 1.6;
+    opacity: 0.6;
+  }}
+  .footer-handle {{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--gold);
+  }}
+  .card.density-dense .stat-row {{
+    min-height: 18px;
+    padding: 0 5px;
+    gap: 4px;
+  }}
+  .card.density-dense .stat-text {{
+    font-size: 8.7px;
+  }}
+  .card.density-dense .stat-text .mkt {{
+    font-size: 8.2px;
+  }}
+  .card.density-dense .stat-val {{
+    font-size: 8.8px;
+  }}
+  .card.density-dense .row-icon {{
+    width: 15px;
+    height: 15px;
+  }}
+  .card.density-xdense .stat-row {{
+    min-height: 17px;
+    padding: 0 5px;
+    gap: 3px;
+  }}
+  .card.density-xdense .stat-text {{
+    font-size: 8.1px;
+  }}
+  .card.density-xdense .stat-text .mkt {{
+    font-size: 7.7px;
+  }}
+  .card.density-xdense .stat-val {{
+    font-size: 8.1px;
+  }}
+  .card.density-xdense .row-icon {{
+    width: 14px;
+    height: 14px;
+  }}
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="scale">
+    <div class="card density-{_html_escape(density)}">
+      <div class="header">
+        <div class="brand">
+          <div class="brand-gem"></div>
+          <div class="brand-name">THE <b>ODDS</b> ANALYST</div>
+        </div>
+        <div class="header-right">
+          <div class="league-pill">Premier League</div>
+          <div class="date-text">{_html_escape(slide.get("date_badge") or manifest.get("scheduled_for") or "")}</div>
+        </div>
+      </div>
+      <div class="fixture-hero">
+        <div class="fixture-num">Fixture {int(slide.get("fixture_index") or 1)} / {int(slide.get("fixture_count") or 1)}</div>
+        <div class="teams-line">
+          {_render_rich_team_badge(home_team)}
+          <div class="teams-name">{_html_escape(home_team.get("display_name"))} <span class="vs">vs</span> {_html_escape(away_team.get("display_name"))}</div>
+          {_render_rich_team_badge(away_team)}
+        </div>
+        <div class="kickoff-label">Kickoff <span>{_html_escape(slide.get("kickoff_label"))}</span></div>
+      </div>
+      <div class="dots">{_slide_dots(slide)}</div>
+      <div class="body">{sections_html}</div>
+      <div class="footer">
+        <div class="footer-left">Bet365 odds · current at build time<br>Starter-only hit rate</div>
+        <div class="footer-handle">@Odds_Analyst</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const waitFonts = Promise.resolve(document.fonts && document.fonts.ready ? document.fonts.ready : null)
+    .catch(() => null);
+  const waitImages = Promise.all(
+    Array.from(document.images || []).map((img) => {{
+      if (img.complete) return Promise.resolve();
+      return new Promise((resolve) => {{
+        img.addEventListener('load', resolve, {{ once: true }});
+        img.addEventListener('error', resolve, {{ once: true }});
+      }});
+    }})
+  ).catch(() => null);
+  Promise.all([waitFonts, waitImages]).finally(() => document.body.classList.add('ready'));
+</script>
+</body>
+</html>
+"""
+
+
 def _build_slide_markup(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
     slide_type = slide.get("slide_type")
     if slide_type == "cover":
@@ -414,6 +947,8 @@ def _build_slide_markup(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
 
 def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
     title = f"{manifest.get('post_type')} slide {slide.get('slide_number')}"
+    if manifest.get("variant") == "by_fixture_rich_prototype":
+        return _render_rich_slide(title, manifest, slide)
     card_markup = _build_slide_markup(manifest, slide)
     return f"""<!DOCTYPE html>
 <html lang="en">

@@ -6,6 +6,7 @@ on:
       - ".github/workflows/send_instagram_by_fixture_prototype.yml"
       - "src/posting/send_instagram_by_fixture_prototype.py"
       - "src/instagram/by_fixture_manifest.py"
+      - "src/instagram/assets.py"
       - "src/instagram/renderer.py"
   workflow_dispatch:
     inputs:
@@ -70,6 +71,7 @@ jobs:
         run: python -m src.posting.send_instagram_by_fixture_prototype --slot "$SLOT" $DATE_ARG
         env:
           SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           ODDS_ANALYST_X_POST_BOT_TOKEN: ${{ secrets.ODDS_ANALYST_X_POST_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -79,4 +81,5 @@ jobs:
           CLOUDFLARE_R2_PUBLIC_URL: ${{ secrets.CLOUDFLARE_R2_PUBLIC_URL }}
           CLOUDFLARE_R2_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_R2_ACCOUNT_ID }}
           S3_API_ENDPOINT: ${{ secrets.S3_API_ENDPOINT }}
+          SPORTMONKS_API_TOKEN: ${{ secrets.SPORTMONKS_API_TOKEN }}
           PROP_SHEET_TIMEZONE: ${{ vars.PROP_SHEET_TIMEZONE || 'Europe/London' }}
