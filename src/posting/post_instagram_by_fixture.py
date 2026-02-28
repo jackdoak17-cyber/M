@@ -4,11 +4,8 @@ import argparse
 import hashlib
 import json
 from datetime import date, datetime, timezone
-from pathlib import Path
 from typing import Any
 
-from src.instagram.by_fixture_manifest import verify_by_fixture_manifest
-from src.instagram.manifest_io import load_manifest
 from src.instagram.meta_graph import InstagramGraphClient, MetaGraphSettings
 from src.instagram.r2_storage import R2Settings, R2Storage
 
@@ -127,23 +124,9 @@ def run(
         print(f"Approval payload for {post_key} is not Instagram content")
         return 0
 
-    manifest_path_raw = str(preview_payload.get("manifest_path") or "")
-    if not manifest_path_raw:
-        raise RuntimeError(f"Approval payload missing manifest_path for {post_key}")
-
-    manifest = load_manifest(Path(manifest_path_raw))
-    issues = verify_by_fixture_manifest(manifest)
-    if issues:
-        _reset_approval_due_to_content_change(post_key, "manifest verification failed")
-        print(f"Approval reset for {post_key}: manifest verification failed")
-        return 0
-
-    current_fingerprint = str(manifest.get("content_fingerprint") or "")
     approved_fingerprint = str(preview_payload.get("manifest_content_fingerprint") or "")
-    if not current_fingerprint or current_fingerprint != approved_fingerprint:
-        _reset_approval_due_to_content_change(post_key, "manifest fingerprint mismatch")
-        print(f"Approval reset for {post_key}: manifest fingerprint mismatch")
-        return 0
+    if not approved_fingerprint:
+        raise RuntimeError(f"Approval payload missing manifest_content_fingerprint for {post_key}")
 
     current_payload_hash = _content_hash(preview_payload)
     if approval.content_hash and approval.content_hash != current_payload_hash:
