@@ -8,8 +8,6 @@ on:
     - cron: "30 12 * * *"
     - cron: "30 14 * * *"
     - cron: "15 12 * * 2"
-    - cron: "0 11 * * 6"
-    - cron: "0 11 * * 0"
     - cron: "0 17 * * 5"
     - cron: "0 18 * * 5"
     - cron: "15 8 * * 6"
@@ -30,8 +28,6 @@ on:
           - weekday_fixture
           - weekday_player
           - polymarket_weekly
-          - odds_movement_saturday
-          - odds_movement_sunday
           - shot_props_value
           - shot_props_high_prob
       dry_run:
@@ -91,8 +87,6 @@ jobs:
               "30 12 * * *") SLOT="weekday_fixture" ;;
               "30 14 * * *") SLOT="weekday_player" ;;
               "15 12 * * 2") SLOT="polymarket_weekly" ;;
-              "0 11 * * 6") SLOT="odds_movement_saturday" ;;
-              "0 11 * * 0") SLOT="odds_movement_sunday" ;;
               "0 17 * * 5") SLOT="shot_props_value" ;;
               "0 18 * * 5") SLOT="shot_props_value" ;;
               "15 8 * * 6") SLOT="shot_props_high_prob" ;;
