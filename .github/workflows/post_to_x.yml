@@ -3,7 +3,7 @@ name: Post to X
 on:
   schedule:
     - cron: "0 9 * * *"
-    - cron: "45 10 * * *"
+    - cron: "0 10 * * *"
     - cron: "0 11 * * *"
     - cron: "30 12 * * *"
     - cron: "30 14 * * *"
@@ -86,7 +86,7 @@ jobs:
           else
             case "${{ github.event.schedule }}" in
               "0 9 * * *") SLOT="weekend_fixture" ;;
-              "45 10 * * *") SLOT="weekend_player_100" ;;
+              "0 10 * * *") SLOT="weekend_player_100" ;;
               "0 11 * * *") SLOT="weekend_player_80" ;;
               "30 12 * * *") SLOT="weekday_fixture" ;;
               "30 14 * * *") SLOT="weekday_player" ;;
