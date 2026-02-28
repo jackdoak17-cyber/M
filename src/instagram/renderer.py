@@ -480,6 +480,37 @@ def _render_rich_row_icon(row: dict[str, Any], accent_color: str) -> str:
     )
 
 
+def _render_rich_row_face(row: dict[str, Any], accent_color: str) -> str:
+    assets = dict(row.get("assets") or {})
+    is_team_row = str(row.get("subject_type") or "") == "team"
+    src = (
+        _asset_src(assets, "team_badge_uri", "team_badge_url")
+        if is_team_row
+        else _asset_src(assets, "player_face_uri", "player_face_url", "team_badge_uri", "team_badge_url")
+    )
+    fallback = row.get("subject_display") or row.get("subject_name")
+    return _render_media(
+        src=src,
+        fallback_text=_initials(fallback),
+        accent_color=accent_color,
+        class_name="row-face",
+        img_class="row-face-img",
+    )
+
+
+def _render_rich_row_badge(row: dict[str, Any], accent_color: str) -> str:
+    assets = dict(row.get("assets") or {})
+    src = _asset_src(assets, "team_badge_uri", "team_badge_url")
+    fallback = row.get("team_name") or row.get("subject_display") or row.get("subject_name")
+    return _render_media(
+        src=src,
+        fallback_text=_initials(fallback),
+        accent_color=accent_color,
+        class_name="row-badge",
+        img_class="row-badge-img",
+    )
+
+
 def _render_rich_section(section: dict[str, Any]) -> str:
     color = str(section.get("color") or "#F5C518")
     rows = list(section.get("rows") or [])
@@ -496,16 +527,19 @@ def _render_rich_section(section: dict[str, Any]) -> str:
             bar_opacity = 0.07
         market_display = str(row.get("market_display") or "").strip()
         subject_display = str(row.get("subject_display") or "")
+        record_display = str(row.get("record") or "")
         rows_markup.append(
             f"""
             <div class="stat-row">
               <div class="bar-fill" style="background:{_html_escape(_hex_to_rgba(color, bar_opacity))};width:{int(row.get('bar_pct') or 0)}%"></div>
-              {_render_rich_row_icon(row, color)}
-              <div class="stat-copy">
-                <div class="subject-line">{_html_escape(subject_display)}</div>
-                <div class="market-line">{_html_escape(market_display)}</div>
+              {_render_rich_row_face(row, color)}
+              <div class="stat-player">{_html_escape(subject_display)}</div>
+              {_render_rich_row_badge(row, color)}
+              <div class="stat-market">{_html_escape(market_display)}</div>
+              <div class="stat-record" style="border-color:{_html_escape(_hex_to_rgba(color, 0.28))};background:{_html_escape(_hex_to_rgba(color, 0.12))}">
+                <span class="stat-record-label">won in</span>
+                <span class="stat-record-value" style="color:{_html_escape(color)}">{_html_escape(record_display)}</span>
               </div>
-              <div class="stat-val" style="color:{_html_escape(color)};background:{_html_escape(_hex_to_rgba(color, 0.14))};border-color:{_html_escape(_hex_to_rgba(color, 0.28))}">{_html_escape(row.get("record"))}</div>
             </div>
             """
         )
@@ -760,8 +794,8 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
   }}
   .stat-row {{
     display: grid;
-    grid-template-columns: 18px minmax(0, 1fr) auto;
-    gap: 6px;
+    grid-template-columns: 18px minmax(0, 1.25fr) 14px minmax(0, 1fr) auto;
+    gap: 5px;
     align-items: center;
     min-height: 0;
     padding: 3px 6px;
@@ -778,10 +812,8 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     border-radius: 2px;
     pointer-events: none;
   }}
-  .row-icon {{
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
+  .row-face,
+  .row-badge {{
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -791,52 +823,70 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     border: 1px solid rgba(255,255,255,0.14);
     flex-shrink: 0;
   }}
-  .row-icon-img {{
+  .row-face {{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+  }}
+  .row-badge {{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.03);
+  }}
+  .row-face-img,
+  .row-badge-img {{
     width: 100%;
     height: 100%;
     object-fit: cover;
   }}
-  .stat-copy {{
+  .stat-player {{
     min-width: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1px;
     position: relative;
     z-index: 1;
-  }}
-  .subject-line {{
-    font-size: 6.6px;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    color: #a7b0cb;
+    font-size: 8.3px;
+    font-weight: 700;
+    color: #f2f4fa;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1;
   }}
-  .market-line {{
-    font-size: 10.4px;
+  .stat-market {{
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 9.2px;
     font-weight: 700;
     color: #ffffff;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1.02;
+    line-height: 1;
   }}
-  .stat-val {{
+  .stat-record {{
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
     font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-    white-space: nowrap;
     position: relative;
     z-index: 1;
-    padding: 3px 5px;
-    flex-shrink: 0;
     border: 1px solid transparent;
     border-radius: 999px;
+    padding: 2px 5px;
+    white-space: nowrap;
     justify-self: end;
+  }}
+  .stat-record-label {{
+    font-size: 6px;
+    font-weight: 500;
+    color: #9ea8c6;
+    letter-spacing: 0.02em;
+  }}
+  .stat-record-value {{
+    font-size: 8.3px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
   }}
   .footer {{
     display: flex;
@@ -868,38 +918,58 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     padding: 2px 5px;
     gap: 4px;
   }}
-  .card.density-dense .subject-line {{
-    font-size: 6.1px;
+  .card.density-dense .stat-player {{
+    font-size: 7.7px;
   }}
-  .card.density-dense .market-line {{
-    font-size: 9.5px;
+  .card.density-dense .stat-market {{
+    font-size: 8.6px;
   }}
-  .card.density-dense .stat-val {{
-    font-size: 8.5px;
-    padding: 2px 5px;
+  .card.density-dense .stat-record {{
+    gap: 2px;
+    padding: 2px 4px;
   }}
-  .card.density-dense .row-icon {{
+  .card.density-dense .stat-record-label {{
+    font-size: 5.6px;
+  }}
+  .card.density-dense .stat-record-value {{
+    font-size: 7.7px;
+  }}
+  .card.density-dense .row-face {{
     width: 15px;
     height: 15px;
+  }}
+  .card.density-dense .row-badge {{
+    width: 12px;
+    height: 12px;
   }}
   .card.density-xdense .stat-row {{
     min-height: 0;
     padding: 2px 4px;
     gap: 3px;
   }}
-  .card.density-xdense .subject-line {{
-    font-size: 5.8px;
+  .card.density-xdense .stat-player {{
+    font-size: 7px;
   }}
-  .card.density-xdense .market-line {{
-    font-size: 8.8px;
+  .card.density-xdense .stat-market {{
+    font-size: 7.8px;
   }}
-  .card.density-xdense .stat-val {{
-    font-size: 7.9px;
+  .card.density-xdense .stat-record {{
+    gap: 2px;
     padding: 2px 4px;
   }}
-  .card.density-xdense .row-icon {{
+  .card.density-xdense .stat-record-label {{
+    font-size: 5.2px;
+  }}
+  .card.density-xdense .stat-record-value {{
+    font-size: 7.1px;
+  }}
+  .card.density-xdense .row-face {{
     width: 14px;
     height: 14px;
+  }}
+  .card.density-xdense .row-badge {{
+    width: 11px;
+    height: 11px;
   }}
 </style>
 </head>
