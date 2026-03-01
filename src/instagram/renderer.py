@@ -580,34 +580,38 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{_html_escape(markup_title)}</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {{
-    --bg: #080b14;
-    --border: rgba(255,255,255,0.07);
-    --gold: #F5C518;
-    --text: #e8eaf0;
-    --muted: #4a5470;
+    --bg: #0b0f14;
+    --surface: #0f1620;
+    --surface-elevated: #141c27;
+    --border: #1f2a37;
+    --gold: #f5a524;
+    --brand-orange: #ef6a29;
+    --text: #f8fafc;
+    --muted: #94a3b8;
   }}
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
   html, body {{
     width: {CARD_WIDTH}px;
     height: {CARD_HEIGHT}px;
     overflow: hidden;
-    background: #040609;
+    background: #070b11;
   }}
   body {{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-variant-numeric: tabular-nums;
   }}
   body.ready::after {{ content: ''; }}
   .canvas {{
     width: {CARD_WIDTH}px;
     height: {CARD_HEIGHT}px;
     overflow: hidden;
-    background: #040609;
+    background: #070b11;
   }}
   .scale {{
     width: {CARD_BASE_WIDTH}px;
@@ -623,7 +627,8 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(245,197,24,0.10);
+    border: 1px solid var(--border);
+    box-shadow: 0 16px 40px rgba(3, 7, 18, 0.42);
   }}
   .card::after {{
     content: '';
@@ -632,8 +637,18 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+    background: linear-gradient(90deg, transparent, var(--brand-orange) 12%, var(--gold) 46%, var(--brand-orange) 88%, transparent);
     z-index: 10;
+  }}
+  .card::before {{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at top left, rgba(245,165,36,0.06), transparent 34%),
+      radial-gradient(circle at top right, rgba(239,106,41,0.08), transparent 32%);
+    pointer-events: none;
+    z-index: 0;
   }}
   .header {{
     padding: 8px 15px 6px;
@@ -644,36 +659,49 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(180deg, rgba(20,28,39,0.96), rgba(11,15,20,0.92));
   }}
   .brand {{ display: flex; align-items: center; gap: 6px; }}
-  .brand-gem {{
-    width: 11px;
-    height: 11px;
-    background: var(--gold);
-    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  .brand-mark {{
+    width: 13px;
+    height: 13px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, var(--gold), var(--brand-orange));
+    box-shadow: 0 0 14px rgba(245,165,36,0.22);
+    position: relative;
+    transform: rotate(12deg);
+  }}
+  .brand-mark::after {{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 2px;
+    background: rgba(11,15,20,0.72);
   }}
   .brand-name {{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 12px;
-    letter-spacing: 3px;
-    color: var(--muted);
+    font-family: 'Sora', sans-serif;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: var(--text);
+    text-transform: uppercase;
   }}
-  .brand-name b {{ color: var(--gold); font-weight: 400; }}
   .header-right {{ display: flex; align-items: center; gap: 8px; }}
   .league-pill {{
-    background: var(--gold);
-    color: #000;
+    background: linear-gradient(135deg, var(--gold), #f2a10f);
+    color: #081018;
     font-size: 7px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
-    padding: 2px 7px;
-    border-radius: 2px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    box-shadow: 0 6px 14px rgba(245,165,36,0.18);
   }}
   .date-text {{
-    font-size: 8px;
+    font-size: 7.8px;
     color: var(--muted);
-    font-family: 'DM Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
   }}
   .fixture-hero {{
     padding: 6px 16px 5px;
@@ -681,17 +709,18 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     flex-shrink: 0;
     z-index: 2;
     position: relative;
-    background: linear-gradient(180deg, rgba(245,197,24,0.03) 0%, transparent 100%);
+    background: linear-gradient(180deg, rgba(20,28,39,0.96) 0%, rgba(11,15,20,0.88) 100%);
     text-align: center;
   }}
   .fixture-num {{
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 7px;
-    font-weight: 700;
-    letter-spacing: 2.5px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
     color: var(--gold);
     text-transform: uppercase;
-    opacity: 0.6;
-    margin-bottom: 1px;
+    opacity: 0.82;
+    margin-bottom: 2px;
   }}
   .teams-line {{
     display: flex;
@@ -726,17 +755,28 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     font-weight: 700;
   }}
   .teams-name {{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 26px;
-    letter-spacing: 1.5px;
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
     color: var(--text);
-    line-height: 1;
+    line-height: 1.05;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }}
-  .teams-name .vs {{ color: var(--muted); font-size: 18px; margin: 0 4px; }}
+  .teams-name .vs {{
+    color: rgba(148,163,184,0.88);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    margin: 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }}
   .kickoff-label {{
-    font-size: 8.5px;
-    font-weight: 600;
-    letter-spacing: 0.8px;
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
     color: var(--muted);
     text-transform: uppercase;
   }}
@@ -754,13 +794,13 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     height: 3px;
     width: 18px;
     border-radius: 999px;
-    background: rgba(255,255,255,0.22);
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+    background: rgba(148,163,184,0.28);
+    box-shadow: inset 0 0 0 1px rgba(148,163,184,0.12);
   }}
   .dot.active {{
-    background: var(--gold);
+    background: linear-gradient(90deg, var(--brand-orange), var(--gold));
     width: 28px;
-    box-shadow: 0 0 10px rgba(245,197,24,0.42);
+    box-shadow: 0 0 12px rgba(245,165,36,0.32);
   }}
   .body {{
     flex: 1;
@@ -785,13 +825,14 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     align-items: center;
     gap: 6px;
     padding: 0 4px 1px;
-    background: linear-gradient(90deg, var(--section-surface-strong), rgba(8,11,20,0));
+    background: linear-gradient(90deg, var(--section-surface-strong), rgba(11,15,20,0));
     border-radius: 2px;
   }}
   .section-title {{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 10px;
-    letter-spacing: 2px;
+    font-family: 'Sora', sans-serif;
+    font-size: 8.3px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     white-space: nowrap;
     color: var(--section-color);
@@ -821,7 +862,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     border-radius: 2px;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(90deg, var(--section-surface), rgba(255,255,255,0.02) 72%);
+    background: linear-gradient(90deg, color-mix(in srgb, var(--section-surface) 92%, var(--surface-elevated)), rgba(20,28,39,0.72) 72%);
     border: 1px solid var(--section-border);
   }}
   .stat-row::before {{
@@ -882,9 +923,9 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     min-width: 0;
     position: relative;
     z-index: 1;
-    font-size: 10.5px;
+    font-size: 10.7px;
     font-weight: 700;
-    color: #f2f4fa;
+    color: var(--text);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -895,7 +936,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     min-width: 0;
     position: relative;
     z-index: 1;
-    font-size: 10.7px;
+    font-size: 10.9px;
     font-weight: 700;
     color: #ffffff;
     white-space: nowrap;
@@ -905,13 +946,13 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     text-shadow: 0 1px 0 rgba(0,0,0,0.38);
   }}
   .stat-market-tight {{
-    font-size: 9.8px;
+    font-size: 9.9px;
   }}
   .stat-record {{
     display: inline-flex;
     align-items: center;
     gap: 3px;
-    font-family: 'DM Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     position: relative;
     z-index: 1;
     border: 1px solid var(--section-pill-border);
@@ -942,21 +983,24 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     flex-shrink: 0;
     z-index: 2;
     position: relative;
+    background: linear-gradient(180deg, rgba(11,15,20,0.78), rgba(15,22,32,0.96));
   }}
   .footer-left {{
-    font-size: 7px;
+    font-size: 7.2px;
     font-weight: 600;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.07em;
     color: var(--muted);
     text-transform: uppercase;
     line-height: 1.3;
-    opacity: 0.8;
+    opacity: 0.92;
   }}
   .footer-handle {{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-family: 'Sora', sans-serif;
+    font-size: 10.8px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
     color: var(--gold);
+    text-transform: uppercase;
   }}
   .card.density-dense .stat-row {{
     min-height: 0;
@@ -1030,8 +1074,8 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     <div class="card density-{_html_escape(density)}">
       <div class="header">
         <div class="brand">
-          <div class="brand-gem"></div>
-          <div class="brand-name">THE <b>ODDS</b> ANALYST</div>
+          <div class="brand-mark"></div>
+          <div class="brand-name">Odds Searcher</div>
         </div>
         <div class="header-right">
           <div class="league-pill">Premier League</div>
@@ -1051,7 +1095,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
       <div class="body">{sections_html}</div>
       <div class="footer">
         <div class="footer-left">Recent form snapshot · starter-only hit rate</div>
-        <div class="footer-handle">@Odds_Analyst</div>
+        <div class="footer-handle">oddssearch.io</div>
       </div>
     </div>
   </div>
