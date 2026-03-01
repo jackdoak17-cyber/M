@@ -793,16 +793,19 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     position: relative;
   }}
   .dot {{
-    height: 3px;
-    width: 18px;
+    height: 4px;
+    width: 20px;
     border-radius: 999px;
-    background: rgba(148,163,184,0.28);
-    box-shadow: inset 0 0 0 1px rgba(148,163,184,0.12);
+    background: rgba(148,163,184,0.34);
+    box-shadow: inset 0 0 0 1px rgba(148,163,184,0.18);
   }}
   .dot.active {{
     background: linear-gradient(90deg, var(--brand-orange), var(--gold));
-    width: 28px;
-    box-shadow: 0 0 12px rgba(245,165,36,0.32);
+    width: 36px;
+    box-shadow:
+      0 0 0 1px rgba(245,165,36,0.32),
+      0 0 16px rgba(245,165,36,0.42),
+      0 0 28px rgba(239,106,41,0.18);
   }}
   .body {{
     flex: 1;
@@ -856,7 +859,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
   }}
   .stat-row {{
     display: grid;
-    grid-template-columns: 24px minmax(0, 1.10fr) 16px minmax(0, 1.34fr) auto;
+    grid-template-columns: 27px minmax(0, 1.08fr) 16px minmax(0, 1.32fr) auto;
     gap: 4px;
     align-items: center;
     min-height: 0;
@@ -898,8 +901,8 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     flex-shrink: 0;
   }}
   .row-face {{
-    width: 24px;
-    height: 24px;
+    width: 27px;
+    height: 27px;
     border-radius: 50%;
   }}
   .row-badge {{
@@ -1029,8 +1032,8 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     font-size: 8.3px;
   }}
   .card.density-dense .row-face {{
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
   }}
   .card.density-dense .row-badge {{
     width: 14px;
@@ -1061,8 +1064,8 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     font-size: 7.8px;
   }}
   .card.density-xdense .row-face {{
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
   }}
   .card.density-xdense .row-badge {{
     width: 13px;
