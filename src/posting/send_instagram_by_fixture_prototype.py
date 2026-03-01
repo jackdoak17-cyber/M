@@ -4,7 +4,7 @@ import argparse
 import hashlib
 import json
 import os
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -123,6 +123,18 @@ def _write_delivery_report(path: Path, payload: dict[str, Any]) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+def _resolve_recent_content(slot: str, scheduled_for: date) -> tuple[date, Any]:
+    info = resolve_content(slot, scheduled_for)
+    if info is not None:
+        return scheduled_for, info
+    for days_back in range(1, 8):
+        candidate = scheduled_for - timedelta(days=days_back)
+        info = resolve_content(slot, candidate)
+        if info is not None:
+            return candidate, info
+    raise RuntimeError(f"No content resolved for slot={slot} near date={scheduled_for.isoformat()}")
+
+
 def run(
     *,
     slot: str,
@@ -130,15 +142,14 @@ def run(
     image_ext: str = "png",
     playwright_channel: str | None = None,
 ) -> int:
-    scheduled_for = (
-        date.fromisoformat(target_date)
-        if target_date
-        else resolve_target_date("preview", slot=slot)
-    )
+    if target_date:
+        scheduled_for = date.fromisoformat(target_date)
+        info = resolve_content(slot, scheduled_for)
+        if info is None:
+            raise RuntimeError(f"No content resolved for slot={slot} date={scheduled_for.isoformat()}")
+    else:
+        scheduled_for, info = _resolve_recent_content(slot, resolve_target_date("preview", slot=slot))
     scheduled_str = scheduled_for.isoformat()
-    info = resolve_content(slot, scheduled_for)
-    if info is None:
-        raise RuntimeError(f"No content resolved for slot={slot} date={scheduled_str}")
 
     manifest = build_by_fixture_manifest(
         content_path=info.path,
