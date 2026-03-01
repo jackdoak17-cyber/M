@@ -1,0 +1,601 @@
+{
+  "date": "2026-03-01",
+  "generated_at": "2026-03-01T07:43:53.201147",
+  "picks_count": 4,
+  "picks": [
+    {
+      "player_id": 21803033,
+      "player_name": "Azzedine Ounahi",
+      "team_id": 231,
+      "team_name": "Girona",
+      "opponent_id": 36,
+      "opponent_name": "Celta de Vigo",
+      "fixture_id": 19439502,
+      "fixture_date": "2026-03-01T20:00:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": true,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "2+ shots",
+      "threshold": 2,
+      "baseline": {
+        "weighted_per90": 3.859395213967905,
+        "simple_avg": 2.0,
+        "last_5_avg": 2.4,
+        "sample_size": 11,
+        "hit_rates": {
+          "1+": 10,
+          "2+": 8,
+          "3+": 3,
+          "4+": 1
+        },
+        "home_avg": 2.2,
+        "away_avg": 1.8333333333333333,
+        "home_games": 5,
+        "away_games": 6,
+        "std_dev": 1.0954451150103321,
+        "coeff_of_variation": 0.5477225575051661,
+        "avg_minutes": 73.27272727272727,
+        "min_minutes": 22.0,
+        "times_subbed_early": 2,
+        "raw_values": [
+          2.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          2.0,
+          2.0,
+          3.0,
+          2.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          22.0,
+          90.0,
+          83.0,
+          82.0,
+          71.0,
+          90.0,
+          31.0,
+          90.0,
+          90.0,
+          75.0,
+          82.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 11.0,
+        "league_avg": 12.591503267973856,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 5,
+        "avg_vs_similar": 2.0,
+        "hitrate_vs_similar": 60.0,
+        "similar_teams_examples": [
+          "Celta de Vigo",
+          "Deportivo Alavés",
+          "FC Barcelona"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 3.86,
+        "adjusted_projection": 2.23,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9241629898780171,
+            "concedes": 11.0,
+            "league_avg": 12.591503267973856,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.05,
+            "venue_avg": 2.2,
+            "overall_avg": 2.0,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.814141414141414,
+            "avg_minutes": 73.27272727272727,
+            "times_subbed_early": 2,
+            "sample_size": 11
+          },
+          "game_state": {
+            "multiplier": 0.95
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.751
+      },
+      "confidence": {
+        "score": 75,
+        "tier": "STRONG"
+      },
+      "probability": 0.6527,
+      "edge": {
+        "our_probability": 0.6527,
+        "implied_probability": 0.5,
+        "probability_edge": 0.1527,
+        "fair_odds": 1.53,
+        "bookmaker_odds": 2.0,
+        "expected_value": 0.3054,
+        "edge_percentage": 30.54,
+        "kelly_quarter": 0.0763,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.0,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 61.24,
+      "rank": 1,
+      "writeup": "🎯 Azzedine Ounahi (Girona) 2+ shots vs Celta de Vigo (La Liga)\nThe Girona midfielder is averaging 3.86 shots per 90 this season and has hit 2+ shots in 4 of his last 5 matches. He's recorded 8 of his last 11 games with 2+ shots overall. Against teams like Celta de Vigo, Deportivo Alavés, and FC Barcelona, he's managed 2+ shots in 3 of 5 encounters.\n📊 8/11 (73%)\n💰 Kambi 2.0",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 22136638,
+      "player_name": "Sven Mijnans",
+      "team_id": 61,
+      "team_name": "AZ",
+      "opponent_id": 750,
+      "opponent_name": "FC Utrecht",
+      "fixture_id": 19429409,
+      "fixture_date": "2026-03-01T15:45:00+00:00",
+      "league_id": 72,
+      "league_name": "Eredivisie",
+      "is_home": false,
+      "stat_type_id": 86,
+      "stat_type_label": "shots_on_target",
+      "market_label": "1+ shots on target",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.787829214605832,
+        "simple_avg": 1.2,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 6,
+          "3+": 2,
+          "4+": 0
+        },
+        "home_avg": 1.222222222222222,
+        "away_avg": 1.1818181818181819,
+        "home_games": 9,
+        "away_games": 11,
+        "std_dev": 0.8944271909999159,
+        "coeff_of_variation": 0.7453559924999299,
+        "avg_minutes": 74.8,
+        "min_minutes": 30.0,
+        "times_subbed_early": 5,
+        "raw_values": [
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          2.0,
+          1.0,
+          2.0,
+          0.0,
+          1.0,
+          0.0,
+          3.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          30.0,
+          33.0,
+          43.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          71.0,
+          79.0,
+          30.0,
+          46.0,
+          84.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 4.357142857142857,
+        "league_avg": 5.213178294573644,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 7,
+        "avg_vs_similar": 1.5714285714285714,
+        "hitrate_vs_similar": 85.7,
+        "similar_teams_examples": [
+          "FC Twente",
+          "FC Utrecht",
+          "FC Volendam"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.79,
+        "adjusted_projection": 1.07,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9042131350681536,
+            "concedes": 4.357142857142857,
+            "league_avg": 5.213178294573644,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.9895833333333334,
+            "venue_avg": 1.1818181818181819,
+            "overall_avg": 1.2,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.8311111111111111,
+            "avg_minutes": 74.8,
+            "times_subbed_early": 5,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 0.96
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.714
+      },
+      "confidence": {
+        "score": 67,
+        "tier": "STRONG"
+      },
+      "probability": 0.657,
+      "edge": {
+        "our_probability": 0.657,
+        "implied_probability": 0.4878,
+        "probability_edge": 0.1692,
+        "fair_odds": 1.52,
+        "bookmaker_odds": 2.05,
+        "expected_value": 0.3468,
+        "edge_percentage": 34.68,
+        "kelly_quarter": 0.0826,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.05,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 59.89,
+      "rank": 2,
+      "writeup": "🎯 Sven Mijnans (AZ) 1+ shots on target vs FC Utrecht (Eredivisie)\nMijnans is averaging 1.79 shots on target per 90 this season and has hit this line in 4 of his last 5 matches and 16 of his last 20 overall. Against teams like FC Twente, FC Utrecht, and FC Volendam, he's registered 1+ shots on target in 6 of 7 games (85.7%).\n📊 16/20 (80%)\n💰 Kambi 2.05",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 10966288,
+      "player_name": "Peer Koopmeiners",
+      "team_id": 61,
+      "team_name": "AZ",
+      "opponent_id": 750,
+      "opponent_name": "FC Utrecht",
+      "fixture_id": 19429409,
+      "fixture_date": "2026-03-01T15:45:00+00:00",
+      "league_id": 72,
+      "league_name": "Eredivisie",
+      "is_home": false,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "1+ shots",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.1614031317637583,
+        "simple_avg": 1.2,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 7,
+          "3+": 1,
+          "4+": 0
+        },
+        "home_avg": 1.1,
+        "away_avg": 1.3,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 0.8335087534664907,
+        "coeff_of_variation": 0.6945906278887423,
+        "avg_minutes": 77.75,
+        "min_minutes": 6.0,
+        "times_subbed_early": 4,
+        "raw_values": [
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          2.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          3.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          83.0,
+          90.0,
+          75.0,
+          90.0,
+          90.0,
+          46.0,
+          66.0,
+          19.0,
+          6.0,
+          90.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 13.142857142857142,
+        "league_avg": 14.077519379844961,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 7,
+        "avg_vs_similar": 0.8571428571428571,
+        "hitrate_vs_similar": 71.4,
+        "similar_teams_examples": [
+          "FC Twente",
+          "FC Utrecht",
+          "FC Volendam"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.16,
+        "adjusted_projection": 1.01,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9612701908957415,
+            "concedes": 13.142857142857142,
+            "league_avg": 14.077519379844961,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0555555555555556,
+            "venue_avg": 1.3,
+            "overall_avg": 1.2,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.8638888888888889,
+            "avg_minutes": 77.75,
+            "times_subbed_early": 4,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 0.95
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.833
+      },
+      "confidence": {
+        "score": 75,
+        "tier": "STRONG"
+      },
+      "probability": 0.6358,
+      "edge": {
+        "our_probability": 0.6358,
+        "implied_probability": 0.5556,
+        "probability_edge": 0.0802,
+        "fair_odds": 1.57,
+        "bookmaker_odds": 1.8,
+        "expected_value": 0.1444,
+        "edge_percentage": 14.44,
+        "kelly_quarter": 0.0451,
+        "rating": "STRONG"
+      },
+      "odds": 1.8,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 57.18,
+      "rank": 3,
+      "writeup": "🎯 Peer Koopmeiners (AZ) 1+ shots vs FC Utrecht (Eredivisie)\nKoopmeiners is averaging 1.16 shots per 90 this season and has recorded 1+ shots in 4 of his last 5 matches and 16 of his last 20 overall. He averages 1.30 shots per 90 in away fixtures compared to 1.10 at home. Against teams like FC Twente, FC Utrecht, and FC Volendam, he's hit this line in 71.4% of games (5 of 7).\n📊 16/20 (80%)\n💰 Kambi 1.8",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 537758,
+      "player_name": "Donyell Malen",
+      "team_id": 37,
+      "team_name": "Roma",
+      "opponent_id": 625,
+      "opponent_name": "Juventus",
+      "fixture_id": 19425147,
+      "fixture_date": "2026-03-01T19:45:00+00:00",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "is_home": true,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "4+ shots",
+      "threshold": 4,
+      "baseline": {
+        "weighted_per90": 5.478834254308496,
+        "simple_avg": 5.0,
+        "last_5_avg": 5.2,
+        "sample_size": 6,
+        "hit_rates": {
+          "1+": 6,
+          "2+": 6,
+          "3+": 6,
+          "4+": 5
+        },
+        "home_avg": 6.333333333333333,
+        "away_avg": 3.6666666666666665,
+        "home_games": 3,
+        "away_games": 3,
+        "std_dev": 1.6733200530681511,
+        "coeff_of_variation": 0.3346640106136302,
+        "avg_minutes": 80.16666666666667,
+        "min_minutes": 69.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          5.0,
+          3.0,
+          7.0,
+          4.0,
+          7.0,
+          4.0
+        ],
+        "raw_minutes": [
+          90.0,
+          72.0,
+          84.0,
+          90.0,
+          69.0,
+          76.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 9.6,
+        "league_avg": 12.540229885057471,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 3,
+        "avg_vs_similar": 5.0,
+        "hitrate_vs_similar": 66.7,
+        "similar_teams_examples": [
+          "Cagliari",
+          "Cremonese",
+          "Juventus"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 5.48,
+        "adjusted_projection": 3.58,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.8593217231897342,
+            "concedes": 9.6,
+            "league_avg": 12.540229885057471,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.1,
+            "venue_avg": 6.333333333333333,
+            "overall_avg": 5.0,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.8907407407407408,
+            "avg_minutes": 80.16666666666667,
+            "times_subbed_early": 1,
+            "sample_size": 6
+          },
+          "game_state": {
+            "multiplier": 0.95
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.8
+      },
+      "confidence": {
+        "score": 68,
+        "tier": "STRONG"
+      },
+      "probability": 0.4805,
+      "edge": {
+        "our_probability": 0.4805,
+        "implied_probability": 0.4,
+        "probability_edge": 0.0805,
+        "fair_odds": 2.08,
+        "bookmaker_odds": 2.5,
+        "expected_value": 0.2012,
+        "edge_percentage": 20.12,
+        "kelly_quarter": 0.0335,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.5,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 48.45,
+      "rank": 4,
+      "writeup": "🎯 Donyell Malen (Roma) 4+ shots vs Juventus (Serie A)\nHe's averaging 5.48 shots per 90 this season and has hit 4+ in 4 of his last 5 matches. At home, Malen averages 6.33 shots per 90 compared to just 3.67 away, showing a clear venue boost. Against teams like Cagliari, Cremonese, and Juventus, he's managed 4+ shots in 2 of 3 games (66.7%).\n📊 4/5 (80%)\n💰 Kambi 2.50",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
