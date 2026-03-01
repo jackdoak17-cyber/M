@@ -14,6 +14,7 @@ CARD_BASE_HEIGHT = 675
 CARD_WIDTH = 1080
 CARD_HEIGHT = 1350
 PLAYWRIGHT_PKG_DEFAULT = "playwright@1.52.0"
+ODDS_SEARCHER_LOGO_URL = "https://oddssearch.io/logo.svg"
 
 
 @dataclass(frozen=True)
@@ -81,6 +82,19 @@ def _slide_dots(slide: dict[str, Any]) -> str:
         klass = "dot active" if i == active else "dot"
         dots.append(f'<div class="{klass}"></div>')
     return "".join(dots)
+
+
+def _odds_searcher_logo_src() -> str:
+    repo_root = Path(__file__).resolve().parents[2]
+    home_root = repo_root.parent
+    candidates = (
+        repo_root / "assets" / "odds_searcher_logo.svg",
+        home_root / "statswebsite-web" / "public" / "logo.svg",
+    )
+    for path in candidates:
+        if path.exists():
+            return path.resolve().as_uri()
+    return ODDS_SEARCHER_LOGO_URL
 
 
 def _cover_featured_rows(manifest: dict[str, Any], limit: int = 8) -> list[dict[str, Any]]:
@@ -661,30 +675,18 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     justify-content: space-between;
     background: linear-gradient(180deg, rgba(20,28,39,0.96), rgba(11,15,20,0.92));
   }}
-  .brand {{ display: flex; align-items: center; gap: 6px; }}
-  .brand-mark {{
-    width: 13px;
-    height: 13px;
-    border-radius: 4px;
-    background: linear-gradient(135deg, var(--gold), var(--brand-orange));
-    box-shadow: 0 0 14px rgba(245,165,36,0.22);
-    position: relative;
-    transform: rotate(12deg);
+  .brand {{
+    display: flex;
+    align-items: center;
+    min-width: 0;
   }}
-  .brand-mark::after {{
-    content: '';
-    position: absolute;
-    inset: 3px;
-    border-radius: 2px;
-    background: rgba(11,15,20,0.72);
-  }}
-  .brand-name {{
-    font-family: 'Sora', sans-serif;
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    color: var(--text);
-    text-transform: uppercase;
+  .brand-logo {{
+    display: block;
+    width: auto;
+    height: 18px;
+    max-width: 138px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 14px rgba(245,165,36,0.08));
   }}
   .header-right {{ display: flex; align-items: center; gap: 8px; }}
   .league-pill {{
@@ -1074,8 +1076,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
     <div class="card density-{_html_escape(density)}">
       <div class="header">
         <div class="brand">
-          <div class="brand-mark"></div>
-          <div class="brand-name">Odds Searcher</div>
+          <img class="brand-logo" src="{_html_escape(_odds_searcher_logo_src())}" alt="Odds Searcher" />
         </div>
         <div class="header-right">
           <div class="league-pill">Premier League</div>
