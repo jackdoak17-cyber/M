@@ -25,9 +25,9 @@ CORNERS_RE = re.compile(r"^(?P<subject>.+?)\s+(?P<market>\d+\+\s+corners)$", re.
 SECTION_ORDER = ["shots", "fouls_committed", "fouls_won", "corners"]
 SECTION_META = {
     "shots": {"title": "Shots", "color": "#F5C518"},
-    "fouls_committed": {"title": "Fouls Committed", "color": "#FF8C54"},
-    "fouls_won": {"title": "Fouls Drawn", "color": "#54B0FF"},
-    "corners": {"title": "Corners", "color": "#A78BFA"},
+    "fouls_committed": {"title": "Fouls Committed", "color": "#FF9B4D"},
+    "fouls_won": {"title": "Fouls Drawn", "color": "#38C7C9"},
+    "corners": {"title": "Corners", "color": "#B28CFF"},
 }
 TEAM_ACCENTS = {
     "arsenal": "#EF0107",
@@ -263,7 +263,7 @@ def _subject_market_display(
         threshold_match = re.match(r"^(?P<threshold>\d+)\+", market)
         threshold = int(threshold_match.group("threshold")) if threshold_match else 1
         if section_key == "fouls_committed":
-            noun = "foul committed" if threshold == 1 else "fouls committed"
+            noun = "foul" if threshold == 1 else "fouls"
         else:
             noun = "foul drawn" if threshold == 1 else "fouls drawn"
         return subject, f"{threshold}+ {noun}"
