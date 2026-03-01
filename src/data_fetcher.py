@@ -218,13 +218,14 @@ def get_bet365_team_line(
           and participant_type = 'team'
           and participant_id = %s
           and market_key = %s
-          and selection_key = 'over'
+          and selection_key = any(%s)
           and bookmaker_id = %s
         order by last_updated_at desc
         limit 1;
     """
+    over_keys = ["over", "home_over", "away_over"]
     with db_cursor() as cur:
-        cur.execute(query, (fixture_id, team_id, market_key, bookmaker_id))
+        cur.execute(query, (fixture_id, team_id, market_key, over_keys, bookmaker_id))
         row = cur.fetchone()
     if not row:
         return None
