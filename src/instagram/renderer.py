@@ -693,8 +693,8 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
   .brand-logo {{
     display: block;
     width: auto;
-    height: 18px;
-    max-width: 138px;
+    height: 24px;
+    max-width: 176px;
     object-fit: contain;
     filter: drop-shadow(0 0 14px rgba(245,165,36,0.08));
   }}
