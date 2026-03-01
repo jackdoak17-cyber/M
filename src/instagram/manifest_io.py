@@ -40,6 +40,18 @@ def resolve_shot_props_manifest_for_target(post_type: str, target_date: date) ->
     return InstagramManifestRef(post_type=post_type, scheduled_for=scheduled_for, path=path)
 
 
+def latest_shot_props_manifest_ref(post_type: str) -> InstagramManifestRef | None:
+    if post_type not in {"potential_value", "high_probability"}:
+        raise ValueError(f"Unsupported post_type: {post_type}")
+    suffix = "potential_value" if post_type == "potential_value" else "high_probability"
+    matches = sorted(SHOT_PROPS_INSTAGRAM_DIR.glob(f"*_{suffix}.json"))
+    if not matches:
+        return None
+    path = matches[-1]
+    scheduled_for = date.fromisoformat(path.name.split("_", 1)[0])
+    return InstagramManifestRef(post_type=post_type, scheduled_for=scheduled_for, path=path)
+
+
 def load_manifest(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -54,4 +66,3 @@ def manifest_summary(manifest: dict[str, Any]) -> str:
         f"slides={len(manifest.get('slides') or [])} rows={counts.get('total_rows', 0)} "
         f"({section_summary})"
     )
-

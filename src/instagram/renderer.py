@@ -595,6 +595,775 @@ def _render_rich_section(section: dict[str, Any]) -> str:
     """
 
 
+def _render_shot_props_row_face(row: dict[str, Any], accent_color: str = "#f5a524") -> str:
+    assets = dict(row.get("assets") or {})
+    src = _asset_src(assets, "player_face_uri", "player_face_url", "team_badge_uri", "team_badge_url")
+    return _render_media(
+        src=src,
+        fallback_text=_initials(row.get("player_name") or row.get("team_name")),
+        accent_color=accent_color,
+        class_name="sp-player-face",
+        img_class="sp-player-face-img",
+    )
+
+
+def _render_shot_props_row_badge(row: dict[str, Any], accent_color: str = "#f5a524") -> str:
+    assets = dict(row.get("assets") or {})
+    src = _asset_src(assets, "team_badge_uri", "team_badge_url")
+    return _render_media(
+        src=src,
+        fallback_text=_initials(row.get("team_name")),
+        accent_color=accent_color,
+        class_name="sp-player-badge",
+        img_class="sp-player-badge-img",
+    )
+
+
+def _render_shot_props_featured_rows(manifest: dict[str, Any], limit: int = 6) -> str:
+    rows = _cover_featured_rows(manifest, limit=limit)
+    if not rows:
+        return '<div class="sp-feature-empty">No rows</div>'
+    parts: list[str] = []
+    for row in rows:
+        display = dict(row.get("display") or {})
+        parts.append(
+            f"""
+            <div class="sp-feature-row">
+              {_render_shot_props_row_face(row)}
+              <div class="sp-feature-main">
+                <div class="sp-feature-name">{_html_escape(row.get("player_name"))}</div>
+                <div class="sp-feature-meta">
+                  {_render_shot_props_row_badge(row)}
+                  <span class="sp-feature-prop">{_html_escape(row.get("stat_label"))}</span>
+                  <span class="sp-feature-sep">·</span>
+                  <span class="sp-feature-fixture">{_html_escape(row.get("fixture_label"))}</span>
+                </div>
+              </div>
+              <div class="sp-hit-wrap">
+                <span class="sp-hit-label">won in</span>
+                <div class="sp-hit-pill">{_html_escape(display.get("rate"))}</div>
+              </div>
+              <div class="sp-odds-pill">{_html_escape(display.get("odds"))}</div>
+            </div>
+            """
+        )
+    return "".join(parts)
+
+
+def _render_shot_props_cover_counts(manifest: dict[str, Any]) -> str:
+    rows: list[str] = []
+    for section_label, count in _cover_section_counts(manifest):
+        rows.append(
+            f"""
+            <div class="sp-count-row">
+              <span class="sp-count-label">{_html_escape(section_label)}</span>
+              <span class="sp-count-value">{int(count)}</span>
+            </div>
+            """
+        )
+    return "".join(rows)
+
+
+def _render_odds_search_shot_props_header(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
+    title_words = slide.get("title_words") or {}
+    primary, accent = (
+        str(title_words.get("primary") or _title_words_for_manifest(manifest)[0]),
+        str(title_words.get("accent") or _title_words_for_manifest(manifest)[1]),
+    )
+    threshold_bar = str(slide.get("threshold_bar") or _threshold_bar_from_manifest(manifest))
+    return f"""
+    <div class="sp-header">
+      <div class="sp-header-top">
+        <div class="sp-brand">
+          <img class="sp-brand-logo" src="{_html_escape(_odds_searcher_logo_src())}" alt="Odds Searcher" />
+        </div>
+        <div class="sp-header-right">
+          <div class="sp-post-badge">{_html_escape(slide.get("post_badge") or _post_badge_for_manifest(manifest))}</div>
+          <div class="sp-date-badge">{_html_escape(_date_badge(manifest))}</div>
+        </div>
+      </div>
+      <div class="sp-main-title">{_html_escape(primary)} <span>{_html_escape(accent)}</span></div>
+      <div class="sp-threshold-bar">
+        <div class="sp-threshold-line"></div>
+        <div class="sp-threshold-text">{_html_escape(threshold_bar)}</div>
+        <div class="sp-threshold-line"></div>
+      </div>
+      <div class="sp-slide-indicator">{_slide_dots(slide)}</div>
+    </div>
+    """
+
+
+def _render_odds_search_shot_props_cover(manifest: dict[str, Any], slide: dict[str, Any]) -> str:
+    stats = dict(slide.get("stats") or {})
+    intro = str(slide.get("intro") or _cover_intro_compact(manifest))
+    fixture_window = str(slide.get("fixture_window") or "")
+    fixture_window_markup = (
+        f'<div class="sp-fixture-window">{_html_escape(fixture_window)}</div>' if fixture_window else ""
+    )
+    return f"""
+    <div class="sp-body sp-cover-body">
+      <div class="sp-cover-intro">
+        <div class="sp-cover-kicker">Data Snapshot</div>
+        <div class="sp-cover-desc">{_html_escape(intro)}</div>
+      </div>
+      {fixture_window_markup}
+      <div class="sp-stat-grid">
+        <div class="sp-stat-card">
+          <div class="sp-stat-value">{int(stats.get("total_players") or 0)}</div>
+          <div class="sp-stat-label">Qualifiers</div>
+        </div>
+        <div class="sp-stat-card">
+          <div class="sp-stat-value">{int(stats.get("stat_types") or 0)}</div>
+          <div class="sp-stat-label">Sections</div>
+        </div>
+        <div class="sp-stat-card">
+          <div class="sp-stat-value">{int(stats.get("hit_rate_threshold_pct") or 0)}%+</div>
+          <div class="sp-stat-label">Hit Rate</div>
+        </div>
+      </div>
+      <div class="sp-cover-grid">
+        <div class="sp-panel sp-count-panel">
+          <div class="sp-panel-head">Rows by section</div>
+          <div class="sp-count-list">{_render_shot_props_cover_counts(manifest)}</div>
+        </div>
+        <div class="sp-panel sp-feature-panel">
+          <div class="sp-panel-head">Top qualifiers</div>
+          <div class="sp-feature-list">{_render_shot_props_featured_rows(manifest)}</div>
+        </div>
+      </div>
+      <div class="sp-cover-note">Swipe for the full shortlist by section.</div>
+    </div>
+    """
+
+
+def _render_odds_search_shot_props_section(slide: dict[str, Any]) -> str:
+    section_label = str(slide.get("section_label") or "")
+    page = int(slide.get("section_page") or 1)
+    pages = int(slide.get("section_pages") or 1)
+    page_suffix = f" · {page}/{pages}" if pages > 1 else ""
+    parts: list[str] = []
+    for idx, row in enumerate(list(slide.get("rows") or [])):
+        alt = " alt" if idx % 2 else ""
+        display = dict(row.get("display") or {})
+        parts.append(
+            f"""
+            <div class="sp-row{alt}">
+              {_render_shot_props_row_face(row)}
+              <div class="sp-row-main">
+                <div class="sp-row-name">{_html_escape(row.get("player_name"))}</div>
+                <div class="sp-row-meta">
+                  {_render_shot_props_row_badge(row)}
+                  <span class="sp-row-team">{_html_escape(row.get("team_name"))}</span>
+                  <span class="sp-row-sep">·</span>
+                  <span class="sp-row-fixture">{_html_escape(row.get("fixture_label"))}</span>
+                </div>
+              </div>
+              <div class="sp-hit-wrap">
+                <span class="sp-hit-label">won in</span>
+                <div class="sp-hit-pill">{_html_escape(display.get("rate"))}</div>
+              </div>
+              <div class="sp-odds-pill">{_html_escape(display.get("odds"))}</div>
+            </div>
+            """
+        )
+    return f"""
+    <div class="sp-body sp-section-body">
+      <div class="sp-section-head">
+        <div class="sp-section-head-left">
+          <div class="sp-section-title">{_html_escape(section_label + page_suffix)}</div>
+          <div class="sp-section-count">{int(slide.get("section_total_rows") or 0)} rows</div>
+        </div>
+        <div class="sp-section-head-right">
+          <span>Hit</span>
+          <span>Bet365</span>
+        </div>
+      </div>
+      <div class="sp-row-list">{''.join(parts)}</div>
+    </div>
+    """
+
+
+def _render_odds_search_shot_props_footer(manifest: dict[str, Any]) -> str:
+    return f"""
+    <div class="sp-footer">
+      <div class="sp-footer-left">{_html_escape(str(manifest.get('odds_source') or 'Bet365'))} odds at build time · starter-only hit rate</div>
+      <div class="sp-footer-right">oddssearch.io</div>
+    </div>
+    """
+
+
+def _render_odds_search_shot_props_slide(markup_title: str, manifest: dict[str, Any], slide: dict[str, Any]) -> str:
+    if str(slide.get("slide_type") or "") == "cover":
+        body_markup = _render_odds_search_shot_props_cover(manifest, slide)
+    else:
+        body_markup = _render_odds_search_shot_props_section(slide)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{_html_escape(markup_title)}</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {{
+    --bg: #0b0f14;
+    --surface: #0f1620;
+    --surface-elevated: #141c27;
+    --border: #1f2a37;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --gold: #f5a524;
+    --brand-orange: #ef6a29;
+  }}
+  * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+  html, body {{
+    width: {CARD_WIDTH}px;
+    height: {CARD_HEIGHT}px;
+    overflow: hidden;
+    background: #070b11;
+  }}
+  body {{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-variant-numeric: tabular-nums;
+  }}
+  body.ready::after {{ content: ''; }}
+  .canvas {{
+    width: {CARD_WIDTH}px;
+    height: {CARD_HEIGHT}px;
+    overflow: hidden;
+    background: #070b11;
+  }}
+  .scale {{
+    width: {CARD_BASE_WIDTH}px;
+    height: {CARD_BASE_HEIGHT}px;
+    transform: scale(2);
+    transform-origin: top left;
+  }}
+  .sp-card {{
+    width: {CARD_BASE_WIDTH}px;
+    height: {CARD_BASE_HEIGHT}px;
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border);
+    box-shadow: 0 16px 40px rgba(3, 7, 18, 0.42);
+  }}
+  .sp-card::after {{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--brand-orange) 12%, var(--gold) 46%, var(--brand-orange) 88%, transparent);
+    z-index: 10;
+  }}
+  .sp-card::before {{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at top left, rgba(245,165,36,0.06), transparent 34%),
+      radial-gradient(circle at top right, rgba(239,106,41,0.08), transparent 32%);
+    pointer-events: none;
+    z-index: 0;
+  }}
+  .sp-header {{
+    padding: 10px 15px 8px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(20,28,39,0.96), rgba(11,15,20,0.92));
+    flex-shrink: 0;
+  }}
+  .sp-header-top {{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+  }}
+  .sp-brand {{
+    min-width: 0;
+    display: flex;
+    align-items: center;
+  }}
+  .sp-brand-logo {{
+    display: block;
+    width: auto;
+    height: 22px;
+    max-width: 176px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 14px rgba(245,165,36,0.08));
+  }}
+  .sp-header-right {{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }}
+  .sp-post-badge {{
+    background: linear-gradient(135deg, var(--gold), #f2a10f);
+    color: #081018;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 999px;
+    box-shadow: 0 6px 14px rgba(245,165,36,0.18);
+  }}
+  .sp-date-badge {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.8px;
+    color: var(--muted);
+  }}
+  .sp-main-title {{
+    font-family: 'Sora', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    color: var(--text);
+  }}
+  .sp-main-title span {{
+    color: var(--gold);
+  }}
+  .sp-threshold-bar {{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+  }}
+  .sp-threshold-line {{
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(245,165,36,0.22), rgba(245,165,36,0.02));
+  }}
+  .sp-threshold-text {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.8px;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }}
+  .sp-slide-indicator {{
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 8px;
+  }}
+  .dot {{
+    height: 4px;
+    width: 20px;
+    border-radius: 999px;
+    background: rgba(148,163,184,0.34);
+    box-shadow: inset 0 0 0 1px rgba(148,163,184,0.18);
+  }}
+  .dot.active {{
+    background: linear-gradient(90deg, var(--brand-orange), var(--gold));
+    width: 36px;
+    box-shadow:
+      0 0 0 1px rgba(245,165,36,0.32),
+      0 0 16px rgba(245,165,36,0.42),
+      0 0 28px rgba(239,106,41,0.18);
+  }}
+  .sp-body {{
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding: 10px 12px 8px;
+  }}
+  .sp-cover-body {{
+    gap: 8px;
+  }}
+  .sp-cover-intro {{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }}
+  .sp-cover-kicker {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }}
+  .sp-cover-desc {{
+    font-size: 10px;
+    line-height: 1.35;
+    color: rgba(248,250,252,0.86);
+  }}
+  .sp-fixture-window {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border: 1px solid var(--border);
+    background: rgba(20,28,39,0.78);
+    border-radius: 8px;
+    padding: 6px 8px;
+  }}
+  .sp-stat-grid {{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }}
+  .sp-stat-card {{
+    background: linear-gradient(180deg, rgba(20,28,39,0.96), rgba(15,22,32,0.92));
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 8px 7px;
+  }}
+  .sp-stat-value {{
+    font-family: 'Sora', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+  }}
+  .sp-stat-label {{
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }}
+  .sp-cover-grid {{
+    display: grid;
+    grid-template-columns: 0.72fr 1.28fr;
+    gap: 8px;
+    min-height: 0;
+    flex: 1;
+  }}
+  .sp-panel {{
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(20,28,39,0.96), rgba(15,22,32,0.92));
+    border-radius: 10px;
+    padding: 8px;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }}
+  .sp-panel-head {{
+    font-family: 'Sora', sans-serif;
+    font-size: 8.2px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }}
+  .sp-count-list {{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }}
+  .sp-count-row {{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px;
+    align-items: center;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(31,42,55,0.9);
+  }}
+  .sp-count-row:last-child {{
+    border-bottom: 0;
+  }}
+  .sp-count-label {{
+    font-size: 8.2px;
+    font-weight: 600;
+    color: rgba(248,250,252,0.86);
+    line-height: 1.2;
+  }}
+  .sp-count-value {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8.4px;
+    font-weight: 700;
+    color: var(--gold);
+  }}
+  .sp-feature-list {{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-height: 0;
+  }}
+  .sp-feature-row,
+  .sp-row {{
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr) auto 54px;
+    gap: 6px;
+    align-items: center;
+    min-height: 0;
+    border: 1px solid rgba(31,42,55,0.95);
+    border-radius: 8px;
+    padding: 5px 6px;
+    background: linear-gradient(90deg, rgba(15,22,32,0.96), rgba(11,15,20,0.86));
+  }}
+  .sp-row.alt {{
+    background: linear-gradient(90deg, rgba(20,28,39,0.88), rgba(11,15,20,0.8));
+  }}
+  .sp-player-face,
+  .sp-player-badge {{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.14);
+    position: relative;
+  }}
+  .sp-player-face {{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }}
+  .sp-player-badge {{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+    flex-shrink: 0;
+  }}
+  .sp-player-face-img,
+  .sp-player-badge-img {{
+    width: 100%;
+    height: 100%;
+  }}
+  .sp-player-face-img {{
+    object-fit: cover;
+  }}
+  .sp-player-badge-img {{
+    object-fit: contain;
+    width: 88%;
+    height: 88%;
+  }}
+  .media-fallback {{
+    background: linear-gradient(135deg, color-mix(in srgb, var(--gold) 20%, #121726), #0b1020);
+    color: #ffffff;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px;
+    font-weight: 700;
+  }}
+  .sp-feature-main,
+  .sp-row-main {{
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }}
+  .sp-feature-name,
+  .sp-row-name {{
+    font-size: 10.2px;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.05;
+  }}
+  .sp-feature-meta,
+  .sp-row-meta {{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+  }}
+  .sp-feature-prop,
+  .sp-row-team {{
+    font-size: 7.2px;
+    font-weight: 700;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }}
+  .sp-feature-sep,
+  .sp-row-sep {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7px;
+    color: var(--muted);
+    flex-shrink: 0;
+  }}
+  .sp-feature-fixture,
+  .sp-row-fixture {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7px;
+    color: rgba(248,250,252,0.62);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }}
+  .sp-section-body {{
+    gap: 8px;
+  }}
+  .sp-section-head {{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 0 2px 2px;
+  }}
+  .sp-section-head-left {{
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }}
+  .sp-section-title {{
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--text);
+  }}
+  .sp-section-count {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.4px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }}
+  .sp-section-head-right {{
+    display: grid;
+    grid-template-columns: 46px 54px;
+    gap: 6px;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }}
+  .sp-section-head-right span {{
+    text-align: right;
+  }}
+  .sp-row-list {{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-height: 0;
+    flex: 1;
+  }}
+  .sp-hit-wrap {{
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    justify-self: end;
+    white-space: nowrap;
+  }}
+  .sp-hit-label {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 5.8px;
+    color: rgba(184,193,220,0.92);
+    letter-spacing: 0.02em;
+    text-transform: lowercase;
+  }}
+  .sp-hit-pill {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8.6px;
+    font-weight: 700;
+    color: var(--gold);
+    border: 1px solid rgba(245,165,36,0.36);
+    border-radius: 999px;
+    padding: 2px 5px;
+    background: rgba(245,165,36,0.12);
+  }}
+  .sp-odds-pill {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    color: #0b0f14;
+    background: linear-gradient(135deg, var(--gold), #f2a10f);
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.14);
+    padding: 4px 6px;
+    text-align: center;
+    justify-self: end;
+  }}
+  .sp-feature-empty {{
+    font-size: 9px;
+    color: rgba(248,250,252,0.62);
+    padding: 6px 2px;
+  }}
+  .sp-cover-note {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.2px;
+    color: rgba(148,163,184,0.9);
+    line-height: 1.35;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }}
+  .sp-footer {{
+    padding: 7px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(11,15,20,0.78), rgba(15,22,32,0.96));
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+  }}
+  .sp-footer-left {{
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    opacity: 0.92;
+    text-transform: uppercase;
+  }}
+  .sp-footer-right {{
+    font-family: 'Sora', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }}
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="scale">
+    <div class="sp-card">
+      {_render_odds_search_shot_props_header(manifest, slide)}
+      {body_markup}
+      {_render_odds_search_shot_props_footer(manifest)}
+    </div>
+  </div>
+</div>
+<script>
+  const waitFonts = Promise.resolve(document.fonts && document.fonts.ready ? document.fonts.ready : null)
+    .catch(() => null);
+  const waitImages = Promise.all(
+    Array.from(document.images || []).map((img) => {{
+      if (img.complete) return Promise.resolve();
+      return new Promise((resolve) => {{
+        img.addEventListener('load', resolve, {{ once: true }});
+        img.addEventListener('error', resolve, {{ once: true }});
+      }});
+    }})
+  ).catch(() => null);
+  Promise.all([waitFonts, waitImages]).finally(() => document.body.classList.add('ready'));
+</script>
+</body>
+</html>
+"""
+
+
 def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[str, Any]) -> str:
     home_team = dict(slide.get("home_team") or {})
     away_team = dict(slide.get("away_team") or {})
@@ -1196,6 +1965,8 @@ def _slide_html_document(manifest: dict[str, Any], slide: dict[str, Any]) -> str
     title = f"{manifest.get('post_type')} slide {slide.get('slide_number')}"
     if manifest.get("variant") == "by_fixture_rich_prototype":
         return _render_rich_slide(title, manifest, slide)
+    if manifest.get("source") == "shot_props":
+        return _render_odds_search_shot_props_slide(title, manifest, slide)
     card_markup = _build_slide_markup(manifest, slide)
     return f"""<!DOCTYPE html>
 <html lang="en">

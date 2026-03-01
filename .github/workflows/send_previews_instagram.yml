@@ -1,6 +1,13 @@
 name: Send Instagram Telegram Previews
 
 on:
+  push:
+    paths:
+      - ".github/workflows/send_previews_instagram.yml"
+      - "src/posting/send_previews_instagram.py"
+      - "src/instagram/renderer.py"
+      - "src/instagram/assets.py"
+      - "src/instagram/manifest_io.py"
   schedule:
     - cron: "0 16 * * 5"
     - cron: "0 17 * * 5"
@@ -27,7 +34,55 @@ permissions:
   contents: read
 
 jobs:
+  preview-push:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        slot:
+          - ig_shot_props_value
+          - ig_shot_props_high_prob
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: npx -y playwright@1.52.0 install chromium
+
+      - name: Send Instagram preview
+        run: python -m src.posting.send_previews_instagram --slot "${{ matrix.slot }}"
+        env:
+          SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ODDS_ANALYST_X_POST_BOT_TOKEN: ${{ secrets.ODDS_ANALYST_X_POST_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CLOUDFLARE_R2_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY }}
+          CLOUDFLARE_R2_SECRET_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_KEY }}
+          CLOUDFLARE_R2_BUCKET_NAME: ${{ secrets.CLOUDFLARE_R2_BUCKET_NAME }}
+          CLOUDFLARE_R2_PUBLIC_URL: ${{ secrets.CLOUDFLARE_R2_PUBLIC_URL }}
+          CLOUDFLARE_R2_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_R2_ACCOUNT_ID }}
+          S3_API_ENDPOINT: ${{ secrets.S3_API_ENDPOINT }}
+          PROP_SHEET_TIMEZONE: ${{ vars.PROP_SHEET_TIMEZONE || 'Europe/London' }}
+
   preview:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -117,4 +172,3 @@ jobs:
           CLOUDFLARE_R2_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_R2_ACCOUNT_ID }}
           S3_API_ENDPOINT: ${{ secrets.S3_API_ENDPOINT }}
           PROP_SHEET_TIMEZONE: ${{ vars.PROP_SHEET_TIMEZONE || 'Europe/London' }}
-

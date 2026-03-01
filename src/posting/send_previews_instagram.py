@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from src.instagram.assets import enrich_manifest_with_cached_assets
-from src.instagram.manifest_io import load_manifest, shot_props_manifest_path
+from src.instagram.manifest_io import latest_shot_props_manifest_ref, load_manifest, shot_props_manifest_path
 from src.instagram.r2_storage import R2Settings, R2Storage
 from src.instagram.renderer import render_carousel_images
 from src.instagram.shot_props_manifest import verify_shot_props_carousel_manifest
@@ -110,6 +110,16 @@ def _build_preview_summary(slot_label: str, scheduled_for: str, manifest: dict[s
     return _truncate_text("\n".join(lines))
 
 
+def _resolve_manifest_path(slot_cfg: Any, scheduled_for: Any) -> tuple[Path, str]:
+    manifest_path = shot_props_manifest_path(slot_cfg.post_type, scheduled_for)
+    if manifest_path.exists():
+        return manifest_path, scheduled_for.isoformat()
+    latest = latest_shot_props_manifest_ref(slot_cfg.post_type)
+    if latest is None or not latest.path.exists():
+        return manifest_path, scheduled_for.isoformat()
+    return latest.path, latest.scheduled_for.isoformat()
+
+
 def run(
     *,
     slot: str,
@@ -120,9 +130,7 @@ def run(
 ) -> int:
     slot_cfg = get_instagram_slot(slot)
     scheduled_for = resolve_instagram_scheduled_date(target_date)
-    scheduled_str = scheduled_for.isoformat()
-
-    manifest_path = shot_props_manifest_path(slot_cfg.post_type, scheduled_for)
+    manifest_path, scheduled_str = _resolve_manifest_path(slot_cfg, scheduled_for)
     if not manifest_path.exists():
         print(f"No Instagram manifest found for slot={slot} scheduled_for={scheduled_str}: {manifest_path}")
         return 0
