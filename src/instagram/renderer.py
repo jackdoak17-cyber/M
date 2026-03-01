@@ -573,9 +573,11 @@ def _render_rich_section(section: dict[str, Any]) -> str:
               <div class="{player_class}">{_html_escape(subject_display)}</div>
               {_render_rich_row_badge(row, color)}
               <div class="{market_class}">{_html_escape(market_display)}</div>
-              <div class="stat-record">
+              <div class="stat-record-wrap">
                 <span class="stat-record-label">won in</span>
-                <span class="stat-record-value">{_html_escape(record_display)}</span>
+                <div class="stat-record">
+                  <span class="stat-record-value">{_html_escape(record_display)}</span>
+                </div>
               </div>
             </div>
             """
@@ -981,25 +983,33 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
   .stat-market-compact {{
     font-size: 9.1px;
   }}
-  .stat-record {{
+  .stat-record-wrap {{
     display: inline-flex;
     align-items: center;
-    gap: 2px;
-    font-family: 'IBM Plex Mono', monospace;
+    gap: 3px;
+    justify-self: end;
     position: relative;
     z-index: 1;
-    border: 1px solid var(--section-pill-border);
-    border-radius: 999px;
-    padding: 2px 4px;
     white-space: nowrap;
-    justify-self: end;
-    background: var(--section-pill-bg);
   }}
   .stat-record-label {{
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 5.9px;
     font-weight: 500;
     color: #b8c1dc;
     letter-spacing: 0.02em;
+    text-transform: lowercase;
+  }}
+  .stat-record {{
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    border: 1px solid var(--section-pill-border);
+    border-radius: 999px;
+    padding: 2px 5px;
+    white-space: nowrap;
+    background: var(--section-pill-bg);
   }}
   .stat-record-value {{
     font-size: 9px;
@@ -1055,12 +1065,15 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
   .card.density-dense .stat-market-compact {{
     font-size: 8.4px;
   }}
+  .card.density-dense .stat-record-wrap {{
+    gap: 2px;
+  }}
   .card.density-dense .stat-record {{
     gap: 2px;
     padding: 2px 4px;
   }}
   .card.density-dense .stat-record-label {{
-    font-size: 6px;
+    font-size: 5.7px;
   }}
   .card.density-dense .stat-record-value {{
     font-size: 8.3px;
@@ -1093,12 +1106,15 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
   .card.density-xdense .stat-market-compact {{
     font-size: 7.8px;
   }}
+  .card.density-xdense .stat-record-wrap {{
+    gap: 2px;
+  }}
   .card.density-xdense .stat-record {{
     gap: 2px;
     padding: 2px 4px;
   }}
   .card.density-xdense .stat-record-label {{
-    font-size: 5.6px;
+    font-size: 5.3px;
   }}
   .card.density-xdense .stat-record-value {{
     font-size: 7.8px;
