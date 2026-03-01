@@ -5,8 +5,8 @@ Leave a like if you find these useful.
 📊1+ Shots on Target in ≥5/5📊
 - C. Palmer (Chelsea) = 1, 2, 3, 1, 1
 - R. Jiménez (Fulham) = 2, 1, 1, 2, 1
-- A. Semenyo (Man City) = 1, 1, 1, 2, 2
-- C. Summerville (West Ham) = 1, 1, 2, 1, 1
+- A. Semenyo (Man City) = 1, 1, 1, 1, 2
+- C. Summerville (West Ham) = 1, 1, 1, 2, 1
 
 📊1+ Fouls Drawn in ≥5/5📊
 - B. Saka (Arsenal) = 4, 1, 4, 1, 1
@@ -15,23 +15,26 @@ Leave a like if you find these useful.
 - M. Wieffer (Brighton) = 1, 1, 1, 2, 2
 - E. Fernández (Chelsea) = 1, 3, 1, 3, 1
 - R. Jiménez (Fulham) = 1, 3, 2, 1, 1
+- R. Cherki (Man City) = 2, 2, 3, 2, 2
 - A. Diallo (Man Utd) = 1, 1, 2, 1, 1
 - H. Maguire (Man Utd) = 2, 2, 1, 1, 2
+- A. Gordon (Newcastle) = 1, 1, 2, 1, 2
 - M. Gibbs-White (Nottm Forest) = 1, 2, 2, 1, 2
-- C. Summerville (West Ham) = 4, 1, 2, 2, 2
-- M. Fernandes (West Ham) = 2, 1, 2, 1, 1
-- S. Magassa (West Ham) = 1, 1, 2, 3, 3
+- C. Summerville (West Ham) = 1, 4, 1, 2, 2
+- M. Fernandes (West Ham) = 4, 2, 1, 2, 1
 
 📊1+ Fouls Committed in ≥5/5📊
 - M. Cash (Aston Villa) = 4, 1, 1, 1, 2
 - D. Gómez (Brighton) = 3, 1, 1, 1, 3
-- B. Silva (Man City) = 2, 1, 1, 2, 2
-- N. O'Reilly (Man City) = 1, 1, 4, 1, 2
+- R. Cherki (Man City) = 3, 1, 1, 1, 1
 - Casemiro (Man Utd) = 1, 1, 1, 1, 1
 - L. Shaw (Man Utd) = 1, 1, 2, 1, 2
-- J. Ramsey (Newcastle) = 1, 2, 1, 1, 1
+- D. Burn (Newcastle) = 1, 3, 1, 2, 1
+- J. Ramsey (Newcastle) = 2, 1, 2, 1, 1
+- Joelinton (Newcastle) = 4, 2, 1, 2, 1
 - E. Anderson (Nottm Forest) = 1, 1, 3, 1, 1
 - I. Sangaré (Nottm Forest) = 4, 4, 3, 1, 2
+- M. Fernandes (West Ham) = 2, 1, 3, 1, 2
 
 📊2+ Shots in ≥4/5📊
 - B. Saka (Arsenal) = 5, 1, 3, 2, 2
@@ -40,18 +43,19 @@ Leave a like if you find these useful.
 - E. Fernández (Chelsea) = 1, 3, 3, 3, 2
 - J. Pedro (Chelsea) = 3, 7, 2, 2, 2
 - R. Jiménez (Fulham) = 2, 3, 2, 4, 3
-- A. Semenyo (Man City) = 3, 1, 3, 2, 3
-- E. Haaland (Man City) = 4, 2, 3, 2, 2
+- A. Semenyo (Man City) = 2, 3, 1, 3, 2
 - B. Mbeumo (Man Utd) = 3, 2, 3, 1, 2
+- A. Gordon (Newcastle) = 2, 2, 4, 3, 1
+- S. Tonali (Newcastle) = 2, 0, 3, 2, 3
 - M. Gibbs-White (Nottm Forest) = 2, 5, 2, 3, 0
-- C. Summerville (West Ham) = 4, 1, 2, 2, 2
-- J. Bowen (West Ham) = 2, 2, 1, 2, 2
+- C. Summerville (West Ham) = 3, 4, 1, 2, 2
 
 📊2+ Fouls Committed in ≥4/5📊
 - I. Sangaré (Nottm Forest) = 4, 4, 3, 1, 2
-- T. Castellanos (West Ham) = 3, 2, 3, 0, 2
+- T. Castellanos (West Ham) = 3, 3, 2, 3, 0
+- T. Souček (West Ham) = 2, 2, 3, 0, 3
 
 📊2+ Fouls Drawn in ≥4/5📊
 - A. Santos (Chelsea) = 3, 3, 2, 3, 0
+- R. Cherki (Man City) = 2, 2, 3, 2, 2
 - K. Mainoo (Man Utd) = 2, 2, 2, 2, 0
-- C. Summerville (West Ham) = 4, 1, 2, 2, 2

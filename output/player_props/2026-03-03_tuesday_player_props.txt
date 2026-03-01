@@ -3,35 +3,35 @@ As usual I've collated todays Premier League 1+ (100% hit-rates) and 2+ (80% hit
 Leave a like if you find these useful.
 
 📊1+ Fouls Drawn in ≥5/5📊
-- A. Scott (Bournemouth) = 2, 2, 1, 2, 3
-- K. Lewis-Potter (Brentford) = 1, 1, 2, 1, 4
-- Hannibal (Burnley) = 2, 5, 3, 1, 2
-- Z. Flemming (Burnley) = 1, 1, 1, 1, 1
-- G. Gudmundsson (Leeds) = 1, 1, 1, 2, 1
+- A. Scott (Bournemouth) = 4, 2, 2, 1, 2
+- Hannibal (Burnley) = 3, 2, 5, 3, 1
+- G. Gudmundsson (Leeds) = 5, 1, 1, 1, 2
+- G. Xhaka (Sunderland) = 3, 2, 2, 1, 1
+- H. Diarra (Sunderland) = 3, 2, 1, 4, 2
 - M. Mané (Wolves) = 5, 4, 2, 3, 1
 
 📊1+ Fouls Committed in ≥5/5📊
-- A. Truffert (Bournemouth) = 2, 2, 1, 1, 1
-- I. Thiago (Brentford) = 2, 2, 3, 2, 1
-- L. Ugochukwu (Burnley) = 1, 1, 2, 1, 1
-- T. Barry (Everton) = 3, 2, 1, 2, 1
-- T. Iroegbunam (Everton) = 2, 2, 1, 2, 1
-- E. Ampadu (Leeds) = 2, 1, 1, 2, 1
-- B. Brobbey (Sunderland) = 1, 1, 3, 1, 2
+- A. Truffert (Bournemouth) = 1, 2, 2, 1, 1
+- I. Thiago (Brentford) = 5, 2, 2, 3, 2
+- K. Ajer (Brentford) = 1, 1, 1, 2, 4
+- Y. Yarmolyuk (Brentford) = 1, 3, 2, 2, 1
+- E. Ampadu (Leeds) = 1, 2, 1, 1, 2
 - J. Bellegarde (Wolves) = 1, 1, 2, 1, 2
 
 📊2+ Shots in ≥4/5📊
-- A. Scott (Bournemouth) = 2, 0, 3, 2, 2
-- D. Calvert-Lewin (Leeds) = 3, 2, 0, 2, 2
-- H. Ekitiké (Liverpool) = 3, 3, 3, 6, 6
-- M. Salah (Liverpool) = 0, 4, 5, 2, 3
+- A. Scott (Bournemouth) = 3, 2, 0, 3, 2
+- D. Brooks (Bournemouth) = 0, 2, 4, 6, 3
+- K. Schade (Brentford) = 2, 1, 2, 4, 3
+- D. Calvert-Lewin (Leeds) = 4, 3, 2, 0, 2
+- H. Ekitiké (Liverpool) = 2, 3, 3, 3, 6
+- M. Salah (Liverpool) = 3, 0, 4, 5, 2
 
 📊2+ Fouls Committed in ≥4/5📊
-- Á. Jiménez (Bournemouth) = 2, 3, 0, 2, 2
-- I. Thiago (Brentford) = 2, 2, 3, 2, 1
+- I. Thiago (Brentford) = 5, 2, 2, 3, 2
 - J. Gomes (Wolves) = 2, 2, 0, 4, 4
 
 📊2+ Fouls Drawn in ≥4/5📊
-- A. Scott (Bournemouth) = 2, 2, 1, 2, 3
-- Hannibal (Burnley) = 2, 5, 3, 1, 2
+- A. Scott (Bournemouth) = 4, 2, 2, 1, 2
+- Hannibal (Burnley) = 3, 2, 5, 3, 1
+- H. Diarra (Sunderland) = 3, 2, 1, 4, 2
 - M. Mané (Wolves) = 5, 4, 2, 3, 1
