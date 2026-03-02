@@ -500,7 +500,7 @@ def _render_rich_row_face(row: dict[str, Any], accent_color: str) -> str:
     src = (
         _asset_src(assets, "team_badge_uri", "team_badge_url")
         if is_team_row
-        else _asset_src(assets, "player_face_uri", "player_face_url", "team_badge_uri", "team_badge_url")
+        else _asset_src(assets, "player_face_uri", "player_face_url")
     )
     fallback = row.get("subject_display") or row.get("subject_name")
     return _render_media(
@@ -1912,7 +1912,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
         </div>
       </div>
       <div class="fixture-hero">
-        <div class="fixture-num">Fixture {int(slide.get("fixture_index") or 1)} / {int(slide.get("fixture_count") or 1)}</div>
+        <div class="fixture-num">Player Prop List {int(slide.get("fixture_index") or 1)} / {int(slide.get("fixture_count") or 1)}</div>
         <div class="teams-line">
           {_render_rich_team_badge(home_team)}
           <div class="teams-name">{_html_escape(home_team.get("display_name"))} <span class="vs">vs</span> {_html_escape(away_team.get("display_name"))}</div>

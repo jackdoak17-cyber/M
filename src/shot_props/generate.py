@@ -11,10 +11,6 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
-from src.instagram.shot_props_manifest import (
-    ThresholdConfig,
-    build_shot_props_carousel_manifest,
-)
 from src.prop_bot.engine.baseline import calculate_player_baseline
 from src.prop_bot.engine.odds import get_player_market_odds, get_team_win_odds
 from src.prop_bot.engine.players import (
@@ -31,7 +27,6 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 log = logging.getLogger(__name__)
 
 OUTPUT_DIR = Path("output/shot_props")
-INSTAGRAM_MANIFEST_DIR = OUTPUT_DIR / "instagram"
 
 STAT_CONFIGS = [
     {"label": "1+ Shot", "stat_type_id": 42, "market_key": "player_shots", "threshold": 1},
@@ -453,18 +448,6 @@ def _write_or_remove_output(path: Path, content: str, empty_log_message: str) ->
     if content:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content, encoding="utf-8")
-        log.info("Wrote %s", path)
-        return
-    if path.exists():
-        path.unlink()
-        log.info("Removed stale file %s", path)
-    log.info(empty_log_message)
-
-
-def _write_or_remove_json(path: Path, payload: dict[str, Any] | None, empty_log_message: str) -> None:
-    if payload:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
         log.info("Wrote %s", path)
         return
     if path.exists():
@@ -902,8 +885,6 @@ def generate_shot_props(
     value_path = OUTPUT_DIR / f"{value_date.isoformat()}_potential_value.txt"
     hp_path = OUTPUT_DIR / f"{date_str}_high_probability.txt"
     audit_path = OUTPUT_DIR / f"{date_str}_audit.json"
-    value_ig_manifest_path = INSTAGRAM_MANIFEST_DIR / f"{value_date.isoformat()}_potential_value.json"
-    hp_ig_manifest_path = INSTAGRAM_MANIFEST_DIR / f"{date_str}_high_probability.json"
 
     log.info("Generating shot props for %s", date_str)
 
@@ -921,20 +902,8 @@ def generate_shot_props(
             "value_path": str(value_path),
             "high_probability_path": str(hp_path),
             "audit_path": str(audit_path) if write_audit else None,
-            "instagram_value_manifest_path": str(value_ig_manifest_path),
-            "instagram_high_probability_manifest_path": str(hp_ig_manifest_path),
             "verification_issues": [],
         }
-        _write_or_remove_json(
-            value_ig_manifest_path,
-            None,
-            f"No fixtures found for {date_str}; no Instagram potential value manifest.",
-        )
-        _write_or_remove_json(
-            hp_ig_manifest_path,
-            None,
-            f"No fixtures found for {date_str}; no Instagram high probability manifest.",
-        )
         if write_audit:
             audit_payload = {
                 "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
@@ -1011,48 +980,6 @@ def generate_shot_props(
 
     _write_or_remove_output(hp_path, hp_text, "No qualifying players for high probability post")
 
-    value_manifest = build_shot_props_carousel_manifest(
-        post_type="potential_value",
-        scheduled_for=value_date,
-        source_target_date=target_date,
-        fixture_dates=value_scope_dates or [target_date],
-        title=value_title,
-        intro=VALUE_INTRO,
-        threshold_cfg=ThresholdConfig(
-            min_hit_pct=VALUE_MIN_HIT_PCT,
-            min_odds=VALUE_MIN_ODDS,
-            min_starts=MIN_STARTS,
-        ),
-        section_order=SECTION_ORDER,
-        sections=value_sections,
-    )
-    _write_or_remove_json(
-        value_ig_manifest_path,
-        value_manifest,
-        "No qualifying players for Instagram potential value manifest",
-    )
-
-    hp_manifest = build_shot_props_carousel_manifest(
-        post_type="high_probability",
-        scheduled_for=target_date,
-        source_target_date=target_date,
-        fixture_dates=[target_date],
-        title=HIGH_PROB_TITLE,
-        intro=HIGH_PROB_INTRO,
-        threshold_cfg=ThresholdConfig(
-            min_hit_pct=HIGH_PROB_MIN_HIT_PCT,
-            min_odds=HIGH_PROB_MIN_ODDS,
-            min_starts=MIN_STARTS,
-        ),
-        section_order=SECTION_ORDER,
-        sections=high_prob_sections,
-    )
-    _write_or_remove_json(
-        hp_ig_manifest_path,
-        hp_manifest,
-        "No qualifying players for Instagram high probability manifest",
-    )
-
     verification_issues: list[str] = []
     if verify_outputs:
         verification_issues.extend(
@@ -1076,14 +1003,6 @@ def generate_shot_props(
         if verification_issues:
             raise RuntimeError("Shot props verification failed:\n" + "\n".join(verification_issues))
         log.info("Verified post outputs match all qualifying candidates.")
-        if value_manifest and not (value_manifest.get("verification") or {}).get("ok", False):
-            issues = (value_manifest.get("verification") or {}).get("issues") or []
-            raise RuntimeError("Instagram potential value manifest verification failed:\n" + "\n".join(issues))
-        if hp_manifest and not (hp_manifest.get("verification") or {}).get("ok", False):
-            issues = (hp_manifest.get("verification") or {}).get("issues") or []
-            raise RuntimeError("Instagram high probability manifest verification failed:\n" + "\n".join(issues))
-        if value_manifest or hp_manifest:
-            log.info("Verified Instagram carousel manifests.")
 
     if write_audit and audit_rows is not None:
         audit_payload = _build_audit_payload(
@@ -1109,8 +1028,6 @@ def generate_shot_props(
         "value_path": str(value_path),
         "high_probability_path": str(hp_path),
         "audit_path": str(audit_path) if write_audit else None,
-        "instagram_value_manifest_path": str(value_ig_manifest_path),
-        "instagram_high_probability_manifest_path": str(hp_ig_manifest_path),
         "verification_issues": verification_issues,
     }
 

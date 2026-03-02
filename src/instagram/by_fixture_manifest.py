@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import unicodedata
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -32,25 +33,35 @@ SECTION_META = {
 TEAM_ACCENTS = {
     "arsenal": "#EF0107",
     "aston villa": "#95BFE5",
+    "afc bournemouth": "#DA291C",
     "bournemouth": "#DA291C",
     "brentford": "#D20000",
     "brighton": "#0057B8",
+    "brighton hove albion": "#0057B8",
     "burnley": "#6C1D45",
     "chelsea": "#034694",
     "crystal palace": "#C4122E",
     "everton": "#003399",
     "fulham": "#F5F5F5",
     "leeds": "#FFCD00",
+    "leeds united": "#FFCD00",
     "liverpool": "#C8102E",
     "man city": "#6CABDD",
+    "manchester city": "#6CABDD",
     "man utd": "#DA291C",
+    "manchester united": "#DA291C",
     "newcastle": "#C5B358",
+    "newcastle united": "#C5B358",
     "nottm forest": "#DD0000",
+    "nottingham forest": "#DD0000",
     "palace": "#C4122E",
     "spurs": "#FFFFFF",
+    "tottenham hotspur": "#FFFFFF",
     "sunderland": "#EB172B",
     "west ham": "#7A263A",
+    "west ham united": "#7A263A",
     "wolves": "#FDB913",
+    "wolverhampton wanderers": "#FDB913",
 }
 
 
@@ -81,7 +92,13 @@ def _utc_now_iso() -> str:
 
 
 def _normalize_name(value: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "", value.lower())
+    folded = (
+        unicodedata.normalize("NFKD", value or "")
+        .encode("ascii", "ignore")
+        .decode("ascii")
+        .lower()
+    )
+    return re.sub(r"[^a-z0-9]+", "", folded)
 
 
 def _normalize_image_url(value: Any) -> str | None:
@@ -121,6 +138,14 @@ def _format_kickoff_label(raw: str) -> str:
     if not match:
         return raw.strip()
     return f"{match.group('hour')}:{match.group('minute')} {match.group('meridiem').upper()}"
+
+
+def _normalize_title(title: str) -> str:
+    clean = str(title or "").strip()
+    if not clean:
+        return "Today's Premier League player prop list by fixture"
+    normalized = re.sub(r"\bstat list\b", "player prop list", clean, flags=re.IGNORECASE)
+    return normalized
 
 
 def _clean_team_display(value: str) -> str:
@@ -345,48 +370,68 @@ def _try_enrich_with_db(fixtures: list[dict[str, Any]], *, scheduled_for: str) -
         )
 
     player_maps_by_team: dict[int, dict[str, dict[str, Any]]] = {}
+    team_player_rows: dict[int, list[dict[str, Any]]] = {team_id: [] for team_id in team_ids}
+
+    with data_fetcher.db_cursor() as cur:
+        cur.execute(
+            """
+            select id, name, short_name, common_name, display_name, team_id, image_path
+            from players
+            where team_id = any(%s);
+            """,
+            (team_ids,),
+        )
+        for row in cur.fetchall():
+            team_player_rows.setdefault(int(row["team_id"]), []).append(row)
+
+    def _player_payload(player: dict[str, Any], team_id: int) -> dict[str, Any]:
+        return {
+            "player_id": int(player["id"]),
+            "team_id": int(team_id),
+            "team_name": str((teams_by_id.get(team_id) or {}).get("name") or ""),
+            "player_display": _shorten_player_name(
+                str(
+                    player.get("display_name")
+                    or player.get("common_name")
+                    or player.get("short_name")
+                    or player.get("name")
+                    or ""
+                )
+            ),
+            "player_face_url": _normalize_image_url(player.get("image_path")),
+            "team_badge_url": _normalize_image_url((teams_by_id.get(team_id) or {}).get("image_path")),
+        }
+
+    def _attach_player_variants(mapped: dict[str, dict[str, Any]], player: dict[str, Any], team_id: int) -> None:
+        payload = _player_payload(player, team_id)
+        for candidate in _player_name_candidates(player):
+            mapped[candidate] = payload
 
     def build_player_map(team_id: int) -> dict[str, dict[str, Any]]:
         cached = player_maps_by_team.get(team_id)
         if cached is not None:
             return cached
-        fixtures_for_team = data_fetcher.get_recent_team_fixtures(team_id, limit=1)
-        if not fixtures_for_team:
-            player_maps_by_team[team_id] = {}
-            return {}
-        last_fixture_id = fixtures_for_team[0].id
-        starter_rows = data_fetcher.get_fixture_players([last_fixture_id], team_id)
-        player_ids = [
-            int(row["player_id"])
-            for row in starter_rows
-            if row.get("player_id") is not None and row.get("is_starter")
-        ]
-        if not player_ids:
-            player_ids = [int(row["player_id"]) for row in starter_rows if row.get("player_id") is not None]
-        players = data_fetcher.get_players_by_ids(player_ids)
         mapped: dict[str, dict[str, Any]] = {}
-        for player_id in player_ids:
-            player = players.get(player_id)
-            if not player:
-                continue
-            payload = {
-                "player_id": int(player_id),
-                "team_id": int(team_id),
-                "team_name": str((teams_by_id.get(team_id) or {}).get("name") or ""),
-                "player_display": _shorten_player_name(
-                    str(
-                        player.get("display_name")
-                        or player.get("common_name")
-                        or player.get("short_name")
-                        or player.get("name")
-                        or ""
-                    )
-                ),
-                "player_face_url": _normalize_image_url(player.get("image_path")),
-                "team_badge_url": _normalize_image_url((teams_by_id.get(team_id) or {}).get("image_path")),
-            }
-            for candidate in _player_name_candidates(player):
-                mapped.setdefault(candidate, payload)
+        for player in team_player_rows.get(team_id, []):
+            _attach_player_variants(mapped, player, team_id)
+
+        fixtures_for_team = data_fetcher.get_recent_team_fixtures(team_id, limit=1)
+        if fixtures_for_team:
+            last_fixture_id = fixtures_for_team[0].id
+            starter_rows = data_fetcher.get_fixture_players([last_fixture_id], team_id)
+            player_ids = [
+                int(row["player_id"])
+                for row in starter_rows
+                if row.get("player_id") is not None and row.get("is_starter")
+            ]
+            if not player_ids:
+                player_ids = [int(row["player_id"]) for row in starter_rows if row.get("player_id") is not None]
+            players = data_fetcher.get_players_by_ids(player_ids)
+            for player_id in player_ids:
+                player = players.get(player_id)
+                if not player:
+                    continue
+                _attach_player_variants(mapped, player, team_id)
         player_maps_by_team[team_id] = mapped
         return mapped
 
@@ -513,7 +558,8 @@ def build_by_fixture_manifest(
     slot: str,
     label: str,
 ) -> dict[str, Any]:
-    title, intro_lines, fixtures_raw, outro_lines = parse_by_fixture_text(content)
+    raw_title, intro_lines, fixtures_raw, outro_lines = parse_by_fixture_text(content)
+    title = _normalize_title(raw_title)
 
     fixture_items: list[dict[str, Any]] = []
     all_section_counts = {section_key: 0 for section_key in SECTION_ORDER}
@@ -646,7 +692,7 @@ def build_by_fixture_manifest(
         "scheduled_for": scheduled_for,
         "label": label,
         "title": title,
-        "subtitle": "All data driven based on recent form",
+        "subtitle": "Player prop list · all data driven based on recent form",
         "intro_lines": intro_lines,
         "outro_lines": outro_lines,
         "content_path": str(content_path),
