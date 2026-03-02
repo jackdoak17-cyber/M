@@ -75,6 +75,30 @@ def fetch_post_approval(post_key: str) -> PostApproval | None:
     return PostApproval(**data[0])
 
 
+def list_post_approvals(
+    *,
+    status: str | None = None,
+    posted: bool | None = None,
+    slots: list[str] | None = None,
+) -> list[PostApproval]:
+    url = _supabase_url("post_approvals")
+    params: dict[str, str] = {"select": "*", "order": "scheduled_for.asc,slot.asc"}
+    if status:
+        params["status"] = f"eq.{status}"
+    if posted is True:
+        params["posted_at"] = "not.is.null"
+    elif posted is False:
+        params["posted_at"] = "is.null"
+    if slots:
+        safe_slots = [slot for slot in slots if slot]
+        if safe_slots:
+            params["slot"] = f"in.({','.join(safe_slots)})"
+    response = requests.get(url, headers=_supabase_headers(), params=params, timeout=20)
+    response.raise_for_status()
+    data = response.json() or []
+    return [PostApproval(**row) for row in data]
+
+
 def update_post_status(post_key: str, status: str, extra: dict[str, Any] | None = None) -> PostApproval:
     url = _supabase_url("post_approvals")
     params = {"post_key": f"eq.{post_key}", "select": "*"}
