@@ -1923,7 +1923,7 @@ def _render_rich_slide(markup_title: str, manifest: dict[str, Any], slide: dict[
       <div class="dots">{_slide_dots(slide)}</div>
       <div class="body">{sections_html}</div>
       <div class="footer">
-        <div class="footer-left">Recent form snapshot · starter-only hit rate</div>
+        <div class="footer-left">Recent form player prop data</div>
         <div class="footer-handle">oddssearch.io</div>
       </div>
     </div>
