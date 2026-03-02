@@ -140,9 +140,9 @@
       "rank": 1,
       "writeup": "🎯 Azzedine Ounahi (Girona) 2+ shots vs Celta de Vigo (La Liga)\nThe Girona midfielder is averaging 3.86 shots per 90 this season and has hit 2+ shots in 4 of his last 5 matches. He's recorded 8 of his last 11 games with 2+ shots overall. Against teams like Celta de Vigo, Deportivo Alavés, and FC Barcelona, he's managed 2+ shots in 3 of 5 encounters.\n📊 8/11 (73%)\n💰 Kambi 2.0",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 4.0,
+        "hit": true,
+        "checked_at": "2026-03-02T11:08:37.378010"
       }
     },
     {
@@ -300,9 +300,9 @@
       "rank": 2,
       "writeup": "🎯 Sven Mijnans (AZ) 1+ shots on target vs FC Utrecht (Eredivisie)\nMijnans is averaging 1.79 shots on target per 90 this season and has hit this line in 4 of his last 5 matches and 16 of his last 20 overall. Against teams like FC Twente, FC Utrecht, and FC Volendam, he's registered 1+ shots on target in 6 of 7 games (85.7%).\n📊 16/20 (80%)\n💰 Kambi 2.05",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-03-02T11:08:37.643268"
       }
     },
     {
@@ -460,9 +460,9 @@
       "rank": 3,
       "writeup": "🎯 Peer Koopmeiners (AZ) 1+ shots vs FC Utrecht (Eredivisie)\nKoopmeiners is averaging 1.16 shots per 90 this season and has recorded 1+ shots in 4 of his last 5 matches and 16 of his last 20 overall. He averages 1.30 shots per 90 in away fixtures compared to 1.10 at home. Against teams like FC Twente, FC Utrecht, and FC Volendam, he's hit this line in 71.4% of games (5 of 7).\n📊 16/20 (80%)\n💰 Kambi 1.8",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 2.0,
+        "hit": true,
+        "checked_at": "2026-03-02T11:08:37.908468"
       }
     },
     {
@@ -592,9 +592,9 @@
       "rank": 4,
       "writeup": "🎯 Donyell Malen (Roma) 4+ shots vs Juventus (Serie A)\nHe's averaging 5.48 shots per 90 this season and has hit 4+ in 4 of his last 5 matches. At home, Malen averages 6.33 shots per 90 compared to just 3.67 away, showing a clear venue boost. Against teams like Cagliari, Cremonese, and Juventus, he's managed 4+ shots in 2 of 3 games (66.7%).\n📊 4/5 (80%)\n💰 Kambi 2.50",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 6.0,
+        "hit": true,
+        "checked_at": "2026-03-02T11:08:38.174790"
       }
     }
   ]
