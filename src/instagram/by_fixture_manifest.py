@@ -573,6 +573,8 @@ def build_by_fixture_manifest(
             section_key, subject_name, market = _parse_row_label(raw_row.label)
             if section_key not in grouped_rows:
                 continue
+            if section_key == "corners":
+                continue
             raw_rows.append(
                 {
                     "fixture_index": fixture_index,

@@ -61,7 +61,11 @@ jobs:
               DATE_ARG=""
             fi
           else
-            SLOT="weekend_fixture"
+            TOMORROW_DOW="$(TZ='Europe/London' date -d tomorrow +%u)"
+            case "$TOMORROW_DOW" in
+              6|7) SLOT="weekend_fixture" ;;
+              *) SLOT="weekday_fixture" ;;
+            esac
             DATE_ARG=""
           fi
           echo "SLOT=$SLOT" >> "$GITHUB_ENV"
