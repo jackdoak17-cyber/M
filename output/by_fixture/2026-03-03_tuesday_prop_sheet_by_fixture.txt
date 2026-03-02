@@ -2,29 +2,6 @@ Todays Premier League stat list by fixture. All data driven based on recent form
 
 If you find this useful please leave a like and remember to bookmark 🔖
 
-🔴 Bournemouth vs Brentford 🔴 - 7:30pm
-
-M. Senesi 1+ shots (won in 5/6)
-A. Scott 2+ shots (won in 6/7)
-M. Tavernier 2+ shots (won in 10/12)
-K. Schade 2+ shots (won in 5/6)
-I. Thiago 1+ foul committed (won in 17/19)
-K. Schade 1+ foul committed (won in 13/16)
-A. Truffert 1+ foul committed (won in 16/20)
-K. Ajer 1+ foul committed (won in 12/15)
-Y. Yarmolyuk 1+ foul committed (won in 12/15)
-M. Senesi 1+ foul committed (won in 8/10)
-I. Thiago 2+ fouls committed (won in 7/8)
-K. Schade 1+ foul won (won in 14/16)
-D. Ouattara 1+ foul won (won in 11/13)
-A. Scott 1+ foul won (won in 14/17)
-I. Thiago 1+ foul won (won in 9/11)
-A. Scott 2+ fouls won (won in 11/13)
-Bournemouth 3+ corners (won in 18/20)
-Brentford 3+ corners (won in 17/20)
-Bournemouth 4+ corners (won in 4/5)
-Bournemouth 5+ corners (won in 4/5)
-
 ⚪ Leeds vs Sunderland 🔴 - 7:30pm
 
 D. Ballard 1+ shots (won in 8/10)
@@ -47,6 +24,30 @@ Hannibal 1+ foul won (won in 6/6)
 J. Tarkowski 1+ foul won (won in 11/13)
 Z. Flemming 1+ foul won (won in 5/6)
 Hannibal 2+ fouls won (won in 5/6)
+
+🔴 Bournemouth vs Brentford 🔴 - 7:30pm
+
+M. Senesi 1+ shots (won in 5/6)
+A. Scott 2+ shots (won in 6/7)
+M. Tavernier 2+ shots (won in 10/12)
+K. Schade 2+ shots (won in 5/6)
+I. Thiago 1+ foul committed (won in 17/19)
+K. Schade 1+ foul committed (won in 13/16)
+A. Truffert 1+ foul committed (won in 16/20)
+K. Ajer 1+ foul committed (won in 12/15)
+Y. Yarmolyuk 1+ foul committed (won in 12/15)
+M. Senesi 1+ foul committed (won in 8/10)
+I. Thiago 2+ fouls committed (won in 7/8)
+K. Schade 1+ foul won (won in 14/16)
+D. Ouattara 1+ foul won (won in 11/13)
+A. Scott 1+ foul won (won in 14/17)
+I. Thiago 1+ foul won (won in 9/11)
+A. Scott 2+ fouls won (won in 11/13)
+Bournemouth 3+ corners (won in 18/20)
+Brentford 3+ corners (won in 17/20)
+Bournemouth 11+ shots (won in 16/20)
+Bournemouth 4+ corners (won in 4/5)
+Bournemouth 5+ corners (won in 4/5)
 
 🟠 Wolves vs Liverpool 🔴 - 8:15pm
 
@@ -72,6 +73,7 @@ M. Kerkez 1+ foul won (won in 5/6)
 I. Konaté 1+ foul won (won in 14/17)
 A. Allister 1+ foul won (won in 13/16)
 M. Mané 2+ fouls won (won in 6/7)
+Liverpool 13+ shots (won in 6/7)
 Liverpool 5+ corners (won in 10/12)
 Liverpool 3+ corners (won in 12/15)
 Liverpool 4+ corners (won in 12/15)
