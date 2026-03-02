@@ -4,7 +4,7 @@ import argparse
 import hashlib
 from datetime import datetime, timezone
 
-from .content_resolver import resolve_content, resolve_target_date
+from .content_resolver import SLOTS, resolve_content, resolve_target_date
 from .supabase_client import fetch_post_approval, update_post_status
 from .telegram_client import send_message
 from .x_client import post_thread
@@ -24,48 +24,37 @@ def _content_hash(text: str) -> str:
 
 def run(slot: str, dry_run: bool) -> int:
     target = resolve_target_date("post", slot=slot)
-    info = resolve_content(slot, target)
-    if info is None:
-        print(f"No content found for slot={slot} date={target}")
-        return 0
-
-    post_key = f"{info.scheduled_for.isoformat()}_{slot}"
+    post_key = f"{target.isoformat()}_{slot}"
     approval = fetch_post_approval(post_key)
     if not approval or approval.status != "approved":
         print(f"Post not approved for {post_key}")
-        return 0
-    current_hash = _content_hash(info.content)
-    if not approval.content_hash or approval.content_hash != current_hash:
-        update_post_status(
-            post_key,
-            "pending",
-            {
-                "content": info.content,
-                "content_hash": current_hash,
-                "content_path": str(info.path),
-            },
-        )
-        send_message(
-            "Approval reset because the fixture sheet changed after approval. "
-            "Please review the new preview and approve again."
-        )
-        print(f"Approval reset for {post_key}: content changed")
         return 0
     if approval.posted_at:
         print(f"Post already sent for {post_key}")
         return 0
 
-    preview = _truncate_text(info.content)
+    approved_content = (approval.content or "").strip()
+    if not approved_content:
+        print(f"Approved content is empty for {post_key}")
+        return 1
+
+    latest = resolve_content(slot, target)
+    approved_hash = approval.content_hash or _content_hash(approved_content)
+    latest_hash = _content_hash(latest.content) if latest else None
+    if latest_hash and approved_hash != latest_hash:
+        print(f"Detected content drift for {post_key}; posting approved snapshot.")
+
+    preview = _truncate_text(approved_content)
     if dry_run:
         message = (
             f"DRY RUN — NOT posted to X\n"
-            f"Slot: {slot}\nDate: {info.scheduled_for.isoformat()} ({info.day_label})\n\n"
+            f"Slot: {slot}\nDate: {target.isoformat()} ({target.strftime('%A')})\n\n"
             f"{preview}"
         )
         send_message(message)
         return 0
 
-    result = post_thread(info.content)
+    result = post_thread(approved_content)
     update_post_status(
         post_key,
         "approved",
@@ -74,9 +63,10 @@ def run(slot: str, dry_run: bool) -> int:
             "posted_tweet_id": result.tweet_ids[0] if result.tweet_ids else None,
         },
     )
+    label = SLOTS.get(slot, {}).get("label", slot)
     message = (
-        f"Posted to X: {info.label}\n"
-        f"Date: {info.scheduled_for.isoformat()} ({info.day_label})\n"
+        f"Posted to X: {label}\n"
+        f"Date: {target.isoformat()} ({target.strftime('%A')})\n"
         f"Tweets: {', '.join(result.tweet_ids)}"
     )
     send_message(message)

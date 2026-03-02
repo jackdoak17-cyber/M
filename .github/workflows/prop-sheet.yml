@@ -49,6 +49,20 @@ jobs:
           PY
           python -m src.main --output-dir output
 
+      - name: Alert on approved post drift
+        env:
+          SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ODDS_ANALYST_X_POST_BOT_TOKEN: ${{ secrets.ODDS_ANALYST_X_POST_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PROP_SHEET_TIMEZONE: Europe/London
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ] || [ -z "$ODDS_ANALYST_X_POST_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Skipping drift alert: missing required credentials."
+            exit 0
+          fi
+          python -m src.posting.alert_x_content_drift --window-days 7
+
       - name: Commit outputs
         run: |
           git config user.name "prop-sheet-bot"
