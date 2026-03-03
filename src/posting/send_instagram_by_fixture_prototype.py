@@ -14,7 +14,7 @@ from src.instagram.r2_storage import R2Settings, R2Storage
 from src.instagram.renderer import render_carousel_images
 
 from .content_resolver import resolve_content, resolve_target_date
-from .instagram_slots import build_post_key
+from .instagram_slots import approval_slot, build_post_key
 from .settings import get_posting_settings
 from .supabase_client import upsert_post_approval
 from .telegram_client import send_media_group, send_message
@@ -215,11 +215,12 @@ def run(
         "asset_cache": asset_report.as_dict() if asset_report is not None else {},
         "updated_at": _utc_now_iso(),
     }
+    instagram_slot = approval_slot(slot)
     post_key = build_post_key(slot, scheduled_for)
     approval_payload = {
         "post_key": post_key,
-        "slot": slot,
-        "post_type": slot,
+        "slot": instagram_slot,
+        "post_type": instagram_slot,
         "post_date": scheduled_str,
         "scheduled_for": scheduled_str,
         "status": "pending",
@@ -291,8 +292,8 @@ def run(
             )
         ),
         buttons=[
-            [{"text": "✅ Post to Instagram", "callback_data": f"approve:{slot}:{scheduled_str}"}],
-            [{"text": "❌ Skip", "callback_data": f"reject:{slot}:{scheduled_str}"}],
+            [{"text": "✅ Post to Instagram", "callback_data": f"approve:{instagram_slot}:{scheduled_str}"}],
+            [{"text": "❌ Skip", "callback_data": f"reject:{instagram_slot}:{scheduled_str}"}],
         ],
     )
     delivery_report["summary_message"] = {

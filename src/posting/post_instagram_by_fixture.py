@@ -112,6 +112,19 @@ def run(
     post_key = build_post_key(slot, scheduled_for)
 
     approval = fetch_post_approval(post_key)
+    if not approval:
+        # Temporary backward-compatibility path for pre-namespace approvals.
+        legacy_post_key = f"{scheduled_str}_{slot}"
+        legacy = fetch_post_approval(legacy_post_key)
+        if legacy and legacy.status == "approved":
+            try:
+                legacy_payload = _parse_preview_payload(legacy.content)
+            except RuntimeError:
+                legacy_payload = {}
+            if legacy_payload.get("channel") == "instagram":
+                approval = legacy
+                post_key = legacy_post_key
+
     if not approval or approval.status != "approved":
         print(f"Post not approved for {post_key}")
         return 0
