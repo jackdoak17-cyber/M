@@ -1,16 +1,16 @@
 🏆 Change in La Liga Winner probability since last update:
 
-• Barcelona: 61.5% -> 74.5%
-• Real Madrid: 35.5% -> 23.5%
-• Atletico Madrid: 0.4% -> 0.7%
+• Barcelona: 74.5% -> 74.5%
+• Real Madrid: 23.5% -> 22.5%
+• Atletico Madrid: 0.7% -> 0.9%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/la-liga-winner-114
 
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 40.5% -> 47.5%
-• Erling Haaland: 24% -> 25.5%
+• Declan Rice: 47.5% -> 51%
+• Erling Haaland: 25.5% -> 25.5%
 • Bruno Fernandes: 10% -> 10%
 
 [🔮 via @Polymarket]
@@ -18,8 +18,8 @@ https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Lamine Yamal: 25.5% -> 32%
-• Kylian Mbappé: 31.5% -> 26%
+• Lamine Yamal: 32% -> 31.5%
+• Kylian Mbappé: 26% -> 26.5%
 • Harry Kane: 19.4% -> 19.4%
 
 [🔮 via @Polymarket]
@@ -27,34 +27,34 @@ https://polymarket.com/event/ballon-dor-winner-2026
 
 🏆 Change in EPL Top 4 probability since last update:
 
-• Arsenal (Top 4): 98% -> 98.4%
+• Arsenal (Top 4): 98.4% -> 98.3%
 • Manchester City (Top 4): 98.2% -> 98.2%
-• Manchester United (Top 4): 75% -> 75.5%
+• Manchester United (Top 4): 75.5% -> 77.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/english-premier-league-top-4-finish
 
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 97.8% -> 97.8%
-• Burnley (Relegated): 94.1% -> 92.4%
-• West Ham (Relegated): 56.5% -> 55.5%
+• Wolves (Relegated): 97.8% -> 97.4%
+• Burnley (Relegated): 92.4% -> 95.4%
+• West Ham (Relegated): 55.5% -> 55.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
 
 🏆 Change in Next Man Utd Manager probability since last update:
 
-• Michael Carrick: 61.5% -> 62%
-• Oliver Glasner: 16.5% -> 14%
-• Thomas Tuchel: 7.2% -> 7.1%
+• Michael Carrick: 62% -> 62%
+• Oliver Glasner: 14% -> 13%
+• Thomas Tuchel: 7.1% -> 7.1%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/next-manchester-united-manager
 
 🏆 Change in TheUnitedStrand Haircut probability since last update:
 
-• TheUnitedStrand: 19.5% -> 19%
+• TheUnitedStrand: 19% -> 16.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/will-theunitedstrand-get-a-haircut-by-2025-26-season-end
