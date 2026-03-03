@@ -13,7 +13,7 @@ from src.instagram.r2_storage import R2Settings, R2Storage
 from src.instagram.renderer import render_carousel_images
 from src.instagram.shot_props_manifest import verify_shot_props_carousel_manifest
 
-from .instagram_slots import build_post_key, get_instagram_slot, resolve_instagram_scheduled_date
+from .instagram_slots import approval_slot, build_post_key, get_instagram_slot, resolve_instagram_scheduled_date
 from .settings import get_posting_settings
 from .supabase_client import upsert_post_approval
 from .telegram_client import send_media_group, send_message
@@ -192,11 +192,12 @@ def run(
         "updated_at": _utc_now_iso(),
     }
 
+    instagram_slot = approval_slot(slot)
     post_key = build_post_key(slot, scheduled_for)
     approval_payload = {
         "post_key": post_key,
-        "slot": slot,
-        "post_type": slot,
+        "slot": instagram_slot,
+        "post_type": instagram_slot,
         "post_date": scheduled_str,
         "scheduled_for": scheduled_str,
         "status": "pending",
@@ -212,8 +213,8 @@ def run(
         send_media_group(media)
     summary = _build_preview_summary(slot_cfg.label, scheduled_str, manifest, image_urls)
     buttons = [
-        [{"text": "✅ Post to Instagram", "callback_data": f"approve:{slot}:{scheduled_str}"}],
-        [{"text": "❌ Skip", "callback_data": f"reject:{slot}:{scheduled_str}"}],
+        [{"text": "✅ Post to Instagram", "callback_data": f"approve:{instagram_slot}:{scheduled_str}"}],
+        [{"text": "❌ Skip", "callback_data": f"reject:{instagram_slot}:{scheduled_str}"}],
     ]
     send_message(summary, buttons=buttons)
     print(f"Instagram preview sent for {post_key} ({len(image_urls)} images)")
