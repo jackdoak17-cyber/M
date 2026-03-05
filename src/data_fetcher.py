@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+import os
 from contextlib import contextmanager
 from dataclasses import dataclass
 from datetime import date, datetime, time, timedelta, timezone
+from functools import lru_cache
+from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence
 from zoneinfo import ZoneInfo
 
@@ -13,6 +16,8 @@ from config import get_settings
 
 
 settings = get_settings()
+
+MANUAL_AVAILABILITY_FILE = Path(__file__).resolve().parents[1] / "manual_player_exclusions.txt"
 
 
 @dataclass(frozen=True)
@@ -173,6 +178,61 @@ def get_sidelined_player_ids(team_id: int) -> List[int]:
         cur.execute(query, (team_id,))
         rows = cur.fetchall()
     return [int(row["player_id"]) for row in rows if row.get("player_id") is not None]
+
+
+def _parse_int_list(value: str) -> set[int]:
+    ids: set[int] = set()
+    for part in value.split(","):
+        raw = part.strip()
+        if not raw:
+            continue
+        try:
+            ids.add(int(raw))
+        except ValueError:
+            continue
+    return ids
+
+
+@lru_cache(maxsize=1)
+def get_manual_excluded_player_ids() -> set[int]:
+    ids: set[int] = set()
+    env_raw = os.getenv("MANUAL_EXCLUDED_PLAYER_IDS", "")
+    ids.update(_parse_int_list(env_raw))
+
+    if MANUAL_AVAILABILITY_FILE.exists():
+        for line in MANUAL_AVAILABILITY_FILE.read_text(encoding="utf-8").splitlines():
+            clean = line.strip()
+            if not clean or clean.startswith("#"):
+                continue
+            if "#" in clean:
+                clean = clean.split("#", 1)[0].strip()
+            try:
+                ids.add(int(clean))
+            except ValueError:
+                continue
+    return ids
+
+
+def get_sidelined_player_ids_for_players(player_ids: Sequence[int]) -> List[int]:
+    ids = list({int(pid) for pid in player_ids if pid is not None})
+    if not ids:
+        return []
+    query = """
+        select distinct player_id
+        from sidelined_active
+        where player_id = any(%s)
+          and lower(coalesce(category, '')) in ('injury', 'suspended', 'suspension')
+          and (completed is null or completed = false)
+          and (end_date is null or end_date >= current_date);
+    """
+    with db_cursor() as cur:
+        cur.execute(query, (ids,))
+        rows = cur.fetchall()
+    sidelined = {int(row["player_id"]) for row in rows if row.get("player_id") is not None}
+    manual = get_manual_excluded_player_ids()
+    if manual:
+        sidelined.update(pid for pid in ids if pid in manual)
+    return sorted(sidelined)
 
 
 def get_players_by_ids(player_ids: Iterable[int]) -> Dict[int, Dict]:

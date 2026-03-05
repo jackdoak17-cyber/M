@@ -1,0 +1,4 @@
+# Manual player exclusions for preview/post generation.
+# One player_id per line. Comments allowed.
+
+5666458 # Maxence Lacroix

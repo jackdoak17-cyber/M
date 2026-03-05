@@ -154,7 +154,7 @@ def is_player_eligible(
     sidelined_ids: Optional[Iterable[int]] = None,
 ) -> bool:
     sidelined = set(sidelined_ids) if sidelined_ids is not None else set(
-        data_fetcher.get_sidelined_player_ids(team_id),
+        data_fetcher.get_sidelined_player_ids_for_players([player_id]),
     )
     if player_id in sidelined:
         return False
@@ -168,7 +168,7 @@ def get_qualifying_player_stats(
     sidelined_ids: Optional[Iterable[int]] = None,
 ) -> Dict[str, List[StatHit]]:
     sidelined = set(sidelined_ids) if sidelined_ids is not None else set(
-        data_fetcher.get_sidelined_player_ids(team_id),
+        data_fetcher.get_sidelined_player_ids_for_players([player_id]),
     )
     if player_id in sidelined:
         return {}

@@ -61,8 +61,16 @@ def player_is_currently_sidelined(
         select 1
         from sidelined_active
         where player_id = %s
-          and team_id = %s
-          and lower(coalesce(category, '')) in ('injury', 'suspended')
+          and (
+                team_id = %s
+                or exists (
+                    select 1
+                    from players p
+                    where p.id = sidelined_active.player_id
+                      and p.team_id = %s
+                )
+              )
+          and lower(coalesce(category, '')) in ('injury', 'suspended', 'suspension')
           and coalesce(completed, false) = false
           and start_date <= %s
           and (end_date is null or end_date >= %s)
@@ -70,7 +78,7 @@ def player_is_currently_sidelined(
         limit 1;
     """
     with db_cursor() as cur:
-        cur.execute(query, (player_id, team_id, on_date, on_date, lookback_start))
+        cur.execute(query, (player_id, team_id, team_id, on_date, on_date, lookback_start))
         return cur.fetchone() is not None
 
 

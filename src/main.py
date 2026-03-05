@@ -85,8 +85,8 @@ def _collect_player_lines(team_id: int) -> List[formatter.PlayerStatLine]:
     starters = _get_team_starters(team_id)
     if not starters:
         return []
-    sidelined_ids = set(data_fetcher.get_sidelined_player_ids(team_id))
     player_ids = [int(row["player_id"]) for row in starters if row.get("player_id") is not None]
+    sidelined_ids = set(data_fetcher.get_sidelined_player_ids_for_players(player_ids))
     players = data_fetcher.get_players_by_ids(player_ids)
 
     lines: List[formatter.PlayerStatLine] = []
