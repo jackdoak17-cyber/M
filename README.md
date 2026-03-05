@@ -25,6 +25,13 @@ PROP_INCLUDE_SIMILAR=1
 POLYMARKET_GAMMA_BASE_URL=https://gamma-api.polymarket.com
 ```
 
+Temporary availability overrides:
+
+```
+# manual_player_exclusions.txt
+5666458,2026-03-01,2026-03-08 # temporary suspension override
+```
+
 Install dependencies:
 
 ```

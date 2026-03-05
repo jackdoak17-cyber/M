@@ -30,6 +30,21 @@ class FixtureRow:
     away_score: Optional[int]
 
 
+@dataclass(frozen=True)
+class ManualPlayerExclusion:
+    player_id: int
+    start_date: Optional[date] = None
+    end_date: Optional[date] = None
+    reason: Optional[str] = None
+
+    def is_active_on(self, on_date: date) -> bool:
+        if self.start_date and on_date < self.start_date:
+            return False
+        if self.end_date and on_date > self.end_date:
+            return False
+        return True
+
+
 @contextmanager
 def db_cursor():
     conn = psycopg2.connect(settings.supabase_db_url)
@@ -193,43 +208,101 @@ def _parse_int_list(value: str) -> set[int]:
     return ids
 
 
+def _current_local_date() -> date:
+    return datetime.now(ZoneInfo(settings.timezone)).date()
+
+
+def _parse_optional_iso_date(raw: str) -> Optional[date]:
+    value = raw.strip()
+    if not value:
+        return None
+    try:
+        return date.fromisoformat(value)
+    except ValueError:
+        return None
+
+
+def _parse_manual_exclusion_line(line: str) -> Optional[ManualPlayerExclusion]:
+    reason: Optional[str] = None
+    clean = line.strip()
+    if not clean or clean.startswith("#"):
+        return None
+    if "#" in clean:
+        clean, comment = clean.split("#", 1)
+        reason = comment.strip() or None
+    clean = clean.strip()
+    if not clean:
+        return None
+
+    normalized = clean.replace("|", ",")
+    parts = [part.strip() for part in normalized.split(",")]
+    if not parts or not parts[0]:
+        return None
+
+    try:
+        player_id = int(parts[0])
+    except ValueError:
+        return None
+
+    start_date = _parse_optional_iso_date(parts[1]) if len(parts) > 1 else None
+    end_date = _parse_optional_iso_date(parts[2]) if len(parts) > 2 else None
+    if start_date and end_date and start_date > end_date:
+        start_date, end_date = end_date, start_date
+
+    return ManualPlayerExclusion(
+        player_id=player_id,
+        start_date=start_date,
+        end_date=end_date,
+        reason=reason,
+    )
+
+
 @lru_cache(maxsize=1)
-def get_manual_excluded_player_ids() -> set[int]:
-    ids: set[int] = set()
+def _load_manual_player_exclusions() -> tuple[ManualPlayerExclusion, ...]:
+    entries: list[ManualPlayerExclusion] = []
     env_raw = os.getenv("MANUAL_EXCLUDED_PLAYER_IDS", "")
-    ids.update(_parse_int_list(env_raw))
+    for player_id in _parse_int_list(env_raw):
+        entries.append(ManualPlayerExclusion(player_id=player_id, reason="env override"))
 
     if MANUAL_AVAILABILITY_FILE.exists():
         for line in MANUAL_AVAILABILITY_FILE.read_text(encoding="utf-8").splitlines():
-            clean = line.strip()
-            if not clean or clean.startswith("#"):
-                continue
-            if "#" in clean:
-                clean = clean.split("#", 1)[0].strip()
-            try:
-                ids.add(int(clean))
-            except ValueError:
-                continue
-    return ids
+            parsed = _parse_manual_exclusion_line(line)
+            if parsed:
+                entries.append(parsed)
+    return tuple(entries)
 
 
-def get_sidelined_player_ids_for_players(player_ids: Sequence[int]) -> List[int]:
+def get_manual_excluded_player_ids(on_date: Optional[date] = None) -> set[int]:
+    target_date = on_date or _current_local_date()
+    return {
+        entry.player_id
+        for entry in _load_manual_player_exclusions()
+        if entry.is_active_on(target_date)
+    }
+
+
+def get_sidelined_player_ids_for_players(
+    player_ids: Sequence[int],
+    on_date: Optional[date] = None,
+) -> List[int]:
     ids = list({int(pid) for pid in player_ids if pid is not None})
     if not ids:
         return []
+    target_date = on_date or _current_local_date()
     query = """
         select distinct player_id
         from sidelined_active
         where player_id = any(%s)
           and lower(coalesce(category, '')) in ('injury', 'suspended', 'suspension')
           and (completed is null or completed = false)
-          and (end_date is null or end_date >= current_date);
+          and (start_date is null or start_date <= %s)
+          and (end_date is null or end_date >= %s);
     """
     with db_cursor() as cur:
-        cur.execute(query, (ids,))
+        cur.execute(query, (ids, target_date, target_date))
         rows = cur.fetchall()
     sidelined = {int(row["player_id"]) for row in rows if row.get("player_id") is not None}
-    manual = get_manual_excluded_player_ids()
+    manual = get_manual_excluded_player_ids(on_date=target_date)
     if manual:
         sidelined.update(pid for pid in ids if pid in manual)
     return sorted(sidelined)

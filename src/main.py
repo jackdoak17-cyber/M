@@ -81,12 +81,19 @@ def _build_fixture_context(fixture: data_fetcher.FixtureRow) -> FixtureContext:
     )
 
 
-def _collect_player_lines(team_id: int) -> List[formatter.PlayerStatLine]:
+def _fixture_local_date(starting_at: datetime) -> date:
+    local_tz = ZoneInfo(settings.timezone)
+    if starting_at.tzinfo is None:
+        starting_at = starting_at.replace(tzinfo=timezone.utc)
+    return starting_at.astimezone(local_tz).date()
+
+
+def _collect_player_lines(team_id: int, on_date: date) -> List[formatter.PlayerStatLine]:
     starters = _get_team_starters(team_id)
     if not starters:
         return []
     player_ids = [int(row["player_id"]) for row in starters if row.get("player_id") is not None]
-    sidelined_ids = set(data_fetcher.get_sidelined_player_ids_for_players(player_ids))
+    sidelined_ids = set(data_fetcher.get_sidelined_player_ids_for_players(player_ids, on_date=on_date))
     players = data_fetcher.get_players_by_ids(player_ids)
 
     lines: List[formatter.PlayerStatLine] = []
@@ -95,6 +102,7 @@ def _collect_player_lines(team_id: int) -> List[formatter.PlayerStatLine]:
             player_id,
             team_id,
             sidelined_ids=sidelined_ids,
+            on_date=on_date,
         )
         if not stats_by_key:
             continue
@@ -133,11 +141,12 @@ def _collect_team_lines(team_id: int, fixture_id: int) -> List[formatter.TeamSta
 
 def _build_fixture_section(fixture: data_fetcher.FixtureRow) -> str:
     context = _build_fixture_context(fixture)
+    fixture_date = _fixture_local_date(fixture.starting_at)
     player_lines: List[formatter.PlayerStatLine] = []
     team_lines: List[formatter.TeamStatLine] = []
 
     for team_id in (fixture.home_team_id, fixture.away_team_id):
-        player_lines.extend(_collect_player_lines(team_id))
+        player_lines.extend(_collect_player_lines(team_id, fixture_date))
         team_lines.extend(_collect_team_lines(team_id, fixture.id))
 
     return formatter.format_game_section(

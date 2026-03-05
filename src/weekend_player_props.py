@@ -52,7 +52,7 @@ def _resolve_player_name(player_row: Dict | None, fallback_id: int) -> str:
     )
 
 
-def _collect_team_lines(team_id: int) -> List[PlayerPropLine]:
+def _collect_team_lines(team_id: int, on_date) -> List[PlayerPropLine]:
     fixtures = data_fetcher.get_recent_team_fixtures(team_id, limit=20)
     if not fixtures:
         return []
@@ -73,7 +73,7 @@ def _collect_team_lines(team_id: int) -> List[PlayerPropLine]:
     if not last_starters:
         return []
 
-    sidelined_ids = set(data_fetcher.get_sidelined_player_ids_for_players(last_starters))
+    sidelined_ids = set(data_fetcher.get_sidelined_player_ids_for_players(last_starters, on_date=on_date))
     candidate_ids = {pid for pid in last_starters if pid not in sidelined_ids}
     if not candidate_ids:
         return []
@@ -169,7 +169,7 @@ def collect_player_props_for_day(day) -> List[PlayerPropLine]:
     }
     lines: List[PlayerPropLine] = []
     for team_id in sorted(team_ids):
-        lines.extend(_collect_team_lines(team_id))
+        lines.extend(_collect_team_lines(team_id, on_date=day))
     return lines
 
 

@@ -3,6 +3,7 @@ from __future__ import annotations
 from datetime import date, datetime, timedelta
 from typing import List
 
+from src import data_fetcher
 from src.prop_bot.config import get_settings
 from src.prop_bot.db import db_cursor
 from src.prop_bot.models import EligiblePlayer, Fixture
@@ -56,6 +57,8 @@ def player_is_currently_sidelined(
     lookback_days: int = 365,
 ) -> bool:
     """Return True when a recent injury/suspension record is active for the player."""
+    if player_id in data_fetcher.get_manual_excluded_player_ids(on_date=on_date):
+        return True
     lookback_start = on_date - timedelta(days=lookback_days)
     query = """
         select 1

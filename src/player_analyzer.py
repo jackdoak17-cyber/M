@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import date
 from typing import Dict, Iterable, List, Optional
 
 from config import get_settings
@@ -152,9 +153,10 @@ def is_player_eligible(
     player_id: int,
     team_id: int,
     sidelined_ids: Optional[Iterable[int]] = None,
+    on_date: Optional[date] = None,
 ) -> bool:
     sidelined = set(sidelined_ids) if sidelined_ids is not None else set(
-        data_fetcher.get_sidelined_player_ids_for_players([player_id]),
+        data_fetcher.get_sidelined_player_ids_for_players([player_id], on_date=on_date),
     )
     if player_id in sidelined:
         return False
@@ -166,9 +168,10 @@ def get_qualifying_player_stats(
     player_id: int,
     team_id: int,
     sidelined_ids: Optional[Iterable[int]] = None,
+    on_date: Optional[date] = None,
 ) -> Dict[str, List[StatHit]]:
     sidelined = set(sidelined_ids) if sidelined_ids is not None else set(
-        data_fetcher.get_sidelined_player_ids_for_players([player_id]),
+        data_fetcher.get_sidelined_player_ids_for_players([player_id], on_date=on_date),
     )
     if player_id in sidelined:
         return {}
