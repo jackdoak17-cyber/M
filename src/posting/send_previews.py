@@ -3,8 +3,9 @@ from __future__ import annotations
 import argparse
 import hashlib
 from datetime import date, datetime, timezone
+from pathlib import Path
 
-from .content_resolver import resolve_content, resolve_target_date
+from .content_resolver import SLOTS, resolve_content, resolve_target_date
 from .supabase_client import upsert_post_approval
 from .telegram_client import send_message
 
@@ -50,11 +51,49 @@ def _content_hash(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
+def _requires_prop_regeneration(slot: str) -> bool:
+    slot_cfg = SLOTS.get(slot) or {}
+    slot_type = str(slot_cfg.get("type") or "")
+    return slot_type in {"fixture", "player_100", "player_80", "player_weekday"}
+
+
+def _clear_prop_outputs_for_day(target: date) -> None:
+    date_label = target.isoformat()
+    day_key = target.strftime("%A").lower()
+    paths = [
+        Path("output") / "by_fixture" / f"{date_label}_{day_key}_prop_sheet_by_fixture.txt",
+        Path("output") / "player_props" / f"{date_label}_{day_key}_player_props.txt",
+        Path("output") / "player_props" / f"{date_label}_{day_key}_player_props_100.txt",
+        Path("output") / "player_props" / f"{date_label}_{day_key}_player_props_80.txt",
+    ]
+    for path in paths:
+        if path.exists():
+            path.unlink()
+
+
+def _regenerate_prop_outputs_for_day(target: date) -> None:
+    from src.main import main as generate_main
+
+    _clear_prop_outputs_for_day(target)
+    generate_main(
+        [
+            "--start-date",
+            target.isoformat(),
+            "--days",
+            "1",
+            "--output-dir",
+            "output",
+        ],
+    )
+
+
 def run(slot: str, target_date: str | None = None) -> int:
     if target_date:
         target = date.fromisoformat(target_date)
     else:
         target = resolve_target_date("preview", slot=slot)
+    if _requires_prop_regeneration(slot):
+        _regenerate_prop_outputs_for_day(target)
     info = resolve_content(slot, target)
     if info is None:
         print(f"No content found for slot={slot} date={target}")
