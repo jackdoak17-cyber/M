@@ -73,7 +73,7 @@ def _collect_team_lines(team_id: int) -> List[PlayerPropLine]:
     if not last_starters:
         return []
 
-    sidelined_ids = set(data_fetcher.get_sidelined_player_ids(team_id))
+    sidelined_ids = set(data_fetcher.get_sidelined_player_ids_for_players(last_starters))
     candidate_ids = {pid for pid in last_starters if pid not in sidelined_ids}
     if not candidate_ids:
         return []
