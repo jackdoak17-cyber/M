@@ -1,4 +1,8 @@
 # Manual player exclusions for preview/post generation.
-# One player_id per line. Comments allowed.
+# Format:
+# - player_id
+# - player_id,start_date,end_date
+# - player_id|start_date|end_date
+# Dates are YYYY-MM-DD. Comments allowed with #.
 
-5666458 # Maxence Lacroix
+5666458,2026-03-01,2026-03-08 # Maxence Lacroix temporary suspension override
