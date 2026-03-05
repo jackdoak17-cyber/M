@@ -44,6 +44,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -97,6 +99,14 @@ jobs:
             fi
           fi
           echo "SLOT=$SLOT" >> "$GITHUB_ENV"
+
+      - name: Regenerate fresh prop outputs
+        run: |
+          rm -f output/by_fixture/*.txt output/player_props/*.txt
+          python -m src.main --output-dir output
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          PROP_SHEET_TIMEZONE: ${{ vars.PROP_SHEET_TIMEZONE || 'Europe/London' }}
 
       - name: Send preview
         run: |
