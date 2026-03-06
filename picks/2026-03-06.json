@@ -1,0 +1,141 @@
+{
+  "date": "2026-03-06",
+  "generated_at": "2026-03-06T07:48:16.827382",
+  "picks_count": 1,
+  "picks": [
+    {
+      "player_id": 37595218,
+      "player_name": "Pape Demba Diop",
+      "team_id": 289,
+      "team_name": "Toulouse",
+      "opponent_id": 44,
+      "opponent_name": "Olympique Marseille",
+      "fixture_id": 19467854,
+      "fixture_date": "2026-03-07T20:05:00+00:00",
+      "league_id": 301,
+      "league_name": "Ligue 1",
+      "is_home": true,
+      "stat_type_id": 86,
+      "stat_type_label": "shots_on_target",
+      "market_label": "1+ shots on target",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.3086268321832317,
+        "simple_avg": 1.2857142857142858,
+        "last_5_avg": 1.4,
+        "sample_size": 7,
+        "hit_rates": {
+          "1+": 6,
+          "2+": 2,
+          "3+": 1,
+          "4+": 0
+        },
+        "home_avg": 2.0,
+        "away_avg": 0.75,
+        "home_games": 3,
+        "away_games": 4,
+        "std_dev": 0.9511897312113419,
+        "coeff_of_variation": 0.7398142353865992,
+        "avg_minutes": 87.0,
+        "min_minutes": 81.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          0.0,
+          3.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          86.0,
+          90.0,
+          81.0,
+          90.0,
+          90.0,
+          82.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 4.846153846153846,
+        "league_avg": 4.388888888888889,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 2,
+        "avg_vs_similar": 1.5,
+        "hitrate_vs_similar": 100.0,
+        "similar_teams_examples": [
+          "Auxerre",
+          "Brest",
+          "Monaco"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.31,
+        "adjusted_projection": 1.34,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.058888277380297,
+            "concedes": 4.846153846153846,
+            "league_avg": 4.388888888888889,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.2083333333333333,
+            "venue_avg": 2.0,
+            "overall_avg": 1.2857142857142858,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9666666666666667,
+            "avg_minutes": 87.0,
+            "times_subbed_early": 0,
+            "sample_size": 7
+          },
+          "game_state": {
+            "multiplier": 0.96
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.187
+      },
+      "confidence": {
+        "score": 65,
+        "tier": "STRONG"
+      },
+      "probability": 0.7382,
+      "edge": {
+        "our_probability": 0.7382,
+        "implied_probability": 0.5456,
+        "probability_edge": 0.1926,
+        "fair_odds": 1.35,
+        "bookmaker_odds": 1.833,
+        "expected_value": 0.3531,
+        "edge_percentage": 35.31,
+        "kelly_quarter": 0.106,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.833,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 63.47,
+      "rank": 1,
+      "writeup": "🎯 Pape Demba Diop (Toulouse) 1+ shots on target vs Olympique Marseille (Ligue 1)\nDiop is averaging 1.31 shots on target per 90 this season and has hit this line in 4 of his last 5 matches. At home, his average jumps to 2.00 shots on target per 90 compared to just 0.75 away from home. Against teams like Auxerre, Brest, and Monaco, he's recorded 1+ shots on target in both matches (100%).\n📊 6/7 (86%)\n💰 Bet365 1.833",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
