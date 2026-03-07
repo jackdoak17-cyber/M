@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Rocco Reitz (Borussia Mönchengladbach) 1+ shots vs FC Bayern München (Bundesliga)\nReitz has hit this line in all 5 of his last 5 matches and 15 of his last 20 overall. He's averaging 1.11 shots per 90 this season with 1.20 per game in his last 5 outings. Even away from home, he maintains 1.10 shots per 90, making this an attractive price.\n📊 15/20 (75%)\n💰 Kambi 2.08",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-03-07T10:49:32.832435"
       }
     }
   ]
