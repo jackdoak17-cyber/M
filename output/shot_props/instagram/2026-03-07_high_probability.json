@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-03-06T16:50:18+00:00",
+  "generated_at": "2026-03-07T07:54:12+00:00",
   "scheduled_for": "2026-03-07",
   "source_target_date": "2026-03-07",
   "fixture_dates": [
@@ -19,60 +19,16 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 9,
+    "total_rows": 8,
     "by_section": {
-      "1+ Shot": 3,
+      "1+ Shot": 1,
       "2+ Shots": 3,
-      "1+ SOT": 3
+      "1+ SOT": 4
     }
   },
   "sections": {
     "by_section": {
       "1+ Shot": [
-        {
-          "id": "19428184:537388:1+ Shot:1",
-          "player_id": 537388,
-          "player_name": "Yan Dhanda",
-          "team_id": 284,
-          "team_name": "Dundee",
-          "fixture_id": 19428184,
-          "fixture_label": "Dundee vs Motherwell",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 12,
-          "sample": 13,
-          "hit_rate": 0.9231,
-          "odds": 1.36,
-          "display": {
-            "rate": "12/13",
-            "odds": "@1.36",
-            "summary": "Yan Dhanda (Dundee) won in 12/13 @1.36"
-          }
-        },
-        {
-          "id": "19428184:540482:1+ Shot:1",
-          "player_id": 540482,
-          "player_name": "Ethan Hamilton",
-          "team_id": 284,
-          "team_name": "Dundee",
-          "fixture_id": 19428184,
-          "fixture_label": "Dundee vs Motherwell",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 18,
-          "sample": 20,
-          "hit_rate": 0.9,
-          "odds": 1.44,
-          "display": {
-            "rate": "18/20",
-            "odds": "@1.44",
-            "summary": "Ethan Hamilton (Dundee) won in 18/20 @1.44"
-          }
-        },
         {
           "id": "19433692:3862352:1+ Shot:1",
           "player_id": 3862352,
@@ -88,11 +44,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.33,
+          "odds": 1.36,
           "display": {
             "rate": "9/10",
-            "odds": "@1.33",
-            "summary": "Nico Schlotterbeck (Borussia Dortmund) won in 9/10 @1.33"
+            "odds": "@1.36",
+            "summary": "Nico Schlotterbeck (Borussia Dortmund) won in 9/10 @1.36"
           }
         }
       ],
@@ -112,11 +68,11 @@
           "hits": 7,
           "sample": 7,
           "hit_rate": 1.0,
-          "odds": 1.61,
+          "odds": 1.57,
           "display": {
             "rate": "7/7",
-            "odds": "@1.61",
-            "summary": "Adrian Segecic (Portsmouth) won in 7/7 @1.61"
+            "odds": "@1.57",
+            "summary": "Adrian Segecic (Portsmouth) won in 7/7 @1.57"
           }
         },
         {
@@ -156,11 +112,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.44,
+          "odds": 1.36,
           "display": {
             "rate": "9/10",
-            "odds": "@1.44",
-            "summary": "Millenic Alli (Portsmouth) won in 9/10 @1.44"
+            "odds": "@1.36",
+            "summary": "Millenic Alli (Portsmouth) won in 9/10 @1.36"
           }
         }
       ],
@@ -185,6 +141,28 @@
             "rate": "19/20",
             "odds": "@1.40",
             "summary": "Eldor Shomurodov (\u0130stanbul Ba\u015fak\u015fehir) won in 19/20 @1.40"
+          }
+        },
+        {
+          "id": "19467854:20333643:1+ SOT:1",
+          "player_id": 20333643,
+          "player_name": "Mason Greenwood",
+          "team_id": 44,
+          "team_name": "Olympique Marseille",
+          "fixture_id": 19467854,
+          "fixture_label": "Toulouse vs Olympique Marseille",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 15,
+          "sample": 16,
+          "hit_rate": 0.9375,
+          "odds": 1.33,
+          "display": {
+            "rate": "15/16",
+            "odds": "@1.33",
+            "summary": "Mason Greenwood (Olympique Marseille) won in 15/16 @1.33"
           }
         },
         {
@@ -234,7 +212,7 @@
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 07 Mar 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 3\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 3\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 07 Mar 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 1\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 4\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -248,7 +226,7 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 07 Mar 2026",
       "stats": {
-        "total_players": 9,
+        "total_players": 8,
         "stat_types": 3,
         "hit_rate_threshold_pct": 90
       },
@@ -261,50 +239,6 @@
       "section_page": 1,
       "section_pages": 1,
       "rows": [
-        {
-          "id": "19428184:537388:1+ Shot:1",
-          "player_id": 537388,
-          "player_name": "Yan Dhanda",
-          "team_id": 284,
-          "team_name": "Dundee",
-          "fixture_id": 19428184,
-          "fixture_label": "Dundee vs Motherwell",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 12,
-          "sample": 13,
-          "hit_rate": 0.9231,
-          "odds": 1.36,
-          "display": {
-            "rate": "12/13",
-            "odds": "@1.36",
-            "summary": "Yan Dhanda (Dundee) won in 12/13 @1.36"
-          }
-        },
-        {
-          "id": "19428184:540482:1+ Shot:1",
-          "player_id": 540482,
-          "player_name": "Ethan Hamilton",
-          "team_id": 284,
-          "team_name": "Dundee",
-          "fixture_id": 19428184,
-          "fixture_label": "Dundee vs Motherwell",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 18,
-          "sample": 20,
-          "hit_rate": 0.9,
-          "odds": 1.44,
-          "display": {
-            "rate": "18/20",
-            "odds": "@1.44",
-            "summary": "Ethan Hamilton (Dundee) won in 18/20 @1.44"
-          }
-        },
         {
           "id": "19433692:3862352:1+ Shot:1",
           "player_id": 3862352,
@@ -320,15 +254,15 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.33,
+          "odds": 1.36,
           "display": {
             "rate": "9/10",
-            "odds": "@1.33",
-            "summary": "Nico Schlotterbeck (Borussia Dortmund) won in 9/10 @1.33"
+            "odds": "@1.36",
+            "summary": "Nico Schlotterbeck (Borussia Dortmund) won in 9/10 @1.36"
           }
         }
       ],
-      "section_total_rows": 3,
+      "section_total_rows": 1,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -353,11 +287,11 @@
           "hits": 7,
           "sample": 7,
           "hit_rate": 1.0,
-          "odds": 1.61,
+          "odds": 1.57,
           "display": {
             "rate": "7/7",
-            "odds": "@1.61",
-            "summary": "Adrian Segecic (Portsmouth) won in 7/7 @1.61"
+            "odds": "@1.57",
+            "summary": "Adrian Segecic (Portsmouth) won in 7/7 @1.57"
           }
         },
         {
@@ -397,11 +331,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.44,
+          "odds": 1.36,
           "display": {
             "rate": "9/10",
-            "odds": "@1.44",
-            "summary": "Millenic Alli (Portsmouth) won in 9/10 @1.44"
+            "odds": "@1.36",
+            "summary": "Millenic Alli (Portsmouth) won in 9/10 @1.36"
           }
         }
       ],
@@ -435,6 +369,28 @@
             "rate": "19/20",
             "odds": "@1.40",
             "summary": "Eldor Shomurodov (\u0130stanbul Ba\u015fak\u015fehir) won in 19/20 @1.40"
+          }
+        },
+        {
+          "id": "19467854:20333643:1+ SOT:1",
+          "player_id": 20333643,
+          "player_name": "Mason Greenwood",
+          "team_id": 44,
+          "team_name": "Olympique Marseille",
+          "fixture_id": 19467854,
+          "fixture_label": "Toulouse vs Olympique Marseille",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 15,
+          "sample": 16,
+          "hit_rate": 0.9375,
+          "odds": 1.33,
+          "display": {
+            "rate": "15/16",
+            "odds": "@1.33",
+            "summary": "Mason Greenwood (Olympique Marseille) won in 15/16 @1.33"
           }
         },
         {
@@ -482,7 +438,7 @@
           }
         }
       ],
-      "section_total_rows": 3,
+      "section_total_rows": 4,
       "slide_number": 4,
       "slide_count": 4
     }
@@ -491,5 +447,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "ed4a02ab4adb46e4f8ba0e206dcc2578c8789b462afae55fdd896c23643c02fd"
+  "content_fingerprint": "2ae11c50bdbcea511dd012b8a6155d87e5f53fbe69933241da8549b497c33b82"
 }

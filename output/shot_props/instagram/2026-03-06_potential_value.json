@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "potential_value",
-  "generated_at": "2026-03-06T16:50:18+00:00",
+  "generated_at": "2026-03-07T07:54:12+00:00",
   "scheduled_for": "2026-03-06",
   "source_target_date": "2026-03-07",
   "fixture_dates": [
@@ -22,36 +22,14 @@
   "counts": {
     "total_rows": 20,
     "by_section": {
-      "1+ Shot": 8,
-      "2+ Shots": 4,
+      "1+ Shot": 7,
+      "2+ Shots": 5,
       "1+ SOT": 8
     }
   },
   "sections": {
     "by_section": {
       "1+ Shot": [
-        {
-          "id": "19432171:37308208:1+ Shot:1",
-          "player_id": 37308208,
-          "player_name": "Tristan Crama",
-          "team_id": 64,
-          "team_name": "Millwall",
-          "fixture_id": 19432171,
-          "fixture_label": "Hull City vs Millwall",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 8,
-          "sample": 10,
-          "hit_rate": 0.8,
-          "odds": 1.83,
-          "display": {
-            "rate": "8/10",
-            "odds": "@1.83",
-            "summary": "Tristan Crama (Millwall) won in 8/10 @1.83"
-          }
-        },
         {
           "id": "19432167:7026564:1+ Shot:1",
           "player_id": 7026564,
@@ -111,11 +89,33 @@
           "hits": 10,
           "sample": 13,
           "hit_rate": 0.7692,
-          "odds": 1.73,
+          "odds": 1.83,
           "display": {
             "rate": "10/13",
-            "odds": "@1.73",
-            "summary": "Alex Mowatt (West Bromwich Albion) won in 10/13 @1.73"
+            "odds": "@1.83",
+            "summary": "Alex Mowatt (West Bromwich Albion) won in 10/13 @1.83"
+          }
+        },
+        {
+          "id": "19439511:186514:1+ Shot:1",
+          "player_id": 186514,
+          "player_name": "Jos\u00e9 Mar\u00eda Gim\u00e9nez",
+          "team_id": 7980,
+          "team_name": "Atl\u00e9tico Madrid",
+          "fixture_id": 19439511,
+          "fixture_label": "Atl\u00e9tico Madrid vs Real Sociedad",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.2,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.20",
+            "summary": "Jos\u00e9 Mar\u00eda Gim\u00e9nez (Atl\u00e9tico Madrid) won in 6/8 @2.20"
           }
         },
         {
@@ -138,28 +138,6 @@
             "rate": "12/16",
             "odds": "@2.00",
             "summary": "Jimmy Dunne (Queens Park Rangers) won in 12/16 @2.00"
-          }
-        },
-        {
-          "id": "19439511:186514:1+ Shot:1",
-          "player_id": 186514,
-          "player_name": "Jos\u00e9 Mar\u00eda Gim\u00e9nez",
-          "team_id": 7980,
-          "team_name": "Atl\u00e9tico Madrid",
-          "fixture_id": 19439511,
-          "fixture_label": "Atl\u00e9tico Madrid vs Real Sociedad",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 1.83,
-          "display": {
-            "rate": "6/8",
-            "odds": "@1.83",
-            "summary": "Jos\u00e9 Mar\u00eda Gim\u00e9nez (Atl\u00e9tico Madrid) won in 6/8 @1.83"
           }
         },
         {
@@ -253,28 +231,6 @@
           }
         },
         {
-          "id": "19428184:537388:2+ Shots:2",
-          "player_id": 537388,
-          "player_name": "Yan Dhanda",
-          "team_id": 284,
-          "team_name": "Dundee",
-          "fixture_id": 19428184,
-          "fixture_label": "Dundee vs Motherwell",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 2.62,
-          "display": {
-            "rate": "6/8",
-            "odds": "@2.62",
-            "summary": "Yan Dhanda (Dundee) won in 6/8 @2.62"
-          }
-        },
-        {
           "id": "19433692:3862352:2+ Shots:2",
           "player_id": 3862352,
           "player_name": "Nico Schlotterbeck",
@@ -289,11 +245,55 @@
           "hits": 6,
           "sample": 8,
           "hit_rate": 0.75,
-          "odds": 2.38,
+          "odds": 2.62,
           "display": {
             "rate": "6/8",
-            "odds": "@2.38",
-            "summary": "Nico Schlotterbeck (Borussia Dortmund) won in 6/8 @2.38"
+            "odds": "@2.62",
+            "summary": "Nico Schlotterbeck (Borussia Dortmund) won in 6/8 @2.62"
+          }
+        },
+        {
+          "id": "19428184:537388:2+ Shots:2",
+          "player_id": 537388,
+          "player_name": "Yan Dhanda",
+          "team_id": 284,
+          "team_name": "Dundee",
+          "fixture_id": 19428184,
+          "fixture_label": "Dundee vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.25,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.25",
+            "summary": "Yan Dhanda (Dundee) won in 6/8 @2.25"
+          }
+        },
+        {
+          "id": "19433698:37645233:2+ Shots:2",
+          "player_id": 37645233,
+          "player_name": "Ibrahim Maza",
+          "team_id": 3321,
+          "team_name": "Bayer 04 Leverkusen",
+          "fixture_id": 19433698,
+          "fixture_label": "SC Freiburg vs Bayer 04 Leverkusen",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Ibrahim Maza (Bayer 04 Leverkusen) won in 6/8 @1.73"
           }
         }
       ],
@@ -365,28 +365,6 @@
           }
         },
         {
-          "id": "19439518:10692:1+ SOT:1",
-          "player_id": 10692,
-          "player_name": "Toni Mart\u00ednez",
-          "team_id": 2975,
-          "team_name": "Deportivo Alav\u00e9s",
-          "fixture_id": 19439518,
-          "fixture_label": "Valencia vs Deportivo Alav\u00e9s",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 9,
-          "hit_rate": 0.7778,
-          "odds": 1.73,
-          "display": {
-            "rate": "7/9",
-            "odds": "@1.73",
-            "summary": "Toni Mart\u00ednez (Deportivo Alav\u00e9s) won in 7/9 @1.73"
-          }
-        },
-        {
           "id": "19432174:1387:1+ SOT:1",
           "player_id": 1387,
           "player_name": "Matt Targett",
@@ -453,6 +431,28 @@
           }
         },
         {
+          "id": "19467853:529896:1+ SOT:1",
+          "player_id": 529896,
+          "player_name": "Ilan Kebbal",
+          "team_id": 4508,
+          "team_name": "Paris",
+          "fixture_id": 19467853,
+          "fixture_label": "Olympique Lyonnais vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Ilan Kebbal (Paris) won in 6/8 @1.83"
+          }
+        },
+        {
           "id": "19467858:37337715:1+ SOT:1",
           "player_id": 37337715,
           "player_name": "Issa Soumar\u00e9",
@@ -477,7 +477,7 @@
       ]
     }
   },
-  "caption": "Fixtures: Sat 07 Mar - Sun 08 Mar 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 8\n\u2022 2+ Shots: 4\n\u2022 1+ SOT: 8\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "caption": "Fixtures: Sat 07 Mar - Sun 08 Mar 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 7\n\u2022 2+ Shots: 5\n\u2022 1+ SOT: 8\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
   "slides": [
     {
       "slide_type": "cover",
@@ -504,28 +504,6 @@
       "section_page": 1,
       "section_pages": 1,
       "rows": [
-        {
-          "id": "19432171:37308208:1+ Shot:1",
-          "player_id": 37308208,
-          "player_name": "Tristan Crama",
-          "team_id": 64,
-          "team_name": "Millwall",
-          "fixture_id": 19432171,
-          "fixture_label": "Hull City vs Millwall",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 8,
-          "sample": 10,
-          "hit_rate": 0.8,
-          "odds": 1.83,
-          "display": {
-            "rate": "8/10",
-            "odds": "@1.83",
-            "summary": "Tristan Crama (Millwall) won in 8/10 @1.83"
-          }
-        },
         {
           "id": "19432167:7026564:1+ Shot:1",
           "player_id": 7026564,
@@ -585,11 +563,33 @@
           "hits": 10,
           "sample": 13,
           "hit_rate": 0.7692,
-          "odds": 1.73,
+          "odds": 1.83,
           "display": {
             "rate": "10/13",
-            "odds": "@1.73",
-            "summary": "Alex Mowatt (West Bromwich Albion) won in 10/13 @1.73"
+            "odds": "@1.83",
+            "summary": "Alex Mowatt (West Bromwich Albion) won in 10/13 @1.83"
+          }
+        },
+        {
+          "id": "19439511:186514:1+ Shot:1",
+          "player_id": 186514,
+          "player_name": "Jos\u00e9 Mar\u00eda Gim\u00e9nez",
+          "team_id": 7980,
+          "team_name": "Atl\u00e9tico Madrid",
+          "fixture_id": 19439511,
+          "fixture_label": "Atl\u00e9tico Madrid vs Real Sociedad",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.2,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.20",
+            "summary": "Jos\u00e9 Mar\u00eda Gim\u00e9nez (Atl\u00e9tico Madrid) won in 6/8 @2.20"
           }
         },
         {
@@ -612,28 +612,6 @@
             "rate": "12/16",
             "odds": "@2.00",
             "summary": "Jimmy Dunne (Queens Park Rangers) won in 12/16 @2.00"
-          }
-        },
-        {
-          "id": "19439511:186514:1+ Shot:1",
-          "player_id": 186514,
-          "player_name": "Jos\u00e9 Mar\u00eda Gim\u00e9nez",
-          "team_id": 7980,
-          "team_name": "Atl\u00e9tico Madrid",
-          "fixture_id": 19439511,
-          "fixture_label": "Atl\u00e9tico Madrid vs Real Sociedad",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 1.83,
-          "display": {
-            "rate": "6/8",
-            "odds": "@1.83",
-            "summary": "Jos\u00e9 Mar\u00eda Gim\u00e9nez (Atl\u00e9tico Madrid) won in 6/8 @1.83"
           }
         },
         {
@@ -681,7 +659,7 @@
           }
         }
       ],
-      "section_total_rows": 8,
+      "section_total_rows": 7,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -736,28 +714,6 @@
           }
         },
         {
-          "id": "19428184:537388:2+ Shots:2",
-          "player_id": 537388,
-          "player_name": "Yan Dhanda",
-          "team_id": 284,
-          "team_name": "Dundee",
-          "fixture_id": 19428184,
-          "fixture_label": "Dundee vs Motherwell",
-          "league_id": 501,
-          "league_name": "Scottish Premiership",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 2.62,
-          "display": {
-            "rate": "6/8",
-            "odds": "@2.62",
-            "summary": "Yan Dhanda (Dundee) won in 6/8 @2.62"
-          }
-        },
-        {
           "id": "19433692:3862352:2+ Shots:2",
           "player_id": 3862352,
           "player_name": "Nico Schlotterbeck",
@@ -772,15 +728,59 @@
           "hits": 6,
           "sample": 8,
           "hit_rate": 0.75,
-          "odds": 2.38,
+          "odds": 2.62,
           "display": {
             "rate": "6/8",
-            "odds": "@2.38",
-            "summary": "Nico Schlotterbeck (Borussia Dortmund) won in 6/8 @2.38"
+            "odds": "@2.62",
+            "summary": "Nico Schlotterbeck (Borussia Dortmund) won in 6/8 @2.62"
+          }
+        },
+        {
+          "id": "19428184:537388:2+ Shots:2",
+          "player_id": 537388,
+          "player_name": "Yan Dhanda",
+          "team_id": 284,
+          "team_name": "Dundee",
+          "fixture_id": 19428184,
+          "fixture_label": "Dundee vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.25,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.25",
+            "summary": "Yan Dhanda (Dundee) won in 6/8 @2.25"
+          }
+        },
+        {
+          "id": "19433698:37645233:2+ Shots:2",
+          "player_id": 37645233,
+          "player_name": "Ibrahim Maza",
+          "team_id": 3321,
+          "team_name": "Bayer 04 Leverkusen",
+          "fixture_id": 19433698,
+          "fixture_label": "SC Freiburg vs Bayer 04 Leverkusen",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Ibrahim Maza (Bayer 04 Leverkusen) won in 6/8 @1.73"
           }
         }
       ],
-      "section_total_rows": 4,
+      "section_total_rows": 5,
       "slide_number": 3,
       "slide_count": 4
     },
@@ -857,28 +857,6 @@
           }
         },
         {
-          "id": "19439518:10692:1+ SOT:1",
-          "player_id": 10692,
-          "player_name": "Toni Mart\u00ednez",
-          "team_id": 2975,
-          "team_name": "Deportivo Alav\u00e9s",
-          "fixture_id": 19439518,
-          "fixture_label": "Valencia vs Deportivo Alav\u00e9s",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 9,
-          "hit_rate": 0.7778,
-          "odds": 1.73,
-          "display": {
-            "rate": "7/9",
-            "odds": "@1.73",
-            "summary": "Toni Mart\u00ednez (Deportivo Alav\u00e9s) won in 7/9 @1.73"
-          }
-        },
-        {
           "id": "19432174:1387:1+ SOT:1",
           "player_id": 1387,
           "player_name": "Matt Targett",
@@ -945,6 +923,28 @@
           }
         },
         {
+          "id": "19467853:529896:1+ SOT:1",
+          "player_id": 529896,
+          "player_name": "Ilan Kebbal",
+          "team_id": 4508,
+          "team_name": "Paris",
+          "fixture_id": 19467853,
+          "fixture_label": "Olympique Lyonnais vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Ilan Kebbal (Paris) won in 6/8 @1.83"
+          }
+        },
+        {
           "id": "19467858:37337715:1+ SOT:1",
           "player_id": 37337715,
           "player_name": "Issa Soumar\u00e9",
@@ -976,5 +976,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "a48b8270ecfe5d1371828c0ee533d5a1715f8ea60e96a139f4d79930d771c5f9"
+  "content_fingerprint": "e8c6319adbcdd65528b833386289f560776b7e4e92fa66f0f7310bf3e51ecbdd"
 }
