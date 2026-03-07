@@ -1,0 +1,405 @@
+{
+  "date": "2026-03-07",
+  "generated_at": "2026-03-07T07:42:08.698188",
+  "picks_count": 3,
+  "picks": [
+    {
+      "player_id": 37396571,
+      "player_name": "Martín Satriano",
+      "team_id": 106,
+      "team_name": "Getafe",
+      "opponent_id": 485,
+      "opponent_name": "Real Betis",
+      "fixture_id": 19439514,
+      "fixture_date": "2026-03-08T15:15:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": true,
+      "stat_type_id": 86,
+      "stat_type_label": "shots_on_target",
+      "market_label": "1+ shots on target",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.103744935029392,
+        "simple_avg": 1.0,
+        "last_5_avg": 1.2,
+        "sample_size": 7,
+        "hit_rates": {
+          "1+": 6,
+          "2+": 1,
+          "3+": 0,
+          "4+": 0
+        },
+        "home_avg": 1.25,
+        "away_avg": 0.6666666666666666,
+        "home_games": 4,
+        "away_games": 3,
+        "std_dev": 0.5773502691896257,
+        "coeff_of_variation": 0.5773502691896257,
+        "avg_minutes": 88.14285714285714,
+        "min_minutes": 77.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          77.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 5.0,
+        "league_avg": 4.354304635761589,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 4,
+        "avg_vs_similar": 1.25,
+        "hitrate_vs_similar": 100.0,
+        "similar_teams_examples": [
+          "Levante",
+          "Mallorca",
+          "Real Betis"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.1,
+        "adjusted_projection": 1.56,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0889733840304183,
+            "concedes": 5.0,
+            "league_avg": 4.354304635761589,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.1111111111111112,
+            "venue_avg": 1.25,
+            "overall_avg": 1.0,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9793650793650793,
+            "avg_minutes": 88.14285714285714,
+            "times_subbed_early": 0,
+            "sample_size": 7
+          },
+          "game_state": {
+            "multiplier": 0.96
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.138
+      },
+      "confidence": {
+        "score": 65,
+        "tier": "STRONG"
+      },
+      "probability": 0.7899,
+      "edge": {
+        "our_probability": 0.7899,
+        "implied_probability": 0.4651,
+        "probability_edge": 0.3248,
+        "fair_odds": 1.27,
+        "bookmaker_odds": 2.15,
+        "expected_value": 0.6983,
+        "edge_percentage": 69.83,
+        "kelly_quarter": 0.1518,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.15,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 72.96,
+      "rank": 1,
+      "writeup": "🎯 Martín Satriano (Getafe) 1+ shots on target vs Real Betis (La Liga)\nSatriano has hit this line in all 5 of his last 5 matches and 6 of his last 7 overall. He averages 1.25 shots on target per 90 at home compared to just 0.67 away, making the Coliseum a key factor. Against teams like Levante, Mallorca, and Real Betis, he's recorded 1+ shots on target in all 4 encounters.\n📊 6/7 (86%)\n💰 Kambi 2.15",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 37595218,
+      "player_name": "Pape Demba Diop",
+      "team_id": 289,
+      "team_name": "Toulouse",
+      "opponent_id": 44,
+      "opponent_name": "Olympique Marseille",
+      "fixture_id": 19467854,
+      "fixture_date": "2026-03-07T20:05:00+00:00",
+      "league_id": 301,
+      "league_name": "Ligue 1",
+      "is_home": true,
+      "stat_type_id": 86,
+      "stat_type_label": "shots_on_target",
+      "market_label": "1+ shots on target",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.3086268321832317,
+        "simple_avg": 1.2857142857142858,
+        "last_5_avg": 1.4,
+        "sample_size": 7,
+        "hit_rates": {
+          "1+": 6,
+          "2+": 2,
+          "3+": 1,
+          "4+": 0
+        },
+        "home_avg": 2.0,
+        "away_avg": 0.75,
+        "home_games": 3,
+        "away_games": 4,
+        "std_dev": 0.9511897312113419,
+        "coeff_of_variation": 0.7398142353865992,
+        "avg_minutes": 87.0,
+        "min_minutes": 81.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          0.0,
+          3.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          86.0,
+          90.0,
+          81.0,
+          90.0,
+          90.0,
+          82.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 4.846153846153846,
+        "league_avg": 4.402542372881356,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 2,
+        "avg_vs_similar": 1.5,
+        "hitrate_vs_similar": 100.0,
+        "similar_teams_examples": [
+          "Auxerre",
+          "Brest",
+          "Monaco"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.31,
+        "adjusted_projection": 1.34,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0569527555760136,
+            "concedes": 4.846153846153846,
+            "league_avg": 4.402542372881356,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.2083333333333333,
+            "venue_avg": 2.0,
+            "overall_avg": 1.2857142857142858,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9666666666666667,
+            "avg_minutes": 87.0,
+            "times_subbed_early": 0,
+            "sample_size": 7
+          },
+          "game_state": {
+            "multiplier": 0.96
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.185
+      },
+      "confidence": {
+        "score": 65,
+        "tier": "STRONG"
+      },
+      "probability": 0.7382,
+      "edge": {
+        "our_probability": 0.7382,
+        "implied_probability": 0.5456,
+        "probability_edge": 0.1926,
+        "fair_odds": 1.35,
+        "bookmaker_odds": 1.833,
+        "expected_value": 0.3531,
+        "edge_percentage": 35.31,
+        "kelly_quarter": 0.106,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.833,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 63.47,
+      "rank": 2,
+      "writeup": "🎯 Pape Demba Diop (Toulouse) 1+ shots on target vs Olympique Marseille (Ligue 1)\nDiop is averaging 1.31 shots on target per 90 this season and has hit this line in 4 of his last 5 matches. At home, his average jumps to 2.00 shots on target per 90 compared to just 0.75 away from home. Against teams like Auxerre, Brest, and Monaco, he's registered 1+ shots on target in both encounters.\n📊 6/7 (86%)\n💰 Bet365 1.833",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 1723,
+      "player_name": "Ben Gibson",
+      "team_id": 26,
+      "team_name": "Stoke City",
+      "opponent_id": 30,
+      "opponent_name": "Swansea City",
+      "fixture_id": 19432177,
+      "fixture_date": "2026-03-07T15:00:00+00:00",
+      "league_id": 9,
+      "league_name": "Championship",
+      "is_home": false,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "1+ shots",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.4248104590171582,
+        "simple_avg": 1.0,
+        "last_5_avg": 1.0,
+        "sample_size": 5,
+        "hit_rates": {
+          "1+": 5,
+          "2+": 0,
+          "3+": 0,
+          "4+": 0
+        },
+        "home_avg": 1.0,
+        "away_avg": 1.0,
+        "home_games": 3,
+        "away_games": 2,
+        "std_dev": 0.0,
+        "coeff_of_variation": 0.0,
+        "avg_minutes": 67.8,
+        "min_minutes": 19.0,
+        "times_subbed_early": 2,
+        "raw_values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          19.0,
+          90.0,
+          90.0,
+          50.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 11.0,
+        "league_avg": 12.424901185770752,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 24
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 4,
+        "avg_vs_similar": 1.0,
+        "hitrate_vs_similar": 100.0,
+        "similar_teams_examples": [
+          "Coventry City",
+          "Hull City",
+          "Ipswich Town"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.42,
+        "adjusted_projection": 0.88,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9311913472244313,
+            "concedes": 11.0,
+            "league_avg": 12.424901185770752,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0,
+            "venue_avg": 1.0,
+            "overall_avg": 1.0,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.7533333333333333,
+            "avg_minutes": 67.8,
+            "times_subbed_early": 2,
+            "sample_size": 5
+          },
+          "game_state": {
+            "multiplier": 0.88
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.617
+      },
+      "confidence": {
+        "score": 65,
+        "tier": "STRONG"
+      },
+      "probability": 0.5852,
+      "edge": {
+        "our_probability": 0.5852,
+        "implied_probability": 0.4,
+        "probability_edge": 0.1852,
+        "fair_odds": 1.71,
+        "bookmaker_odds": 2.5,
+        "expected_value": 0.463,
+        "edge_percentage": 46.3,
+        "kelly_quarter": 0.0772,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.5,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 58.02,
+      "rank": 3,
+      "writeup": "🎯 Ben Gibson (Stoke City) 1+ shots vs Swansea City (Championship)\nGibson has hit 1+ shots in all 5 of his last 5 matches and maintains a perfect 5 of 5 record over his last 20 games. Against similar opponents like Coventry City, Hull City, and Ipswich Town, he's recorded 1+ shots in 4 of 4 matches (100%). Even with his recent average dropping to 1.00 per game, his consistency remains strong for this market.\n📊 5/5 (100%)\n💰 Bet365 2.50",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
