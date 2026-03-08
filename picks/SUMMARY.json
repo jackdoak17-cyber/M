@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-03-08T07:34:49.165663",
+  "last_updated": "2026-03-08T10:51:12.670397",
   "total_picks": 23,
-  "total_hits": 11,
-  "overall_hit_rate": 47.8,
-  "total_pnl": -7.17,
+  "total_hits": 13,
+  "overall_hit_rate": 56.5,
+  "total_pnl": 29.49,
   "avg_odds": 2.04,
   "by_confidence_tier": {
     "LOCK": {
@@ -13,8 +13,8 @@
     },
     "STRONG": {
       "total": 21,
-      "hits": 10,
-      "pnl": -5.5
+      "hits": 12,
+      "pnl": 31.159999999999997
     }
   },
   "by_league": {
@@ -45,8 +45,8 @@
     },
     "Ligue 1": {
       "total": 2,
-      "hits": 0,
-      "pnl": -20.0
+      "hits": 2,
+      "pnl": 16.659999999999997
     }
   },
   "by_market": {
@@ -72,8 +72,8 @@
     },
     "1+ shots on target": {
       "total": 8,
-      "hits": 1,
-      "pnl": -62.0
+      "hits": 3,
+      "pnl": -25.340000000000003
     },
     "4+ shots": {
       "total": 2,

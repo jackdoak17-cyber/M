@@ -132,9 +132,9 @@
       "rank": 1,
       "writeup": "🎯 Pape Demba Diop (Toulouse) 1+ shots on target vs Olympique Marseille (Ligue 1)\nDiop is averaging 1.31 shots on target per 90 this season and has hit this line in 4 of his last 5 matches. At home, his average jumps to 2.00 shots on target per 90 compared to just 0.75 away from home. Against teams like Auxerre, Brest, and Monaco, he's recorded 1+ shots on target in both matches (100%).\n📊 6/7 (86%)\n💰 Bet365 1.833",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-03-08T10:51:12.236512"
       }
     }
   ]

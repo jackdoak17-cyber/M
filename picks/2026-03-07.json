@@ -266,9 +266,9 @@
       "rank": 2,
       "writeup": "🎯 Pape Demba Diop (Toulouse) 1+ shots on target vs Olympique Marseille (Ligue 1)\nDiop is averaging 1.31 shots on target per 90 this season and has hit this line in 4 of his last 5 matches. At home, his average jumps to 2.00 shots on target per 90 compared to just 0.75 away from home. Against teams like Auxerre, Brest, and Monaco, he's registered 1+ shots on target in both encounters.\n📊 6/7 (86%)\n💰 Bet365 1.833",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-03-08T10:51:12.452747"
       }
     },
     {
@@ -396,9 +396,9 @@
       "rank": 3,
       "writeup": "🎯 Ben Gibson (Stoke City) 1+ shots vs Swansea City (Championship)\nGibson has hit 1+ shots in all 5 of his last 5 matches and maintains a perfect 5 of 5 record over his last 20 games. Against similar opponents like Coventry City, Hull City, and Ipswich Town, he's recorded 1+ shots in 4 of 4 matches (100%). Even with his recent average dropping to 1.00 per game, his consistency remains strong for this market.\n📊 5/5 (100%)\n💰 Bet365 2.50",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-03-08T10:51:12.597552"
       }
     }
   ]
