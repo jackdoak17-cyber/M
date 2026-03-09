@@ -132,9 +132,9 @@
       "rank": 1,
       "writeup": "🎯 Martín Satriano (Getafe) 1+ shots on target vs Real Betis (La Liga)\nThe striker has hit this line in all 5 of his last 5 matches and 6 of his last 7 overall. He's averaging 1.25 shots on target per 90 at home this season compared to just 0.67 away, making the Coliseum a key factor. Against teams like Levante, Mallorca, and Real Betis, he's recorded 1+ shots on target in all 4 encounters.\n📊 6/7 (86%)\n💰 Kambi 2.15",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-03-09T11:09:42.993897"
       }
     }
   ]
