@@ -1,26 +1,8 @@
-🏆 Change in EPL Winner probability since last update:
-
-• Arsenal: 81.5% -> 81.5%
-• Manchester City: 17.5% -> 18.5%
-• Manchester United: 0.4% -> 0.4%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/english-premier-league-winner
-
-🏆 Change in La Liga Winner probability since last update:
-
-• Barcelona: 80.5% -> 81.5%
-• Real Madrid: 18.5% -> 18.5%
-• Villarreal: 0.1% -> 0.1%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/la-liga-winner-114
-
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 53% -> 53%
-• Bruno Fernandes: 18% -> 20.5%
-• Erling Haaland: 20% -> 20%
+• Declan Rice: 53% -> 53.5%
+• Erling Haaland: 20% -> 21%
+• Bruno Fernandes: 20.5% -> 14.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
@@ -28,17 +10,33 @@ https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 🏆 Change in Ballon d'Or Winner probability since last update:
 
 • Lamine Yamal: 32% -> 32%
+• Harry Kane: 23.7% -> 24.9%
 • Kylian Mbappé: 24% -> 24%
-• Harry Kane: 21.9% -> 23.7%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
 
+🏆 Change in EPL Top 4 probability since last update:
+
+• Manchester City (Top 4): 98.8% -> 99%
+• Arsenal (Top 4): 98.8% -> 98.8%
+• Manchester United (Top 4): 67.5% -> 66.5%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-top-4-finish
+
 🏆 Change in EPL Relegation probability since last update:
 
-• Burnley (Relegated): 98.5% -> 97.8%
-• Wolves (Relegated): 97.1% -> 96.9%
-• West Ham (Relegated): 39% -> 39.5%
+• Wolves (Relegated): 96.9% -> 97%
+• Burnley (Relegated): 97.8% -> 95.9%
+• West Ham (Relegated): 39.5% -> 39.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
+
+🏆 Change in TheUnitedStrand Haircut probability since last update:
+
+• TheUnitedStrand: 9.5% -> 10%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/will-theunitedstrand-get-a-haircut-by-2025-26-season-end
