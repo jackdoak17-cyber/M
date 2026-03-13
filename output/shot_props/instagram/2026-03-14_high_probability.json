@@ -1,0 +1,671 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "high_probability",
+  "generated_at": "2026-03-13T17:01:17+00:00",
+  "scheduled_for": "2026-03-14",
+  "source_target_date": "2026-03-14",
+  "fixture_dates": [
+    "2026-03-14"
+  ],
+  "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+  "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.9,
+    "min_odds": 1.3,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 13,
+    "by_section": {
+      "1+ Shot": 3,
+      "2+ Shots": 4,
+      "1+ SOT": 6
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19432193:37326106:1+ Shot:1",
+          "player_id": 37326106,
+          "player_name": "Harvey Vale",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19432193,
+          "fixture_label": "Leicester City vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.36,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.36",
+            "summary": "Harvey Vale (Queens Park Rangers) won in 11/12 @1.36"
+          }
+        },
+        {
+          "id": "19432191:37391640:1+ Shot:1",
+          "player_id": 37391640,
+          "player_name": "Andre Brooks",
+          "team_id": 21,
+          "team_name": "Sheffield United",
+          "fixture_id": 19432191,
+          "fixture_label": "Birmingham City vs Sheffield United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.4,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.40",
+            "summary": "Andre Brooks (Sheffield United) won in 10/11 @1.40"
+          }
+        },
+        {
+          "id": "19443163:37308595:1+ Shot:1",
+          "player_id": 37308595,
+          "player_name": "Mithat Pala",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19443163,
+          "fixture_label": "Trabzonspor vs Rizespor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.4,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.40",
+            "summary": "Mithat Pala (Rizespor) won in 9/10 @1.40"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19425164:1835:2+ Shots:2",
+          "player_id": 1835,
+          "player_name": "Henrikh Mkhitaryan",
+          "team_id": 2930,
+          "team_name": "Inter",
+          "fixture_id": 19425164,
+          "fixture_label": "Inter vs Atalanta",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 8,
+          "sample": 8,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "8/8",
+            "odds": "@1.40",
+            "summary": "Henrikh Mkhitaryan (Inter) won in 8/8 @1.40"
+          }
+        },
+        {
+          "id": "19443161:12789480:2+ Shots:2",
+          "player_id": 12789480,
+          "player_name": "Jackson Muleka",
+          "team_id": 2632,
+          "team_name": "Konyaspor",
+          "fixture_id": 19443161,
+          "fixture_label": "Kocaelispor vs Konyaspor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.53,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.53",
+            "summary": "Jackson Muleka (Konyaspor) won in 9/10 @1.53"
+          }
+        },
+        {
+          "id": "19432196:37391514:2+ Shots:2",
+          "player_id": 37391514,
+          "player_name": "Alfie Devine",
+          "team_id": 99,
+          "team_name": "Preston North End",
+          "fixture_id": 19432196,
+          "fixture_label": "Norwich City vs Preston North End",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Alfie Devine (Preston North End) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19443157:330582:2+ Shots:2",
+          "player_id": 330582,
+          "player_name": "Eldor Shomurodov",
+          "team_id": 3702,
+          "team_name": "\u0130stanbul Ba\u015fak\u015fehir",
+          "fixture_id": 19443157,
+          "fixture_label": "Galatasaray vs \u0130stanbul Ba\u015fak\u015fehir",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 18,
+          "sample": 20,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "18/20",
+            "odds": "@1.33",
+            "summary": "Eldor Shomurodov (\u0130stanbul Ba\u015fak\u015fehir) won in 18/20 @1.33"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19432200:37591584:1+ SOT:1",
+          "player_id": 37591584,
+          "player_name": "Luca Kjerrumgaard",
+          "team_id": 25,
+          "team_name": "Watford",
+          "fixture_id": 19432200,
+          "fixture_label": "Stoke City vs Watford",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.57,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.57",
+            "summary": "Luca Kjerrumgaard (Watford) won in 7/7 @1.57"
+          }
+        },
+        {
+          "id": "19427184:10990678:1+ SOT:1",
+          "player_id": 10990678,
+          "player_name": "Antoine Semenyo",
+          "team_id": 9,
+          "team_name": "Manchester City",
+          "fixture_id": 19427184,
+          "fixture_label": "West Ham United vs Manchester City",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.40",
+            "summary": "Antoine Semenyo (Manchester City) won in 7/7 @1.40"
+          }
+        },
+        {
+          "id": "19432191:1175:1+ SOT:1",
+          "player_id": 1175,
+          "player_name": "Patrick Bamford",
+          "team_id": 21,
+          "team_name": "Sheffield United",
+          "fixture_id": 19432191,
+          "fixture_label": "Birmingham City vs Sheffield United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 11,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "11/11",
+            "odds": "@1.36",
+            "summary": "Patrick Bamford (Sheffield United) won in 11/11 @1.36"
+          }
+        },
+        {
+          "id": "19428214:33991811:1+ SOT:1",
+          "player_id": 33991811,
+          "player_name": "Tawanda Maswanhise",
+          "team_id": 309,
+          "team_name": "Motherwell",
+          "fixture_id": 19428214,
+          "fixture_label": "Celtic vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.33,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.33",
+            "summary": "Tawanda Maswanhise (Motherwell) won in 11/12 @1.33"
+          }
+        },
+        {
+          "id": "19428214:581047:1+ SOT:1",
+          "player_id": 581047,
+          "player_name": "Callum Slattery",
+          "team_id": 309,
+          "team_name": "Motherwell",
+          "fixture_id": 19428214,
+          "fixture_label": "Celtic vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.91,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.91",
+            "summary": "Callum Slattery (Motherwell) won in 10/11 @1.91"
+          }
+        },
+        {
+          "id": "19443157:330582:1+ SOT:1",
+          "player_id": 330582,
+          "player_name": "Eldor Shomurodov",
+          "team_id": 3702,
+          "team_name": "\u0130stanbul Ba\u015fak\u015fehir",
+          "fixture_id": 19443157,
+          "fixture_label": "Galatasaray vs \u0130stanbul Ba\u015fak\u015fehir",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 18,
+          "sample": 20,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "18/20",
+            "odds": "@1.50",
+            "summary": "Eldor Shomurodov (\u0130stanbul Ba\u015fak\u015fehir) won in 18/20 @1.50"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 14 Mar 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 3\n\u2022 2+ Shots: 4\n\u2022 1+ SOT: 6\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "High Probability List",
+      "title_words": {
+        "primary": "HIGH",
+        "accent": "PROBABILITY"
+      },
+      "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+      "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+      "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
+      "fixture_window": "Sat 14 Mar 2026",
+      "stats": {
+        "total_players": 13,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 90
+      },
+      "slide_number": 1,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19432193:37326106:1+ Shot:1",
+          "player_id": 37326106,
+          "player_name": "Harvey Vale",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19432193,
+          "fixture_label": "Leicester City vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.36,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.36",
+            "summary": "Harvey Vale (Queens Park Rangers) won in 11/12 @1.36"
+          }
+        },
+        {
+          "id": "19432191:37391640:1+ Shot:1",
+          "player_id": 37391640,
+          "player_name": "Andre Brooks",
+          "team_id": 21,
+          "team_name": "Sheffield United",
+          "fixture_id": 19432191,
+          "fixture_label": "Birmingham City vs Sheffield United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.4,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.40",
+            "summary": "Andre Brooks (Sheffield United) won in 10/11 @1.40"
+          }
+        },
+        {
+          "id": "19443163:37308595:1+ Shot:1",
+          "player_id": 37308595,
+          "player_name": "Mithat Pala",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19443163,
+          "fixture_label": "Trabzonspor vs Rizespor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.4,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.40",
+            "summary": "Mithat Pala (Rizespor) won in 9/10 @1.40"
+          }
+        }
+      ],
+      "section_total_rows": 3,
+      "slide_number": 2,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19425164:1835:2+ Shots:2",
+          "player_id": 1835,
+          "player_name": "Henrikh Mkhitaryan",
+          "team_id": 2930,
+          "team_name": "Inter",
+          "fixture_id": 19425164,
+          "fixture_label": "Inter vs Atalanta",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 8,
+          "sample": 8,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "8/8",
+            "odds": "@1.40",
+            "summary": "Henrikh Mkhitaryan (Inter) won in 8/8 @1.40"
+          }
+        },
+        {
+          "id": "19443161:12789480:2+ Shots:2",
+          "player_id": 12789480,
+          "player_name": "Jackson Muleka",
+          "team_id": 2632,
+          "team_name": "Konyaspor",
+          "fixture_id": 19443161,
+          "fixture_label": "Kocaelispor vs Konyaspor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.53,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.53",
+            "summary": "Jackson Muleka (Konyaspor) won in 9/10 @1.53"
+          }
+        },
+        {
+          "id": "19432196:37391514:2+ Shots:2",
+          "player_id": 37391514,
+          "player_name": "Alfie Devine",
+          "team_id": 99,
+          "team_name": "Preston North End",
+          "fixture_id": 19432196,
+          "fixture_label": "Norwich City vs Preston North End",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Alfie Devine (Preston North End) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19443157:330582:2+ Shots:2",
+          "player_id": 330582,
+          "player_name": "Eldor Shomurodov",
+          "team_id": 3702,
+          "team_name": "\u0130stanbul Ba\u015fak\u015fehir",
+          "fixture_id": 19443157,
+          "fixture_label": "Galatasaray vs \u0130stanbul Ba\u015fak\u015fehir",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 18,
+          "sample": 20,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "18/20",
+            "odds": "@1.33",
+            "summary": "Eldor Shomurodov (\u0130stanbul Ba\u015fak\u015fehir) won in 18/20 @1.33"
+          }
+        }
+      ],
+      "section_total_rows": 4,
+      "slide_number": 3,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19432200:37591584:1+ SOT:1",
+          "player_id": 37591584,
+          "player_name": "Luca Kjerrumgaard",
+          "team_id": 25,
+          "team_name": "Watford",
+          "fixture_id": 19432200,
+          "fixture_label": "Stoke City vs Watford",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.57,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.57",
+            "summary": "Luca Kjerrumgaard (Watford) won in 7/7 @1.57"
+          }
+        },
+        {
+          "id": "19427184:10990678:1+ SOT:1",
+          "player_id": 10990678,
+          "player_name": "Antoine Semenyo",
+          "team_id": 9,
+          "team_name": "Manchester City",
+          "fixture_id": 19427184,
+          "fixture_label": "West Ham United vs Manchester City",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.40",
+            "summary": "Antoine Semenyo (Manchester City) won in 7/7 @1.40"
+          }
+        },
+        {
+          "id": "19432191:1175:1+ SOT:1",
+          "player_id": 1175,
+          "player_name": "Patrick Bamford",
+          "team_id": 21,
+          "team_name": "Sheffield United",
+          "fixture_id": 19432191,
+          "fixture_label": "Birmingham City vs Sheffield United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 11,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "11/11",
+            "odds": "@1.36",
+            "summary": "Patrick Bamford (Sheffield United) won in 11/11 @1.36"
+          }
+        },
+        {
+          "id": "19428214:33991811:1+ SOT:1",
+          "player_id": 33991811,
+          "player_name": "Tawanda Maswanhise",
+          "team_id": 309,
+          "team_name": "Motherwell",
+          "fixture_id": 19428214,
+          "fixture_label": "Celtic vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.33,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.33",
+            "summary": "Tawanda Maswanhise (Motherwell) won in 11/12 @1.33"
+          }
+        },
+        {
+          "id": "19428214:581047:1+ SOT:1",
+          "player_id": 581047,
+          "player_name": "Callum Slattery",
+          "team_id": 309,
+          "team_name": "Motherwell",
+          "fixture_id": 19428214,
+          "fixture_label": "Celtic vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.91,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.91",
+            "summary": "Callum Slattery (Motherwell) won in 10/11 @1.91"
+          }
+        },
+        {
+          "id": "19443157:330582:1+ SOT:1",
+          "player_id": 330582,
+          "player_name": "Eldor Shomurodov",
+          "team_id": 3702,
+          "team_name": "\u0130stanbul Ba\u015fak\u015fehir",
+          "fixture_id": 19443157,
+          "fixture_label": "Galatasaray vs \u0130stanbul Ba\u015fak\u015fehir",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 18,
+          "sample": 20,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "18/20",
+            "odds": "@1.50",
+            "summary": "Eldor Shomurodov (\u0130stanbul Ba\u015fak\u015fehir) won in 18/20 @1.50"
+          }
+        }
+      ],
+      "section_total_rows": 6,
+      "slide_number": 4,
+      "slide_count": 4
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "78eef8ca300a2d24e2d0402e5ec1fee524a38352039e01cd280519ab095a1455"
+}
