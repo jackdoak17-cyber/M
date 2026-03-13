@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from typing import Any, List
 
 import requests
+from requests import RequestException, Response
 from requests_oauthlib import OAuth1
 
 from .settings import get_posting_settings
@@ -66,19 +67,62 @@ def _split_text(text: str, max_len: int = 4000) -> List[str]:
     return chunks
 
 
-def post_thread(text: str) -> TweetResult:
-    url = "https://api.twitter.com/2/tweets"
-    auth = _oauth()
-    chunks = _split_text(text)
+def _post_thread_v1(chunks: List[str], auth: OAuth1, reason: str | None = None) -> TweetResult:
+    if reason:
+        print(f"Falling back to X v1.1 statuses/update ({reason})")
+    url = "https://api.twitter.com/1.1/statuses/update.json"
     tweet_ids: List[str] = []
     reply_to: str | None = None
 
     for chunk in chunks:
+        payload: dict[str, Any] = {"status": chunk}
+        if reply_to:
+            payload["in_reply_to_status_id"] = reply_to
+            payload["auto_populate_reply_metadata"] = "true"
+        response = requests.post(url, data=payload, auth=auth, timeout=30)
+        response.raise_for_status()
+        data = response.json()
+        tweet_id = data.get("id_str") or (str(data.get("id")) if data.get("id") else None)
+        if not tweet_id:
+            raise RuntimeError(f"Unexpected X v1.1 response: {data}")
+        tweet_ids.append(tweet_id)
+        reply_to = tweet_id
+
+    return TweetResult(tweet_ids=tweet_ids)
+
+
+def _is_v2_fallback_status(response: Response) -> bool:
+    # v2 occasionally returns 5xx or enrollment/auth-gating responses even when
+    # user-context v1.1 posting is still healthy.
+    return response.status_code in {403, 429, 500, 502, 503, 504}
+
+
+def _post_chunks(chunks: List[str], auth: OAuth1) -> TweetResult:
+    v2_url = "https://api.twitter.com/2/tweets"
+    tweet_ids: List[str] = []
+    reply_to: str | None = None
+
+    for idx, chunk in enumerate(chunks):
         payload: dict[str, Any] = {"text": chunk}
         if reply_to:
             payload["reply"] = {"in_reply_to_tweet_id": reply_to}
-        response = requests.post(url, json=payload, auth=auth, timeout=30)
-        response.raise_for_status()
+        try:
+            response = requests.post(v2_url, json=payload, auth=auth, timeout=30)
+        except RequestException as exc:
+            if idx == 0:
+                return _post_thread_v1(chunks, auth, reason=str(exc))
+            raise
+
+        if not response.ok:
+            if idx == 0 and _is_v2_fallback_status(response):
+                snippet = response.text[:200].replace("\n", " ").strip()
+                return _post_thread_v1(
+                    chunks,
+                    auth,
+                    reason=f"v2 status {response.status_code}: {snippet}",
+                )
+            response.raise_for_status()
+
         data = response.json()
         tweet_id = data.get("data", {}).get("id")
         if not tweet_id:
@@ -87,3 +131,14 @@ def post_thread(text: str) -> TweetResult:
         reply_to = tweet_id
 
     return TweetResult(tweet_ids=tweet_ids)
+
+
+def post_thread_chunks(chunks: List[str]) -> TweetResult:
+    normalized = [chunk for chunk in chunks if chunk and chunk.strip()]
+    if not normalized:
+        normalized = [""]
+    return _post_chunks(normalized, _oauth())
+
+
+def post_thread(text: str) -> TweetResult:
+    return _post_chunks(_split_text(text), _oauth())

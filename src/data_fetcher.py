@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import time as sleep_time
 from contextlib import contextmanager
 from dataclasses import dataclass
 from datetime import date, datetime, time, timedelta, timezone
@@ -18,6 +19,8 @@ from config import get_settings
 settings = get_settings()
 
 MANUAL_AVAILABILITY_FILE = Path(__file__).resolve().parents[1] / "manual_player_exclusions.txt"
+DB_CONNECT_ATTEMPTS = 3
+DB_CONNECT_BACKOFF_SEC = 2
 
 
 @dataclass(frozen=True)
@@ -47,7 +50,22 @@ class ManualPlayerExclusion:
 
 @contextmanager
 def db_cursor():
-    conn = psycopg2.connect(settings.supabase_db_url)
+    conn = None
+    for attempt in range(1, DB_CONNECT_ATTEMPTS + 1):
+        try:
+            conn = psycopg2.connect(settings.supabase_db_url)
+            break
+        except psycopg2.OperationalError:
+            if attempt >= DB_CONNECT_ATTEMPTS:
+                raise
+            delay = DB_CONNECT_BACKOFF_SEC * attempt
+            print(
+                f"DB connection attempt {attempt}/{DB_CONNECT_ATTEMPTS} failed; "
+                f"retrying in {delay}s."
+            )
+            sleep_time.sleep(delay)
+    if conn is None:
+        raise RuntimeError("Unable to establish database connection.")
     try:
         with conn.cursor(cursor_factory=RealDictCursor) as cur:
             yield cur

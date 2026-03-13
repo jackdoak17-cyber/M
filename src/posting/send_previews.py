@@ -2,15 +2,18 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import time
 from datetime import date, datetime, timezone
 from pathlib import Path
 
 from .content_resolver import SLOTS, resolve_content, resolve_target_date
-from .supabase_client import upsert_post_approval
+from .supabase_client import fetch_post_approval, upsert_post_approval
 from .telegram_client import send_message
 
 
 TELEGRAM_MAX = 3500
+REGEN_ATTEMPTS = 3
+REGEN_BACKOFF_SEC = 20
 
 
 def _split_text(text: str, limit: int = TELEGRAM_MAX) -> list[str]:
@@ -87,13 +90,29 @@ def _regenerate_prop_outputs_for_day(target: date) -> None:
     )
 
 
+def _regenerate_prop_outputs_with_retry(target: date) -> None:
+    for attempt in range(1, REGEN_ATTEMPTS + 1):
+        try:
+            _regenerate_prop_outputs_for_day(target)
+            return
+        except Exception:  # noqa: BLE001
+            if attempt >= REGEN_ATTEMPTS:
+                raise
+            delay = REGEN_BACKOFF_SEC * attempt
+            print(
+                f"Regeneration attempt {attempt}/{REGEN_ATTEMPTS} failed for {target}; "
+                f"retrying in {delay}s."
+            )
+            time.sleep(delay)
+
+
 def run(slot: str, target_date: str | None = None) -> int:
     if target_date:
         target = date.fromisoformat(target_date)
     else:
         target = resolve_target_date("preview", slot=slot)
     if _requires_prop_regeneration(slot):
-        _regenerate_prop_outputs_for_day(target)
+        _regenerate_prop_outputs_with_retry(target)
     info = resolve_content(slot, target)
     if info is None:
         print(f"No content found for slot={slot} date={target}")
@@ -102,6 +121,11 @@ def run(slot: str, target_date: str | None = None) -> int:
     post_key = f"{info.scheduled_for.isoformat()}_{slot}"
     post_date = info.scheduled_for.isoformat()
     content_hash = _content_hash(info.content)
+    existing = fetch_post_approval(post_key)
+    if existing and existing.status in {"pending", "approved"} and existing.content_hash == content_hash:
+        print(f"Preview already sent for {post_key} with status={existing.status}; skipping resend.")
+        return 0
+
     payload = {
         "post_key": post_key,
         "slot": slot,
