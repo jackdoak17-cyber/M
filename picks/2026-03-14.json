@@ -1,0 +1,594 @@
+{
+  "date": "2026-03-14",
+  "generated_at": "2026-03-14T07:56:48.435780",
+  "picks_count": 4,
+  "picks": [
+    {
+      "player_id": 37396571,
+      "player_name": "Martín Satriano",
+      "team_id": 106,
+      "team_name": "Getafe",
+      "opponent_id": 7980,
+      "opponent_name": "Atlético Madrid",
+      "fixture_id": 19439520,
+      "fixture_date": "2026-03-14T15:15:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": false,
+      "stat_type_id": 86,
+      "stat_type_label": "shots_on_target",
+      "market_label": "1+ shots on target",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.0822346725959797,
+        "simple_avg": 1.0,
+        "last_5_avg": 1.2,
+        "sample_size": 8,
+        "hit_rates": {
+          "1+": 7,
+          "2+": 1,
+          "3+": 0,
+          "4+": 0
+        },
+        "home_avg": 1.2,
+        "away_avg": 0.6666666666666666,
+        "home_games": 5,
+        "away_games": 3,
+        "std_dev": 0.5345224838248488,
+        "coeff_of_variation": 0.5345224838248488,
+        "avg_minutes": 88.375,
+        "min_minutes": 77.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          77.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 3.3333333333333335,
+        "league_avg": 4.3966666666666665,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 0
+      },
+      "projection": {
+        "baseline_per90": 1.08,
+        "adjusted_projection": 0.93,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.8548900682335103,
+            "concedes": 3.3333333333333335,
+            "league_avg": 4.3966666666666665,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.875,
+            "venue_avg": 0.6666666666666666,
+            "overall_avg": 1.0,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.9819444444444444,
+            "avg_minutes": 88.375,
+            "times_subbed_early": 0,
+            "sample_size": 8
+          },
+          "game_state": {
+            "multiplier": 0.9
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.661
+      },
+      "confidence": {
+        "score": 67,
+        "tier": "STRONG"
+      },
+      "probability": 0.6054,
+      "edge": {
+        "our_probability": 0.6054,
+        "implied_probability": 0.4167,
+        "probability_edge": 0.1887,
+        "fair_odds": 1.65,
+        "bookmaker_odds": 2.4,
+        "expected_value": 0.453,
+        "edge_percentage": 45.3,
+        "kelly_quarter": 0.0809,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.4,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 59.43,
+      "rank": 1,
+      "writeup": "🎯 Martín Satriano (Getafe) 1+ shots on target vs Atlético Madrid (La Liga)\nThe striker has hit the target in all 5 of his last 5 matches and 7 of his last 8 overall. He's averaging 1.08 shots on target per 90 this season with 1.20 in his last 5 games. However, his away record shows just 0.67 per 90 compared to 1.20 at home, which is worth noting for this trip to face Atlético Madrid.\n📊 7/8 (88%)\n💰 Paddy Power 2.40",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 4592198,
+      "player_name": "Morgan Rogers",
+      "team_id": 15,
+      "team_name": "Aston Villa",
+      "opponent_id": 14,
+      "opponent_name": "Manchester United",
+      "fixture_id": 19427181,
+      "fixture_date": "2026-03-15T14:00:00+00:00",
+      "league_id": 8,
+      "league_name": "Premier League",
+      "is_home": false,
+      "stat_type_id": 86,
+      "stat_type_label": "shots_on_target",
+      "market_label": "1+ shots on target",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.1328012186046539,
+        "simple_avg": 1.1,
+        "last_5_avg": 1.0,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 7,
+          "3+": 1,
+          "4+": 0
+        },
+        "home_avg": 1.0,
+        "away_avg": 1.2,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 0.9119095061289915,
+        "coeff_of_variation": 0.8290086419354468,
+        "avg_minutes": 89.4,
+        "min_minutes": 82.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          1.0,
+          2.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          2.0,
+          0.0,
+          0.0,
+          0.0,
+          3.0,
+          2.0,
+          1.0,
+          0.0,
+          1.0,
+          2.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          82.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          86.0,
+          90.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 3.6,
+        "league_avg": 4.30939226519337,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 10,
+        "avg_vs_similar": 1.1,
+        "hitrate_vs_similar": 70.0,
+        "similar_teams_examples": [
+          "Arsenal",
+          "Everton",
+          "Manchester United"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.13,
+        "adjusted_projection": 1.12,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9012307692307693,
+            "concedes": 3.6,
+            "league_avg": 4.30939226519337,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0606060606060606,
+            "venue_avg": 1.2,
+            "overall_avg": 1.1,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.9933333333333334,
+            "avg_minutes": 89.4,
+            "times_subbed_early": 0,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 0.9
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.855
+      },
+      "confidence": {
+        "score": 65,
+        "tier": "STRONG"
+      },
+      "probability": 0.6737,
+      "edge": {
+        "our_probability": 0.6737,
+        "implied_probability": 0.5464,
+        "probability_edge": 0.1273,
+        "fair_odds": 1.48,
+        "bookmaker_odds": 1.83,
+        "expected_value": 0.2329,
+        "edge_percentage": 23.29,
+        "kelly_quarter": 0.0701,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.83,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 57.84,
+      "rank": 2,
+      "writeup": "🎯 Morgan Rogers (Aston Villa) 1+ shots on target vs Manchester United (Premier League)\nRogers is averaging 1.13 shots on target per 90 this season and has hit this line in 4 of his last 5 matches and 14 of his last 20 overall. He averages 1.20 shots on target per 90 in away fixtures compared to 1.00 at home. Against teams like Arsenal, Everton, and Manchester United, he's recorded 1+ shots on target in 70% of those 10 encounters.\n📊 14/20 (70%)\n💰 Paddy Power 1.83",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 524055,
+      "player_name": "Taty Castellanos",
+      "team_id": 1,
+      "team_name": "West Ham United",
+      "opponent_id": 9,
+      "opponent_name": "Manchester City",
+      "fixture_id": 19427184,
+      "fixture_date": "2026-03-14T20:00:00+00:00",
+      "league_id": 8,
+      "league_name": "Premier League",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "2+ fouls committed",
+      "threshold": 2,
+      "baseline": {
+        "weighted_per90": 2.2774796298978717,
+        "simple_avg": 2.111111111111111,
+        "last_5_avg": 2.4,
+        "sample_size": 9,
+        "hit_rates": {
+          "1+": 8,
+          "2+": 7,
+          "3+": 4,
+          "4+": 0
+        },
+        "home_avg": 2.25,
+        "away_avg": 2.0,
+        "home_games": 4,
+        "away_games": 5,
+        "std_dev": 1.0540925533894598,
+        "coeff_of_variation": 0.49930699897395464,
+        "avg_minutes": 83.0,
+        "min_minutes": 69.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          1.0,
+          3.0,
+          3.0,
+          2.0,
+          3.0,
+          0.0,
+          2.0,
+          3.0,
+          2.0
+        ],
+        "raw_minutes": [
+          88.0,
+          90.0,
+          90.0,
+          69.0,
+          79.0,
+          76.0,
+          75.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 10.266666666666667,
+        "league_avg": 10.41988950276243,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 2,
+        "avg_vs_similar": 2.0,
+        "hitrate_vs_similar": 50.0,
+        "similar_teams_examples": [
+          "AFC Bournemouth",
+          "Aston Villa",
+          "Brentford"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 2.28,
+        "adjusted_projection": 2.16,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9911770943796395,
+            "concedes": 10.266666666666667,
+            "league_avg": 10.41988950276243,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0292397660818713,
+            "venue_avg": 2.25,
+            "overall_avg": 2.111111111111111,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9222222222222223,
+            "avg_minutes": 83.0,
+            "times_subbed_early": 1,
+            "sample_size": 9
+          },
+          "game_state": {
+            "multiplier": 1.15
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.082
+      },
+      "confidence": {
+        "score": 70,
+        "tier": "STRONG"
+      },
+      "probability": 0.6356,
+      "edge": {
+        "our_probability": 0.6356,
+        "implied_probability": 0.5405,
+        "probability_edge": 0.0951,
+        "fair_odds": 1.57,
+        "bookmaker_odds": 1.85,
+        "expected_value": 0.1759,
+        "edge_percentage": 17.59,
+        "kelly_quarter": 0.0517,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.85,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 56.3,
+      "rank": 3,
+      "writeup": "🎯 Taty Castellanos (West Ham United) 2+ fouls committed vs Manchester City (Premier League)\nCastellanos is averaging 2.28 fouls per 90 this season and has committed 2+ in 4 of his last 5 matches. He's hit this line in 7 of his last 9 overall and averages 2.25 fouls per game at home. Manchester City draw just 10.3 fouls per game — fewest in the Premier League vs the 10.4 league average, which is worth considering.\n📊 7/9 (78%)\n💰 Kambi 1.85",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 766659,
+      "player_name": "Edmond Tapsoba",
+      "team_id": 3321,
+      "team_name": "Bayer 04 Leverkusen",
+      "opponent_id": 503,
+      "opponent_name": "FC Bayern München",
+      "fixture_id": 19433700,
+      "fixture_date": "2026-03-14T14:30:00+00:00",
+      "league_id": 82,
+      "league_name": "Bundesliga",
+      "is_home": true,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "1+ shots",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.2269131629124983,
+        "simple_avg": 1.15,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 18,
+          "2+": 5,
+          "3+": 0,
+          "4+": 0
+        },
+        "home_avg": 1.0,
+        "away_avg": 1.2727272727272727,
+        "home_games": 9,
+        "away_games": 11,
+        "std_dev": 0.5871429486123998,
+        "coeff_of_variation": 0.5105590857499128,
+        "avg_minutes": 88.3,
+        "min_minutes": 56.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          2.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          56.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 10.6,
+        "league_avg": 13.085185185185185,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 5,
+        "avg_vs_similar": 0.8,
+        "hitrate_vs_similar": 80.0,
+        "similar_teams_examples": [
+          "Bayer 04 Leverkusen",
+          "Borussia Mönchengladbach",
+          "FC Bayern München"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.23,
+        "adjusted_projection": 0.93,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.8860458533823945,
+            "concedes": 10.6,
+            "league_avg": 13.085185185185185,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.9161490683229814,
+            "venue_avg": 1.0,
+            "overall_avg": 1.15,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.981111111111111,
+            "avg_minutes": 88.3,
+            "times_subbed_early": 1,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 0.88
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.701
+      },
+      "confidence": {
+        "score": 77,
+        "tier": "STRONG"
+      },
+      "probability": 0.6054,
+      "edge": {
+        "our_probability": 0.6054,
+        "implied_probability": 0.5456,
+        "probability_edge": 0.0598,
+        "fair_odds": 1.65,
+        "bookmaker_odds": 1.833,
+        "expected_value": 0.1097,
+        "edge_percentage": 10.97,
+        "kelly_quarter": 0.0329,
+        "rating": "STRONG"
+      },
+      "odds": 1.833,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 55.56,
+      "rank": 4,
+      "writeup": "🎯 Edmond Tapsoba (Bayer 04 Leverkusen) 1+ shots vs FC Bayern München (Bundesliga)\nThe centre-back is averaging 1.23 shots per 90 this season and has registered 1+ shots in all 5 of his last 5 matches and 18 of his last 20 overall. Against teams like Bayer 04 Leverkusen, Borussia Mönchengladbach, and FC Bayern München, he's hit this line in 4 of his last 5 games (80%). Strong value here.\n📊 18/20 (90%)\n💰 Bet365 1.833",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
