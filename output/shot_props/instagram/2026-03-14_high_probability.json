@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-03-13T17:01:17+00:00",
+  "generated_at": "2026-03-14T08:07:28+00:00",
   "scheduled_for": "2026-03-14",
   "source_target_date": "2026-03-14",
   "fixture_dates": [
@@ -19,10 +19,10 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 13,
+    "total_rows": 12,
     "by_section": {
       "1+ Shot": 3,
-      "2+ Shots": 4,
+      "2+ Shots": 3,
       "1+ SOT": 6
     }
   },
@@ -30,25 +30,25 @@
     "by_section": {
       "1+ Shot": [
         {
-          "id": "19432193:37326106:1+ Shot:1",
-          "player_id": 37326106,
-          "player_name": "Harvey Vale",
-          "team_id": 47,
-          "team_name": "Queens Park Rangers",
-          "fixture_id": 19432193,
-          "fixture_label": "Leicester City vs Queens Park Rangers",
-          "league_id": 9,
-          "league_name": "Championship",
+          "id": "19467865:37316421:1+ Shot:1",
+          "player_id": 37316421,
+          "player_name": "Yassin Belkhdim",
+          "team_id": 776,
+          "team_name": "Angers SCO",
+          "fixture_id": 19467865,
+          "fixture_label": "Angers SCO vs Nice",
+          "league_id": 301,
+          "league_name": "Ligue 1",
           "stat_label": "1+ Shot",
           "threshold": 1,
-          "hits": 11,
-          "sample": 12,
-          "hit_rate": 0.9167,
-          "odds": 1.36,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.33,
           "display": {
-            "rate": "11/12",
-            "odds": "@1.36",
-            "summary": "Harvey Vale (Queens Park Rangers) won in 11/12 @1.36"
+            "rate": "12/13",
+            "odds": "@1.33",
+            "summary": "Yassin Belkhdim (Angers SCO) won in 12/13 @1.33"
           }
         },
         {
@@ -112,11 +112,11 @@
           "hits": 8,
           "sample": 8,
           "hit_rate": 1.0,
-          "odds": 1.4,
+          "odds": 1.33,
           "display": {
             "rate": "8/8",
-            "odds": "@1.40",
-            "summary": "Henrikh Mkhitaryan (Inter) won in 8/8 @1.40"
+            "odds": "@1.33",
+            "summary": "Henrikh Mkhitaryan (Inter) won in 8/8 @1.33"
           }
         },
         {
@@ -139,28 +139,6 @@
             "rate": "9/10",
             "odds": "@1.53",
             "summary": "Jackson Muleka (Konyaspor) won in 9/10 @1.53"
-          }
-        },
-        {
-          "id": "19432196:37391514:2+ Shots:2",
-          "player_id": 37391514,
-          "player_name": "Alfie Devine",
-          "team_id": 99,
-          "team_name": "Preston North End",
-          "fixture_id": 19432196,
-          "fixture_label": "Norwich City vs Preston North End",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.5,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.50",
-            "summary": "Alfie Devine (Preston North End) won in 9/10 @1.50"
           }
         },
         {
@@ -322,7 +300,7 @@
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 14 Mar 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 3\n\u2022 2+ Shots: 4\n\u2022 1+ SOT: 6\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 14 Mar 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 3\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 6\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -336,7 +314,7 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 14 Mar 2026",
       "stats": {
-        "total_players": 13,
+        "total_players": 12,
         "stat_types": 3,
         "hit_rate_threshold_pct": 90
       },
@@ -350,25 +328,25 @@
       "section_pages": 1,
       "rows": [
         {
-          "id": "19432193:37326106:1+ Shot:1",
-          "player_id": 37326106,
-          "player_name": "Harvey Vale",
-          "team_id": 47,
-          "team_name": "Queens Park Rangers",
-          "fixture_id": 19432193,
-          "fixture_label": "Leicester City vs Queens Park Rangers",
-          "league_id": 9,
-          "league_name": "Championship",
+          "id": "19467865:37316421:1+ Shot:1",
+          "player_id": 37316421,
+          "player_name": "Yassin Belkhdim",
+          "team_id": 776,
+          "team_name": "Angers SCO",
+          "fixture_id": 19467865,
+          "fixture_label": "Angers SCO vs Nice",
+          "league_id": 301,
+          "league_name": "Ligue 1",
           "stat_label": "1+ Shot",
           "threshold": 1,
-          "hits": 11,
-          "sample": 12,
-          "hit_rate": 0.9167,
-          "odds": 1.36,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.33,
           "display": {
-            "rate": "11/12",
-            "odds": "@1.36",
-            "summary": "Harvey Vale (Queens Park Rangers) won in 11/12 @1.36"
+            "rate": "12/13",
+            "odds": "@1.33",
+            "summary": "Yassin Belkhdim (Angers SCO) won in 12/13 @1.33"
           }
         },
         {
@@ -441,11 +419,11 @@
           "hits": 8,
           "sample": 8,
           "hit_rate": 1.0,
-          "odds": 1.4,
+          "odds": 1.33,
           "display": {
             "rate": "8/8",
-            "odds": "@1.40",
-            "summary": "Henrikh Mkhitaryan (Inter) won in 8/8 @1.40"
+            "odds": "@1.33",
+            "summary": "Henrikh Mkhitaryan (Inter) won in 8/8 @1.33"
           }
         },
         {
@@ -471,28 +449,6 @@
           }
         },
         {
-          "id": "19432196:37391514:2+ Shots:2",
-          "player_id": 37391514,
-          "player_name": "Alfie Devine",
-          "team_id": 99,
-          "team_name": "Preston North End",
-          "fixture_id": 19432196,
-          "fixture_label": "Norwich City vs Preston North End",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.5,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.50",
-            "summary": "Alfie Devine (Preston North End) won in 9/10 @1.50"
-          }
-        },
-        {
           "id": "19443157:330582:2+ Shots:2",
           "player_id": 330582,
           "player_name": "Eldor Shomurodov",
@@ -515,7 +471,7 @@
           }
         }
       ],
-      "section_total_rows": 4,
+      "section_total_rows": 3,
       "slide_number": 3,
       "slide_count": 4
     },
@@ -667,5 +623,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "78eef8ca300a2d24e2d0402e5ec1fee524a38352039e01cd280519ab095a1455"
+  "content_fingerprint": "7c9855ccec452feab5e8ad75ad59861a80e2e42a55665b00f208c34438882a0d"
 }
