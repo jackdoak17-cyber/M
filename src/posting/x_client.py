@@ -120,10 +120,8 @@ def _is_retryable_v2_status(response: Response) -> bool:
     return response.status_code in {429, 500, 502, 503, 504} or _is_cloudflare_challenge(response)
 
 
-def post_thread(text: str) -> TweetResult:
+def _post_chunks(chunks: List[str], auth: OAuth1) -> TweetResult:
     v2_url = "https://api.twitter.com/2/tweets"
-    auth = _oauth()
-    chunks = _split_text(text)
     enable_v1_fallback = _env_bool("X_ENABLE_V1_FALLBACK", default=False)
     max_retries = 4
     base_backoff_seconds = 3
@@ -178,3 +176,14 @@ def post_thread(text: str) -> TweetResult:
         reply_to = tweet_id
 
     return TweetResult(tweet_ids=tweet_ids)
+
+
+def post_thread_chunks(chunks: List[str]) -> TweetResult:
+    normalized = [chunk for chunk in chunks if chunk and chunk.strip()]
+    if not normalized:
+        normalized = [""]
+    return _post_chunks(normalized, _oauth())
+
+
+def post_thread(text: str) -> TweetResult:
+    return _post_chunks(_split_text(text), _oauth())
