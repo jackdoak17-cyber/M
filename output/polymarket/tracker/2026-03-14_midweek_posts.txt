@@ -1,34 +1,61 @@
+🏆 Change in EPL Winner probability since last update:
+
+• Arsenal: 81.5% -> 80.5%
+• Manchester City: 18.5% -> 18.5%
+• Manchester United: 0.4% -> 0.4%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-winner
+
+🏆 Change in La Liga Winner probability since last update:
+
+• Barcelona: 80.5% -> 81.5%
+• Real Madrid: 18.5% -> 17.5%
+• Villarreal: 0.1% -> 0.1%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/la-liga-winner-114
+
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 55% -> 57.5%
-• Erling Haaland: 20.5% -> 21%
-• Bruno Fernandes: 16.5% -> 13.5%
+• Declan Rice: 57.5% -> 59%
+• Erling Haaland: 21% -> 21%
+• Bruno Fernandes: 13.5% -> 15.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Lamine Yamal: 32.5% -> 32%
-• Harry Kane: 24.9% -> 24.4%
-• Kylian Mbappé: 24% -> 24%
+• Lamine Yamal: 32% -> 32%
+• Kylian Mbappé: 24% -> 26%
+• Harry Kane: 24.4% -> 23.8%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
 
+🏆 Change in EPL Top 4 probability since last update:
+
+• Arsenal (Top 4): 98.8% -> 99%
+• Manchester City (Top 4): 99% -> 99%
+• Manchester United (Top 4): 66.5% -> 64.5%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-top-4-finish
+
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 97.2% -> 97.6%
-• Burnley (Relegated): 96.8% -> 96.4%
-• West Ham (Relegated): 37.5% -> 38%
+• Burnley (Relegated): 96.4% -> 98.4%
+• Wolves (Relegated): 97.6% -> 97.2%
+• Nottm Forest (Relegated): 26.5% -> 47.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
 
 🏆 Change in Next Man Utd Manager probability since last update:
 
-• Michael Carrick: 54.5% -> 51.5%
-• Oliver Glasner: 14.5% -> 15%
+• Michael Carrick: 51.5% -> 50%
+• Oliver Glasner: 15% -> 15%
 • Luis Enrique: 9% -> 9%
 
 [🔮 via @Polymarket]
