@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-03-15T04:42:51.552597",
-  "total_picks": 30,
+  "last_updated": "2026-03-15T07:57:26.738545",
+  "total_picks": 31,
   "total_hits": 15,
-  "overall_hit_rate": 50.0,
-  "total_pnl": 2.49,
+  "overall_hit_rate": 48.4,
+  "total_pnl": -7.51,
   "avg_odds": 2.04,
   "by_confidence_tier": {
     "LOCK": {
@@ -12,9 +12,9 @@
       "pnl": -1.6700000000000017
     },
     "STRONG": {
-      "total": 28,
+      "total": 29,
       "hits": 14,
-      "pnl": 4.159999999999997
+      "pnl": -5.840000000000003
     }
   },
   "by_league": {
@@ -49,9 +49,9 @@
       "pnl": 16.659999999999997
     },
     "Premier League": {
-      "total": 3,
+      "total": 4,
       "hits": 0,
-      "pnl": -30.0
+      "pnl": -40.0
     }
   },
   "by_market": {
@@ -76,9 +76,9 @@
       "pnl": 8.329999999999998
     },
     "1+ shots on target": {
-      "total": 11,
+      "total": 12,
       "hits": 5,
-      "pnl": -12.340000000000003
+      "pnl": -22.340000000000003
     },
     "4+ shots": {
       "total": 2,
