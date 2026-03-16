@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from .content_resolver import SLOTS, resolve_content, resolve_target_date
 from .supabase_client import fetch_post_approval, update_post_status
 from .telegram_client import send_message
-from .x_client import post_thread, post_thread_chunks
+from .x_client import post_thread
 
 
 TELEGRAM_MAX = 3500
@@ -20,81 +20,6 @@ def _truncate_text(text: str, limit: int = TELEGRAM_MAX) -> str:
 
 def _content_hash(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
-
-
-def _trim_blank_edges(lines: list[str]) -> list[str]:
-    start = 0
-    end = len(lines)
-    while start < end and not lines[start].strip():
-        start += 1
-    while end > start and not lines[end - 1].strip():
-        end -= 1
-    return lines[start:end]
-
-
-def _to_block_text(lines: list[str]) -> str:
-    trimmed = _trim_blank_edges(lines)
-    if not trimmed:
-        return ""
-    return "\n".join(trimmed)
-
-
-def _is_fixture_heading(line: str) -> bool:
-    value = line.strip()
-    if not value:
-        return False
-    lower = value.lower()
-    return " vs " in lower and " - " in value
-
-
-def _is_stat_line(line: str) -> bool:
-    return "(won in " in line.lower()
-
-
-def _build_weekend_fixture_thread(content: str) -> list[str] | None:
-    lines = content.splitlines()
-    heading_indices = [idx for idx, line in enumerate(lines) if _is_fixture_heading(line)]
-    if not heading_indices:
-        return None
-
-    intro_text = _to_block_text(lines[: heading_indices[0]])
-    fixture_blocks: list[str] = []
-    footer_text = ""
-
-    for idx, start in enumerate(heading_indices):
-        end = heading_indices[idx + 1] if idx + 1 < len(heading_indices) else len(lines)
-        block_lines = _trim_blank_edges(lines[start:end])
-        if not block_lines:
-            continue
-
-        if idx == len(heading_indices) - 1:
-            stat_positions = [pos for pos, line in enumerate(block_lines) if _is_stat_line(line)]
-            if stat_positions:
-                last_stat_pos = stat_positions[-1]
-                footer_text = _to_block_text(block_lines[last_stat_pos + 1 :])
-                block_lines = _trim_blank_edges(block_lines[: last_stat_pos + 1])
-
-        block_text = _to_block_text(block_lines)
-        if block_text:
-            fixture_blocks.append(block_text)
-
-    if not fixture_blocks:
-        return None
-
-    # Desired shape:
-    # - Tweet 1: intro + first fixture block
-    # - Middle tweets: one fixture block each
-    # - Final tweet: last fixture block + footer (if present)
-    if intro_text:
-        fixture_blocks[0] = f"{intro_text}\n\n{fixture_blocks[0]}"
-    if footer_text:
-        fixture_blocks[-1] = f"{fixture_blocks[-1]}\n\n{footer_text}"
-    return fixture_blocks
-
-
-def _use_fixture_thread_structure(slot: str) -> bool:
-    slot_cfg = SLOTS.get(slot) or {}
-    return str(slot_cfg.get("type") or "") == "fixture"
 
 
 def run(slot: str, dry_run: bool) -> int:
@@ -119,25 +44,17 @@ def run(slot: str, dry_run: bool) -> int:
     if latest_hash and approved_hash != latest_hash:
         print(f"Detected content drift for {post_key}; posting approved snapshot.")
 
-    thread_chunks = _build_weekend_fixture_thread(approved_content) if _use_fixture_thread_structure(slot) else None
-    preview_source = "\n\n---\n\n".join(thread_chunks) if thread_chunks else approved_content
-    preview = _truncate_text(preview_source)
+    preview = _truncate_text(approved_content)
     if dry_run:
-        thread_line = f"\nThread tweets: {len(thread_chunks)}" if thread_chunks else ""
         message = (
             f"DRY RUN — NOT posted to X\n"
-            f"Slot: {slot}\nDate: {target.isoformat()} ({target.strftime('%A')}){thread_line}\n\n"
+            f"Slot: {slot}\nDate: {target.isoformat()} ({target.strftime('%A')})\n\n"
             f"{preview}"
         )
         send_message(message)
         return 0
 
-    if thread_chunks:
-        result = post_thread_chunks(thread_chunks)
-    else:
-        if _use_fixture_thread_structure(slot):
-            print(f"Could not split fixture blocks for {post_key}; posting as a single thread.")
-        result = post_thread(approved_content)
+    result = post_thread(approved_content)
     update_post_status(
         post_key,
         "approved",
