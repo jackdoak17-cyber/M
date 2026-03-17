@@ -136,9 +136,9 @@
       "rank": 1,
       "writeup": "🎯 Taty Castellanos (West Ham United) 2+ fouls committed vs Manchester City (Premier League)\nCastellanos is averaging 2.28 fouls per 90 this season and has committed 2+ in 4 of his last 5 matches. He's hit this line in 7 of his last 9 overall and averages 2.25 fouls per game at home. Manchester City draw 10.3 fouls per game, ranking 1st for fewest drawn in the Premier League vs the 10.4 league average.\n📊 7/9 (78%)\n💰 Kambi 2.18",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": false,
+        "checked_at": "2026-03-17T11:23:32.973760"
       }
     },
     {
@@ -265,9 +265,9 @@
       "rank": 2,
       "writeup": "🎯 Martín Satriano (Getafe) 1+ shots on target vs Atlético Madrid (La Liga)\nSatriano is averaging 1.08 shots on target per 90 this season and has hit this line in all 5 of his last 5 matches with a 1.20 average. He's also recorded 1+ SOT in 7 of his last 8 overall. However, his away form shows just 0.67 SOT per 90 compared to 1.20 at home, which is worth noting against a strong Atlético Madrid defense.\n📊 7/8 (88%)\n💰 Kambi 2.45",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-03-17T11:23:33.162856"
       }
     },
     {
@@ -425,9 +425,9 @@
       "rank": 3,
       "writeup": "🎯 Edmond Tapsoba (Bayer 04 Leverkusen) 1+ shots vs FC Bayern München (Bundesliga)\nThe centre-back is averaging 1.23 shots per 90 this season and has registered 1+ shots in all 5 of his last 5 matches and 18 of his last 20 overall. Against teams like Bayer 04 Leverkusen, Borussia Mönchengladbach, and FC Bayern München, he's hit this line in 4 of his last 5 games (80%). Strong value here.\n📊 18/20 (90%)\n💰 Bet365 1.833",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-03-17T11:23:33.351294"
       }
     }
   ]

@@ -127,9 +127,9 @@
       "rank": 1,
       "writeup": "🎯 Martín Satriano (Getafe) 1+ shots on target vs Atlético Madrid (La Liga)\nThe striker has hit the target in all 5 of his last 5 matches and 7 of his last 8 overall. He's averaging 1.08 shots on target per 90 this season with 1.20 in his last 5 games. However, his away record shows just 0.67 per 90 compared to 1.20 at home, which is worth noting for this trip to face Atlético Madrid.\n📊 7/8 (88%)\n💰 Paddy Power 2.40",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-03-17T11:23:33.538740"
       }
     },
     {
@@ -287,9 +287,9 @@
       "rank": 2,
       "writeup": "🎯 Morgan Rogers (Aston Villa) 1+ shots on target vs Manchester United (Premier League)\nRogers is averaging 1.13 shots on target per 90 this season and has hit this line in 4 of his last 5 matches and 14 of his last 20 overall. He averages 1.20 shots on target per 90 in away fixtures compared to 1.00 at home. Against teams like Arsenal, Everton, and Manchester United, he's recorded 1+ shots on target in 70% of those 10 encounters.\n📊 14/20 (70%)\n💰 Paddy Power 1.83",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-03-17T11:23:33.725822"
       }
     },
     {
@@ -425,9 +425,9 @@
       "rank": 3,
       "writeup": "🎯 Taty Castellanos (West Ham United) 2+ fouls committed vs Manchester City (Premier League)\nCastellanos is averaging 2.28 fouls per 90 this season and has committed 2+ in 4 of his last 5 matches. He's hit this line in 7 of his last 9 overall and averages 2.25 fouls per game at home. Manchester City draw just 10.3 fouls per game — fewest in the Premier League vs the 10.4 league average, which is worth considering.\n📊 7/9 (78%)\n💰 Kambi 1.85",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": false,
+        "checked_at": "2026-03-17T11:23:33.912276"
       }
     },
     {
@@ -585,9 +585,9 @@
       "rank": 4,
       "writeup": "🎯 Edmond Tapsoba (Bayer 04 Leverkusen) 1+ shots vs FC Bayern München (Bundesliga)\nThe centre-back is averaging 1.23 shots per 90 this season and has registered 1+ shots in all 5 of his last 5 matches and 18 of his last 20 overall. Against teams like Bayer 04 Leverkusen, Borussia Mönchengladbach, and FC Bayern München, he's hit this line in 4 of his last 5 games (80%). Strong value here.\n📊 18/20 (90%)\n💰 Bet365 1.833",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-03-17T11:23:34.098903"
       }
     }
   ]

@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Morgan Rogers (Aston Villa) 1+ shots on target vs Manchester United (Premier League)\nRogers is averaging 1.13 shots on target per 90 this season and has hit this line in 4 of his last 5 matches and 14 of his last 20 overall. He averages 1.20 shots on target per 90 in away fixtures compared to 1.00 at home. Against teams like Arsenal, Everton, and Manchester United, he's recorded 1+ shots on target in 70% of those 10 encounters.\n📊 14/20 (70%)\n💰 Paddy Power 1.83",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-03-17T11:23:34.286732"
       }
     }
   ]
