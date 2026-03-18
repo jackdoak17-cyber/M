@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-18T04:34:01.728371",
-  "total_picks": 31,
+  "last_updated": "2026-03-18T07:47:17.123084",
+  "total_picks": 32,
   "total_hits": 17,
-  "overall_hit_rate": 54.8,
-  "total_pnl": 40.99,
-  "avg_odds": 2.04,
+  "overall_hit_rate": 53.1,
+  "total_pnl": 30.99,
+  "avg_odds": 2.03,
   "by_confidence_tier": {
     "LOCK": {
       "total": 2,
@@ -12,9 +12,9 @@
       "pnl": -1.6700000000000017
     },
     "STRONG": {
-      "total": 29,
+      "total": 30,
       "hits": 16,
-      "pnl": 42.66
+      "pnl": 32.66
     }
   },
   "by_league": {
@@ -52,6 +52,11 @@
       "total": 4,
       "hits": 0,
       "pnl": -40.0
+    },
+    "Super Lig": {
+      "total": 1,
+      "hits": 0,
+      "pnl": -10.0
     }
   },
   "by_market": {
@@ -61,9 +66,9 @@
       "pnl": -40.0
     },
     "1+ shots": {
-      "total": 7,
+      "total": 8,
       "hits": 3,
-      "pnl": -13.099999999999998
+      "pnl": -23.099999999999998
     },
     "2+ shots": {
       "total": 5,
