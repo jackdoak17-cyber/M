@@ -1,35 +1,33 @@
-🏆 Change in EPL Winner probability since last update:
+🏆 Change in PFA Player Of The Year probability since last update:
 
-• Arsenal: 91.5% -> 90.5%
-• Manchester City: 8.5% -> 8.5%
-• Manchester United: 0.4% -> 0.4%
+• Declan Rice: 59% -> 59%
+• Bruno Fernandes: 24% -> 23%
+• Erling Haaland: 9.5% -> 9.5%
 
 [🔮 via @Polymarket]
-https://polymarket.com/event/english-premier-league-winner
+https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Lamine Yamal: 31% -> 32%
-• Harry Kane: 27.3% -> 26.6%
-• Kylian Mbappé: 15% -> 19%
+• Lamine Yamal: 32% -> 32.5%
+• Harry Kane: 26.6% -> 25.5%
+• Kylian Mbappé: 19% -> 21%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
 
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 98.2% -> 97.8%
-• Burnley (Relegated): 98.2% -> 96.4%
-• West Ham (Relegated): 36.5% -> 36.5%
+• Wolves (Relegated): 97.8% -> 97.8%
+• Burnley (Relegated): 96.4% -> 96.4%
+• West Ham (Relegated): 36.5% -> 36%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
 
-🏆 Change in Next Man Utd Manager probability since last update:
+🏆 Change in TheUnitedStrand Haircut probability since last update:
 
-• Michael Carrick: 58.5% -> 59.5%
-• Oliver Glasner: 13% -> 13%
-• Luis Enrique: 10.8% -> 10.8%
+• TheUnitedStrand: 11.5% -> 12%
 
 [🔮 via @Polymarket]
-https://polymarket.com/event/next-manchester-united-manager
+https://polymarket.com/event/will-theunitedstrand-get-a-haircut-by-2025-26-season-end
