@@ -1,0 +1,161 @@
+{
+  "date": "2026-03-19",
+  "generated_at": "2026-03-19T07:40:41.375976",
+  "picks_count": 1,
+  "picks": [
+    {
+      "player_id": 205067,
+      "player_name": "Oğulcan Ülgün",
+      "team_id": 286,
+      "team_name": "Gençlerbirliği",
+      "opponent_id": 2632,
+      "opponent_name": "Konyaspor",
+      "fixture_id": 19443172,
+      "fixture_date": "2026-03-19T17:00:00+00:00",
+      "league_id": 600,
+      "league_name": "Super Lig",
+      "is_home": false,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "1+ shots",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 2.1043371199400136,
+        "simple_avg": 1.2352941176470589,
+        "last_5_avg": 1.8,
+        "sample_size": 17,
+        "hit_rates": {
+          "1+": 13,
+          "2+": 4,
+          "3+": 2,
+          "4+": 2
+        },
+        "home_avg": 1.0,
+        "away_avg": 1.5714285714285714,
+        "home_games": 10,
+        "away_games": 7,
+        "std_dev": 1.200490095997562,
+        "coeff_of_variation": 0.9718253158075502,
+        "avg_minutes": 73.82352941176471,
+        "min_minutes": 32.0,
+        "times_subbed_early": 6,
+        "raw_values": [
+          1.0,
+          4.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          1.0,
+          0.0,
+          0.0,
+          4.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "raw_minutes": [
+          38.0,
+          76.0,
+          90.0,
+          90.0,
+          84.0,
+          90.0,
+          56.0,
+          32.0,
+          76.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          60.0,
+          69.0,
+          44.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 12.214285714285714,
+        "league_avg": 12.761904761904763,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 7,
+        "avg_vs_similar": 1.1428571428571428,
+        "hitrate_vs_similar": 71.4,
+        "similar_teams_examples": [
+          "Beşiktaş",
+          "Fatih Karagümrük",
+          "Fenerbahçe"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 2.1,
+        "adjusted_projection": 1.42,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9749689054726367,
+            "concedes": 12.214285714285714,
+            "league_avg": 12.761904761904763,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.1587301587301586,
+            "venue_avg": 1.5714285714285714,
+            "overall_avg": 1.2352941176470589,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.8202614379084968,
+            "avg_minutes": 73.82352941176471,
+            "times_subbed_early": 6,
+            "sample_size": 17
+          },
+          "game_state": {
+            "multiplier": 0.88
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.815
+      },
+      "confidence": {
+        "score": 65,
+        "tier": "STRONG"
+      },
+      "probability": 0.7583,
+      "edge": {
+        "our_probability": 0.7583,
+        "implied_probability": 0.5556,
+        "probability_edge": 0.2027,
+        "fair_odds": 1.32,
+        "bookmaker_odds": 1.8,
+        "expected_value": 0.3649,
+        "edge_percentage": 36.49,
+        "kelly_quarter": 0.114,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.8,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 64.71,
+      "rank": 1,
+      "writeup": "🎯 Oğulcan Ülgün (Gençlerbirliği) 1+ shots vs Konyaspor (Super Lig)\nÜlgün is averaging 2.10 shots per 90 this season and has hit 1+ shots in all 5 of his last 5 matches and 13 of his last 17 overall. Away from home he averages 1.57 shots per 90 compared to just 1.00 at home, showing he's more active on the road. Against teams like Beşiktaş, Fatih Karagümrük, and Fenerbahçe, he's managed 1+ shots in 5 of 7 games (71.4%).\n📊 13/17 (76%)\n💰 Bet365 1.8",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
