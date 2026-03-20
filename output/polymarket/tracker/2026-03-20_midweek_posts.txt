@@ -1,26 +1,15 @@
-🏆 Change in PFA Player Of The Year probability since last update:
-
-• Declan Rice: 59% -> 59%
-• Bruno Fernandes: 23% -> 22.5%
-• Erling Haaland: 9.5% -> 9.5%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
-
-🏆 Change in Ballon d'Or Winner probability since last update:
-
-• Lamine Yamal: 32.5% -> 32.5%
-• Harry Kane: 25.4% -> 25.4%
-• Kylian Mbappé: 22.5% -> 23%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/ballon-dor-winner-2026
-
 🏆 Change in EPL Relegation probability since last update:
 
-• Wolves (Relegated): 98.2% -> 98.3%
-• Burnley (Relegated): 97.2% -> 95.2%
+• Wolves (Relegated): 98.3% -> 98.4%
+• Burnley (Relegated): 95.2% -> 97.2%
 • West Ham (Relegated): 36.5% -> 36.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
+
+🏆 Change in TheUnitedStrand Haircut probability since last update:
+
+• TheUnitedStrand: 11.5% -> 11%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/will-theunitedstrand-get-a-haircut-by-2025-26-season-end
