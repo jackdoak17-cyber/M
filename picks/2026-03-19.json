@@ -152,9 +152,9 @@
       "rank": 1,
       "writeup": "🎯 Oğulcan Ülgün (Gençlerbirliği) 1+ shots vs Konyaspor (Super Lig)\nÜlgün is averaging 2.10 shots per 90 this season and has hit 1+ shots in all 5 of his last 5 matches and 13 of his last 17 overall. Away from home he averages 1.57 shots per 90 compared to just 1.00 at home, showing he's more active on the road. Against teams like Beşiktaş, Fatih Karagümrük, and Fenerbahçe, he's managed 1+ shots in 5 of 7 games (71.4%).\n📊 13/17 (76%)\n💰 Bet365 1.8",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-03-20T11:04:46.999354"
       }
     }
   ]
