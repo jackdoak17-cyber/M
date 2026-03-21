@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "potential_value",
-  "generated_at": "2026-03-20T16:45:05+00:00",
+  "generated_at": "2026-03-21T07:48:00+00:00",
   "scheduled_for": "2026-03-20",
   "source_target_date": "2026-03-21",
   "fixture_dates": [
@@ -67,33 +67,11 @@
           "hits": 10,
           "sample": 13,
           "hit_rate": 0.7692,
-          "odds": 1.83,
+          "odds": 1.73,
           "display": {
             "rate": "10/13",
-            "odds": "@1.83",
-            "summary": "Dan Ballard (Sunderland) won in 10/13 @1.83"
-          }
-        },
-        {
-          "id": "19427187:1743:1+ Shot:1",
-          "player_id": 1743,
-          "player_name": "Virgil van Dijk",
-          "team_id": 8,
-          "team_name": "Liverpool",
-          "fixture_id": 19427187,
-          "fixture_label": "Brighton & Hove Albion vs Liverpool",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 2.2,
-          "display": {
-            "rate": "6/8",
-            "odds": "@2.20",
-            "summary": "Virgil van Dijk (Liverpool) won in 6/8 @2.20"
+            "odds": "@1.73",
+            "summary": "Dan Ballard (Sunderland) won in 10/13 @1.73"
           }
         },
         {
@@ -116,6 +94,28 @@
             "rate": "6/8",
             "odds": "@1.80",
             "summary": "Calvin Bassey (Fulham) won in 6/8 @1.80"
+          }
+        },
+        {
+          "id": "19427187:1743:1+ Shot:1",
+          "player_id": 1743,
+          "player_name": "Virgil van Dijk",
+          "team_id": 8,
+          "team_name": "Liverpool",
+          "fixture_id": 19427187,
+          "fixture_label": "Brighton & Hove Albion vs Liverpool",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Virgil van Dijk (Liverpool) won in 6/8 @1.73"
           }
         }
       ],
@@ -255,33 +255,11 @@
           "hits": 10,
           "sample": 13,
           "hit_rate": 0.7692,
-          "odds": 1.83,
+          "odds": 1.73,
           "display": {
             "rate": "10/13",
-            "odds": "@1.83",
-            "summary": "Dan Ballard (Sunderland) won in 10/13 @1.83"
-          }
-        },
-        {
-          "id": "19427187:1743:1+ Shot:1",
-          "player_id": 1743,
-          "player_name": "Virgil van Dijk",
-          "team_id": 8,
-          "team_name": "Liverpool",
-          "fixture_id": 19427187,
-          "fixture_label": "Brighton & Hove Albion vs Liverpool",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 2.2,
-          "display": {
-            "rate": "6/8",
-            "odds": "@2.20",
-            "summary": "Virgil van Dijk (Liverpool) won in 6/8 @2.20"
+            "odds": "@1.73",
+            "summary": "Dan Ballard (Sunderland) won in 10/13 @1.73"
           }
         },
         {
@@ -304,6 +282,28 @@
             "rate": "6/8",
             "odds": "@1.80",
             "summary": "Calvin Bassey (Fulham) won in 6/8 @1.80"
+          }
+        },
+        {
+          "id": "19427187:1743:1+ Shot:1",
+          "player_id": 1743,
+          "player_name": "Virgil van Dijk",
+          "team_id": 8,
+          "team_name": "Liverpool",
+          "fixture_id": 19427187,
+          "fixture_label": "Brighton & Hove Albion vs Liverpool",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Virgil van Dijk (Liverpool) won in 6/8 @1.73"
           }
         }
       ],
@@ -404,5 +404,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "37c7d3a3749957242eb983a7a55321cf2d8488688ef7d87d5dea548fdafddafe"
+  "content_fingerprint": "9bb2dc5da9ba1ae59d3dd756948099cd8b187989b7a94fe58424b5a59cb34439"
 }
