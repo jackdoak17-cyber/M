@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-24T07:57:39Z",
+  "baseline_date": "2026-03-17T07:57:30Z",
+  "current_date": "2026-03-24T07:57:39Z",
+  "mode": "generate",
+  "baseline_path": "output/polymarket/weekly_baseline.json",
+  "markets_with_movement": [
+    {
+      "slug": "next-manchester-united-manager",
+      "label": "Next Man Utd Manager",
+      "max_move_pp": 6.0
+    }
+  ],
+  "biggest_mover_triggered": true,
+  "errors": []
+}
