@@ -1,7 +1,16 @@
+🏆 Change in EPL Winner probability since last update:
+
+• Arsenal: 88.5% -> 88%
+• Manchester City: 11.5% -> 11.5%
+• Manchester United: 0.1% -> 0.1%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-winner
+
 🏆 Change in La Liga Winner probability since last update:
 
-• Barcelona: 75.5% -> 76.5%
-• Real Madrid: 22.5% -> 21.5%
+• Barcelona: 76.5% -> 76.5%
+• Real Madrid: 21.5% -> 22.5%
 • Villarreal: 0.2% -> 0.2%
 
 [🔮 via @Polymarket]
@@ -9,45 +18,36 @@ https://polymarket.com/event/la-liga-winner-114
 
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 59.5% -> 59%
-• Bruno Fernandes: 27% -> 26.5%
-• Erling Haaland: 9.4% -> 9.4%
+• Declan Rice: 59% -> 59%
+• Bruno Fernandes: 26.5% -> 26%
+• Erling Haaland: 9.4% -> 9.3%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Lamine Yamal: 23.5% -> 24.5%
-• Kylian Mbappé: 21.5% -> 22.5%
-• Harry Kane: 19.8% -> 21.6%
+• Kylian Mbappé: 22.5% -> 25%
+• Lamine Yamal: 24.5% -> 24.5%
+• Harry Kane: 21.6% -> 21.6%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
 
-🏆 Change in EPL Top 4 probability since last update:
-
-• Arsenal (Top 4): 99.8% -> 99.8%
-• Manchester City (Top 4): 96.2% -> 97%
-• Manchester United (Top 4): 88% -> 88%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/english-premier-league-top-4-finish
-
 🏆 Change in EPL Relegation probability since last update:
 
+• Burnley (Relegated): 97.3% -> 98.2%
 • Wolves (Relegated): 98.1% -> 98.1%
-• Burnley (Relegated): 97.3% -> 97.3%
-• West Ham (Relegated): 45% -> 47%
+• West Ham (Relegated): 47% -> 45.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
 
 🏆 Change in Next Man Utd Manager probability since last update:
 
-• Michael Carrick: 64% -> 66%
-• Luis Enrique: 10.6% -> 10.2%
-• Thomas Tuchel: 7.2% -> 7.2%
+• Michael Carrick: 66% -> 60%
+• Luis Enrique: 10.2% -> 9.8%
+• Thomas Tuchel: 7.2% -> 7.1%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/next-manchester-united-manager
