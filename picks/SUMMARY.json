@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-04-02T04:39:52.467159",
-  "total_picks": 33,
+  "last_updated": "2026-04-02T08:03:20.624462",
+  "total_picks": 34,
   "total_hits": 17,
-  "overall_hit_rate": 51.5,
-  "total_pnl": 20.99,
+  "overall_hit_rate": 50.0,
+  "total_pnl": 10.99,
   "avg_odds": 2.02,
   "by_confidence_tier": {
     "LOCK": {
@@ -12,9 +12,9 @@
       "pnl": -1.6700000000000017
     },
     "STRONG": {
-      "total": 31,
+      "total": 32,
       "hits": 16,
-      "pnl": 22.659999999999997
+      "pnl": 12.659999999999997
     }
   },
   "by_league": {
@@ -29,9 +29,9 @@
       "pnl": 81.6
     },
     "Championship": {
-      "total": 3,
+      "total": 4,
       "hits": 1,
-      "pnl": -11.670000000000002
+      "pnl": -21.67
     },
     "Eredivisie": {
       "total": 5,
@@ -66,9 +66,9 @@
       "pnl": -40.0
     },
     "1+ shots": {
-      "total": 9,
+      "total": 10,
       "hits": 3,
-      "pnl": -33.099999999999994
+      "pnl": -43.099999999999994
     },
     "2+ shots": {
       "total": 5,

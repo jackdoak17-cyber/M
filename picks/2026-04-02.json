@@ -1,0 +1,167 @@
+{
+  "date": "2026-04-02",
+  "generated_at": "2026-04-02T08:03:20.621085",
+  "picks_count": 1,
+  "picks": [
+    {
+      "player_id": 331382,
+      "player_name": "Joe Ward",
+      "team_id": 24,
+      "team_name": "Derby County",
+      "opponent_id": 117,
+      "opponent_name": "Coventry City",
+      "fixture_id": 19432217,
+      "fixture_date": "2026-04-03T19:00:00+00:00",
+      "league_id": 9,
+      "league_name": "Championship",
+      "is_home": false,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "1+ shots",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.262193968049749,
+        "simple_avg": 1.0,
+        "last_5_avg": 1.6,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 4,
+          "3+": 2,
+          "4+": 0
+        },
+        "home_avg": 1.3636363636363635,
+        "away_avg": 0.5555555555555556,
+        "home_games": 11,
+        "away_games": 9,
+        "std_dev": 0.9176629354822471,
+        "coeff_of_variation": 0.9176629354822471,
+        "avg_minutes": 85.15,
+        "min_minutes": 39.0,
+        "times_subbed_early": 2,
+        "raw_values": [
+          3.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          0.0,
+          1.0,
+          2.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          3.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          44.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          39.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 12.6,
+        "league_avg": 12.374501992031872,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 24
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 9,
+        "avg_vs_similar": 1.0,
+        "hitrate_vs_similar": 66.7,
+        "similar_teams_examples": [
+          "Coventry City",
+          "Hull City",
+          "Ipswich Town"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.26,
+        "adjusted_projection": 1.01,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0109336767546684,
+            "concedes": 12.6,
+            "league_avg": 12.374501992031872,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.7142857142857143,
+            "venue_avg": 0.5555555555555556,
+            "overall_avg": 1.0,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.9461111111111111,
+            "avg_minutes": 85.15,
+            "times_subbed_early": 2,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 0.88
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.601
+      },
+      "confidence": {
+        "score": 67,
+        "tier": "STRONG"
+      },
+      "probability": 0.6358,
+      "edge": {
+        "our_probability": 0.6358,
+        "implied_probability": 0.5,
+        "probability_edge": 0.1358,
+        "fair_odds": 1.57,
+        "bookmaker_odds": 2.0,
+        "expected_value": 0.2716,
+        "edge_percentage": 27.16,
+        "kelly_quarter": 0.0679,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.0,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 57.32,
+      "rank": 1,
+      "writeup": "🎯 Joe Ward (Derby County) 1+ shots vs Coventry City (Championship)\nWard has hit 1+ shots in all 5 of his last 5 matches and 14 of his last 20 overall. He's averaging 1.60 shots per 90 in his last 5 games, well up from his 1.26 season average. Against teams like Coventry City, Hull City, and Ipswich Town, he's recorded 1+ shots in 6 of 9 games (66.7%).\n📊 14/20 (70%)\n💰 Bet365 2.0",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
