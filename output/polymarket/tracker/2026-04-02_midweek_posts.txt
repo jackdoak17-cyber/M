@@ -1,16 +1,25 @@
+🏆 Change in Ballon d'Or Winner probability since last update:
+
+• Kylian Mbappé: 25.5% -> 26.5%
+• Lamine Yamal: 23.5% -> 23.5%
+• Harry Kane: 21.2% -> 21.2%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/ballon-dor-winner-2026
+
 🏆 Change in EPL Relegation probability since last update:
 
 • Wolves (Relegated): 98.4% -> 98.4%
 • Burnley (Relegated): 98.2% -> 98.2%
-• West Ham (Relegated): 46% -> 43.5%
+• West Ham (Relegated): 43.5% -> 45.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/epl-which-clubs-get-relegated
 
 🏆 Change in Next Man Utd Manager probability since last update:
 
-• Michael Carrick: 65% -> 65.5%
-• Luis Enrique: 7.6% -> 9.7%
+• Michael Carrick: 65.5% -> 65%
+• Luis Enrique: 9.7% -> 10%
 • Thomas Tuchel: 7.5% -> 7.5%
 
 [🔮 via @Polymarket]
