@@ -1,0 +1,584 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "potential_value",
+  "generated_at": "2026-04-03T15:54:47+00:00",
+  "scheduled_for": "2026-04-03",
+  "source_target_date": "2026-04-04",
+  "fixture_dates": [
+    "2026-04-04",
+    "2026-04-05"
+  ],
+  "title": "",
+  "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.75,
+    "min_odds": 1.72,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 11,
+    "by_section": {
+      "1+ Shot": 5,
+      "2+ Shots": 2,
+      "1+ SOT": 4
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19433718:20347176:1+ Shot:1",
+          "player_id": 20347176,
+          "player_name": "Arkadiusz Pyrka",
+          "team_id": 353,
+          "team_name": "St. Pauli",
+          "fixture_id": 19433718,
+          "fixture_label": "FC Union Berlin vs St. Pauli",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.73,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.73",
+            "summary": "Arkadiusz Pyrka (St. Pauli) won in 8/10 @1.73"
+          }
+        },
+        {
+          "id": "19425189:37529525:1+ Shot:1",
+          "player_id": 37529525,
+          "player_name": "Tarik Muharemovi\u0107",
+          "team_id": 2714,
+          "team_name": "Sassuolo",
+          "fixture_id": 19425189,
+          "fixture_label": "Sassuolo vs Cagliari",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.0,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.00",
+            "summary": "Tarik Muharemovi\u0107 (Sassuolo) won in 6/8 @2.00"
+          }
+        },
+        {
+          "id": "19443181:37635461:1+ Shot:1",
+          "player_id": 37635461,
+          "player_name": "Chibuike Nwaiwu",
+          "team_id": 688,
+          "team_name": "Trabzonspor",
+          "fixture_id": 19443181,
+          "fixture_label": "Trabzonspor vs Galatasaray",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Chibuike Nwaiwu (Trabzonspor) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19429447:34873442:1+ Shot:1",
+          "player_id": 34873442,
+          "player_name": "Anselmo Garc\u00eda MacNulty",
+          "team_id": 1016,
+          "team_name": "PEC Zwolle",
+          "fixture_id": 19429447,
+          "fixture_label": "Go Ahead Eagles vs PEC Zwolle",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Anselmo Garc\u00eda MacNulty (PEC Zwolle) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19443178:24604:1+ Shot:1",
+          "player_id": 24604,
+          "player_name": "Stefano Denswil",
+          "team_id": 643,
+          "team_name": "Kayserispor",
+          "fixture_id": 19443178,
+          "fixture_label": "Kas\u0131mpa\u015fa vs Kayserispor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.73",
+            "summary": "Stefano Denswil (Kayserispor) won in 9/12 @1.73"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19467882:65528:2+ Shots:2",
+          "player_id": 65528,
+          "player_name": "Matthieu Udol",
+          "team_id": 271,
+          "team_name": "Lens",
+          "fixture_id": 19467882,
+          "fixture_label": "LOSC Lille vs Lens",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.1,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.10",
+            "summary": "Matthieu Udol (Lens) won in 6/8 @2.10"
+          }
+        },
+        {
+          "id": "19467881:96826:2+ Shots:2",
+          "player_id": 96826,
+          "player_name": "Pierre Lees-Melou",
+          "team_id": 4508,
+          "team_name": "Paris",
+          "fixture_id": 19467881,
+          "fixture_label": "Lorient vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Pierre Lees-Melou (Paris) won in 6/8 @1.80"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19467879:37579970:1+ SOT:1",
+          "player_id": 37579970,
+          "player_name": "R\u00e9my Labeau Lascary",
+          "team_id": 266,
+          "team_name": "Brest",
+          "fixture_id": 19467879,
+          "fixture_label": "Brest vs Rennes",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 7,
+          "hit_rate": 0.8571,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/7",
+            "odds": "@1.73",
+            "summary": "R\u00e9my Labeau Lascary (Brest) won in 6/7 @1.73"
+          }
+        },
+        {
+          "id": "19439541:37249198:1+ SOT:1",
+          "player_id": 37249198,
+          "player_name": "Pablo Ib\u00e1\u00f1ez",
+          "team_id": 2975,
+          "team_name": "Deportivo Alav\u00e9s",
+          "fixture_id": 19439541,
+          "fixture_label": "Deportivo Alav\u00e9s vs Osasuna",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 11,
+          "hit_rate": 0.8182,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/11",
+            "odds": "@1.73",
+            "summary": "Pablo Ib\u00e1\u00f1ez (Deportivo Alav\u00e9s) won in 9/11 @1.73"
+          }
+        },
+        {
+          "id": "19439542:37396571:1+ SOT:1",
+          "player_id": 37396571,
+          "player_name": "Mart\u00edn Satriano",
+          "team_id": 106,
+          "team_name": "Getafe",
+          "fixture_id": 19439542,
+          "fixture_label": "Getafe vs Athletic Club",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.73,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.73",
+            "summary": "Mart\u00edn Satriano (Getafe) won in 8/10 @1.73"
+          }
+        },
+        {
+          "id": "19428228:581047:1+ SOT:1",
+          "player_id": 581047,
+          "player_name": "Callum Slattery",
+          "team_id": 309,
+          "team_name": "Motherwell",
+          "fixture_id": 19428228,
+          "fixture_label": "Motherwell vs Falkirk",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 16,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "12/16",
+            "odds": "@1.73",
+            "summary": "Callum Slattery (Motherwell) won in 12/16 @1.73"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "Fixtures: Sat 04 Apr - Sun 05 Apr 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 5\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 4\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "Stats & Odds List",
+      "title_words": {
+        "primary": "POTENTIAL",
+        "accent": "VALUE"
+      },
+      "title": "",
+      "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+      "threshold_bar": "75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
+      "fixture_window": "Sat 04 Apr - Sun 05 Apr 2026",
+      "stats": {
+        "total_players": 11,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 75
+      },
+      "slide_number": 1,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19433718:20347176:1+ Shot:1",
+          "player_id": 20347176,
+          "player_name": "Arkadiusz Pyrka",
+          "team_id": 353,
+          "team_name": "St. Pauli",
+          "fixture_id": 19433718,
+          "fixture_label": "FC Union Berlin vs St. Pauli",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.73,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.73",
+            "summary": "Arkadiusz Pyrka (St. Pauli) won in 8/10 @1.73"
+          }
+        },
+        {
+          "id": "19425189:37529525:1+ Shot:1",
+          "player_id": 37529525,
+          "player_name": "Tarik Muharemovi\u0107",
+          "team_id": 2714,
+          "team_name": "Sassuolo",
+          "fixture_id": 19425189,
+          "fixture_label": "Sassuolo vs Cagliari",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.0,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.00",
+            "summary": "Tarik Muharemovi\u0107 (Sassuolo) won in 6/8 @2.00"
+          }
+        },
+        {
+          "id": "19443181:37635461:1+ Shot:1",
+          "player_id": 37635461,
+          "player_name": "Chibuike Nwaiwu",
+          "team_id": 688,
+          "team_name": "Trabzonspor",
+          "fixture_id": 19443181,
+          "fixture_label": "Trabzonspor vs Galatasaray",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Chibuike Nwaiwu (Trabzonspor) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19429447:34873442:1+ Shot:1",
+          "player_id": 34873442,
+          "player_name": "Anselmo Garc\u00eda MacNulty",
+          "team_id": 1016,
+          "team_name": "PEC Zwolle",
+          "fixture_id": 19429447,
+          "fixture_label": "Go Ahead Eagles vs PEC Zwolle",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Anselmo Garc\u00eda MacNulty (PEC Zwolle) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19443178:24604:1+ Shot:1",
+          "player_id": 24604,
+          "player_name": "Stefano Denswil",
+          "team_id": 643,
+          "team_name": "Kayserispor",
+          "fixture_id": 19443178,
+          "fixture_label": "Kas\u0131mpa\u015fa vs Kayserispor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.73",
+            "summary": "Stefano Denswil (Kayserispor) won in 9/12 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 5,
+      "slide_number": 2,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19467882:65528:2+ Shots:2",
+          "player_id": 65528,
+          "player_name": "Matthieu Udol",
+          "team_id": 271,
+          "team_name": "Lens",
+          "fixture_id": 19467882,
+          "fixture_label": "LOSC Lille vs Lens",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.1,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.10",
+            "summary": "Matthieu Udol (Lens) won in 6/8 @2.10"
+          }
+        },
+        {
+          "id": "19467881:96826:2+ Shots:2",
+          "player_id": 96826,
+          "player_name": "Pierre Lees-Melou",
+          "team_id": 4508,
+          "team_name": "Paris",
+          "fixture_id": 19467881,
+          "fixture_label": "Lorient vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Pierre Lees-Melou (Paris) won in 6/8 @1.80"
+          }
+        }
+      ],
+      "section_total_rows": 2,
+      "slide_number": 3,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19467879:37579970:1+ SOT:1",
+          "player_id": 37579970,
+          "player_name": "R\u00e9my Labeau Lascary",
+          "team_id": 266,
+          "team_name": "Brest",
+          "fixture_id": 19467879,
+          "fixture_label": "Brest vs Rennes",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 7,
+          "hit_rate": 0.8571,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/7",
+            "odds": "@1.73",
+            "summary": "R\u00e9my Labeau Lascary (Brest) won in 6/7 @1.73"
+          }
+        },
+        {
+          "id": "19439541:37249198:1+ SOT:1",
+          "player_id": 37249198,
+          "player_name": "Pablo Ib\u00e1\u00f1ez",
+          "team_id": 2975,
+          "team_name": "Deportivo Alav\u00e9s",
+          "fixture_id": 19439541,
+          "fixture_label": "Deportivo Alav\u00e9s vs Osasuna",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 11,
+          "hit_rate": 0.8182,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/11",
+            "odds": "@1.73",
+            "summary": "Pablo Ib\u00e1\u00f1ez (Deportivo Alav\u00e9s) won in 9/11 @1.73"
+          }
+        },
+        {
+          "id": "19439542:37396571:1+ SOT:1",
+          "player_id": 37396571,
+          "player_name": "Mart\u00edn Satriano",
+          "team_id": 106,
+          "team_name": "Getafe",
+          "fixture_id": 19439542,
+          "fixture_label": "Getafe vs Athletic Club",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.73,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.73",
+            "summary": "Mart\u00edn Satriano (Getafe) won in 8/10 @1.73"
+          }
+        },
+        {
+          "id": "19428228:581047:1+ SOT:1",
+          "player_id": 581047,
+          "player_name": "Callum Slattery",
+          "team_id": 309,
+          "team_name": "Motherwell",
+          "fixture_id": 19428228,
+          "fixture_label": "Motherwell vs Falkirk",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 16,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "12/16",
+            "odds": "@1.73",
+            "summary": "Callum Slattery (Motherwell) won in 12/16 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 4,
+      "slide_number": 4,
+      "slide_count": 4
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "1e12ee7b89cd1b6e6c04efb479454a38089e9eeceb62e56cc9145e049b3d2e48"
+}
