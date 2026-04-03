@@ -1,35 +1,26 @@
-🏆 Change in La Liga Winner probability since last update:
-
-• Barcelona: 75.5% -> 75.5%
-• Real Madrid: 23.5% -> 24.5%
-• Villarreal: 0.2% -> 0.2%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/la-liga-winner-114
-
 🏆 Change in PFA Player Of The Year probability since last update:
 
 • Declan Rice: 59% -> 59%
-• Bruno Fernandes: 27.5% -> 24%
-• Erling Haaland: 8.5% -> 8.9%
+• Bruno Fernandes: 24% -> 23%
+• Morgan Rogers: 7.3% -> 9.6%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Kylian Mbappé: 24.5% -> 24.5%
-• Lamine Yamal: 24% -> 24%
-• Harry Kane: 21.3% -> 20.6%
+• Lamine Yamal: 24% -> 24.5%
+• Kylian Mbappé: 24.5% -> 23.5%
+• Harry Kane: 20.6% -> 20.6%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
 
-🏆 Change in EPL Relegation probability since last update:
+🏆 Change in Next Man Utd Manager probability since last update:
 
-• Wolves (Relegated): 98.4% -> 98.4%
-• Burnley (Relegated): 98.2% -> 98.2%
-• West Ham (Relegated): 45% -> 46%
+• Michael Carrick: 65.5% -> 65%
+• Oliver Glasner: 7% -> 7.5%
+• Thomas Tuchel: 7.5% -> 7.5%
 
 [🔮 via @Polymarket]
-https://polymarket.com/event/epl-which-clubs-get-relegated
+https://polymarket.com/event/next-manchester-united-manager
