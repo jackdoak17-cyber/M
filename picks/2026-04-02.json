@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Joe Ward (Derby County) 1+ shots vs Coventry City (Championship)\nWard has hit 1+ shots in all 5 of his last 5 matches and 14 of his last 20 overall. He's averaging 1.60 shots per 90 in his last 5 games, well up from his 1.26 season average. Against teams like Coventry City, Hull City, and Ipswich Town, he's recorded 1+ shots in 6 of 9 games (66.7%).\n📊 14/20 (70%)\n💰 Bet365 2.0",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-04T04:27:59.557100"
       }
     }
   ]
