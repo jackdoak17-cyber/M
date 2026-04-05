@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Kaj Sierhuis (Fortuna Sittard) 1+ shots on target vs AZ (Eredivisie)\nSierhuis is averaging 1.69 shots on target per 90 this season and has hit this line in all 5 of his last 5 matches and 18 of his last 20 overall. He averages 1.67 shots on target per 90 in away fixtures compared to just 1.00 at home. Against teams like AZ, Feyenoord, and Go Ahead Eagles, he's registered 1+ shots on target in 6 of 8 games (75%).\n📊 18/20 (90%)\n💰 Kambi 1.8",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-05T04:58:42.227007"
       }
     }
   ]
