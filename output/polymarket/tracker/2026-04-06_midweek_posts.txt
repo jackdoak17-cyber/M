@@ -1,35 +1,17 @@
 🏆 Change in PFA Player Of The Year probability since last update:
 
 • Declan Rice: 59% -> 59%
-• Bruno Fernandes: 22.5% -> 22%
-• Cole Palmer: 4.4% -> 13.4%
+• Bruno Fernandes: 22% -> 23%
+• Cole Palmer: 13.4% -> 9.3%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
-🏆 Change in Ballon d'Or Winner probability since last update:
-
-• Kylian Mbappé: 24.5% -> 25.5%
-• Lamine Yamal: 23.5% -> 22.5%
-• Harry Kane: 21.6% -> 21%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/ballon-dor-winner-2026
-
-🏆 Change in EPL Relegation probability since last update:
-
-• Wolves (Relegated): 98.4% -> 98.4%
-• Burnley (Relegated): 98.2% -> 98.2%
-• West Ham (Relegated): 45.5% -> 46.5%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/epl-which-clubs-get-relegated
-
 🏆 Change in Next Man Utd Manager probability since last update:
 
-• Michael Carrick: 67% -> 65.5%
-• Oliver Glasner: 7.5% -> 7.5%
-• Thomas Tuchel: 7.5% -> 7.5%
+• Michael Carrick: 65.5% -> 64.5%
+• Thomas Tuchel: 7.5% -> 7.4%
+• Oliver Glasner: 7.5% -> 7%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/next-manchester-united-manager
