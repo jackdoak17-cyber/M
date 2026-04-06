@@ -1,0 +1,167 @@
+{
+  "date": "2026-04-06",
+  "generated_at": "2026-04-06T08:23:44.252865",
+  "picks_count": 1,
+  "picks": [
+    {
+      "player_id": 37344294,
+      "player_name": "Danilo Veiga",
+      "team_id": 7790,
+      "team_name": "Lecce",
+      "opponent_id": 708,
+      "opponent_name": "Atalanta",
+      "fixture_id": 19425186,
+      "fixture_date": "2026-04-06T13:00:00+00:00",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "is_home": true,
+      "stat_type_id": 78,
+      "stat_type_label": "tackles",
+      "market_label": "3+ tackles",
+      "threshold": 3,
+      "baseline": {
+        "weighted_per90": 3.1697551544763267,
+        "simple_avg": 3.1,
+        "last_5_avg": 3.4,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 20,
+          "2+": 17,
+          "3+": 14,
+          "4+": 7
+        },
+        "home_avg": 3.1,
+        "away_avg": 3.1,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 1.3337718577107003,
+        "coeff_of_variation": 0.4302489863582904,
+        "avg_minutes": 88.4,
+        "min_minutes": 58.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          3.0,
+          5.0,
+          3.0,
+          4.0,
+          2.0,
+          1.0,
+          3.0,
+          1.0,
+          3.0,
+          4.0,
+          2.0,
+          4.0,
+          5.0,
+          3.0,
+          3.0,
+          5.0,
+          5.0,
+          2.0,
+          3.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          58.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 16.0,
+        "league_avg": 15.563583815028903,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 17,
+        "avg_vs_similar": 1.8235294117647058,
+        "hitrate_vs_similar": 35.3,
+        "similar_teams_examples": [
+          "AC Milan",
+          "Atalanta",
+          "Como"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 3.17,
+        "adjusted_projection": 3.3,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.016824512534819,
+            "concedes": 16.0,
+            "league_avg": 15.563583815028903,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0,
+            "venue_avg": 3.1,
+            "overall_avg": 3.1,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9822222222222223,
+            "avg_minutes": 88.4,
+            "times_subbed_early": 1,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.2
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.198
+      },
+      "confidence": {
+        "score": 85,
+        "tier": "LOCK"
+      },
+      "probability": 0.6406,
+      "edge": {
+        "our_probability": 0.6406,
+        "implied_probability": 0.5456,
+        "probability_edge": 0.095,
+        "fair_odds": 1.56,
+        "bookmaker_odds": 1.833,
+        "expected_value": 0.1742,
+        "edge_percentage": 17.42,
+        "kelly_quarter": 0.0523,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.833,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 61.01,
+      "rank": 1,
+      "writeup": "🎯 Danilo Veiga (Lecce) 3+ tackles vs Atalanta (Serie A)\nThe defender is averaging 3.17 tackles per 90 this season and has hit 3+ in 4 of his last 5 matches. Over his last 20 games, he's recorded 14 of his last 20 with 3+ tackles for a solid 70% hit rate. His recent form shows 3.40 tackles per game across his last 5 outings.\n📊 14/20 (70%)\n💰 Bet365 1.833",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
