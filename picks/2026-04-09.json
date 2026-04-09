@@ -1,0 +1,647 @@
+{
+  "date": "2026-04-09",
+  "generated_at": "2026-04-09T08:15:14.162875",
+  "picks_count": 4,
+  "picks": [
+    {
+      "player_id": 24817439,
+      "player_name": "Fabian Rieder",
+      "team_id": 90,
+      "team_name": "FC Augsburg",
+      "opponent_id": 2726,
+      "opponent_name": "TSG Hoffenheim",
+      "fixture_id": 19433731,
+      "fixture_date": "2026-04-10T18:30:00+00:00",
+      "league_id": 82,
+      "league_name": "Bundesliga",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 2.277044216250573,
+        "simple_avg": 1.45,
+        "last_5_avg": 1.8,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 9,
+          "3+": 4,
+          "4+": 1
+        },
+        "home_avg": 1.7,
+        "away_avg": 1.2,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 1.3562719801759993,
+        "coeff_of_variation": 0.9353599863282753,
+        "avg_minutes": 65.4,
+        "min_minutes": 1.0,
+        "times_subbed_early": 7,
+        "raw_values": [
+          5.0,
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          2.0,
+          1.0,
+          0.0,
+          2.0,
+          0.0,
+          3.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          3.0,
+          2.0,
+          2.0,
+          1.0,
+          3.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          32.0,
+          1.0,
+          9.0,
+          60.0,
+          74.0,
+          75.0,
+          7.0,
+          46.0,
+          78.0,
+          75.0,
+          57.0,
+          90.0,
+          83.0,
+          81.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 12.866666666666667,
+        "league_avg": 9.85925925925926,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 8,
+        "avg_vs_similar": 1.625,
+        "hitrate_vs_similar": 62.5,
+        "similar_teams_examples": [
+          "Bayer 04 Leverkusen",
+          "Borussia Mönchengladbach",
+          "FC Bayern München"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 2.28,
+        "adjusted_projection": 1.67,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.1830202854996243,
+            "concedes": 12.866666666666667,
+            "league_avg": 9.85925925925926,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.114942528735632,
+            "venue_avg": 1.7,
+            "overall_avg": 1.45,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.7266666666666667,
+            "avg_minutes": 65.4,
+            "times_subbed_early": 7,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.08
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.035
+      },
+      "confidence": {
+        "score": 65,
+        "tier": "STRONG"
+      },
+      "probability": 0.7811,
+      "edge": {
+        "our_probability": 0.7811,
+        "implied_probability": 0.4545,
+        "probability_edge": 0.3266,
+        "fair_odds": 1.28,
+        "bookmaker_odds": 2.2,
+        "expected_value": 0.7184,
+        "edge_percentage": 71.84,
+        "kelly_quarter": 0.1497,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.2,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 72.92,
+      "rank": 1,
+      "writeup": "🎯 Fabian Rieder (FC Augsburg) 1+ fouls committed vs TSG Hoffenheim (Bundesliga)\nRieder is averaging 2.28 fouls per 90 this season and has committed 1+ in 14 of his last 20 matches overall. TSG Hoffenheim draw 12.9 fouls per game — most in the Bundesliga vs the 9.9 league average. He's hit this line in 4 of his last 5 appearances.\n📊 14/20 (70%)\n💰 Paddy Power 2.2",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 37402348,
+      "player_name": "João Gomes",
+      "team_id": 29,
+      "team_name": "Wolverhampton Wanderers",
+      "opponent_id": 1,
+      "opponent_name": "West Ham United",
+      "fixture_id": 19427726,
+      "fixture_date": "2026-04-10T19:00:00+00:00",
+      "league_id": 8,
+      "league_name": "Premier League",
+      "is_home": false,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.7202111998449627,
+        "simple_avg": 1.8,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 17,
+          "2+": 11,
+          "3+": 5,
+          "4+": 3
+        },
+        "home_avg": 1.777777777777778,
+        "away_avg": 1.8181818181818181,
+        "home_games": 9,
+        "away_games": 11,
+        "std_dev": 1.2814465510343749,
+        "coeff_of_variation": 0.7119147505746527,
+        "avg_minutes": 79.95,
+        "min_minutes": 3.0,
+        "times_subbed_early": 3,
+        "raw_values": [
+          1.0,
+          1.0,
+          2.0,
+          0.0,
+          2.0,
+          0.0,
+          4.0,
+          4.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          2.0,
+          3.0,
+          0.0,
+          2.0,
+          3.0,
+          2.0,
+          4.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          3.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          71.0,
+          90.0,
+          46.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          85.0,
+          90.0,
+          90.0,
+          90.0,
+          44.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 10.533333333333333,
+        "league_avg": 10.251572327044025,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 12,
+        "avg_vs_similar": 1.6666666666666667,
+        "hitrate_vs_similar": 83.3,
+        "similar_teams_examples": [
+          "Brighton & Hove Albion",
+          "Burnley",
+          "Chelsea"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.72,
+        "adjusted_projection": 1.56,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0164907975460122,
+            "concedes": 10.533333333333333,
+            "league_avg": 10.251572327044025,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0069444444444444,
+            "venue_avg": 1.8181818181818181,
+            "overall_avg": 1.8,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.8883333333333334,
+            "avg_minutes": 79.95,
+            "times_subbed_early": 3,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.15
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.046
+      },
+      "confidence": {
+        "score": 70,
+        "tier": "STRONG"
+      },
+      "probability": 0.7899,
+      "edge": {
+        "our_probability": 0.7899,
+        "implied_probability": 0.5464,
+        "probability_edge": 0.2435,
+        "fair_odds": 1.27,
+        "bookmaker_odds": 1.83,
+        "expected_value": 0.4455,
+        "edge_percentage": 44.55,
+        "kelly_quarter": 0.1342,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.83,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 69.41,
+      "rank": 2,
+      "writeup": "🎯 João Gomes (Wolverhampton Wanderers) 1+ fouls committed vs West Ham United (Premier League)\nHe's averaging 1.72 fouls per 90 this season and has committed 1+ in 17 of his last 20 matches overall. West Ham United draw 10.5 fouls per game — most in the Premier League vs the 10.3 league average. Away from home, Gomes averages 1.82 fouls per 90 compared to 1.78 at home.\n📊 17/20 (85%)\n💰 Paddy Power 1.83",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 27441544,
+      "player_name": "Tim Lemperle",
+      "team_id": 2726,
+      "team_name": "TSG Hoffenheim",
+      "opponent_id": 90,
+      "opponent_name": "FC Augsburg",
+      "fixture_id": 19433731,
+      "fixture_date": "2026-04-10T18:30:00+00:00",
+      "league_id": 82,
+      "league_name": "Bundesliga",
+      "is_home": false,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 2.6817213481861413,
+        "simple_avg": 2.0,
+        "last_5_avg": 1.4,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 12,
+          "3+": 8,
+          "4+": 3
+        },
+        "home_avg": 1.7272727272727273,
+        "away_avg": 2.3333333333333335,
+        "home_games": 11,
+        "away_games": 9,
+        "std_dev": 1.4867838833500564,
+        "coeff_of_variation": 0.7433919416750282,
+        "avg_minutes": 62.75,
+        "min_minutes": 13.0,
+        "times_subbed_early": 8,
+        "raw_values": [
+          2.0,
+          2.0,
+          0.0,
+          0.0,
+          3.0,
+          1.0,
+          3.0,
+          3.0,
+          1.0,
+          5.0,
+          3.0,
+          2.0,
+          4.0,
+          2.0,
+          1.0,
+          3.0,
+          1.0,
+          4.0,
+          0.0,
+          0.0
+        ],
+        "raw_minutes": [
+          87.0,
+          69.0,
+          29.0,
+          13.0,
+          16.0,
+          46.0,
+          76.0,
+          90.0,
+          77.0,
+          88.0,
+          80.0,
+          73.0,
+          85.0,
+          32.0,
+          76.0,
+          75.0,
+          76.0,
+          86.0,
+          64.0,
+          17.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 10.2,
+        "league_avg": 9.85925925925926,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 9,
+        "avg_vs_similar": 1.7777777777777777,
+        "hitrate_vs_similar": 66.7,
+        "similar_teams_examples": [
+          "Eintracht Frankfurt",
+          "FC Augsburg",
+          "FC Köln"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 2.68,
+        "adjusted_projection": 1.4,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0207362885048836,
+            "concedes": 10.2,
+            "league_avg": 9.85925925925926,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.1071428571428572,
+            "venue_avg": 2.3333333333333335,
+            "overall_avg": 2.0,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.6972222222222222,
+            "avg_minutes": 62.75,
+            "times_subbed_early": 8,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.788
+      },
+      "confidence": {
+        "score": 65,
+        "tier": "STRONG"
+      },
+      "probability": 0.7534,
+      "edge": {
+        "our_probability": 0.7534,
+        "implied_probability": 0.5,
+        "probability_edge": 0.2534,
+        "fair_odds": 1.33,
+        "bookmaker_odds": 2.0,
+        "expected_value": 0.5068,
+        "edge_percentage": 50.68,
+        "kelly_quarter": 0.1267,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.0,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 67.31,
+      "rank": 3,
+      "writeup": "🎯 Tim Lemperle (TSG Hoffenheim) 1+ fouls committed vs FC Augsburg (Bundesliga)\nLemperle is averaging 2.68 fouls per 90 this season and has committed 1+ in 16 of his last 20 matches overall. He averages 2.33 fouls per 90 in away fixtures compared to just 1.73 at home. FC Augsburg draw 10.2 fouls per game — most in the Bundesliga vs the 9.9 league average.\n📊 16/20 (80%)\n💰 Paddy Power 2.0",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 5971,
+      "player_name": "Jake Cooper",
+      "team_id": 64,
+      "team_name": "Millwall",
+      "opponent_id": 10,
+      "opponent_name": "West Bromwich Albion",
+      "fixture_id": 19432250,
+      "fixture_date": "2026-04-10T19:00:00+00:00",
+      "league_id": 9,
+      "league_name": "Championship",
+      "is_home": false,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.082494284751381,
+        "simple_avg": 1.2,
+        "last_5_avg": 1.0,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 6,
+          "3+": 2,
+          "4+": 0
+        },
+        "home_avg": 1.0,
+        "away_avg": 1.4,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 0.8944271909999159,
+        "coeff_of_variation": 0.7453559924999299,
+        "avg_minutes": 90.0,
+        "min_minutes": 90.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          3.0,
+          2.0,
+          3.0,
+          0.0,
+          2.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 11.0,
+        "league_avg": 10.546875,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 24
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 13,
+        "avg_vs_similar": 0.9230769230769231,
+        "hitrate_vs_similar": 84.6,
+        "similar_teams_examples": [
+          "Blackburn Rovers",
+          "Charlton Athletic",
+          "Oxford United"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.08,
+        "adjusted_projection": 1.26,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0257777777777777,
+            "concedes": 11.0,
+            "league_avg": 10.546875,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.1111111111111112,
+            "venue_avg": 1.4,
+            "overall_avg": 1.2,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 1.0,
+            "avg_minutes": 90.0,
+            "times_subbed_early": 0,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.08
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.231
+      },
+      "confidence": {
+        "score": 80,
+        "tier": "LOCK"
+      },
+      "probability": 0.7163,
+      "edge": {
+        "our_probability": 0.7163,
+        "implied_probability": 0.5556,
+        "probability_edge": 0.1607,
+        "fair_odds": 1.4,
+        "bookmaker_odds": 1.8,
+        "expected_value": 0.2893,
+        "edge_percentage": 28.93,
+        "kelly_quarter": 0.0904,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.8,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 65.6,
+      "rank": 4,
+      "writeup": "🎯 Jake Cooper (Millwall) 1+ fouls committed vs West Bromwich Albion (Championship)\nCooper has committed 1+ fouls in 4 of his last 5 matches and 16 of his last 20 overall. West Bromwich Albion draw 11.0 fouls per game — most in the Championship vs the 10.5 league average. His away form shows promise at 1.40 fouls per 90 compared to 1.00 at home.\n📊 16/20 (80%)\n💰 Bet365 1.80",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
