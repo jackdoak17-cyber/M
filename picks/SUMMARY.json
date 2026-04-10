@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-04-10T05:10:15.357902",
-  "total_picks": 42,
+  "last_updated": "2026-04-10T08:39:02.345984",
+  "total_picks": 44,
   "total_hits": 17,
-  "overall_hit_rate": 40.5,
-  "total_pnl": -69.01,
+  "overall_hit_rate": 38.6,
+  "total_pnl": -89.01,
   "avg_odds": 2.0,
   "by_confidence_tier": {
     "LOCK": {
@@ -12,9 +12,9 @@
       "pnl": -41.67
     },
     "STRONG": {
-      "total": 36,
+      "total": 38,
       "hits": 16,
-      "pnl": -27.340000000000003
+      "pnl": -47.34
     }
   },
   "by_league": {
@@ -24,9 +24,9 @@
       "pnl": -20.5
     },
     "La Liga": {
-      "total": 9,
+      "total": 10,
       "hits": 8,
-      "pnl": 81.6
+      "pnl": 71.6
     },
     "Championship": {
       "total": 6,
@@ -39,9 +39,9 @@
       "pnl": -5.899999999999999
     },
     "Bundesliga": {
-      "total": 5,
+      "total": 6,
       "hits": 1,
-      "pnl": -29.2
+      "pnl": -39.2
     },
     "Ligue 1": {
       "total": 2,
@@ -76,9 +76,9 @@
       "pnl": 30.099999999999998
     },
     "1+ fouls committed": {
-      "total": 5,
+      "total": 6,
       "hits": 1,
-      "pnl": -31.67
+      "pnl": -41.67
     },
     "1+ shots on target": {
       "total": 13,
@@ -94,6 +94,11 @@
       "total": 2,
       "hits": 0,
       "pnl": -20.0
+    },
+    "2+ fouls drawn": {
+      "total": 1,
+      "hits": 0,
+      "pnl": -10.0
     }
   }
 }

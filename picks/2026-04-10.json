@@ -1,0 +1,296 @@
+{
+  "date": "2026-04-10",
+  "generated_at": "2026-04-10T08:39:02.341747",
+  "picks_count": 2,
+  "picks": [
+    {
+      "player_id": 80304,
+      "player_name": "Vladimír Coufal",
+      "team_id": 2726,
+      "team_name": "TSG Hoffenheim",
+      "opponent_id": 90,
+      "opponent_name": "FC Augsburg",
+      "fixture_id": 19433731,
+      "fixture_date": "2026-04-10T18:30:00+00:00",
+      "league_id": 82,
+      "league_name": "Bundesliga",
+      "is_home": false,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.5531369835746198,
+        "simple_avg": 1.15,
+        "last_5_avg": 1.8,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 6,
+          "3+": 3,
+          "4+": 0
+        },
+        "home_avg": 0.9,
+        "away_avg": 1.4,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 1.0399898784932577,
+        "coeff_of_variation": 0.9043390247767459,
+        "avg_minutes": 88.45,
+        "min_minutes": 61.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          3.0,
+          2.0,
+          1.0,
+          3.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          3.0,
+          1.0,
+          0.0,
+          0.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0
+        ],
+        "raw_minutes": [
+          61.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          88.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 10.2,
+        "league_avg": 9.85925925925926,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 11,
+        "avg_vs_similar": 1.1818181818181819,
+        "hitrate_vs_similar": 72.7,
+        "similar_teams_examples": [
+          "Eintracht Frankfurt",
+          "FC Augsburg",
+          "FC Köln"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.55,
+        "adjusted_projection": 1.62,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0207362885048836,
+            "concedes": 10.2,
+            "league_avg": 9.85925925925926,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.144927536231884,
+            "venue_avg": 1.4,
+            "overall_avg": 1.15,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.9827777777777779,
+            "avg_minutes": 88.45,
+            "times_subbed_early": 1,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.149
+      },
+      "confidence": {
+        "score": 75,
+        "tier": "STRONG"
+      },
+      "probability": 0.8021,
+      "edge": {
+        "our_probability": 0.8021,
+        "implied_probability": 0.5236,
+        "probability_edge": 0.2785,
+        "fair_odds": 1.25,
+        "bookmaker_odds": 1.91,
+        "expected_value": 0.532,
+        "edge_percentage": 53.2,
+        "kelly_quarter": 0.1462,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.91,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 73.25,
+      "rank": 1,
+      "writeup": "🎯 Vladimír Coufal (TSG Hoffenheim) 1+ fouls committed vs FC Augsburg (Bundesliga)\nThe defender is averaging 1.55 fouls per 90 this season and has committed 1+ in 4 of his last 5 matches and 14 of his last 20 overall. FC Augsburg draw 10.2 fouls per game — most in the Bundesliga vs the 9.9 league average. His away form shows 1.40 fouls per 90 compared to just 0.90 at home.\n📊 14/20 (70%)\n💰 Paddy Power 1.91",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 254081,
+      "player_name": "Guido Rodríguez",
+      "team_id": 214,
+      "team_name": "Valencia",
+      "opponent_id": 1099,
+      "opponent_name": "Elche",
+      "fixture_id": 19439553,
+      "fixture_date": "2026-04-11T14:15:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": false,
+      "stat_type_id": 96,
+      "stat_type_label": "fouls_drawn",
+      "market_label": "2+ fouls drawn",
+      "threshold": 2,
+      "baseline": {
+        "weighted_per90": 2.6452051017960425,
+        "simple_avg": 2.0,
+        "last_5_avg": 2.6,
+        "sample_size": 8,
+        "hit_rates": {
+          "1+": 8,
+          "2+": 4,
+          "3+": 3,
+          "4+": 1
+        },
+        "home_avg": 1.75,
+        "away_avg": 2.25,
+        "home_games": 4,
+        "away_games": 4,
+        "std_dev": 1.1952286093343938,
+        "coeff_of_variation": 0.5976143046671969,
+        "avg_minutes": 73.5,
+        "min_minutes": 18.0,
+        "times_subbed_early": 2,
+        "raw_values": [
+          3.0,
+          4.0,
+          3.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          88.0,
+          32.0,
+          18.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 13.866666666666667,
+        "league_avg": 12.577702702702704,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 0
+      },
+      "projection": {
+        "baseline_per90": 2.65,
+        "adjusted_projection": 1.79,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.061488047273704,
+            "concedes": 13.866666666666667,
+            "league_avg": 12.577702702702704,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0555555555555556,
+            "venue_avg": 2.25,
+            "overall_avg": 2.0,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.8166666666666667,
+            "avg_minutes": 73.5,
+            "times_subbed_early": 2,
+            "sample_size": 8
+          },
+          "game_state": {
+            "multiplier": 0.92
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.842
+      },
+      "confidence": {
+        "score": 70,
+        "tier": "STRONG"
+      },
+      "probability": 0.5342,
+      "edge": {
+        "our_probability": 0.5342,
+        "implied_probability": 0.4444,
+        "probability_edge": 0.0898,
+        "fair_odds": 1.87,
+        "bookmaker_odds": 2.25,
+        "expected_value": 0.202,
+        "edge_percentage": 20.2,
+        "kelly_quarter": 0.0404,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.25,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 51.75,
+      "rank": 2,
+      "writeup": "🎯 Guido Rodríguez (Valencia) 2+ fouls drawn vs Elche (La Liga)\nHe's averaging 2.65 fouls drawn per 90 this season and has hit 2+ in 4 of his last 5 matches. Elche commit 13.9 fouls per game — most in La Liga vs the 12.6 league average. His away form shows 2.25 fouls drawn per 90, well above his 1.75 home average.\n📊 4/5 (80%)\n💰 Bet365 2.25",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
