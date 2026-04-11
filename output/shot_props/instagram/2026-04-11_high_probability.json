@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-04-10T16:19:17+00:00",
+  "generated_at": "2026-04-11T07:38:17+00:00",
   "scheduled_for": "2026-04-11",
   "source_target_date": "2026-04-11",
   "fixture_dates": [
@@ -19,9 +19,9 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 13,
+    "total_rows": 14,
     "by_section": {
-      "1+ Shot": 10,
+      "1+ Shot": 11,
       "2+ Shots": 1,
       "1+ SOT": 2
     }
@@ -154,11 +154,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.83,
+          "odds": 2.0,
           "display": {
             "rate": "9/10",
-            "odds": "@1.83",
-            "summary": "Joe Ward (Derby County) won in 9/10 @1.83"
+            "odds": "@2.00",
+            "summary": "Joe Ward (Derby County) won in 9/10 @2.00"
           }
         },
         {
@@ -181,28 +181,6 @@
             "rate": "9/10",
             "odds": "@1.73",
             "summary": "Antoine Bernede (Hellas Verona) won in 9/10 @1.73"
-          }
-        },
-        {
-          "id": "19432242:1711:1+ Shot:1",
-          "player_id": 1711,
-          "player_name": "Harry Winks",
-          "team_id": 42,
-          "team_name": "Leicester City",
-          "fixture_id": 19432242,
-          "fixture_label": "Leicester City vs Swansea City",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.61,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.61",
-            "summary": "Harry Winks (Leicester City) won in 9/10 @1.61"
           }
         },
         {
@@ -247,6 +225,50 @@
             "rate": "9/10",
             "odds": "@1.50",
             "summary": "Luke Ayling (Middlesbrough) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19432242:1711:1+ Shot:1",
+          "player_id": 1711,
+          "player_name": "Harry Winks",
+          "team_id": 42,
+          "team_name": "Leicester City",
+          "fixture_id": 19432242,
+          "fixture_label": "Leicester City vs Swansea City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.44,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.44",
+            "summary": "Harry Winks (Leicester City) won in 9/10 @1.44"
+          }
+        },
+        {
+          "id": "19433732:31824:1+ Shot:1",
+          "player_id": 31824,
+          "player_name": "Leon Goretzka",
+          "team_id": 503,
+          "team_name": "FC Bayern M\u00fcnchen",
+          "fixture_id": 19433732,
+          "fixture_label": "St. Pauli vs FC Bayern M\u00fcnchen",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Leon Goretzka (FC Bayern M\u00fcnchen) won in 9/10 @1.33"
           }
         }
       ],
@@ -322,7 +344,7 @@
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 11 Apr 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 10\n\u2022 2+ Shots: 1\n\u2022 1+ SOT: 2\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 11 Apr 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 11\n\u2022 2+ Shots: 1\n\u2022 1+ SOT: 2\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -336,7 +358,7 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 11 Apr 2026",
       "stats": {
-        "total_players": 13,
+        "total_players": 14,
         "stat_types": 3,
         "hit_rate_threshold_pct": 90
       },
@@ -474,11 +496,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.83,
+          "odds": 2.0,
           "display": {
             "rate": "9/10",
-            "odds": "@1.83",
-            "summary": "Joe Ward (Derby County) won in 9/10 @1.83"
+            "odds": "@2.00",
+            "summary": "Joe Ward (Derby County) won in 9/10 @2.00"
           }
         },
         {
@@ -501,28 +523,6 @@
             "rate": "9/10",
             "odds": "@1.73",
             "summary": "Antoine Bernede (Hellas Verona) won in 9/10 @1.73"
-          }
-        },
-        {
-          "id": "19432242:1711:1+ Shot:1",
-          "player_id": 1711,
-          "player_name": "Harry Winks",
-          "team_id": 42,
-          "team_name": "Leicester City",
-          "fixture_id": 19432242,
-          "fixture_label": "Leicester City vs Swansea City",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.61,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.61",
-            "summary": "Harry Winks (Leicester City) won in 9/10 @1.61"
           }
         },
         {
@@ -568,9 +568,53 @@
             "odds": "@1.50",
             "summary": "Luke Ayling (Middlesbrough) won in 9/10 @1.50"
           }
+        },
+        {
+          "id": "19432242:1711:1+ Shot:1",
+          "player_id": 1711,
+          "player_name": "Harry Winks",
+          "team_id": 42,
+          "team_name": "Leicester City",
+          "fixture_id": 19432242,
+          "fixture_label": "Leicester City vs Swansea City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.44,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.44",
+            "summary": "Harry Winks (Leicester City) won in 9/10 @1.44"
+          }
+        },
+        {
+          "id": "19433732:31824:1+ Shot:1",
+          "player_id": 31824,
+          "player_name": "Leon Goretzka",
+          "team_id": 503,
+          "team_name": "FC Bayern M\u00fcnchen",
+          "fixture_id": 19433732,
+          "fixture_label": "St. Pauli vs FC Bayern M\u00fcnchen",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Leon Goretzka (FC Bayern M\u00fcnchen) won in 9/10 @1.33"
+          }
         }
       ],
-      "section_total_rows": 10,
+      "section_total_rows": 11,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -667,5 +711,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "aad15b653f4c82031fecb215bb9f6e51318caa875b54c75498dd75f63b92c094"
+  "content_fingerprint": "9788ca07f7cc6fa4fa2f0d1280f3aca105554428003597dd8d92f3c138b39b58"
 }

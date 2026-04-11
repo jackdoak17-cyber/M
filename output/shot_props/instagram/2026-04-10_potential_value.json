@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "potential_value",
-  "generated_at": "2026-04-10T16:19:17+00:00",
+  "generated_at": "2026-04-11T07:38:17+00:00",
   "scheduled_for": "2026-04-10",
   "source_target_date": "2026-04-11",
   "fixture_dates": [
@@ -20,11 +20,11 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 19,
+    "total_rows": 20,
     "by_section": {
-      "1+ Shot": 10,
+      "1+ Shot": 9,
       "2+ Shots": 1,
-      "1+ SOT": 8
+      "1+ SOT": 10
     }
   },
   "sections": {
@@ -89,33 +89,11 @@
           "hits": 14,
           "sample": 18,
           "hit_rate": 0.7778,
-          "odds": 1.83,
+          "odds": 2.0,
           "display": {
             "rate": "14/18",
-            "odds": "@1.83",
-            "summary": "Joe Ward (Derby County) won in 14/18 @1.83"
-          }
-        },
-        {
-          "id": "19432249:37324879:1+ Shot:1",
-          "player_id": 37324879,
-          "player_name": "Tatsuki Seko",
-          "team_id": 26,
-          "team_name": "Stoke City",
-          "fixture_id": 19432249,
-          "fixture_label": "Stoke City vs Blackburn Rovers",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 9,
-          "hit_rate": 0.7778,
-          "odds": 1.83,
-          "display": {
-            "rate": "7/9",
-            "odds": "@1.83",
-            "summary": "Tatsuki Seko (Stoke City) won in 7/9 @1.83"
+            "odds": "@2.00",
+            "summary": "Joe Ward (Derby County) won in 14/18 @2.00"
           }
         },
         {
@@ -335,11 +313,11 @@
           "hits": 9,
           "sample": 11,
           "hit_rate": 0.8182,
-          "odds": 2.2,
+          "odds": 2.0,
           "display": {
             "rate": "9/11",
-            "odds": "@2.20",
-            "summary": "Pablo Ib\u00e1\u00f1ez (Deportivo Alav\u00e9s) won in 9/11 @2.20"
+            "odds": "@2.00",
+            "summary": "Pablo Ib\u00e1\u00f1ez (Deportivo Alav\u00e9s) won in 9/11 @2.00"
           }
         },
         {
@@ -362,6 +340,28 @@
             "rate": "7/9",
             "odds": "@2.38",
             "summary": "Youssouf Fofana (AC Milan) won in 7/9 @2.38"
+          }
+        },
+        {
+          "id": "19427194:37392849:1+ SOT:1",
+          "player_id": 37392849,
+          "player_name": "Jaidon Anthony",
+          "team_id": 27,
+          "team_name": "Burnley",
+          "fixture_id": 19427194,
+          "fixture_label": "Burnley vs Brighton & Hove Albion",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.73,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.73",
+            "summary": "Jaidon Anthony (Burnley) won in 7/9 @1.73"
           }
         },
         {
@@ -401,11 +401,11 @@
           "hits": 6,
           "sample": 8,
           "hit_rate": 0.75,
-          "odds": 3.4,
+          "odds": 3.25,
           "display": {
             "rate": "6/8",
-            "odds": "@3.40",
-            "summary": "Harry Winks (Leicester City) won in 6/8 @3.40"
+            "odds": "@3.25",
+            "summary": "Harry Winks (Leicester City) won in 6/8 @3.25"
           }
         },
         {
@@ -451,11 +451,33 @@
             "odds": "@1.80",
             "summary": "Niklas Beste (SC Freiburg) won in 6/8 @1.80"
           }
+        },
+        {
+          "id": "19432248:6618:1+ SOT:1",
+          "player_id": 6618,
+          "player_name": "Carlton Morris",
+          "team_id": 24,
+          "team_name": "Derby County",
+          "fixture_id": 19432248,
+          "fixture_label": "Southampton vs Derby County",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Carlton Morris (Derby County) won in 6/8 @1.73"
+          }
         }
       ]
     }
   },
-  "caption": "Fixtures: Sat 11 Apr - Sun 12 Apr 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 10\n\u2022 2+ Shots: 1\n\u2022 1+ SOT: 8\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "caption": "Fixtures: Sat 11 Apr - Sun 12 Apr 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 9\n\u2022 2+ Shots: 1\n\u2022 1+ SOT: 10\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
   "slides": [
     {
       "slide_type": "cover",
@@ -469,7 +491,7 @@
       "threshold_bar": "75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
       "fixture_window": "Sat 11 Apr - Sun 12 Apr 2026",
       "stats": {
-        "total_players": 19,
+        "total_players": 20,
         "stat_types": 3,
         "hit_rate_threshold_pct": 75
       },
@@ -541,33 +563,11 @@
           "hits": 14,
           "sample": 18,
           "hit_rate": 0.7778,
-          "odds": 1.83,
+          "odds": 2.0,
           "display": {
             "rate": "14/18",
-            "odds": "@1.83",
-            "summary": "Joe Ward (Derby County) won in 14/18 @1.83"
-          }
-        },
-        {
-          "id": "19432249:37324879:1+ Shot:1",
-          "player_id": 37324879,
-          "player_name": "Tatsuki Seko",
-          "team_id": 26,
-          "team_name": "Stoke City",
-          "fixture_id": 19432249,
-          "fixture_label": "Stoke City vs Blackburn Rovers",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 9,
-          "hit_rate": 0.7778,
-          "odds": 1.83,
-          "display": {
-            "rate": "7/9",
-            "odds": "@1.83",
-            "summary": "Tatsuki Seko (Stoke City) won in 7/9 @1.83"
+            "odds": "@2.00",
+            "summary": "Joe Ward (Derby County) won in 14/18 @2.00"
           }
         },
         {
@@ -703,7 +703,7 @@
           }
         }
       ],
-      "section_total_rows": 10,
+      "section_total_rows": 9,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -805,11 +805,11 @@
           "hits": 9,
           "sample": 11,
           "hit_rate": 0.8182,
-          "odds": 2.2,
+          "odds": 2.0,
           "display": {
             "rate": "9/11",
-            "odds": "@2.20",
-            "summary": "Pablo Ib\u00e1\u00f1ez (Deportivo Alav\u00e9s) won in 9/11 @2.20"
+            "odds": "@2.00",
+            "summary": "Pablo Ib\u00e1\u00f1ez (Deportivo Alav\u00e9s) won in 9/11 @2.00"
           }
         },
         {
@@ -832,6 +832,28 @@
             "rate": "7/9",
             "odds": "@2.38",
             "summary": "Youssouf Fofana (AC Milan) won in 7/9 @2.38"
+          }
+        },
+        {
+          "id": "19427194:37392849:1+ SOT:1",
+          "player_id": 37392849,
+          "player_name": "Jaidon Anthony",
+          "team_id": 27,
+          "team_name": "Burnley",
+          "fixture_id": 19427194,
+          "fixture_label": "Burnley vs Brighton & Hove Albion",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.73,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.73",
+            "summary": "Jaidon Anthony (Burnley) won in 7/9 @1.73"
           }
         },
         {
@@ -871,11 +893,11 @@
           "hits": 6,
           "sample": 8,
           "hit_rate": 0.75,
-          "odds": 3.4,
+          "odds": 3.25,
           "display": {
             "rate": "6/8",
-            "odds": "@3.40",
-            "summary": "Harry Winks (Leicester City) won in 6/8 @3.40"
+            "odds": "@3.25",
+            "summary": "Harry Winks (Leicester City) won in 6/8 @3.25"
           }
         },
         {
@@ -921,9 +943,31 @@
             "odds": "@1.80",
             "summary": "Niklas Beste (SC Freiburg) won in 6/8 @1.80"
           }
+        },
+        {
+          "id": "19432248:6618:1+ SOT:1",
+          "player_id": 6618,
+          "player_name": "Carlton Morris",
+          "team_id": 24,
+          "team_name": "Derby County",
+          "fixture_id": 19432248,
+          "fixture_label": "Southampton vs Derby County",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Carlton Morris (Derby County) won in 6/8 @1.73"
+          }
         }
       ],
-      "section_total_rows": 8,
+      "section_total_rows": 10,
       "slide_number": 4,
       "slide_count": 4
     }
@@ -932,5 +976,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "01855bceb212dc6f1b3289baff880f2a996a88f8fb4f424c18e427cd5b22afe0"
+  "content_fingerprint": "a523bc07dba4c94174322080d3869df893966d11dcda390a2d4d6376c48deeac"
 }
