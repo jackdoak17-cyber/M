@@ -1,7 +1,16 @@
+🏆 Change in EPL Winner probability since last update:
+
+• Arsenal: 85.5% -> 86%
+• Manchester City: 14.5% -> 21%
+• Manchester United: 0.1% -> 0.1%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-winner
+
 🏆 Change in La Liga Winner probability since last update:
 
-• Barcelona: 96.2% -> 97.4%
-• Real Madrid: 2.2% -> 2.3%
+• Barcelona: 97.4% -> 96.5%
+• Real Madrid: 2.3% -> 2.4%
 • Villarreal: 0.2% -> 0.2%
 
 [🔮 via @Polymarket]
@@ -10,17 +19,17 @@ https://polymarket.com/event/la-liga-winner-114
 🏆 Change in PFA Player Of The Year probability since last update:
 
 • Declan Rice: 59% -> 59%
-• Bruno Fernandes: 23% -> 23%
-• Martin Zubimendi: 8.1% -> 9%
+• Bruno Fernandes: 23% -> 22.5%
+• Martin Zubimendi: 9% -> 21.1%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Harry Kane: 24.7% -> 24.6%
-• Kylian Mbappé: 16% -> 18.5%
-• Lamine Yamal: 17.5% -> 17.5%
+• Harry Kane: 24.6% -> 25.8%
+• Lamine Yamal: 17.5% -> 18%
+• Kylian Mbappé: 18.5% -> 16.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
