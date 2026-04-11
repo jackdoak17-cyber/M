@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Fabian Rieder (FC Augsburg) 1+ fouls committed vs TSG Hoffenheim (Bundesliga)\nRieder is averaging 2.28 fouls per 90 this season and has committed 1+ in 14 of his last 20 matches overall. TSG Hoffenheim draw 12.9 fouls per game — most in the Bundesliga vs the 9.9 league average. He's hit this line in 4 of his last 5 appearances.\n📊 14/20 (70%)\n💰 Paddy Power 2.2",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-04-11T04:31:50.282400"
       }
     },
     {
@@ -318,9 +318,9 @@
       "rank": 2,
       "writeup": "🎯 João Gomes (Wolverhampton Wanderers) 1+ fouls committed vs West Ham United (Premier League)\nHe's averaging 1.72 fouls per 90 this season and has committed 1+ in 17 of his last 20 matches overall. West Ham United draw 10.5 fouls per game — most in the Premier League vs the 10.3 league average. Away from home, Gomes averages 1.82 fouls per 90 compared to 1.78 at home.\n📊 17/20 (85%)\n💰 Paddy Power 1.83",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-04-11T04:31:50.528054"
       }
     },
     {
@@ -478,9 +478,9 @@
       "rank": 3,
       "writeup": "🎯 Tim Lemperle (TSG Hoffenheim) 1+ fouls committed vs FC Augsburg (Bundesliga)\nLemperle is averaging 2.68 fouls per 90 this season and has committed 1+ in 16 of his last 20 matches overall. He averages 2.33 fouls per 90 in away fixtures compared to just 1.73 at home. FC Augsburg draw 10.2 fouls per game — most in the Bundesliga vs the 9.9 league average.\n📊 16/20 (80%)\n💰 Paddy Power 2.0",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 6.0,
+        "hit": true,
+        "checked_at": "2026-04-11T04:31:50.771577"
       }
     },
     {
@@ -638,9 +638,9 @@
       "rank": 4,
       "writeup": "🎯 Jake Cooper (Millwall) 1+ fouls committed vs West Bromwich Albion (Championship)\nCooper has committed 1+ fouls in 4 of his last 5 matches and 16 of his last 20 overall. West Bromwich Albion draw 11.0 fouls per game — most in the Championship vs the 10.5 league average. His away form shows promise at 1.40 fouls per 90 compared to 1.00 at home.\n📊 16/20 (80%)\n💰 Bet365 1.80",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 2.0,
+        "hit": true,
+        "checked_at": "2026-04-11T04:31:51.019292"
       }
     }
   ]

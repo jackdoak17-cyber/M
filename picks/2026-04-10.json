@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Vladimír Coufal (TSG Hoffenheim) 1+ fouls committed vs FC Augsburg (Bundesliga)\nThe defender is averaging 1.55 fouls per 90 this season and has committed 1+ in 4 of his last 5 matches and 14 of his last 20 overall. FC Augsburg draw 10.2 fouls per game — most in the Bundesliga vs the 9.9 league average. His away form shows 1.40 fouls per 90 compared to just 0.90 at home.\n📊 14/20 (70%)\n💰 Paddy Power 1.91",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 2.0,
+        "hit": true,
+        "checked_at": "2026-04-11T04:31:51.265055"
       }
     },
     {
