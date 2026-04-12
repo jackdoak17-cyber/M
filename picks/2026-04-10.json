@@ -287,9 +287,9 @@
       "rank": 2,
       "writeup": "🎯 Guido Rodríguez (Valencia) 2+ fouls drawn vs Elche (La Liga)\nHe's averaging 2.65 fouls drawn per 90 this season and has hit 2+ in 4 of his last 5 matches. Elche commit 13.9 fouls per game — most in La Liga vs the 12.6 league average. His away form shows 2.25 fouls drawn per 90, well above his 1.75 home average.\n📊 4/5 (80%)\n💰 Bet365 2.25",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-12T05:09:15.968103"
       }
     }
   ]
