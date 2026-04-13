@@ -1,17 +1,26 @@
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Declan Rice: 41% -> 47.5%
-• Bruno Fernandes: 41.5% -> 42%
-• Morgan Rogers: 13.5% -> 25.4%
+• Bruno Fernandes: 42% -> 47.5%
+• Morgan Rogers: 25.4% -> 32.4%
+• Declan Rice: 47.5% -> 32%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Harry Kane: 25.4% -> 25.8%
-• Lamine Yamal: 17.5% -> 17%
+• Harry Kane: 25.8% -> 26.5%
+• Lamine Yamal: 17% -> 17.5%
 • Kylian Mbappé: 16.5% -> 16.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
+
+🏆 Change in EPL Relegation probability since last update:
+
+• Wolves (Relegated): 99.4% -> 99.4%
+• Burnley (Relegated): 98% -> 98%
+• West Ham (Relegated): 30.5% -> 35%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/epl-which-clubs-get-relegated
