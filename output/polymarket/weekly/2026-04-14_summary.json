@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-04-14T08:46:53Z",
+  "baseline_date": "2026-04-07T08:16:30Z",
+  "current_date": "2026-04-14T08:46:53Z",
+  "mode": "generate",
+  "baseline_path": "output/polymarket/weekly_baseline.json",
+  "markets_with_movement": [
+    {
+      "slug": "2025-2026-pfa-players-player-of-the-year-winner",
+      "label": "PFA Player Of The Year",
+      "max_move_pp": 19.5
+    },
+    {
+      "slug": "next-manchester-united-manager",
+      "label": "Next Man Utd Manager",
+      "max_move_pp": 11.0
+    },
+    {
+      "slug": "uefa-champions-league-winner",
+      "label": "UCL Winner",
+      "max_move_pp": 9.0
+    },
+    {
+      "slug": "ballon-dor-winner-2026",
+      "label": "Ballon d'Or Winner",
+      "max_move_pp": 7.55
+    }
+  ],
+  "biggest_mover_triggered": true,
+  "errors": []
+}
