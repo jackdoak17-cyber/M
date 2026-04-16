@@ -1,26 +1,17 @@
 🏆 Change in PFA Player Of The Year probability since last update:
 
 • Declan Rice: 40.5% -> 40.5%
-• Bruno Fernandes: 27% -> 24.5%
-• Rayan Cherki: n/a -> 20.3%
+• Bruno Fernandes: 24.5% -> 24.5%
+• Rayan Cherki: 20.3% -> 21.6%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Harry Kane: 30% -> 29.6%
-• Lamine Yamal: 16.5% -> 15.5%
-• Michael Olise: 11.5% -> 15%
+• Harry Kane: 29.6% -> 29.5%
+• Lamine Yamal: 15.5% -> 16.5%
+• Kylian Mbappé: 14.5% -> 14.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
-
-🏆 Change in Next Man Utd Manager probability since last update:
-
-• Michael Carrick: 49% -> 52%
-• Oliver Glasner: 7.5% -> 12.5%
-• Luis Enrique: 6% -> 6%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/next-manchester-united-manager
