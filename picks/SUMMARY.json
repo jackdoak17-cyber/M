@@ -1,27 +1,27 @@
 {
-  "last_updated": "2026-04-17T05:13:30.218242",
-  "total_picks": 44,
+  "last_updated": "2026-04-17T08:34:34.467902",
+  "total_picks": 48,
   "total_hits": 22,
-  "overall_hit_rate": 50.0,
-  "total_pnl": 8.39,
+  "overall_hit_rate": 45.8,
+  "total_pnl": -31.61,
   "avg_odds": 2.0,
   "by_confidence_tier": {
     "LOCK": {
-      "total": 6,
+      "total": 7,
       "hits": 2,
-      "pnl": -23.67
+      "pnl": -33.67
     },
     "STRONG": {
-      "total": 38,
+      "total": 41,
       "hits": 20,
-      "pnl": 32.05999999999999
+      "pnl": 2.059999999999988
     }
   },
   "by_league": {
     "Serie A": {
-      "total": 7,
+      "total": 8,
       "hits": 2,
-      "pnl": -20.5
+      "pnl": -30.5
     },
     "La Liga": {
       "total": 10,
@@ -29,9 +29,9 @@
       "pnl": 71.6
     },
     "Championship": {
-      "total": 6,
+      "total": 8,
       "hits": 2,
-      "pnl": -23.67
+      "pnl": -43.67
     },
     "Eredivisie": {
       "total": 6,
@@ -49,9 +49,9 @@
       "pnl": 16.659999999999997
     },
     "Premier League": {
-      "total": 5,
+      "total": 6,
       "hits": 1,
-      "pnl": -31.7
+      "pnl": -41.7
     },
     "Super Lig": {
       "total": 2,
@@ -76,9 +76,9 @@
       "pnl": 30.099999999999998
     },
     "1+ fouls committed": {
-      "total": 6,
+      "total": 10,
       "hits": 6,
-      "pnl": 55.72999999999999
+      "pnl": 15.72999999999999
     },
     "1+ shots on target": {
       "total": 13,

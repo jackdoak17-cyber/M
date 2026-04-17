@@ -1,0 +1,647 @@
+{
+  "date": "2026-04-17",
+  "generated_at": "2026-04-17T08:34:34.462934",
+  "picks_count": 4,
+  "picks": [
+    {
+      "player_id": 10310763,
+      "player_name": "Liam Kitching",
+      "team_id": 117,
+      "team_name": "Coventry City",
+      "opponent_id": 2,
+      "opponent_name": "Blackburn Rovers",
+      "fixture_id": 19432251,
+      "fixture_date": "2026-04-17T19:00:00+00:00",
+      "league_id": 9,
+      "league_name": "Championship",
+      "is_home": false,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.4866347555107968,
+        "simple_avg": 1.25,
+        "last_5_avg": 1.8,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 6,
+          "3+": 4,
+          "4+": 1
+        },
+        "home_avg": 1.1818181818181819,
+        "away_avg": 1.3333333333333333,
+        "home_games": 11,
+        "away_games": 9,
+        "std_dev": 1.2085223687584246,
+        "coeff_of_variation": 0.9668178950067396,
+        "avg_minutes": 87.75,
+        "min_minutes": 45.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          0.0,
+          3.0,
+          1.0,
+          4.0,
+          1.0,
+          0.0,
+          3.0,
+          0.0,
+          0.0,
+          3.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          45.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 9.4,
+        "league_avg": 10.551181102362206,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 24
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 11,
+        "avg_vs_similar": 0.7272727272727273,
+        "hitrate_vs_similar": 63.6,
+        "similar_teams_examples": [
+          "Blackburn Rovers",
+          "Charlton Athletic",
+          "Oxford United"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.49,
+        "adjusted_projection": 1.62,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9345373134328359,
+            "concedes": 9.4,
+            "league_avg": 10.551181102362206,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.042857142857143,
+            "venue_avg": 1.3333333333333333,
+            "overall_avg": 1.25,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.975,
+            "avg_minutes": 87.75,
+            "times_subbed_early": 1,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.95
+      },
+      "confidence": {
+        "score": 75,
+        "tier": "STRONG"
+      },
+      "probability": 0.785,
+      "edge": {
+        "our_probability": 0.785,
+        "implied_probability": 0.5,
+        "probability_edge": 0.285,
+        "fair_odds": 1.27,
+        "bookmaker_odds": 2.0,
+        "expected_value": 0.57,
+        "edge_percentage": 57.0,
+        "kelly_quarter": 0.1425,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.0,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 73.15,
+      "rank": 1,
+      "writeup": "🎯 Liam Kitching (Coventry City) 1+ fouls committed vs Blackburn Rovers (Championship)\nThe defender is averaging 1.49 fouls per 90 this season and has committed 1+ in 14 of his last 20 matches overall. He's been more aggressive recently with 1.80 fouls per game across his last 5 appearances, hitting 1+ in 4 of those 5. However, Blackburn Rovers draw just 9.4 fouls per game — fewest in the Championship compared to the 10.6 league average.\n📊 14/20 (70%)\n💰 Paddy Power 2.0",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 17177173,
+      "player_name": "Milan van Ewijk",
+      "team_id": 117,
+      "team_name": "Coventry City",
+      "opponent_id": 2,
+      "opponent_name": "Blackburn Rovers",
+      "fixture_id": 19432251,
+      "fixture_date": "2026-04-17T19:00:00+00:00",
+      "league_id": 9,
+      "league_name": "Championship",
+      "is_home": false,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.185219919343029,
+        "simple_avg": 1.1,
+        "last_5_avg": 1.4,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 15,
+          "2+": 7,
+          "3+": 0,
+          "4+": 0
+        },
+        "home_avg": 0.9090909090909091,
+        "away_avg": 1.3333333333333333,
+        "home_games": 11,
+        "away_games": 9,
+        "std_dev": 0.7880689256524123,
+        "coeff_of_variation": 0.7164262960476475,
+        "avg_minutes": 87.85,
+        "min_minutes": 61.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          0.0,
+          2.0,
+          1.0,
+          2.0,
+          2.0,
+          2.0,
+          0.0,
+          0.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          61.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          76.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 9.4,
+        "league_avg": 10.551181102362206,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 24
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 11,
+        "avg_vs_similar": 0.7272727272727273,
+        "hitrate_vs_similar": 45.5,
+        "similar_teams_examples": [
+          "Blackburn Rovers",
+          "Charlton Athletic",
+          "Oxford United"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.19,
+        "adjusted_projection": 1.28,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9345373134328359,
+            "concedes": 9.4,
+            "league_avg": 10.551181102362206,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.1363636363636362,
+            "venue_avg": 1.3333333333333333,
+            "overall_avg": 1.1,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.976111111111111,
+            "avg_minutes": 87.85,
+            "times_subbed_early": 1,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.037
+      },
+      "confidence": {
+        "score": 85,
+        "tier": "LOCK"
+      },
+      "probability": 0.722,
+      "edge": {
+        "our_probability": 0.722,
+        "implied_probability": 0.4762,
+        "probability_edge": 0.2458,
+        "fair_odds": 1.39,
+        "bookmaker_odds": 2.1,
+        "expected_value": 0.5162,
+        "edge_percentage": 51.62,
+        "kelly_quarter": 0.1173,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.1,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 71.92,
+      "rank": 2,
+      "writeup": "🎯 Milan van Ewijk (Coventry City) 1+ fouls committed vs Blackburn Rovers (Championship)\nThe defender is averaging 1.19 fouls per 90 this season and has committed at least 1 foul in 4 of his last 5 matches and 15 of his last 20 overall. His away form is stronger at 1.33 fouls per game compared to 0.91 at home. However, Blackburn Rovers draw just 9.4 fouls per game — fewest in the Championship against the 10.6 league average.\n📊 15/20 (75%)\n💰 Paddy Power 2.1",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 16120447,
+      "player_name": "Jay Idzes",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "opponent_id": 268,
+      "opponent_name": "Como",
+      "fixture_id": 19425209,
+      "fixture_date": "2026-04-17T16:30:00+00:00",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.0680055632878622,
+        "simple_avg": 1.1,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 5,
+          "3+": 2,
+          "4+": 1
+        },
+        "home_avg": 1.1,
+        "away_avg": 1.1,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 1.0711528467275955,
+        "coeff_of_variation": 0.973775315206905,
+        "avg_minutes": 90.0,
+        "min_minutes": 90.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          2.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          2.0,
+          4.0,
+          0.0,
+          0.0,
+          3.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 11.733333333333333,
+        "league_avg": 11.661764705882353,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 14,
+        "avg_vs_similar": 1.3571428571428572,
+        "hitrate_vs_similar": 78.6,
+        "similar_teams_examples": [
+          "AC Milan",
+          "Atalanta",
+          "Como"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.07,
+        "adjusted_projection": 1.32,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0036822194199242,
+            "concedes": 11.733333333333333,
+            "league_avg": 11.661764705882353,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0,
+            "venue_avg": 1.1,
+            "overall_avg": 1.1,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 1.0,
+            "avg_minutes": 90.0,
+            "times_subbed_early": 0,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.15
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.154
+      },
+      "confidence": {
+        "score": 75,
+        "tier": "STRONG"
+      },
+      "probability": 0.7329,
+      "edge": {
+        "our_probability": 0.7329,
+        "implied_probability": 0.5236,
+        "probability_edge": 0.2093,
+        "fair_odds": 1.36,
+        "bookmaker_odds": 1.91,
+        "expected_value": 0.3998,
+        "edge_percentage": 39.98,
+        "kelly_quarter": 0.1098,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.91,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 67.14,
+      "rank": 3,
+      "writeup": "🎯 Jay Idzes (Sassuolo) 1+ fouls committed vs Como (Serie A)\nThe defender has committed 1+ fouls in all 5 of his last 5 matches and 14 of his last 20 overall, averaging 1.07 fouls per 90 this season. Como draw 11.7 fouls per game, ranking 1st in Serie A for most fouls drawn, which creates additional opportunities for Idzes to pick up a booking.\n📊 14/20 (70%)\n💰 Paddy Power 1.91",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 27067062,
+      "player_name": "Kevin Schade",
+      "team_id": 236,
+      "team_name": "Brentford",
+      "opponent_id": 11,
+      "opponent_name": "Fulham",
+      "fixture_id": 19427729,
+      "fixture_date": "2026-04-18T11:30:00+00:00",
+      "league_id": 8,
+      "league_name": "Premier League",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.3652310207557945,
+        "simple_avg": 1.3,
+        "last_5_avg": 0.8,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 8,
+          "3+": 2,
+          "4+": 0
+        },
+        "home_avg": 1.777777777777778,
+        "away_avg": 0.9090909090909091,
+        "home_games": 9,
+        "away_games": 11,
+        "std_dev": 0.9233805168766387,
+        "coeff_of_variation": 0.7102927052897221,
+        "avg_minutes": 78.2,
+        "min_minutes": 42.0,
+        "times_subbed_early": 5,
+        "raw_values": [
+          1.0,
+          2.0,
+          1.0,
+          0.0,
+          0.0,
+          2.0,
+          1.0,
+          3.0,
+          1.0,
+          2.0,
+          1.0,
+          0.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          3.0,
+          0.0,
+          2.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          77.0,
+          68.0,
+          90.0,
+          72.0,
+          44.0,
+          42.0,
+          90.0,
+          82.0,
+          90.0,
+          64.0,
+          80.0,
+          90.0,
+          90.0,
+          90.0,
+          60.0,
+          75.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 9.733333333333333,
+        "league_avg": 10.283018867924529,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 7,
+        "avg_vs_similar": 0.8571428571428571,
+        "hitrate_vs_similar": 57.1,
+        "similar_teams_examples": [
+          "AFC Bournemouth",
+          "Brentford",
+          "Crystal Palace"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.37,
+        "adjusted_projection": 1.31,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9679266055045871,
+            "concedes": 9.733333333333333,
+            "league_avg": 10.283018867924529,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.2362637362637363,
+            "venue_avg": 1.777777777777778,
+            "overall_avg": 1.3,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.8688888888888889,
+            "avg_minutes": 78.2,
+            "times_subbed_early": 5,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.04
+      },
+      "confidence": {
+        "score": 70,
+        "tier": "STRONG"
+      },
+      "probability": 0.7302,
+      "edge": {
+        "our_probability": 0.7302,
+        "implied_probability": 0.5464,
+        "probability_edge": 0.1838,
+        "fair_odds": 1.37,
+        "bookmaker_odds": 1.83,
+        "expected_value": 0.3363,
+        "edge_percentage": 33.63,
+        "kelly_quarter": 0.1013,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.83,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 64.24,
+      "rank": 4,
+      "writeup": "🎯 Kevin Schade (Brentford) 1+ fouls committed vs Fulham (Premier League)\nSchade has committed 1+ fouls in 16 of his last 20 matches overall and averages 1.78 fouls per 90 at home compared to just 0.91 away. However, Fulham draw the fewest fouls in the Premier League at just 9.7 per game vs the 10.3 league average, which could limit opportunities.\n📊 16/20 (80%)\n💰 Paddy Power 1.83",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
