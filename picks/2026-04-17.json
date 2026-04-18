@@ -638,9 +638,9 @@
       "rank": 4,
       "writeup": "🎯 Kevin Schade (Brentford) 1+ fouls committed vs Fulham (Premier League)\nSchade has committed 1+ fouls in 16 of his last 20 matches overall and averages 1.78 fouls per 90 at home compared to just 0.91 away. However, Fulham draw the fewest fouls in the Premier League at just 9.7 per game vs the 10.3 league average, which could limit opportunities.\n📊 16/20 (80%)\n💰 Paddy Power 1.83",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-18T11:08:01.558026"
       }
     }
   ]
