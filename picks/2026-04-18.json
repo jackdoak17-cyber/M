@@ -1,0 +1,487 @@
+{
+  "date": "2026-04-18",
+  "generated_at": "2026-04-18T08:16:31.832000",
+  "picks_count": 3,
+  "picks": [
+    {
+      "player_id": 28543553,
+      "player_name": "Adrien Truffert",
+      "team_id": 52,
+      "team_name": "AFC Bournemouth",
+      "opponent_id": 20,
+      "opponent_name": "Newcastle United",
+      "fixture_id": 19427735,
+      "fixture_date": "2026-04-18T14:00:00+00:00",
+      "league_id": 8,
+      "league_name": "Premier League",
+      "is_home": false,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.5960315506647194,
+        "simple_avg": 1.15,
+        "last_5_avg": 1.4,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 5,
+          "3+": 1,
+          "4+": 1
+        },
+        "home_avg": 0.9,
+        "away_avg": 1.4,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 0.9333020044867295,
+        "coeff_of_variation": 0.8115669604232431,
+        "avg_minutes": 89.4,
+        "min_minutes": 78.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          4.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          0.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          78.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 9.133333333333333,
+        "league_avg": 10.283018867924529,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 13,
+        "avg_vs_similar": 0.9230769230769231,
+        "hitrate_vs_similar": 61.5,
+        "similar_teams_examples": [
+          "Brighton & Hove Albion",
+          "Burnley",
+          "Chelsea"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.6,
+        "adjusted_projection": 1.6,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9329174311926605,
+            "concedes": 9.133333333333333,
+            "league_avg": 10.283018867924529,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.144927536231884,
+            "venue_avg": 1.4,
+            "overall_avg": 1.15,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.9933333333333334,
+            "avg_minutes": 89.4,
+            "times_subbed_early": 0,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.08
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.146
+      },
+      "confidence": {
+        "score": 75,
+        "tier": "STRONG"
+      },
+      "probability": 0.7981,
+      "edge": {
+        "our_probability": 0.7981,
+        "implied_probability": 0.5556,
+        "probability_edge": 0.2425,
+        "fair_odds": 1.25,
+        "bookmaker_odds": 1.8,
+        "expected_value": 0.4366,
+        "edge_percentage": 43.66,
+        "kelly_quarter": 0.1364,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.8,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 71.14,
+      "rank": 1,
+      "writeup": "🎯 Adrien Truffert (AFC Bournemouth) 1+ fouls committed vs Newcastle United (Premier League)\nHe's averaging 1.60 fouls per 90 this season and has committed 1+ in 16 of his last 20 matches overall. The left-back has hit this line in 4 of his last 5 games despite averaging just 1.40 fouls in that stretch. Newcastle draw only 9.1 fouls per game — fewest in the Premier League vs the 10.3 league average, which is worth considering.\n📊 16/20 (80%)\n💰 Paddy Power 1.8",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 27067062,
+      "player_name": "Kevin Schade",
+      "team_id": 236,
+      "team_name": "Brentford",
+      "opponent_id": 11,
+      "opponent_name": "Fulham",
+      "fixture_id": 19427729,
+      "fixture_date": "2026-04-18T11:30:00+00:00",
+      "league_id": 8,
+      "league_name": "Premier League",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.3652310207557945,
+        "simple_avg": 1.3,
+        "last_5_avg": 0.8,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 8,
+          "3+": 2,
+          "4+": 0
+        },
+        "home_avg": 1.777777777777778,
+        "away_avg": 0.9090909090909091,
+        "home_games": 9,
+        "away_games": 11,
+        "std_dev": 0.9233805168766387,
+        "coeff_of_variation": 0.7102927052897221,
+        "avg_minutes": 78.2,
+        "min_minutes": 42.0,
+        "times_subbed_early": 5,
+        "raw_values": [
+          1.0,
+          2.0,
+          1.0,
+          0.0,
+          0.0,
+          2.0,
+          1.0,
+          3.0,
+          1.0,
+          2.0,
+          1.0,
+          0.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          3.0,
+          0.0,
+          2.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          77.0,
+          68.0,
+          90.0,
+          72.0,
+          44.0,
+          42.0,
+          90.0,
+          82.0,
+          90.0,
+          64.0,
+          80.0,
+          90.0,
+          90.0,
+          90.0,
+          60.0,
+          75.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 9.733333333333333,
+        "league_avg": 10.283018867924529,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 7,
+        "avg_vs_similar": 0.8571428571428571,
+        "hitrate_vs_similar": 57.1,
+        "similar_teams_examples": [
+          "AFC Bournemouth",
+          "Brentford",
+          "Crystal Palace"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.37,
+        "adjusted_projection": 1.31,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9679266055045871,
+            "concedes": 9.733333333333333,
+            "league_avg": 10.283018867924529,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.2362637362637363,
+            "venue_avg": 1.777777777777778,
+            "overall_avg": 1.3,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.8688888888888889,
+            "avg_minutes": 78.2,
+            "times_subbed_early": 5,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.04
+      },
+      "confidence": {
+        "score": 70,
+        "tier": "STRONG"
+      },
+      "probability": 0.7302,
+      "edge": {
+        "our_probability": 0.7302,
+        "implied_probability": 0.5464,
+        "probability_edge": 0.1838,
+        "fair_odds": 1.37,
+        "bookmaker_odds": 1.83,
+        "expected_value": 0.3363,
+        "edge_percentage": 33.63,
+        "kelly_quarter": 0.1013,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.83,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 64.24,
+      "rank": 2,
+      "writeup": "🎯 Kevin Schade (Brentford) 1+ fouls committed vs Fulham (Premier League)\nSchade has committed 1+ fouls in 16 of his last 20 matches overall and averages 1.78 fouls per 90 at home compared to just 0.91 away. However, Fulham draw the fewest fouls in the Premier League at just 9.7 per game versus the 10.3 league average, which could limit opportunities.\n📊 16/20 (80%)\n💰 Paddy Power 1.83",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 37255841,
+      "player_name": "Jacob Greaves",
+      "team_id": 116,
+      "team_name": "Ipswich Town",
+      "opponent_id": 7,
+      "opponent_name": "Middlesbrough",
+      "fixture_id": 19432255,
+      "fixture_date": "2026-04-19T11:00:00+00:00",
+      "league_id": 9,
+      "league_name": "Championship",
+      "is_home": true,
+      "stat_type_id": 96,
+      "stat_type_label": "fouls_drawn",
+      "market_label": "1+ fouls drawn",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.3894942454514372,
+        "simple_avg": 1.05,
+        "last_5_avg": 1.6,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 5,
+          "3+": 2,
+          "4+": 0
+        },
+        "home_avg": 0.75,
+        "away_avg": 1.25,
+        "home_games": 8,
+        "away_games": 12,
+        "std_dev": 0.9445132413883327,
+        "coeff_of_variation": 0.8995364203698406,
+        "avg_minutes": 82.35,
+        "min_minutes": 11.0,
+        "times_subbed_early": 3,
+        "raw_values": [
+          1.0,
+          1.0,
+          3.0,
+          1.0,
+          2.0,
+          0.0,
+          1.0,
+          0.0,
+          2.0,
+          2.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          3.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          57.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          11.0,
+          90.0,
+          90.0,
+          49.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 12.6,
+        "league_avg": 10.864705882352942,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 24
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 8,
+        "avg_vs_similar": 1.25,
+        "hitrate_vs_similar": 75.0,
+        "similar_teams_examples": [
+          "Birmingham City",
+          "Bristol City",
+          "Derby County"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.39,
+        "adjusted_projection": 1.03,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0958310774228477,
+            "concedes": 12.6,
+            "league_avg": 10.864705882352942,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.8241758241758241,
+            "venue_avg": 0.75,
+            "overall_avg": 1.05,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9149999999999999,
+            "avg_minutes": 82.35,
+            "times_subbed_early": 3,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 0.92
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.76
+      },
+      "confidence": {
+        "score": 67,
+        "tier": "STRONG"
+      },
+      "probability": 0.643,
+      "edge": {
+        "our_probability": 0.643,
+        "implied_probability": 0.5,
+        "probability_edge": 0.143,
+        "fair_odds": 1.56,
+        "bookmaker_odds": 2.0,
+        "expected_value": 0.286,
+        "edge_percentage": 28.6,
+        "kelly_quarter": 0.0715,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.0,
+      "bookmaker": "Bet365",
+      "bookmaker_id": 2,
+      "composite_score": 57.97,
+      "rank": 3,
+      "writeup": "🎯 Jacob Greaves (Ipswich Town) 1+ fouls drawn vs Middlesbrough (Championship)\nGreaves has drawn 1+ fouls in all 5 of his last 5 matches and 14 of his last 20 overall, averaging 1.39 fouls drawn per 90 this season. Middlesbrough commit 12.6 fouls per game — most in the Championship vs the 10.9 league average. His away form is stronger for this market at 1.25 per 90 compared to 0.75 at home, but the opponent's aggressive style should provide plenty of opportunities.\n📊 14/20 (70%)\n💰 Bet365 2.0",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
