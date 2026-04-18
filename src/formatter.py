@@ -183,6 +183,17 @@ def _sorted_team_lines(lines: Iterable[TeamStatLine]) -> List[TeamStatLine]:
     )
 
 
+def _dedupe_team_stat_lines(lines: Iterable[TeamStatLine]) -> List[TeamStatLine]:
+    """Drop repeated team props with identical hit-rate windows, keeping the highest threshold."""
+    best_by_key: Dict[tuple[str, str, int, int], TeamStatLine] = {}
+    for line in lines:
+        key = (line.team_name, line.stat_key, line.wins, line.total)
+        existing = best_by_key.get(key)
+        if existing is None or line.threshold > existing.threshold:
+            best_by_key[key] = line
+    return list(best_by_key.values())
+
+
 def _sorted_weekend_lines(lines: Iterable[PlayerPropLine]) -> List[PlayerPropLine]:
     return sorted(
         lines,
@@ -214,7 +225,7 @@ def format_game_section(
         lines = _sorted_player_lines(player_sections[stat_key])
         flat_lines.extend(format_player_stat_line(item) for item in lines)
 
-    team_lines_sorted = _sorted_team_lines(team_lines)
+    team_lines_sorted = _sorted_team_lines(_dedupe_team_stat_lines(team_lines))
     flat_lines.extend(format_team_stat_line(item) for item in team_lines_sorted)
 
     if not flat_lines:
