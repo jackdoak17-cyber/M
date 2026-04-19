@@ -1,0 +1,319 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "high_probability",
+  "generated_at": "2026-04-19T07:51:37+00:00",
+  "scheduled_for": "2026-04-19",
+  "source_target_date": "2026-04-19",
+  "fixture_dates": [
+    "2026-04-19"
+  ],
+  "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+  "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.9,
+    "min_odds": 1.3,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 5,
+    "by_section": {
+      "1+ Shot": 2,
+      "2+ Shots": 2,
+      "1+ SOT": 1
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19432255:1387:1+ Shot:1",
+          "player_id": 1387,
+          "player_name": "Matt Targett",
+          "team_id": 7,
+          "team_name": "Middlesbrough",
+          "fixture_id": 19432255,
+          "fixture_label": "Ipswich Town vs Middlesbrough",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.44,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.44",
+            "summary": "Matt Targett (Middlesbrough) won in 10/11 @1.44"
+          }
+        },
+        {
+          "id": "19427732:4545513:1+ Shot:1",
+          "player_id": 4545513,
+          "player_name": "Curtis Jones",
+          "team_id": 8,
+          "team_name": "Liverpool",
+          "fixture_id": 19427732,
+          "fixture_label": "Everton vs Liverpool",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.4,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.40",
+            "summary": "Curtis Jones (Liverpool) won in 9/10 @1.40"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19467902:37579970:2+ Shots:2",
+          "player_id": 37579970,
+          "player_name": "R\u00e9my Labeau Lascary",
+          "team_id": 266,
+          "team_name": "Brest",
+          "fixture_id": 19467902,
+          "fixture_label": "Nantes vs Brest",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 8,
+          "sample": 8,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "8/8",
+            "odds": "@1.44",
+            "summary": "R\u00e9my Labeau Lascary (Brest) won in 8/8 @1.44"
+          }
+        },
+        {
+          "id": "19427732:4125:2+ Shots:2",
+          "player_id": 4125,
+          "player_name": "Mohamed Salah",
+          "team_id": 8,
+          "team_name": "Liverpool",
+          "fixture_id": 19427732,
+          "fixture_label": "Everton vs Liverpool",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 16,
+          "sample": 17,
+          "hit_rate": 0.9412,
+          "odds": 1.36,
+          "display": {
+            "rate": "16/17",
+            "odds": "@1.36",
+            "summary": "Mohamed Salah (Liverpool) won in 16/17 @1.36"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19443198:4545376:1+ SOT:1",
+          "player_id": 4545376,
+          "player_name": "Orkun K\u00f6k\u00e7\u00fc",
+          "team_id": 554,
+          "team_name": "Be\u015fikta\u015f",
+          "fixture_id": 19443198,
+          "fixture_label": "Samsunspor vs Be\u015fikta\u015f",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.57,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.57",
+            "summary": "Orkun K\u00f6k\u00e7\u00fc (Be\u015fikta\u015f) won in 11/12 @1.57"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sun 19 Apr 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 2\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 1\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "High Probability List",
+      "title_words": {
+        "primary": "HIGH",
+        "accent": "PROBABILITY"
+      },
+      "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+      "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+      "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
+      "fixture_window": "Sun 19 Apr 2026",
+      "stats": {
+        "total_players": 5,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 90
+      },
+      "slide_number": 1,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19432255:1387:1+ Shot:1",
+          "player_id": 1387,
+          "player_name": "Matt Targett",
+          "team_id": 7,
+          "team_name": "Middlesbrough",
+          "fixture_id": 19432255,
+          "fixture_label": "Ipswich Town vs Middlesbrough",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.44,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.44",
+            "summary": "Matt Targett (Middlesbrough) won in 10/11 @1.44"
+          }
+        },
+        {
+          "id": "19427732:4545513:1+ Shot:1",
+          "player_id": 4545513,
+          "player_name": "Curtis Jones",
+          "team_id": 8,
+          "team_name": "Liverpool",
+          "fixture_id": 19427732,
+          "fixture_label": "Everton vs Liverpool",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.4,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.40",
+            "summary": "Curtis Jones (Liverpool) won in 9/10 @1.40"
+          }
+        }
+      ],
+      "section_total_rows": 2,
+      "slide_number": 2,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19467902:37579970:2+ Shots:2",
+          "player_id": 37579970,
+          "player_name": "R\u00e9my Labeau Lascary",
+          "team_id": 266,
+          "team_name": "Brest",
+          "fixture_id": 19467902,
+          "fixture_label": "Nantes vs Brest",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 8,
+          "sample": 8,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "8/8",
+            "odds": "@1.44",
+            "summary": "R\u00e9my Labeau Lascary (Brest) won in 8/8 @1.44"
+          }
+        },
+        {
+          "id": "19427732:4125:2+ Shots:2",
+          "player_id": 4125,
+          "player_name": "Mohamed Salah",
+          "team_id": 8,
+          "team_name": "Liverpool",
+          "fixture_id": 19427732,
+          "fixture_label": "Everton vs Liverpool",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 16,
+          "sample": 17,
+          "hit_rate": 0.9412,
+          "odds": 1.36,
+          "display": {
+            "rate": "16/17",
+            "odds": "@1.36",
+            "summary": "Mohamed Salah (Liverpool) won in 16/17 @1.36"
+          }
+        }
+      ],
+      "section_total_rows": 2,
+      "slide_number": 3,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19443198:4545376:1+ SOT:1",
+          "player_id": 4545376,
+          "player_name": "Orkun K\u00f6k\u00e7\u00fc",
+          "team_id": 554,
+          "team_name": "Be\u015fikta\u015f",
+          "fixture_id": 19443198,
+          "fixture_label": "Samsunspor vs Be\u015fikta\u015f",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.57,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.57",
+            "summary": "Orkun K\u00f6k\u00e7\u00fc (Be\u015fikta\u015f) won in 11/12 @1.57"
+          }
+        }
+      ],
+      "section_total_rows": 1,
+      "slide_number": 4,
+      "slide_count": 4
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "930c53365bd8cc4fcc32fbddf5fff4bbd36f4d080b5003d0ff0190ca2e9c7793"
+}
