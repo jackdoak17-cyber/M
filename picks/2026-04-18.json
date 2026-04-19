@@ -478,9 +478,9 @@
       "rank": 3,
       "writeup": "🎯 Jacob Greaves (Ipswich Town) 1+ fouls drawn vs Middlesbrough (Championship)\nGreaves has drawn 1+ fouls in all 5 of his last 5 matches and 14 of his last 20 overall, averaging 1.39 fouls drawn per 90 this season. Middlesbrough commit 12.6 fouls per game — most in the Championship vs the 10.9 league average. His away form is stronger for this market at 1.25 per 90 compared to 0.75 at home, but the opponent's aggressive style should provide plenty of opportunities.\n📊 14/20 (70%)\n💰 Bet365 2.0",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-19T11:07:49.477834"
       }
     }
   ]
