@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Adrien Truffert (AFC Bournemouth) 1+ fouls committed vs Newcastle United (Premier League)\nHe's averaging 1.60 fouls per 90 this season and has committed 1+ in 16 of his last 20 matches overall. The left-back has hit this line in 4 of his last 5 games despite averaging just 1.40 fouls in that stretch. Newcastle draw only 9.1 fouls per game — fewest in the Premier League vs the 10.3 league average, which is worth considering.\n📊 16/20 (80%)\n💰 Paddy Power 1.8",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-19T05:13:41.708558"
       }
     },
     {
