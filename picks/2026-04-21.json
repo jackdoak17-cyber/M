@@ -1,0 +1,807 @@
+{
+  "date": "2026-04-21",
+  "generated_at": "2026-04-21T08:35:01.065488",
+  "picks_count": 5,
+  "picks": [
+    {
+      "player_id": 49353,
+      "player_name": "Vedat Muriqi",
+      "team_id": 645,
+      "team_name": "Mallorca",
+      "opponent_id": 214,
+      "opponent_name": "Valencia",
+      "fixture_id": 19439575,
+      "fixture_date": "2026-04-21T17:00:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.2279167162752997,
+        "simple_avg": 1.05,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 15,
+          "2+": 6,
+          "3+": 0,
+          "4+": 0
+        },
+        "home_avg": 1.2727272727272727,
+        "away_avg": 0.7777777777777778,
+        "home_games": 11,
+        "away_games": 9,
+        "std_dev": 0.7591546545162482,
+        "coeff_of_variation": 0.7230044328726174,
+        "avg_minutes": 84.9,
+        "min_minutes": 16.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          0.0,
+          2.0,
+          1.0,
+          2.0,
+          0.0,
+          2.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          77.0,
+          90.0,
+          77.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          16.0,
+          88.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 11.857142857142858,
+        "league_avg": 11.982142857142858,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 9,
+        "avg_vs_similar": 0.8888888888888888,
+        "hitrate_vs_similar": 66.7,
+        "similar_teams_examples": [
+          "Levante",
+          "Mallorca",
+          "Real Betis"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.23,
+        "adjusted_projection": 1.41,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9939145553899652,
+            "concedes": 11.857142857142858,
+            "league_avg": 11.982142857142858,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.1458333333333335,
+            "venue_avg": 1.2727272727272727,
+            "overall_avg": 1.05,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9433333333333334,
+            "avg_minutes": 84.9,
+            "times_subbed_early": 1,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.08
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.16
+      },
+      "confidence": {
+        "score": 85,
+        "tier": "LOCK"
+      },
+      "probability": 0.7559,
+      "edge": {
+        "our_probability": 0.7559,
+        "implied_probability": 0.5236,
+        "probability_edge": 0.2323,
+        "fair_odds": 1.32,
+        "bookmaker_odds": 1.91,
+        "expected_value": 0.4438,
+        "edge_percentage": 44.38,
+        "kelly_quarter": 0.1219,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.91,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 72.17,
+      "rank": 1,
+      "writeup": "🎯 Vedat Muriqi (Mallorca) 1+ fouls committed vs Valencia (La Liga)\nThe striker is averaging 1.23 fouls per 90 this season and has committed at least 1 foul in all 5 of his last 5 matches and 15 of his last 20 overall. At home, his foul rate increases to 1.27 per 90 compared to just 0.78 away. Valencia draw 11.9 fouls per game, ranking as the team that draws the most fouls in La Liga against the 12.0 league average.\n📊 15/20 (75%)\n💰 Paddy Power 1.91",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 37656179,
+      "player_name": "Lamine Yamal",
+      "team_id": 83,
+      "team_name": "FC Barcelona",
+      "opponent_id": 36,
+      "opponent_name": "Celta de Vigo",
+      "fixture_id": 19439571,
+      "fixture_date": "2026-04-22T19:30:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.4323467574226785,
+        "simple_avg": 1.15,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 7,
+          "3+": 1,
+          "4+": 1
+        },
+        "home_avg": 1.1818181818181819,
+        "away_avg": 1.1111111111111112,
+        "home_games": 11,
+        "away_games": 9,
+        "std_dev": 1.0399898784932577,
+        "coeff_of_variation": 0.9043390247767459,
+        "avg_minutes": 84.05,
+        "min_minutes": 23.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          2.0,
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          1.0,
+          2.0,
+          2.0,
+          0.0,
+          1.0,
+          4.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          1.0,
+          0.0,
+          2.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          82.0,
+          23.0,
+          90.0,
+          73.0,
+          88.0,
+          90.0,
+          78.0,
+          90.0,
+          79.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          88.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 11.142857142857142,
+        "league_avg": 11.982142857142858,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 8,
+        "avg_vs_similar": 1.0,
+        "hitrate_vs_similar": 50.0,
+        "similar_teams_examples": [
+          "Celta de Vigo",
+          "Deportivo Alavés",
+          "FC Barcelona"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.43,
+        "adjusted_projection": 1.46,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9591405861897665,
+            "concedes": 11.142857142857142,
+            "league_avg": 11.982142857142858,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0190217391304348,
+            "venue_avg": 1.1818181818181819,
+            "overall_avg": 1.15,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9338888888888889,
+            "avg_minutes": 84.05,
+            "times_subbed_early": 1,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 0.9
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.821
+      },
+      "confidence": {
+        "score": 70,
+        "tier": "STRONG"
+      },
+      "probability": 0.7678,
+      "edge": {
+        "our_probability": 0.7678,
+        "implied_probability": 0.5464,
+        "probability_edge": 0.2214,
+        "fair_odds": 1.3,
+        "bookmaker_odds": 1.83,
+        "expected_value": 0.4051,
+        "edge_percentage": 40.51,
+        "kelly_quarter": 0.122,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.83,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 67.49,
+      "rank": 2,
+      "writeup": "🎯 Lamine Yamal (FC Barcelona) 1+ fouls committed vs Celta de Vigo (La Liga)\nYamal is averaging 1.43 fouls per 90 this season and has committed 1+ in 14 of his last 20 matches overall. He's hit this line in 4 of his last 5 games despite averaging just 1.20 fouls in that stretch. However, Celta de Vigo draw only 11.1 fouls per game — fewest in La Liga compared to the 12.0 league average.\n📊 14/20 (70%)\n💰 Paddy Power 1.83",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 8204,
+      "player_name": "Yuri Berchiche",
+      "team_id": 13258,
+      "team_name": "Athletic Club",
+      "opponent_id": 459,
+      "opponent_name": "Osasuna",
+      "fixture_id": 19439570,
+      "fixture_date": "2026-04-21T17:00:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.1265966614615621,
+        "simple_avg": 1.05,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 7,
+          "3+": 0,
+          "4+": 0
+        },
+        "home_avg": 0.8888888888888888,
+        "away_avg": 1.1818181818181819,
+        "home_games": 9,
+        "away_games": 11,
+        "std_dev": 0.8255779474818965,
+        "coeff_of_variation": 0.7862647118875205,
+        "avg_minutes": 85.5,
+        "min_minutes": 39.0,
+        "times_subbed_early": 2,
+        "raw_values": [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          0.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          39.0,
+          90.0,
+          90.0,
+          90.0,
+          51.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 14.071428571428571,
+        "league_avg": 11.982142857142858,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 2,
+        "games_vs_similar": 9,
+        "avg_vs_similar": 0.8888888888888888,
+        "hitrate_vs_similar": 55.6,
+        "similar_teams_examples": [
+          "Celta de Vigo",
+          "Deportivo Alavés",
+          "FC Barcelona"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.13,
+        "adjusted_projection": 1.24,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.1017138599105811,
+            "concedes": 14.071428571428571,
+            "league_avg": 11.982142857142858,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.9013605442176871,
+            "venue_avg": 0.8888888888888888,
+            "overall_avg": 1.05,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.95,
+            "avg_minutes": 85.5,
+            "times_subbed_early": 2,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.943
+      },
+      "confidence": {
+        "score": 77,
+        "tier": "STRONG"
+      },
+      "probability": 0.7106,
+      "edge": {
+        "our_probability": 0.7106,
+        "implied_probability": 0.5,
+        "probability_edge": 0.2106,
+        "fair_odds": 1.41,
+        "bookmaker_odds": 2.0,
+        "expected_value": 0.4212,
+        "edge_percentage": 42.12,
+        "kelly_quarter": 0.1053,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.0,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 67.05,
+      "rank": 3,
+      "writeup": "🎯 Yuri Berchiche (Athletic Club) 1+ fouls committed vs Osasuna (La Liga)\nHe's averaging 1.13 fouls per 90 this season and has committed 1+ in 14 of his last 20 matches. Osasuna draw 14.1 fouls per game — most in La Liga vs the 12.0 league average. His away form is stronger at 1.18 per 90 compared to 0.89 at home, but the opponent context makes this appealing.\n📊 14/20 (70%)\n💰 Paddy Power 2.0",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 28543553,
+      "player_name": "Adrien Truffert",
+      "team_id": 52,
+      "team_name": "AFC Bournemouth",
+      "opponent_id": 71,
+      "opponent_name": "Leeds United",
+      "fixture_id": 19427739,
+      "fixture_date": "2026-04-22T19:00:00+00:00",
+      "league_id": 8,
+      "league_name": "Premier League",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.2920597528874733,
+        "simple_avg": 1.1,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 15,
+          "2+": 5,
+          "3+": 1,
+          "4+": 1
+        },
+        "home_avg": 0.9,
+        "away_avg": 1.3,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 0.9679060415469871,
+        "coeff_of_variation": 0.8799145832245338,
+        "avg_minutes": 89.4,
+        "min_minutes": 78.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          0.0,
+          4.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          0.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          78.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 10.2,
+        "league_avg": 10.30817610062893,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 5,
+        "avg_vs_similar": 0.8,
+        "hitrate_vs_similar": 60.0,
+        "similar_teams_examples": [
+          "AFC Bournemouth",
+          "Brentford",
+          "Crystal Palace"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.29,
+        "adjusted_projection": 1.2,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9937034777303233,
+            "concedes": 10.2,
+            "league_avg": 10.30817610062893,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.8787878787878788,
+            "venue_avg": 0.9,
+            "overall_avg": 1.1,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9933333333333334,
+            "avg_minutes": 89.4,
+            "times_subbed_early": 0,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.867
+      },
+      "confidence": {
+        "score": 67,
+        "tier": "STRONG"
+      },
+      "probability": 0.6988,
+      "edge": {
+        "our_probability": 0.6988,
+        "implied_probability": 0.5236,
+        "probability_edge": 0.1752,
+        "fair_odds": 1.43,
+        "bookmaker_odds": 1.91,
+        "expected_value": 0.3347,
+        "edge_percentage": 33.47,
+        "kelly_quarter": 0.092,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.91,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 61.73,
+      "rank": 4,
+      "writeup": "🎯 Adrien Truffert (AFC Bournemouth) 1+ fouls committed vs Leeds United (Premier League)\nHe's averaging 1.29 fouls per 90 this season and has committed 1+ in 15 of his last 20 matches overall. However, Leeds United draw just 10.2 fouls per game — fewest in the Premier League vs the 10.3 league average. At home, Truffert's foul rate drops to 0.90 per 90, hitting this line in only 3 of his last 5.\n📊 15/20 (75%)\n💰 Paddy Power 1.91",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 24817375,
+      "player_name": "Johann Lepenant",
+      "team_id": 59,
+      "team_name": "Nantes",
+      "opponent_id": 591,
+      "opponent_name": "Paris Saint Germain",
+      "fixture_id": 19467866,
+      "fixture_date": "2026-04-22T17:00:00+00:00",
+      "league_id": 301,
+      "league_name": "Ligue 1",
+      "is_home": false,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.4099229716121544,
+        "simple_avg": 1.2,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 6,
+          "3+": 2,
+          "4+": 0
+        },
+        "home_avg": 1.4,
+        "away_avg": 1.0,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 0.8944271909999159,
+        "coeff_of_variation": 0.7453559924999299,
+        "avg_minutes": 78.35,
+        "min_minutes": 24.0,
+        "times_subbed_early": 3,
+        "raw_values": [
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          3.0,
+          3.0,
+          0.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          0.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          24.0,
+          90.0,
+          78.0,
+          90.0,
+          72.0,
+          27.0,
+          82.0,
+          90.0,
+          89.0,
+          31.0,
+          84.0,
+          90.0,
+          90.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 8.416666666666666,
+        "league_avg": 11.402439024390244,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 7,
+        "avg_vs_similar": 1.5714285714285714,
+        "hitrate_vs_similar": 85.7,
+        "similar_teams_examples": [
+          "Angers SCO",
+          "Le Havre",
+          "LOSC Lille"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.41,
+        "adjusted_projection": 0.9,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.8571706368497812,
+            "concedes": 8.416666666666666,
+            "league_avg": 11.402439024390244,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.888888888888889,
+            "venue_avg": 1.0,
+            "overall_avg": 1.2,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.8705555555555555,
+            "avg_minutes": 78.35,
+            "times_subbed_early": 3,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.15
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.763
+      },
+      "confidence": {
+        "score": 72,
+        "tier": "STRONG"
+      },
+      "probability": 0.5934,
+      "edge": {
+        "our_probability": 0.5934,
+        "implied_probability": 0.5236,
+        "probability_edge": 0.0698,
+        "fair_odds": 1.69,
+        "bookmaker_odds": 1.91,
+        "expected_value": 0.1334,
+        "edge_percentage": 13.34,
+        "kelly_quarter": 0.0366,
+        "rating": "STRONG"
+      },
+      "odds": 1.91,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 53.94,
+      "rank": 5,
+      "writeup": "🎯 Johann Lepenant (Nantes) 1+ fouls committed vs Paris Saint Germain (Ligue 1)\nHe's averaging 1.41 fouls per 90 this season and has committed 1+ in all 5 of his last 5 and 16 of his last 20 overall. However, Paris Saint Germain draw just 8.4 fouls per game — fewest in Ligue 1 vs the 11.4 league average, which could limit opportunities.\n📊 16/20 (80%)\n💰 Paddy Power 1.91",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
