@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Tristan Crama (Millwall) 1+ shots vs Stoke City (Championship)\nThe defender is averaging 1.23 shots per 90 this season and has registered 1+ shots in all 5 of his last 5 matches with a 1.60 average over that span. He's hit this line in 14 of his last 20 overall for a solid 70% strike rate. Even away from home, he's averaging 1.00 shots per 90 this season.\n📊 14/20 (70%)\n💰 Bet365 1.833",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-04-22T05:10:15.992238"
       }
     }
   ]

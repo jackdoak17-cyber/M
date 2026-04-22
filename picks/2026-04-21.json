@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Vedat Muriqi (Mallorca) 1+ fouls committed vs Valencia (La Liga)\nThe striker is averaging 1.23 fouls per 90 this season and has committed at least 1 foul in all 5 of his last 5 matches and 15 of his last 20 overall. At home, his foul rate increases to 1.27 per 90 compared to just 0.78 away. Valencia draw 11.9 fouls per game, ranking as the team that draws the most fouls in La Liga against the 12.0 league average.\n📊 15/20 (75%)\n💰 Paddy Power 1.91",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-04-22T05:10:16.189704"
       }
     },
     {
@@ -478,9 +478,9 @@
       "rank": 3,
       "writeup": "🎯 Yuri Berchiche (Athletic Club) 1+ fouls committed vs Osasuna (La Liga)\nHe's averaging 1.13 fouls per 90 this season and has committed 1+ in 14 of his last 20 matches. Osasuna draw 14.1 fouls per game — most in La Liga vs the 12.0 league average. His away form is stronger at 1.18 per 90 compared to 0.89 at home, but the opponent context makes this appealing.\n📊 14/20 (70%)\n💰 Paddy Power 2.0",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-04-22T05:10:16.480228"
       }
     },
     {
