@@ -318,9 +318,9 @@
       "rank": 2,
       "writeup": "🎯 Lamine Yamal (FC Barcelona) 1+ fouls committed vs Celta de Vigo (La Liga)\nYamal is averaging 1.43 fouls per 90 this season and has committed 1+ in 14 of his last 20 matches overall. He's hit this line in 4 of his last 5 games despite averaging just 1.20 fouls in that stretch. However, Celta de Vigo draw only 11.1 fouls per game — fewest in La Liga compared to the 12.0 league average.\n📊 14/20 (70%)\n💰 Paddy Power 1.83",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-23T05:14:11.617476"
       }
     },
     {
@@ -638,9 +638,9 @@
       "rank": 4,
       "writeup": "🎯 Adrien Truffert (AFC Bournemouth) 1+ fouls committed vs Leeds United (Premier League)\nHe's averaging 1.29 fouls per 90 this season and has committed 1+ in 15 of his last 20 matches overall. However, Leeds United draw just 10.2 fouls per game — fewest in the Premier League vs the 10.3 league average. At home, Truffert's foul rate drops to 0.90 per 90, hitting this line in only 3 of his last 5.\n📊 15/20 (75%)\n💰 Paddy Power 1.91",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-23T05:14:11.851252"
       }
     },
     {
@@ -798,9 +798,9 @@
       "rank": 5,
       "writeup": "🎯 Johann Lepenant (Nantes) 1+ fouls committed vs Paris Saint Germain (Ligue 1)\nHe's averaging 1.41 fouls per 90 this season and has committed 1+ in all 5 of his last 5 and 16 of his last 20 overall. However, Paris Saint Germain draw just 8.4 fouls per game — fewest in Ligue 1 vs the 11.4 league average, which could limit opportunities.\n📊 16/20 (80%)\n💰 Paddy Power 1.91",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-23T05:14:12.086729"
       }
     }
   ]
