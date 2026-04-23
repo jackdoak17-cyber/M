@@ -1,0 +1,487 @@
+{
+  "date": "2026-04-23",
+  "generated_at": "2026-04-23T08:32:06.251321",
+  "picks_count": 3,
+  "picks": [
+    {
+      "player_id": 185573,
+      "player_name": "Ludovic Taillandier",
+      "team_id": 528,
+      "team_name": "Espanyol",
+      "opponent_id": 377,
+      "opponent_name": "Rayo Vallecano",
+      "fixture_id": 19439576,
+      "fixture_date": "2026-04-23T18:00:00+00:00",
+      "league_id": 564,
+      "league_name": "La Liga",
+      "is_home": false,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.471828153041128,
+        "simple_avg": 1.0,
+        "last_5_avg": 1.6,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 3,
+          "3+": 1,
+          "4+": 0
+        },
+        "home_avg": 0.8888888888888888,
+        "away_avg": 1.0909090909090908,
+        "home_games": 9,
+        "away_games": 11,
+        "std_dev": 0.7254762501100117,
+        "coeff_of_variation": 0.7254762501100117,
+        "avg_minutes": 90.0,
+        "min_minutes": 90.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          3.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 12.285714285714286,
+        "league_avg": 11.982517482517483,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 8,
+        "avg_vs_similar": 1.0,
+        "hitrate_vs_similar": 75.0,
+        "similar_teams_examples": [
+          "Athletic Club",
+          "Atlético Madrid",
+          "Elche"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.47,
+        "adjusted_projection": 1.56,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.014760237330999,
+            "concedes": 12.285714285714286,
+            "league_avg": 11.982517482517483,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0625,
+            "venue_avg": 1.0909090909090908,
+            "overall_avg": 1.0,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 1.0,
+            "avg_minutes": 90.0,
+            "times_subbed_early": 0,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.15
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.24
+      },
+      "confidence": {
+        "score": 95,
+        "tier": "LOCK"
+      },
+      "probability": 0.7899,
+      "edge": {
+        "our_probability": 0.7899,
+        "implied_probability": 0.4762,
+        "probability_edge": 0.3137,
+        "fair_odds": 1.27,
+        "bookmaker_odds": 2.1,
+        "expected_value": 0.6588,
+        "edge_percentage": 65.88,
+        "kelly_quarter": 0.1497,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.1,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 81.17,
+      "rank": 1,
+      "writeup": "🎯 Ludovic Taillandier (Espanyol) 1+ fouls committed vs Rayo Vallecano (La Liga)\nThe defender is averaging 1.47 fouls per 90 this season and has committed at least 1 foul in all 5 of his last 5 matches and 16 of his last 20 overall. Rayo Vallecano draw 12.3 fouls per game — most in La Liga vs the 12.0 league average. Strong value here.\n📊 16/20 (80%)\n💰 Paddy Power 2.10",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 96715,
+      "player_name": "Brendan Chardonnet",
+      "team_id": 266,
+      "team_name": "Brest",
+      "opponent_id": 271,
+      "opponent_name": "Lens",
+      "fixture_id": 19467908,
+      "fixture_date": "2026-04-24T18:45:00+00:00",
+      "league_id": 301,
+      "league_name": "Ligue 1",
+      "is_home": true,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.2152058317848724,
+        "simple_avg": 1.1,
+        "last_5_avg": 1.2,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 5,
+          "3+": 3,
+          "4+": 0
+        },
+        "home_avg": 1.222222222222222,
+        "away_avg": 1.0,
+        "home_games": 9,
+        "away_games": 11,
+        "std_dev": 1.0208355710680808,
+        "coeff_of_variation": 0.9280323373346189,
+        "avg_minutes": 87.8,
+        "min_minutes": 46.0,
+        "times_subbed_early": 1,
+        "raw_values": [
+          1.0,
+          3.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          3.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          3.0,
+          0.0,
+          2.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          46.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 12.23076923076923,
+        "league_avg": 11.402439024390244,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 9,
+        "avg_vs_similar": 1.0,
+        "hitrate_vs_similar": 66.7,
+        "similar_teams_examples": [
+          "Lens",
+          "Lorient",
+          "Nantes"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.22,
+        "adjusted_projection": 1.48,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.0410602185538247,
+            "concedes": 12.23076923076923,
+            "league_avg": 11.402439024390244,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0714285714285714,
+            "venue_avg": 1.222222222222222,
+            "overall_avg": 1.1,
+            "is_home": true
+          },
+          "minutes": {
+            "multiplier": 0.9755555555555555,
+            "avg_minutes": 87.8,
+            "times_subbed_early": 1,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.15
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.251
+      },
+      "confidence": {
+        "score": 70,
+        "tier": "STRONG"
+      },
+      "probability": 0.7724,
+      "edge": {
+        "our_probability": 0.7724,
+        "implied_probability": 0.4762,
+        "probability_edge": 0.2962,
+        "fair_odds": 1.29,
+        "bookmaker_odds": 2.1,
+        "expected_value": 0.622,
+        "edge_percentage": 62.2,
+        "kelly_quarter": 0.1414,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.1,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 72.06,
+      "rank": 2,
+      "writeup": "🎯 Brendan Chardonnet (Brest) 1+ fouls committed vs Lens (Ligue 1)\nThe Brest defender is averaging 1.22 fouls per 90 this season and has committed 1+ in 4 of his last 5 matches and 14 of his last 20 overall. Lens draw 12.2 fouls per game — most in Ligue 1 vs the 11.4 league average. At home, Chardonnet maintains his 1.22 per 90 average compared to just 1.00 away from home.\n📊 14/20 (70%)\n💰 Paddy Power 2.10",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 5971,
+      "player_name": "Jake Cooper",
+      "team_id": 64,
+      "team_name": "Millwall",
+      "opponent_id": 42,
+      "opponent_name": "Leicester City",
+      "fixture_id": 19432278,
+      "fixture_date": "2026-04-24T19:00:00+00:00",
+      "league_id": 9,
+      "league_name": "Championship",
+      "is_home": false,
+      "stat_type_id": 56,
+      "stat_type_label": "fouls_committed",
+      "market_label": "1+ fouls committed",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.0365481613786645,
+        "simple_avg": 1.2,
+        "last_5_avg": 1.0,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 16,
+          "2+": 6,
+          "3+": 2,
+          "4+": 0
+        },
+        "home_avg": 0.8888888888888888,
+        "away_avg": 1.4545454545454546,
+        "home_games": 9,
+        "away_games": 11,
+        "std_dev": 0.8944271909999159,
+        "coeff_of_variation": 0.7453559924999299,
+        "avg_minutes": 90.0,
+        "min_minutes": 90.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          1.0,
+          0.0,
+          2.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          3.0,
+          2.0,
+          3.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "flat"
+      },
+      "opponent": {
+        "avg_conceded": 9.6,
+        "league_avg": 10.543893129770993,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 24
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 15,
+        "avg_vs_similar": 1.2666666666666666,
+        "hitrate_vs_similar": 73.3,
+        "similar_teams_examples": [
+          "Coventry City",
+          "Hull City",
+          "Ipswich Town"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.04,
+        "adjusted_projection": 1.05,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.9462877828054298,
+            "concedes": 9.6,
+            "league_avg": 10.543893129770993,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.1458333333333335,
+            "venue_avg": 1.4545454545454546,
+            "overall_avg": 1.2,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 1.0,
+            "avg_minutes": 90.0,
+            "times_subbed_early": 0,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.0
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.084
+      },
+      "confidence": {
+        "score": 80,
+        "tier": "LOCK"
+      },
+      "probability": 0.6501,
+      "edge": {
+        "our_probability": 0.6501,
+        "implied_probability": 0.5,
+        "probability_edge": 0.1501,
+        "fair_odds": 1.54,
+        "bookmaker_odds": 2.0,
+        "expected_value": 0.3002,
+        "edge_percentage": 30.02,
+        "kelly_quarter": 0.0751,
+        "rating": "PREMIUM"
+      },
+      "odds": 2.0,
+      "bookmaker": "Paddy Power",
+      "bookmaker_id": 4,
+      "composite_score": 62.51,
+      "rank": 3,
+      "writeup": "🎯 Jake Cooper (Millwall) 1+ fouls committed vs Leicester City (Championship)\nCooper has committed 1+ fouls in 4 of his last 5 matches and 16 of his last 20 overall. His away form is particularly strong for this market, averaging 1.45 fouls per 90 on the road compared to just 0.89 at home. However, Leicester City draw just 9.6 fouls per game — fewest in the Championship vs the 10.5 league average.\n📊 16/20 (80%)\n💰 Paddy Power 2.0",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
