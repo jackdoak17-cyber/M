@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Ludovic Taillandier (Espanyol) 1+ fouls committed vs Rayo Vallecano (La Liga)\nThe defender is averaging 1.47 fouls per 90 this season and has committed at least 1 foul in all 5 of his last 5 matches and 16 of his last 20 overall. Rayo Vallecano draw 12.3 fouls per game — most in La Liga vs the 12.0 league average. Strong value here.\n📊 16/20 (80%)\n💰 Paddy Power 2.10",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 3.0,
+        "hit": true,
+        "checked_at": "2026-04-24T05:18:58.594980"
       }
     },
     {
