@@ -2,8 +2,6 @@ Todays Premier League stat list by fixture. All data driven based on recent form
 
 🔴 Man Utd vs Brentford 🔴 - 8:00pm
 
-Man Utd 3+ SOT (won in 18/20)
-Man Utd 14+ shots (won in 5/6)
 Man Utd 4+ corners (won in 5/6)
 Man Utd 3+ corners (won in 8/10)
 
