@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "potential_value",
-  "generated_at": "2026-04-24T16:29:20+00:00",
+  "generated_at": "2026-04-25T07:57:55+00:00",
   "scheduled_for": "2026-04-24",
   "source_target_date": "2026-04-25",
   "fixture_dates": [
@@ -20,10 +20,10 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 26,
+    "total_rows": 24,
     "by_section": {
-      "1+ Shot": 13,
-      "2+ Shots": 5,
+      "1+ Shot": 12,
+      "2+ Shots": 4,
       "1+ SOT": 8
     }
   },
@@ -53,6 +53,28 @@
           }
         },
         {
+          "id": "19425219:198220:1+ Shot:1",
+          "player_id": 198220,
+          "player_name": "Michel Aebischer",
+          "team_id": 1072,
+          "team_name": "Pisa",
+          "fixture_id": 19425219,
+          "fixture_label": "Parma vs Pisa",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.91,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.91",
+            "summary": "Michel Aebischer (Pisa) won in 8/10 @1.91"
+          }
+        },
+        {
           "id": "19432285:5967748:1+ Shot:1",
           "player_id": 5967748,
           "player_name": "Eric-Junior Bocat",
@@ -67,11 +89,11 @@
           "hits": 8,
           "sample": 10,
           "hit_rate": 0.8,
-          "odds": 1.83,
+          "odds": 1.73,
           "display": {
             "rate": "8/10",
-            "odds": "@1.83",
-            "summary": "Eric-Junior Bocat (Stoke City) won in 8/10 @1.83"
+            "odds": "@1.73",
+            "summary": "Eric-Junior Bocat (Stoke City) won in 8/10 @1.73"
           }
         },
         {
@@ -94,28 +116,6 @@
             "rate": "7/9",
             "odds": "@2.38",
             "summary": "Jarrad Branthwaite (Everton) won in 7/9 @2.38"
-          }
-        },
-        {
-          "id": "19432279:31092068:1+ Shot:1",
-          "player_id": 31092068,
-          "player_name": "Adilson Malanda",
-          "team_id": 7,
-          "team_name": "Middlesbrough",
-          "fixture_id": 19432279,
-          "fixture_label": "Middlesbrough vs Watford",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 9,
-          "hit_rate": 0.7778,
-          "odds": 1.73,
-          "display": {
-            "rate": "7/9",
-            "odds": "@1.73",
-            "summary": "Adilson Malanda (Middlesbrough) won in 7/9 @1.73"
           }
         },
         {
@@ -207,6 +207,28 @@
           }
         },
         {
+          "id": "19425219:131271:1+ Shot:1",
+          "player_id": 131271,
+          "player_name": "Antonio Caracciolo",
+          "team_id": 1072,
+          "team_name": "Pisa",
+          "fixture_id": 19425219,
+          "fixture_label": "Parma vs Pisa",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Antonio Caracciolo (Pisa) won in 6/8 @1.83"
+          }
+        },
+        {
           "id": "19427205:37526007:1+ Shot:1",
           "player_id": 37526007,
           "player_name": "Andr\u00e9",
@@ -251,50 +273,6 @@
           }
         },
         {
-          "id": "19443207:24604:1+ Shot:1",
-          "player_id": 24604,
-          "player_name": "Stefano Denswil",
-          "team_id": 643,
-          "team_name": "Kayserispor",
-          "fixture_id": 19443207,
-          "fixture_label": "Kayserispor vs Rizespor",
-          "league_id": 600,
-          "league_name": "Super Lig",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 12,
-          "hit_rate": 0.75,
-          "odds": 1.8,
-          "display": {
-            "rate": "9/12",
-            "odds": "@1.80",
-            "summary": "Stefano Denswil (Kayserispor) won in 9/12 @1.80"
-          }
-        },
-        {
-          "id": "19432285:37324879:1+ Shot:1",
-          "player_id": 37324879,
-          "player_name": "Tatsuki Seko",
-          "team_id": 26,
-          "team_name": "Stoke City",
-          "fixture_id": 19432285,
-          "fixture_label": "Stoke City vs Portsmouth",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 12,
-          "hit_rate": 0.75,
-          "odds": 1.73,
-          "display": {
-            "rate": "9/12",
-            "odds": "@1.73",
-            "summary": "Tatsuki Seko (Stoke City) won in 9/12 @1.73"
-          }
-        },
-        {
           "id": "19439569:1128:1+ Shot:1",
           "player_id": 1128,
           "player_name": "Marcos Alonso",
@@ -333,11 +311,11 @@
           "hits": 8,
           "sample": 10,
           "hit_rate": 0.8,
-          "odds": 1.83,
+          "odds": 2.1,
           "display": {
             "rate": "8/10",
-            "odds": "@1.83",
-            "summary": "Jens Castrop (Borussia M\u00f6nchengladbach) won in 8/10 @1.83"
+            "odds": "@2.10",
+            "summary": "Jens Castrop (Borussia M\u00f6nchengladbach) won in 8/10 @2.10"
           }
         },
         {
@@ -355,11 +333,11 @@
           "hits": 10,
           "sample": 13,
           "hit_rate": 0.7692,
-          "odds": 2.38,
+          "odds": 2.1,
           "display": {
             "rate": "10/13",
-            "odds": "@2.38",
-            "summary": "Ebou Adams (Portsmouth) won in 10/13 @2.38"
+            "odds": "@2.10",
+            "summary": "Ebou Adams (Portsmouth) won in 10/13 @2.10"
           }
         },
         {
@@ -382,28 +360,6 @@
             "rate": "9/12",
             "odds": "@2.10",
             "summary": "Lewis Smith (Livingston) won in 9/12 @2.10"
-          }
-        },
-        {
-          "id": "19432279:25548700:2+ Shots:2",
-          "player_id": 25548700,
-          "player_name": "Aidan Morris",
-          "team_id": 7,
-          "team_name": "Middlesbrough",
-          "fixture_id": 19432279,
-          "fixture_label": "Middlesbrough vs Watford",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 1.83,
-          "display": {
-            "rate": "6/8",
-            "odds": "@1.83",
-            "summary": "Aidan Morris (Middlesbrough) won in 6/8 @1.83"
           }
         },
         {
@@ -519,25 +475,47 @@
           }
         },
         {
-          "id": "19443206:204216:1+ SOT:1",
-          "player_id": 204216,
-          "player_name": "Soner Dikmen",
-          "team_id": 81,
-          "team_name": "Antalyaspor",
-          "fixture_id": 19443206,
-          "fixture_label": "G\u00f6ztepe vs Antalyaspor",
-          "league_id": 600,
-          "league_name": "Super Lig",
+          "id": "19432277:11799:1+ SOT:1",
+          "player_id": 11799,
+          "player_name": "Josh Windass",
+          "team_id": 283,
+          "team_name": "Wrexham",
+          "fixture_id": 19432277,
+          "fixture_label": "Coventry City vs Wrexham",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.73,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.73",
+            "summary": "Josh Windass (Wrexham) won in 10/13 @1.73"
+          }
+        },
+        {
+          "id": "19429462:37584653:1+ SOT:1",
+          "player_id": 37584653,
+          "player_name": "No\u00e9 Lebreton",
+          "team_id": 494,
+          "team_name": "NEC Nijmegen",
+          "fixture_id": 19429462,
+          "fixture_label": "FC Twente vs NEC Nijmegen",
+          "league_id": 72,
+          "league_name": "Eredivisie",
           "stat_label": "1+ SOT",
           "threshold": 1,
           "hits": 6,
           "sample": 8,
           "hit_rate": 0.75,
-          "odds": 3.75,
+          "odds": 2.1,
           "display": {
             "rate": "6/8",
-            "odds": "@3.75",
-            "summary": "Soner Dikmen (Antalyaspor) won in 6/8 @3.75"
+            "odds": "@2.10",
+            "summary": "No\u00e9 Lebreton (NEC Nijmegen) won in 6/8 @2.10"
           }
         },
         {
@@ -560,28 +538,6 @@
             "rate": "6/8",
             "odds": "@1.91",
             "summary": "Findlay Curtis (Kilmarnock) won in 6/8 @1.91"
-          }
-        },
-        {
-          "id": "19429462:37584653:1+ SOT:1",
-          "player_id": 37584653,
-          "player_name": "No\u00e9 Lebreton",
-          "team_id": 494,
-          "team_name": "NEC Nijmegen",
-          "fixture_id": 19429462,
-          "fixture_label": "FC Twente vs NEC Nijmegen",
-          "league_id": 72,
-          "league_name": "Eredivisie",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 1.83,
-          "display": {
-            "rate": "6/8",
-            "odds": "@1.83",
-            "summary": "No\u00e9 Lebreton (NEC Nijmegen) won in 6/8 @1.83"
           }
         },
         {
@@ -609,7 +565,7 @@
       ]
     }
   },
-  "caption": "Fixtures: Sat 25 Apr - Sun 26 Apr 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 13\n\u2022 2+ Shots: 5\n\u2022 1+ SOT: 8\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "caption": "Fixtures: Sat 25 Apr - Sun 26 Apr 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 12\n\u2022 2+ Shots: 4\n\u2022 1+ SOT: 8\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
   "slides": [
     {
       "slide_type": "cover",
@@ -623,18 +579,18 @@
       "threshold_bar": "75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
       "fixture_window": "Sat 25 Apr - Sun 26 Apr 2026",
       "stats": {
-        "total_players": 26,
+        "total_players": 24,
         "stat_types": 3,
         "hit_rate_threshold_pct": 75
       },
       "slide_number": 1,
-      "slide_count": 5
+      "slide_count": 4
     },
     {
       "slide_type": "section",
       "section_label": "1+ Shot",
       "section_page": 1,
-      "section_pages": 2,
+      "section_pages": 1,
       "rows": [
         {
           "id": "19425213:37529525:1+ Shot:1",
@@ -659,6 +615,28 @@
           }
         },
         {
+          "id": "19425219:198220:1+ Shot:1",
+          "player_id": 198220,
+          "player_name": "Michel Aebischer",
+          "team_id": 1072,
+          "team_name": "Pisa",
+          "fixture_id": 19425219,
+          "fixture_label": "Parma vs Pisa",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.91,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.91",
+            "summary": "Michel Aebischer (Pisa) won in 8/10 @1.91"
+          }
+        },
+        {
           "id": "19432285:5967748:1+ Shot:1",
           "player_id": 5967748,
           "player_name": "Eric-Junior Bocat",
@@ -673,11 +651,11 @@
           "hits": 8,
           "sample": 10,
           "hit_rate": 0.8,
-          "odds": 1.83,
+          "odds": 1.73,
           "display": {
             "rate": "8/10",
-            "odds": "@1.83",
-            "summary": "Eric-Junior Bocat (Stoke City) won in 8/10 @1.83"
+            "odds": "@1.73",
+            "summary": "Eric-Junior Bocat (Stoke City) won in 8/10 @1.73"
           }
         },
         {
@@ -700,28 +678,6 @@
             "rate": "7/9",
             "odds": "@2.38",
             "summary": "Jarrad Branthwaite (Everton) won in 7/9 @2.38"
-          }
-        },
-        {
-          "id": "19432279:31092068:1+ Shot:1",
-          "player_id": 31092068,
-          "player_name": "Adilson Malanda",
-          "team_id": 7,
-          "team_name": "Middlesbrough",
-          "fixture_id": 19432279,
-          "fixture_label": "Middlesbrough vs Watford",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 9,
-          "hit_rate": 0.7778,
-          "odds": 1.73,
-          "display": {
-            "rate": "7/9",
-            "odds": "@1.73",
-            "summary": "Adilson Malanda (Middlesbrough) won in 7/9 @1.73"
           }
         },
         {
@@ -813,6 +769,28 @@
           }
         },
         {
+          "id": "19425219:131271:1+ Shot:1",
+          "player_id": 131271,
+          "player_name": "Antonio Caracciolo",
+          "team_id": 1072,
+          "team_name": "Pisa",
+          "fixture_id": 19425219,
+          "fixture_label": "Parma vs Pisa",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Antonio Caracciolo (Pisa) won in 6/8 @1.83"
+          }
+        },
+        {
           "id": "19427205:37526007:1+ Shot:1",
           "player_id": 37526007,
           "player_name": "Andr\u00e9",
@@ -857,61 +835,6 @@
           }
         },
         {
-          "id": "19443207:24604:1+ Shot:1",
-          "player_id": 24604,
-          "player_name": "Stefano Denswil",
-          "team_id": 643,
-          "team_name": "Kayserispor",
-          "fixture_id": 19443207,
-          "fixture_label": "Kayserispor vs Rizespor",
-          "league_id": 600,
-          "league_name": "Super Lig",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 12,
-          "hit_rate": 0.75,
-          "odds": 1.8,
-          "display": {
-            "rate": "9/12",
-            "odds": "@1.80",
-            "summary": "Stefano Denswil (Kayserispor) won in 9/12 @1.80"
-          }
-        },
-        {
-          "id": "19432285:37324879:1+ Shot:1",
-          "player_id": 37324879,
-          "player_name": "Tatsuki Seko",
-          "team_id": 26,
-          "team_name": "Stoke City",
-          "fixture_id": 19432285,
-          "fixture_label": "Stoke City vs Portsmouth",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 12,
-          "hit_rate": 0.75,
-          "odds": 1.73,
-          "display": {
-            "rate": "9/12",
-            "odds": "@1.73",
-            "summary": "Tatsuki Seko (Stoke City) won in 9/12 @1.73"
-          }
-        }
-      ],
-      "section_total_rows": 13,
-      "slide_number": 2,
-      "slide_count": 5
-    },
-    {
-      "slide_type": "section",
-      "section_label": "1+ Shot",
-      "section_page": 2,
-      "section_pages": 2,
-      "rows": [
-        {
           "id": "19439569:1128:1+ Shot:1",
           "player_id": 1128,
           "player_name": "Marcos Alonso",
@@ -934,9 +857,9 @@
           }
         }
       ],
-      "section_total_rows": 13,
-      "slide_number": 3,
-      "slide_count": 5
+      "section_total_rows": 12,
+      "slide_number": 2,
+      "slide_count": 4
     },
     {
       "slide_type": "section",
@@ -959,11 +882,11 @@
           "hits": 8,
           "sample": 10,
           "hit_rate": 0.8,
-          "odds": 1.83,
+          "odds": 2.1,
           "display": {
             "rate": "8/10",
-            "odds": "@1.83",
-            "summary": "Jens Castrop (Borussia M\u00f6nchengladbach) won in 8/10 @1.83"
+            "odds": "@2.10",
+            "summary": "Jens Castrop (Borussia M\u00f6nchengladbach) won in 8/10 @2.10"
           }
         },
         {
@@ -981,11 +904,11 @@
           "hits": 10,
           "sample": 13,
           "hit_rate": 0.7692,
-          "odds": 2.38,
+          "odds": 2.1,
           "display": {
             "rate": "10/13",
-            "odds": "@2.38",
-            "summary": "Ebou Adams (Portsmouth) won in 10/13 @2.38"
+            "odds": "@2.10",
+            "summary": "Ebou Adams (Portsmouth) won in 10/13 @2.10"
           }
         },
         {
@@ -1011,28 +934,6 @@
           }
         },
         {
-          "id": "19432279:25548700:2+ Shots:2",
-          "player_id": 25548700,
-          "player_name": "Aidan Morris",
-          "team_id": 7,
-          "team_name": "Middlesbrough",
-          "fixture_id": 19432279,
-          "fixture_label": "Middlesbrough vs Watford",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 1.83,
-          "display": {
-            "rate": "6/8",
-            "odds": "@1.83",
-            "summary": "Aidan Morris (Middlesbrough) won in 6/8 @1.83"
-          }
-        },
-        {
           "id": "19439564:1478864:2+ Shots:2",
           "player_id": 1478864,
           "player_name": "Rub\u00e9n Vargas",
@@ -1055,9 +956,9 @@
           }
         }
       ],
-      "section_total_rows": 5,
-      "slide_number": 4,
-      "slide_count": 5
+      "section_total_rows": 4,
+      "slide_number": 3,
+      "slide_count": 4
     },
     {
       "slide_type": "section",
@@ -1154,25 +1055,47 @@
           }
         },
         {
-          "id": "19443206:204216:1+ SOT:1",
-          "player_id": 204216,
-          "player_name": "Soner Dikmen",
-          "team_id": 81,
-          "team_name": "Antalyaspor",
-          "fixture_id": 19443206,
-          "fixture_label": "G\u00f6ztepe vs Antalyaspor",
-          "league_id": 600,
-          "league_name": "Super Lig",
+          "id": "19432277:11799:1+ SOT:1",
+          "player_id": 11799,
+          "player_name": "Josh Windass",
+          "team_id": 283,
+          "team_name": "Wrexham",
+          "fixture_id": 19432277,
+          "fixture_label": "Coventry City vs Wrexham",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.73,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.73",
+            "summary": "Josh Windass (Wrexham) won in 10/13 @1.73"
+          }
+        },
+        {
+          "id": "19429462:37584653:1+ SOT:1",
+          "player_id": 37584653,
+          "player_name": "No\u00e9 Lebreton",
+          "team_id": 494,
+          "team_name": "NEC Nijmegen",
+          "fixture_id": 19429462,
+          "fixture_label": "FC Twente vs NEC Nijmegen",
+          "league_id": 72,
+          "league_name": "Eredivisie",
           "stat_label": "1+ SOT",
           "threshold": 1,
           "hits": 6,
           "sample": 8,
           "hit_rate": 0.75,
-          "odds": 3.75,
+          "odds": 2.1,
           "display": {
             "rate": "6/8",
-            "odds": "@3.75",
-            "summary": "Soner Dikmen (Antalyaspor) won in 6/8 @3.75"
+            "odds": "@2.10",
+            "summary": "No\u00e9 Lebreton (NEC Nijmegen) won in 6/8 @2.10"
           }
         },
         {
@@ -1195,28 +1118,6 @@
             "rate": "6/8",
             "odds": "@1.91",
             "summary": "Findlay Curtis (Kilmarnock) won in 6/8 @1.91"
-          }
-        },
-        {
-          "id": "19429462:37584653:1+ SOT:1",
-          "player_id": 37584653,
-          "player_name": "No\u00e9 Lebreton",
-          "team_id": 494,
-          "team_name": "NEC Nijmegen",
-          "fixture_id": 19429462,
-          "fixture_label": "FC Twente vs NEC Nijmegen",
-          "league_id": 72,
-          "league_name": "Eredivisie",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 1.83,
-          "display": {
-            "rate": "6/8",
-            "odds": "@1.83",
-            "summary": "No\u00e9 Lebreton (NEC Nijmegen) won in 6/8 @1.83"
           }
         },
         {
@@ -1243,13 +1144,13 @@
         }
       ],
       "section_total_rows": 8,
-      "slide_number": 5,
-      "slide_count": 5
+      "slide_number": 4,
+      "slide_count": 4
     }
   ],
   "verification": {
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "5a3cd5410708b4a2f29410dfd0fc9e36a967b8131dc5536f15b67307d5f388b4"
+  "content_fingerprint": "883a353ab3a34f98f1707e2c67fcc6a864c2e833fe388a8af6d7df5e4961b83d"
 }
