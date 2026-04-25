@@ -318,9 +318,9 @@
       "rank": 2,
       "writeup": "🎯 Brendan Chardonnet (Brest) 1+ fouls committed vs Lens (Ligue 1)\nThe Brest defender is averaging 1.22 fouls per 90 this season and has committed 1+ in 4 of his last 5 matches and 14 of his last 20 overall. Lens draw 12.2 fouls per game — most in Ligue 1 vs the 11.4 league average. At home, Chardonnet maintains his 1.22 per 90 average compared to just 1.00 away from home.\n📊 14/20 (70%)\n💰 Paddy Power 2.10",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-25T04:58:34.986769"
       }
     },
     {
@@ -478,9 +478,9 @@
       "rank": 3,
       "writeup": "🎯 Jake Cooper (Millwall) 1+ fouls committed vs Leicester City (Championship)\nCooper has committed 1+ fouls in 4 of his last 5 matches and 16 of his last 20 overall. His away form is particularly strong for this market, averaging 1.45 fouls per 90 on the road compared to just 0.89 at home. However, Leicester City draw just 9.6 fouls per game — fewest in the Championship vs the 10.5 league average.\n📊 16/20 (80%)\n💰 Paddy Power 2.0",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-25T04:58:35.167734"
       }
     }
   ]
