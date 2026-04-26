@@ -318,9 +318,9 @@
       "rank": 2,
       "writeup": "🎯 Kaishu Sano (FSV Mainz 05) 1+ fouls drawn vs FC Bayern München (Bundesliga)\nSano has drawn 1+ fouls in 4 of his last 5 matches and 15 of his last 20 overall, averaging 1.10 fouls drawn per 90 this season. However, FC Bayern München commit just 8.7 fouls per game — fewest in the Bundesliga compared to the 10.2 league average. This presents a challenging matchup for foul drawing opportunities.\n📊 15/20 (75%)\n💰 Bet365 1.833",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 1.0,
+        "hit": true,
+        "checked_at": "2026-04-26T05:22:50.350280"
       }
     }
   ]
