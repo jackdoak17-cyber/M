@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Maximilian Eggestein (SC Freiburg) 1+ shots vs Borussia Dortmund (Bundesliga)\nEggestein has hit 1+ shots in 17 of his last 20 matches and averages 1.22 shots per 90 this season. Against similar opponents like Borussia Dortmund, FC Union Berlin, and FSV Mainz 05, he's recorded 1+ shots in 8 of 9 games (88.9%). His away form shows 1.40 shots per 90, giving him solid chances to register at least one attempt.\n📊 17/20 (85%)\n💰 Kambi 1.81",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-04-27T05:37:23.064570"
       }
     }
   ]
