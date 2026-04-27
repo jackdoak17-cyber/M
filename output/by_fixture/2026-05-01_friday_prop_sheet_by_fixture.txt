@@ -3,10 +3,8 @@ Todays Premier League stat list by fixture. All data driven based on recent form
 ⚪ Leeds vs Burnley 🟣 - 8:00pm
 
 Z. Flemming 2+ shots (won in 5/6)
-Z. Flemming SOT (won in 6/7)
-J. Anthony SOT (won in 8/10)
-Z. Flemming 1+ foul committed (won in 9/10)
-Z. Flemming 2+ fouls committed (won in 8/10)
+J. Anthony SOT (won in 6/7)
+Z. Flemming 1+ foul committed (won in 6/7)
 Leeds 3+ corners (won in 17/20)
 Burnley 3+ corners (won in 9/11)
 Burnley 4+ corners (won in 4/5)

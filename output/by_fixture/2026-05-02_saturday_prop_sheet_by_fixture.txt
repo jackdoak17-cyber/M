@@ -2,25 +2,22 @@ Todays Premier League stat list by fixture. All data driven based on recent form
 
 If you find this useful please leave a like and remember to bookmark 🔖
 
-🟠 Wolves vs Sunderland 🔴 - 3:00pm
+🔴 Brentford vs West Ham 🟣 - 3:00pm
 
-D. Ballard 1+ shots (won in 11/13)
-J. Gomes 1+ foul committed (won in 15/17)
-N. Sadiki 1+ foul committed (won in 7/8)
-O. Alderete 1+ foul committed (won in 6/7)
-André 1+ foul committed (won in 10/12)
-B. Brobbey 1+ foul committed (won in 10/12)
-D. Ballard 1+ foul committed (won in 10/12)
-H. Bueno 1+ foul committed (won in 5/6)
-H. Diarra 1+ foul committed (won in 9/11)
-H. Diarra 1+ foul won (won in 11/11)
-H. Bueno 1+ foul won (won in 14/16)
-E. Fée 1+ foul won (won in 15/18)
-T. Hume 1+ foul won (won in 14/17)
-J. Gomes 1+ foul won (won in 8/10)
-M. Mané 1+ foul won (won in 8/10)
-H. Diarra 2+ fouls won (won in 9/11)
-Sunderland 3+ corners (won in 16/20)
+K. Mavropanos 1+ shots (won in 6/7)
+C. Summerville 2+ shots (won in 9/11)
+I. Thiago 1+ foul committed (won in 18/19)
+C. Summerville 1+ foul committed (won in 15/17)
+Pablo 1+ foul committed (won in 7/8)
+M. Fernandes 1+ foul committed (won in 12/15)
+T. Castellanos 1+ foul committed (won in 8/10)
+Y. Yarmolyuk 1+ foul committed (won in 8/10)
+C. Summerville 2+ fouls committed (won in 5/6)
+C. Summerville 1+ foul won (won in 16/17)
+K. Lewis-Potter 1+ foul won (won in 11/12)
+K. Walker-Peters 1+ foul won (won in 7/8)
+M. Fernandes 1+ foul won (won in 17/20)
+West Ham 3+ corners (won in 17/20)
 
 ⚫ Newcastle vs Brighton 🔵 - 3:00pm
 
@@ -40,26 +37,25 @@ G. Rutter 1+ foul won (won in 8/10)
 Brighton 3+ corners (won in 16/20)
 Newcastle 4+ corners (won in 16/20)
 
-🔴 Brentford vs West Ham 🟣 - 3:00pm
+🟠 Wolves vs Sunderland 🔴 - 3:00pm
 
-K. Lewis-Potter 1+ shots (won in 11/12)
-K. Mavropanos 1+ shots (won in 6/7)
-C. Summerville 2+ shots (won in 9/11)
-I. Thiago 1+ foul committed (won in 18/19)
-C. Summerville 1+ foul committed (won in 15/17)
-Pablo 1+ foul committed (won in 7/8)
-M. Damsgaard 1+ foul committed (won in 5/6)
-K. Schade 1+ foul committed (won in 13/16)
-M. Fernandes 1+ foul committed (won in 12/15)
-T. Castellanos 1+ foul committed (won in 8/10)
-Y. Yarmolyuk 1+ foul committed (won in 8/10)
-C. Summerville 2+ fouls committed (won in 5/6)
-C. Summerville 1+ foul won (won in 16/17)
-K. Lewis-Potter 1+ foul won (won in 11/12)
-K. Walker-Peters 1+ foul won (won in 7/8)
-M. Fernandes 1+ foul won (won in 17/20)
-K. Schade 1+ foul won (won in 13/16)
-West Ham 3+ corners (won in 17/20)
+D. Ballard 1+ shots (won in 11/13)
+J. Gomes 1+ foul committed (won in 15/17)
+N. Sadiki 1+ foul committed (won in 7/8)
+O. Alderete 1+ foul committed (won in 6/7)
+André 1+ foul committed (won in 10/12)
+B. Brobbey 1+ foul committed (won in 10/12)
+D. Ballard 1+ foul committed (won in 10/12)
+H. Bueno 1+ foul committed (won in 5/6)
+H. Diarra 1+ foul committed (won in 9/11)
+H. Diarra 1+ foul won (won in 11/11)
+H. Bueno 1+ foul won (won in 14/16)
+E. Fée 1+ foul won (won in 15/18)
+T. Hume 1+ foul won (won in 14/17)
+J. Gomes 1+ foul won (won in 8/10)
+M. Mané 1+ foul won (won in 8/10)
+H. Diarra 2+ fouls won (won in 9/11)
+Sunderland 3+ corners (won in 16/20)
 
 🔴 Arsenal vs Fulham ⚪ - 5:30pm
 
