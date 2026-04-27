@@ -1,7 +1,7 @@
 🏆 Change in EPL Winner probability since last update:
 
 • Arsenal: 50.5% -> 50.5%
-• Manchester City: 49.5% -> 50%
+• Manchester City: 50% -> 49.5%
 • Brentford: 0.1% -> 0.1%
 
 [🔮 via @Polymarket]
@@ -9,9 +9,34 @@ https://polymarket.com/event/english-premier-league-winner
 
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Bruno Fernandes: 51% -> 53%
-• Erling Haaland: 25.5% -> 29.1%
+• Bruno Fernandes: 53% -> 53.5%
+• Erling Haaland: 29.1% -> 29%
 • Declan Rice: 21% -> 21%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
+
+🏆 Change in Ballon d'Or Winner probability since last update:
+
+• Harry Kane: 38.6% -> 38.5%
+• Michael Olise: 16% -> 15%
+• Kylian Mbappé: 12.5% -> 12.5%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/ballon-dor-winner-2026
+
+🏆 Change in Next Man Utd Manager probability since last update:
+
+• Michael Carrick: 66.5% -> 67.5%
+• Oliver Glasner: 9% -> 9%
+• Gareth Southgate: 4.9% -> 4.9%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/next-manchester-united-manager
+
+🏆 Change in TheUnitedStrand Haircut probability since last update:
+
+• TheUnitedStrand: 6.5% -> 7%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/will-theunitedstrand-get-a-haircut-by-2025-26-season-end
