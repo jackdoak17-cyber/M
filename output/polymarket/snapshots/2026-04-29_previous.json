@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:47:54Z",
+  "generated_at": "2026-04-29T08:15:25Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -11,18 +11,18 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-27T00:00:00Z",
-      "volume": 319597135.75768703,
+      "volume": 319618846.191951,
       "top_outcomes": [
         {
           "label": "Arsenal",
-          "probability": 0.495,
+          "probability": 0.515,
           "question": "Will Arsenal win the 2025\u201326 English Premier League?",
-          "best_bid": 0.49,
-          "best_ask": 0.5,
-          "last_trade_price": 0.49,
+          "best_bid": 0.51,
+          "best_ask": 0.52,
+          "last_trade_price": 0.52,
           "outcome": "Yes",
           "previous_probability": 0.495,
-          "delta_pp": 0.0
+          "delta_pp": 2.0000000000000018
         },
         {
           "label": "Manchester City",
@@ -88,7 +88,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-31T00:00:00Z",
-      "volume": 248829248.79024467,
+      "volume": 248911664.16519067,
       "top_outcomes": [
         {
           "label": "Nice",
@@ -147,14 +147,14 @@
         },
         {
           "label": "Bayern Munich",
-          "probability": 0.315,
+          "probability": 0.32,
           "question": "Will Bayern Munich win the 2025\u201326 Champions League?",
           "best_bid": 0.31,
-          "best_ask": 0.32,
-          "last_trade_price": 0.32,
+          "best_ask": 0.33,
+          "last_trade_price": 0.31,
           "outcome": "Yes",
-          "previous_probability": 0.385,
-          "delta_pp": -7.000000000000001
+          "previous_probability": 0.315,
+          "delta_pp": 0.5000000000000004
         }
       ]
     },
@@ -165,18 +165,18 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-30T00:00:00Z",
-      "volume": 110516231.0731569,
+      "volume": 110529835.8531569,
       "top_outcomes": [
         {
           "label": "Barcelona",
-          "probability": 0.9884999999999999,
+          "probability": 0.99,
           "question": "Will Barcelona win the 2025\u201326 La Liga?",
-          "best_bid": 0.987,
-          "best_ask": 0.99,
-          "last_trade_price": 0.987,
+          "best_bid": 0.988,
+          "best_ask": 0.992,
+          "last_trade_price": 0.988,
           "outcome": "Yes",
           "previous_probability": 0.9884999999999999,
-          "delta_pp": 0.0
+          "delta_pp": 0.15000000000000568
         },
         {
           "label": "Real Madrid",
@@ -184,10 +184,10 @@
           "question": "Will Real Madrid win the 2025\u201326 La Liga?",
           "best_bid": 0.007,
           "best_ask": 0.013,
-          "last_trade_price": 0.012,
+          "last_trade_price": 0.013,
           "outcome": "Yes",
-          "previous_probability": 0.0095,
-          "delta_pp": 0.050000000000000044
+          "previous_probability": 0.01,
+          "delta_pp": 0.0
         },
         {
           "label": "Celta Vigo",
@@ -242,7 +242,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 43719.486689999976,
+      "volume": 43724.486689999976,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
@@ -252,63 +252,63 @@
           "best_ask": 0.69,
           "last_trade_price": 0.22,
           "outcome": "Yes",
-          "previous_probability": 0.58,
-          "delta_pp": -0.5000000000000004
+          "previous_probability": 0.575,
+          "delta_pp": 0.0
         },
         {
           "label": "William Saliba",
-          "probability": 0.226,
+          "probability": 0.221,
           "question": "Will William Saliba win the 2026 PFA Player of the Year?",
           "best_bid": 0.01,
-          "best_ask": 0.442,
+          "best_ask": 0.432,
           "last_trade_price": 0.003,
           "outcome": "Yes",
-          "previous_probability": 0.2115,
-          "delta_pp": 1.4500000000000013
-        },
-        {
-          "label": "Declan Rice",
-          "probability": 0.20500000000000002,
-          "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
-          "best_bid": 0.14,
-          "best_ask": 0.27,
-          "last_trade_price": 0.14,
-          "outcome": "Yes",
-          "previous_probability": null,
-          "delta_pp": null
-        },
-        {
-          "label": "Estevao",
-          "probability": 0.20400000000000001,
-          "question": "Will Estevao win the 2026 PFA Player of the Year?",
-          "best_bid": 0.01,
-          "best_ask": 0.398,
-          "last_trade_price": 0.003,
-          "outcome": "Yes",
-          "previous_probability": null,
-          "delta_pp": null
+          "previous_probability": 0.226,
+          "delta_pp": -0.5000000000000004
         },
         {
           "label": "Morgan Rogers",
-          "probability": 0.194,
+          "probability": 0.199,
           "question": "Will Morgan Rogers win the 2026 PFA Player of the Year?",
           "best_bid": 0.01,
-          "best_ask": 0.378,
+          "best_ask": 0.388,
           "last_trade_price": 0.012,
           "outcome": "Yes",
-          "previous_probability": null,
-          "delta_pp": null
+          "previous_probability": 0.194,
+          "delta_pp": 0.5000000000000004
         },
         {
           "label": "Erling Haaland",
-          "probability": 0.1835,
+          "probability": 0.1885,
           "question": "Will Erling Haaland win the 2026 PFA Player of the Year?",
-          "best_bid": 0.07,
+          "best_bid": 0.08,
           "best_ask": 0.297,
           "last_trade_price": 0.119,
           "outcome": "Yes",
-          "previous_probability": null,
-          "delta_pp": null
+          "previous_probability": 0.1835,
+          "delta_pp": 0.5000000000000004
+        },
+        {
+          "label": "Declan Rice",
+          "probability": 0.18,
+          "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
+          "best_bid": 0.09,
+          "best_ask": 0.27,
+          "last_trade_price": 0.14,
+          "outcome": "Yes",
+          "previous_probability": 0.20500000000000002,
+          "delta_pp": -2.500000000000002
+        },
+        {
+          "label": "Estevao",
+          "probability": 0.17600000000000002,
+          "question": "Will Estevao win the 2026 PFA Player of the Year?",
+          "best_bid": 0.01,
+          "best_ask": 0.342,
+          "last_trade_price": 0.003,
+          "outcome": "Yes",
+          "previous_probability": 0.20400000000000001,
+          "delta_pp": -2.8
         }
       ]
     },
@@ -319,29 +319,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 2681110.1715760003,
+      "volume": 2684091.114503,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.3415,
+          "probability": 0.3425,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.337,
-          "best_ask": 0.346,
-          "last_trade_price": 0.338,
+          "best_bid": 0.341,
+          "best_ask": 0.344,
+          "last_trade_price": 0.349,
           "outcome": "Yes",
-          "previous_probability": 0.383,
-          "delta_pp": -4.149999999999999
+          "previous_probability": 0.3415,
+          "delta_pp": 0.10000000000000009
         },
         {
           "label": "Michael Olise",
-          "probability": 0.14,
+          "probability": 0.165,
           "question": "Will Michael Olise win the 2026 Ballon d'Or?",
-          "best_bid": 0.13,
-          "best_ask": 0.15,
-          "last_trade_price": 0.14,
+          "best_bid": 0.16,
+          "best_ask": 0.17,
+          "last_trade_price": 0.17,
           "outcome": "Yes",
-          "previous_probability": 0.155,
-          "delta_pp": -1.4999999999999987
+          "previous_probability": 0.14,
+          "delta_pp": 2.4999999999999996
         },
         {
           "label": "Kylian Mbapp\u00e9",
@@ -351,19 +351,19 @@
           "best_ask": 0.13,
           "last_trade_price": 0.11,
           "outcome": "Yes",
-          "previous_probability": 0.14500000000000002,
-          "delta_pp": -2.500000000000002
+          "previous_probability": 0.12,
+          "delta_pp": 0.0
         },
         {
           "label": "Ousmane Demb\u00e9l\u00e9",
-          "probability": 0.11549999999999999,
+          "probability": 0.1175,
           "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
           "best_bid": 0.113,
-          "best_ask": 0.118,
-          "last_trade_price": 0.102,
+          "best_ask": 0.122,
+          "last_trade_price": 0.122,
           "outcome": "Yes",
-          "previous_probability": 0.07100000000000001,
-          "delta_pp": 4.449999999999998
+          "previous_probability": 0.11549999999999999,
+          "delta_pp": 0.20000000000000018
         },
         {
           "label": "Lamine Yamal",
@@ -373,16 +373,16 @@
           "best_ask": 0.09,
           "last_trade_price": 0.09,
           "outcome": "Yes",
-          "previous_probability": 0.095,
-          "delta_pp": -1.0000000000000009
+          "previous_probability": 0.08499999999999999,
+          "delta_pp": 0.0
         },
         {
-          "label": "Cristiano Ronaldo",
-          "probability": 0.05450000000000001,
-          "question": "Will Cristiano Ronaldo win the 2026 Ballon d'Or?",
-          "best_bid": 0.039,
-          "best_ask": 0.07,
-          "last_trade_price": 0.014,
+          "label": "Vitinha",
+          "probability": 0.0415,
+          "question": "Will Vitinha win the 2026 Ballon d'Or?",
+          "best_bid": 0.041,
+          "best_ask": 0.042,
+          "last_trade_price": 0.035,
           "outcome": "Yes",
           "previous_probability": null,
           "delta_pp": null
@@ -550,62 +550,62 @@
       "active": true,
       "closed": false,
       "end_date": "2026-12-31T23:55:00Z",
-      "volume": 717963.0965829999,
+      "volume": 718215.5150029999,
       "top_outcomes": [
         {
           "label": "Michael Carrick",
-          "probability": 0.78,
+          "probability": 0.775,
           "question": "Will Michael Carrick be appointed as manager of Manchester United?",
           "best_bid": 0.77,
-          "best_ask": 0.79,
-          "last_trade_price": 0.79,
+          "best_ask": 0.78,
+          "last_trade_price": 0.77,
           "outcome": "Yes",
           "previous_probability": 0.78,
-          "delta_pp": 0.0
+          "delta_pp": -0.5000000000000004
         },
         {
           "label": "Oliver Glasner",
           "probability": 0.1,
           "question": "Will Oliver Glasner be appointed as manager of Manchester United?",
-          "best_bid": 0.05,
-          "best_ask": 0.15,
+          "best_bid": 0.06,
+          "best_ask": 0.14,
           "last_trade_price": 0.06,
           "outcome": "Yes",
-          "previous_probability": 0.095,
-          "delta_pp": 0.5000000000000004
-        },
-        {
-          "label": "Thomas Tuchel",
-          "probability": 0.067,
-          "question": "Will Thomas Tuchel be appointed as manager of Manchester United?",
-          "best_bid": 0.01,
-          "best_ask": 0.124,
-          "last_trade_price": 0.031,
-          "outcome": "Yes",
-          "previous_probability": 0.058499999999999996,
-          "delta_pp": 0.8500000000000008
+          "previous_probability": 0.1,
+          "delta_pp": 0.0
         },
         {
           "label": "Xavi",
-          "probability": 0.0605,
+          "probability": 0.062,
           "question": "Will Xavi be appointed as manager of Manchester United?",
           "best_bid": 0.01,
-          "best_ask": 0.111,
+          "best_ask": 0.114,
           "last_trade_price": 0.003,
           "outcome": "Yes",
-          "previous_probability": 0.0615,
-          "delta_pp": -0.10000000000000009
+          "previous_probability": 0.0605,
+          "delta_pp": 0.15000000000000013
+        },
+        {
+          "label": "Thomas Tuchel",
+          "probability": 0.0615,
+          "question": "Will Thomas Tuchel be appointed as manager of Manchester United?",
+          "best_bid": 0.01,
+          "best_ask": 0.113,
+          "last_trade_price": 0.031,
+          "outcome": "Yes",
+          "previous_probability": 0.067,
+          "delta_pp": -0.5500000000000005
         },
         {
           "label": "Laurent Blanc",
-          "probability": 0.049499999999999995,
+          "probability": 0.048499999999999995,
           "question": "Will Laurent Blanc be appointed as manager of Manchester United?",
           "best_bid": 0.01,
-          "best_ask": 0.089,
+          "best_ask": 0.087,
           "last_trade_price": 0.002,
           "outcome": "Yes",
-          "previous_probability": 0.049999999999999996,
-          "delta_pp": -0.050000000000000044
+          "previous_probability": 0.049499999999999995,
+          "delta_pp": -0.10000000000000009
         },
         {
           "label": "Xabi Alonso",
