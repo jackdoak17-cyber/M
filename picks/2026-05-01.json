@@ -1,0 +1,487 @@
+{
+  "date": "2026-05-01",
+  "generated_at": "2026-05-01T09:27:26.354681",
+  "picks_count": 3,
+  "picks": [
+    {
+      "player_id": 34699,
+      "player_name": "Patrick Mainka",
+      "team_id": 2831,
+      "team_name": "Heidenheim",
+      "opponent_id": 503,
+      "opponent_name": "FC Bayern München",
+      "fixture_id": 19433758,
+      "fixture_date": "2026-05-02T13:30:00+00:00",
+      "league_id": 82,
+      "league_name": "Bundesliga",
+      "is_home": false,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "1+ shots",
+      "threshold": 1,
+      "baseline": {
+        "weighted_per90": 1.1902054545396565,
+        "simple_avg": 1.2,
+        "last_5_avg": 1.4,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 7,
+          "3+": 2,
+          "4+": 1
+        },
+        "home_avg": 1.4,
+        "away_avg": 1.0,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 1.105012502906165,
+        "coeff_of_variation": 0.9208437524218042,
+        "avg_minutes": 90.0,
+        "min_minutes": 90.0,
+        "times_subbed_early": 0,
+        "raw_values": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          1.0,
+          0.0,
+          1.0,
+          2.0,
+          2.0,
+          0.0,
+          4.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 12.266666666666667,
+        "league_avg": 13.385416666666666,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 3,
+        "games_vs_similar": 11,
+        "avg_vs_similar": 1.3636363636363635,
+        "hitrate_vs_similar": 81.8,
+        "similar_teams_examples": [
+          "Bayer 04 Leverkusen",
+          "Borussia Mönchengladbach",
+          "FC Bayern München"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 1.19,
+        "adjusted_projection": 1.34,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.949852140077821,
+            "concedes": 12.266666666666667,
+            "league_avg": 13.385416666666666,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 0.888888888888889,
+            "venue_avg": 1.0,
+            "overall_avg": 1.2,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 1.0,
+            "avg_minutes": 90.0,
+            "times_subbed_early": 0,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 0.88
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.743
+      },
+      "confidence": {
+        "score": 67,
+        "tier": "STRONG"
+      },
+      "probability": 0.7382,
+      "edge": {
+        "our_probability": 0.7382,
+        "implied_probability": 0.5076,
+        "probability_edge": 0.2306,
+        "fair_odds": 1.35,
+        "bookmaker_odds": 1.97,
+        "expected_value": 0.4543,
+        "edge_percentage": 45.43,
+        "kelly_quarter": 0.1171,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.97,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 66.1,
+      "rank": 1,
+      "writeup": "🎯 Patrick Mainka (Heidenheim) 1+ shots vs FC Bayern München (Bundesliga)\nThe defender is averaging 1.19 shots per 90 this season and has registered 1+ shots in 4 of his last 5 matches and 14 of his last 20 overall. Against teams like Bayer 04 Leverkusen, Borussia Mönchengladbach, and FC Bayern München, he's hit this line in 9 of 11 games (81.8%). His away average of 1.00 shots per 90 is still solid for this line.\n📊 14/20 (70%)\n💰 Kambi 1.97",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 37536953,
+      "player_name": "Mamadou Sangaré",
+      "team_id": 271,
+      "team_name": "Lens",
+      "opponent_id": 450,
+      "opponent_name": "Nice",
+      "fixture_id": 19467918,
+      "fixture_date": "2026-05-02T19:05:00+00:00",
+      "league_id": 301,
+      "league_name": "Ligue 1",
+      "is_home": false,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "2+ shots",
+      "threshold": 2,
+      "baseline": {
+        "weighted_per90": 2.9551915431919173,
+        "simple_avg": 2.0,
+        "last_5_avg": 3.0,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 14,
+          "2+": 14,
+          "3+": 8,
+          "4+": 3
+        },
+        "home_avg": 1.8,
+        "away_avg": 2.2,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 1.5559732104309982,
+        "coeff_of_variation": 0.7779866052154991,
+        "avg_minutes": 79.05,
+        "min_minutes": 33.0,
+        "times_subbed_early": 5,
+        "raw_values": [
+          5.0,
+          3.0,
+          0.0,
+          3.0,
+          4.0,
+          2.0,
+          3.0,
+          0.0,
+          0.0,
+          4.0,
+          0.0,
+          2.0,
+          2.0,
+          3.0,
+          2.0,
+          0.0,
+          3.0,
+          0.0,
+          2.0,
+          2.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          46.0,
+          90.0,
+          73.0,
+          90.0,
+          48.0,
+          89.0,
+          90.0,
+          90.0,
+          33.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          63.0,
+          59.0,
+          90.0,
+          90.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 14.2,
+        "league_avg": 12.394736842105264,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 18
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 7,
+        "avg_vs_similar": 1.8571428571428572,
+        "hitrate_vs_similar": 57.1,
+        "similar_teams_examples": [
+          "Lens",
+          "Lorient",
+          "Nantes"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 2.96,
+        "adjusted_projection": 2.39,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 1.087388535031847,
+            "concedes": 14.2,
+            "league_avg": 12.394736842105264,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0666666666666667,
+            "venue_avg": 2.2,
+            "overall_avg": 2.0,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.8783333333333333,
+            "avg_minutes": 79.05,
+            "times_subbed_early": 5,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 1.05
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 1.07
+      },
+      "confidence": {
+        "score": 85,
+        "tier": "LOCK"
+      },
+      "probability": 0.668,
+      "edge": {
+        "our_probability": 0.668,
+        "implied_probability": 0.5181,
+        "probability_edge": 0.1499,
+        "fair_odds": 1.5,
+        "bookmaker_odds": 1.93,
+        "expected_value": 0.2892,
+        "edge_percentage": 28.92,
+        "kelly_quarter": 0.0778,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.93,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 64.68,
+      "rank": 2,
+      "writeup": "🎯 Mamadou Sangaré (Lens) 2+ shots vs Nice (Ligue 1)\nThe midfielder is averaging 2.96 shots per 90 this season and has hit 2+ shots in 4 of his last 5 matches. He's recorded 14 of his last 20 overall for this line. Despite playing away where his average drops to 2.20 per 90, he's still maintained strong recent form with 3.00 shots per game over his last 5 outings.\n📊 14/20 (70%)\n💰 Kambi 1.93",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    },
+    {
+      "player_id": 455376,
+      "player_name": "Scott McTominay",
+      "team_id": 597,
+      "team_name": "Napoli",
+      "opponent_id": 268,
+      "opponent_name": "Como",
+      "fixture_id": 19425223,
+      "fixture_date": "2026-05-02T16:00:00+00:00",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "is_home": false,
+      "stat_type_id": 42,
+      "stat_type_label": "shots",
+      "market_label": "2+ shots",
+      "threshold": 2,
+      "baseline": {
+        "weighted_per90": 4.397466245247635,
+        "simple_avg": 3.35,
+        "last_5_avg": 4.6,
+        "sample_size": 20,
+        "hit_rates": {
+          "1+": 20,
+          "2+": 15,
+          "3+": 11,
+          "4+": 10
+        },
+        "home_avg": 3.2,
+        "away_avg": 3.5,
+        "home_games": 10,
+        "away_games": 10,
+        "std_dev": 2.3004576203785834,
+        "coeff_of_variation": 0.6867037672771891,
+        "avg_minutes": 85.1,
+        "min_minutes": 44.0,
+        "times_subbed_early": 2,
+        "raw_values": [
+          10.0,
+          1.0,
+          4.0,
+          1.0,
+          7.0,
+          1.0,
+          5.0,
+          4.0,
+          2.0,
+          2.0,
+          4.0,
+          4.0,
+          2.0,
+          4.0,
+          5.0,
+          1.0,
+          3.0,
+          1.0,
+          4.0,
+          2.0
+        ],
+        "raw_minutes": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          44.0,
+          46.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          82.0
+        ],
+        "trend": "improving"
+      },
+      "opponent": {
+        "avg_conceded": 7.733333333333333,
+        "league_avg": 12.28735632183908,
+        "rank": 1,
+        "rank_most_conceded": 1,
+        "rank_fewest_conceded": 1,
+        "total_teams": 20
+      },
+      "vs_similar": {
+        "opponent_tier": 1,
+        "games_vs_similar": 8,
+        "avg_vs_similar": 2.375,
+        "hitrate_vs_similar": 50.0,
+        "similar_teams_examples": [
+          "AC Milan",
+          "Atalanta",
+          "Como"
+        ]
+      },
+      "projection": {
+        "baseline_per90": 4.4,
+        "adjusted_projection": 2.46,
+        "adjustments_applied": {
+          "opponent": {
+            "multiplier": 0.7776239476145931,
+            "concedes": 7.733333333333333,
+            "league_avg": 12.28735632183908,
+            "rank": 1
+          },
+          "venue": {
+            "multiplier": 1.0298507462686566,
+            "venue_avg": 3.5,
+            "overall_avg": 3.35,
+            "is_home": false
+          },
+          "minutes": {
+            "multiplier": 0.9455555555555555,
+            "avg_minutes": 85.1,
+            "times_subbed_early": 2,
+            "sample_size": 20
+          },
+          "game_state": {
+            "multiplier": 0.95
+          },
+          "style": {
+            "multiplier": 1.0
+          }
+        },
+        "total_adjustment_factor": 0.719
+      },
+      "confidence": {
+        "score": 90,
+        "tier": "LOCK"
+      },
+      "probability": 0.6408,
+      "edge": {
+        "our_probability": 0.6408,
+        "implied_probability": 0.5435,
+        "probability_edge": 0.0973,
+        "fair_odds": 1.56,
+        "bookmaker_odds": 1.84,
+        "expected_value": 0.1791,
+        "edge_percentage": 17.91,
+        "kelly_quarter": 0.0533,
+        "rating": "PREMIUM"
+      },
+      "odds": 1.84,
+      "bookmaker": "Kambi",
+      "bookmaker_id": 3,
+      "composite_score": 62.62,
+      "rank": 3,
+      "writeup": "🎯 Scott McTominay (Napoli) 2+ shots vs Como (Serie A)\nHe's averaging 4.40 shots per 90 this season and has hit 2+ shots in 15 of his last 20 matches overall. McTominay has managed 4.60 shots per game across his last 5 appearances, well above the 2-shot threshold. Away from home he still averages 3.50 shots per 90, giving him multiple routes to this line against Como.\n📊 15/20 (75%)\n💰 Kambi 1.84",
+      "result": {
+        "actual_value": null,
+        "hit": null,
+        "checked_at": null
+      }
+    }
+  ]
+}
