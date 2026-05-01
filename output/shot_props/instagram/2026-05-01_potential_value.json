@@ -1,0 +1,1068 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "potential_value",
+  "generated_at": "2026-05-01T16:20:23+00:00",
+  "scheduled_for": "2026-05-01",
+  "source_target_date": "2026-05-02",
+  "fixture_dates": [
+    "2026-05-02",
+    "2026-05-03"
+  ],
+  "title": "",
+  "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.75,
+    "min_odds": 1.72,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 22,
+    "by_section": {
+      "1+ Shot": 11,
+      "2+ Shots": 3,
+      "1+ SOT": 8
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19432288:5967748:1+ Shot:1",
+          "player_id": 5967748,
+          "player_name": "Eric-Junior Bocat",
+          "team_id": 26,
+          "team_name": "Stoke City",
+          "fixture_id": 19432288,
+          "fixture_label": "Bristol City vs Stoke City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.8,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.80",
+            "summary": "Eric-Junior Bocat (Stoke City) won in 8/10 @1.80"
+          }
+        },
+        {
+          "id": "19425229:37529525:1+ Shot:1",
+          "player_id": 37529525,
+          "player_name": "Tarik Muharemovi\u0107",
+          "team_id": 2714,
+          "team_name": "Sassuolo",
+          "fixture_id": 19425229,
+          "fixture_label": "Sassuolo vs AC Milan",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 2.1,
+          "display": {
+            "rate": "7/9",
+            "odds": "@2.10",
+            "summary": "Tarik Muharemovi\u0107 (Sassuolo) won in 7/9 @2.10"
+          }
+        },
+        {
+          "id": "19700221:32395:1+ Shot:1",
+          "player_id": 32395,
+          "player_name": "Felix Passlack",
+          "team_id": 66,
+          "team_name": "Hibernian",
+          "fixture_id": 19700221,
+          "fixture_label": "Hibernian vs Celtic",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 2.0,
+          "display": {
+            "rate": "7/9",
+            "odds": "@2.00",
+            "summary": "Felix Passlack (Hibernian) won in 7/9 @2.00"
+          }
+        },
+        {
+          "id": "19432296:7026563:1+ Shot:1",
+          "player_id": 7026563,
+          "player_name": "Harry Clarke",
+          "team_id": 4,
+          "team_name": "Charlton Athletic",
+          "fixture_id": 19432296,
+          "fixture_label": "Swansea City vs Charlton Athletic",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.91,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.91",
+            "summary": "Harry Clarke (Charlton Athletic) won in 7/9 @1.91"
+          }
+        },
+        {
+          "id": "19427208:5666458:1+ Shot:1",
+          "player_id": 5666458,
+          "player_name": "Maxence Lacroix",
+          "team_id": 51,
+          "team_name": "Crystal Palace",
+          "fixture_id": 19427208,
+          "fixture_label": "AFC Bournemouth vs Crystal Palace",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 2.1,
+          "display": {
+            "rate": "10/13",
+            "odds": "@2.10",
+            "summary": "Maxence Lacroix (Crystal Palace) won in 10/13 @2.10"
+          }
+        },
+        {
+          "id": "19443215:24604:1+ Shot:1",
+          "player_id": 24604,
+          "player_name": "Stefano Denswil",
+          "team_id": 643,
+          "team_name": "Kayserispor",
+          "fixture_id": 19443215,
+          "fixture_label": "Kayserispor vs Ey\u00fcpspor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.73,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.73",
+            "summary": "Stefano Denswil (Kayserispor) won in 10/13 @1.73"
+          }
+        },
+        {
+          "id": "19700223:37580983:1+ Shot:1",
+          "player_id": 37580983,
+          "player_name": "Luke Graham",
+          "team_id": 284,
+          "team_name": "Dundee",
+          "fixture_id": 19700223,
+          "fixture_label": "Dundee vs St. Mirren",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Luke Graham (Dundee) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19427213:1078:1+ Shot:1",
+          "player_id": 1078,
+          "player_name": "Andrew Robertson",
+          "team_id": 8,
+          "team_name": "Liverpool",
+          "fixture_id": 19427213,
+          "fixture_label": "Manchester United vs Liverpool",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Andrew Robertson (Liverpool) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19432288:37324879:1+ Shot:1",
+          "player_id": 37324879,
+          "player_name": "Tatsuki Seko",
+          "team_id": 26,
+          "team_name": "Stoke City",
+          "fixture_id": 19432288,
+          "fixture_label": "Bristol City vs Stoke City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.80",
+            "summary": "Tatsuki Seko (Stoke City) won in 9/12 @1.80"
+          }
+        },
+        {
+          "id": "19432290:37553211:1+ Shot:1",
+          "player_id": 37553211,
+          "player_name": "Kellen Fisher",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19432290,
+          "fixture_label": "Hull City vs Norwich City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.73",
+            "summary": "Kellen Fisher (Norwich City) won in 9/12 @1.73"
+          }
+        },
+        {
+          "id": "19425222:15779395:1+ Shot:1",
+          "player_id": 15779395,
+          "player_name": "Michel Adopo",
+          "team_id": 585,
+          "team_name": "Cagliari",
+          "fixture_id": 19425222,
+          "fixture_label": "Bologna vs Cagliari",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Michel Adopo (Cagliari) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19467918:65528:2+ Shots:2",
+          "player_id": 65528,
+          "player_name": "Matthieu Udol",
+          "team_id": 271,
+          "team_name": "Lens",
+          "fixture_id": 19467918,
+          "fixture_label": "Nice vs Lens",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 2.5,
+          "display": {
+            "rate": "7/9",
+            "odds": "@2.50",
+            "summary": "Matthieu Udol (Lens) won in 7/9 @2.50"
+          }
+        },
+        {
+          "id": "19443216:129858:2+ Shots:2",
+          "player_id": 129858,
+          "player_name": "Olivier Ntcham",
+          "team_id": 2811,
+          "team_name": "Samsunspor",
+          "fixture_id": 19443216,
+          "fixture_label": "Samsunspor vs Galatasaray",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.83,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.83",
+            "summary": "Olivier Ntcham (Samsunspor) won in 10/13 @1.83"
+          }
+        },
+        {
+          "id": "19425223:1371:2+ Shots:2",
+          "player_id": 1371,
+          "player_name": "Kevin De Bruyne\u00a0",
+          "team_id": 597,
+          "team_name": "Napoli",
+          "fixture_id": 19425223,
+          "fixture_label": "Como vs Napoli",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Kevin De Bruyne\u00a0 (Napoli) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19432287:1711:1+ SOT:1",
+          "player_id": 1711,
+          "player_name": "Harry Winks",
+          "team_id": 42,
+          "team_name": "Leicester City",
+          "fixture_id": 19432287,
+          "fixture_label": "Blackburn Rovers vs Leicester City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 3.5,
+          "display": {
+            "rate": "8/10",
+            "odds": "@3.50",
+            "summary": "Harry Winks (Leicester City) won in 8/10 @3.50"
+          }
+        },
+        {
+          "id": "19425223:1371:1+ SOT:1",
+          "player_id": 1371,
+          "player_name": "Kevin De Bruyne\u00a0",
+          "team_id": 597,
+          "team_name": "Napoli",
+          "fixture_id": 19425223,
+          "fixture_label": "Como vs Napoli",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 2.1,
+          "display": {
+            "rate": "8/10",
+            "odds": "@2.10",
+            "summary": "Kevin De Bruyne\u00a0 (Napoli) won in 8/10 @2.10"
+          }
+        },
+        {
+          "id": "19433759:32585:1+ SOT:1",
+          "player_id": 32585,
+          "player_name": "Nadiem Amiri",
+          "team_id": 794,
+          "team_name": "FSV Mainz 05",
+          "fixture_id": 19433759,
+          "fixture_label": "St. Pauli vs FSV Mainz 05",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.73,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.73",
+            "summary": "Nadiem Amiri (FSV Mainz 05) won in 8/10 @1.73"
+          }
+        },
+        {
+          "id": "19427213:37317015:1+ SOT:1",
+          "player_id": 37317015,
+          "player_name": "Amad Diallo",
+          "team_id": 14,
+          "team_name": "Manchester United",
+          "fixture_id": 19427213,
+          "fixture_label": "Manchester United vs Liverpool",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.83,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.83",
+            "summary": "Amad Diallo (Manchester United) won in 7/9 @1.83"
+          }
+        },
+        {
+          "id": "19700224:581047:1+ SOT:1",
+          "player_id": 581047,
+          "player_name": "Callum Slattery",
+          "team_id": 309,
+          "team_name": "Motherwell",
+          "fixture_id": 19700224,
+          "fixture_label": "Falkirk vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.91,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.91",
+            "summary": "Callum Slattery (Motherwell) won in 10/13 @1.91"
+          }
+        },
+        {
+          "id": "19467918:65528:1+ SOT:1",
+          "player_id": 65528,
+          "player_name": "Matthieu Udol",
+          "team_id": 271,
+          "team_name": "Lens",
+          "fixture_id": 19467918,
+          "fixture_label": "Nice vs Lens",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 3.0,
+          "display": {
+            "rate": "6/8",
+            "odds": "@3.00",
+            "summary": "Matthieu Udol (Lens) won in 6/8 @3.00"
+          }
+        },
+        {
+          "id": "19427209:9939203:1+ SOT:1",
+          "player_id": 9939203,
+          "player_name": "Crysencio Summerville",
+          "team_id": 1,
+          "team_name": "West Ham United",
+          "fixture_id": 19427209,
+          "fixture_label": "Brentford vs West Ham United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.73",
+            "summary": "Crysencio Summerville (West Ham United) won in 9/12 @1.73"
+          }
+        },
+        {
+          "id": "19427208:537493:1+ SOT:1",
+          "player_id": 537493,
+          "player_name": "Marcus Tavernier",
+          "team_id": 52,
+          "team_name": "AFC Bournemouth",
+          "fixture_id": 19427208,
+          "fixture_label": "AFC Bournemouth vs Crystal Palace",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Marcus Tavernier (AFC Bournemouth) won in 6/8 @1.73"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "Fixtures: Sat 02 May - Sun 03 May 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 11\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 8\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "Stats & Odds List",
+      "title_words": {
+        "primary": "POTENTIAL",
+        "accent": "VALUE"
+      },
+      "title": "",
+      "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+      "threshold_bar": "75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
+      "fixture_window": "Sat 02 May - Sun 03 May 2026",
+      "stats": {
+        "total_players": 22,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 75
+      },
+      "slide_number": 1,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19432288:5967748:1+ Shot:1",
+          "player_id": 5967748,
+          "player_name": "Eric-Junior Bocat",
+          "team_id": 26,
+          "team_name": "Stoke City",
+          "fixture_id": 19432288,
+          "fixture_label": "Bristol City vs Stoke City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.8,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.80",
+            "summary": "Eric-Junior Bocat (Stoke City) won in 8/10 @1.80"
+          }
+        },
+        {
+          "id": "19425229:37529525:1+ Shot:1",
+          "player_id": 37529525,
+          "player_name": "Tarik Muharemovi\u0107",
+          "team_id": 2714,
+          "team_name": "Sassuolo",
+          "fixture_id": 19425229,
+          "fixture_label": "Sassuolo vs AC Milan",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 2.1,
+          "display": {
+            "rate": "7/9",
+            "odds": "@2.10",
+            "summary": "Tarik Muharemovi\u0107 (Sassuolo) won in 7/9 @2.10"
+          }
+        },
+        {
+          "id": "19700221:32395:1+ Shot:1",
+          "player_id": 32395,
+          "player_name": "Felix Passlack",
+          "team_id": 66,
+          "team_name": "Hibernian",
+          "fixture_id": 19700221,
+          "fixture_label": "Hibernian vs Celtic",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 2.0,
+          "display": {
+            "rate": "7/9",
+            "odds": "@2.00",
+            "summary": "Felix Passlack (Hibernian) won in 7/9 @2.00"
+          }
+        },
+        {
+          "id": "19432296:7026563:1+ Shot:1",
+          "player_id": 7026563,
+          "player_name": "Harry Clarke",
+          "team_id": 4,
+          "team_name": "Charlton Athletic",
+          "fixture_id": 19432296,
+          "fixture_label": "Swansea City vs Charlton Athletic",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.91,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.91",
+            "summary": "Harry Clarke (Charlton Athletic) won in 7/9 @1.91"
+          }
+        },
+        {
+          "id": "19427208:5666458:1+ Shot:1",
+          "player_id": 5666458,
+          "player_name": "Maxence Lacroix",
+          "team_id": 51,
+          "team_name": "Crystal Palace",
+          "fixture_id": 19427208,
+          "fixture_label": "AFC Bournemouth vs Crystal Palace",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 2.1,
+          "display": {
+            "rate": "10/13",
+            "odds": "@2.10",
+            "summary": "Maxence Lacroix (Crystal Palace) won in 10/13 @2.10"
+          }
+        },
+        {
+          "id": "19443215:24604:1+ Shot:1",
+          "player_id": 24604,
+          "player_name": "Stefano Denswil",
+          "team_id": 643,
+          "team_name": "Kayserispor",
+          "fixture_id": 19443215,
+          "fixture_label": "Kayserispor vs Ey\u00fcpspor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.73,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.73",
+            "summary": "Stefano Denswil (Kayserispor) won in 10/13 @1.73"
+          }
+        },
+        {
+          "id": "19700223:37580983:1+ Shot:1",
+          "player_id": 37580983,
+          "player_name": "Luke Graham",
+          "team_id": 284,
+          "team_name": "Dundee",
+          "fixture_id": 19700223,
+          "fixture_label": "Dundee vs St. Mirren",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Luke Graham (Dundee) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19427213:1078:1+ Shot:1",
+          "player_id": 1078,
+          "player_name": "Andrew Robertson",
+          "team_id": 8,
+          "team_name": "Liverpool",
+          "fixture_id": 19427213,
+          "fixture_label": "Manchester United vs Liverpool",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Andrew Robertson (Liverpool) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19432288:37324879:1+ Shot:1",
+          "player_id": 37324879,
+          "player_name": "Tatsuki Seko",
+          "team_id": 26,
+          "team_name": "Stoke City",
+          "fixture_id": 19432288,
+          "fixture_label": "Bristol City vs Stoke City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.80",
+            "summary": "Tatsuki Seko (Stoke City) won in 9/12 @1.80"
+          }
+        },
+        {
+          "id": "19432290:37553211:1+ Shot:1",
+          "player_id": 37553211,
+          "player_name": "Kellen Fisher",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19432290,
+          "fixture_label": "Hull City vs Norwich City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.73",
+            "summary": "Kellen Fisher (Norwich City) won in 9/12 @1.73"
+          }
+        },
+        {
+          "id": "19425222:15779395:1+ Shot:1",
+          "player_id": 15779395,
+          "player_name": "Michel Adopo",
+          "team_id": 585,
+          "team_name": "Cagliari",
+          "fixture_id": 19425222,
+          "fixture_label": "Bologna vs Cagliari",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Michel Adopo (Cagliari) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 11,
+      "slide_number": 2,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19467918:65528:2+ Shots:2",
+          "player_id": 65528,
+          "player_name": "Matthieu Udol",
+          "team_id": 271,
+          "team_name": "Lens",
+          "fixture_id": 19467918,
+          "fixture_label": "Nice vs Lens",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 2.5,
+          "display": {
+            "rate": "7/9",
+            "odds": "@2.50",
+            "summary": "Matthieu Udol (Lens) won in 7/9 @2.50"
+          }
+        },
+        {
+          "id": "19443216:129858:2+ Shots:2",
+          "player_id": 129858,
+          "player_name": "Olivier Ntcham",
+          "team_id": 2811,
+          "team_name": "Samsunspor",
+          "fixture_id": 19443216,
+          "fixture_label": "Samsunspor vs Galatasaray",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.83,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.83",
+            "summary": "Olivier Ntcham (Samsunspor) won in 10/13 @1.83"
+          }
+        },
+        {
+          "id": "19425223:1371:2+ Shots:2",
+          "player_id": 1371,
+          "player_name": "Kevin De Bruyne\u00a0",
+          "team_id": 597,
+          "team_name": "Napoli",
+          "fixture_id": 19425223,
+          "fixture_label": "Como vs Napoli",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Kevin De Bruyne\u00a0 (Napoli) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 3,
+      "slide_number": 3,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19432287:1711:1+ SOT:1",
+          "player_id": 1711,
+          "player_name": "Harry Winks",
+          "team_id": 42,
+          "team_name": "Leicester City",
+          "fixture_id": 19432287,
+          "fixture_label": "Blackburn Rovers vs Leicester City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 3.5,
+          "display": {
+            "rate": "8/10",
+            "odds": "@3.50",
+            "summary": "Harry Winks (Leicester City) won in 8/10 @3.50"
+          }
+        },
+        {
+          "id": "19425223:1371:1+ SOT:1",
+          "player_id": 1371,
+          "player_name": "Kevin De Bruyne\u00a0",
+          "team_id": 597,
+          "team_name": "Napoli",
+          "fixture_id": 19425223,
+          "fixture_label": "Como vs Napoli",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 2.1,
+          "display": {
+            "rate": "8/10",
+            "odds": "@2.10",
+            "summary": "Kevin De Bruyne\u00a0 (Napoli) won in 8/10 @2.10"
+          }
+        },
+        {
+          "id": "19433759:32585:1+ SOT:1",
+          "player_id": 32585,
+          "player_name": "Nadiem Amiri",
+          "team_id": 794,
+          "team_name": "FSV Mainz 05",
+          "fixture_id": 19433759,
+          "fixture_label": "St. Pauli vs FSV Mainz 05",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.73,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.73",
+            "summary": "Nadiem Amiri (FSV Mainz 05) won in 8/10 @1.73"
+          }
+        },
+        {
+          "id": "19427213:37317015:1+ SOT:1",
+          "player_id": 37317015,
+          "player_name": "Amad Diallo",
+          "team_id": 14,
+          "team_name": "Manchester United",
+          "fixture_id": 19427213,
+          "fixture_label": "Manchester United vs Liverpool",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.83,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.83",
+            "summary": "Amad Diallo (Manchester United) won in 7/9 @1.83"
+          }
+        },
+        {
+          "id": "19700224:581047:1+ SOT:1",
+          "player_id": 581047,
+          "player_name": "Callum Slattery",
+          "team_id": 309,
+          "team_name": "Motherwell",
+          "fixture_id": 19700224,
+          "fixture_label": "Falkirk vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.91,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.91",
+            "summary": "Callum Slattery (Motherwell) won in 10/13 @1.91"
+          }
+        },
+        {
+          "id": "19467918:65528:1+ SOT:1",
+          "player_id": 65528,
+          "player_name": "Matthieu Udol",
+          "team_id": 271,
+          "team_name": "Lens",
+          "fixture_id": 19467918,
+          "fixture_label": "Nice vs Lens",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 3.0,
+          "display": {
+            "rate": "6/8",
+            "odds": "@3.00",
+            "summary": "Matthieu Udol (Lens) won in 6/8 @3.00"
+          }
+        },
+        {
+          "id": "19427209:9939203:1+ SOT:1",
+          "player_id": 9939203,
+          "player_name": "Crysencio Summerville",
+          "team_id": 1,
+          "team_name": "West Ham United",
+          "fixture_id": 19427209,
+          "fixture_label": "Brentford vs West Ham United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.73",
+            "summary": "Crysencio Summerville (West Ham United) won in 9/12 @1.73"
+          }
+        },
+        {
+          "id": "19427208:537493:1+ SOT:1",
+          "player_id": 537493,
+          "player_name": "Marcus Tavernier",
+          "team_id": 52,
+          "team_name": "AFC Bournemouth",
+          "fixture_id": 19427208,
+          "fixture_label": "AFC Bournemouth vs Crystal Palace",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Marcus Tavernier (AFC Bournemouth) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 8,
+      "slide_number": 4,
+      "slide_count": 4
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "7e2a2f70c675982e45f53c1d5c08972af095e327fb5d91a5ebbd11f1f201689a"
+}
