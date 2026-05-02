@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "potential_value",
-  "generated_at": "2026-05-01T16:20:23+00:00",
+  "generated_at": "2026-05-02T09:01:15+00:00",
   "scheduled_for": "2026-05-01",
   "source_target_date": "2026-05-02",
   "fixture_dates": [
@@ -20,9 +20,9 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 22,
+    "total_rows": 24,
     "by_section": {
-      "1+ Shot": 11,
+      "1+ Shot": 13,
       "2+ Shots": 3,
       "1+ SOT": 8
     }
@@ -45,11 +45,11 @@
           "hits": 8,
           "sample": 10,
           "hit_rate": 0.8,
-          "odds": 1.8,
+          "odds": 1.73,
           "display": {
             "rate": "8/10",
-            "odds": "@1.80",
-            "summary": "Eric-Junior Bocat (Stoke City) won in 8/10 @1.80"
+            "odds": "@1.73",
+            "summary": "Eric-Junior Bocat (Stoke City) won in 8/10 @1.73"
           }
         },
         {
@@ -119,6 +119,28 @@
           }
         },
         {
+          "id": "19432298:8018:1+ Shot:1",
+          "player_id": 8018,
+          "player_name": "Callum Brittain",
+          "team_id": 7,
+          "team_name": "Middlesbrough",
+          "fixture_id": 19432298,
+          "fixture_label": "Wrexham vs Middlesbrough",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.73,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.73",
+            "summary": "Callum Brittain (Middlesbrough) won in 7/9 @1.73"
+          }
+        },
+        {
           "id": "19427208:5666458:1+ Shot:1",
           "player_id": 5666458,
           "player_name": "Maxence Lacroix",
@@ -177,11 +199,11 @@
           "hits": 6,
           "sample": 8,
           "hit_rate": 0.75,
-          "odds": 1.83,
+          "odds": 2.25,
           "display": {
             "rate": "6/8",
-            "odds": "@1.83",
-            "summary": "Luke Graham (Dundee) won in 6/8 @1.83"
+            "odds": "@2.25",
+            "summary": "Luke Graham (Dundee) won in 6/8 @2.25"
           }
         },
         {
@@ -221,11 +243,11 @@
           "hits": 9,
           "sample": 12,
           "hit_rate": 0.75,
-          "odds": 1.8,
+          "odds": 1.73,
           "display": {
             "rate": "9/12",
-            "odds": "@1.80",
-            "summary": "Tatsuki Seko (Stoke City) won in 9/12 @1.80"
+            "odds": "@1.73",
+            "summary": "Tatsuki Seko (Stoke City) won in 9/12 @1.73"
           }
         },
         {
@@ -248,6 +270,28 @@
             "rate": "9/12",
             "odds": "@1.73",
             "summary": "Kellen Fisher (Norwich City) won in 9/12 @1.73"
+          }
+        },
+        {
+          "id": "19432298:3158:1+ Shot:1",
+          "player_id": 3158,
+          "player_name": "Luke Ayling",
+          "team_id": 7,
+          "team_name": "Middlesbrough",
+          "fixture_id": 19432298,
+          "fixture_label": "Wrexham vs Middlesbrough",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 16,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "12/16",
+            "odds": "@1.73",
+            "summary": "Luke Ayling (Middlesbrough) won in 12/16 @1.73"
           }
         },
         {
@@ -489,11 +533,11 @@
           "hits": 9,
           "sample": 12,
           "hit_rate": 0.75,
-          "odds": 1.73,
+          "odds": 1.83,
           "display": {
             "rate": "9/12",
-            "odds": "@1.73",
-            "summary": "Crysencio Summerville (West Ham United) won in 9/12 @1.73"
+            "odds": "@1.83",
+            "summary": "Crysencio Summerville (West Ham United) won in 9/12 @1.83"
           }
         },
         {
@@ -521,7 +565,7 @@
       ]
     }
   },
-  "caption": "Fixtures: Sat 02 May - Sun 03 May 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 11\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 8\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "caption": "Fixtures: Sat 02 May - Sun 03 May 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 13\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 8\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
   "slides": [
     {
       "slide_type": "cover",
@@ -535,18 +579,18 @@
       "threshold_bar": "75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
       "fixture_window": "Sat 02 May - Sun 03 May 2026",
       "stats": {
-        "total_players": 22,
+        "total_players": 24,
         "stat_types": 3,
         "hit_rate_threshold_pct": 75
       },
       "slide_number": 1,
-      "slide_count": 4
+      "slide_count": 5
     },
     {
       "slide_type": "section",
       "section_label": "1+ Shot",
       "section_page": 1,
-      "section_pages": 1,
+      "section_pages": 2,
       "rows": [
         {
           "id": "19432288:5967748:1+ Shot:1",
@@ -563,11 +607,11 @@
           "hits": 8,
           "sample": 10,
           "hit_rate": 0.8,
-          "odds": 1.8,
+          "odds": 1.73,
           "display": {
             "rate": "8/10",
-            "odds": "@1.80",
-            "summary": "Eric-Junior Bocat (Stoke City) won in 8/10 @1.80"
+            "odds": "@1.73",
+            "summary": "Eric-Junior Bocat (Stoke City) won in 8/10 @1.73"
           }
         },
         {
@@ -637,6 +681,28 @@
           }
         },
         {
+          "id": "19432298:8018:1+ Shot:1",
+          "player_id": 8018,
+          "player_name": "Callum Brittain",
+          "team_id": 7,
+          "team_name": "Middlesbrough",
+          "fixture_id": 19432298,
+          "fixture_label": "Wrexham vs Middlesbrough",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.73,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.73",
+            "summary": "Callum Brittain (Middlesbrough) won in 7/9 @1.73"
+          }
+        },
+        {
           "id": "19427208:5666458:1+ Shot:1",
           "player_id": 5666458,
           "player_name": "Maxence Lacroix",
@@ -695,11 +761,11 @@
           "hits": 6,
           "sample": 8,
           "hit_rate": 0.75,
-          "odds": 1.83,
+          "odds": 2.25,
           "display": {
             "rate": "6/8",
-            "odds": "@1.83",
-            "summary": "Luke Graham (Dundee) won in 6/8 @1.83"
+            "odds": "@2.25",
+            "summary": "Luke Graham (Dundee) won in 6/8 @2.25"
           }
         },
         {
@@ -739,11 +805,11 @@
           "hits": 9,
           "sample": 12,
           "hit_rate": 0.75,
-          "odds": 1.8,
+          "odds": 1.73,
           "display": {
             "rate": "9/12",
-            "odds": "@1.80",
-            "summary": "Tatsuki Seko (Stoke City) won in 9/12 @1.80"
+            "odds": "@1.73",
+            "summary": "Tatsuki Seko (Stoke City) won in 9/12 @1.73"
           }
         },
         {
@@ -769,6 +835,39 @@
           }
         },
         {
+          "id": "19432298:3158:1+ Shot:1",
+          "player_id": 3158,
+          "player_name": "Luke Ayling",
+          "team_id": 7,
+          "team_name": "Middlesbrough",
+          "fixture_id": 19432298,
+          "fixture_label": "Wrexham vs Middlesbrough",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 16,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "12/16",
+            "odds": "@1.73",
+            "summary": "Luke Ayling (Middlesbrough) won in 12/16 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 13,
+      "slide_number": 2,
+      "slide_count": 5
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 2,
+      "section_pages": 2,
+      "rows": [
+        {
           "id": "19425222:15779395:1+ Shot:1",
           "player_id": 15779395,
           "player_name": "Michel Adopo",
@@ -791,9 +890,9 @@
           }
         }
       ],
-      "section_total_rows": 11,
-      "slide_number": 2,
-      "slide_count": 4
+      "section_total_rows": 13,
+      "slide_number": 3,
+      "slide_count": 5
     },
     {
       "slide_type": "section",
@@ -869,8 +968,8 @@
         }
       ],
       "section_total_rows": 3,
-      "slide_number": 3,
-      "slide_count": 4
+      "slide_number": 4,
+      "slide_count": 5
     },
     {
       "slide_type": "section",
@@ -1025,11 +1124,11 @@
           "hits": 9,
           "sample": 12,
           "hit_rate": 0.75,
-          "odds": 1.73,
+          "odds": 1.83,
           "display": {
             "rate": "9/12",
-            "odds": "@1.73",
-            "summary": "Crysencio Summerville (West Ham United) won in 9/12 @1.73"
+            "odds": "@1.83",
+            "summary": "Crysencio Summerville (West Ham United) won in 9/12 @1.83"
           }
         },
         {
@@ -1056,13 +1155,13 @@
         }
       ],
       "section_total_rows": 8,
-      "slide_number": 4,
-      "slide_count": 4
+      "slide_number": 5,
+      "slide_count": 5
     }
   ],
   "verification": {
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "7e2a2f70c675982e45f53c1d5c08972af095e327fb5d91a5ebbd11f1f201689a"
+  "content_fingerprint": "b9d7a1196acaee60540b5b40aca8c437ff578a244680688cd22c36ac44157a25"
 }
