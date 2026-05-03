@@ -158,9 +158,9 @@
       "rank": 1,
       "writeup": "🎯 Patrick Mainka (Heidenheim) 1+ shots vs FC Bayern München (Bundesliga)\nThe defender is averaging 1.19 shots per 90 this season and has registered 1+ shots in 4 of his last 5 matches and 14 of his last 20 overall. Against teams like Bayer 04 Leverkusen, Borussia Mönchengladbach, and FC Bayern München, he's hit this line in 9 of 11 games (81.8%). His away average of 1.00 shots per 90 is still solid for this line.\n📊 14/20 (70%)\n💰 Kambi 1.97",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-05-03T05:41:00.662246"
       }
     },
     {
@@ -318,9 +318,9 @@
       "rank": 2,
       "writeup": "🎯 Mamadou Sangaré (Lens) 2+ shots vs Nice (Ligue 1)\nThe midfielder is averaging 2.96 shots per 90 this season and has hit 2+ shots in 4 of his last 5 matches. He's recorded 14 of his last 20 overall for this line. Despite playing away where his average drops to 2.20 per 90, he's still maintained strong recent form with 3.00 shots per game over his last 5 outings.\n📊 14/20 (70%)\n💰 Kambi 1.93",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-05-03T05:41:00.888566"
       }
     },
     {
@@ -478,9 +478,9 @@
       "rank": 3,
       "writeup": "🎯 Scott McTominay (Napoli) 2+ shots vs Como (Serie A)\nHe's averaging 4.40 shots per 90 this season and has hit 2+ shots in 15 of his last 20 matches overall. McTominay has managed 4.60 shots per game across his last 5 appearances, well above the 2-shot threshold. Away from home he still averages 3.50 shots per 90, giving him multiple routes to this line against Como.\n📊 15/20 (75%)\n💰 Kambi 1.84",
       "result": {
-        "actual_value": null,
-        "hit": null,
-        "checked_at": null
+        "actual_value": 0.0,
+        "hit": false,
+        "checked_at": "2026-05-03T05:41:01.090526"
       }
     }
   ]
