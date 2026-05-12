@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-12T09:44:19Z",
+  "baseline_date": "2026-05-05T09:11:30Z",
+  "current_date": "2026-05-12T09:44:19Z",
+  "mode": "generate",
+  "baseline_path": "output/polymarket/weekly_baseline.json",
+  "markets_with_movement": [
+    {
+      "slug": "will-theunitedstrand-get-a-haircut-by-2025-26-season-end",
+      "label": "TheUnitedStrand Haircut",
+      "max_move_pp": 34.9
+    },
+    {
+      "slug": "uefa-champions-league-winner",
+      "label": "UCL Winner",
+      "max_move_pp": 30.4
+    },
+    {
+      "slug": "ballon-dor-winner-2026",
+      "label": "Ballon d'Or Winner",
+      "max_move_pp": 17.3
+    },
+    {
+      "slug": "2025-2026-pfa-players-player-of-the-year-winner",
+      "label": "PFA Player Of The Year",
+      "max_move_pp": 9.1
+    }
+  ],
+  "biggest_mover_triggered": true,
+  "errors": []
+}

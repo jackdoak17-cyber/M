@@ -2,6 +2,6 @@ Polymarket Mover
 
 TheUnitedStrand Haircut odds shifted:
 
-• TheUnitedStrand: 12% → 35% ↑
+• TheUnitedStrand: 35% → 0.1% ↓
 
 via Polymarket
