@@ -6,16 +6,55 @@ Leave a like if you find these useful.
 - T. Castellanos (West Ham) = 1, 1, 1, 2, 3
 
 📊1+ Fouls Drawn in ≥5/5📊
+- J. Lerma (Palace) = 2, 1, 3, 2, 2
+- C. Bassey (Fulham) = 3, 1, 1, 1, 1
+- L. Shaw (Man Utd) = 2, 1, 1, 3, 1
+- B. Guimarães (Newcastle) = 5, 5, 3, 2, 4
+- L. Hall (Newcastle) = 3, 2, 2, 2, 2
+- E. Anderson (Nottm Forest) = 2, 1, 3, 1, 2
 - T. Hume (Sunderland) = 3, 1, 1, 2, 2
+- J. Gomes (Wolves) = 3, 1, 3, 1, 1
+- Y. Mosquera (Wolves) = 1, 3, 1, 1, 2
 
 📊1+ Fouls Committed in ≥5/5📊
+- K. Ajer (Brentford) = 1, 1, 1, 1, 2
+- C. Baleba (Brighton) = 1, 1, 2, 1, 1
+- K. Mitoma (Brighton) = 1, 2, 2, 2, 1
+- J. Garner (Everton) = 2, 1, 2, 2, 1
+- T. Iroegbunam (Everton) = 1, 1, 1, 2, 2
+- S. Lukić (Fulham) = 1, 3, 3, 4, 1
+- E. Ampadu (Leeds) = 1, 5, 1, 1, 2
+- L. Shaw (Man Utd) = 2, 1, 1, 1, 2
+- B. Guimarães (Newcastle) = 2, 1, 1, 1, 3
+- Joelinton (Newcastle) = 4, 3, 2, 1, 2
+- E. Anderson (Nottm Forest) = 2, 2, 2, 2, 2
+- I. Jesus (Nottm Forest) = 3, 1, 2, 1, 1
 - O. Alderete (Sunderland) = 1, 3, 1, 2, 1
 - C. Summerville (West Ham) = 2, 1, 4, 2, 3
 - T. Castellanos (West Ham) = 2, 1, 1, 1, 2
 - T. Souček (West Ham) = 2, 2, 2, 1, 1
+- André (Wolves) = 2, 2, 1, 2, 1
+- J. Gomes (Wolves) = 2, 1, 3, 3, 1
 
 📊2+ Shots in ≥4/5📊
+- I. Thiago (Brentford) = 2, 3, 0, 2, 3
+- D. Welbeck (Brighton) = 2, 2, 2, 4, 3
+- J. Hinshelwood (Brighton) = 2, 4, 2, 1, 2
+- K. Mitoma (Brighton) = 3, 1, 3, 2, 3
+- D. Calvert-Lewin (Leeds) = 2, 2, 0, 4, 5
+- A. Diallo (Man Utd) = 1, 3, 2, 2, 3
+- W. Osula (Newcastle) = 4, 4, 0, 2, 2
+- I. Jesus (Nottm Forest) = 4, 2, 1, 2, 2
 - T. Castellanos (West Ham) = 2, 5, 1, 3, 5
+- A. Armstrong (Wolves) = 0, 3, 3, 2, 3
 
 📊2+ Fouls Committed in ≥4/5📊
+- Joelinton (Newcastle) = 4, 3, 2, 1, 2
+- W. Osula (Newcastle) = 2, 3, 2, 0, 3
+- E. Anderson (Nottm Forest) = 2, 2, 2, 2, 2
 - C. Summerville (West Ham) = 2, 1, 4, 2, 3
+
+📊2+ Fouls Drawn in ≥4/5📊
+- J. Lerma (Palace) = 2, 1, 3, 2, 2
+- B. Guimarães (Newcastle) = 5, 5, 3, 2, 4
+- L. Hall (Newcastle) = 3, 2, 2, 2, 2
