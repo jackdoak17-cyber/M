@@ -1,17 +1,26 @@
+🏆 Change in EPL Winner probability since last update:
+
+• Arsenal: 82.5% -> 82.5%
+• Manchester City: 17.5% -> 17%
+• Brentford: 0.1% -> 0.1%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/english-premier-league-winner
+
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Bruno Fernandes: 71% -> 69.5%
-• Declan Rice: 22.5% -> 23.5%
-• Erling Haaland: 7.7% -> 7.8%
+• Bruno Fernandes: 69.5% -> 72.5%
+• Declan Rice: 23.5% -> 25%
+• Erling Haaland: 7.8% -> 6%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Ousmane Dembélé: 24.2% -> 27.5%
-• Harry Kane: 19.6% -> 19.6%
-• Kylian Mbappé: 8.5% -> 8.5%
+• Ousmane Dembélé: 27.5% -> 25.9%
+• Harry Kane: 19.6% -> 20.8%
+• Lamine Yamal: 8.5% -> 9.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
