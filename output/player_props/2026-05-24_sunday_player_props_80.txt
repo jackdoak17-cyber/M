@@ -3,8 +3,8 @@ I've collated todays Premier League 2+ player stats (80% hit-rates) based on the
 Leave a like if you find these useful.
 
 📊2+ Shots in ≥4/5📊
-- B. Saka (Arsenal) = 2, 2, 4, 2, 1
-- L. Trossard (Arsenal) = 3, 4, 1, 4, 2
+- B. Saka (Arsenal) = 3, 2, 2, 4, 2
+- L. Trossard (Arsenal) = 2, 3, 4, 1, 4
 - M. Rogers (Aston Villa) = 1, 2, 2, 3, 2
 - O. Watkins (Aston Villa) = 6, 2, 3, 4, 1
 - D. Ouattara (Brentford) = 5, 3, 4, 3, 2
@@ -24,7 +24,9 @@ Leave a like if you find these useful.
 - Richarlison (Spurs) = 4, 2, 3, 1, 5
 
 📊2+ Fouls Committed in ≥4/5📊
-- Z. Flemming (Burnley) = 5, 1, 2, 4, 3
+- B. Saka (Arsenal) = 2, 2, 0, 2, 3
+- Hannibal (Burnley) = 2, 3, 0, 2, 4
+- Z. Flemming (Burnley) = 3, 5, 1, 2, 4
 - J. Garner (Everton) = 3, 2, 1, 2, 2
 - M. Röhl (Everton) = 3, 4, 2, 2, 0
 - S. Lukić (Fulham) = 3, 1, 3, 3, 4
