@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-19T10:39:07Z",
+  "baseline_date": "2026-05-12T09:44:19Z",
+  "current_date": "2026-05-19T10:39:07Z",
+  "mode": "generate",
+  "baseline_path": "output/polymarket/weekly_baseline.json",
+  "markets_with_movement": [
+    {
+      "slug": "next-manchester-united-manager",
+      "label": "Next Man Utd Manager",
+      "max_move_pp": 12.25
+    },
+    {
+      "slug": "2025-2026-pfa-players-player-of-the-year-winner",
+      "label": "PFA Player Of The Year",
+      "max_move_pp": 11.5
+    }
+  ],
+  "biggest_mover_triggered": true,
+  "errors": []
+}
