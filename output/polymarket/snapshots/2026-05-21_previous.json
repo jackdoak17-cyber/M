@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T09:38:12Z",
+  "generated_at": "2026-05-21T15:22:00Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -88,7 +88,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-31T00:00:00Z",
-      "volume": 255115837.58747345,
+      "volume": 255130833.55057144,
       "top_outcomes": [
         {
           "label": "Nice",
@@ -242,40 +242,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 102060.83280799995,
+      "volume": 103986.32494199996,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
-          "probability": 0.625,
+          "probability": 0.635,
           "question": "Will Bruno Fernandes win the 2026 PFA Player of the Year?",
-          "best_bid": 0.6,
+          "best_bid": 0.62,
           "best_ask": 0.65,
-          "last_trade_price": 0.62,
+          "last_trade_price": 0.65,
           "outcome": "Yes",
-          "previous_probability": 0.5900000000000001,
-          "delta_pp": 3.499999999999992
+          "previous_probability": 0.625,
+          "delta_pp": 1.0000000000000009
         },
         {
           "label": "Declan Rice",
-          "probability": 0.385,
+          "probability": 0.355,
           "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
-          "best_bid": 0.36,
-          "best_ask": 0.41,
-          "last_trade_price": 0.41,
+          "best_bid": 0.33,
+          "best_ask": 0.38,
+          "last_trade_price": 0.39,
           "outcome": "Yes",
-          "previous_probability": 0.405,
-          "delta_pp": -2.0000000000000018
-        },
-        {
-          "label": "Erling Haaland",
-          "probability": 0.004999999999999999,
-          "question": "Will Erling Haaland win the 2026 PFA Player of the Year?",
-          "best_bid": 0.001,
-          "best_ask": 0.009,
-          "last_trade_price": 0.001,
-          "outcome": "Yes",
-          "previous_probability": 0.0015,
-          "delta_pp": 0.3499999999999999
+          "previous_probability": 0.385,
+          "delta_pp": -3.0000000000000027
         },
         {
           "label": "Martin Zubimendi",
@@ -300,6 +289,17 @@
           "delta_pp": 0.0
         },
         {
+          "label": "Erling Haaland",
+          "probability": 0.0015,
+          "question": "Will Erling Haaland win the 2026 PFA Player of the Year?",
+          "best_bid": 0.001,
+          "best_ask": 0.002,
+          "last_trade_price": 0.001,
+          "outcome": "Yes",
+          "previous_probability": 0.004999999999999999,
+          "delta_pp": -0.3499999999999999
+        },
+        {
           "label": "Bukayo Saka",
           "probability": 0.0015,
           "question": "Will Bukayo Saka win the 2026 PFA Player of the Year?",
@@ -319,40 +319,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 3410169.762106,
+      "volume": 3417153.646311,
       "top_outcomes": [
         {
           "label": "Ousmane Demb\u00e9l\u00e9",
-          "probability": 0.2445,
+          "probability": 0.244,
           "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
           "best_bid": 0.24,
-          "best_ask": 0.249,
-          "last_trade_price": 0.25,
+          "best_ask": 0.248,
+          "last_trade_price": 0.248,
           "outcome": "Yes",
           "previous_probability": 0.2445,
-          "delta_pp": 0.0
+          "delta_pp": -0.050000000000000044
         },
         {
           "label": "Harry Kane",
-          "probability": 0.214,
+          "probability": 0.2135,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
           "best_bid": 0.213,
-          "best_ask": 0.215,
+          "best_ask": 0.214,
           "last_trade_price": 0.215,
           "outcome": "Yes",
-          "previous_probability": 0.2135,
-          "delta_pp": 0.050000000000000044
-        },
-        {
-          "label": "Declan Rice",
-          "probability": 0.1015,
-          "question": "Will Declan Rice win the 2026 Ballon d'Or?",
-          "best_bid": 0.093,
-          "best_ask": 0.11,
-          "last_trade_price": 0.093,
-          "outcome": "Yes",
-          "previous_probability": 0.107,
-          "delta_pp": -0.5499999999999992
+          "previous_probability": 0.214,
+          "delta_pp": -0.050000000000000044
         },
         {
           "label": "Lamine Yamal",
@@ -360,32 +349,43 @@
           "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
           "best_bid": 0.09,
           "best_ask": 0.11,
-          "last_trade_price": 0.11,
+          "last_trade_price": 0.1,
           "outcome": "Yes",
           "previous_probability": 0.1,
           "delta_pp": 0.0
         },
         {
-          "label": "Kylian Mbapp\u00e9",
-          "probability": 0.09,
-          "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.08,
+          "label": "Declan Rice",
+          "probability": 0.097,
+          "question": "Will Declan Rice win the 2026 Ballon d'Or?",
+          "best_bid": 0.094,
           "best_ask": 0.1,
-          "last_trade_price": 0.09,
+          "last_trade_price": 0.093,
           "outcome": "Yes",
-          "previous_probability": 0.08,
-          "delta_pp": 0.9999999999999996
+          "previous_probability": 0.1015,
+          "delta_pp": -0.4500000000000004
         },
         {
-          "label": "Michael Olise",
+          "label": "Kylian Mbapp\u00e9",
           "probability": 0.08499999999999999,
-          "question": "Will Michael Olise win the 2026 Ballon d'Or?",
+          "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
           "best_bid": 0.08,
           "best_ask": 0.09,
           "last_trade_price": 0.09,
           "outcome": "Yes",
+          "previous_probability": 0.09,
+          "delta_pp": -0.5000000000000004
+        },
+        {
+          "label": "Michael Olise",
+          "probability": 0.07500000000000001,
+          "question": "Will Michael Olise win the 2026 Ballon d'Or?",
+          "best_bid": 0.07,
+          "best_ask": 0.08,
+          "last_trade_price": 0.08,
+          "outcome": "Yes",
           "previous_probability": 0.08499999999999999,
-          "delta_pp": 0.0
+          "delta_pp": -0.9999999999999981
         }
       ]
     },
@@ -550,7 +550,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-12-31T23:55:00Z",
-      "volume": 921292.6663229999,
+      "volume": 921413.0963229999,
       "top_outcomes": [
         {
           "label": "Michael Carrick",
@@ -560,8 +560,8 @@
           "best_ask": 0.991,
           "last_trade_price": 0.986,
           "outcome": "Yes",
-          "previous_probability": 0.989,
-          "delta_pp": -0.050000000000005596
+          "previous_probability": 0.9884999999999999,
+          "delta_pp": 0.0
         },
         {
           "label": "Ole Gunnar Solskj\u00e6r",
@@ -579,7 +579,7 @@
           "probability": 0.009,
           "question": "Will Gareth Southgate be appointed as manager of Manchester United?",
           "best_bid": null,
-          "best_ask": 0.009,
+          "best_ask": 0.007,
           "last_trade_price": 0.009,
           "outcome": "Yes",
           "previous_probability": 0.009,
@@ -627,18 +627,18 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-25T00:00:00Z",
-      "volume": 175251.8125789998,
+      "volume": 180232.8425789998,
       "top_outcomes": [
         {
           "label": "TheUnitedStrand",
-          "probability": 0.001,
+          "probability": 0.011,
           "question": "Will TheUnitedStrand get a haircut by 2025-26 season end?",
-          "best_bid": null,
-          "best_ask": 0.001,
-          "last_trade_price": 0.001,
+          "best_bid": 0.01,
+          "best_ask": 0.012,
+          "last_trade_price": 0.005,
           "outcome": "Yes",
           "previous_probability": 0.001,
-          "delta_pp": 0.0
+          "delta_pp": 0.9999999999999999
         }
       ]
     }
