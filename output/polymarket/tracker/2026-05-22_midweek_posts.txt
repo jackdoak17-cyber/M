@@ -1,15 +1,24 @@
 🏆 Change in PFA Player Of The Year probability since last update:
 
-• Bruno Fernandes: 63.5% -> 74.5%
-• Declan Rice: 36.5% -> 26%
-• Bukayo Saka: 0.1% -> 0.2%
+• Bruno Fernandes: 74.5% -> 74.5%
+• Declan Rice: 26% -> 20.5%
+• Bukayo Saka: 0.2% -> 0.5%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
+🏆 Change in Next Man Utd Manager probability since last update:
+
+• Michael Carrick: 98.8% -> 100%
+• Ole Gunnar Solskjær: 0.9% -> 0.9%
+• Gareth Southgate: 0.9% -> 0.9%
+
+[🔮 via @Polymarket]
+https://polymarket.com/event/next-manchester-united-manager
+
 🏆 Change in TheUnitedStrand Haircut probability since last update:
 
-• TheUnitedStrand: 5.2% -> 1.3%
+• TheUnitedStrand: 1.3% -> 0.1%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/will-theunitedstrand-get-a-haircut-by-2025-26-season-end
