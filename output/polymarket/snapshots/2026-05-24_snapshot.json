@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T13:23:48Z",
+  "generated_at": "2026-05-24T19:15:23Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -88,7 +88,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-31T00:00:00Z",
-      "volume": 256002725.71601245,
+      "volume": 256024172.43176445,
       "top_outcomes": [
         {
           "label": "Nice",
@@ -242,40 +242,40 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 149393.37439399993,
+      "volume": 154773.48203099993,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
-          "probability": 0.77,
+          "probability": 0.9,
           "question": "Will Bruno Fernandes win the 2026 PFA Player of the Year?",
-          "best_bid": 0.76,
-          "best_ask": 0.78,
-          "last_trade_price": 0.76,
+          "best_bid": 0.89,
+          "best_ask": 0.91,
+          "last_trade_price": 0.9,
           "outcome": "Yes",
-          "previous_probability": 0.76,
-          "delta_pp": 1.0000000000000009
+          "previous_probability": 0.77,
+          "delta_pp": 13.0
         },
         {
           "label": "Declan Rice",
-          "probability": 0.2,
+          "probability": 0.13,
           "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
-          "best_bid": 0.19,
-          "best_ask": 0.21,
-          "last_trade_price": 0.21,
+          "best_bid": 0.1,
+          "best_ask": 0.16,
+          "last_trade_price": 0.12,
           "outcome": "Yes",
-          "previous_probability": 0.235,
-          "delta_pp": -3.4999999999999973
+          "previous_probability": 0.2,
+          "delta_pp": -7.000000000000001
         },
         {
           "label": "Bukayo Saka",
-          "probability": 0.004,
+          "probability": 0.006,
           "question": "Will Bukayo Saka win the 2026 PFA Player of the Year?",
-          "best_bid": 0.001,
+          "best_bid": null,
           "best_ask": 0.007,
-          "last_trade_price": 0.001,
+          "last_trade_price": 0.006,
           "outcome": "Yes",
           "previous_probability": 0.004,
-          "delta_pp": 0.0
+          "delta_pp": 0.2
         },
         {
           "label": "Martin Zubimendi",
@@ -300,15 +300,15 @@
           "delta_pp": 0.0
         },
         {
-          "label": "Erling Haaland",
-          "probability": 0.0015,
-          "question": "Will Erling Haaland win the 2026 PFA Player of the Year?",
-          "best_bid": 0.001,
-          "best_ask": 0.002,
+          "label": "Phil Foden",
+          "probability": 0.001,
+          "question": "Will Phil Foden win the 2026 PFA Player of the Year?",
+          "best_bid": null,
+          "best_ask": 0.001,
           "last_trade_price": 0.001,
           "outcome": "Yes",
-          "previous_probability": 0.0015,
-          "delta_pp": 0.0
+          "previous_probability": null,
+          "delta_pp": null
         }
       ]
     },
@@ -319,29 +319,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 3473053.962081,
+      "volume": 3476063.144988,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.2375,
+          "probability": 0.256,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.236,
-          "best_ask": 0.239,
-          "last_trade_price": 0.24,
+          "best_bid": 0.253,
+          "best_ask": 0.259,
+          "last_trade_price": 0.256,
           "outcome": "Yes",
-          "previous_probability": 0.2345,
-          "delta_pp": 0.30000000000000027
+          "previous_probability": 0.2375,
+          "delta_pp": 1.8500000000000016
         },
         {
           "label": "Ousmane Demb\u00e9l\u00e9",
-          "probability": 0.1885,
+          "probability": 0.1895,
           "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.188,
-          "best_ask": 0.189,
+          "best_bid": 0.189,
+          "best_ask": 0.19,
           "last_trade_price": 0.19,
           "outcome": "Yes",
           "previous_probability": 0.1885,
-          "delta_pp": 0.0
+          "delta_pp": 0.10000000000000009
         },
         {
           "label": "Lamine Yamal",
@@ -356,36 +356,36 @@
         },
         {
           "label": "Declan Rice",
-          "probability": 0.1075,
+          "probability": 0.105,
           "question": "Will Declan Rice win the 2026 Ballon d'Or?",
           "best_bid": 0.103,
-          "best_ask": 0.112,
+          "best_ask": 0.107,
           "last_trade_price": 0.107,
           "outcome": "Yes",
           "previous_probability": 0.1075,
-          "delta_pp": 0.0
+          "delta_pp": -0.2500000000000002
         },
         {
           "label": "Kylian Mbapp\u00e9",
-          "probability": 0.08499999999999999,
+          "probability": 0.09,
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
           "best_bid": 0.08,
-          "best_ask": 0.09,
+          "best_ask": 0.1,
           "last_trade_price": 0.1,
           "outcome": "Yes",
           "previous_probability": 0.08499999999999999,
-          "delta_pp": 0.0
+          "delta_pp": 0.5000000000000004
         },
         {
           "label": "Vitinha",
-          "probability": 0.074,
+          "probability": 0.08299999999999999,
           "question": "Will Vitinha win the 2026 Ballon d'Or?",
-          "best_bid": 0.073,
-          "best_ask": 0.075,
-          "last_trade_price": 0.074,
+          "best_bid": 0.078,
+          "best_ask": 0.088,
+          "last_trade_price": 0.087,
           "outcome": "Yes",
           "previous_probability": 0.074,
-          "delta_pp": 0.0
+          "delta_pp": 0.8999999999999995
         }
       ]
     },
@@ -627,7 +627,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-25T00:00:00Z",
-      "volume": 186910.29530299985,
+      "volume": 186929.64530299985,
       "top_outcomes": [
         {
           "label": "TheUnitedStrand",
