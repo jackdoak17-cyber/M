@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>OddsSearch Weekly Roundup + Preview</title>
+    <style>
+      :root {
+        --page: #0b0f14;
+        --surface: #0f1620;
+        --surface-2: #0a1018;
+        --surface-3: #111923;
+        --line: rgba(255, 255, 255, 0.075);
+        --line-strong: rgba(245, 165, 36, 0.24);
+        --text: #f8fafc;
+        --muted: #94a3b8;
+        --faint: #64748b;
+        --amber: #f5a524;
+        --amber-soft: rgba(245, 165, 36, 0.1);
+        --green: #10b981;
+        --green-soft: rgba(16, 185, 129, 0.12);
+        --red: #fb4778;
+        --red-soft: rgba(251, 71, 120, 0.12);
+        --yellow: #facc15;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .page {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 28px 18px 52px;
+      }
+
+      .hero,
+      .section,
+      .cta {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(15, 22, 32, 0.82);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+      }
+
+      .hero {
+        border-color: var(--line-strong);
+        padding: 22px;
+        background:
+          linear-gradient(135deg, #0f1620, rgba(15, 22, 32, 0.96) 68%, rgba(245, 165, 36, 0.08));
+      }
+
+      .section,
+      .cta {
+        margin-top: 18px;
+        padding: 18px;
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--amber);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        letter-spacing: -0.01em;
+      }
+
+      h1 {
+        font-size: 34px;
+        line-height: 1.05;
+      }
+
+      h2 {
+        font-size: 21px;
+        line-height: 1.2;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .copy {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .section-head {
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 13px;
+        margin-bottom: 14px;
+      }
+
+      .fixture {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background:
+          radial-gradient(circle at 50% 42%, rgba(56, 78, 108, 0.1) 0%, rgba(31, 42, 55, 0.06) 38%, rgba(13, 21, 33, 0) 72%),
+          linear-gradient(180deg, #0f1620 0%, #0d1521 100%);
+        overflow: hidden;
+      }
+
+      .fixture + .fixture {
+        margin-top: 10px;
+      }
+
+      .fixture-grid,
+      .fixture-head {
+        display: grid;
+        grid-template-columns: minmax(0, 2.1fr) 0.9fr 0.8fr 0.8fr 1.35fr 0.75fr;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .fixture-head {
+        padding: 0 12px 8px;
+        color: var(--faint);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .fixture-grid {
+        padding: 12px;
+      }
+
+      .team-stack {
+        display: grid;
+        gap: 8px;
+        min-width: 0;
+      }
+
+      .team-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+      }
+
+      .badge-team {
+        display: inline-flex;
+        width: 28px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: #0b1320;
+        color: #dbeafe;
+        font-size: 9px;
+        font-weight: 800;
+        box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.24);
+      }
+
+      .team-name {
+        overflow: hidden;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .form {
+        display: flex;
+        gap: 3px;
+      }
+
+      .form-badge {
+        display: inline-flex;
+        width: 17px;
+        height: 17px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        color: white;
+        font-size: 9px;
+        font-weight: 800;
+      }
+
+      .w {
+        background: var(--green);
+      }
+
+      .d {
+        background: #f59e0b;
+      }
+
+      .l {
+        background: #e11d48;
+      }
+
+      .score,
+      .ko {
+        display: inline-flex;
+        min-width: 66px;
+        min-height: 43px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        border-radius: 9px;
+        background: #0b1320;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      .score small {
+        display: block;
+        color: var(--faint);
+        font-size: 9px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .value {
+        text-align: center;
+        color: #e2e8f0;
+        font-size: 13px;
+        font-weight: 750;
+      }
+
+      .win-value {
+        color: #5eead4;
+      }
+
+      .metric-pair {
+        display: grid;
+        gap: 6px;
+        text-align: center;
+      }
+
+      .metric-label {
+        color: var(--faint);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .metric-main {
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .green {
+        color: #00e0a4;
+      }
+
+      .amber {
+        color: var(--yellow);
+      }
+
+      .red {
+        color: var(--red);
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        padding: 4px 8px;
+        font-size: 11px;
+        font-weight: 800;
+      }
+
+      .pill-win {
+        border: 1px solid rgba(16, 185, 129, 0.38);
+        background: var(--green-soft);
+        color: #a7f3d0;
+      }
+
+      .pill-loss {
+        border: 1px solid rgba(251, 71, 120, 0.38);
+        background: var(--red-soft);
+        color: #fecdd3;
+      }
+
+      .ppg-meter {
+        display: inline-grid;
+        gap: 3px;
+        min-width: 52px;
+      }
+
+      .ppg-bar {
+        height: 3px;
+        border-radius: 999px;
+        background: #334155;
+      }
+
+      .ppg-fill {
+        display: block;
+        height: 100%;
+        border-radius: inherit;
+        background: #f59e0b;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(10, 16, 24, 0.72);
+        padding: 13px;
+      }
+
+      .fixture-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(10, 16, 24, 0.72);
+        padding: 14px;
+      }
+
+      .fixture-title-main {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 22px;
+        font-weight: 850;
+      }
+
+      .odds-strip {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .odds-card {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(10, 16, 24, 0.72);
+        padding: 13px;
+      }
+
+      .odds-card strong {
+        display: block;
+        margin-top: 4px;
+        color: white;
+        font-size: 34px;
+        line-height: 1;
+      }
+
+      .compare-table,
+      .simple-table,
+      .strategy-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .compare-wrap,
+      .table-wrap {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        overflow: hidden;
+        background: rgba(10, 16, 24, 0.72);
+      }
+
+      th {
+        background: rgba(255, 255, 255, 0.02);
+        color: var(--faint);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+        padding: 10px;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .right {
+        text-align: right;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .tiny {
+        color: var(--faint);
+        font-size: 11px;
+      }
+
+      .photo-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .player-photo {
+        width: 44px;
+        height: 44px;
+        flex: 0 0 auto;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 999px;
+        background: #17202c;
+        object-fit: cover;
+      }
+
+      .headshot {
+        width: 52px;
+        height: 52px;
+      }
+
+      .stat-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+
+      .fixture-badges {
+        justify-content: center;
+      }
+
+      .fixture-badges .pill {
+        padding: 4px 6px;
+        font-size: 10px;
+      }
+
+      .chip {
+        display: inline-flex;
+        min-width: 22px;
+        justify-content: center;
+        border: 1px solid rgba(16, 185, 129, 0.45);
+        border-radius: 5px;
+        background: var(--green-soft);
+        color: #a7f3d0;
+        padding: 3px 6px;
+        font-size: 11px;
+        font-weight: 800;
+      }
+
+      .chip.miss {
+        border-color: rgba(251, 71, 120, 0.45);
+        background: var(--red-soft);
+        color: #fecdd3;
+      }
+
+      .heatmap {
+        position: relative;
+        height: 270px;
+        border: 1px solid rgba(16, 185, 129, 0.25);
+        border-radius: 10px;
+        background: linear-gradient(90deg, #14351f, #1f5c31, #14351f);
+        overflow: hidden;
+      }
+
+      .pitch-line {
+        position: absolute;
+        inset: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        border-radius: 8px;
+      }
+
+      .pitch-mid {
+        position: absolute;
+        top: 15px;
+        bottom: 15px;
+        left: 50%;
+        width: 1px;
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      .pitch-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 78px;
+        height: 78px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        transform: translate(-50%, -50%);
+      }
+
+      .heat-player {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border: 1px solid rgba(245, 165, 36, 0.5);
+        border-radius: 6px;
+        background: rgba(245, 165, 36, 0.19);
+        color: #ffe0a3;
+        padding: 5px 7px;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 800;
+      }
+
+      .cta {
+        border-color: var(--line-strong);
+        background: rgba(245, 165, 36, 0.07);
+        text-align: center;
+      }
+
+      .button {
+        display: inline-flex;
+        margin-top: 16px;
+        border-radius: 7px;
+        background: var(--amber);
+        color: #1a1206;
+        padding: 11px 22px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      @media (max-width: 760px) {
+        .page {
+          padding: 16px 10px 36px;
+        }
+
+        h1 {
+          font-size: 27px;
+        }
+
+        .fixture-grid,
+        .fixture-head {
+          grid-template-columns: 1fr;
+        }
+
+        .fixture-head {
+          display: none;
+        }
+
+        .score,
+        .ko {
+          width: 100%;
+        }
+
+        .odds-strip,
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+
+        .fixture-title {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .strategy-table thead {
+          display: none;
+        }
+
+        .strategy-table,
+        .strategy-table tbody,
+        .strategy-table tr,
+        .strategy-table td {
+          display: block;
+          width: 100%;
+        }
+
+        .strategy-table tr {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+          padding: 8px 0;
+        }
+
+        .strategy-table tr:last-child {
+          border-bottom: 0;
+        }
+
+        .strategy-table td {
+          border-bottom: 0;
+          padding: 6px 10px;
+        }
+
+        .strategy-table td:nth-child(1) {
+          padding-top: 10px;
+        }
+
+        .strategy-table td:nth-child(3),
+        .strategy-table td:nth-child(5) {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Premier League weekly email</p>
+        <h1>OddsSearch Weekly Roundup + Preview</h1>
+        <p class="copy">
+          Last week's results, Saturday's fixture board, one marquee match deep dive and example strategy watchlists.
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">Section 1</p>
+          <h2>Previous Premier League Gameweek Review</h2>
+          <p class="copy">
+            Final result, winning odds and pregame stats in the same fixture-board style as the product.
+          </p>
+        </div>
+
+        <div class="fixture-head">
+          <span>Team</span>
+          <span class="center">Form</span>
+          <span class="center">Result</span>
+          <span class="center">Winning odds</span>
+          <span class="center">Pregame stats</span>
+          <span class="center">PPG</span>
+        </div>
+
+        <article class="fixture">
+          <div class="fixture-grid">
+            <div class="team-stack">
+              <div class="team-row"><span class="badge-team">ARS</span><span class="team-name">Arsenal</span></div>
+              <div class="team-row"><span class="badge-team">CHE</span><span class="team-name">Chelsea</span></div>
+            </div>
+            <div class="form center">
+              <span class="form-badge w">W</span><span class="form-badge w">W</span><span class="form-badge d">D</span><span class="form-badge w">W</span><span class="form-badge l">L</span>
+            </div>
+            <div class="score"><div><small>FT</small>2 - 1</div></div>
+            <div class="value win-value">1.95</div>
+            <div class="metric-pair">
+              <span class="metric-label">Pregame stats</span>
+              <div class="stat-badges fixture-badges">
+                <span class="pill pill-win">BTTS 68% won</span>
+                <span class="pill pill-win">2+ goals 84% won</span>
+                <span class="pill pill-win">O2.5 57% won</span>
+              </div>
+            </div>
+            <div class="value"><span class="ppg-meter">2.18<span class="ppg-bar"><span class="ppg-fill" style="width: 73%"></span></span></span></div>
+          </div>
+        </article>
+
+        <article class="fixture">
+          <div class="fixture-grid">
+            <div class="team-stack">
+              <div class="team-row"><span class="badge-team">BHA</span><span class="team-name">Brighton</span></div>
+              <div class="team-row"><span class="badge-team">MUN</span><span class="team-name">Man United</span></div>
+            </div>
+            <div class="form center">
+              <span class="form-badge w">W</span><span class="form-badge d">D</span><span class="form-badge l">L</span><span class="form-badge w">W</span><span class="form-badge d">D</span>
+            </div>
+            <div class="score"><div><small>FT</small>1 - 1</div></div>
+            <div class="value win-value">3.55</div>
+            <div class="metric-pair">
+              <span class="metric-label">Pregame stats</span>
+              <div class="stat-badges fixture-badges">
+                <span class="pill pill-win">BTTS 72% won</span>
+                <span class="pill pill-win">2+ goals 79% won</span>
+                <span class="pill pill-loss">O2.5 46% lost</span>
+              </div>
+            </div>
+            <div class="value"><span class="ppg-meter">1.48<span class="ppg-bar"><span class="ppg-fill" style="width: 49%"></span></span></span></div>
+          </div>
+        </article>
+
+        <div class="table-wrap" style="margin-top: 12px">
+          <table class="simple-table">
+            <thead><tr><th>Highest odds winners</th><th>Result</th><th>Odds</th></tr></thead>
+            <tbody>
+              <tr><td>Brighton vs Man United</td><td>1 - 1</td><td><strong>3.55</strong></td></tr>
+              <tr><td>Everton vs Tottenham</td><td>0 - 2</td><td><strong>2.34</strong></td></tr>
+              <tr><td>Arsenal vs Chelsea</td><td>2 - 1</td><td><strong>1.95</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">Section 2</p>
+          <h2>Upcoming Premier League Weekend Preview</h2>
+          <p class="copy">Saturday fixtures with team stats, home/away odds, form, PPG and pregame markers.</p>
+        </div>
+
+        <div class="fixture-head">
+          <span>Team</span>
+          <span class="center">Form</span>
+          <span class="center">KO</span>
+          <span class="center">Odds</span>
+          <span class="center">Pregame stats</span>
+          <span class="center">PPG</span>
+        </div>
+
+        <article class="fixture">
+          <div class="fixture-grid">
+            <div class="team-stack">
+              <div class="team-row"><span class="badge-team">LIV</span><span class="team-name">Liverpool</span></div>
+              <div class="team-row"><span class="badge-team">MCI</span><span class="team-name">Man City</span></div>
+            </div>
+            <div class="form center">
+              <span class="form-badge w">W</span><span class="form-badge w">W</span><span class="form-badge d">D</span><span class="form-badge w">W</span><span class="form-badge l">L</span>
+            </div>
+            <div class="ko">17:30</div>
+            <div class="value"><span class="muted">2.62</span><br /><span class="win-value">2.55</span></div>
+            <div class="metric-pair">
+              <span class="metric-label">Pregame stats</span>
+              <div class="stat-badges fixture-badges">
+                <span class="pill pill-win">O1.5 88% / 83%</span>
+                <span class="pill pill-win">BTTS 74% / 71%</span>
+                <span class="pill pill-loss">O2.5 mixed</span>
+              </div>
+            </div>
+            <div class="value">2.05<br /><span class="muted">2.12</span></div>
+          </div>
+        </article>
+
+        <article class="fixture">
+          <div class="fixture-grid">
+            <div class="team-stack">
+              <div class="team-row"><span class="badge-team">NEW</span><span class="team-name">Newcastle</span></div>
+              <div class="team-row"><span class="badge-team">AVL</span><span class="team-name">Aston Villa</span></div>
+            </div>
+            <div class="form center">
+              <span class="form-badge w">W</span><span class="form-badge w">W</span><span class="form-badge l">L</span><span class="form-badge d">D</span><span class="form-badge w">W</span>
+            </div>
+            <div class="ko">15:00</div>
+            <div class="value"><span class="win-value">2.12</span><br /><span class="muted">3.15</span></div>
+            <div class="metric-pair">
+              <span class="metric-label">Pregame stats</span>
+              <div class="stat-badges fixture-badges">
+                <span class="pill pill-win">O1.5 81% / 76%</span>
+                <span class="pill pill-win">BTTS 67% / 64%</span>
+                <span class="pill pill-win">Home PPG edge</span>
+              </div>
+            </div>
+            <div class="value">1.83<br /><span class="muted">1.66</span></div>
+          </div>
+        </article>
+
+        <article class="fixture">
+          <div class="fixture-grid">
+            <div class="team-stack">
+              <div class="team-row"><span class="badge-team">WHU</span><span class="team-name">West Ham</span></div>
+              <div class="team-row"><span class="badge-team">BRE</span><span class="team-name">Brentford</span></div>
+            </div>
+            <div class="form center">
+              <span class="form-badge l">L</span><span class="form-badge d">D</span><span class="form-badge w">W</span><span class="form-badge l">L</span><span class="form-badge w">W</span>
+            </div>
+            <div class="ko">15:00</div>
+            <div class="value"><span class="win-value">2.38</span><br /><span class="muted">2.95</span></div>
+            <div class="metric-pair">
+              <span class="metric-label">Pregame stats</span>
+              <div class="stat-badges fixture-badges">
+                <span class="pill pill-win">O1.5 76% / 72%</span>
+                <span class="pill pill-win">BTTS 69% / 65%</span>
+                <span class="pill pill-loss">PPG close</span>
+              </div>
+            </div>
+            <div class="value">1.31<br /><span class="muted">1.28</span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">Section 3</p>
+          <h2>Marquee Fixture Deep Dive</h2>
+        </div>
+
+        <div class="fixture-title">
+          <div>
+            <div class="fixture-title-main">
+              <span class="badge-team">LIV</span> Liverpool vs Man City <span class="badge-team">MCI</span>
+            </div>
+            <p class="tiny" style="margin-top: 6px">Saturday 17:30 - Premier League - selected by evening kickoff rule</p>
+          </div>
+          <span class="pill pill-win">Featured fixture</span>
+        </div>
+
+        <div class="odds-strip">
+          <div class="odds-card"><div class="metric-label">Home win</div><strong>2.62</strong><p class="tiny">38.2% implied</p></div>
+          <div class="odds-card"><div class="metric-label">Away win</div><strong>2.55</strong><p class="tiny">39.2% implied</p></div>
+        </div>
+
+        <div class="two-col" style="margin-top: 12px">
+          <div class="panel">
+            <h3>Recent Form</h3>
+            <div style="height: 12px"></div>
+            <div class="team-row"><span class="badge-team">LIV</span><strong>Liverpool home</strong><span class="pill pill-win">PPG 2.20</span></div>
+            <div class="stat-badges" style="margin: 10px 0 16px">
+              <span class="form-badge w">W</span><span class="form-badge w">W</span><span class="form-badge d">D</span><span class="form-badge w">W</span><span class="form-badge l">L</span>
+            </div>
+            <div class="team-row"><span class="badge-team">MCI</span><strong>Man City away</strong><span class="pill pill-win">PPG 2.40</span></div>
+            <div class="stat-badges" style="margin-top: 10px">
+              <span class="form-badge w">W</span><span class="form-badge d">D</span><span class="form-badge w">W</span><span class="form-badge w">W</span><span class="form-badge w">W</span>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Head to Head</h3>
+            <div style="height: 12px"></div>
+            <div class="team-row" style="justify-content: space-between">
+              <span><span class="badge-team">LIV</span> <strong>1 win</strong></span>
+              <span><strong>2 draws</strong></span>
+              <span><strong>2 wins</strong> <span class="badge-team">MCI</span></span>
+            </div>
+            <div class="stat-badges" style="margin-top: 14px">
+              <span class="pill pill-win">Avg goals 2.8</span>
+              <span class="pill pill-win">BTTS 4/5</span>
+              <span class="pill pill-loss">Clean sheet 1/5</span>
+            </div>
+            <table class="simple-table" style="margin-top: 12px">
+              <tr><td>05 May</td><td class="center">Liverpool 1 - 1 Man City</td></tr>
+              <tr><td>23 Nov</td><td class="center">Man City 2 - 2 Liverpool</td></tr>
+              <tr><td>10 Mar</td><td class="center">Liverpool 1 - 3 Man City</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top: 12px">
+          <h3>Lineup Heatmap</h3>
+          <div class="stat-badges" style="margin: 10px 0">
+            <span class="pill pill-win">Fouls Won</span><span class="pill pill-loss">Fouls Committed</span><span class="pill pill-loss">Shots</span><span class="pill pill-loss">SOT</span>
+          </div>
+          <div class="heatmap">
+            <div class="pitch-line"></div><div class="pitch-mid"></div><div class="pitch-circle"></div>
+            <div class="heat-player" style="left: 72%; top: 25%">Salah<br />1.8</div>
+            <div class="heat-player" style="left: 62%; top: 18%">Diaz<br />1.4</div>
+            <div class="heat-player" style="left: 30%; top: 66%">Haaland<br />2.1</div>
+            <div class="heat-player" style="left: 42%; top: 74%">Foden<br />1.6</div>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top: 12px">
+          <h3>Player Props Watchlist</h3>
+          <div class="table-wrap" style="margin-top: 10px">
+            <table class="simple-table">
+              <thead><tr><th>Player</th><th>Stat</th><th>Hit</th><th>Odds</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><div class="photo-row"><img class="player-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mohamed_Salah_2018.jpg" alt="Mohamed Salah" /><span><strong>M. Salah</strong><br /><span class="tiny">Liverpool</span></span></div></td>
+                  <td>1+ SOT</td><td><span class="pill pill-win">5/5</span></td><td>1.45</td>
+                </tr>
+                <tr>
+                  <td><div class="photo-row"><img class="player-photo" src="https://resources.premierleague.com/premierleague/photos/players/250x250/p209244.png" alt="Phil Foden" /><span><strong>P. Foden</strong><br /><span class="tiny">Man City</span></span></div></td>
+                  <td>1+ SOT</td><td><span class="pill pill-win">4/5</span></td><td>1.72</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top: 12px">
+          <h3>Team Shots</h3>
+          <div class="table-wrap" style="margin-top: 10px">
+            <table class="simple-table">
+              <thead><tr><th>Market</th><th>Liverpool</th><th>Man City</th></tr></thead>
+              <tbody>
+                <tr><td>Over 10.5 shots</td><td><span class="pill pill-win">4/5</span> 1.62</td><td><span class="pill pill-win">5/5</span> 1.48</td></tr>
+                <tr><td>Over 3.5 SOT</td><td><span class="pill pill-win">4/5</span> 1.70</td><td><span class="pill pill-win">4/5</span> 1.66</td></tr>
+                <tr><td>1+ goal</td><td><span class="pill pill-win">5/5</span> 1.24</td><td><span class="pill pill-win">5/5</span> 1.22</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">Section 4</p>
+          <h2>Example SOT Strategy</h2>
+          <p class="copy">Players with 1+ shot on target in 4 of last 5 games, all leagues, odds required, min odds 1.20, excluding teams with ML above 4.00.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="strategy-table">
+            <thead><tr><th>Player</th><th>Fixture</th><th>Strategy badges</th><th>Odds</th><th>Last 5</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="photo-row"><img class="player-photo headshot" src="https://resources.premierleague.com/premierleague/photos/players/250x250/p223340.png" alt="Bukayo Saka" /><span><strong>B. Saka</strong><br /><span class="tiny">Arsenal - Premier League</span></span></div></td>
+                <td>Arsenal vs Wolves</td>
+                <td><span class="pill pill-win">1+ SOT</span> <span class="pill pill-win">5/5</span> <span class="pill pill-win">ML ok</span></td>
+                <td><strong>1.50</strong><br /><span class="tiny">Bet365</span></td>
+                <td><span class="chip">1</span><span class="chip">2</span><span class="chip">1</span><span class="chip">1</span><span class="chip">3</span></td>
+              </tr>
+              <tr>
+                <td><div class="photo-row"><img class="player-photo headshot" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mohamed_Salah_2018.jpg" alt="Mohamed Salah" /><span><strong>M. Salah</strong><br /><span class="tiny">Liverpool - Premier League</span></span></div></td>
+                <td>Liverpool vs Man City</td>
+                <td><span class="pill pill-win">1+ SOT</span> <span class="pill pill-win">5/5</span> <span class="pill pill-win">ML ok</span></td>
+                <td><strong>1.45</strong><br /><span class="tiny">Kambi</span></td>
+                <td><span class="chip">2</span><span class="chip">1</span><span class="chip">3</span><span class="chip">1</span><span class="chip">2</span></td>
+              </tr>
+              <tr>
+                <td><div class="photo-row"><img class="player-photo headshot" src="https://resources.premierleague.com/premierleague/photos/players/250x250/p209244.png" alt="Phil Foden" /><span><strong>P. Foden</strong><br /><span class="tiny">Man City - Premier League</span></span></div></td>
+                <td>Liverpool vs Man City</td>
+                <td><span class="pill pill-win">1+ SOT</span> <span class="pill pill-win">4/5</span> <span class="pill pill-win">ML ok</span></td>
+                <td><strong>1.72</strong><br /><span class="tiny">Paddy Power</span></td>
+                <td><span class="chip">1</span><span class="chip">1</span><span class="chip miss">0</span><span class="chip">2</span><span class="chip">1</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <p class="eyebrow">Section 5</p>
+          <h2>Match Markets Watchlist</h2>
+          <p class="copy">Example match-market strategy tables for 2+ goals and double chance.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="strategy-table">
+            <thead><tr><th>Fixture</th><th>Market</th><th>Badges</th><th>Odds</th><th>Bookmaker</th></tr></thead>
+            <tbody>
+              <tr><td>Newcastle vs Aston Villa</td><td>2+ goals</td><td><span class="pill pill-win">Both teams 4/5</span></td><td>1.30</td><td>Bet365</td></tr>
+              <tr><td>Dortmund vs Leipzig</td><td>2+ goals</td><td><span class="pill pill-win">Both teams 5/5</span></td><td>1.24</td><td>Kambi</td></tr>
+              <tr><td>Arsenal vs Wolves</td><td>Double chance</td><td><span class="pill pill-win">DC 5/5</span> <span class="pill pill-win">PPG 2.10</span></td><td>1.22</td><td>Bet365</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="cta">
+        <h2>Sign up to explore all supported leagues</h2>
+        <p class="copy">
+          The email shows a small Premier League sample. Sign up to view broader fixtures, build criteria and run your own research workflows.
+        </p>
+        <a class="button" href="#">Sign up</a>
+        <p class="tiny" style="margin-top: 16px">Odds and stats are research tools, not guarantees. Always compare prices, use sensible staking and never chase losses.</p>
+      </section>
+    </main>
+  </body>
+</html>
