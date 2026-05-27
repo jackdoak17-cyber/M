@@ -1,11 +1,17 @@
 # OddsSearch Weekly Roundup Preview
 
-Standalone mock email preview for the OddsSearch Weekly Roundup + Preview workflow.
+Standalone mock previews for the OddsSearch Weekly Digest workflow.
 
 Open locally:
 
 ```bash
 open /Users/jackdoak/M/weekly_roundup_preview/index.html
+```
+
+Open the email-safe version that is sent through Resend:
+
+```bash
+open /Users/jackdoak/M/weekly_roundup_preview/email.html
 ```
 
 Purpose:
@@ -24,11 +30,11 @@ Add these values to `.env.local`:
 
 ```bash
 RESEND_API_KEY=re_...
-RESEND_FROM=OddsSearch <weekly@updates.yourdomain.com>
-RESEND_NEWSLETTER_FROM=OddsSearch <weekly@updates.yourdomain.com>
+RESEND_FROM=OddsSearch <digest@oddssearch.io>
+RESEND_NEWSLETTER_FROM=OddsSearch <digest@oddssearch.io>
 RESEND_PREVIEW_TO=you@example.com
-ODDSSEARCH_PUBLIC_URL=https://oddssearch.co.uk
-NEWSLETTER_UNSUBSCRIBE_URL=https://oddssearch.co.uk/unsubscribe
+ODDSSEARCH_PUBLIC_URL=https://oddssearch.io
+NEWSLETTER_UNSUBSCRIBE_URL=https://oddssearch.io/unsubscribe
 ```
 
 Dry-run the payload without sending:
@@ -43,7 +49,7 @@ Send one preview email:
 python3 -m src.marketing_email.send_weekly_roundup_preview --send
 ```
 
-The script sends `weekly_roundup_preview/index.html`, replaces the mock `Sign up` link with `${ODDSSEARCH_PUBLIC_URL}/signup`, and sends only to `RESEND_PREVIEW_TO`.
+The script sends `weekly_roundup_preview/email.html`, replaces the `Sign up` link with `${ODDSSEARCH_PUBLIC_URL}/signup`, and sends only to `RESEND_PREVIEW_TO`.
 
 ## Weekly Newsletter Send
 

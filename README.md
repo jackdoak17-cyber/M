@@ -24,10 +24,10 @@ TELEGRAM_CHAT_ID=...
 PROP_INCLUDE_SIMILAR=1
 POLYMARKET_GAMMA_BASE_URL=https://gamma-api.polymarket.com
 RESEND_API_KEY=...
-RESEND_FROM=OddsSearch <weekly@updates.yourdomain.com>
-RESEND_NEWSLETTER_FROM=OddsSearch <weekly@updates.yourdomain.com>
+RESEND_FROM=OddsSearch <digest@oddssearch.io>
+RESEND_NEWSLETTER_FROM=OddsSearch <digest@oddssearch.io>
 RESEND_PREVIEW_TO=you@example.com
-NEWSLETTER_UNSUBSCRIBE_URL=https://oddssearch.co.uk/unsubscribe
+NEWSLETTER_UNSUBSCRIBE_URL=https://oddssearch.io/unsubscribe
 ```
 
 Temporary availability overrides:
@@ -117,6 +117,12 @@ Open the static mock email preview:
 
 ```
 open /Users/jackdoak/M/weekly_roundup_preview/index.html
+```
+
+Open the email-safe version that is sent through Resend:
+
+```
+open /Users/jackdoak/M/weekly_roundup_preview/email.html
 ```
 
 Dry-run the Resend payload:

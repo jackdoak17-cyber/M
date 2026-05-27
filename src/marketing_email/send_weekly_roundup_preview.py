@@ -1,7 +1,7 @@
 """Send the mock weekly roundup email through Resend.
 
-This is intentionally send-preview only. It reads the static HTML preview from
-weekly_roundup_preview/index.html and sends it to one test inbox.
+This is intentionally send-preview only. It reads the email-safe HTML from
+weekly_roundup_preview/email.html and sends it to one test inbox.
 """
 
 from __future__ import annotations
@@ -17,16 +17,47 @@ from dotenv import load_dotenv
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_HTML_PATH = PROJECT_ROOT / "weekly_roundup_preview" / "index.html"
+DEFAULT_HTML_PATH = PROJECT_ROOT / "weekly_roundup_preview" / "email.html"
 RESEND_EMAILS_URL = "https://api.resend.com/emails"
 
 
-def load_html(path: Path, site_url: str | None) -> str:
+def load_html(path: Path, site_url: str | None, *, replace_unsubscribe: bool = True) -> str:
     html = path.read_text(encoding="utf-8")
     if site_url:
-        signup_url = site_url.rstrip("/") + "/signup"
+        root_url = site_url.rstrip("/")
+        signup_url = root_url + "/signup"
+        unsubscribe_url = root_url + "/unsubscribe"
+        html = html.replace("{{SITE_URL}}", root_url)
+        html = html.replace("{{SIGNUP_URL}}", signup_url)
+        if replace_unsubscribe:
+            html = html.replace("{{UNSUBSCRIBE_URL}}", unsubscribe_url)
         html = html.replace('href="#"', f'href="{signup_url}"')
     return html
+
+
+def render_text(site_url: str | None) -> str:
+    root_url = (site_url or "https://oddssearch.io").rstrip("/")
+    return "\n".join(
+        [
+            "OddsSearch Weekly Digest",
+            "",
+            "Premier League results recap, Saturday fixture board, one marquee fixture and example strategy watchlists.",
+            "",
+            "Open OddsSearch:",
+            f"{root_url}/signup",
+            "",
+            "Included in this issue:",
+            "- Previous Premier League gameweek review",
+            "- Upcoming Premier League weekend preview",
+            "- Liverpool vs Man City fixture deep dive",
+            "- Example SOT strategy",
+            "- Match markets watchlist",
+            "",
+            "Odds and stats are research tools, not guarantees.",
+            "",
+            f"Unsubscribe: {root_url}/unsubscribe",
+        ]
+    )
 
 
 def build_payload(args: argparse.Namespace) -> dict[str, Any]:
@@ -37,6 +68,7 @@ def build_payload(args: argparse.Namespace) -> dict[str, Any]:
         "to": [args.to],
         "subject": args.subject,
         "html": html,
+        "text": render_text(args.site_url),
         "tags": [
             {"name": "workflow", "value": "weekly_roundup_preview"},
             {"name": "source", "value": "marketing_repo"},
@@ -76,12 +108,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--from-email",
         default=os.getenv("RESEND_FROM"),
-        help='Sender, for example "OddsSearch <weekly@updates.yourdomain.com>".',
+        help='Sender, for example "OddsSearch <digest@oddssearch.io>".',
     )
     parser.add_argument("--reply-to", default=os.getenv("RESEND_REPLY_TO"), help="Optional reply-to address.")
     parser.add_argument(
         "--subject",
-        default=os.getenv("WEEKLY_ROUNDUP_SUBJECT", "OddsSearch Weekly Roundup + Preview"),
+        default=os.getenv("WEEKLY_ROUNDUP_SUBJECT", "OddsSearch Weekly Digest"),
         help="Email subject line.",
     )
     parser.add_argument(
@@ -123,4 +155,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -17,6 +17,7 @@ from src.marketing_email.send_weekly_roundup_preview import (
     DEFAULT_HTML_PATH,
     PROJECT_ROOT,
     load_html,
+    render_text,
     send_email,
 )
 
@@ -73,6 +74,8 @@ def load_subscribers(path: Path) -> list[Subscriber]:
 
 
 def inject_newsletter_footer(html: str, unsubscribe_url: str) -> str:
+    if "{{UNSUBSCRIBE_URL}}" in html:
+        return html.replace("{{UNSUBSCRIBE_URL}}", unsubscribe_url)
     footer = f"""
       <section style="max-width: 860px; margin: 18px auto 0; padding: 14px 18px; color: #94a3b8; font: 12px/1.6 Inter, Arial, sans-serif; text-align: center;">
         You are receiving this because you signed up for OddsSearch updates.
@@ -92,14 +95,18 @@ def build_payload(
     subject: str,
     reply_to: str | None,
     fallback_unsubscribe_url: str | None,
+    site_url: str | None,
 ) -> dict[str, Any]:
     unsubscribe_url = subscriber.unsubscribe_url or clean(fallback_unsubscribe_url)
     personalized_html = inject_newsletter_footer(html, unsubscribe_url)
+    default_unsubscribe_url = (site_url or "https://oddssearch.io").rstrip("/") + "/unsubscribe"
+    text = render_text(site_url).replace(default_unsubscribe_url, unsubscribe_url)
     payload: dict[str, Any] = {
         "from": from_email,
         "to": [subscriber.email],
         "subject": subject,
         "html": personalized_html,
+        "text": text,
         "headers": {
             "List-Unsubscribe": f"<{unsubscribe_url}>",
         },
@@ -132,12 +139,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--from-email",
         default=os.getenv("RESEND_NEWSLETTER_FROM") or os.getenv("RESEND_FROM"),
-        help='Sender, for example "OddsSearch <weekly@updates.yourdomain.com>".',
+        help='Sender, for example "OddsSearch <digest@oddssearch.io>".',
     )
     parser.add_argument("--reply-to", default=os.getenv("RESEND_REPLY_TO"), help="Optional reply-to address.")
     parser.add_argument(
         "--subject",
-        default=os.getenv("WEEKLY_ROUNDUP_SUBJECT", "OddsSearch Weekly Roundup + Preview"),
+        default=os.getenv("WEEKLY_ROUNDUP_SUBJECT", "OddsSearch Weekly Digest"),
         help="Email subject line.",
     )
     parser.add_argument(
@@ -186,7 +193,7 @@ def main() -> int:
             print(f"- {email}")
         return 2
 
-    html = load_html(Path(args.html_path).expanduser().resolve(), args.site_url)
+    html = load_html(Path(args.html_path).expanduser().resolve(), args.site_url, replace_unsubscribe=False)
     dry_run_rows = [
         {
             "email": sub.email,
@@ -216,6 +223,7 @@ def main() -> int:
             subject=args.subject,
             reply_to=args.reply_to,
             fallback_unsubscribe_url=args.unsubscribe_url,
+            site_url=args.site_url,
         )
         timestamp = datetime.now(UTC).isoformat()
         try:
