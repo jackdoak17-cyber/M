@@ -23,6 +23,9 @@ TELEGRAM_BOT_TOKEN=...
 TELEGRAM_CHAT_ID=...
 PROP_INCLUDE_SIMILAR=1
 POLYMARKET_GAMMA_BASE_URL=https://gamma-api.polymarket.com
+RESEND_API_KEY=...
+RESEND_FROM=OddsSearch <weekly@updates.yourdomain.com>
+RESEND_PREVIEW_TO=you@example.com
 ```
 
 Temporary availability overrides:
@@ -105,6 +108,28 @@ Artifacts:
 - `output/polymarket/weekly/{date}_biggest_mover_*.txt` (if triggered)
 - `output/polymarket/weekly/{date}_summary.json`
 - `output/polymarket/weekly_baseline.json`
+
+## Preview Weekly Roundup Email
+
+Open the static mock email preview:
+
+```
+open /Users/jackdoak/M/weekly_roundup_preview/index.html
+```
+
+Dry-run the Resend payload:
+
+```
+python3 -m src.marketing_email.send_weekly_roundup_preview
+```
+
+Send one preview email through Resend:
+
+```
+python3 -m src.marketing_email.send_weekly_roundup_preview --send
+```
+
+The send command requires `RESEND_API_KEY`, `RESEND_FROM`, and `RESEND_PREVIEW_TO` in `.env.local` or your shell environment.
 
 ## GitHub Actions
 
