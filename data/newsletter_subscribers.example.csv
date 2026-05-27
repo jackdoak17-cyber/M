@@ -1,0 +1,4 @@
+email,first_name,status,source,consent_date,unsubscribe_url
+you@example.com,Jack,subscribed,manual-test,2026-05-27,https://oddssearch.co.uk/unsubscribe?email=you%40example.com
+friend@example.com,Friend,subscribed,manual-test,2026-05-27,https://oddssearch.co.uk/unsubscribe?email=friend%40example.com
+paused@example.com,Paused,unsubscribed,manual-test,2026-05-27,https://oddssearch.co.uk/unsubscribe?email=paused%40example.com

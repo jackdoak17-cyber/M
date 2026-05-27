@@ -25,7 +25,9 @@ PROP_INCLUDE_SIMILAR=1
 POLYMARKET_GAMMA_BASE_URL=https://gamma-api.polymarket.com
 RESEND_API_KEY=...
 RESEND_FROM=OddsSearch <weekly@updates.yourdomain.com>
+RESEND_NEWSLETTER_FROM=OddsSearch <weekly@updates.yourdomain.com>
 RESEND_PREVIEW_TO=you@example.com
+NEWSLETTER_UNSUBSCRIBE_URL=https://oddssearch.co.uk/unsubscribe
 ```
 
 Temporary availability overrides:
@@ -130,6 +132,27 @@ python3 -m src.marketing_email.send_weekly_roundup_preview --send
 ```
 
 The send command requires `RESEND_API_KEY`, `RESEND_FROM`, and `RESEND_PREVIEW_TO` in `.env.local` or your shell environment.
+
+Dry-run the opt-in newsletter list:
+
+```
+cp data/newsletter_subscribers.example.csv data/newsletter_subscribers.csv
+python3 -m src.marketing_email.send_weekly_roundup_newsletter
+```
+
+Send to the first recipient only:
+
+```
+python3 -m src.marketing_email.send_weekly_roundup_newsletter --send --limit 1
+```
+
+Send to all `status=subscribed` rows in `data/newsletter_subscribers.csv`:
+
+```
+python3 -m src.marketing_email.send_weekly_roundup_newsletter --send
+```
+
+Only add people to `data/newsletter_subscribers.csv` if they have explicitly opted in to receive weekly OddsSearch emails. The live newsletter sender requires an unsubscribe URL before it will send.
 
 ## GitHub Actions
 

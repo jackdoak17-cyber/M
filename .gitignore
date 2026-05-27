@@ -5,6 +5,8 @@ __pycache__/
 .env
 .env.local
 .env.*.local
+data/newsletter_subscribers.csv
+data/newsletter_send_log.jsonl
 output/*
 !output/polymarket/
 !output/by_fixture/
