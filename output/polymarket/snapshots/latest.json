@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T03:40:54Z",
+  "generated_at": "2026-05-27T09:42:29Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -88,7 +88,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-05-31T00:00:00Z",
-      "volume": 256601920.42632347,
+      "volume": 256628729.59099647,
       "top_outcomes": [
         {
           "label": "Nice",
@@ -242,29 +242,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 164029.0824549999,
+      "volume": 165111.8724549999,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
-          "probability": 0.8200000000000001,
+          "probability": 0.815,
           "question": "Will Bruno Fernandes win the 2026 PFA Player of the Year?",
           "best_bid": 0.81,
-          "best_ask": 0.83,
-          "last_trade_price": 0.81,
+          "best_ask": 0.82,
+          "last_trade_price": 0.82,
           "outcome": "Yes",
-          "previous_probability": 0.815,
-          "delta_pp": 0.5000000000000115
+          "previous_probability": 0.8200000000000001,
+          "delta_pp": -0.5000000000000115
         },
         {
           "label": "Declan Rice",
-          "probability": 0.15000000000000002,
+          "probability": 0.16999999999999998,
           "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
-          "best_bid": 0.13,
-          "best_ask": 0.17,
-          "last_trade_price": 0.17,
+          "best_bid": 0.15,
+          "best_ask": 0.19,
+          "last_trade_price": 0.19,
           "outcome": "Yes",
-          "previous_probability": 0.16,
-          "delta_pp": -0.9999999999999981
+          "previous_probability": 0.15000000000000002,
+          "delta_pp": 1.9999999999999962
         },
         {
           "label": "Bukayo Saka",
@@ -319,29 +319,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 3506354.836646,
+      "volume": 3508237.081202,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.253,
+          "probability": 0.252,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.251,
-          "best_ask": 0.255,
-          "last_trade_price": 0.251,
+          "best_bid": 0.25,
+          "best_ask": 0.254,
+          "last_trade_price": 0.25,
           "outcome": "Yes",
-          "previous_probability": 0.2535,
-          "delta_pp": -0.050000000000000044
+          "previous_probability": 0.253,
+          "delta_pp": -0.10000000000000009
         },
         {
           "label": "Ousmane Demb\u00e9l\u00e9",
-          "probability": 0.1855,
+          "probability": 0.186,
           "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.173,
-          "best_ask": 0.198,
-          "last_trade_price": 0.196,
+          "best_bid": 0.175,
+          "best_ask": 0.197,
+          "last_trade_price": 0.197,
           "outcome": "Yes",
-          "previous_probability": 0.1795,
-          "delta_pp": 0.6000000000000005
+          "previous_probability": 0.1855,
+          "delta_pp": 0.050000000000000044
         },
         {
           "label": "Declan Rice",
@@ -349,7 +349,7 @@
           "question": "Will Declan Rice win the 2026 Ballon d'Or?",
           "best_bid": 0.103,
           "best_ask": 0.104,
-          "last_trade_price": 0.109,
+          "last_trade_price": 0.103,
           "outcome": "Yes",
           "previous_probability": 0.1035,
           "delta_pp": 0.0
@@ -384,8 +384,8 @@
           "best_ask": 0.085,
           "last_trade_price": 0.077,
           "outcome": "Yes",
-          "previous_probability": 0.081,
-          "delta_pp": 0.050000000000000044
+          "previous_probability": 0.0815,
+          "delta_pp": 0.0
         }
       ]
     },
