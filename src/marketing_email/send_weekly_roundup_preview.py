@@ -9,8 +9,10 @@ from __future__ import annotations
 import argparse
 import json
 import os
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
+from uuid import uuid4
 
 import requests
 from dotenv import load_dotenv
@@ -19,6 +21,11 @@ from dotenv import load_dotenv
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_HTML_PATH = PROJECT_ROOT / "weekly_roundup_preview" / "email.html"
 RESEND_EMAILS_URL = "https://api.resend.com/emails"
+
+
+def preview_run_id() -> str:
+    timestamp = datetime.now(UTC).strftime("%Y%m%d-%H%M%S")
+    return f"{timestamp}-{uuid4().hex[:8]}"
 
 
 def load_html(path: Path, site_url: str | None, *, replace_unsubscribe: bool = True) -> str:
@@ -63,12 +70,16 @@ def render_text(site_url: str | None) -> str:
 def build_payload(args: argparse.Namespace) -> dict[str, Any]:
     html_path = Path(args.html_path).expanduser().resolve()
     html = load_html(html_path, args.site_url)
+    run_id = preview_run_id()
     payload: dict[str, Any] = {
         "from": args.from_email,
         "to": [args.to],
-        "subject": args.subject,
+        "subject": f"{args.subject} preview {run_id}",
         "html": html,
         "text": render_text(args.site_url),
+        "headers": {
+            "X-Entity-Ref-ID": f"weekly-roundup-preview-{run_id}",
+        },
         "tags": [
             {"name": "workflow", "value": "weekly_roundup_preview"},
             {"name": "source", "value": "marketing_repo"},
