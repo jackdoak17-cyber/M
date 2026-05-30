@@ -77,7 +77,7 @@ def build_payload(args: argparse.Namespace) -> dict[str, Any]:
     payload: dict[str, Any] = {
         "from": args.from_email,
         "to": [args.to],
-        "subject": f"{args.subject} preview {run_id}",
+        "subject": args.subject,
         "html": html,
         "text": render_text(args.site_url),
         "headers": {
