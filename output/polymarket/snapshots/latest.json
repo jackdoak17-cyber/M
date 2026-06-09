@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T09:40:55Z",
+  "generated_at": "2026-06-09T14:47:56Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -242,29 +242,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 193083.68099200004,
+      "volume": 193376.48099200003,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
-          "probability": 0.775,
+          "probability": 0.77,
           "question": "Will Bruno Fernandes win the 2026 PFA Player of the Year?",
-          "best_bid": 0.76,
+          "best_bid": 0.75,
           "best_ask": 0.79,
-          "last_trade_price": 0.77,
+          "last_trade_price": 0.75,
           "outcome": "Yes",
-          "previous_probability": 0.78,
+          "previous_probability": 0.775,
           "delta_pp": -0.5000000000000004
         },
         {
           "label": "Declan Rice",
-          "probability": 0.20500000000000002,
+          "probability": 0.215,
           "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
           "best_bid": 0.18,
-          "best_ask": 0.23,
+          "best_ask": 0.25,
           "last_trade_price": 0.23,
           "outcome": "Yes",
-          "previous_probability": 0.2,
-          "delta_pp": 0.5000000000000004
+          "previous_probability": 0.20500000000000002,
+          "delta_pp": 0.9999999999999981
         },
         {
           "label": "Erling Haaland",
@@ -319,51 +319,51 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 4013194.5187070016,
+      "volume": 4017915.847991002,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.2705,
+          "probability": 0.269,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
           "best_bid": 0.268,
-          "best_ask": 0.273,
-          "last_trade_price": 0.273,
+          "best_ask": 0.27,
+          "last_trade_price": 0.27,
           "outcome": "Yes",
           "previous_probability": 0.2705,
-          "delta_pp": 0.0
+          "delta_pp": -0.15000000000000013
         },
         {
           "label": "Lamine Yamal",
-          "probability": 0.14,
+          "probability": 0.135,
           "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
           "best_bid": 0.13,
-          "best_ask": 0.15,
+          "best_ask": 0.14,
           "last_trade_price": 0.13,
           "outcome": "Yes",
           "previous_probability": 0.14,
-          "delta_pp": 0.0
+          "delta_pp": -0.5000000000000004
         },
         {
           "label": "Ousmane Demb\u00e9l\u00e9",
-          "probability": 0.113,
+          "probability": 0.1195,
           "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.099,
-          "best_ask": 0.127,
-          "last_trade_price": 0.119,
+          "best_bid": 0.114,
+          "best_ask": 0.125,
+          "last_trade_price": 0.114,
           "outcome": "Yes",
-          "previous_probability": 0.0995,
-          "delta_pp": 1.3499999999999999
+          "previous_probability": 0.113,
+          "delta_pp": 0.6499999999999992
         },
         {
           "label": "Vitinha",
-          "probability": 0.1095,
+          "probability": 0.1105,
           "question": "Will Vitinha win the 2026 Ballon d'Or?",
-          "best_bid": 0.09,
-          "best_ask": 0.129,
-          "last_trade_price": 0.091,
+          "best_bid": 0.091,
+          "best_ask": 0.13,
+          "last_trade_price": 0.09,
           "outcome": "Yes",
-          "previous_probability": 0.113,
-          "delta_pp": -0.3500000000000003
+          "previous_probability": 0.1095,
+          "delta_pp": 0.10000000000000009
         },
         {
           "label": "Kylian Mbapp\u00e9",
@@ -384,8 +384,8 @@
           "best_ask": 0.1,
           "last_trade_price": 0.067,
           "outcome": "Yes",
-          "previous_probability": 0.07200000000000001,
-          "delta_pp": 0.9499999999999995
+          "previous_probability": 0.0815,
+          "delta_pp": 0.0
         }
       ]
     },
