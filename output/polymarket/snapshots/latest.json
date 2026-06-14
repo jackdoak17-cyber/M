@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T14:00:03Z",
+  "generated_at": "2026-06-14T19:24:50Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -242,29 +242,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 194342.65688300005,
+      "volume": 194879.62354800003,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
-          "probability": 0.76,
+          "probability": 0.765,
           "question": "Will Bruno Fernandes win the 2026 PFA Player of the Year?",
           "best_bid": 0.75,
-          "best_ask": 0.77,
+          "best_ask": 0.78,
           "last_trade_price": 0.77,
           "outcome": "Yes",
           "previous_probability": 0.76,
-          "delta_pp": 0.0
+          "delta_pp": 0.5000000000000004
         },
         {
           "label": "Declan Rice",
-          "probability": 0.25,
+          "probability": 0.155,
           "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
-          "best_bid": 0.24,
-          "best_ask": 0.26,
-          "last_trade_price": 0.25,
+          "best_bid": 0.08,
+          "best_ask": 0.23,
+          "last_trade_price": 0.14,
           "outcome": "Yes",
-          "previous_probability": 0.245,
-          "delta_pp": 0.5000000000000004
+          "previous_probability": 0.25,
+          "delta_pp": -9.5
         },
         {
           "label": "Erling Haaland",
@@ -319,18 +319,18 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 4128319.4544260027,
+      "volume": 4130847.9887940027,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.268,
+          "probability": 0.271,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.262,
-          "best_ask": 0.274,
+          "best_bid": 0.263,
+          "best_ask": 0.279,
           "last_trade_price": 0.262,
           "outcome": "Yes",
-          "previous_probability": 0.274,
-          "delta_pp": -0.6000000000000005
+          "previous_probability": 0.268,
+          "delta_pp": 0.30000000000000027
         },
         {
           "label": "Lamine Yamal",
@@ -340,30 +340,30 @@
           "best_ask": 0.17,
           "last_trade_price": 0.17,
           "outcome": "Yes",
-          "previous_probability": 0.155,
-          "delta_pp": 0.5000000000000004
+          "previous_probability": 0.16,
+          "delta_pp": 0.0
         },
         {
           "label": "Ousmane Demb\u00e9l\u00e9",
-          "probability": 0.11449999999999999,
+          "probability": 0.123,
           "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.105,
-          "best_ask": 0.124,
-          "last_trade_price": 0.106,
+          "best_bid": 0.101,
+          "best_ask": 0.145,
+          "last_trade_price": 0.101,
           "outcome": "Yes",
-          "previous_probability": 0.11549999999999999,
-          "delta_pp": -0.10000000000000009
+          "previous_probability": 0.11449999999999999,
+          "delta_pp": 0.8500000000000008
         },
         {
           "label": "Vitinha",
-          "probability": 0.0905,
+          "probability": 0.0895,
           "question": "Will Vitinha win the 2026 Ballon d'Or?",
-          "best_bid": 0.085,
+          "best_bid": 0.083,
           "best_ask": 0.096,
-          "last_trade_price": 0.085,
+          "last_trade_price": 0.083,
           "outcome": "Yes",
-          "previous_probability": 0.10350000000000001,
-          "delta_pp": -1.3000000000000012
+          "previous_probability": 0.0905,
+          "delta_pp": -0.10000000000000009
         },
         {
           "label": "Michael Olise",
@@ -373,8 +373,8 @@
           "best_ask": 0.097,
           "last_trade_price": 0.097,
           "outcome": "Yes",
-          "previous_probability": 0.0945,
-          "delta_pp": -0.5500000000000005
+          "previous_probability": 0.089,
+          "delta_pp": 0.0
         },
         {
           "label": "Kylian Mbapp\u00e9",
