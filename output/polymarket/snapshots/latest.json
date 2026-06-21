@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T09:47:55Z",
+  "generated_at": "2026-06-21T14:08:21Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -242,7 +242,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 204540.31473700007,
+      "volume": 204570.47473700007,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
@@ -263,19 +263,19 @@
           "best_ask": 0.29,
           "last_trade_price": 0.09,
           "outcome": "Yes",
-          "previous_probability": 0.21,
-          "delta_pp": -1.0000000000000009
+          "previous_probability": 0.19999999999999998,
+          "delta_pp": 0.0
         },
         {
           "label": "Erling Haaland",
-          "probability": 0.006,
+          "probability": 0.0055,
           "question": "Will Erling Haaland win the 2026 PFA Player of the Year?",
           "best_bid": 0.003,
-          "best_ask": 0.009,
+          "best_ask": 0.008,
           "last_trade_price": 0.003,
           "outcome": "Yes",
           "previous_probability": 0.006,
-          "delta_pp": 0.0
+          "delta_pp": -0.050000000000000044
         },
         {
           "label": "Phil Foden",
@@ -319,7 +319,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 4328586.511733004,
+      "volume": 4329649.044289004,
       "top_outcomes": [
         {
           "label": "Harry Kane",
@@ -329,8 +329,8 @@
           "best_ask": 0.33,
           "last_trade_price": 0.33,
           "outcome": "Yes",
-          "previous_probability": 0.32,
-          "delta_pp": 0.050000000000000044
+          "previous_probability": 0.3205,
+          "delta_pp": 0.0
         },
         {
           "label": "Kylian Mbapp\u00e9",
@@ -341,17 +341,6 @@
           "last_trade_price": 0.12,
           "outcome": "Yes",
           "previous_probability": 0.11499999999999999,
-          "delta_pp": 0.0
-        },
-        {
-          "label": "Michael Olise",
-          "probability": 0.1125,
-          "question": "Will Michael Olise win the 2026 Ballon d'Or?",
-          "best_bid": 0.112,
-          "best_ask": 0.113,
-          "last_trade_price": 0.113,
-          "outcome": "Yes",
-          "previous_probability": 0.1125,
           "delta_pp": 0.0
         },
         {
@@ -366,26 +355,37 @@
           "delta_pp": 0.0
         },
         {
-          "label": "Vitinha",
-          "probability": 0.0765,
-          "question": "Will Vitinha win the 2026 Ballon d'Or?",
-          "best_bid": 0.076,
-          "best_ask": 0.077,
-          "last_trade_price": 0.077,
+          "label": "Michael Olise",
+          "probability": 0.1,
+          "question": "Will Michael Olise win the 2026 Ballon d'Or?",
+          "best_bid": 0.094,
+          "best_ask": 0.106,
+          "last_trade_price": 0.112,
           "outcome": "Yes",
-          "previous_probability": 0.0765,
-          "delta_pp": 0.0
+          "previous_probability": 0.1125,
+          "delta_pp": -1.2499999999999998
         },
         {
-          "label": "Lionel Messi",
-          "probability": 0.07450000000000001,
-          "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
-          "best_bid": 0.07,
-          "best_ask": 0.079,
-          "last_trade_price": 0.076,
+          "label": "Ousmane Demb\u00e9l\u00e9",
+          "probability": 0.0815,
+          "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
+          "best_bid": 0.062,
+          "best_ask": 0.101,
+          "last_trade_price": 0.088,
           "outcome": "Yes",
           "previous_probability": null,
           "delta_pp": null
+        },
+        {
+          "label": "Vitinha",
+          "probability": 0.076,
+          "question": "Will Vitinha win the 2026 Ballon d'Or?",
+          "best_bid": 0.075,
+          "best_ask": 0.077,
+          "last_trade_price": 0.075,
+          "outcome": "Yes",
+          "previous_probability": 0.0765,
+          "delta_pp": -0.050000000000000044
         }
       ]
     },
