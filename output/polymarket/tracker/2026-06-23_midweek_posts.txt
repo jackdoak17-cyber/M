@@ -1,17 +1,17 @@
 🏆 Change in PFA Player Of The Year probability since last update:
 
 • Bruno Fernandes: 72% -> 72%
-• Declan Rice: 19.5% -> 18.5%
-• Erling Haaland: 0.3% -> 0.4%
+• Declan Rice: 18.5% -> 19%
+• Erling Haaland: 0.4% -> 0.4%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
 
 🏆 Change in Ballon d'Or Winner probability since last update:
 
-• Harry Kane: 32.1% -> 31.5%
-• Kylian Mbappé: 13% -> 13.5%
-• Lamine Yamal: 12% -> 12%
+• Harry Kane: 31.5% -> 27.1%
+• Kylian Mbappé: 13.5% -> 13.5%
+• Lionel Messi: 11.2% -> 12.1%
 
 [🔮 via @Polymarket]
 https://polymarket.com/event/ballon-dor-winner-2026
