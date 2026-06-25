@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T14:30:20Z",
+  "generated_at": "2026-06-25T19:58:38Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -252,8 +252,8 @@
           "best_ask": 0.78,
           "last_trade_price": 0.74,
           "outcome": "Yes",
-          "previous_probability": 0.77,
-          "delta_pp": -0.5000000000000004
+          "previous_probability": 0.765,
+          "delta_pp": 0.0
         },
         {
           "label": "Declan Rice",
@@ -263,8 +263,8 @@
           "best_ask": 0.25,
           "last_trade_price": 0.25,
           "outcome": "Yes",
-          "previous_probability": 0.22,
-          "delta_pp": 0.9999999999999981
+          "previous_probability": 0.22999999999999998,
+          "delta_pp": 0.0
         },
         {
           "label": "Erling Haaland",
@@ -319,18 +319,18 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 4530682.860251005,
+      "volume": 4534847.915590005,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.236,
+          "probability": 0.2345,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
           "best_bid": 0.231,
-          "best_ask": 0.241,
+          "best_ask": 0.238,
           "last_trade_price": 0.231,
           "outcome": "Yes",
-          "previous_probability": 0.237,
-          "delta_pp": -0.10000000000000009
+          "previous_probability": 0.236,
+          "delta_pp": -0.15000000000000013
         },
         {
           "label": "Kylian Mbapp\u00e9",
@@ -338,7 +338,7 @@
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
           "best_bid": 0.2,
           "best_ask": 0.21,
-          "last_trade_price": 0.21,
+          "last_trade_price": 0.2,
           "outcome": "Yes",
           "previous_probability": 0.20500000000000002,
           "delta_pp": 0.0
@@ -351,38 +351,38 @@
           "best_ask": 0.14,
           "last_trade_price": 0.12,
           "outcome": "Yes",
-          "previous_probability": 0.135,
-          "delta_pp": -0.5000000000000004
-        },
-        {
-          "label": "Lionel Messi",
-          "probability": 0.101,
-          "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
-          "best_bid": 0.098,
-          "best_ask": 0.104,
-          "last_trade_price": 0.099,
-          "outcome": "Yes",
-          "previous_probability": 0.11499999999999999,
-          "delta_pp": -1.3999999999999986
+          "previous_probability": 0.13,
+          "delta_pp": 0.0
         },
         {
           "label": "Michael Olise",
-          "probability": 0.0665,
+          "probability": 0.0945,
           "question": "Will Michael Olise win the 2026 Ballon d'Or?",
-          "best_bid": 0.066,
-          "best_ask": 0.067,
-          "last_trade_price": 0.067,
+          "best_bid": 0.07,
+          "best_ask": 0.119,
+          "last_trade_price": 0.089,
           "outcome": "Yes",
-          "previous_probability": 0.066,
-          "delta_pp": 0.050000000000000044
+          "previous_probability": 0.0665,
+          "delta_pp": 2.8
         },
         {
-          "label": "Vitinha",
-          "probability": 0.0595,
-          "question": "Will Vitinha win the 2026 Ballon d'Or?",
-          "best_bid": 0.055,
-          "best_ask": 0.064,
-          "last_trade_price": 0.067,
+          "label": "Lionel Messi",
+          "probability": 0.0945,
+          "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
+          "best_bid": 0.089,
+          "best_ask": 0.1,
+          "last_trade_price": 0.106,
+          "outcome": "Yes",
+          "previous_probability": 0.101,
+          "delta_pp": -0.6500000000000006
+        },
+        {
+          "label": "Ousmane Demb\u00e9l\u00e9",
+          "probability": 0.0615,
+          "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
+          "best_bid": 0.061,
+          "best_ask": 0.062,
+          "last_trade_price": 0.061,
           "outcome": "Yes",
           "previous_probability": null,
           "delta_pp": null
