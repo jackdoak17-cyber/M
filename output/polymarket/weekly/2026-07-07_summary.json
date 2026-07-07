@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-07-07T10:28:43Z",
+  "baseline_date": "2026-06-30T10:33:22Z",
+  "current_date": "2026-07-07T10:28:43Z",
+  "mode": "generate",
+  "baseline_path": "output/polymarket/weekly_baseline.json",
+  "markets_with_movement": [
+    {
+      "slug": "ballon-dor-winner-2026",
+      "label": "Ballon d'Or Winner",
+      "max_move_pp": 7.5
+    },
+    {
+      "slug": "2025-2026-pfa-players-player-of-the-year-winner",
+      "label": "PFA Player Of The Year",
+      "max_move_pp": 5.0
+    }
+  ],
+  "biggest_mover_triggered": true,
+  "errors": []
+}
