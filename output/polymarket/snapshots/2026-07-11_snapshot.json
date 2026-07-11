@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T13:15:17Z",
+  "generated_at": "2026-07-11T19:00:56Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -242,7 +242,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 216574.4325170001,
+      "volume": 216643.4456020001,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
@@ -250,10 +250,10 @@
           "question": "Will Bruno Fernandes win the 2026 PFA Player of the Year?",
           "best_bid": 0.79,
           "best_ask": 0.81,
-          "last_trade_price": 0.79,
+          "last_trade_price": 0.81,
           "outcome": "Yes",
-          "previous_probability": 0.785,
-          "delta_pp": 1.5000000000000013
+          "previous_probability": 0.8,
+          "delta_pp": 0.0
         },
         {
           "label": "Declan Rice",
@@ -263,8 +263,8 @@
           "best_ask": 0.19,
           "last_trade_price": 0.19,
           "outcome": "Yes",
-          "previous_probability": 0.195,
-          "delta_pp": -1.5000000000000013
+          "previous_probability": 0.18,
+          "delta_pp": 0.0
         },
         {
           "label": "Erling Haaland",
@@ -319,7 +319,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 6633608.509375004,
+      "volume": 6642302.194012005,
       "top_outcomes": [
         {
           "label": "Kylian Mbapp\u00e9",
@@ -327,7 +327,7 @@
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
           "best_bid": 0.3,
           "best_ask": 0.31,
-          "last_trade_price": 0.31,
+          "last_trade_price": 0.3,
           "outcome": "Yes",
           "previous_probability": 0.305,
           "delta_pp": 0.0
@@ -340,19 +340,19 @@
           "best_ask": 0.273,
           "last_trade_price": 0.272,
           "outcome": "Yes",
-          "previous_probability": 0.253,
-          "delta_pp": 1.9500000000000017
+          "previous_probability": 0.2725,
+          "delta_pp": 0.0
         },
         {
           "label": "Ousmane Demb\u00e9l\u00e9",
-          "probability": 0.154,
+          "probability": 0.166,
           "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.151,
-          "best_ask": 0.157,
-          "last_trade_price": 0.154,
+          "best_bid": 0.162,
+          "best_ask": 0.17,
+          "last_trade_price": 0.169,
           "outcome": "Yes",
-          "previous_probability": 0.1575,
-          "delta_pp": -0.3500000000000003
+          "previous_probability": 0.154,
+          "delta_pp": 1.200000000000001
         },
         {
           "label": "Lionel Messi",
@@ -360,10 +360,10 @@
           "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
           "best_bid": 0.13,
           "best_ask": 0.131,
-          "last_trade_price": 0.132,
+          "last_trade_price": 0.131,
           "outcome": "Yes",
-          "previous_probability": 0.1315,
-          "delta_pp": -0.10000000000000009
+          "previous_probability": 0.1305,
+          "delta_pp": 0.0
         },
         {
           "label": "Lamine Yamal",
@@ -373,19 +373,19 @@
           "best_ask": 0.056,
           "last_trade_price": 0.055,
           "outcome": "Yes",
-          "previous_probability": 0.0895,
-          "delta_pp": -3.3999999999999995
+          "previous_probability": 0.0555,
+          "delta_pp": 0.0
         },
         {
           "label": "Erling Haaland",
-          "probability": 0.0345,
+          "probability": 0.036500000000000005,
           "question": "Will Erling Haaland win the 2026 Ballon d'Or?",
-          "best_bid": 0.034,
-          "best_ask": 0.035,
-          "last_trade_price": 0.032,
+          "best_bid": 0.035,
+          "best_ask": 0.038,
+          "last_trade_price": 0.038,
           "outcome": "Yes",
-          "previous_probability": 0.0295,
-          "delta_pp": 0.5000000000000004
+          "previous_probability": 0.0345,
+          "delta_pp": 0.20000000000000018
         }
       ]
     },
