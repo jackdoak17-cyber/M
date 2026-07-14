@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T13:39:44Z",
+  "generated_at": "2026-07-14T19:16:59Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -242,7 +242,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 218214.72831300012,
+      "volume": 218313.4183130001,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
@@ -252,8 +252,8 @@
           "best_ask": 0.81,
           "last_trade_price": 0.78,
           "outcome": "Yes",
-          "previous_probability": 0.79,
-          "delta_pp": 0.5000000000000004
+          "previous_probability": 0.795,
+          "delta_pp": 0.0
         },
         {
           "label": "Declan Rice",
@@ -263,8 +263,8 @@
           "best_ask": 0.11,
           "last_trade_price": 0.12,
           "outcome": "Yes",
-          "previous_probability": 0.14500000000000002,
-          "delta_pp": -4.000000000000001
+          "previous_probability": 0.10500000000000001,
+          "delta_pp": 0.0
         },
         {
           "label": "Erling Haaland",
@@ -274,8 +274,8 @@
           "best_ask": 0.058,
           "last_trade_price": 0.056,
           "outcome": "Yes",
-          "previous_probability": 0.0535,
-          "delta_pp": -0.3999999999999997
+          "previous_probability": 0.0495,
+          "delta_pp": 0.0
         },
         {
           "label": "Estevao",
@@ -319,29 +319,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 7149835.0424470045,
+      "volume": 7185029.269764004,
       "top_outcomes": [
         {
           "label": "Kylian Mbapp\u00e9",
-          "probability": 0.335,
+          "probability": 0.28500000000000003,
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.33,
-          "best_ask": 0.34,
-          "last_trade_price": 0.34,
+          "best_bid": 0.28,
+          "best_ask": 0.29,
+          "last_trade_price": 0.29,
           "outcome": "Yes",
-          "previous_probability": 0.33,
-          "delta_pp": 0.5000000000000004
+          "previous_probability": 0.335,
+          "delta_pp": -4.999999999999999
         },
         {
           "label": "Harry Kane",
-          "probability": 0.287,
+          "probability": 0.2745,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.286,
-          "best_ask": 0.288,
+          "best_bid": 0.27,
+          "best_ask": 0.279,
           "last_trade_price": 0.289,
           "outcome": "Yes",
-          "previous_probability": 0.2885,
-          "delta_pp": -0.15000000000000013
+          "previous_probability": 0.287,
+          "delta_pp": -1.2499999999999956
         },
         {
           "label": "Ousmane Demb\u00e9l\u00e9",
@@ -360,32 +360,32 @@
           "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
           "best_bid": 0.132,
           "best_ask": 0.133,
-          "last_trade_price": 0.133,
+          "last_trade_price": 0.132,
           "outcome": "Yes",
           "previous_probability": 0.1325,
           "delta_pp": 0.0
         },
         {
           "label": "Lamine Yamal",
-          "probability": 0.041499999999999995,
+          "probability": 0.07450000000000001,
           "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-          "best_bid": 0.04,
-          "best_ask": 0.043,
-          "last_trade_price": 0.04,
+          "best_bid": 0.07,
+          "best_ask": 0.079,
+          "last_trade_price": 0.072,
           "outcome": "Yes",
-          "previous_probability": 0.041999999999999996,
-          "delta_pp": -0.050000000000000044
+          "previous_probability": 0.041499999999999995,
+          "delta_pp": 3.3000000000000016
         },
         {
           "label": "Michael Olise",
-          "probability": 0.040499999999999994,
+          "probability": 0.039999999999999994,
           "question": "Will Michael Olise win the 2026 Ballon d'Or?",
-          "best_bid": 0.038,
+          "best_bid": 0.037,
           "best_ask": 0.043,
-          "last_trade_price": 0.038,
+          "last_trade_price": 0.044,
           "outcome": "Yes",
-          "previous_probability": 0.035,
-          "delta_pp": 0.5499999999999992
+          "previous_probability": 0.040499999999999994,
+          "delta_pp": -0.050000000000000044
         }
       ]
     },
