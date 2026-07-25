@@ -54,7 +54,13 @@ class FakeClient:
 def test_rejects_mock_local_and_unapproved_packages():
     with pytest.raises(RuntimeError, match="warning blocks"):
         validate_package(
-            package(warnings=[{"message": "MOCK DATA. Do not publish."}]),
+            package(warnings=[{"message": "Mock detected fixture-day package."}]),
+            post_id=POST_ID,
+            account_key="oddssearch-main",
+        )
+    with pytest.raises(RuntimeError, match="warning blocks"):
+        validate_package(
+            package(data_snapshot={"is_mock": True}),
             post_id=POST_ID,
             account_key="oddssearch-main",
         )

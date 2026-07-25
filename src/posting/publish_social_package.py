@@ -84,8 +84,16 @@ def validate_package(package: dict[str, Any], *, post_id: str, account_key: str)
     image_urls = package.get("instagram_image_urls") or []
     if not image_urls or not all(isinstance(url, str) and url.startswith("https://") for url in image_urls):
         raise RuntimeError("The package requires durable HTTPS media.")
-    if any(
-        re.search(r"do not publish|mock data|blocking", message, re.IGNORECASE)
+    snapshot = package.get("data_snapshot") or {}
+    is_mock = (
+        isinstance(snapshot, dict)
+        and (
+            snapshot.get("is_mock") is True
+            or "mock" in str(snapshot.get("variant") or "").lower()
+        )
+    )
+    if is_mock or any(
+        re.search(r"do not publish|\bmock\b|blocking", message, re.IGNORECASE)
         for message in _warning_messages(package.get("warnings"))
     ):
         raise RuntimeError("A package warning blocks Instagram publishing.")
