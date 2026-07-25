@@ -45,12 +45,20 @@ class InstagramGraphClient:
         response.raise_for_status()
         return response.json()
 
-    def create_image_container(self, image_url: str, *, is_carousel_item: bool = True) -> str:
+    def create_image_container(
+        self,
+        image_url: str,
+        *,
+        is_carousel_item: bool = True,
+        caption: str | None = None,
+    ) -> str:
         data = {
             "image_url": image_url,
         }
         if is_carousel_item:
             data["is_carousel_item"] = "true"
+        elif caption:
+            data["caption"] = caption
         result = self._post(f"{self.settings.instagram_account_id}/media", data)
         container_id = result.get("id")
         if not container_id:
