@@ -8,6 +8,7 @@ import requests
 
 
 DEFAULT_TIMEOUT_SEC = 30
+FACEBOOK_GRAPH_BASE_URL = "https://graph.facebook.com"
 
 
 @dataclass(frozen=True)
@@ -15,6 +16,7 @@ class MetaGraphSettings:
     instagram_account_id: str
     access_token: str
     api_version: str = "v25.0"
+    graph_base_url: str = FACEBOOK_GRAPH_BASE_URL
 
 
 @dataclass(frozen=True)
@@ -24,25 +26,63 @@ class CarouselPublishResult:
     media_id: str
 
 
+class MetaGraphApiError(RuntimeError):
+    """Provider error with safe, actionable context and no credential content."""
+
+    def __init__(self, *, status_code: int, message: str, code: int | None, subcode: int | None) -> None:
+        self.status_code = status_code
+        self.code = code
+        self.subcode = subcode
+        identifier = f" code={code}" if code is not None else ""
+        if subcode is not None:
+            identifier += f" subcode={subcode}"
+        super().__init__(f"Meta Graph API request failed ({status_code}{identifier}): {message}")
+
+
 class InstagramGraphClient:
     """Minimal Meta Graph API client for carousel publishing."""
 
     def __init__(self, settings: MetaGraphSettings) -> None:
         self.settings = settings
-        self._base = f"https://graph.instagram.com/{settings.api_version}"
+        self._base = f"{settings.graph_base_url.rstrip('/')}/{settings.api_version}"
+
+    def _raise_for_error(self, response: requests.Response) -> None:
+        if response.ok:
+            return
+        payload: Any = None
+        try:
+            payload = response.json()
+        except ValueError:
+            payload = None
+        error = payload.get("error") if isinstance(payload, dict) else None
+        if isinstance(error, dict):
+            raw_message = str(error.get("error_user_msg") or error.get("message") or "Meta rejected the request.")
+            code = error.get("code") if isinstance(error.get("code"), int) else None
+            subcode = error.get("error_subcode") if isinstance(error.get("error_subcode"), int) else None
+        else:
+            raw_message = "Meta rejected the request without a structured error."
+            code = None
+            subcode = None
+        safe_message = raw_message.replace(self.settings.access_token, "[redacted]")[:800]
+        raise MetaGraphApiError(
+            status_code=response.status_code,
+            message=safe_message,
+            code=code,
+            subcode=subcode,
+        )
 
     def _post(self, path: str, data: dict[str, Any]) -> dict[str, Any]:
         payload = dict(data)
         payload["access_token"] = self.settings.access_token
         response = requests.post(f"{self._base}/{path.lstrip('/')}", data=payload, timeout=DEFAULT_TIMEOUT_SEC)
-        response.raise_for_status()
+        self._raise_for_error(response)
         return response.json()
 
     def _get(self, path: str, params: dict[str, Any]) -> dict[str, Any]:
         payload = dict(params)
         payload["access_token"] = self.settings.access_token
         response = requests.get(f"{self._base}/{path.lstrip('/')}", params=payload, timeout=DEFAULT_TIMEOUT_SEC)
-        response.raise_for_status()
+        self._raise_for_error(response)
         return response.json()
 
     def create_image_container(
