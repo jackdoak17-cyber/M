@@ -1,0 +1,90 @@
+name: Test Instagram Connection
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_publish:
+        description: "Type PUBLISH_TEST to create one visible Instagram test post."
+        required: true
+        default: ""
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  publish-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: npx -y playwright@1.52.0 install chromium
+
+      - name: Publish connection test
+        run: |
+          python -m src.posting.test_instagram_connection \
+            --confirmation "${{ inputs.confirm_publish }}" \
+            --run-label "operations-${{ github.run_id }}"
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          CLOUDFLARE_R2_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY }}
+          CLOUDFLARE_R2_SECRET_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_KEY }}
+          CLOUDFLARE_R2_BUCKET_NAME: ${{ secrets.CLOUDFLARE_R2_BUCKET_NAME }}
+          CLOUDFLARE_R2_PUBLIC_URL: ${{ secrets.CLOUDFLARE_R2_PUBLIC_URL }}
+          S3_API_ENDPOINT: ${{ secrets.S3_API_ENDPOINT }}
+
+      - name: Record published media
+        if: success()
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          result = json.loads(
+              Path("output/instagram_connection_test/result.json").read_text(encoding="utf-8")
+          )
+          if result.get("status") != "published" or not result.get("media_id"):
+              raise SystemExit("Instagram did not return a published media ID.")
+
+          summary = [
+              "## Instagram connection verified",
+              "",
+              f"- Status: {result['status']}",
+              f"- Media ID: `{result['media_id']}`",
+              f"- Published: {result['published_at']}",
+          ]
+          if result.get("permalink"):
+              summary.append(f"- [Open Instagram post]({result['permalink']})")
+          with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as handle:
+              handle.write("\n".join(summary) + "\n")
+          PY
+        env:
+          PYTHONUNBUFFERED: "1"
+
+      - name: Upload publication result
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: instagram-connection-test-${{ github.run_id }}
+          path: output/instagram_connection_test/result.json
+          if-no-files-found: error
+          retention-days: 30
