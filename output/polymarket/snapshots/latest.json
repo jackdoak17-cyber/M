@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T14:02:18Z",
+  "generated_at": "2026-07-31T19:21:59Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -242,40 +242,40 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 227355.61855199994,
+      "volume": 227383.73098499997,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
-          "probability": 0.775,
+          "probability": 0.8,
           "question": "Will Bruno Fernandes win the 2026 PFA Player of the Year?",
           "best_bid": 0.76,
-          "best_ask": 0.79,
+          "best_ask": 0.84,
           "last_trade_price": 0.79,
           "outcome": "Yes",
-          "previous_probability": 0.79,
-          "delta_pp": -1.5000000000000013
+          "previous_probability": 0.775,
+          "delta_pp": 2.500000000000002
         },
         {
           "label": "Declan Rice",
-          "probability": 0.165,
+          "probability": 0.175,
           "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
-          "best_bid": 0.14,
-          "best_ask": 0.19,
+          "best_bid": 0.15,
+          "best_ask": 0.2,
           "last_trade_price": 0.19,
           "outcome": "Yes",
           "previous_probability": 0.165,
-          "delta_pp": 0.0
+          "delta_pp": 0.9999999999999981
         },
         {
           "label": "Erling Haaland",
-          "probability": 0.040499999999999994,
+          "probability": 0.0395,
           "question": "Will Erling Haaland win the 2026 PFA Player of the Year?",
           "best_bid": 0.022,
-          "best_ask": 0.059,
+          "best_ask": 0.057,
           "last_trade_price": 0.044,
           "outcome": "Yes",
-          "previous_probability": 0.044,
-          "delta_pp": -0.3500000000000003
+          "previous_probability": 0.040499999999999994,
+          "delta_pp": -0.0999999999999994
         },
         {
           "label": "Bukayo Saka",
@@ -319,40 +319,40 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 24220309.265522998,
+      "volume": 24342479.395033,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.5195000000000001,
+          "probability": 0.527,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.515,
-          "best_ask": 0.524,
-          "last_trade_price": 0.519,
+          "best_bid": 0.525,
+          "best_ask": 0.529,
+          "last_trade_price": 0.529,
           "outcome": "Yes",
-          "previous_probability": 0.5065,
-          "delta_pp": 1.3000000000000123
+          "previous_probability": 0.5195000000000001,
+          "delta_pp": 0.7499999999999951
         },
         {
           "label": "Lamine Yamal",
-          "probability": 0.216,
+          "probability": 0.211,
           "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-          "best_bid": 0.214,
-          "best_ask": 0.218,
-          "last_trade_price": 0.214,
+          "best_bid": 0.21,
+          "best_ask": 0.212,
+          "last_trade_price": 0.212,
           "outcome": "Yes",
-          "previous_probability": 0.2315,
-          "delta_pp": -1.5500000000000014
+          "previous_probability": 0.216,
+          "delta_pp": -0.5000000000000004
         },
         {
           "label": "Kylian Mbapp\u00e9",
-          "probability": 0.0985,
+          "probability": 0.095,
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.098,
-          "best_ask": 0.099,
-          "last_trade_price": 0.099,
+          "best_bid": 0.094,
+          "best_ask": 0.096,
+          "last_trade_price": 0.096,
           "outcome": "Yes",
-          "previous_probability": 0.0995,
-          "delta_pp": -0.10000000000000009
+          "previous_probability": 0.0985,
+          "delta_pp": -0.3500000000000003
         },
         {
           "label": "Rodri",
@@ -367,14 +367,14 @@
         },
         {
           "label": "Lionel Messi",
-          "probability": 0.041999999999999996,
+          "probability": 0.040999999999999995,
           "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
           "best_bid": 0.039,
-          "best_ask": 0.045,
-          "last_trade_price": 0.039,
+          "best_ask": 0.043,
+          "last_trade_price": 0.044,
           "outcome": "Yes",
-          "previous_probability": 0.0445,
-          "delta_pp": -0.2500000000000002
+          "previous_probability": 0.041999999999999996,
+          "delta_pp": -0.10000000000000009
         },
         {
           "label": "Fabian Ruiz",
@@ -384,8 +384,8 @@
           "best_ask": 0.014,
           "last_trade_price": 0.013,
           "outcome": "Yes",
-          "previous_probability": null,
-          "delta_pp": null
+          "previous_probability": 0.0135,
+          "delta_pp": 0.0
         }
       ]
     },
