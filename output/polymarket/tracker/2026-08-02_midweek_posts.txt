@@ -1,8 +1,5 @@
-🏆 Change in PFA Player Of The Year probability since last update:
+No tracked market changes met the posting threshold.
 
-• Bruno Fernandes: 80.5% -> 81.5%
-• Declan Rice: 7.5% -> 7.5%
-• Erling Haaland: 3.8% -> 3.2%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/2025-2026-pfa-players-player-of-the-year-winner
+- Threshold: 0.5pp
+- Window: since last update
+- Generated: 2026-08-02T19:07:14Z
