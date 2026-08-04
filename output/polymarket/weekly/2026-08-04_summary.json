@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-04T09:41:01Z",
+  "baseline_date": "2026-07-28T09:38:45Z",
+  "current_date": "2026-08-04T09:41:01Z",
+  "mode": "generate",
+  "baseline_path": "output/polymarket/weekly_baseline.json",
+  "markets_with_movement": [
+    {
+      "slug": "ballon-dor-winner-2026",
+      "label": "Ballon d'Or Winner",
+      "max_move_pp": 7.0
+    }
+  ],
+  "biggest_mover_triggered": true,
+  "errors": []
+}
