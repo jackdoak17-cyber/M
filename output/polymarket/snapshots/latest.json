@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T12:58:58Z",
+  "generated_at": "2026-08-07T18:53:34Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -242,7 +242,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 231668.52427799994,
+      "volume": 231668.52427799997,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
@@ -257,14 +257,14 @@
         },
         {
           "label": "Declan Rice",
-          "probability": 0.16,
+          "probability": 0.17,
           "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
-          "best_bid": 0.13,
-          "best_ask": 0.19,
+          "best_bid": 0.14,
+          "best_ask": 0.2,
           "last_trade_price": 0.18,
           "outcome": "Yes",
-          "previous_probability": 0.17,
-          "delta_pp": -1.0000000000000009
+          "previous_probability": 0.16,
+          "delta_pp": 1.0000000000000009
         },
         {
           "label": "Erling Haaland",
@@ -319,18 +319,18 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 27493362.066400994,
+      "volume": 27505260.933726992,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.575,
+          "probability": 0.5754999999999999,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.574,
+          "best_bid": 0.575,
           "best_ask": 0.576,
-          "last_trade_price": 0.575,
+          "last_trade_price": 0.576,
           "outcome": "Yes",
-          "previous_probability": 0.5754999999999999,
-          "delta_pp": -0.04999999999999449
+          "previous_probability": 0.575,
+          "delta_pp": 0.04999999999999449
         },
         {
           "label": "Lamine Yamal",
@@ -349,10 +349,10 @@
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
           "best_bid": 0.083,
           "best_ask": 0.084,
-          "last_trade_price": 0.083,
+          "last_trade_price": 0.084,
           "outcome": "Yes",
-          "previous_probability": 0.084,
-          "delta_pp": -0.050000000000000044
+          "previous_probability": 0.0835,
+          "delta_pp": 0.0
         },
         {
           "label": "Rodri",
@@ -373,8 +373,8 @@
           "best_ask": 0.022,
           "last_trade_price": 0.022,
           "outcome": "Yes",
-          "previous_probability": 0.0205,
-          "delta_pp": 0.09999999999999974
+          "previous_probability": 0.0215,
+          "delta_pp": 0.0
         },
         {
           "label": "Khvicha Kvaratskhelia",
