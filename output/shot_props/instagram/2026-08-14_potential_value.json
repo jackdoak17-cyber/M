@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "potential_value",
+  "generated_at": "2026-08-14T15:55:31+00:00",
+  "scheduled_for": "2026-08-14",
+  "source_target_date": "2026-08-15",
+  "fixture_dates": [
+    "2026-08-15",
+    "2026-08-16"
+  ],
+  "title": "",
+  "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.75,
+    "min_odds": 1.72,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 3,
+    "by_section": {
+      "1+ Shot": 2,
+      "2+ Shots": 1
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19732740:98079:1+ Shot:1",
+          "player_id": 98079,
+          "player_name": "Valentin Rosier",
+          "team_id": 459,
+          "team_name": "Osasuna",
+          "fixture_id": 19732740,
+          "fixture_label": "Celta de Vigo vs Osasuna",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 2.25,
+          "display": {
+            "rate": "9/12",
+            "odds": "@2.25",
+            "summary": "Valentin Rosier (Osasuna) won in 9/12 @2.25"
+          }
+        },
+        {
+          "id": "19732742:443792:1+ Shot:1",
+          "player_id": 443792,
+          "player_name": "Nahuel Tenaglia",
+          "team_id": 2975,
+          "team_name": "Deportivo Alav\u00e9s",
+          "fixture_id": 19732742,
+          "fixture_label": "Deportivo Alav\u00e9s vs Getafe",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Nahuel Tenaglia (Deportivo Alav\u00e9s) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19746649:78462:2+ Shots:2",
+          "player_id": 78462,
+          "player_name": "Qazim Laci",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19746649,
+          "fixture_label": "Konyaspor vs Rizespor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Qazim Laci (Rizespor) won in 6/8 @1.83"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "Fixtures: Sat 15 Aug - Sun 16 Aug 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 2\n\u2022 2+ Shots: 1\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "Stats & Odds List",
+      "title_words": {
+        "primary": "POTENTIAL",
+        "accent": "VALUE"
+      },
+      "title": "",
+      "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+      "threshold_bar": "75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
+      "fixture_window": "Sat 15 Aug - Sun 16 Aug 2026",
+      "stats": {
+        "total_players": 3,
+        "stat_types": 2,
+        "hit_rate_threshold_pct": 75
+      },
+      "slide_number": 1,
+      "slide_count": 3
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19732740:98079:1+ Shot:1",
+          "player_id": 98079,
+          "player_name": "Valentin Rosier",
+          "team_id": 459,
+          "team_name": "Osasuna",
+          "fixture_id": 19732740,
+          "fixture_label": "Celta de Vigo vs Osasuna",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 2.25,
+          "display": {
+            "rate": "9/12",
+            "odds": "@2.25",
+            "summary": "Valentin Rosier (Osasuna) won in 9/12 @2.25"
+          }
+        },
+        {
+          "id": "19732742:443792:1+ Shot:1",
+          "player_id": 443792,
+          "player_name": "Nahuel Tenaglia",
+          "team_id": 2975,
+          "team_name": "Deportivo Alav\u00e9s",
+          "fixture_id": 19732742,
+          "fixture_label": "Deportivo Alav\u00e9s vs Getafe",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Nahuel Tenaglia (Deportivo Alav\u00e9s) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 2,
+      "slide_number": 2,
+      "slide_count": 3
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19746649:78462:2+ Shots:2",
+          "player_id": 78462,
+          "player_name": "Qazim Laci",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19746649,
+          "fixture_label": "Konyaspor vs Rizespor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Qazim Laci (Rizespor) won in 6/8 @1.83"
+          }
+        }
+      ],
+      "section_total_rows": 1,
+      "slide_number": 3,
+      "slide_count": 3
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "bb8b2366694ae5722e2391f731f6a937b6f41e1341c5aa8cfffb3316b4fa3c4f"
+}
