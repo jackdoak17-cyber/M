@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T01:07:35Z",
+  "generated_at": "2026-08-15T06:34:42Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -242,7 +242,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 275555.816403,
+      "volume": 275596.732699,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
@@ -252,30 +252,30 @@
           "best_ask": 0.81,
           "last_trade_price": 0.81,
           "outcome": "Yes",
-          "previous_probability": 0.8,
-          "delta_pp": -0.5000000000000004
+          "previous_probability": 0.795,
+          "delta_pp": 0.0
         },
         {
           "label": "Declan Rice",
-          "probability": 0.165,
+          "probability": 0.18,
           "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
-          "best_bid": 0.14,
-          "best_ask": 0.19,
+          "best_bid": 0.15,
+          "best_ask": 0.21,
           "last_trade_price": 0.19,
           "outcome": "Yes",
-          "previous_probability": 0.16,
-          "delta_pp": 0.5000000000000004
+          "previous_probability": 0.165,
+          "delta_pp": 1.4999999999999987
         },
         {
           "label": "Erling Haaland",
-          "probability": 0.0165,
+          "probability": 0.018,
           "question": "Will Erling Haaland win the 2026 PFA Player of the Year?",
-          "best_bid": 0.008,
-          "best_ask": 0.025,
-          "last_trade_price": 0.004,
+          "best_bid": 0.009,
+          "best_ask": 0.027,
+          "last_trade_price": 0.026,
           "outcome": "Yes",
-          "previous_probability": 0.0115,
-          "delta_pp": 0.5000000000000001
+          "previous_probability": 0.0165,
+          "delta_pp": 0.1499999999999998
         },
         {
           "label": "Rayan Cherki",
@@ -319,29 +319,29 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 28476858.191687997,
+      "volume": 28563287.156664997,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.5825,
+          "probability": 0.614,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.58,
-          "best_ask": 0.585,
-          "last_trade_price": 0.585,
+          "best_bid": 0.612,
+          "best_ask": 0.616,
+          "last_trade_price": 0.615,
           "outcome": "Yes",
-          "previous_probability": 0.5834999999999999,
-          "delta_pp": -0.09999999999998899
+          "previous_probability": 0.5825,
+          "delta_pp": 3.1499999999999972
         },
         {
           "label": "Lamine Yamal",
-          "probability": 0.1655,
+          "probability": 0.1595,
           "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-          "best_bid": 0.165,
-          "best_ask": 0.166,
-          "last_trade_price": 0.165,
+          "best_bid": 0.158,
+          "best_ask": 0.161,
+          "last_trade_price": 0.16,
           "outcome": "Yes",
-          "previous_probability": 0.166,
-          "delta_pp": -0.050000000000000044
+          "previous_probability": 0.1655,
+          "delta_pp": -0.6000000000000005
         },
         {
           "label": "Rodri",
@@ -362,19 +362,19 @@
           "best_ask": 0.073,
           "last_trade_price": 0.072,
           "outcome": "Yes",
-          "previous_probability": 0.073,
-          "delta_pp": -0.050000000000000044
+          "previous_probability": 0.0725,
+          "delta_pp": 0.0
         },
         {
           "label": "Khvicha Kvaratskhelia",
-          "probability": 0.0655,
+          "probability": 0.0405,
           "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
-          "best_bid": 0.061,
-          "best_ask": 0.07,
-          "last_trade_price": 0.061,
+          "best_bid": 0.04,
+          "best_ask": 0.041,
+          "last_trade_price": 0.04,
           "outcome": "Yes",
-          "previous_probability": 0.043,
-          "delta_pp": 2.2500000000000004
+          "previous_probability": 0.0655,
+          "delta_pp": -2.5
         },
         {
           "label": "Lionel Messi",
