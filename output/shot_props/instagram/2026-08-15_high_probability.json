@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-08-14T15:55:31+00:00",
+  "generated_at": "2026-08-15T06:58:48+00:00",
   "scheduled_for": "2026-08-15",
   "source_target_date": "2026-08-15",
   "fixture_dates": [
@@ -19,10 +19,9 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 3,
+    "total_rows": 2,
     "by_section": {
-      "1+ Shot": 2,
-      "2+ Shots": 1
+      "1+ Shot": 2
     }
   },
   "sections": {
@@ -72,34 +71,10 @@
             "summary": "Tristan Crama (Millwall) won in 9/10 @1.67"
           }
         }
-      ],
-      "2+ Shots": [
-        {
-          "id": "19732742:10692:2+ Shots:2",
-          "player_id": 10692,
-          "player_name": "Toni Mart\u00ednez",
-          "team_id": 2975,
-          "team_name": "Deportivo Alav\u00e9s",
-          "fixture_id": 19732742,
-          "fixture_label": "Deportivo Alav\u00e9s vs Getafe",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.36,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.36",
-            "summary": "Toni Mart\u00ednez (Deportivo Alav\u00e9s) won in 10/11 @1.36"
-          }
-        }
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 15 Aug 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 2\n\u2022 2+ Shots: 1\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 15 Aug 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 2\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -113,12 +88,12 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 15 Aug 2026",
       "stats": {
-        "total_players": 3,
-        "stat_types": 2,
+        "total_players": 2,
+        "stat_types": 1,
         "hit_rate_threshold_pct": 90
       },
       "slide_number": 1,
-      "slide_count": 3
+      "slide_count": 2
     },
     {
       "slide_type": "section",
@@ -173,45 +148,12 @@
       ],
       "section_total_rows": 2,
       "slide_number": 2,
-      "slide_count": 3
-    },
-    {
-      "slide_type": "section",
-      "section_label": "2+ Shots",
-      "section_page": 1,
-      "section_pages": 1,
-      "rows": [
-        {
-          "id": "19732742:10692:2+ Shots:2",
-          "player_id": 10692,
-          "player_name": "Toni Mart\u00ednez",
-          "team_id": 2975,
-          "team_name": "Deportivo Alav\u00e9s",
-          "fixture_id": 19732742,
-          "fixture_label": "Deportivo Alav\u00e9s vs Getafe",
-          "league_id": 564,
-          "league_name": "La Liga",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.36,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.36",
-            "summary": "Toni Mart\u00ednez (Deportivo Alav\u00e9s) won in 10/11 @1.36"
-          }
-        }
-      ],
-      "section_total_rows": 1,
-      "slide_number": 3,
-      "slide_count": 3
+      "slide_count": 2
     }
   ],
   "verification": {
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "bbaf89be3a5928f9175245a38cb0ad3ce13e69c45c6ed65c9263f3df9f8238a6"
+  "content_fingerprint": "c4f1de0cc4d8785cd01223e59d5d61cabe223b82a782e704b604211a510c4581"
 }
