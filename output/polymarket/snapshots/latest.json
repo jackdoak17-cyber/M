@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T01:11:19Z",
+  "generated_at": "2026-08-21T06:41:56Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -242,40 +242,40 @@
       "active": true,
       "closed": false,
       "end_date": "2026-08-31T23:55:00Z",
-      "volume": 286637.652592,
+      "volume": 286700.132592,
       "top_outcomes": [
         {
           "label": "Bruno Fernandes",
-          "probability": 0.765,
+          "probability": 0.775,
           "question": "Will Bruno Fernandes win the 2026 PFA Player of the Year?",
-          "best_bid": 0.75,
-          "best_ask": 0.78,
-          "last_trade_price": 0.76,
+          "best_bid": 0.76,
+          "best_ask": 0.79,
+          "last_trade_price": 0.78,
           "outcome": "Yes",
-          "previous_probability": 0.785,
-          "delta_pp": -2.0000000000000018
+          "previous_probability": 0.765,
+          "delta_pp": 1.0000000000000009
         },
         {
           "label": "Declan Rice",
-          "probability": 0.235,
+          "probability": 0.19,
           "question": "Will Declan Rice win the 2026 PFA Player of the Year?",
-          "best_bid": 0.23,
-          "best_ask": 0.24,
+          "best_bid": 0.16,
+          "best_ask": 0.22,
           "last_trade_price": 0.23,
           "outcome": "Yes",
-          "previous_probability": 0.215,
-          "delta_pp": 1.9999999999999991
+          "previous_probability": 0.235,
+          "delta_pp": -4.499999999999998
         },
         {
           "label": "Erling Haaland",
-          "probability": 0.031,
+          "probability": 0.034,
           "question": "Will Erling Haaland win the 2026 PFA Player of the Year?",
-          "best_bid": 0.025,
+          "best_bid": 0.031,
           "best_ask": 0.037,
-          "last_trade_price": 0.036,
+          "last_trade_price": 0.037,
           "outcome": "Yes",
-          "previous_probability": 0.0125,
-          "delta_pp": 1.8499999999999999
+          "previous_probability": 0.031,
+          "delta_pp": 0.30000000000000027
         },
         {
           "label": "Cole Palmer",
@@ -285,19 +285,19 @@
           "best_ask": 0.001,
           "last_trade_price": 0.006,
           "outcome": "Yes",
-          "previous_probability": null,
-          "delta_pp": null
+          "previous_probability": 0.006,
+          "delta_pp": 0.0
         },
         {
           "label": "Rayan Cherki",
-          "probability": 0.002,
+          "probability": 0.0025,
           "question": "Will Rayan Cherki win the 2026 PFA Player of the Year?",
           "best_bid": 0.001,
-          "best_ask": 0.003,
+          "best_ask": 0.004,
           "last_trade_price": 0.003,
           "outcome": "Yes",
-          "previous_probability": 0.0025,
-          "delta_pp": -0.05
+          "previous_probability": 0.002,
+          "delta_pp": 0.05
         },
         {
           "label": "Bukayo Saka",
@@ -319,18 +319,18 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 29818460.454484995,
+      "volume": 29886426.409739997,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.6225,
+          "probability": 0.611,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.622,
-          "best_ask": 0.623,
-          "last_trade_price": 0.623,
+          "best_bid": 0.61,
+          "best_ask": 0.612,
+          "last_trade_price": 0.612,
           "outcome": "Yes",
-          "previous_probability": 0.6214999999999999,
-          "delta_pp": 0.10000000000001119
+          "previous_probability": 0.6225,
+          "delta_pp": -1.1500000000000066
         },
         {
           "label": "Lamine Yamal",
@@ -340,8 +340,8 @@
           "best_ask": 0.158,
           "last_trade_price": 0.158,
           "outcome": "Yes",
-          "previous_probability": 0.1605,
-          "delta_pp": -0.30000000000000027
+          "previous_probability": 0.1575,
+          "delta_pp": 0.0
         },
         {
           "label": "Rodri",
@@ -356,36 +356,36 @@
         },
         {
           "label": "Kylian Mbapp\u00e9",
-          "probability": 0.0765,
+          "probability": 0.0785,
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.076,
-          "best_ask": 0.077,
-          "last_trade_price": 0.076,
+          "best_bid": 0.078,
+          "best_ask": 0.079,
+          "last_trade_price": 0.079,
           "outcome": "Yes",
-          "previous_probability": 0.073,
-          "delta_pp": 0.3500000000000003
+          "previous_probability": 0.0765,
+          "delta_pp": 0.20000000000000018
         },
         {
           "label": "Khvicha Kvaratskhelia",
-          "probability": 0.0285,
+          "probability": 0.025500000000000002,
           "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
-          "best_bid": 0.028,
-          "best_ask": 0.029,
-          "last_trade_price": 0.029,
+          "best_bid": 0.025,
+          "best_ask": 0.026,
+          "last_trade_price": 0.027,
           "outcome": "Yes",
-          "previous_probability": 0.0275,
-          "delta_pp": 0.10000000000000009
+          "previous_probability": 0.0285,
+          "delta_pp": -0.29999999999999993
         },
         {
-          "label": "Ousmane Demb\u00e9l\u00e9",
-          "probability": 0.0155,
-          "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.015,
-          "best_ask": 0.016,
-          "last_trade_price": 0.015,
+          "label": "Lionel Messi",
+          "probability": 0.025500000000000002,
+          "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
+          "best_bid": 0.021,
+          "best_ask": 0.03,
+          "last_trade_price": 0.025,
           "outcome": "Yes",
-          "previous_probability": 0.0165,
-          "delta_pp": -0.10000000000000009
+          "previous_probability": null,
+          "delta_pp": null
         }
       ]
     },
