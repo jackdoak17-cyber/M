@@ -6,9 +6,8 @@ Leave a like if you find these useful.
 - D. Ouattara (Brentford) = 2, 1, 1, 2, 1
 - G. Rutter (Brighton) = 1, 1, 4, 1, 1
 - Y. Ayari (Brighton) = 1, 3, 1, 2, 1
-- C. Palmer (Chelsea) = 2, 2, 5, 1, 1
-- M. Caicedo (Chelsea) = 2, 4, 3, 1, 3
-- E. Rowe (Fulham) = 1, 3, 1, 1, 2
+- C. Palmer (Chelsea) = 3, 2, 2, 5, 1
+- J. Pedro (Chelsea) = 1, 2, 3, 2, 3
 - J. Enciso (Ipswich Town) = 2, 1, 4, 4, 1
 - A. Heaven (Man Utd) = 2, 2, 1, 1, 1
 - N. Sadiki (Sunderland) = 3, 2, 1, 2, 3
@@ -22,8 +21,8 @@ Leave a like if you find these useful.
 - I. Thiago (Brentford) = 2, 2, 1, 2, 3
 - G. Rutter (Brighton) = 2, 2, 2, 1, 2
 - J. Hinshelwood (Brighton) = 3, 0, 3, 2, 4
-- C. Palmer (Chelsea) = 3, 3, 0, 5, 4
-- J. Pedro (Chelsea) = 2, 3, 2, 3, 2
+- C. Palmer (Chelsea) = 5, 3, 3, 0, 5
+- J. Pedro (Chelsea) = 4, 2, 3, 2, 3
 - J. Enciso (Ipswich Town) = 3, 4, 2, 6, 1
 - D. Calvert-Lewin (Leeds) = 3, 2, 1, 2, 2
 - B. Fernandes (Man Utd) = 3, 1, 5, 2, 2
@@ -33,6 +32,6 @@ Leave a like if you find these useful.
 - B. Brobbey (Sunderland) = 2, 1, 2, 3, 3
 
 📊2+ Fouls Drawn in ≥4/5📊
-- J. Pedro (Chelsea) = 2, 3, 2, 3, 0
-- M. Caicedo (Chelsea) = 2, 4, 3, 1, 3
+- C. Palmer (Chelsea) = 3, 2, 2, 5, 1
+- J. Pedro (Chelsea) = 1, 2, 3, 2, 3
 - N. Sadiki (Sunderland) = 3, 2, 1, 2, 3
