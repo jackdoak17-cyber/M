@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-25T07:49:04Z",
+  "baseline_date": "2026-08-18T07:42:32Z",
+  "current_date": "2026-08-25T07:49:04Z",
+  "mode": "generate",
+  "baseline_path": "output/polymarket/weekly_baseline.json",
+  "markets_with_movement": [
+    {
+      "slug": "2025-2026-pfa-players-player-of-the-year-winner",
+      "label": "PFA Player Of The Year",
+      "max_move_pp": 11.0
+    }
+  ],
+  "biggest_mover_triggered": true,
+  "errors": []
+}
