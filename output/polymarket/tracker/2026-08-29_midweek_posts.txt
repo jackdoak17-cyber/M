@@ -1,8 +1,5 @@
-🏆 Change in Ballon d'Or Winner probability since last update:
+No tracked market changes met the posting threshold.
 
-• Harry Kane: 65.7% -> 65.5%
-• Lamine Yamal: 15.3% -> 14.8%
-• Kylian Mbappé: 6.7% -> 8.3%
-
-[🔮 via @Polymarket]
-https://polymarket.com/event/ballon-dor-winner-2026
+- Threshold: 0.5pp
+- Window: since last update
+- Generated: 2026-08-29T20:26:15Z
