@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "high_probability",
+  "generated_at": "2026-08-29T12:43:28+00:00",
+  "scheduled_for": "2026-08-29",
+  "source_target_date": "2026-08-29",
+  "fixture_dates": [
+    "2026-08-29"
+  ],
+  "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+  "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.9,
+    "min_odds": 1.3,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 2,
+    "by_section": {
+      "1+ Shot": 2
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19722801:3385:1+ Shot:1",
+          "player_id": 3385,
+          "player_name": "Aaron Tshibola",
+          "team_id": 180,
+          "team_name": "Kilmarnock",
+          "fixture_id": 19722801,
+          "fixture_label": "Kilmarnock vs Dundee United",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.36",
+            "summary": "Aaron Tshibola (Kilmarnock) won in 7/7 @1.36"
+          }
+        },
+        {
+          "id": "19732718:4545454:1+ Shot:1",
+          "player_id": 4545454,
+          "player_name": "Adri\u00e1n Dela",
+          "team_id": 3457,
+          "team_name": "Levante",
+          "fixture_id": 19732718,
+          "fixture_label": "Levante vs Real Betis",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.44,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.44",
+            "summary": "Adri\u00e1n Dela (Levante) won in 12/13 @1.44"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 29 Aug 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 2\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "High Probability List",
+      "title_words": {
+        "primary": "HIGH",
+        "accent": "PROBABILITY"
+      },
+      "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+      "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+      "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
+      "fixture_window": "Sat 29 Aug 2026",
+      "stats": {
+        "total_players": 2,
+        "stat_types": 1,
+        "hit_rate_threshold_pct": 90
+      },
+      "slide_number": 1,
+      "slide_count": 2
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19722801:3385:1+ Shot:1",
+          "player_id": 3385,
+          "player_name": "Aaron Tshibola",
+          "team_id": 180,
+          "team_name": "Kilmarnock",
+          "fixture_id": 19722801,
+          "fixture_label": "Kilmarnock vs Dundee United",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.36",
+            "summary": "Aaron Tshibola (Kilmarnock) won in 7/7 @1.36"
+          }
+        },
+        {
+          "id": "19732718:4545454:1+ Shot:1",
+          "player_id": 4545454,
+          "player_name": "Adri\u00e1n Dela",
+          "team_id": 3457,
+          "team_name": "Levante",
+          "fixture_id": 19732718,
+          "fixture_label": "Levante vs Real Betis",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.44,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.44",
+            "summary": "Adri\u00e1n Dela (Levante) won in 12/13 @1.44"
+          }
+        }
+      ],
+      "section_total_rows": 2,
+      "slide_number": 2,
+      "slide_count": 2
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "b1a6948c6ca480dc07ccdd6e9ed3d4e9b0ffdd89d88dc7d3d15c278eac15a331"
+}
