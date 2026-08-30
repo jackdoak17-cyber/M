@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T11:17:29Z",
+  "generated_at": "2026-08-30T16:04:27Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -319,7 +319,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 31530801.397474002,
+      "volume": 31551316.115957,
       "top_outcomes": [
         {
           "label": "Harry Kane",
@@ -340,19 +340,19 @@
           "best_ask": 0.149,
           "last_trade_price": 0.148,
           "outcome": "Yes",
-          "previous_probability": 0.1495,
-          "delta_pp": -0.10000000000000009
+          "previous_probability": 0.1485,
+          "delta_pp": 0.0
         },
         {
           "label": "Kylian Mbapp\u00e9",
-          "probability": 0.0885,
+          "probability": 0.089,
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
           "best_bid": 0.088,
-          "best_ask": 0.089,
-          "last_trade_price": 0.089,
+          "best_ask": 0.09,
+          "last_trade_price": 0.09,
           "outcome": "Yes",
           "previous_probability": 0.0885,
-          "delta_pp": 0.0
+          "delta_pp": 0.050000000000000044
         },
         {
           "label": "Rodri",
@@ -371,21 +371,21 @@
           "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
           "best_bid": 0.023,
           "best_ask": 0.024,
-          "last_trade_price": 0.024,
+          "last_trade_price": 0.023,
           "outcome": "Yes",
-          "previous_probability": 0.0215,
-          "delta_pp": 0.20000000000000018
+          "previous_probability": 0.0235,
+          "delta_pp": 0.0
         },
         {
           "label": "Khvicha Kvaratskhelia",
-          "probability": 0.0155,
+          "probability": 0.0165,
           "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
-          "best_bid": 0.014,
-          "best_ask": 0.017,
-          "last_trade_price": 0.014,
+          "best_bid": 0.015,
+          "best_ask": 0.018,
+          "last_trade_price": 0.018,
           "outcome": "Yes",
-          "previous_probability": 0.0165,
-          "delta_pp": -0.10000000000000009
+          "previous_probability": 0.0155,
+          "delta_pp": 0.10000000000000009
         }
       ]
     },
