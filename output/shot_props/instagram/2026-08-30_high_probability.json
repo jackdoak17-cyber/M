@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-08-28T23:57:01+00:00",
+  "generated_at": "2026-08-30T11:56:22+00:00",
   "scheduled_for": "2026-08-30",
   "source_target_date": "2026-08-30",
   "fixture_dates": [
@@ -19,10 +19,9 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 2,
+    "total_rows": 1,
     "by_section": {
-      "1+ Shot": 1,
-      "2+ Shots": 1
+      "1+ Shot": 1
     }
   },
   "sections": {
@@ -50,34 +49,10 @@
             "summary": "Givairo Read (Feyenoord) won in 9/10 @1.33"
           }
         }
-      ],
-      "2+ Shots": [
-        {
-          "id": "19714678:37459033:2+ Shots:2",
-          "player_id": 37459033,
-          "player_name": "\u00c1ngel Alarc\u00f3n",
-          "team_id": 750,
-          "team_name": "FC Utrecht",
-          "fixture_id": 19714678,
-          "fixture_label": "FC Utrecht vs PSV",
-          "league_id": 72,
-          "league_name": "Eredivisie",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 11,
-          "sample": 12,
-          "hit_rate": 0.9167,
-          "odds": 1.36,
-          "display": {
-            "rate": "11/12",
-            "odds": "@1.36",
-            "summary": "\u00c1ngel Alarc\u00f3n (FC Utrecht) won in 11/12 @1.36"
-          }
-        }
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sun 30 Aug 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 1\n\u2022 2+ Shots: 1\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sun 30 Aug 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 1\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -91,12 +66,12 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sun 30 Aug 2026",
       "stats": {
-        "total_players": 2,
-        "stat_types": 2,
+        "total_players": 1,
+        "stat_types": 1,
         "hit_rate_threshold_pct": 90
       },
       "slide_number": 1,
-      "slide_count": 3
+      "slide_count": 2
     },
     {
       "slide_type": "section",
@@ -129,45 +104,12 @@
       ],
       "section_total_rows": 1,
       "slide_number": 2,
-      "slide_count": 3
-    },
-    {
-      "slide_type": "section",
-      "section_label": "2+ Shots",
-      "section_page": 1,
-      "section_pages": 1,
-      "rows": [
-        {
-          "id": "19714678:37459033:2+ Shots:2",
-          "player_id": 37459033,
-          "player_name": "\u00c1ngel Alarc\u00f3n",
-          "team_id": 750,
-          "team_name": "FC Utrecht",
-          "fixture_id": 19714678,
-          "fixture_label": "FC Utrecht vs PSV",
-          "league_id": 72,
-          "league_name": "Eredivisie",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 11,
-          "sample": 12,
-          "hit_rate": 0.9167,
-          "odds": 1.36,
-          "display": {
-            "rate": "11/12",
-            "odds": "@1.36",
-            "summary": "\u00c1ngel Alarc\u00f3n (FC Utrecht) won in 11/12 @1.36"
-          }
-        }
-      ],
-      "section_total_rows": 1,
-      "slide_number": 3,
-      "slide_count": 3
+      "slide_count": 2
     }
   ],
   "verification": {
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "5f6e48f1ce6ad1d370101aa1473b411834a81ee86e0d6518a929b81e00baf7a3"
+  "content_fingerprint": "3c36429761ed589460a23b173c072f397075487ec7264ba0f64da76a4fb39917"
 }
