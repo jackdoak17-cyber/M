@@ -19,25 +19,6 @@ H. Barnes 1+ foul won (won in 5/6)
 Evanilson 1+ foul won (won in 8/10)
 Bournemouth 3+ corners (won in 17/20)
 
-🔵 Brighton vs Leeds ⚪ - 3:00pm
-
-E. Ampadu 1+ foul committed (won in 17/20)
-J. Bogle 1+ foul committed (won in 13/16)
-Y. Ayari 1+ foul won (won in 5/6)
-Brighton 3+ corners (won in 16/20)
-
-🔴 Brentford vs Sunderland 🔴 - 3:00pm
-
-K. Lewis-Potter 1+ shots (won in 13/15)
-D. Ouattara 2+ shots (won in 8/10)
-I. Thiago 1+ foul committed (won in 17/20)
-N. Sadiki 1+ foul committed (won in 11/13)
-B. Brobbey 1+ foul committed (won in 15/18)
-O. Alderete 1+ foul committed (won in 8/10)
-N. Sadiki 1+ foul won (won in 6/7)
-D. Ouattara 1+ foul won (won in 5/6)
-E. Fée 1+ foul won (won in 13/16)
-
 ⚪ Fulham vs Palace 🔴 - 3:00pm
 
 A. Robinson 1+ shots (won in 5/6)
@@ -46,6 +27,37 @@ C. Bassey 1+ foul won (won in 12/15)
 Fulham 3+ corners (won in 17/20)
 Fulham 4+ corners (won in 15/18)
 Fulham 6+ corners (won in 4/5)
+
+🔵 Brighton vs Leeds ⚪ - 3:00pm
+
+F. Kadıoğlu 1+ shots (won in 8/10)
+N. Okafor 2+ shots (won in 7/7)
+D. Calvert-Lewin SOT (won in 9/11)
+E. Ampadu 1+ foul committed (won in 18/20)
+J. Bogle 1+ foul committed (won in 14/16)
+D. Gómez 1+ foul committed (won in 12/14)
+D. Calvert-Lewin 1+ foul committed (won in 10/12)
+J. Rodon 1+ foul committed (won in 5/6)
+D. Gómez 2+ fouls committed (won in 8/10)
+O. Boscagli 1+ foul won (won in 7/8)
+A. Stach 1+ foul won (won in 8/10)
+Brighton 5+ corners (won in 7/8)
+Brighton 3+ corners (won in 17/20)
+Brighton 4+ corners (won in 12/15)
+
+🔴 Brentford vs Sunderland 🔴 - 3:00pm
+
+K. Lewis-Potter 1+ shots (won in 14/15)
+I. Thiago 2+ shots (won in 5/6)
+I. Thiago 1+ foul committed (won in 18/20)
+N. Sadiki 1+ foul committed (won in 11/13)
+B. Brobbey 1+ foul committed (won in 15/18)
+K. Ajer 1+ foul committed (won in 10/12)
+V. Janelt 1+ foul committed (won in 9/11)
+K. Schade 1+ foul committed (won in 8/10)
+O. Alderete 1+ foul committed (won in 8/10)
+N. Sadiki 1+ foul won (won in 6/7)
+E. Fée 1+ foul won (won in 13/16)
 
 🔵 Man City vs Coventry City  - 3:00pm
 
