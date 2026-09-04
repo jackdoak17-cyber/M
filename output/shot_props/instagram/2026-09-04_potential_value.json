@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "potential_value",
+  "generated_at": "2026-09-04T18:13:17+00:00",
+  "scheduled_for": "2026-09-04",
+  "source_target_date": "2026-09-05",
+  "fixture_dates": [
+    "2026-09-05",
+    "2026-09-06"
+  ],
+  "title": "",
+  "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.75,
+    "min_odds": 1.72,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 4,
+    "by_section": {
+      "1+ Shot": 3,
+      "1+ SOT": 1
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19722793:19642679:1+ Shot:1",
+          "player_id": 19642679,
+          "player_name": "Michael Schj\u00f6nning-Larsen",
+          "team_id": 180,
+          "team_name": "Kilmarnock",
+          "fixture_id": 19722793,
+          "fixture_label": "Aberdeen vs Kilmarnock",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.80",
+            "summary": "Michael Schj\u00f6nning-Larsen (Kilmarnock) won in 9/12 @1.80"
+          }
+        },
+        {
+          "id": "19722180:1639:1+ Shot:1",
+          "player_id": 1639,
+          "player_name": "James Tarkowski",
+          "team_id": 13,
+          "team_name": "Everton",
+          "fixture_id": 19722180,
+          "fixture_label": "Everton vs Manchester United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 16,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "12/16",
+            "odds": "@1.80",
+            "summary": "James Tarkowski (Everton) won in 12/16 @1.80"
+          }
+        },
+        {
+          "id": "19722180:2884:1+ Shot:1",
+          "player_id": 2884,
+          "player_name": "Harry Maguire",
+          "team_id": 14,
+          "team_name": "Manchester United",
+          "fixture_id": 19722180,
+          "fixture_label": "Everton vs Manchester United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Harry Maguire (Manchester United) won in 6/8 @1.80"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19722183:28912747:1+ SOT:1",
+          "player_id": 28912747,
+          "player_name": "Cole Palmer",
+          "team_id": 18,
+          "team_name": "Chelsea",
+          "fixture_id": 19722183,
+          "fixture_label": "Arsenal vs Chelsea",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 15,
+          "sample": 20,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "15/20",
+            "odds": "@1.73",
+            "summary": "Cole Palmer (Chelsea) won in 15/20 @1.73"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "Fixtures: Sat 05 Sep - Sun 06 Sep 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 3\n\u2022 1+ SOT: 1\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "Stats & Odds List",
+      "title_words": {
+        "primary": "POTENTIAL",
+        "accent": "VALUE"
+      },
+      "title": "",
+      "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+      "threshold_bar": "75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
+      "fixture_window": "Sat 05 Sep - Sun 06 Sep 2026",
+      "stats": {
+        "total_players": 4,
+        "stat_types": 2,
+        "hit_rate_threshold_pct": 75
+      },
+      "slide_number": 1,
+      "slide_count": 3
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19722793:19642679:1+ Shot:1",
+          "player_id": 19642679,
+          "player_name": "Michael Schj\u00f6nning-Larsen",
+          "team_id": 180,
+          "team_name": "Kilmarnock",
+          "fixture_id": 19722793,
+          "fixture_label": "Aberdeen vs Kilmarnock",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.80",
+            "summary": "Michael Schj\u00f6nning-Larsen (Kilmarnock) won in 9/12 @1.80"
+          }
+        },
+        {
+          "id": "19722180:1639:1+ Shot:1",
+          "player_id": 1639,
+          "player_name": "James Tarkowski",
+          "team_id": 13,
+          "team_name": "Everton",
+          "fixture_id": 19722180,
+          "fixture_label": "Everton vs Manchester United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 16,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "12/16",
+            "odds": "@1.80",
+            "summary": "James Tarkowski (Everton) won in 12/16 @1.80"
+          }
+        },
+        {
+          "id": "19722180:2884:1+ Shot:1",
+          "player_id": 2884,
+          "player_name": "Harry Maguire",
+          "team_id": 14,
+          "team_name": "Manchester United",
+          "fixture_id": 19722180,
+          "fixture_label": "Everton vs Manchester United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Harry Maguire (Manchester United) won in 6/8 @1.80"
+          }
+        }
+      ],
+      "section_total_rows": 3,
+      "slide_number": 2,
+      "slide_count": 3
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19722183:28912747:1+ SOT:1",
+          "player_id": 28912747,
+          "player_name": "Cole Palmer",
+          "team_id": 18,
+          "team_name": "Chelsea",
+          "fixture_id": 19722183,
+          "fixture_label": "Arsenal vs Chelsea",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 15,
+          "sample": 20,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "15/20",
+            "odds": "@1.73",
+            "summary": "Cole Palmer (Chelsea) won in 15/20 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 1,
+      "slide_number": 3,
+      "slide_count": 3
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "dbf35422d6574fae7e29125b2e46e7b868ff6ebefd8d1521dbcc8516c4e9e03e"
+}
