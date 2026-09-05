@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-09-04T18:13:17+00:00",
+  "generated_at": "2026-09-05T10:38:00+00:00",
   "scheduled_for": "2026-09-05",
   "source_target_date": "2026-09-05",
   "fixture_dates": [
@@ -67,11 +67,11 @@
           "hits": 15,
           "sample": 16,
           "hit_rate": 0.9375,
-          "odds": 1.61,
+          "odds": 1.44,
           "display": {
             "rate": "15/16",
-            "odds": "@1.61",
-            "summary": "Orkun K\u00f6k\u00e7\u00fc\u00a0 (Be\u015fikta\u015f) won in 15/16 @1.61"
+            "odds": "@1.44",
+            "summary": "Orkun K\u00f6k\u00e7\u00fc\u00a0 (Be\u015fikta\u015f) won in 15/16 @1.44"
           }
         }
       ]
@@ -152,11 +152,11 @@
           "hits": 15,
           "sample": 16,
           "hit_rate": 0.9375,
-          "odds": 1.61,
+          "odds": 1.44,
           "display": {
             "rate": "15/16",
-            "odds": "@1.61",
-            "summary": "Orkun K\u00f6k\u00e7\u00fc\u00a0 (Be\u015fikta\u015f) won in 15/16 @1.61"
+            "odds": "@1.44",
+            "summary": "Orkun K\u00f6k\u00e7\u00fc\u00a0 (Be\u015fikta\u015f) won in 15/16 @1.44"
           }
         }
       ],
@@ -169,5 +169,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "1d16a1957a61ec7d5b867f37c5eb922b85bc3974c75d92e8d375a1398d325c30"
+  "content_fingerprint": "66d1a540dd39950402ebc1d8164081814afbaa1cddd9b72d14420c563c5766b1"
 }
