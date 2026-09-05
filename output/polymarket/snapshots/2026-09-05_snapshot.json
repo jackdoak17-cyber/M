@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T14:37:01Z",
+  "generated_at": "2026-09-05T19:57:13Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -319,18 +319,18 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 32543325.406283,
+      "volume": 32613555.419990998,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.652,
+          "probability": 0.6505000000000001,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.651,
-          "best_ask": 0.653,
-          "last_trade_price": 0.651,
+          "best_bid": 0.65,
+          "best_ask": 0.651,
+          "last_trade_price": 0.65,
           "outcome": "Yes",
-          "previous_probability": 0.6655,
-          "delta_pp": -1.3499999999999956
+          "previous_probability": 0.652,
+          "delta_pp": -0.14999999999999458
         },
         {
           "label": "Lamine Yamal",
@@ -367,14 +367,14 @@
         },
         {
           "label": "Khvicha Kvaratskhelia",
-          "probability": 0.0265,
+          "probability": 0.0295,
           "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
-          "best_bid": 0.023,
-          "best_ask": 0.03,
+          "best_bid": 0.028,
+          "best_ask": 0.031,
           "last_trade_price": 0.03,
           "outcome": "Yes",
-          "previous_probability": 0.0225,
-          "delta_pp": 0.4
+          "previous_probability": 0.0265,
+          "delta_pp": 0.29999999999999993
         },
         {
           "label": "Lionel Messi",
