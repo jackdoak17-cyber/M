@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T15:53:53Z",
+  "generated_at": "2026-09-11T20:28:17Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -319,7 +319,7 @@
       "active": true,
       "closed": false,
       "end_date": "2026-10-31T00:00:00Z",
-      "volume": 34626313.071851,
+      "volume": 34637157.70891,
       "top_outcomes": [
         {
           "label": "Harry Kane",
@@ -327,7 +327,7 @@
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
           "best_bid": 0.619,
           "best_ask": 0.62,
-          "last_trade_price": 0.62,
+          "last_trade_price": 0.619,
           "outcome": "Yes",
           "previous_probability": 0.6194999999999999,
           "delta_pp": 0.0
@@ -340,18 +340,18 @@
           "best_ask": 0.164,
           "last_trade_price": 0.164,
           "outcome": "Yes",
-          "previous_probability": 0.1625,
-          "delta_pp": 0.10000000000000009
+          "previous_probability": 0.1635,
+          "delta_pp": 0.0
         },
         {
           "label": "Kylian Mbapp\u00e9",
-          "probability": 0.0995,
+          "probability": 0.1005,
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.098,
+          "best_bid": 0.1,
           "best_ask": 0.101,
-          "last_trade_price": 0.101,
+          "last_trade_price": 0.1,
           "outcome": "Yes",
-          "previous_probability": 0.0985,
+          "previous_probability": 0.0995,
           "delta_pp": 0.10000000000000009
         },
         {
@@ -360,10 +360,10 @@
           "question": "Will Rodri win the 2026 Ballon d'Or?",
           "best_bid": 0.05,
           "best_ask": 0.06,
-          "last_trade_price": 0.05,
+          "last_trade_price": 0.06,
           "outcome": "Yes",
-          "previous_probability": 0.065,
-          "delta_pp": -1.0000000000000002
+          "previous_probability": 0.055,
+          "delta_pp": 0.0
         },
         {
           "label": "Lionel Messi",
