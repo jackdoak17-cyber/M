@@ -1,0 +1,452 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "potential_value",
+  "generated_at": "2026-09-11T18:17:48+00:00",
+  "scheduled_for": "2026-09-11",
+  "source_target_date": "2026-09-12",
+  "fixture_dates": [
+    "2026-09-12",
+    "2026-09-13"
+  ],
+  "title": "",
+  "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.75,
+    "min_odds": 1.72,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 8,
+    "by_section": {
+      "1+ Shot": 3,
+      "2+ Shots": 2,
+      "1+ SOT": 3
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19729090:37586696:1+ Shot:1",
+          "player_id": 37586696,
+          "player_name": "Ruairi McConville",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19729090,
+          "fixture_label": "Middlesbrough vs Norwich City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 14,
+          "hit_rate": 0.7857,
+          "odds": 2.25,
+          "display": {
+            "rate": "11/14",
+            "odds": "@2.25",
+            "summary": "Ruairi McConville (Norwich City) won in 11/14 @2.25"
+          }
+        },
+        {
+          "id": "19722164:1639:1+ Shot:1",
+          "player_id": 1639,
+          "player_name": "James Tarkowski",
+          "team_id": 13,
+          "team_name": "Everton",
+          "fixture_id": 19722164,
+          "fixture_label": "Tottenham Hotspur vs Everton",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 13,
+          "sample": 17,
+          "hit_rate": 0.7647,
+          "odds": 2.2,
+          "display": {
+            "rate": "13/17",
+            "odds": "@2.20",
+            "summary": "James Tarkowski (Everton) won in 13/17 @2.20"
+          }
+        },
+        {
+          "id": "19729084:37350031:1+ Shot:1",
+          "player_id": 37350031,
+          "player_name": "Ronnie Edwards",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19729084,
+          "fixture_label": "West Bromwich Albion vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.38,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.38",
+            "summary": "Ronnie Edwards (Queens Park Rangers) won in 6/8 @2.38"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19729090:37391640:2+ Shots:2",
+          "player_id": 37391640,
+          "player_name": "Andre Brooks",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19729090,
+          "fixture_label": "Middlesbrough vs Norwich City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.83,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.83",
+            "summary": "Andre Brooks (Norwich City) won in 7/9 @1.83"
+          }
+        },
+        {
+          "id": "19746617:78462:2+ Shots:2",
+          "player_id": 78462,
+          "player_name": "Qazim Laci",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19746617,
+          "fixture_label": "Ey\u00fcpspor vs Rizespor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.73",
+            "summary": "Qazim Laci (Rizespor) won in 9/12 @1.73"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19729084:149574:1+ SOT:1",
+          "player_id": 149574,
+          "player_name": "Paul Smyth",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19729084,
+          "fixture_label": "West Bromwich Albion vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.83,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.83",
+            "summary": "Paul Smyth (Queens Park Rangers) won in 8/10 @1.83"
+          }
+        },
+        {
+          "id": "19713581:129429:1+ SOT:1",
+          "player_id": 129429,
+          "player_name": "Federico Bernardeschi",
+          "team_id": 8513,
+          "team_name": "Bologna",
+          "fixture_id": 19713581,
+          "fixture_label": "Napoli vs Bologna",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Federico Bernardeschi (Bologna) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19722167:785998:1+ SOT:1",
+          "player_id": 785998,
+          "player_name": "Dominik Szoboszlai",
+          "team_id": 8,
+          "team_name": "Liverpool",
+          "fixture_id": 19722167,
+          "fixture_label": "Liverpool vs Fulham",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Dominik Szoboszlai (Liverpool) won in 6/8 @1.73"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "Fixtures: Sat 12 Sep - Sun 13 Sep 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 3\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 3\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "Stats & Odds List",
+      "title_words": {
+        "primary": "POTENTIAL",
+        "accent": "VALUE"
+      },
+      "title": "",
+      "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+      "threshold_bar": "75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
+      "fixture_window": "Sat 12 Sep - Sun 13 Sep 2026",
+      "stats": {
+        "total_players": 8,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 75
+      },
+      "slide_number": 1,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19729090:37586696:1+ Shot:1",
+          "player_id": 37586696,
+          "player_name": "Ruairi McConville",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19729090,
+          "fixture_label": "Middlesbrough vs Norwich City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 14,
+          "hit_rate": 0.7857,
+          "odds": 2.25,
+          "display": {
+            "rate": "11/14",
+            "odds": "@2.25",
+            "summary": "Ruairi McConville (Norwich City) won in 11/14 @2.25"
+          }
+        },
+        {
+          "id": "19722164:1639:1+ Shot:1",
+          "player_id": 1639,
+          "player_name": "James Tarkowski",
+          "team_id": 13,
+          "team_name": "Everton",
+          "fixture_id": 19722164,
+          "fixture_label": "Tottenham Hotspur vs Everton",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 13,
+          "sample": 17,
+          "hit_rate": 0.7647,
+          "odds": 2.2,
+          "display": {
+            "rate": "13/17",
+            "odds": "@2.20",
+            "summary": "James Tarkowski (Everton) won in 13/17 @2.20"
+          }
+        },
+        {
+          "id": "19729084:37350031:1+ Shot:1",
+          "player_id": 37350031,
+          "player_name": "Ronnie Edwards",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19729084,
+          "fixture_label": "West Bromwich Albion vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.38,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.38",
+            "summary": "Ronnie Edwards (Queens Park Rangers) won in 6/8 @2.38"
+          }
+        }
+      ],
+      "section_total_rows": 3,
+      "slide_number": 2,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19729090:37391640:2+ Shots:2",
+          "player_id": 37391640,
+          "player_name": "Andre Brooks",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19729090,
+          "fixture_label": "Middlesbrough vs Norwich City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.83,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.83",
+            "summary": "Andre Brooks (Norwich City) won in 7/9 @1.83"
+          }
+        },
+        {
+          "id": "19746617:78462:2+ Shots:2",
+          "player_id": 78462,
+          "player_name": "Qazim Laci",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19746617,
+          "fixture_label": "Ey\u00fcpspor vs Rizespor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.73",
+            "summary": "Qazim Laci (Rizespor) won in 9/12 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 2,
+      "slide_number": 3,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19729084:149574:1+ SOT:1",
+          "player_id": 149574,
+          "player_name": "Paul Smyth",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19729084,
+          "fixture_label": "West Bromwich Albion vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.83,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.83",
+            "summary": "Paul Smyth (Queens Park Rangers) won in 8/10 @1.83"
+          }
+        },
+        {
+          "id": "19713581:129429:1+ SOT:1",
+          "player_id": 129429,
+          "player_name": "Federico Bernardeschi",
+          "team_id": 8513,
+          "team_name": "Bologna",
+          "fixture_id": 19713581,
+          "fixture_label": "Napoli vs Bologna",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Federico Bernardeschi (Bologna) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19722167:785998:1+ SOT:1",
+          "player_id": 785998,
+          "player_name": "Dominik Szoboszlai",
+          "team_id": 8,
+          "team_name": "Liverpool",
+          "fixture_id": 19722167,
+          "fixture_label": "Liverpool vs Fulham",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Dominik Szoboszlai (Liverpool) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 3,
+      "slide_number": 4,
+      "slide_count": 4
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "84677a0812e594ba1b3946c10077f8965bdcb9051d25d864d76a0476ecf61bfe"
+}
