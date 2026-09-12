@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-09-11T18:17:48+00:00",
+  "generated_at": "2026-09-12T10:47:41+00:00",
   "scheduled_for": "2026-09-12",
   "source_target_date": "2026-09-12",
   "fixture_dates": [
@@ -112,11 +112,11 @@
           "hits": 8,
           "sample": 8,
           "hit_rate": 1.0,
-          "odds": 1.67,
+          "odds": 1.5,
           "display": {
             "rate": "8/8",
-            "odds": "@1.67",
-            "summary": "Harvey Vale (Queens Park Rangers) won in 8/8 @1.67"
+            "odds": "@1.50",
+            "summary": "Harvey Vale (Queens Park Rangers) won in 8/8 @1.50"
           }
         },
         {
@@ -353,11 +353,11 @@
           "hits": 8,
           "sample": 8,
           "hit_rate": 1.0,
-          "odds": 1.67,
+          "odds": 1.5,
           "display": {
             "rate": "8/8",
-            "odds": "@1.67",
-            "summary": "Harvey Vale (Queens Park Rangers) won in 8/8 @1.67"
+            "odds": "@1.50",
+            "summary": "Harvey Vale (Queens Park Rangers) won in 8/8 @1.50"
           }
         },
         {
@@ -491,5 +491,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "6979f0eadc3bb5eaa65e988b09d8e5eb95c779adcb63cbbc5d9e016ec419c269"
+  "content_fingerprint": "c95f9b85834e0fcf523021baf1c36fb63f089975d7c464b5042005f4ca80c773"
 }

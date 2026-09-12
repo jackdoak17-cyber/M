@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "potential_value",
-  "generated_at": "2026-09-11T18:17:48+00:00",
+  "generated_at": "2026-09-12T10:47:41+00:00",
   "scheduled_for": "2026-09-11",
   "source_target_date": "2026-09-12",
   "fixture_dates": [
@@ -20,9 +20,9 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 8,
+    "total_rows": 6,
     "by_section": {
-      "1+ Shot": 3,
+      "1+ Shot": 1,
       "2+ Shots": 2,
       "1+ SOT": 3
     }
@@ -30,28 +30,6 @@
   "sections": {
     "by_section": {
       "1+ Shot": [
-        {
-          "id": "19729090:37586696:1+ Shot:1",
-          "player_id": 37586696,
-          "player_name": "Ruairi McConville",
-          "team_id": 33,
-          "team_name": "Norwich City",
-          "fixture_id": 19729090,
-          "fixture_label": "Middlesbrough vs Norwich City",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 11,
-          "sample": 14,
-          "hit_rate": 0.7857,
-          "odds": 2.25,
-          "display": {
-            "rate": "11/14",
-            "odds": "@2.25",
-            "summary": "Ruairi McConville (Norwich City) won in 11/14 @2.25"
-          }
-        },
         {
           "id": "19722164:1639:1+ Shot:1",
           "player_id": 1639,
@@ -67,33 +45,11 @@
           "hits": 13,
           "sample": 17,
           "hit_rate": 0.7647,
-          "odds": 2.2,
+          "odds": 2.0,
           "display": {
             "rate": "13/17",
-            "odds": "@2.20",
-            "summary": "James Tarkowski (Everton) won in 13/17 @2.20"
-          }
-        },
-        {
-          "id": "19729084:37350031:1+ Shot:1",
-          "player_id": 37350031,
-          "player_name": "Ronnie Edwards",
-          "team_id": 47,
-          "team_name": "Queens Park Rangers",
-          "fixture_id": 19729084,
-          "fixture_label": "West Bromwich Albion vs Queens Park Rangers",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 2.38,
-          "display": {
-            "rate": "6/8",
-            "odds": "@2.38",
-            "summary": "Ronnie Edwards (Queens Park Rangers) won in 6/8 @2.38"
+            "odds": "@2.00",
+            "summary": "James Tarkowski (Everton) won in 13/17 @2.00"
           }
         }
       ],
@@ -213,7 +169,7 @@
       ]
     }
   },
-  "caption": "Fixtures: Sat 12 Sep - Sun 13 Sep 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 3\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 3\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "caption": "Fixtures: Sat 12 Sep - Sun 13 Sep 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 1\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 3\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
   "slides": [
     {
       "slide_type": "cover",
@@ -227,7 +183,7 @@
       "threshold_bar": "75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
       "fixture_window": "Sat 12 Sep - Sun 13 Sep 2026",
       "stats": {
-        "total_players": 8,
+        "total_players": 6,
         "stat_types": 3,
         "hit_rate_threshold_pct": 75
       },
@@ -240,28 +196,6 @@
       "section_page": 1,
       "section_pages": 1,
       "rows": [
-        {
-          "id": "19729090:37586696:1+ Shot:1",
-          "player_id": 37586696,
-          "player_name": "Ruairi McConville",
-          "team_id": 33,
-          "team_name": "Norwich City",
-          "fixture_id": 19729090,
-          "fixture_label": "Middlesbrough vs Norwich City",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 11,
-          "sample": 14,
-          "hit_rate": 0.7857,
-          "odds": 2.25,
-          "display": {
-            "rate": "11/14",
-            "odds": "@2.25",
-            "summary": "Ruairi McConville (Norwich City) won in 11/14 @2.25"
-          }
-        },
         {
           "id": "19722164:1639:1+ Shot:1",
           "player_id": 1639,
@@ -277,37 +211,15 @@
           "hits": 13,
           "sample": 17,
           "hit_rate": 0.7647,
-          "odds": 2.2,
+          "odds": 2.0,
           "display": {
             "rate": "13/17",
-            "odds": "@2.20",
-            "summary": "James Tarkowski (Everton) won in 13/17 @2.20"
-          }
-        },
-        {
-          "id": "19729084:37350031:1+ Shot:1",
-          "player_id": 37350031,
-          "player_name": "Ronnie Edwards",
-          "team_id": 47,
-          "team_name": "Queens Park Rangers",
-          "fixture_id": 19729084,
-          "fixture_label": "West Bromwich Albion vs Queens Park Rangers",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 6,
-          "sample": 8,
-          "hit_rate": 0.75,
-          "odds": 2.38,
-          "display": {
-            "rate": "6/8",
-            "odds": "@2.38",
-            "summary": "Ronnie Edwards (Queens Park Rangers) won in 6/8 @2.38"
+            "odds": "@2.00",
+            "summary": "James Tarkowski (Everton) won in 13/17 @2.00"
           }
         }
       ],
-      "section_total_rows": 3,
+      "section_total_rows": 1,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -448,5 +360,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "84677a0812e594ba1b3946c10077f8965bdcb9051d25d864d76a0476ecf61bfe"
+  "content_fingerprint": "249a1abf6c9b27538782aa565f24d7aa9c054955e98ac59c95cfc69fa6a154a0"
 }
