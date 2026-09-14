@@ -1,0 +1,45 @@
+As usual I've collated todays Premier League 1+ (100% hit-rates) and 2+ (80% hit-rates) player stats based on their last 5 games.
+
+Leave a like if you find these useful.
+
+📊1+ Shots on Target in ≥5/5📊
+- A. Isak (Liverpool) = 1, 2, 1, 2, 1
+- E. Haaland (Man City) = 1, 3, 3, 2, 1
+- B. Mbeumo (Man Utd) = 1, 1, 1, 2, 1
+
+📊1+ Fouls Drawn in ≥5/5📊
+- Evanilson (Bournemouth) = 2, 1, 4, 1, 3
+- A. Wharton (Palace) = 2, 2, 2, 2, 1
+- D. Kamada (Palace) = 2, 1, 1, 2, 1
+- A. Stach (Leeds) = 1, 2, 4, 1, 1
+- G. Gudmundsson (Leeds) = 2, 2, 2, 1, 1
+- K. Mainoo (Man Utd) = 1, 2, 2, 3, 1
+- D. Ballard (Sunderland) = 2, 2, 1, 1, 1
+- E. Fée (Sunderland) = 1, 2, 2, 1, 1
+
+📊1+ Fouls Committed in ≥5/5📊
+- A. Smith (Bournemouth) = 2, 2, 1, 1, 1
+- J. Hill (Bournemouth) = 1, 1, 1, 2, 3
+- D. Calvert-Lewin (Leeds) = 3, 2, 2, 1, 1
+- E. Ampadu (Leeds) = 1, 1, 2, 1, 3
+- D. Szoboszlai (Liverpool) = 4, 1, 1, 2, 1
+- R. Gravenberch (Liverpool) = 1, 1, 2, 1, 1
+- B. Brobbey (Sunderland) = 3, 1, 1, 2, 1
+
+📊2+ Shots in ≥4/5📊
+- M. Tavernier (Bournemouth) = 4, 5, 2, 2, 3
+- J. King (Fulham) = 4, 2, 2, 3, 0
+- N. Okafor (Leeds) = 0, 2, 2, 2, 2
+- A. Isak (Liverpool) = 3, 2, 3, 4, 1
+- D. Szoboszlai (Liverpool) = 2, 3, 3, 3, 2
+- F. Wirtz (Liverpool) = 3, 2, 2, 3, 2
+- E. Haaland (Man City) = 2, 4, 5, 5, 2
+- R. Cherki (Man City) = 1, 3, 3, 3, 4
+- B. Mbeumo (Man Utd) = 3, 2, 5, 4, 1
+- E. Fée (Sunderland) = 3, 3, 4, 0, 2
+
+📊2+ Fouls Committed in ≥4/5📊
+- H. Maguire (Man Utd) = 3, 2, 2, 0, 2
+
+📊2+ Fouls Drawn in ≥4/5📊
+- A. Wharton (Palace) = 2, 2, 2, 2, 1
