@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T03:14:35Z",
+  "generated_at": "2026-09-24T11:08:22Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -319,7 +319,7 @@
       "active": true,
       "closed": false,
       "end_date": "2027-01-01T04:59:00Z",
-      "volume": 38049054.106418,
+      "volume": 38081748.333368994,
       "top_outcomes": [
         {
           "label": "Harry Kane",
@@ -329,8 +329,8 @@
           "best_ask": 0.583,
           "last_trade_price": 0.583,
           "outcome": "Yes",
-          "previous_probability": 0.5814999999999999,
-          "delta_pp": 0.10000000000001119
+          "previous_probability": 0.5825,
+          "delta_pp": 0.0
         },
         {
           "label": "Lamine Yamal",
@@ -345,25 +345,25 @@
         },
         {
           "label": "Kylian Mbapp\u00e9",
-          "probability": 0.0835,
+          "probability": 0.0825,
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.083,
-          "best_ask": 0.084,
+          "best_bid": 0.082,
+          "best_ask": 0.083,
           "last_trade_price": 0.083,
           "outcome": "Yes",
-          "previous_probability": 0.0845,
+          "previous_probability": 0.0835,
           "delta_pp": -0.10000000000000009
         },
         {
           "label": "Lionel Messi",
           "probability": 0.0495,
           "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
-          "best_bid": 0.048,
-          "best_ask": 0.051,
-          "last_trade_price": 0.051,
+          "best_bid": 0.049,
+          "best_ask": 0.05,
+          "last_trade_price": 0.05,
           "outcome": "Yes",
-          "previous_probability": 0.051000000000000004,
-          "delta_pp": -0.15000000000000013
+          "previous_probability": 0.0495,
+          "delta_pp": 0.0
         },
         {
           "label": "Rodri",
@@ -371,7 +371,7 @@
           "question": "Will Rodri win the 2026 Ballon d'Or?",
           "best_bid": 0.04,
           "best_ask": 0.05,
-          "last_trade_price": 0.05,
+          "last_trade_price": 0.04,
           "outcome": "Yes",
           "previous_probability": 0.045,
           "delta_pp": 0.0
