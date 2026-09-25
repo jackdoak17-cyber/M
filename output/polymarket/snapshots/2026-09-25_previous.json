@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T03:31:53Z",
+  "generated_at": "2026-09-24T21:09:38Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -319,7 +319,7 @@
       "active": true,
       "closed": false,
       "end_date": "2027-01-01T04:59:00Z",
-      "volume": 38380952.21856899,
+      "volume": 38203269.994908,
       "top_outcomes": [
         {
           "label": "Harry Kane",
@@ -329,8 +329,8 @@
           "best_ask": 0.579,
           "last_trade_price": 0.579,
           "outcome": "Yes",
-          "previous_probability": 0.5785,
-          "delta_pp": 0.0
+          "previous_probability": 0.5774999999999999,
+          "delta_pp": 0.10000000000001119
         },
         {
           "label": "Lamine Yamal",
@@ -338,7 +338,7 @@
           "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
           "best_bid": 0.221,
           "best_ask": 0.222,
-          "last_trade_price": 0.222,
+          "last_trade_price": 0.221,
           "outcome": "Yes",
           "previous_probability": 0.2215,
           "delta_pp": 0.0
@@ -349,21 +349,21 @@
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
           "best_bid": 0.083,
           "best_ask": 0.084,
-          "last_trade_price": 0.084,
+          "last_trade_price": 0.083,
           "outcome": "Yes",
           "previous_probability": 0.0835,
           "delta_pp": 0.0
         },
         {
           "label": "Lionel Messi",
-          "probability": 0.0505,
+          "probability": 0.05,
           "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
           "best_bid": 0.049,
-          "best_ask": 0.052,
-          "last_trade_price": 0.052,
+          "best_ask": 0.051,
+          "last_trade_price": 0.051,
           "outcome": "Yes",
           "previous_probability": 0.05,
-          "delta_pp": 0.050000000000000044
+          "delta_pp": 0.0
         },
         {
           "label": "Rodri",
@@ -382,7 +382,7 @@
           "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
           "best_bid": 0.018,
           "best_ask": 0.019,
-          "last_trade_price": 0.02,
+          "last_trade_price": 0.019,
           "outcome": "Yes",
           "previous_probability": 0.0185,
           "delta_pp": 0.0
