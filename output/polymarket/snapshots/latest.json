@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T12:28:30Z",
+  "generated_at": "2026-10-01T22:21:37Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -319,73 +319,73 @@
       "active": true,
       "closed": false,
       "end_date": "2027-01-01T04:59:00Z",
-      "volume": 41825411.520532995,
+      "volume": 42385100.07522799,
       "top_outcomes": [
         {
           "label": "Lamine Yamal",
-          "probability": 0.487,
+          "probability": 0.589,
           "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-          "best_bid": 0.485,
-          "best_ask": 0.489,
-          "last_trade_price": 0.494,
+          "best_bid": 0.586,
+          "best_ask": 0.592,
+          "last_trade_price": 0.59,
           "outcome": "Yes",
-          "previous_probability": 0.451,
-          "delta_pp": 3.599999999999998
+          "previous_probability": 0.487,
+          "delta_pp": 10.199999999999998
         },
         {
           "label": "Harry Kane",
-          "probability": 0.4085,
+          "probability": 0.336,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.407,
-          "best_ask": 0.41,
-          "last_trade_price": 0.41,
+          "best_bid": 0.33,
+          "best_ask": 0.342,
+          "last_trade_price": 0.33,
           "outcome": "Yes",
-          "previous_probability": 0.425,
-          "delta_pp": -1.6500000000000015
+          "previous_probability": 0.4085,
+          "delta_pp": -7.249999999999996
         },
         {
           "label": "Kylian Mbapp\u00e9",
-          "probability": 0.0385,
+          "probability": 0.0285,
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.038,
-          "best_ask": 0.039,
-          "last_trade_price": 0.038,
+          "best_bid": 0.028,
+          "best_ask": 0.029,
+          "last_trade_price": 0.029,
           "outcome": "Yes",
-          "previous_probability": 0.0415,
-          "delta_pp": -0.30000000000000027
+          "previous_probability": 0.0385,
+          "delta_pp": -0.9999999999999999
         },
         {
           "label": "Lionel Messi",
-          "probability": 0.0345,
+          "probability": 0.026000000000000002,
           "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
-          "best_bid": 0.034,
-          "best_ask": 0.035,
-          "last_trade_price": 0.035,
+          "best_bid": 0.025,
+          "best_ask": 0.027,
+          "last_trade_price": 0.027,
           "outcome": "Yes",
-          "previous_probability": 0.0415,
-          "delta_pp": -0.7
+          "previous_probability": 0.0345,
+          "delta_pp": -0.8500000000000001
         },
         {
           "label": "Rodri",
-          "probability": 0.0215,
+          "probability": 0.0115,
           "question": "Will Rodri win the 2026 Ballon d'Or?",
-          "best_bid": 0.021,
-          "best_ask": 0.022,
-          "last_trade_price": 0.021,
+          "best_bid": 0.011,
+          "best_ask": 0.012,
+          "last_trade_price": 0.011,
           "outcome": "Yes",
-          "previous_probability": 0.028,
-          "delta_pp": -0.6500000000000002
+          "previous_probability": 0.0215,
+          "delta_pp": -0.9999999999999999
         },
         {
           "label": "Khvicha Kvaratskhelia",
-          "probability": 0.0075,
+          "probability": 0.006500000000000001,
           "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
-          "best_bid": 0.007,
-          "best_ask": 0.008,
-          "last_trade_price": 0.008,
+          "best_bid": 0.006,
+          "best_ask": 0.007,
+          "last_trade_price": 0.006,
           "outcome": "Yes",
-          "previous_probability": 0.0085,
-          "delta_pp": -0.10000000000000009
+          "previous_probability": 0.0075,
+          "delta_pp": -0.09999999999999992
         }
       ]
     },
