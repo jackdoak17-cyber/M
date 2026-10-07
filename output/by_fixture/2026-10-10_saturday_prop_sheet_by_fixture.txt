@@ -26,6 +26,7 @@ Arsenal 3+ corners (won in 19/20)
 Leeds 4+ corners (won in 6/7)
 Arsenal 4+ corners (won in 5/6)
 Leeds 3+ corners (won in 13/16)
+Arsenal 3+ SOT (won in 16/20)
 
 🔴 Sunderland vs Brighton 🔵 - 3:00pm
 
@@ -47,7 +48,9 @@ N. Sadiki 1+ foul won (won in 9/11)
 B. Brobbey 1+ foul won (won in 8/10)
 Brighton 3+ corners (won in 18/20)
 Sunderland 3+ corners (won in 15/18)
+Brighton 12+ shots (won in 14/17)
 Brighton 5+ corners (won in 9/11)
+Sunderland 10+ shots (won in 16/20)
 
 🟣 Aston Villa vs Brentford 🔴 - 3:00pm
 
@@ -64,6 +67,7 @@ E. Buendía 1+ foul won (won in 14/15)
 J. McGinn 1+ foul won (won in 11/12)
 K. Schade 1+ foul won (won in 5/6)
 Aston Villa 3+ corners (won in 17/20)
+Brentford 10+ shots (won in 10/12)
 Brentford 4+ corners (won in 4/5)
 
 🔵 Chelsea vs Bournemouth 🔴 - 3:00pm
@@ -82,7 +86,10 @@ M. Tavernier 1+ foul won (won in 13/16)
 Evanilson 1+ foul won (won in 12/15)
 A. Smith 1+ foul won (won in 8/10)
 W. Fofana 1+ foul won (won in 8/10)
+Bournemouth 9+ shots (won in 18/20)
 Chelsea 3+ corners (won in 18/20)
+Chelsea 3+ SOT (won in 17/20)
+Chelsea 12+ shots (won in 5/6)
 Bournemouth 3+ corners (won in 16/20)
 Chelsea 4+ corners (won in 16/20)
 
@@ -94,9 +101,11 @@ J. Enciso 3+ shots (won in 5/6)
 J. Enciso 1+ foul won (won in 17/17)
 C. Bassey 1+ foul won (won in 16/18)
 J. King 1+ foul won (won in 5/6)
+Fulham 10+ shots (won in 19/20)
 Fulham 3+ corners (won in 19/20)
 Fulham 4+ corners (won in 17/20)
 Ipswich Town 3+ corners (won in 15/18)
+Ipswich Town 10+ shots (won in 8/10)
 
 🔴 Man Utd vs Spurs ⚪ - 5:30pm
 
@@ -107,7 +116,9 @@ B. Mbeumo SOT (won in 7/8)
 R. Bentancur 1+ foul committed (won in 5/6)
 M. Ven 1+ foul won (won in 7/8)
 K. Mainoo 1+ foul won (won in 5/6)
+Man Utd 3+ SOT (won in 18/20)
 Man Utd 3+ corners (won in 18/20)
+Man Utd 14+ shots (won in 6/7)
 Spurs 3+ corners (won in 17/20)
 Spurs 4+ corners (won in 15/18)
 Spurs 5+ corners (won in 13/16)
