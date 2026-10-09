@@ -1,0 +1,627 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "high_probability",
+  "generated_at": "2026-10-09T20:14:43+00:00",
+  "scheduled_for": "2026-10-10",
+  "source_target_date": "2026-10-10",
+  "fixture_dates": [
+    "2026-10-10"
+  ],
+  "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+  "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.9,
+    "min_odds": 1.3,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 12,
+    "by_section": {
+      "1+ Shot": 5,
+      "2+ Shots": 2,
+      "1+ SOT": 5
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19714636:37622856:1+ Shot:1",
+          "player_id": 37622856,
+          "player_name": "Givairo Read\u00a0",
+          "team_id": 73,
+          "team_name": "Feyenoord",
+          "fixture_id": 19714636,
+          "fixture_label": "Feyenoord vs AZ Alkmaar",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.57,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.57",
+            "summary": "Givairo Read\u00a0 (Feyenoord) won in 10/11 @1.57"
+          }
+        },
+        {
+          "id": "19722780:35683623:1+ Shot:1",
+          "player_id": 35683623,
+          "player_name": "Josh Mulligan",
+          "team_id": 66,
+          "team_name": "Hibernian",
+          "fixture_id": 19722780,
+          "fixture_label": "Dundee United vs Hibernian",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.33,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.33",
+            "summary": "Josh Mulligan (Hibernian) won in 10/11 @1.33"
+          }
+        },
+        {
+          "id": "19729062:37586696:1+ Shot:1",
+          "player_id": 37586696,
+          "player_name": "Ruairi McConville",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19729062,
+          "fixture_label": "Swansea City vs Norwich City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Ruairi McConville (Norwich City) won in 9/10 @1.80"
+          }
+        },
+        {
+          "id": "19729060:20692335:1+ Shot:1",
+          "player_id": 20692335,
+          "player_name": "Ousmane Diakit\u00e9",
+          "team_id": 10,
+          "team_name": "West Bromwich Albion",
+          "fixture_id": 19729060,
+          "fixture_label": "West Bromwich Albion vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Ousmane Diakit\u00e9 (West Bromwich Albion) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19715589:22168251:1+ Shot:1",
+          "player_id": 22168251,
+          "player_name": "Noah Doriann Cadiou",
+          "team_id": 9257,
+          "team_name": "Lorient",
+          "fixture_id": 19715589,
+          "fixture_label": "Lorient vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.44,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.44",
+            "summary": "Noah Doriann Cadiou (Lorient) won in 9/10 @1.44"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19732665:22158925:2+ Shots:2",
+          "player_id": 22158925,
+          "player_name": "Oihan Sancet",
+          "team_id": 13258,
+          "team_name": "Athletic Club",
+          "fixture_id": 19732665,
+          "fixture_label": "Rayo Vallecano vs Athletic Club",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.36",
+            "summary": "Oihan Sancet (Athletic Club) won in 7/7 @1.36"
+          }
+        },
+        {
+          "id": "19729060:37259158:2+ Shots:2",
+          "player_id": 37259158,
+          "player_name": "Jay Stansfield",
+          "team_id": 12,
+          "team_name": "Birmingham City",
+          "fixture_id": 19729060,
+          "fixture_label": "West Bromwich Albion vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.53,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.53",
+            "summary": "Jay Stansfield (Birmingham City) won in 9/10 @1.53"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19722153:32612:1+ SOT:1",
+          "player_id": 32612,
+          "player_name": "Kai Havertz",
+          "team_id": 19,
+          "team_name": "Arsenal",
+          "fixture_id": 19722153,
+          "fixture_label": "Arsenal vs Leeds United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.5,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.50",
+            "summary": "Kai Havertz (Arsenal) won in 7/7 @1.50"
+          }
+        },
+        {
+          "id": "19729070:581086:1+ SOT:1",
+          "player_id": 581086,
+          "player_name": "Todd Cantwell\u00a0",
+          "team_id": 2,
+          "team_name": "Blackburn Rovers",
+          "fixture_id": 19729070,
+          "fixture_label": "Blackburn Rovers vs Cardiff City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Todd Cantwell\u00a0 (Blackburn Rovers) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19722145:529689:1+ SOT:1",
+          "player_id": 529689,
+          "player_name": "Bryan Mbeumo",
+          "team_id": 14,
+          "team_name": "Manchester United",
+          "fixture_id": 19722145,
+          "fixture_label": "Manchester United vs Tottenham Hotspur",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.40",
+            "summary": "Bryan Mbeumo (Manchester United) won in 7/7 @1.40"
+          }
+        },
+        {
+          "id": "19746597:132244:1+ SOT:1",
+          "player_id": 132244,
+          "player_name": "Ali Sowe",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19746597,
+          "fixture_label": "Rizespor vs Fenerbah\u00e7e",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.61,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.61",
+            "summary": "Ali Sowe (Rizespor) won in 11/12 @1.61"
+          }
+        },
+        {
+          "id": "19714636:37663130:1+ SOT:1",
+          "player_id": 37663130,
+          "player_name": "Gjivai Zechi\u00ebl",
+          "team_id": 73,
+          "team_name": "Feyenoord",
+          "fixture_id": 19714636,
+          "fixture_label": "Feyenoord vs AZ Alkmaar",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Gjivai Zechi\u00ebl (Feyenoord) won in 9/10 @1.50"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 10 Oct 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 5\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 5\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "High Probability List",
+      "title_words": {
+        "primary": "HIGH",
+        "accent": "PROBABILITY"
+      },
+      "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+      "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+      "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
+      "fixture_window": "Sat 10 Oct 2026",
+      "stats": {
+        "total_players": 12,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 90
+      },
+      "slide_number": 1,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19714636:37622856:1+ Shot:1",
+          "player_id": 37622856,
+          "player_name": "Givairo Read\u00a0",
+          "team_id": 73,
+          "team_name": "Feyenoord",
+          "fixture_id": 19714636,
+          "fixture_label": "Feyenoord vs AZ Alkmaar",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.57,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.57",
+            "summary": "Givairo Read\u00a0 (Feyenoord) won in 10/11 @1.57"
+          }
+        },
+        {
+          "id": "19722780:35683623:1+ Shot:1",
+          "player_id": 35683623,
+          "player_name": "Josh Mulligan",
+          "team_id": 66,
+          "team_name": "Hibernian",
+          "fixture_id": 19722780,
+          "fixture_label": "Dundee United vs Hibernian",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.33,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.33",
+            "summary": "Josh Mulligan (Hibernian) won in 10/11 @1.33"
+          }
+        },
+        {
+          "id": "19729062:37586696:1+ Shot:1",
+          "player_id": 37586696,
+          "player_name": "Ruairi McConville",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19729062,
+          "fixture_label": "Swansea City vs Norwich City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Ruairi McConville (Norwich City) won in 9/10 @1.80"
+          }
+        },
+        {
+          "id": "19729060:20692335:1+ Shot:1",
+          "player_id": 20692335,
+          "player_name": "Ousmane Diakit\u00e9",
+          "team_id": 10,
+          "team_name": "West Bromwich Albion",
+          "fixture_id": 19729060,
+          "fixture_label": "West Bromwich Albion vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Ousmane Diakit\u00e9 (West Bromwich Albion) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19715589:22168251:1+ Shot:1",
+          "player_id": 22168251,
+          "player_name": "Noah Doriann Cadiou",
+          "team_id": 9257,
+          "team_name": "Lorient",
+          "fixture_id": 19715589,
+          "fixture_label": "Lorient vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.44,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.44",
+            "summary": "Noah Doriann Cadiou (Lorient) won in 9/10 @1.44"
+          }
+        }
+      ],
+      "section_total_rows": 5,
+      "slide_number": 2,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19732665:22158925:2+ Shots:2",
+          "player_id": 22158925,
+          "player_name": "Oihan Sancet",
+          "team_id": 13258,
+          "team_name": "Athletic Club",
+          "fixture_id": 19732665,
+          "fixture_label": "Rayo Vallecano vs Athletic Club",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.36",
+            "summary": "Oihan Sancet (Athletic Club) won in 7/7 @1.36"
+          }
+        },
+        {
+          "id": "19729060:37259158:2+ Shots:2",
+          "player_id": 37259158,
+          "player_name": "Jay Stansfield",
+          "team_id": 12,
+          "team_name": "Birmingham City",
+          "fixture_id": 19729060,
+          "fixture_label": "West Bromwich Albion vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.53,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.53",
+            "summary": "Jay Stansfield (Birmingham City) won in 9/10 @1.53"
+          }
+        }
+      ],
+      "section_total_rows": 2,
+      "slide_number": 3,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19722153:32612:1+ SOT:1",
+          "player_id": 32612,
+          "player_name": "Kai Havertz",
+          "team_id": 19,
+          "team_name": "Arsenal",
+          "fixture_id": 19722153,
+          "fixture_label": "Arsenal vs Leeds United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.5,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.50",
+            "summary": "Kai Havertz (Arsenal) won in 7/7 @1.50"
+          }
+        },
+        {
+          "id": "19729070:581086:1+ SOT:1",
+          "player_id": 581086,
+          "player_name": "Todd Cantwell\u00a0",
+          "team_id": 2,
+          "team_name": "Blackburn Rovers",
+          "fixture_id": 19729070,
+          "fixture_label": "Blackburn Rovers vs Cardiff City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Todd Cantwell\u00a0 (Blackburn Rovers) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19722145:529689:1+ SOT:1",
+          "player_id": 529689,
+          "player_name": "Bryan Mbeumo",
+          "team_id": 14,
+          "team_name": "Manchester United",
+          "fixture_id": 19722145,
+          "fixture_label": "Manchester United vs Tottenham Hotspur",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.40",
+            "summary": "Bryan Mbeumo (Manchester United) won in 7/7 @1.40"
+          }
+        },
+        {
+          "id": "19746597:132244:1+ SOT:1",
+          "player_id": 132244,
+          "player_name": "Ali Sowe",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19746597,
+          "fixture_label": "Rizespor vs Fenerbah\u00e7e",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.61,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.61",
+            "summary": "Ali Sowe (Rizespor) won in 11/12 @1.61"
+          }
+        },
+        {
+          "id": "19714636:37663130:1+ SOT:1",
+          "player_id": 37663130,
+          "player_name": "Gjivai Zechi\u00ebl",
+          "team_id": 73,
+          "team_name": "Feyenoord",
+          "fixture_id": 19714636,
+          "fixture_label": "Feyenoord vs AZ Alkmaar",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Gjivai Zechi\u00ebl (Feyenoord) won in 9/10 @1.50"
+          }
+        }
+      ],
+      "section_total_rows": 5,
+      "slide_number": 4,
+      "slide_count": 4
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "7e9fbbf2d9d9aad16dedb244ea67f71c2e6511fd63cb36aadd8b796813ee1327"
+}
