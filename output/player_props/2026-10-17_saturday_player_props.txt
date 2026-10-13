@@ -14,6 +14,8 @@ Leave a like if you find these useful.
 - M. Kerkez (Liverpool) = 2, 1, 1, 1, 1
 - E. Anderson (Man City) = 8, 2, 4, 3, 1
 - E. Haaland (Man City) = 1, 1, 2, 1, 1
+- H. Barnes (Newcastle) = 1, 1, 1, 4, 1
+- L. Hall (Newcastle) = 1, 2, 1, 1, 2
 
 📊1+ Fouls Committed in ≥5/5📊
 - M. Cash (Aston Villa) = 2, 1, 2, 2, 1
@@ -36,7 +38,8 @@ Leave a like if you find these useful.
 - F. Wirtz (Liverpool) = 2, 2, 3, 2, 2
 - E. Haaland (Man City) = 2, 4, 2, 4, 5
 - R. Cherki (Man City) = 5, 2, 1, 3, 3
-- J. Willock (Newcastle) = 0, 2, 2, 3, 2
+- H. Barnes (Newcastle) = 3, 2, 2, 2, 1
+- J. Willock (Newcastle) = 5, 2, 2, 3, 2
 
 📊2+ Fouls Committed in ≥4/5📊
 - S. Lukić (Ipswich Town) = 3, 3, 3, 1, 3
