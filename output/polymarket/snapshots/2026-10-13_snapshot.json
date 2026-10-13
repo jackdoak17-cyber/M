@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T00:09:41Z",
+  "generated_at": "2026-10-13T13:36:04Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -319,73 +319,73 @@
       "active": true,
       "closed": false,
       "end_date": "2027-01-01T04:59:00Z",
-      "volume": 48724545.954326,
+      "volume": 49067672.93378699,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.6585000000000001,
+          "probability": 0.623,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.656,
-          "best_ask": 0.661,
-          "last_trade_price": 0.653,
+          "best_bid": 0.621,
+          "best_ask": 0.625,
+          "last_trade_price": 0.633,
           "outcome": "Yes",
-          "previous_probability": 0.6615,
-          "delta_pp": -0.29999999999998916
+          "previous_probability": 0.6585000000000001,
+          "delta_pp": -3.5500000000000087
         },
         {
           "label": "Lamine Yamal",
-          "probability": 0.276,
+          "probability": 0.308,
           "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-          "best_bid": 0.275,
-          "best_ask": 0.277,
-          "last_trade_price": 0.276,
+          "best_bid": 0.302,
+          "best_ask": 0.314,
+          "last_trade_price": 0.313,
           "outcome": "Yes",
-          "previous_probability": 0.2785,
-          "delta_pp": -0.2500000000000002
-        },
-        {
-          "label": "Lionel Messi",
-          "probability": 0.0285,
-          "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
-          "best_bid": 0.028,
-          "best_ask": 0.029,
-          "last_trade_price": 0.028,
-          "outcome": "Yes",
-          "previous_probability": 0.0245,
-          "delta_pp": 0.4
+          "previous_probability": 0.276,
+          "delta_pp": 3.1999999999999975
         },
         {
           "label": "Kylian Mbapp\u00e9",
-          "probability": 0.0265,
+          "probability": 0.031,
           "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.026,
-          "best_ask": 0.027,
-          "last_trade_price": 0.031,
+          "best_bid": 0.03,
+          "best_ask": 0.032,
+          "last_trade_price": 0.034,
           "outcome": "Yes",
-          "previous_probability": 0.0225,
-          "delta_pp": 0.4
+          "previous_probability": 0.0265,
+          "delta_pp": 0.45000000000000007
+        },
+        {
+          "label": "Lionel Messi",
+          "probability": 0.025500000000000002,
+          "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
+          "best_bid": 0.025,
+          "best_ask": 0.026,
+          "last_trade_price": 0.025,
+          "outcome": "Yes",
+          "previous_probability": 0.0285,
+          "delta_pp": -0.29999999999999993
         },
         {
           "label": "Rodri",
-          "probability": 0.0075,
+          "probability": 0.006500000000000001,
           "question": "Will Rodri win the 2026 Ballon d'Or?",
-          "best_bid": 0.007,
-          "best_ask": 0.008,
-          "last_trade_price": 0.007,
+          "best_bid": 0.006,
+          "best_ask": 0.007,
+          "last_trade_price": 0.006,
           "outcome": "Yes",
-          "previous_probability": 0.0095,
-          "delta_pp": -0.2
+          "previous_probability": 0.0075,
+          "delta_pp": -0.09999999999999992
         },
         {
           "label": "Khvicha Kvaratskhelia",
-          "probability": 0.0035,
+          "probability": 0.0045000000000000005,
           "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
-          "best_bid": 0.003,
-          "best_ask": 0.004,
-          "last_trade_price": 0.003,
+          "best_bid": 0.004,
+          "best_ask": 0.005,
+          "last_trade_price": 0.004,
           "outcome": "Yes",
-          "previous_probability": 0.0045000000000000005,
-          "delta_pp": -0.10000000000000005
+          "previous_probability": 0.0035,
+          "delta_pp": 0.10000000000000005
         }
       ]
     },
