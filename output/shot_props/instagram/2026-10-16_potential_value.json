@@ -1,0 +1,1574 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "potential_value",
+  "generated_at": "2026-10-16T18:54:15+00:00",
+  "scheduled_for": "2026-10-16",
+  "source_target_date": "2026-10-17",
+  "fixture_dates": [
+    "2026-10-17",
+    "2026-10-18"
+  ],
+  "title": "",
+  "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.75,
+    "min_odds": 1.72,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 33,
+    "by_section": {
+      "1+ Shot": 15,
+      "2+ Shots": 3,
+      "1+ SOT": 15
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19729046:37350031:1+ Shot:1",
+          "player_id": 37350031,
+          "player_name": "Ronnie Edwards",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19729046,
+          "fixture_label": "Birmingham City vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 3.5,
+          "display": {
+            "rate": "7/9",
+            "odds": "@3.50",
+            "summary": "Ronnie Edwards (Queens Park Rangers) won in 7/9 @3.50"
+          }
+        },
+        {
+          "id": "19729042:31092068:1+ Shot:1",
+          "player_id": 31092068,
+          "player_name": "Adilson Malanda",
+          "team_id": 7,
+          "team_name": "Middlesbrough",
+          "fixture_id": 19729042,
+          "fixture_label": "Middlesbrough vs Cardiff City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 2.25,
+          "display": {
+            "rate": "7/9",
+            "odds": "@2.25",
+            "summary": "Adilson Malanda (Middlesbrough) won in 7/9 @2.25"
+          }
+        },
+        {
+          "id": "19722140:1639:1+ Shot:1",
+          "player_id": 1639,
+          "player_name": "James Tarkowski",
+          "team_id": 13,
+          "team_name": "Everton",
+          "fixture_id": 19722140,
+          "fixture_label": "Everton vs Chelsea",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.91,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.91",
+            "summary": "James Tarkowski (Everton) won in 7/9 @1.91"
+          }
+        },
+        {
+          "id": "19729040:37586696:1+ Shot:1",
+          "player_id": 37586696,
+          "player_name": "Ruairi McConville",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19729040,
+          "fixture_label": "Norwich City vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 14,
+          "sample": 18,
+          "hit_rate": 0.7778,
+          "odds": 1.8,
+          "display": {
+            "rate": "14/18",
+            "odds": "@1.80",
+            "summary": "Ruairi McConville (Norwich City) won in 14/18 @1.80"
+          }
+        },
+        {
+          "id": "19722775:1233:1+ Shot:1",
+          "player_id": 1233,
+          "player_name": "Declan John",
+          "team_id": 496,
+          "team_name": "St. Mirren",
+          "fixture_id": 19722775,
+          "fixture_label": "Aberdeen vs St. Mirren",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 2.0,
+          "display": {
+            "rate": "10/13",
+            "odds": "@2.00",
+            "summary": "Declan John (St. Mirren) won in 10/13 @2.00"
+          }
+        },
+        {
+          "id": "19715579:198051:1+ Shot:1",
+          "player_id": 198051,
+          "player_name": "Denis Zakaria\u00a0",
+          "team_id": 6789,
+          "team_name": "Monaco",
+          "fixture_id": 19715579,
+          "fixture_label": "Lorient vs Monaco",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.73,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.73",
+            "summary": "Denis Zakaria\u00a0 (Monaco) won in 10/13 @1.73"
+          }
+        },
+        {
+          "id": "19722135:97811:1+ Shot:1",
+          "player_id": 97811,
+          "player_name": "Gabriel",
+          "team_id": 19,
+          "team_name": "Arsenal",
+          "fixture_id": 19722135,
+          "fixture_label": "Nottingham Forest vs Arsenal",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.73,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.73",
+            "summary": "Gabriel (Arsenal) won in 10/13 @1.73"
+          }
+        },
+        {
+          "id": "19729040:7026564:1+ Shot:1",
+          "player_id": 7026564,
+          "player_name": "Zak Swanson\u00a0",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19729040,
+          "fixture_label": "Norwich City vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 13,
+          "sample": 17,
+          "hit_rate": 0.7647,
+          "odds": 1.8,
+          "display": {
+            "rate": "13/17",
+            "odds": "@1.80",
+            "summary": "Zak Swanson\u00a0 (Portsmouth) won in 13/17 @1.80"
+          }
+        },
+        {
+          "id": "19746590:119634:1+ Shot:1",
+          "player_id": 119634,
+          "player_name": "Logi T\u00f3masson",
+          "team_id": 2811,
+          "team_name": "Samsunspor",
+          "fixture_id": 19746590,
+          "fixture_label": "Kas\u0131mpa\u015fa vs Samsunspor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.25,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.25",
+            "summary": "Logi T\u00f3masson (Samsunspor) won in 6/8 @2.25"
+          }
+        },
+        {
+          "id": "19713556:37545384:1+ Shot:1",
+          "player_id": 37545384,
+          "player_name": "M\u00e1ximo Perrone",
+          "team_id": 268,
+          "team_name": "Como",
+          "fixture_id": 19713556,
+          "fixture_label": "Fiorentina vs Como",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 2.0,
+          "display": {
+            "rate": "9/12",
+            "odds": "@2.00",
+            "summary": "M\u00e1ximo Perrone (Como) won in 9/12 @2.00"
+          }
+        },
+        {
+          "id": "19735148:80304:1+ Shot:1",
+          "player_id": 80304,
+          "player_name": "Vladim\u00edr Coufal",
+          "team_id": 2726,
+          "team_name": "TSG Hoffenheim",
+          "fixture_id": 19735148,
+          "fixture_label": "Borussia M\u00f6nchengladbach vs TSG Hoffenheim",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 16,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "12/16",
+            "odds": "@1.83",
+            "summary": "Vladim\u00edr Coufal (TSG Hoffenheim) won in 12/16 @1.83"
+          }
+        },
+        {
+          "id": "19729038:37341836:1+ Shot:1",
+          "player_id": 37341836,
+          "player_name": "Marko Stameni\u0107",
+          "team_id": 30,
+          "team_name": "Swansea City",
+          "fixture_id": 19729038,
+          "fixture_label": "Swansea City vs West Ham United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Marko Stameni\u0107 (Swansea City) won in 6/8 @1.80"
+          }
+        },
+        {
+          "id": "19735151:37259163:1+ Shot:1",
+          "player_id": 37259163,
+          "player_name": "Jarell Quansah",
+          "team_id": 3321,
+          "team_name": "Bayer 04 Leverkusen",
+          "fixture_id": 19735151,
+          "fixture_label": "Bayer 04 Leverkusen vs SC Freiburg",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Jarell Quansah (Bayer 04 Leverkusen) won in 6/8 @1.80"
+          }
+        },
+        {
+          "id": "19729041:37579793:1+ Shot:1",
+          "player_id": 37579793,
+          "player_name": "Derek Mazou-Sacko",
+          "team_id": 64,
+          "team_name": "Millwall",
+          "fixture_id": 19729041,
+          "fixture_label": "Millwall vs Lincoln City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Derek Mazou-Sacko (Millwall) won in 6/8 @1.73"
+          }
+        },
+        {
+          "id": "19713548:37533562:1+ Shot:1",
+          "player_id": 37533562,
+          "player_name": "Antoine Hainaut",
+          "team_id": 267,
+          "team_name": "Venezia",
+          "fixture_id": 19713548,
+          "fixture_label": "Venezia vs Napoli",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Antoine Hainaut (Venezia) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19729040:37407448:2+ Shots:2",
+          "player_id": 37407448,
+          "player_name": "Adrian Sege\u010di\u0107",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19729040,
+          "fixture_label": "Norwich City vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 12,
+          "sample": 14,
+          "hit_rate": 0.8571,
+          "odds": 1.73,
+          "display": {
+            "rate": "12/14",
+            "odds": "@1.73",
+            "summary": "Adrian Sege\u010di\u0107 (Portsmouth) won in 12/14 @1.73"
+          }
+        },
+        {
+          "id": "19729046:37326106:2+ Shots:2",
+          "player_id": 37326106,
+          "player_name": "Harvey Vale",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19729046,
+          "fixture_label": "Birmingham City vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.91,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.91",
+            "summary": "Harvey Vale (Queens Park Rangers) won in 8/10 @1.91"
+          }
+        },
+        {
+          "id": "19715580:37646962:2+ Shots:2",
+          "player_id": 37646962,
+          "player_name": "Tiago Santos",
+          "team_id": 690,
+          "team_name": "LOSC Lille",
+          "fixture_id": 19715580,
+          "fixture_label": "LOSC Lille vs Brest",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.75,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.75",
+            "summary": "Tiago Santos (LOSC Lille) won in 6/8 @2.75"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19729036:581086:1+ SOT:1",
+          "player_id": 581086,
+          "player_name": "Todd Cantwell\u00a0",
+          "team_id": 2,
+          "team_name": "Blackburn Rovers",
+          "fixture_id": 19729036,
+          "fixture_label": "West Bromwich Albion vs Blackburn Rovers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.83,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.83",
+            "summary": "Todd Cantwell\u00a0 (Blackburn Rovers) won in 8/10 @1.83"
+          }
+        },
+        {
+          "id": "19715580:37580230:1+ SOT:1",
+          "player_id": 37580230,
+          "player_name": "Kamory Doumbia",
+          "team_id": 266,
+          "team_name": "Brest",
+          "fixture_id": 19715580,
+          "fixture_label": "LOSC Lille vs Brest",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.8,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.80",
+            "summary": "Kamory Doumbia (Brest) won in 8/10 @1.80"
+          }
+        },
+        {
+          "id": "19732659:37544065:1+ SOT:1",
+          "player_id": 37544065,
+          "player_name": "Bryan Zaragoza",
+          "team_id": 528,
+          "team_name": "Espanyol",
+          "fixture_id": 19732659,
+          "fixture_label": "Espanyol vs Atl\u00e9tico de Madrid",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 2.0,
+          "display": {
+            "rate": "7/9",
+            "odds": "@2.00",
+            "summary": "Bryan Zaragoza (Espanyol) won in 7/9 @2.00"
+          }
+        },
+        {
+          "id": "19729037:37672471:1+ SOT:1",
+          "player_id": 37672471,
+          "player_name": "Othmane Maamma",
+          "team_id": 25,
+          "team_name": "Watford",
+          "fixture_id": 19729037,
+          "fixture_label": "Watford vs Charlton Athletic",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.73,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.73",
+            "summary": "Othmane Maamma (Watford) won in 7/9 @1.73"
+          }
+        },
+        {
+          "id": "19735145:32585:1+ SOT:1",
+          "player_id": 32585,
+          "player_name": "Nadiem Amiri",
+          "team_id": 794,
+          "team_name": "FSV Mainz 05",
+          "fixture_id": 19735145,
+          "fixture_label": "Schalke 04 vs FSV Mainz 05",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 13,
+          "sample": 17,
+          "hit_rate": 0.7647,
+          "odds": 1.83,
+          "display": {
+            "rate": "13/17",
+            "odds": "@1.83",
+            "summary": "Nadiem Amiri (FSV Mainz 05) won in 13/17 @1.83"
+          }
+        },
+        {
+          "id": "19722771:3385:1+ SOT:1",
+          "player_id": 3385,
+          "player_name": "Aaron Tshibola",
+          "team_id": 180,
+          "team_name": "Kilmarnock",
+          "fixture_id": 19722771,
+          "fixture_label": "Kilmarnock vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.62,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.62",
+            "summary": "Aaron Tshibola (Kilmarnock) won in 6/8 @2.62"
+          }
+        },
+        {
+          "id": "19732661:37587454:1+ SOT:1",
+          "player_id": 37587454,
+          "player_name": "\u00c1ngel P\u00e9rez",
+          "team_id": 2975,
+          "team_name": "Deportivo Alav\u00e9s",
+          "fixture_id": 19732661,
+          "fixture_label": "Celta de Vigo vs Deportivo Alav\u00e9s",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.38,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.38",
+            "summary": "\u00c1ngel P\u00e9rez (Deportivo Alav\u00e9s) won in 6/8 @2.38"
+          }
+        },
+        {
+          "id": "19713553:15434627:1+ SOT:1",
+          "player_id": 15434627,
+          "player_name": "Samuel Chukwueze",
+          "team_id": 113,
+          "team_name": "AC Milan",
+          "fixture_id": 19713553,
+          "fixture_label": "AC Milan vs Atalanta",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.1,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.10",
+            "summary": "Samuel Chukwueze (AC Milan) won in 6/8 @2.10"
+          }
+        },
+        {
+          "id": "19729046:149574:1+ SOT:1",
+          "player_id": 149574,
+          "player_name": "Paul Smyth",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19729046,
+          "fixture_label": "Birmingham City vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.91,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.91",
+            "summary": "Paul Smyth (Queens Park Rangers) won in 9/12 @1.91"
+          }
+        },
+        {
+          "id": "19729041:37546792:1+ SOT:1",
+          "player_id": 37546792,
+          "player_name": "Camiel Neghli",
+          "team_id": 64,
+          "team_name": "Millwall",
+          "fixture_id": 19729041,
+          "fixture_label": "Millwall vs Lincoln City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Camiel Neghli (Millwall) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19735144:2178943:1+ SOT:1",
+          "player_id": 2178943,
+          "player_name": "Robin Fellhauer",
+          "team_id": 90,
+          "team_name": "FC Augsburg",
+          "fixture_id": 19735144,
+          "fixture_label": "Elversberg vs FC Augsburg",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Robin Fellhauer (FC Augsburg) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19729036:18683:1+ SOT:1",
+          "player_id": 18683,
+          "player_name": "Oladapo Afolayan",
+          "team_id": 2,
+          "team_name": "Blackburn Rovers",
+          "fixture_id": 19729036,
+          "fixture_label": "West Bromwich Albion vs Blackburn Rovers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Oladapo Afolayan (Blackburn Rovers) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19715580:98457:1+ SOT:1",
+          "player_id": 98457,
+          "player_name": "Ludovic Ajorque",
+          "team_id": 266,
+          "team_name": "Brest",
+          "fixture_id": 19715580,
+          "fixture_label": "LOSC Lille vs Brest",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Ludovic Ajorque (Brest) won in 6/8 @1.80"
+          }
+        },
+        {
+          "id": "19732657:22528446:1+ SOT:1",
+          "player_id": 22528446,
+          "player_name": "Luka Sucic",
+          "team_id": 594,
+          "team_name": "Real Sociedad",
+          "fixture_id": 19732657,
+          "fixture_label": "M\u00e1laga vs Real Sociedad",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Luka Sucic (Real Sociedad) won in 6/8 @1.80"
+          }
+        },
+        {
+          "id": "19722771:2823438:1+ SOT:1",
+          "player_id": 2823438,
+          "player_name": "Lukas Fadinger",
+          "team_id": 309,
+          "team_name": "Motherwell",
+          "fixture_id": 19722771,
+          "fixture_label": "Kilmarnock vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Lukas Fadinger (Motherwell) won in 6/8 @1.73"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "Fixtures: Sat 17 Oct - Sun 18 Oct 2026\n75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 15\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 15\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #BettingValue",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "Stats & Odds List",
+      "title_words": {
+        "primary": "POTENTIAL",
+        "accent": "VALUE"
+      },
+      "title": "",
+      "intro": "\ud83d\udcca Weekend Shot Props list\nMin 7 games \u00b7 75%+ hit rate \u00b7 Odds >1.72 \u00b7 All Bet365\nAny value here?",
+      "threshold_bar": "75%+ HIT RATE \u00b7 ODDS >1.72 \u00b7 MIN N=7",
+      "fixture_window": "Sat 17 Oct - Sun 18 Oct 2026",
+      "stats": {
+        "total_players": 33,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 75
+      },
+      "slide_number": 1,
+      "slide_count": 6
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 2,
+      "rows": [
+        {
+          "id": "19729046:37350031:1+ Shot:1",
+          "player_id": 37350031,
+          "player_name": "Ronnie Edwards",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19729046,
+          "fixture_label": "Birmingham City vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 3.5,
+          "display": {
+            "rate": "7/9",
+            "odds": "@3.50",
+            "summary": "Ronnie Edwards (Queens Park Rangers) won in 7/9 @3.50"
+          }
+        },
+        {
+          "id": "19729042:31092068:1+ Shot:1",
+          "player_id": 31092068,
+          "player_name": "Adilson Malanda",
+          "team_id": 7,
+          "team_name": "Middlesbrough",
+          "fixture_id": 19729042,
+          "fixture_label": "Middlesbrough vs Cardiff City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 2.25,
+          "display": {
+            "rate": "7/9",
+            "odds": "@2.25",
+            "summary": "Adilson Malanda (Middlesbrough) won in 7/9 @2.25"
+          }
+        },
+        {
+          "id": "19722140:1639:1+ Shot:1",
+          "player_id": 1639,
+          "player_name": "James Tarkowski",
+          "team_id": 13,
+          "team_name": "Everton",
+          "fixture_id": 19722140,
+          "fixture_label": "Everton vs Chelsea",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.91,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.91",
+            "summary": "James Tarkowski (Everton) won in 7/9 @1.91"
+          }
+        },
+        {
+          "id": "19729040:37586696:1+ Shot:1",
+          "player_id": 37586696,
+          "player_name": "Ruairi McConville",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19729040,
+          "fixture_label": "Norwich City vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 14,
+          "sample": 18,
+          "hit_rate": 0.7778,
+          "odds": 1.8,
+          "display": {
+            "rate": "14/18",
+            "odds": "@1.80",
+            "summary": "Ruairi McConville (Norwich City) won in 14/18 @1.80"
+          }
+        },
+        {
+          "id": "19722775:1233:1+ Shot:1",
+          "player_id": 1233,
+          "player_name": "Declan John",
+          "team_id": 496,
+          "team_name": "St. Mirren",
+          "fixture_id": 19722775,
+          "fixture_label": "Aberdeen vs St. Mirren",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 2.0,
+          "display": {
+            "rate": "10/13",
+            "odds": "@2.00",
+            "summary": "Declan John (St. Mirren) won in 10/13 @2.00"
+          }
+        },
+        {
+          "id": "19715579:198051:1+ Shot:1",
+          "player_id": 198051,
+          "player_name": "Denis Zakaria\u00a0",
+          "team_id": 6789,
+          "team_name": "Monaco",
+          "fixture_id": 19715579,
+          "fixture_label": "Lorient vs Monaco",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.73,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.73",
+            "summary": "Denis Zakaria\u00a0 (Monaco) won in 10/13 @1.73"
+          }
+        },
+        {
+          "id": "19722135:97811:1+ Shot:1",
+          "player_id": 97811,
+          "player_name": "Gabriel",
+          "team_id": 19,
+          "team_name": "Arsenal",
+          "fixture_id": 19722135,
+          "fixture_label": "Nottingham Forest vs Arsenal",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 13,
+          "hit_rate": 0.7692,
+          "odds": 1.73,
+          "display": {
+            "rate": "10/13",
+            "odds": "@1.73",
+            "summary": "Gabriel (Arsenal) won in 10/13 @1.73"
+          }
+        },
+        {
+          "id": "19729040:7026564:1+ Shot:1",
+          "player_id": 7026564,
+          "player_name": "Zak Swanson\u00a0",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19729040,
+          "fixture_label": "Norwich City vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 13,
+          "sample": 17,
+          "hit_rate": 0.7647,
+          "odds": 1.8,
+          "display": {
+            "rate": "13/17",
+            "odds": "@1.80",
+            "summary": "Zak Swanson\u00a0 (Portsmouth) won in 13/17 @1.80"
+          }
+        },
+        {
+          "id": "19746590:119634:1+ Shot:1",
+          "player_id": 119634,
+          "player_name": "Logi T\u00f3masson",
+          "team_id": 2811,
+          "team_name": "Samsunspor",
+          "fixture_id": 19746590,
+          "fixture_label": "Kas\u0131mpa\u015fa vs Samsunspor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.25,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.25",
+            "summary": "Logi T\u00f3masson (Samsunspor) won in 6/8 @2.25"
+          }
+        },
+        {
+          "id": "19713556:37545384:1+ Shot:1",
+          "player_id": 37545384,
+          "player_name": "M\u00e1ximo Perrone",
+          "team_id": 268,
+          "team_name": "Como",
+          "fixture_id": 19713556,
+          "fixture_label": "Fiorentina vs Como",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 2.0,
+          "display": {
+            "rate": "9/12",
+            "odds": "@2.00",
+            "summary": "M\u00e1ximo Perrone (Como) won in 9/12 @2.00"
+          }
+        },
+        {
+          "id": "19735148:80304:1+ Shot:1",
+          "player_id": 80304,
+          "player_name": "Vladim\u00edr Coufal",
+          "team_id": 2726,
+          "team_name": "TSG Hoffenheim",
+          "fixture_id": 19735148,
+          "fixture_label": "Borussia M\u00f6nchengladbach vs TSG Hoffenheim",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 16,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "12/16",
+            "odds": "@1.83",
+            "summary": "Vladim\u00edr Coufal (TSG Hoffenheim) won in 12/16 @1.83"
+          }
+        },
+        {
+          "id": "19729038:37341836:1+ Shot:1",
+          "player_id": 37341836,
+          "player_name": "Marko Stameni\u0107",
+          "team_id": 30,
+          "team_name": "Swansea City",
+          "fixture_id": 19729038,
+          "fixture_label": "Swansea City vs West Ham United",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Marko Stameni\u0107 (Swansea City) won in 6/8 @1.80"
+          }
+        }
+      ],
+      "section_total_rows": 15,
+      "slide_number": 2,
+      "slide_count": 6
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 2,
+      "section_pages": 2,
+      "rows": [
+        {
+          "id": "19735151:37259163:1+ Shot:1",
+          "player_id": 37259163,
+          "player_name": "Jarell Quansah",
+          "team_id": 3321,
+          "team_name": "Bayer 04 Leverkusen",
+          "fixture_id": 19735151,
+          "fixture_label": "Bayer 04 Leverkusen vs SC Freiburg",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Jarell Quansah (Bayer 04 Leverkusen) won in 6/8 @1.80"
+          }
+        },
+        {
+          "id": "19729041:37579793:1+ Shot:1",
+          "player_id": 37579793,
+          "player_name": "Derek Mazou-Sacko",
+          "team_id": 64,
+          "team_name": "Millwall",
+          "fixture_id": 19729041,
+          "fixture_label": "Millwall vs Lincoln City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Derek Mazou-Sacko (Millwall) won in 6/8 @1.73"
+          }
+        },
+        {
+          "id": "19713548:37533562:1+ Shot:1",
+          "player_id": 37533562,
+          "player_name": "Antoine Hainaut",
+          "team_id": 267,
+          "team_name": "Venezia",
+          "fixture_id": 19713548,
+          "fixture_label": "Venezia vs Napoli",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Antoine Hainaut (Venezia) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 15,
+      "slide_number": 3,
+      "slide_count": 6
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19729040:37407448:2+ Shots:2",
+          "player_id": 37407448,
+          "player_name": "Adrian Sege\u010di\u0107",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19729040,
+          "fixture_label": "Norwich City vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 12,
+          "sample": 14,
+          "hit_rate": 0.8571,
+          "odds": 1.73,
+          "display": {
+            "rate": "12/14",
+            "odds": "@1.73",
+            "summary": "Adrian Sege\u010di\u0107 (Portsmouth) won in 12/14 @1.73"
+          }
+        },
+        {
+          "id": "19729046:37326106:2+ Shots:2",
+          "player_id": 37326106,
+          "player_name": "Harvey Vale",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19729046,
+          "fixture_label": "Birmingham City vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.91,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.91",
+            "summary": "Harvey Vale (Queens Park Rangers) won in 8/10 @1.91"
+          }
+        },
+        {
+          "id": "19715580:37646962:2+ Shots:2",
+          "player_id": 37646962,
+          "player_name": "Tiago Santos",
+          "team_id": 690,
+          "team_name": "LOSC Lille",
+          "fixture_id": 19715580,
+          "fixture_label": "LOSC Lille vs Brest",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.75,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.75",
+            "summary": "Tiago Santos (LOSC Lille) won in 6/8 @2.75"
+          }
+        }
+      ],
+      "section_total_rows": 3,
+      "slide_number": 4,
+      "slide_count": 6
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 2,
+      "rows": [
+        {
+          "id": "19729036:581086:1+ SOT:1",
+          "player_id": 581086,
+          "player_name": "Todd Cantwell\u00a0",
+          "team_id": 2,
+          "team_name": "Blackburn Rovers",
+          "fixture_id": 19729036,
+          "fixture_label": "West Bromwich Albion vs Blackburn Rovers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.83,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.83",
+            "summary": "Todd Cantwell\u00a0 (Blackburn Rovers) won in 8/10 @1.83"
+          }
+        },
+        {
+          "id": "19715580:37580230:1+ SOT:1",
+          "player_id": 37580230,
+          "player_name": "Kamory Doumbia",
+          "team_id": 266,
+          "team_name": "Brest",
+          "fixture_id": 19715580,
+          "fixture_label": "LOSC Lille vs Brest",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 10,
+          "hit_rate": 0.8,
+          "odds": 1.8,
+          "display": {
+            "rate": "8/10",
+            "odds": "@1.80",
+            "summary": "Kamory Doumbia (Brest) won in 8/10 @1.80"
+          }
+        },
+        {
+          "id": "19732659:37544065:1+ SOT:1",
+          "player_id": 37544065,
+          "player_name": "Bryan Zaragoza",
+          "team_id": 528,
+          "team_name": "Espanyol",
+          "fixture_id": 19732659,
+          "fixture_label": "Espanyol vs Atl\u00e9tico de Madrid",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 2.0,
+          "display": {
+            "rate": "7/9",
+            "odds": "@2.00",
+            "summary": "Bryan Zaragoza (Espanyol) won in 7/9 @2.00"
+          }
+        },
+        {
+          "id": "19729037:37672471:1+ SOT:1",
+          "player_id": 37672471,
+          "player_name": "Othmane Maamma",
+          "team_id": 25,
+          "team_name": "Watford",
+          "fixture_id": 19729037,
+          "fixture_label": "Watford vs Charlton Athletic",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 9,
+          "hit_rate": 0.7778,
+          "odds": 1.73,
+          "display": {
+            "rate": "7/9",
+            "odds": "@1.73",
+            "summary": "Othmane Maamma (Watford) won in 7/9 @1.73"
+          }
+        },
+        {
+          "id": "19735145:32585:1+ SOT:1",
+          "player_id": 32585,
+          "player_name": "Nadiem Amiri",
+          "team_id": 794,
+          "team_name": "FSV Mainz 05",
+          "fixture_id": 19735145,
+          "fixture_label": "Schalke 04 vs FSV Mainz 05",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 13,
+          "sample": 17,
+          "hit_rate": 0.7647,
+          "odds": 1.83,
+          "display": {
+            "rate": "13/17",
+            "odds": "@1.83",
+            "summary": "Nadiem Amiri (FSV Mainz 05) won in 13/17 @1.83"
+          }
+        },
+        {
+          "id": "19722771:3385:1+ SOT:1",
+          "player_id": 3385,
+          "player_name": "Aaron Tshibola",
+          "team_id": 180,
+          "team_name": "Kilmarnock",
+          "fixture_id": 19722771,
+          "fixture_label": "Kilmarnock vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.62,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.62",
+            "summary": "Aaron Tshibola (Kilmarnock) won in 6/8 @2.62"
+          }
+        },
+        {
+          "id": "19732661:37587454:1+ SOT:1",
+          "player_id": 37587454,
+          "player_name": "\u00c1ngel P\u00e9rez",
+          "team_id": 2975,
+          "team_name": "Deportivo Alav\u00e9s",
+          "fixture_id": 19732661,
+          "fixture_label": "Celta de Vigo vs Deportivo Alav\u00e9s",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.38,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.38",
+            "summary": "\u00c1ngel P\u00e9rez (Deportivo Alav\u00e9s) won in 6/8 @2.38"
+          }
+        },
+        {
+          "id": "19713553:15434627:1+ SOT:1",
+          "player_id": 15434627,
+          "player_name": "Samuel Chukwueze",
+          "team_id": 113,
+          "team_name": "AC Milan",
+          "fixture_id": 19713553,
+          "fixture_label": "AC Milan vs Atalanta",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 2.1,
+          "display": {
+            "rate": "6/8",
+            "odds": "@2.10",
+            "summary": "Samuel Chukwueze (AC Milan) won in 6/8 @2.10"
+          }
+        },
+        {
+          "id": "19729046:149574:1+ SOT:1",
+          "player_id": 149574,
+          "player_name": "Paul Smyth",
+          "team_id": 47,
+          "team_name": "Queens Park Rangers",
+          "fixture_id": 19729046,
+          "fixture_label": "Birmingham City vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 12,
+          "hit_rate": 0.75,
+          "odds": 1.91,
+          "display": {
+            "rate": "9/12",
+            "odds": "@1.91",
+            "summary": "Paul Smyth (Queens Park Rangers) won in 9/12 @1.91"
+          }
+        },
+        {
+          "id": "19729041:37546792:1+ SOT:1",
+          "player_id": 37546792,
+          "player_name": "Camiel Neghli",
+          "team_id": 64,
+          "team_name": "Millwall",
+          "fixture_id": 19729041,
+          "fixture_label": "Millwall vs Lincoln City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Camiel Neghli (Millwall) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19735144:2178943:1+ SOT:1",
+          "player_id": 2178943,
+          "player_name": "Robin Fellhauer",
+          "team_id": 90,
+          "team_name": "FC Augsburg",
+          "fixture_id": 19735144,
+          "fixture_label": "Elversberg vs FC Augsburg",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Robin Fellhauer (FC Augsburg) won in 6/8 @1.83"
+          }
+        },
+        {
+          "id": "19729036:18683:1+ SOT:1",
+          "player_id": 18683,
+          "player_name": "Oladapo Afolayan",
+          "team_id": 2,
+          "team_name": "Blackburn Rovers",
+          "fixture_id": 19729036,
+          "fixture_label": "West Bromwich Albion vs Blackburn Rovers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.83,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.83",
+            "summary": "Oladapo Afolayan (Blackburn Rovers) won in 6/8 @1.83"
+          }
+        }
+      ],
+      "section_total_rows": 15,
+      "slide_number": 5,
+      "slide_count": 6
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 2,
+      "section_pages": 2,
+      "rows": [
+        {
+          "id": "19715580:98457:1+ SOT:1",
+          "player_id": 98457,
+          "player_name": "Ludovic Ajorque",
+          "team_id": 266,
+          "team_name": "Brest",
+          "fixture_id": 19715580,
+          "fixture_label": "LOSC Lille vs Brest",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Ludovic Ajorque (Brest) won in 6/8 @1.80"
+          }
+        },
+        {
+          "id": "19732657:22528446:1+ SOT:1",
+          "player_id": 22528446,
+          "player_name": "Luka Sucic",
+          "team_id": 594,
+          "team_name": "Real Sociedad",
+          "fixture_id": 19732657,
+          "fixture_label": "M\u00e1laga vs Real Sociedad",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.8,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.80",
+            "summary": "Luka Sucic (Real Sociedad) won in 6/8 @1.80"
+          }
+        },
+        {
+          "id": "19722771:2823438:1+ SOT:1",
+          "player_id": 2823438,
+          "player_name": "Lukas Fadinger",
+          "team_id": 309,
+          "team_name": "Motherwell",
+          "fixture_id": 19722771,
+          "fixture_label": "Kilmarnock vs Motherwell",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 6,
+          "sample": 8,
+          "hit_rate": 0.75,
+          "odds": 1.73,
+          "display": {
+            "rate": "6/8",
+            "odds": "@1.73",
+            "summary": "Lukas Fadinger (Motherwell) won in 6/8 @1.73"
+          }
+        }
+      ],
+      "section_total_rows": 15,
+      "slide_number": 6,
+      "slide_count": 6
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "d37e7c520769889c0d1d94eb536b81345ac0447848e494f02a8486608b8b0c2b"
+}
