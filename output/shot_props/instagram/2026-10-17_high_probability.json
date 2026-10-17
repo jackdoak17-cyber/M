@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-10-16T18:54:15+00:00",
+  "generated_at": "2026-10-17T10:48:31+00:00",
   "scheduled_for": "2026-10-17",
   "source_target_date": "2026-10-17",
   "fixture_dates": [
@@ -110,11 +110,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.33,
+          "odds": 1.36,
           "display": {
             "rate": "9/10",
-            "odds": "@1.33",
-            "summary": "Tomoki Iwata (Birmingham City) won in 9/10 @1.33"
+            "odds": "@1.36",
+            "summary": "Tomoki Iwata (Birmingham City) won in 9/10 @1.36"
           }
         }
       ],
@@ -156,11 +156,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.73,
+          "odds": 1.8,
           "display": {
             "rate": "9/10",
-            "odds": "@1.73",
-            "summary": "Adrian Sege\u010di\u0107 (Portsmouth) won in 9/10 @1.73"
+            "odds": "@1.80",
+            "summary": "Adrian Sege\u010di\u0107 (Portsmouth) won in 9/10 @1.80"
           }
         },
         {
@@ -178,11 +178,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.53,
+          "odds": 1.4,
           "display": {
             "rate": "9/10",
-            "odds": "@1.53",
-            "summary": "Florian Wirtz (Liverpool) won in 9/10 @1.53"
+            "odds": "@1.40",
+            "summary": "Florian Wirtz (Liverpool) won in 9/10 @1.40"
           }
         },
         {
@@ -408,11 +408,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.33,
+          "odds": 1.36,
           "display": {
             "rate": "9/10",
-            "odds": "@1.33",
-            "summary": "Tomoki Iwata (Birmingham City) won in 9/10 @1.33"
+            "odds": "@1.36",
+            "summary": "Tomoki Iwata (Birmingham City) won in 9/10 @1.36"
           }
         }
       ],
@@ -463,11 +463,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.73,
+          "odds": 1.8,
           "display": {
             "rate": "9/10",
-            "odds": "@1.73",
-            "summary": "Adrian Sege\u010di\u0107 (Portsmouth) won in 9/10 @1.73"
+            "odds": "@1.80",
+            "summary": "Adrian Sege\u010di\u0107 (Portsmouth) won in 9/10 @1.80"
           }
         },
         {
@@ -485,11 +485,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.53,
+          "odds": 1.4,
           "display": {
             "rate": "9/10",
-            "odds": "@1.53",
-            "summary": "Florian Wirtz (Liverpool) won in 9/10 @1.53"
+            "odds": "@1.40",
+            "summary": "Florian Wirtz (Liverpool) won in 9/10 @1.40"
           }
         },
         {
@@ -623,5 +623,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "cca12df4a1a7d7c465e5e440da9f8b9e503d20ab0cff1b864349c18dfca52f0c"
+  "content_fingerprint": "bffe2f368013133764eccd16b409ce5e587fbeb3e9af1f656b39a0d5f04d183b"
 }
