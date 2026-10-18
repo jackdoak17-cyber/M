@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T10:25:26Z",
+  "generated_at": "2026-10-18T15:23:56Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -319,73 +319,73 @@
       "active": true,
       "closed": false,
       "end_date": "2027-01-01T04:59:00Z",
-      "volume": 52558679.097261995,
+      "volume": 52909744.720272,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.6455,
+          "probability": 0.6615,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.645,
-          "best_ask": 0.646,
-          "last_trade_price": 0.646,
+          "best_bid": 0.658,
+          "best_ask": 0.665,
+          "last_trade_price": 0.661,
           "outcome": "Yes",
-          "previous_probability": 0.647,
-          "delta_pp": -0.15000000000000568
+          "previous_probability": 0.6455,
+          "delta_pp": 1.6000000000000014
         },
         {
           "label": "Lamine Yamal",
-          "probability": 0.281,
+          "probability": 0.2715,
           "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-          "best_bid": 0.28,
-          "best_ask": 0.282,
-          "last_trade_price": 0.28,
+          "best_bid": 0.271,
+          "best_ask": 0.272,
+          "last_trade_price": 0.272,
           "outcome": "Yes",
-          "previous_probability": 0.2805,
-          "delta_pp": 0.050000000000000044
+          "previous_probability": 0.281,
+          "delta_pp": -0.9500000000000008
         },
         {
           "label": "Kylian Mbapp\u00e9",
-          "probability": 0.0315,
-          "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.03,
-          "best_ask": 0.033,
-          "last_trade_price": 0.033,
-          "outcome": "Yes",
-          "previous_probability": 0.0345,
-          "delta_pp": -0.30000000000000027
-        },
-        {
-          "label": "Lionel Messi",
           "probability": 0.0285,
-          "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
+          "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
           "best_bid": 0.028,
           "best_ask": 0.029,
           "last_trade_price": 0.029,
           "outcome": "Yes",
-          "previous_probability": 0.0275,
-          "delta_pp": 0.10000000000000009
+          "previous_probability": 0.0315,
+          "delta_pp": -0.29999999999999993
         },
         {
-          "label": "Khvicha Kvaratskhelia",
-          "probability": 0.0045000000000000005,
-          "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
-          "best_bid": 0.004,
+          "label": "Lionel Messi",
+          "probability": 0.0265,
+          "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
+          "best_bid": 0.026,
+          "best_ask": 0.027,
+          "last_trade_price": 0.027,
+          "outcome": "Yes",
+          "previous_probability": 0.0285,
+          "delta_pp": -0.20000000000000018
+        },
+        {
+          "label": "Rodri",
+          "probability": 0.004,
+          "question": "Will Rodri win the 2026 Ballon d'Or?",
+          "best_bid": 0.003,
           "best_ask": 0.005,
           "last_trade_price": 0.004,
           "outcome": "Yes",
           "previous_probability": 0.0045000000000000005,
-          "delta_pp": 0.0
+          "delta_pp": -0.050000000000000044
         },
         {
-          "label": "Rodri",
-          "probability": 0.0045000000000000005,
-          "question": "Will Rodri win the 2026 Ballon d'Or?",
-          "best_bid": 0.004,
-          "best_ask": 0.005,
-          "last_trade_price": 0.005,
+          "label": "Khvicha Kvaratskhelia",
+          "probability": 0.0035,
+          "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
+          "best_bid": 0.003,
+          "best_ask": 0.004,
+          "last_trade_price": 0.003,
           "outcome": "Yes",
-          "previous_probability": 0.004,
-          "delta_pp": 0.050000000000000044
+          "previous_probability": 0.0045000000000000005,
+          "delta_pp": -0.10000000000000005
         }
       ]
     },
