@@ -3,13 +3,12 @@ As usual I've collated todays Premier League 1+ (100% hit-rates) and 2+ (80% hit
 Leave a like if you find these useful.
 
 📊1+ Shots on Target in ≥5/5📊
-- B. Saka (Arsenal) = 1, 1, 3, 3, 1
-- K. Havertz (Arsenal) = 1, 1, 1, 2, 1
 - E. Haaland (Man City) = 2, 1, 1, 1, 3
 
 📊1+ Fouls Drawn in ≥5/5📊
-- B. Saka (Arsenal) = 3, 1, 4, 3, 6
-- M. Lewis-Skelly (Arsenal) = 3, 1, 1, 2, 3
+- B. Saka (Arsenal) = 3, 3, 1, 4, 3
+- E. Eze (Arsenal) = 2, 4, 1, 1, 1
+- E. Konsa (Arsenal) = 2, 3, 1, 2, 2
 - E. Buendía (Aston Villa) = 2, 4, 1, 2, 1
 - C. Palmer (Chelsea) = 1, 4, 2, 1, 1
 - J. King (Fulham) = 4, 2, 1, 3, 1
@@ -21,8 +20,9 @@ Leave a like if you find these useful.
 - J. Hecke (Spurs) = 2, 1, 2, 1, 2
 
 📊2+ Shots in ≥4/5📊
-- B. Saka (Arsenal) = 2, 2, 4, 4, 2
-- K. Havertz (Arsenal) = 2, 2, 3, 3, 1
+- B. Saka (Arsenal) = 0, 2, 2, 4, 4
+- E. Eze (Arsenal) = 0, 3, 3, 3, 3
+- K. Havertz (Arsenal) = 2, 2, 2, 3, 3
 - N. Jackson (Aston Villa) = 4, 4, 6, 0, 2
 - C. Palmer (Chelsea) = 6, 0, 2, 3, 3
 - M. Rogers (Chelsea) = 2, 2, 4, 2, 3
@@ -34,6 +34,7 @@ Leave a like if you find these useful.
 - M. Cash (Aston Villa) = 3, 2, 1, 2, 2
 
 📊2+ Fouls Drawn in ≥4/5📊
-- B. Saka (Arsenal) = 3, 1, 4, 3, 6
+- B. Saka (Arsenal) = 3, 3, 1, 4, 3
+- E. Konsa (Arsenal) = 2, 3, 1, 2, 2
 - B. Kamara (Aston Villa) = 4, 5, 0, 3, 3
 - K. Dewsbury-Hall (Everton) = 3, 3, 2, 3, 0
