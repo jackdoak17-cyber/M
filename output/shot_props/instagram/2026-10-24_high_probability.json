@@ -1,0 +1,627 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "high_probability",
+  "generated_at": "2026-10-23T19:13:24+00:00",
+  "scheduled_for": "2026-10-24",
+  "source_target_date": "2026-10-24",
+  "fixture_dates": [
+    "2026-10-24"
+  ],
+  "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+  "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.9,
+    "min_odds": 1.3,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 12,
+    "by_section": {
+      "1+ Shot": 6,
+      "2+ Shots": 2,
+      "1+ SOT": 4
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19713540:6599973:1+ Shot:1",
+          "player_id": 6599973,
+          "player_name": "Billy Gilmour",
+          "team_id": 597,
+          "team_name": "Napoli",
+          "fixture_id": 19713540,
+          "fixture_label": "Napoli vs Roma",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Billy Gilmour (Napoli) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19715571:37667227:1+ Shot:1",
+          "player_id": 37667227,
+          "player_name": "Andrija Bulatovic",
+          "team_id": 271,
+          "team_name": "Lens",
+          "fixture_id": 19715571,
+          "fixture_label": "Lens vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.40",
+            "summary": "Andrija Bulatovic (Lens) won in 7/7 @1.40"
+          }
+        },
+        {
+          "id": "19729029:37260515:1+ Shot:1",
+          "player_id": 37260515,
+          "player_name": "Terry Devlin",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19729029,
+          "fixture_label": "Portsmouth vs Millwall",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.36",
+            "summary": "Terry Devlin (Portsmouth) won in 7/7 @1.36"
+          }
+        },
+        {
+          "id": "19729029:37546792:1+ Shot:1",
+          "player_id": 37546792,
+          "player_name": "Camiel Neghli",
+          "team_id": 64,
+          "team_name": "Millwall",
+          "fixture_id": 19729029,
+          "fixture_label": "Portsmouth vs Millwall",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 19,
+          "sample": 19,
+          "hit_rate": 1.0,
+          "odds": 1.33,
+          "display": {
+            "rate": "19/19",
+            "odds": "@1.33",
+            "summary": "Camiel Neghli (Millwall) won in 19/19 @1.33"
+          }
+        },
+        {
+          "id": "19729032:319375:1+ Shot:1",
+          "player_id": 319375,
+          "player_name": "Tomoki Iwata",
+          "team_id": 12,
+          "team_name": "Birmingham City",
+          "fixture_id": 19729032,
+          "fixture_label": "Cardiff City vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.44,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.44",
+            "summary": "Tomoki Iwata (Birmingham City) won in 10/11 @1.44"
+          }
+        },
+        {
+          "id": "19722764:1233:1+ Shot:1",
+          "player_id": 1233,
+          "player_name": "Declan John",
+          "team_id": 496,
+          "team_name": "St. Mirren",
+          "fixture_id": 19722764,
+          "fixture_label": "St. Mirren vs Dundee",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Declan John (St. Mirren) won in 9/10 @1.80"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19729032:37293781:2+ Shots:2",
+          "player_id": 37293781,
+          "player_name": "Ollie Tanner",
+          "team_id": 69,
+          "team_name": "Cardiff City",
+          "fixture_id": 19729032,
+          "fixture_label": "Cardiff City vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.36,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.36",
+            "summary": "Ollie Tanner (Cardiff City) won in 9/10 @1.36"
+          }
+        },
+        {
+          "id": "19715571:7691269:2+ Shots:2",
+          "player_id": 7691269,
+          "player_name": "Lassine Sinayoko",
+          "team_id": 4508,
+          "team_name": "Paris",
+          "fixture_id": 19715571,
+          "fixture_label": "Lens vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.36,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.36",
+            "summary": "Lassine Sinayoko (Paris) won in 9/10 @1.36"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19722769:173059:1+ SOT:1",
+          "player_id": 173059,
+          "player_name": "Kevin Nisbet",
+          "team_id": 273,
+          "team_name": "Aberdeen",
+          "fixture_id": 19722769,
+          "fixture_label": "Dundee United vs Aberdeen",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Kevin Nisbet (Aberdeen) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19735137:35218:1+ SOT:1",
+          "player_id": 35218,
+          "player_name": "Phillip Tietz",
+          "team_id": 794,
+          "team_name": "FSV Mainz 05",
+          "fixture_id": 19735137,
+          "fixture_label": "FSV Mainz 05 vs Werder Bremen",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.36",
+            "summary": "Phillip Tietz (FSV Mainz 05) won in 7/7 @1.36"
+          }
+        },
+        {
+          "id": "19715571:96792:1+ SOT:1",
+          "player_id": 96792,
+          "player_name": "Odsonne \u00c9douard",
+          "team_id": 271,
+          "team_name": "Lens",
+          "fixture_id": 19715571,
+          "fixture_label": "Lens vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.33,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.33",
+            "summary": "Odsonne \u00c9douard (Lens) won in 11/12 @1.33"
+          }
+        },
+        {
+          "id": "19715571:7691269:1+ SOT:1",
+          "player_id": 7691269,
+          "player_name": "Lassine Sinayoko",
+          "team_id": 4508,
+          "team_name": "Paris",
+          "fixture_id": 19715571,
+          "fixture_label": "Lens vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.67,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.67",
+            "summary": "Lassine Sinayoko (Paris) won in 9/10 @1.67"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 24 Oct 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 6\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 4\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "High Probability List",
+      "title_words": {
+        "primary": "HIGH",
+        "accent": "PROBABILITY"
+      },
+      "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+      "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+      "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
+      "fixture_window": "Sat 24 Oct 2026",
+      "stats": {
+        "total_players": 12,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 90
+      },
+      "slide_number": 1,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19713540:6599973:1+ Shot:1",
+          "player_id": 6599973,
+          "player_name": "Billy Gilmour",
+          "team_id": 597,
+          "team_name": "Napoli",
+          "fixture_id": 19713540,
+          "fixture_label": "Napoli vs Roma",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Billy Gilmour (Napoli) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19715571:37667227:1+ Shot:1",
+          "player_id": 37667227,
+          "player_name": "Andrija Bulatovic",
+          "team_id": 271,
+          "team_name": "Lens",
+          "fixture_id": 19715571,
+          "fixture_label": "Lens vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.40",
+            "summary": "Andrija Bulatovic (Lens) won in 7/7 @1.40"
+          }
+        },
+        {
+          "id": "19729029:37260515:1+ Shot:1",
+          "player_id": 37260515,
+          "player_name": "Terry Devlin",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19729029,
+          "fixture_label": "Portsmouth vs Millwall",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.36",
+            "summary": "Terry Devlin (Portsmouth) won in 7/7 @1.36"
+          }
+        },
+        {
+          "id": "19729029:37546792:1+ Shot:1",
+          "player_id": 37546792,
+          "player_name": "Camiel Neghli",
+          "team_id": 64,
+          "team_name": "Millwall",
+          "fixture_id": 19729029,
+          "fixture_label": "Portsmouth vs Millwall",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 19,
+          "sample": 19,
+          "hit_rate": 1.0,
+          "odds": 1.33,
+          "display": {
+            "rate": "19/19",
+            "odds": "@1.33",
+            "summary": "Camiel Neghli (Millwall) won in 19/19 @1.33"
+          }
+        },
+        {
+          "id": "19729032:319375:1+ Shot:1",
+          "player_id": 319375,
+          "player_name": "Tomoki Iwata",
+          "team_id": 12,
+          "team_name": "Birmingham City",
+          "fixture_id": 19729032,
+          "fixture_label": "Cardiff City vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.44,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.44",
+            "summary": "Tomoki Iwata (Birmingham City) won in 10/11 @1.44"
+          }
+        },
+        {
+          "id": "19722764:1233:1+ Shot:1",
+          "player_id": 1233,
+          "player_name": "Declan John",
+          "team_id": 496,
+          "team_name": "St. Mirren",
+          "fixture_id": 19722764,
+          "fixture_label": "St. Mirren vs Dundee",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Declan John (St. Mirren) won in 9/10 @1.80"
+          }
+        }
+      ],
+      "section_total_rows": 6,
+      "slide_number": 2,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19729032:37293781:2+ Shots:2",
+          "player_id": 37293781,
+          "player_name": "Ollie Tanner",
+          "team_id": 69,
+          "team_name": "Cardiff City",
+          "fixture_id": 19729032,
+          "fixture_label": "Cardiff City vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.36,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.36",
+            "summary": "Ollie Tanner (Cardiff City) won in 9/10 @1.36"
+          }
+        },
+        {
+          "id": "19715571:7691269:2+ Shots:2",
+          "player_id": 7691269,
+          "player_name": "Lassine Sinayoko",
+          "team_id": 4508,
+          "team_name": "Paris",
+          "fixture_id": 19715571,
+          "fixture_label": "Lens vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.36,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.36",
+            "summary": "Lassine Sinayoko (Paris) won in 9/10 @1.36"
+          }
+        }
+      ],
+      "section_total_rows": 2,
+      "slide_number": 3,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19722769:173059:1+ SOT:1",
+          "player_id": 173059,
+          "player_name": "Kevin Nisbet",
+          "team_id": 273,
+          "team_name": "Aberdeen",
+          "fixture_id": 19722769,
+          "fixture_label": "Dundee United vs Aberdeen",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Kevin Nisbet (Aberdeen) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19735137:35218:1+ SOT:1",
+          "player_id": 35218,
+          "player_name": "Phillip Tietz",
+          "team_id": 794,
+          "team_name": "FSV Mainz 05",
+          "fixture_id": 19735137,
+          "fixture_label": "FSV Mainz 05 vs Werder Bremen",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.36,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.36",
+            "summary": "Phillip Tietz (FSV Mainz 05) won in 7/7 @1.36"
+          }
+        },
+        {
+          "id": "19715571:96792:1+ SOT:1",
+          "player_id": 96792,
+          "player_name": "Odsonne \u00c9douard",
+          "team_id": 271,
+          "team_name": "Lens",
+          "fixture_id": 19715571,
+          "fixture_label": "Lens vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.33,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.33",
+            "summary": "Odsonne \u00c9douard (Lens) won in 11/12 @1.33"
+          }
+        },
+        {
+          "id": "19715571:7691269:1+ SOT:1",
+          "player_id": 7691269,
+          "player_name": "Lassine Sinayoko",
+          "team_id": 4508,
+          "team_name": "Paris",
+          "fixture_id": 19715571,
+          "fixture_label": "Lens vs Paris",
+          "league_id": 301,
+          "league_name": "Ligue 1",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.67,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.67",
+            "summary": "Lassine Sinayoko (Paris) won in 9/10 @1.67"
+          }
+        }
+      ],
+      "section_total_rows": 4,
+      "slide_number": 4,
+      "slide_count": 4
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "d7379ad67aa1f67482dc27e05ad4d76f14f05dfa1a6ebbd19237323dbe2e5623"
+}
