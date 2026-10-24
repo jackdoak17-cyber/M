@@ -11,7 +11,7 @@ Any value here?
 → R.Pröpper (FC Twente) 8/10 @1.73
 → D.John (St. Mirren) 11/14 @1.80
 → L.Tómasson (Samsunspor) 7/9 @2.25
-→ D.Mazou-Sacko (Millwall) 7/9 @2.20
+→ D.Mazou-Sacko (Millwall) 7/9 @2.00
 → C.Doyle (Wrexham) 10/13 @1.83
 → J.Kerr (Hibernian) 6/8 @2.25
 → D.Elerewe (Lincoln City) 6/8 @1.91
@@ -21,7 +21,8 @@ Any value here?
 
 🎯 2+ Shots
 → J.Mulligan (Hibernian) 7/9 @3.00
-→ C.Neghli (Millwall) 12/16 @2.38
+→ F.Lejeune (Rayo Vallecano) 7/9 @1.73
+→ C.Neghli (Millwall) 12/16 @2.10
 → T.Jonge (FC Groningen) 6/8 @2.00
 → F.Wirtz (Liverpool) 9/12 @1.73
 

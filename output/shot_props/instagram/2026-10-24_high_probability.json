@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-10-23T19:13:24+00:00",
+  "generated_at": "2026-10-24T11:14:27+00:00",
   "scheduled_for": "2026-10-24",
   "source_target_date": "2026-10-24",
   "fixture_dates": [
@@ -19,9 +19,9 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 12,
+    "total_rows": 11,
     "by_section": {
-      "1+ Shot": 6,
+      "1+ Shot": 5,
       "2+ Shots": 2,
       "1+ SOT": 4
     }
@@ -44,11 +44,33 @@
           "hits": 7,
           "sample": 7,
           "hit_rate": 1.0,
-          "odds": 1.44,
+          "odds": 1.5,
           "display": {
             "rate": "7/7",
-            "odds": "@1.44",
-            "summary": "Billy Gilmour (Napoli) won in 7/7 @1.44"
+            "odds": "@1.50",
+            "summary": "Billy Gilmour (Napoli) won in 7/7 @1.50"
+          }
+        },
+        {
+          "id": "19729029:37260515:1+ Shot:1",
+          "player_id": 37260515,
+          "player_name": "Terry Devlin",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19729029,
+          "fixture_label": "Portsmouth vs Millwall",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.40",
+            "summary": "Terry Devlin (Portsmouth) won in 7/7 @1.40"
           }
         },
         {
@@ -71,50 +93,6 @@
             "rate": "7/7",
             "odds": "@1.40",
             "summary": "Andrija Bulatovic (Lens) won in 7/7 @1.40"
-          }
-        },
-        {
-          "id": "19729029:37260515:1+ Shot:1",
-          "player_id": 37260515,
-          "player_name": "Terry Devlin",
-          "team_id": 5,
-          "team_name": "Portsmouth",
-          "fixture_id": 19729029,
-          "fixture_label": "Portsmouth vs Millwall",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 7,
-          "hit_rate": 1.0,
-          "odds": 1.36,
-          "display": {
-            "rate": "7/7",
-            "odds": "@1.36",
-            "summary": "Terry Devlin (Portsmouth) won in 7/7 @1.36"
-          }
-        },
-        {
-          "id": "19729029:37546792:1+ Shot:1",
-          "player_id": 37546792,
-          "player_name": "Camiel Neghli",
-          "team_id": 64,
-          "team_name": "Millwall",
-          "fixture_id": 19729029,
-          "fixture_label": "Portsmouth vs Millwall",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 19,
-          "sample": 19,
-          "hit_rate": 1.0,
-          "odds": 1.33,
-          "display": {
-            "rate": "19/19",
-            "odds": "@1.33",
-            "summary": "Camiel Neghli (Millwall) won in 19/19 @1.33"
           }
         },
         {
@@ -178,11 +156,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.36,
+          "odds": 1.4,
           "display": {
             "rate": "9/10",
-            "odds": "@1.36",
-            "summary": "Ollie Tanner (Cardiff City) won in 9/10 @1.36"
+            "odds": "@1.40",
+            "summary": "Ollie Tanner (Cardiff City) won in 9/10 @1.40"
           }
         },
         {
@@ -290,17 +268,17 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.67,
+          "odds": 1.57,
           "display": {
             "rate": "9/10",
-            "odds": "@1.67",
-            "summary": "Lassine Sinayoko (Paris) won in 9/10 @1.67"
+            "odds": "@1.57",
+            "summary": "Lassine Sinayoko (Paris) won in 9/10 @1.57"
           }
         }
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 24 Oct 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 6\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 4\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 24 Oct 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 5\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 4\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -314,7 +292,7 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 24 Oct 2026",
       "stats": {
-        "total_players": 12,
+        "total_players": 11,
         "stat_types": 3,
         "hit_rate_threshold_pct": 90
       },
@@ -342,11 +320,33 @@
           "hits": 7,
           "sample": 7,
           "hit_rate": 1.0,
-          "odds": 1.44,
+          "odds": 1.5,
           "display": {
             "rate": "7/7",
-            "odds": "@1.44",
-            "summary": "Billy Gilmour (Napoli) won in 7/7 @1.44"
+            "odds": "@1.50",
+            "summary": "Billy Gilmour (Napoli) won in 7/7 @1.50"
+          }
+        },
+        {
+          "id": "19729029:37260515:1+ Shot:1",
+          "player_id": 37260515,
+          "player_name": "Terry Devlin",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19729029,
+          "fixture_label": "Portsmouth vs Millwall",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.40",
+            "summary": "Terry Devlin (Portsmouth) won in 7/7 @1.40"
           }
         },
         {
@@ -369,50 +369,6 @@
             "rate": "7/7",
             "odds": "@1.40",
             "summary": "Andrija Bulatovic (Lens) won in 7/7 @1.40"
-          }
-        },
-        {
-          "id": "19729029:37260515:1+ Shot:1",
-          "player_id": 37260515,
-          "player_name": "Terry Devlin",
-          "team_id": 5,
-          "team_name": "Portsmouth",
-          "fixture_id": 19729029,
-          "fixture_label": "Portsmouth vs Millwall",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 7,
-          "hit_rate": 1.0,
-          "odds": 1.36,
-          "display": {
-            "rate": "7/7",
-            "odds": "@1.36",
-            "summary": "Terry Devlin (Portsmouth) won in 7/7 @1.36"
-          }
-        },
-        {
-          "id": "19729029:37546792:1+ Shot:1",
-          "player_id": 37546792,
-          "player_name": "Camiel Neghli",
-          "team_id": 64,
-          "team_name": "Millwall",
-          "fixture_id": 19729029,
-          "fixture_label": "Portsmouth vs Millwall",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 19,
-          "sample": 19,
-          "hit_rate": 1.0,
-          "odds": 1.33,
-          "display": {
-            "rate": "19/19",
-            "odds": "@1.33",
-            "summary": "Camiel Neghli (Millwall) won in 19/19 @1.33"
           }
         },
         {
@@ -460,7 +416,7 @@
           }
         }
       ],
-      "section_total_rows": 6,
+      "section_total_rows": 5,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -485,11 +441,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.36,
+          "odds": 1.4,
           "display": {
             "rate": "9/10",
-            "odds": "@1.36",
-            "summary": "Ollie Tanner (Cardiff City) won in 9/10 @1.36"
+            "odds": "@1.40",
+            "summary": "Ollie Tanner (Cardiff City) won in 9/10 @1.40"
           }
         },
         {
@@ -606,11 +562,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.67,
+          "odds": 1.57,
           "display": {
             "rate": "9/10",
-            "odds": "@1.67",
-            "summary": "Lassine Sinayoko (Paris) won in 9/10 @1.67"
+            "odds": "@1.57",
+            "summary": "Lassine Sinayoko (Paris) won in 9/10 @1.57"
           }
         }
       ],
@@ -623,5 +579,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "d7379ad67aa1f67482dc27e05ad4d76f14f05dfa1a6ebbd19237323dbe2e5623"
+  "content_fingerprint": "2c4647f8e38f02f22f4bd699ca877c12895b64c1417fa8adcbb07ed23d64e193"
 }
