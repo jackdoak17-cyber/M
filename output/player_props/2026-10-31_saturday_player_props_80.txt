@@ -1,0 +1,39 @@
+I've collated todays Premier League 2+ player stats (80% hit-rates) based on their last 5 games.
+
+Leave a like if you find these useful.
+
+📊2+ Shots in ≥4/5📊
+- N. Jackson (Aston Villa) = 3, 4, 4, 6, 0
+- Y. Ayari (Brighton) = 0, 4, 2, 2, 4
+- C. Palmer (Chelsea) = 2, 6, 0, 2, 3
+- M. Rogers (Chelsea) = 1, 2, 2, 4, 2
+- P. Neto (Chelsea) = 2, 3, 2, 2, 1
+- J. King (Fulham) = 4, 3, 0, 3, 4
+- M. Belloumi (Hull City) = 0, 3, 5, 3, 2
+- Emersonn (Ipswich Town) = 0, 3, 2, 2, 3
+- J. Enciso (Ipswich Town) = 4, 0, 2, 3, 2
+- E. Haaland (Man City) = 3, 5, 2, 4, 2
+- B. Mbeumo (Man Utd) = 0, 3, 2, 5, 3
+- D. Ndoye (Nottm Forest) = 2, 2, 4, 3, 5
+- L. Delap (Nottm Forest) = 3, 4, 2, 4, 6
+- M. Gibbs-White (Nottm Forest) = 2, 2, 0, 2, 3
+- Murillo (Nottm Forest) = 2, 3, 4, 2, 0
+- N. Williams (Nottm Forest) = 2, 1, 3, 3, 2
+- M. Tel (Spurs) = 2, 0, 3, 2, 2
+- S. Tonali (Spurs) = 2, 2, 1, 3, 2
+
+📊2+ Fouls Committed in ≥4/5📊
+- M. Cash (Aston Villa) = 4, 3, 2, 1, 2
+- I. Thiago (Brentford) = 0, 4, 2, 4, 2
+- A. Stach (Leeds) = 1, 3, 3, 2, 3
+- R. Dias (Man City) = 3, 2, 2, 5, 0
+
+📊2+ Fouls Drawn in ≥4/5📊
+- Evanilson (Bournemouth) = 0, 2, 2, 2, 2
+- B. Kamara (Aston Villa) = 2, 4, 5, 0, 3
+- J. McGinn (Aston Villa) = 2, 5, 1, 5, 2
+- B. Thomas-Asante (Coventry City) = 3, 4, 2, 4, 2
+- E. Anderson (Man City) = 3, 8, 2, 4, 3
+- E. Fernández (Man City) = 3, 1, 3, 3, 2
+- I. Ndiaye (Man City) = 1, 2, 2, 2, 2
+- A. Gray (Spurs) = 2, 2, 2, 0, 2
