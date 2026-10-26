@@ -4,33 +4,47 @@ Leave a like if you find these useful.
 
 📊1+ Shots on Target in ≥5/5📊
 - P. Neto (Chelsea) = 2, 3, 1, 1, 1
-- D. Calvert-Lewin (Leeds) = 1, 1, 1, 2, 2
 - E. Haaland (Man City) = 2, 2, 1, 1, 1
+- B. Mbeumo (Man Utd) = 1, 2, 2, 1, 1
 
 📊1+ Fouls Drawn in ≥5/5📊
+- Evanilson (Bournemouth) = 1, 2, 2, 2, 2
+- Rayan (Bournemouth) = 3, 2, 1, 2, 3
 - J. McGinn (Aston Villa) = 2, 5, 1, 5, 2
 - J. Gomes (Aston Villa) = 1, 1, 3, 1, 1
+- K. Lewis-Potter (Brentford) = 2, 2, 1, 1, 1
 - M. Rogers (Chelsea) = 2, 2, 1, 1, 3
 - B. Thomas-Asante (Coventry City) = 3, 4, 2, 4, 2
+- A. Wharton (Palace) = 1, 1, 1, 2, 2
+- Y. Pino (Palace) = 1, 1, 1, 2, 1
+- O. McBurnie (Hull City) = 2, 1, 1, 2, 3
 - J. Enciso (Ipswich Town) = 2, 1, 1, 1, 2
-- G. Gudmundsson (Leeds) = 1, 1, 1, 1, 2
-- J. Justin (Leeds) = 1, 2, 2, 1, 1
+- G. Gudmundsson (Leeds) = 2, 1, 1, 1, 1
+- J. Justin (Leeds) = 1, 1, 2, 2, 1
 - E. Anderson (Man City) = 3, 8, 2, 4, 3
 - E. Fernández (Man City) = 3, 1, 3, 3, 2
 - I. Ndiaye (Man City) = 1, 2, 2, 2, 2
+- A. Heaven (Man Utd) = 1, 2, 2, 1, 1
+- B. Mbeumo (Man Utd) = 1, 1, 1, 1, 2
+- Y. Tielemans (Man Utd) = 2, 1, 4, 1, 1
 - L. Delap (Nottm Forest) = 1, 1, 2, 2, 1
-- E. Fée (Sunderland) = 4, 1, 3, 1, 2
-- G. Xhaka (Sunderland) = 1, 2, 1, 1, 1
-- R. Mandava (Sunderland) = 2, 1, 2, 1, 1
+- B. Brobbey (Sunderland) = 2, 5, 2, 1, 1
+- E. Fée (Sunderland) = 2, 4, 1, 3, 1
+- G. Xhaka (Sunderland) = 3, 1, 2, 1, 1
+- R. Mandava (Sunderland) = 1, 2, 1, 2, 1
 - O. Marmoush (Spurs) = 1, 1, 1, 1, 1
 
 📊1+ Fouls Committed in ≥5/5📊
+- A. Truffert (Bournemouth) = 1, 3, 1, 3, 1
+- Evanilson (Bournemouth) = 2, 1, 1, 2, 2
 - M. Cash (Aston Villa) = 4, 3, 2, 1, 2
-- A. Stach (Leeds) = 1, 3, 3, 2, 3
-- D. Calvert-Lewin (Leeds) = 3, 3, 1, 1, 3
-- J. Bogle (Leeds) = 2, 1, 1, 2, 1
+- I. Thiago (Brentford) = 1, 4, 2, 4, 2
+- A. Khalaili (Palace) = 2, 2, 1, 1, 1
+- D. Calvert-Lewin (Leeds) = 1, 3, 3, 1, 1
+- J. Bogle (Leeds) = 2, 2, 1, 1, 2
 - L. Delap (Nottm Forest) = 3, 2, 1, 2, 1
 - N. Milenković (Nottm Forest) = 1, 1, 1, 3, 1
+- B. Brobbey (Sunderland) = 1, 1, 3, 1, 1
 - A. Gray (Spurs) = 1, 2, 2, 1, 1
 - J. Hecke (Spurs) = 1, 1, 2, 1, 2
 - O. Marmoush (Spurs) = 2, 2, 1, 1, 3
