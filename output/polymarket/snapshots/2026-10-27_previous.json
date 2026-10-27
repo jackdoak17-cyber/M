@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T03:47:21Z",
+  "generated_at": "2026-10-27T11:37:30Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -319,7 +319,7 @@
       "active": true,
       "closed": false,
       "end_date": "2027-01-01T04:59:00Z",
-      "volume": 103926715.338002,
+      "volume": 103932715.338002,
       "top_outcomes": [
         {
           "label": "Harry Kane",
@@ -329,8 +329,8 @@
           "best_ask": 1,
           "last_trade_price": 0.999,
           "outcome": "Yes",
-          "previous_probability": 0.7795000000000001,
-          "delta_pp": 21.999999999999996
+          "previous_probability": 0.9995,
+          "delta_pp": 0.0
         },
         {
           "label": "Ousmane Demb\u00e9l\u00e9",
@@ -340,8 +340,8 @@
           "best_ask": 0.001,
           "last_trade_price": 0.982,
           "outcome": "Yes",
-          "previous_probability": null,
-          "delta_pp": null
+          "previous_probability": 0.982,
+          "delta_pp": 0.0
         },
         {
           "label": "Kylian Mbapp\u00e9",
@@ -351,8 +351,8 @@
           "best_ask": 0.001,
           "last_trade_price": 0.001,
           "outcome": "Yes",
-          "previous_probability": 0.1615,
-          "delta_pp": -16.05
+          "previous_probability": 0.001,
+          "delta_pp": 0.0
         },
         {
           "label": "Erling Haaland",
@@ -384,8 +384,8 @@
           "best_ask": 0.001,
           "last_trade_price": 0.001,
           "outcome": "Yes",
-          "previous_probability": null,
-          "delta_pp": null
+          "previous_probability": 0.001,
+          "delta_pp": 0.0
         }
       ]
     },
