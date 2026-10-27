@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T12:38:06Z",
+  "generated_at": "2026-10-27T13:05:00Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -1198,96 +1198,42 @@
       "active": true,
       "closed": false,
       "end_date": "2027-01-01T04:59:00Z",
-      "volume": 55067475.473862,
+      "volume": 103936715.33800201,
       "top_outcomes": [
         {
           "label": "Harry Kane",
-          "probability": 0.7244999999999999,
+          "probability": 0.9995,
           "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-          "best_bid": 0.724,
-          "best_ask": 0.725,
-          "last_trade_price": 0.725,
-          "outcome": "Yes"
-        },
-        {
-          "label": "Lamine Yamal",
-          "probability": 0.1955,
-          "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-          "best_bid": 0.195,
-          "best_ask": 0.196,
-          "last_trade_price": 0.196,
-          "outcome": "Yes"
-        },
-        {
-          "label": "Kylian Mbapp\u00e9",
-          "probability": 0.0525,
-          "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.052,
-          "best_ask": 0.053,
-          "last_trade_price": 0.053,
-          "outcome": "Yes"
-        },
-        {
-          "label": "Lionel Messi",
-          "probability": 0.0235,
-          "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
-          "best_bid": 0.023,
-          "best_ask": 0.024,
-          "last_trade_price": 0.023,
-          "outcome": "Yes"
-        },
-        {
-          "label": "Rodri",
-          "probability": 0.0055,
-          "question": "Will Rodri win the 2026 Ballon d'Or?",
-          "best_bid": 0.005,
-          "best_ask": 0.006,
-          "last_trade_price": 0.006,
-          "outcome": "Yes"
-        },
-        {
-          "label": "Khvicha Kvaratskhelia",
-          "probability": 0.0035,
-          "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
-          "best_bid": 0.003,
-          "best_ask": 0.004,
-          "last_trade_price": 0.003,
-          "outcome": "Yes"
-        },
-        {
-          "label": "Erling Haaland",
-          "probability": 0.0015,
-          "question": "Will Erling Haaland win the 2026 Ballon d'Or?",
-          "best_bid": 0.001,
-          "best_ask": 0.002,
-          "last_trade_price": 0.001,
+          "best_bid": 0.999,
+          "best_ask": 1,
+          "last_trade_price": 0.999,
           "outcome": "Yes"
         },
         {
           "label": "Ousmane Demb\u00e9l\u00e9",
-          "probability": 0.0015,
+          "probability": 0.982,
           "question": "Will Ousmane Demb\u00e9l\u00e9 win the 2026 Ballon d'Or?",
-          "best_bid": 0.001,
-          "best_ask": 0.002,
-          "last_trade_price": 0.002,
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.982,
           "outcome": "Yes"
         },
         {
-          "label": "Michael Olise",
-          "probability": 0.0015,
-          "question": "Will Michael Olise win the 2026 Ballon d'Or?",
-          "best_bid": 0.001,
-          "best_ask": 0.002,
-          "last_trade_price": 0.002,
+          "label": "Kylian Mbapp\u00e9",
+          "probability": 0.001,
+          "question": "Will Kylian Mbapp\u00e9 win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
           "outcome": "Yes"
         },
         {
-          "label": "Fabian Ruiz",
-          "probability": 0.0015,
-          "question": "Will Fabian Ruiz win the 2026 Ballon d'Or?",
-          "best_bid": 0.001,
-          "best_ask": 0.002,
-          "last_trade_price": 0.002,
+          "label": "Erling Haaland",
+          "probability": 0.001,
+          "question": "Will Erling Haaland win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
           "outcome": "Yes"
         },
         {
@@ -1303,6 +1249,15 @@
           "label": "Mohamed Salah",
           "probability": 0.001,
           "question": "Will Mohamed Salah win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Lamine Yamal",
+          "probability": 0.001,
+          "question": "Will Lamine Yamal win the 2026 Ballon d'Or?",
           "best_bid": null,
           "best_ask": 0.001,
           "last_trade_price": 0.001,
@@ -1336,9 +1291,27 @@
           "outcome": "Yes"
         },
         {
+          "label": "Michael Olise",
+          "probability": 0.001,
+          "question": "Will Michael Olise win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
           "label": "Declan Rice",
           "probability": 0.001,
           "question": "Will Declan Rice win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Khvicha Kvaratskhelia",
+          "probability": 0.001,
+          "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
           "best_bid": null,
           "best_ask": 0.001,
           "last_trade_price": 0.001,
@@ -1444,9 +1417,36 @@
           "outcome": "Yes"
         },
         {
+          "label": "Lionel Messi",
+          "probability": 0.001,
+          "question": "Will Lionel Messi win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Rodri",
+          "probability": 0.001,
+          "question": "Will Rodri win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
           "label": "Pau Cubarsi",
           "probability": 0.001,
           "question": "Will Pau Cubarsi win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Fabian Ruiz",
+          "probability": 0.001,
+          "question": "Will Fabian Ruiz win the 2026 Ballon d'Or?",
           "best_bid": null,
           "best_ask": 0.001,
           "last_trade_price": 0.001,
@@ -1477,6 +1477,528 @@
           "best_bid": null,
           "best_ask": 0.001,
           "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Gavi",
+          "probability": 0.001,
+          "question": "Will Gavi win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Marc Cucurella",
+          "probability": 0.001,
+          "question": "Will Marc Cucurella win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Gabriel Magalh\u00e3es",
+          "probability": 0.001,
+          "question": "Will Gabriel Magalh\u00e3es win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Sadio Man\u00e9",
+          "probability": 0.001,
+          "question": "Will Sadio Man\u00e9 win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Marquinhos",
+          "probability": 0.001,
+          "question": "Will Marquinhos win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Nuno Mendes",
+          "probability": 0.001,
+          "question": "Will Nuno Mendes win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Jo\u00e3o Neves",
+          "probability": 0.001,
+          "question": "Will Jo\u00e3o Neves win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Willian Pacho",
+          "probability": 0.001,
+          "question": "Will Willian Pacho win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Juli\u00e1n Qui\u00f1ones",
+          "probability": 0.001,
+          "question": "Will Juli\u00e1n Qui\u00f1ones win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "William Saliba",
+          "probability": 0.001,
+          "question": "Will William Saliba win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Ferran Torres",
+          "probability": 0.001,
+          "question": "Will Ferran Torres win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Dayot Upamecano",
+          "probability": 0.001,
+          "question": "Will Dayot Upamecano win the 2026 Ballon d'Or?",
+          "best_bid": null,
+          "best_ask": 0.001,
+          "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "someone else",
+          "probability": 0.0,
+          "question": "Will someone else win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AH]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AH] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AI]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AI] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AJ]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AJ] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AK]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AK] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AL]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AL] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AM]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AM] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AN]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AN] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AO]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AO] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AP]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AP] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AQ]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AQ] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AR]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AR] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AS]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AS] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AT]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AT] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AU]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AU] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AV]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AV] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AW]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AW] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AX]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AX] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AY]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AY] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder AZ]",
+          "probability": 0.0,
+          "question": "Will [Placeholder AZ] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BA]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BA] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BB]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BB] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BC]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BC] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BD]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BD] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BE]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BE] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BF]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BF] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BG]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BG] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BH]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BH] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BI]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BI] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BJ]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BJ] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BK]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BK] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BL]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BL] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BM]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BM] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BN]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BN] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BO]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BO] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BP]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BP] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BQ]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BQ] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BR]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BR] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BS]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BS] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BT]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BT] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BU]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BU] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BV]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BV] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BW]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BW] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BX]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BX] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BY]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BY] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "[Placeholder BZ]",
+          "probability": 0.0,
+          "question": "Will [Placeholder BZ] win the 2026 Ballon d'Or?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
           "outcome": "Yes"
         }
       ]
