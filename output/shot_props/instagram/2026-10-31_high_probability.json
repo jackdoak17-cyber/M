@@ -1,0 +1,671 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "high_probability",
+  "generated_at": "2026-10-30T20:44:06+00:00",
+  "scheduled_for": "2026-10-31",
+  "source_target_date": "2026-10-31",
+  "fixture_dates": [
+    "2026-10-31"
+  ],
+  "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+  "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.9,
+    "min_odds": 1.3,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 13,
+    "by_section": {
+      "1+ Shot": 7,
+      "2+ Shots": 3,
+      "1+ SOT": 3
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19729021:37260515:1+ Shot:1",
+          "player_id": 37260515,
+          "player_name": "Terry Devlin",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19729021,
+          "fixture_label": "Burnley vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 8,
+          "hit_rate": 1.0,
+          "odds": 1.61,
+          "display": {
+            "rate": "8/8",
+            "odds": "@1.61",
+            "summary": "Terry Devlin (Portsmouth) won in 8/8 @1.61"
+          }
+        },
+        {
+          "id": "19722121:52867:1+ Shot:1",
+          "player_id": 52867,
+          "player_name": "Xaver Schlager",
+          "team_id": 63,
+          "team_name": "Nottingham Forest",
+          "fixture_id": 19722121,
+          "fixture_label": "Brentford vs Nottingham Forest",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.5,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.50",
+            "summary": "Xaver Schlager (Nottingham Forest) won in 7/7 @1.50"
+          }
+        },
+        {
+          "id": "19713526:132862:1+ Shot:1",
+          "player_id": 132862,
+          "player_name": "Samuele Birindelli",
+          "team_id": 1628,
+          "team_name": "Monza",
+          "fixture_id": 19713526,
+          "fixture_label": "Bologna vs Monza",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 15,
+          "sample": 16,
+          "hit_rate": 0.9375,
+          "odds": 1.44,
+          "display": {
+            "rate": "15/16",
+            "odds": "@1.44",
+            "summary": "Samuele Birindelli (Monza) won in 15/16 @1.44"
+          }
+        },
+        {
+          "id": "19722753:1233:1+ Shot:1",
+          "player_id": 1233,
+          "player_name": "Declan John",
+          "team_id": 496,
+          "team_name": "St. Mirren",
+          "fixture_id": 19722753,
+          "fixture_label": "Motherwell vs St. Mirren",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.83,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.83",
+            "summary": "Declan John (St. Mirren) won in 11/12 @1.83"
+          }
+        },
+        {
+          "id": "19729012:20692335:1+ Shot:1",
+          "player_id": 20692335,
+          "player_name": "Ousmane Diakit\u00e9",
+          "team_id": 10,
+          "team_name": "West Bromwich Albion",
+          "fixture_id": 19729012,
+          "fixture_label": "West Ham United vs West Bromwich Albion",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.8,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.80",
+            "summary": "Ousmane Diakit\u00e9 (West Bromwich Albion) won in 11/12 @1.80"
+          }
+        },
+        {
+          "id": "19729015:2178933:1+ Shot:1",
+          "player_id": 2178933,
+          "player_name": "Keven Schlotterbeck",
+          "team_id": 65,
+          "team_name": "Southampton",
+          "fixture_id": 19729015,
+          "fixture_label": "Southampton vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Keven Schlotterbeck (Southampton) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19735128:5270483:1+ Shot:1",
+          "player_id": 5270483,
+          "player_name": "Wouter Burger",
+          "team_id": 2726,
+          "team_name": "TSG Hoffenheim",
+          "fixture_id": 19735128,
+          "fixture_label": "Werder Bremen vs TSG Hoffenheim",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Wouter Burger (TSG Hoffenheim) won in 9/10 @1.33"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19722120:529689:2+ Shots:2",
+          "player_id": 529689,
+          "player_name": "Bryan Mbeumo",
+          "team_id": 14,
+          "team_name": "Manchester United",
+          "fixture_id": 19722120,
+          "fixture_label": "Chelsea vs Manchester United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.5,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.50",
+            "summary": "Bryan Mbeumo (Manchester United) won in 10/11 @1.50"
+          }
+        },
+        {
+          "id": "19722118:29419594:2+ Shots:2",
+          "player_id": 29419594,
+          "player_name": "Julio Enciso",
+          "team_id": 116,
+          "team_name": "Ipswich Town",
+          "fixture_id": 19722118,
+          "fixture_label": "Hull City vs Ipswich Town",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.4,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.40",
+            "summary": "Julio Enciso (Ipswich Town) won in 10/11 @1.40"
+          }
+        },
+        {
+          "id": "19729020:37259158:2+ Shots:2",
+          "player_id": 37259158,
+          "player_name": "Jay Stansfield",
+          "team_id": 12,
+          "team_name": "Birmingham City",
+          "fixture_id": 19729020,
+          "fixture_label": "Lincoln City vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.36,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.36",
+            "summary": "Jay Stansfield (Birmingham City) won in 9/10 @1.36"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19735133:46092:1+ SOT:1",
+          "player_id": 46092,
+          "player_name": "Ermedin Demirovic",
+          "team_id": 3319,
+          "team_name": "VfB Stuttgart",
+          "fixture_id": 19735133,
+          "fixture_label": "Bayer 04 Leverkusen vs VfB Stuttgart",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.61,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.61",
+            "summary": "Ermedin Demirovic (VfB Stuttgart) won in 12/13 @1.61"
+          }
+        },
+        {
+          "id": "19722120:529689:1+ SOT:1",
+          "player_id": 529689,
+          "player_name": "Bryan Mbeumo",
+          "team_id": 14,
+          "team_name": "Manchester United",
+          "fixture_id": 19722120,
+          "fixture_label": "Chelsea vs Manchester United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.61,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.61",
+            "summary": "Bryan Mbeumo (Manchester United) won in 10/11 @1.61"
+          }
+        },
+        {
+          "id": "19713526:129429:1+ SOT:1",
+          "player_id": 129429,
+          "player_name": "Federico Bernardeschi",
+          "team_id": 8513,
+          "team_name": "Bologna",
+          "fixture_id": 19713526,
+          "fixture_label": "Bologna vs Monza",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Federico Bernardeschi (Bologna) won in 9/10 @1.33"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 31 Oct 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 7\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 3\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "High Probability List",
+      "title_words": {
+        "primary": "HIGH",
+        "accent": "PROBABILITY"
+      },
+      "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+      "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+      "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
+      "fixture_window": "Sat 31 Oct 2026",
+      "stats": {
+        "total_players": 13,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 90
+      },
+      "slide_number": 1,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19729021:37260515:1+ Shot:1",
+          "player_id": 37260515,
+          "player_name": "Terry Devlin",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19729021,
+          "fixture_label": "Burnley vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 8,
+          "sample": 8,
+          "hit_rate": 1.0,
+          "odds": 1.61,
+          "display": {
+            "rate": "8/8",
+            "odds": "@1.61",
+            "summary": "Terry Devlin (Portsmouth) won in 8/8 @1.61"
+          }
+        },
+        {
+          "id": "19722121:52867:1+ Shot:1",
+          "player_id": 52867,
+          "player_name": "Xaver Schlager",
+          "team_id": 63,
+          "team_name": "Nottingham Forest",
+          "fixture_id": 19722121,
+          "fixture_label": "Brentford vs Nottingham Forest",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.5,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.50",
+            "summary": "Xaver Schlager (Nottingham Forest) won in 7/7 @1.50"
+          }
+        },
+        {
+          "id": "19713526:132862:1+ Shot:1",
+          "player_id": 132862,
+          "player_name": "Samuele Birindelli",
+          "team_id": 1628,
+          "team_name": "Monza",
+          "fixture_id": 19713526,
+          "fixture_label": "Bologna vs Monza",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 15,
+          "sample": 16,
+          "hit_rate": 0.9375,
+          "odds": 1.44,
+          "display": {
+            "rate": "15/16",
+            "odds": "@1.44",
+            "summary": "Samuele Birindelli (Monza) won in 15/16 @1.44"
+          }
+        },
+        {
+          "id": "19722753:1233:1+ Shot:1",
+          "player_id": 1233,
+          "player_name": "Declan John",
+          "team_id": 496,
+          "team_name": "St. Mirren",
+          "fixture_id": 19722753,
+          "fixture_label": "Motherwell vs St. Mirren",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.83,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.83",
+            "summary": "Declan John (St. Mirren) won in 11/12 @1.83"
+          }
+        },
+        {
+          "id": "19729012:20692335:1+ Shot:1",
+          "player_id": 20692335,
+          "player_name": "Ousmane Diakit\u00e9",
+          "team_id": 10,
+          "team_name": "West Bromwich Albion",
+          "fixture_id": 19729012,
+          "fixture_label": "West Ham United vs West Bromwich Albion",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.8,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.80",
+            "summary": "Ousmane Diakit\u00e9 (West Bromwich Albion) won in 11/12 @1.80"
+          }
+        },
+        {
+          "id": "19729015:2178933:1+ Shot:1",
+          "player_id": 2178933,
+          "player_name": "Keven Schlotterbeck",
+          "team_id": 65,
+          "team_name": "Southampton",
+          "fixture_id": 19729015,
+          "fixture_label": "Southampton vs Queens Park Rangers",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Keven Schlotterbeck (Southampton) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19735128:5270483:1+ Shot:1",
+          "player_id": 5270483,
+          "player_name": "Wouter Burger",
+          "team_id": 2726,
+          "team_name": "TSG Hoffenheim",
+          "fixture_id": 19735128,
+          "fixture_label": "Werder Bremen vs TSG Hoffenheim",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Wouter Burger (TSG Hoffenheim) won in 9/10 @1.33"
+          }
+        }
+      ],
+      "section_total_rows": 7,
+      "slide_number": 2,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19722120:529689:2+ Shots:2",
+          "player_id": 529689,
+          "player_name": "Bryan Mbeumo",
+          "team_id": 14,
+          "team_name": "Manchester United",
+          "fixture_id": 19722120,
+          "fixture_label": "Chelsea vs Manchester United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.5,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.50",
+            "summary": "Bryan Mbeumo (Manchester United) won in 10/11 @1.50"
+          }
+        },
+        {
+          "id": "19722118:29419594:2+ Shots:2",
+          "player_id": 29419594,
+          "player_name": "Julio Enciso",
+          "team_id": 116,
+          "team_name": "Ipswich Town",
+          "fixture_id": 19722118,
+          "fixture_label": "Hull City vs Ipswich Town",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.4,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.40",
+            "summary": "Julio Enciso (Ipswich Town) won in 10/11 @1.40"
+          }
+        },
+        {
+          "id": "19729020:37259158:2+ Shots:2",
+          "player_id": 37259158,
+          "player_name": "Jay Stansfield",
+          "team_id": 12,
+          "team_name": "Birmingham City",
+          "fixture_id": 19729020,
+          "fixture_label": "Lincoln City vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.36,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.36",
+            "summary": "Jay Stansfield (Birmingham City) won in 9/10 @1.36"
+          }
+        }
+      ],
+      "section_total_rows": 3,
+      "slide_number": 3,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19735133:46092:1+ SOT:1",
+          "player_id": 46092,
+          "player_name": "Ermedin Demirovic",
+          "team_id": 3319,
+          "team_name": "VfB Stuttgart",
+          "fixture_id": 19735133,
+          "fixture_label": "Bayer 04 Leverkusen vs VfB Stuttgart",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.61,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.61",
+            "summary": "Ermedin Demirovic (VfB Stuttgart) won in 12/13 @1.61"
+          }
+        },
+        {
+          "id": "19722120:529689:1+ SOT:1",
+          "player_id": 529689,
+          "player_name": "Bryan Mbeumo",
+          "team_id": 14,
+          "team_name": "Manchester United",
+          "fixture_id": 19722120,
+          "fixture_label": "Chelsea vs Manchester United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.61,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.61",
+            "summary": "Bryan Mbeumo (Manchester United) won in 10/11 @1.61"
+          }
+        },
+        {
+          "id": "19713526:129429:1+ SOT:1",
+          "player_id": 129429,
+          "player_name": "Federico Bernardeschi",
+          "team_id": 8513,
+          "team_name": "Bologna",
+          "fixture_id": 19713526,
+          "fixture_label": "Bologna vs Monza",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.33,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.33",
+            "summary": "Federico Bernardeschi (Bologna) won in 9/10 @1.33"
+          }
+        }
+      ],
+      "section_total_rows": 3,
+      "slide_number": 4,
+      "slide_count": 4
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "e279e6119fd8ac504d82cc5724fb16af49f4b58b1ee8eb7d1057ad8c9722233c"
+}
