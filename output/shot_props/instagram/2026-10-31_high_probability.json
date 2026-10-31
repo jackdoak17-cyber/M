@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-10-30T20:44:06+00:00",
+  "generated_at": "2026-10-31T13:56:35+00:00",
   "scheduled_for": "2026-10-31",
   "source_target_date": "2026-10-31",
   "fixture_dates": [
@@ -19,11 +19,11 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 13,
+    "total_rows": 12,
     "by_section": {
-      "1+ Shot": 7,
-      "2+ Shots": 3,
-      "1+ SOT": 3
+      "1+ Shot": 8,
+      "2+ Shots": 2,
+      "1+ SOT": 2
     }
   },
   "sections": {
@@ -44,11 +44,11 @@
           "hits": 8,
           "sample": 8,
           "hit_rate": 1.0,
-          "odds": 1.61,
+          "odds": 1.53,
           "display": {
             "rate": "8/8",
-            "odds": "@1.61",
-            "summary": "Terry Devlin (Portsmouth) won in 8/8 @1.61"
+            "odds": "@1.53",
+            "summary": "Terry Devlin (Portsmouth) won in 8/8 @1.53"
           }
         },
         {
@@ -66,11 +66,33 @@
           "hits": 7,
           "sample": 7,
           "hit_rate": 1.0,
-          "odds": 1.5,
+          "odds": 1.4,
           "display": {
             "rate": "7/7",
-            "odds": "@1.50",
-            "summary": "Xaver Schlager (Nottingham Forest) won in 7/7 @1.50"
+            "odds": "@1.40",
+            "summary": "Xaver Schlager (Nottingham Forest) won in 7/7 @1.40"
+          }
+        },
+        {
+          "id": "19714608:37599456:1+ Shot:1",
+          "player_id": 37599456,
+          "player_name": "Oliver Braude",
+          "team_id": 1053,
+          "team_name": "SC Heerenveen",
+          "fixture_id": 19714608,
+          "fixture_label": "SC Heerenveen vs NEC Nijmegen",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.33,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.33",
+            "summary": "Oliver Braude (SC Heerenveen) won in 7/7 @1.33"
           }
         },
         {
@@ -110,11 +132,11 @@
           "hits": 11,
           "sample": 12,
           "hit_rate": 0.9167,
-          "odds": 1.83,
+          "odds": 2.0,
           "display": {
             "rate": "11/12",
-            "odds": "@1.83",
-            "summary": "Declan John (St. Mirren) won in 11/12 @1.83"
+            "odds": "@2.00",
+            "summary": "Declan John (St. Mirren) won in 11/12 @2.00"
           }
         },
         {
@@ -186,69 +208,47 @@
       ],
       "2+ Shots": [
         {
-          "id": "19722120:529689:2+ Shots:2",
-          "player_id": 529689,
-          "player_name": "Bryan Mbeumo",
-          "team_id": 14,
-          "team_name": "Manchester United",
-          "fixture_id": 19722120,
-          "fixture_label": "Chelsea vs Manchester United",
+          "id": "19722116:37526157:2+ Shots:2",
+          "player_id": 37526157,
+          "player_name": "Yasin Ayari",
+          "team_id": 78,
+          "team_name": "Brighton & Hove Albion",
+          "fixture_id": 19722116,
+          "fixture_label": "Manchester City vs Brighton & Hove Albion",
           "league_id": 8,
           "league_name": "Premier League",
           "stat_label": "2+ Shots",
           "threshold": 2,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.5,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.8,
           "display": {
-            "rate": "10/11",
-            "odds": "@1.50",
-            "summary": "Bryan Mbeumo (Manchester United) won in 10/11 @1.50"
+            "rate": "7/7",
+            "odds": "@1.80",
+            "summary": "Yasin Ayari (Brighton & Hove Albion) won in 7/7 @1.80"
           }
         },
         {
-          "id": "19722118:29419594:2+ Shots:2",
-          "player_id": 29419594,
-          "player_name": "Julio Enciso",
-          "team_id": 116,
-          "team_name": "Ipswich Town",
-          "fixture_id": 19722118,
-          "fixture_label": "Hull City vs Ipswich Town",
+          "id": "19722121:37543248:2+ Shots:2",
+          "player_id": 37543248,
+          "player_name": "Dango Ouattara",
+          "team_id": 236,
+          "team_name": "Brentford",
+          "fixture_id": 19722121,
+          "fixture_label": "Brentford vs Nottingham Forest",
           "league_id": 8,
           "league_name": "Premier League",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.4,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.40",
-            "summary": "Julio Enciso (Ipswich Town) won in 10/11 @1.40"
-          }
-        },
-        {
-          "id": "19729020:37259158:2+ Shots:2",
-          "player_id": 37259158,
-          "player_name": "Jay Stansfield",
-          "team_id": 12,
-          "team_name": "Birmingham City",
-          "fixture_id": 19729020,
-          "fixture_label": "Lincoln City vs Birmingham City",
-          "league_id": 9,
-          "league_name": "Championship",
           "stat_label": "2+ Shots",
           "threshold": 2,
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.36,
+          "odds": 1.33,
           "display": {
             "rate": "9/10",
-            "odds": "@1.36",
-            "summary": "Jay Stansfield (Birmingham City) won in 9/10 @1.36"
+            "odds": "@1.33",
+            "summary": "Dango Ouattara (Brentford) won in 9/10 @1.33"
           }
         }
       ],
@@ -276,28 +276,6 @@
           }
         },
         {
-          "id": "19722120:529689:1+ SOT:1",
-          "player_id": 529689,
-          "player_name": "Bryan Mbeumo",
-          "team_id": 14,
-          "team_name": "Manchester United",
-          "fixture_id": 19722120,
-          "fixture_label": "Chelsea vs Manchester United",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.61,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.61",
-            "summary": "Bryan Mbeumo (Manchester United) won in 10/11 @1.61"
-          }
-        },
-        {
           "id": "19713526:129429:1+ SOT:1",
           "player_id": 129429,
           "player_name": "Federico Bernardeschi",
@@ -322,7 +300,7 @@
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 31 Oct 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 7\n\u2022 2+ Shots: 3\n\u2022 1+ SOT: 3\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 31 Oct 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 8\n\u2022 2+ Shots: 2\n\u2022 1+ SOT: 2\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -336,7 +314,7 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 31 Oct 2026",
       "stats": {
-        "total_players": 13,
+        "total_players": 12,
         "stat_types": 3,
         "hit_rate_threshold_pct": 90
       },
@@ -364,11 +342,11 @@
           "hits": 8,
           "sample": 8,
           "hit_rate": 1.0,
-          "odds": 1.61,
+          "odds": 1.53,
           "display": {
             "rate": "8/8",
-            "odds": "@1.61",
-            "summary": "Terry Devlin (Portsmouth) won in 8/8 @1.61"
+            "odds": "@1.53",
+            "summary": "Terry Devlin (Portsmouth) won in 8/8 @1.53"
           }
         },
         {
@@ -386,11 +364,33 @@
           "hits": 7,
           "sample": 7,
           "hit_rate": 1.0,
-          "odds": 1.5,
+          "odds": 1.4,
           "display": {
             "rate": "7/7",
-            "odds": "@1.50",
-            "summary": "Xaver Schlager (Nottingham Forest) won in 7/7 @1.50"
+            "odds": "@1.40",
+            "summary": "Xaver Schlager (Nottingham Forest) won in 7/7 @1.40"
+          }
+        },
+        {
+          "id": "19714608:37599456:1+ Shot:1",
+          "player_id": 37599456,
+          "player_name": "Oliver Braude",
+          "team_id": 1053,
+          "team_name": "SC Heerenveen",
+          "fixture_id": 19714608,
+          "fixture_label": "SC Heerenveen vs NEC Nijmegen",
+          "league_id": 72,
+          "league_name": "Eredivisie",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.33,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.33",
+            "summary": "Oliver Braude (SC Heerenveen) won in 7/7 @1.33"
           }
         },
         {
@@ -430,11 +430,11 @@
           "hits": 11,
           "sample": 12,
           "hit_rate": 0.9167,
-          "odds": 1.83,
+          "odds": 2.0,
           "display": {
             "rate": "11/12",
-            "odds": "@1.83",
-            "summary": "Declan John (St. Mirren) won in 11/12 @1.83"
+            "odds": "@2.00",
+            "summary": "Declan John (St. Mirren) won in 11/12 @2.00"
           }
         },
         {
@@ -504,7 +504,7 @@
           }
         }
       ],
-      "section_total_rows": 7,
+      "section_total_rows": 8,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -515,73 +515,51 @@
       "section_pages": 1,
       "rows": [
         {
-          "id": "19722120:529689:2+ Shots:2",
-          "player_id": 529689,
-          "player_name": "Bryan Mbeumo",
-          "team_id": 14,
-          "team_name": "Manchester United",
-          "fixture_id": 19722120,
-          "fixture_label": "Chelsea vs Manchester United",
+          "id": "19722116:37526157:2+ Shots:2",
+          "player_id": 37526157,
+          "player_name": "Yasin Ayari",
+          "team_id": 78,
+          "team_name": "Brighton & Hove Albion",
+          "fixture_id": 19722116,
+          "fixture_label": "Manchester City vs Brighton & Hove Albion",
           "league_id": 8,
           "league_name": "Premier League",
           "stat_label": "2+ Shots",
           "threshold": 2,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.5,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.8,
           "display": {
-            "rate": "10/11",
-            "odds": "@1.50",
-            "summary": "Bryan Mbeumo (Manchester United) won in 10/11 @1.50"
+            "rate": "7/7",
+            "odds": "@1.80",
+            "summary": "Yasin Ayari (Brighton & Hove Albion) won in 7/7 @1.80"
           }
         },
         {
-          "id": "19722118:29419594:2+ Shots:2",
-          "player_id": 29419594,
-          "player_name": "Julio Enciso",
-          "team_id": 116,
-          "team_name": "Ipswich Town",
-          "fixture_id": 19722118,
-          "fixture_label": "Hull City vs Ipswich Town",
+          "id": "19722121:37543248:2+ Shots:2",
+          "player_id": 37543248,
+          "player_name": "Dango Ouattara",
+          "team_id": 236,
+          "team_name": "Brentford",
+          "fixture_id": 19722121,
+          "fixture_label": "Brentford vs Nottingham Forest",
           "league_id": 8,
           "league_name": "Premier League",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.4,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.40",
-            "summary": "Julio Enciso (Ipswich Town) won in 10/11 @1.40"
-          }
-        },
-        {
-          "id": "19729020:37259158:2+ Shots:2",
-          "player_id": 37259158,
-          "player_name": "Jay Stansfield",
-          "team_id": 12,
-          "team_name": "Birmingham City",
-          "fixture_id": 19729020,
-          "fixture_label": "Lincoln City vs Birmingham City",
-          "league_id": 9,
-          "league_name": "Championship",
           "stat_label": "2+ Shots",
           "threshold": 2,
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.36,
+          "odds": 1.33,
           "display": {
             "rate": "9/10",
-            "odds": "@1.36",
-            "summary": "Jay Stansfield (Birmingham City) won in 9/10 @1.36"
+            "odds": "@1.33",
+            "summary": "Dango Ouattara (Brentford) won in 9/10 @1.33"
           }
         }
       ],
-      "section_total_rows": 3,
+      "section_total_rows": 2,
       "slide_number": 3,
       "slide_count": 4
     },
@@ -614,28 +592,6 @@
           }
         },
         {
-          "id": "19722120:529689:1+ SOT:1",
-          "player_id": 529689,
-          "player_name": "Bryan Mbeumo",
-          "team_id": 14,
-          "team_name": "Manchester United",
-          "fixture_id": 19722120,
-          "fixture_label": "Chelsea vs Manchester United",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 10,
-          "sample": 11,
-          "hit_rate": 0.9091,
-          "odds": 1.61,
-          "display": {
-            "rate": "10/11",
-            "odds": "@1.61",
-            "summary": "Bryan Mbeumo (Manchester United) won in 10/11 @1.61"
-          }
-        },
-        {
           "id": "19713526:129429:1+ SOT:1",
           "player_id": 129429,
           "player_name": "Federico Bernardeschi",
@@ -658,7 +614,7 @@
           }
         }
       ],
-      "section_total_rows": 3,
+      "section_total_rows": 2,
       "slide_number": 4,
       "slide_count": 4
     }
@@ -667,5 +623,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "e279e6119fd8ac504d82cc5724fb16af49f4b58b1ee8eb7d1057ad8c9722233c"
+  "content_fingerprint": "c4a8055475a0afdcda0bd1ac7541b2c427928ac150811dda2bf13ce54a929ff7"
 }
