@@ -1,0 +1,52 @@
+As usual I've collated todays Premier League 1+ (100% hit-rates) and 2+ (80% hit-rates) player stats based on their last 5 games.
+
+Leave a like if you find these useful.
+
+📊1+ Shots on Target in ≥5/5📊
+- P. Neto (Chelsea) = 2, 2, 3, 1, 1
+- B. Mbeumo (Man Utd) = 1, 1, 2, 2, 1
+
+📊1+ Fouls Drawn in ≥5/5📊
+- J. McGinn (Aston Villa) = 2, 5, 1, 5, 2
+- J. Gomes (Aston Villa) = 1, 1, 3, 1, 1
+- M. Rogers (Chelsea) = 3, 2, 2, 1, 1
+- A. Wharton (Palace) = 1, 1, 1, 2, 2
+- Y. Pino (Palace) = 1, 1, 1, 2, 1
+- B. Mbeumo (Man Utd) = 2, 1, 1, 1, 1
+- O. Marmoush (Spurs) = 1, 1, 1, 1, 1
+
+📊1+ Fouls Committed in ≥5/5📊
+- M. Cash (Aston Villa) = 4, 3, 2, 1, 2
+- C. Palmer (Chelsea) = 1, 2, 2, 2, 1
+- A. Khalaili (Palace) = 2, 2, 1, 1, 1
+- A. Gray (Spurs) = 1, 2, 2, 1, 1
+- J. Hecke (Spurs) = 1, 1, 2, 1, 2
+- O. Marmoush (Spurs) = 2, 2, 1, 1, 3
+
+📊2+ Shots in ≥4/5📊
+- Evanilson (Bournemouth) = 0, 4, 6, 3, 2
+- N. Jackson (Aston Villa) = 3, 4, 4, 6, 0
+- Y. Ayari (Brighton) = 0, 3, 4, 2, 2
+- C. Palmer (Chelsea) = 3, 2, 6, 0, 2
+- P. Neto (Chelsea) = 3, 2, 3, 2, 2
+- J. King (Fulham) = 4, 3, 0, 3, 4
+- M. Belloumi (Hull City) = 0, 4, 3, 5, 3
+- E. Haaland (Man City) = 0, 3, 5, 2, 4
+- B. Mbeumo (Man Utd) = 1, 2, 3, 2, 5
+- D. Ndoye (Nottm Forest) = 0, 2, 2, 4, 3
+- L. Delap (Nottm Forest) = 0, 3, 4, 2, 4
+- Murillo (Nottm Forest) = 0, 2, 3, 4, 2
+- M. Tel (Spurs) = 2, 0, 3, 2, 2
+- S. Tonali (Spurs) = 2, 2, 1, 3, 2
+
+📊2+ Fouls Committed in ≥4/5📊
+- M. Cash (Aston Villa) = 4, 3, 2, 1, 2
+- C. Andrés (Brighton) = 0, 2, 2, 2, 2
+- R. Dias (Man City) = 0, 3, 2, 2, 5
+
+📊2+ Fouls Drawn in ≥4/5📊
+- B. Kamara (Aston Villa) = 2, 4, 5, 0, 3
+- J. McGinn (Aston Villa) = 2, 5, 1, 5, 2
+- W. Fofana (Chelsea) = 2, 2, 2, 2, 0
+- E. Anderson (Man City) = 0, 3, 8, 2, 4
+- A. Gray (Spurs) = 2, 2, 2, 0, 2
