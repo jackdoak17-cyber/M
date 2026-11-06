@@ -2,4 +2,4 @@ No tracked market changes met the posting threshold.
 
 - Threshold: 0.5pp
 - Window: since last update
-- Generated: 2026-11-06T05:12:22Z
+- Generated: 2026-11-06T13:45:30Z
