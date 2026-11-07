@@ -6,26 +6,18 @@ Any value here?
 → F.Barbrook (Falkirk) 9/11 @1.73
 → A.Sánchez (Fiorentina) 8/10 @1.83
 → A.Soualhia (Telstar) 8/10 @1.73
-→ R.McConville (Norwich City) 14/18 @1.73
-→ E.Alic (St. Johnstone) 7/9 @1.73
-→ A.Robertson (Spurs) 10/13 @1.91
-→ H.Darling (Norwich City) 10/13 @1.73
 → M.Bartra (Real Betis) 10/13 @1.73
 → M.Olivera (Napoli) 6/8 @2.10
 → F.Bacher (Lyon) 6/8 @2.00
 → D.Mazou-Sacko (Millwall) 9/12 @1.91
-→ C.Doyle (Wrexham) 12/16 @1.83
-→ L.Tómasson (Samsunspor) 6/8 @1.83
-→ F.Passlack (Hibernian) 9/12 @1.80
 → J.Tanganga (Sheff Utd) 6/8 @1.73
-→ E.Delprato (Parma) 6/8 @1.73
 → N.Verschuren (Sparta Rotterdam) 9/12 @1.73
-→ J.Penrice (Rangers) 9/12 @1.73
 → A.Borza (Çorum FK) 6/8 @1.73
 → Y.Couto (Como) 6/8 @1.73
 
 🎯 2+ Shots
 → J.Murrell (Falkirk) 8/9 @2.10
+→ B.Cristante (Roma) 7/9 @1.73
 → C.Neghli (Millwall) 13/17 @2.00
 → R.Pröpper (FC Twente) 6/8 @3.75
 → O.Eames (Falkirk) 6/8 @2.38
@@ -33,14 +25,13 @@ Any value here?
 → R.Faivre (Auxerre) 6/8 @1.83
 → P.Neto (Chelsea) 6/8 @1.83
 → C.Augusto (Inter) 6/8 @1.83
-→ K.Matsuki (Southampton) 6/8 @1.73
 
 🎯 1+ SOT
 → P.Neto (Chelsea) 8/10 @1.83
 → G.Calò (Frosinone) 7/9 @1.91
 → I.Romero (Levante) 7/9 @1.91
 → M.Gibbs-White (Nottm Forest) 13/17 @1.83
-→ K.Matsuki (Southampton) 6/8 @2.10
+→ K.Matsuki (Southampton) 6/8 @1.83
 → M.Rivera (SC Heerenveen) 12/16 @1.73
 → C.Ünder (Çorum FK) 6/8 @1.73
 

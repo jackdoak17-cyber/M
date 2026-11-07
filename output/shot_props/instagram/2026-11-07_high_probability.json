@@ -4,7 +4,7 @@
   "format": "carousel",
   "source": "shot_props",
   "post_type": "high_probability",
-  "generated_at": "2026-11-06T21:42:01+00:00",
+  "generated_at": "2026-11-07T14:21:10+00:00",
   "scheduled_for": "2026-11-07",
   "source_target_date": "2026-11-07",
   "fixture_dates": [
@@ -19,11 +19,11 @@
     "min_starts": 7
   },
   "counts": {
-    "total_rows": 20,
+    "total_rows": 14,
     "by_section": {
-      "1+ Shot": 9,
+      "1+ Shot": 5,
       "2+ Shots": 4,
-      "1+ SOT": 7
+      "1+ SOT": 5
     }
   },
   "sections": {
@@ -44,33 +44,11 @@
           "hits": 7,
           "sample": 7,
           "hit_rate": 1.0,
-          "odds": 1.57,
+          "odds": 1.44,
           "display": {
             "rate": "7/7",
-            "odds": "@1.57",
-            "summary": "Xaver Schlager (Nottingham Forest) won in 7/7 @1.57"
-          }
-        },
-        {
-          "id": "19722107:37593153:1+ Shot:1",
-          "player_id": 37593153,
-          "player_name": "Mateus Fernandes",
-          "team_id": 6,
-          "team_name": "Tottenham Hotspur",
-          "fixture_id": 19722107,
-          "fixture_label": "Leeds United vs Tottenham Hotspur",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 7,
-          "hit_rate": 1.0,
-          "odds": 1.4,
-          "display": {
-            "rate": "7/7",
-            "odds": "@1.40",
-            "summary": "Mateus Fernandes (Tottenham Hotspur) won in 7/7 @1.40"
+            "odds": "@1.44",
+            "summary": "Xaver Schlager (Nottingham Forest) won in 7/7 @1.44"
           }
         },
         {
@@ -93,28 +71,6 @@
             "rate": "8/8",
             "odds": "@1.33",
             "summary": "Callum Styles (West Bromwich Albion) won in 8/8 @1.33"
-          }
-        },
-        {
-          "id": "19728988:20692335:1+ Shot:1",
-          "player_id": 20692335,
-          "player_name": "Ousmane Diakit\u00e9",
-          "team_id": 10,
-          "team_name": "West Bromwich Albion",
-          "fixture_id": 19728988,
-          "fixture_label": "West Bromwich Albion vs Millwall",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 13,
-          "sample": 14,
-          "hit_rate": 0.9286,
-          "odds": 1.36,
-          "display": {
-            "rate": "13/14",
-            "odds": "@1.36",
-            "summary": "Ousmane Diakit\u00e9 (West Bromwich Albion) won in 13/14 @1.36"
           }
         },
         {
@@ -182,75 +138,9 @@
             "odds": "@1.36",
             "summary": "Tomoki Iwata (Birmingham City) won in 10/11 @1.36"
           }
-        },
-        {
-          "id": "19728992:37260515:1+ Shot:1",
-          "player_id": 37260515,
-          "player_name": "Terry Devlin",
-          "team_id": 5,
-          "team_name": "Portsmouth",
-          "fixture_id": 19728992,
-          "fixture_label": "Portsmouth vs Stoke City",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.36,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.36",
-            "summary": "Terry Devlin (Portsmouth) won in 9/10 @1.36"
-          }
-        },
-        {
-          "id": "19722107:2823228:1+ Shot:1",
-          "player_id": 2823228,
-          "player_name": "Sandro Tonali",
-          "team_id": 6,
-          "team_name": "Tottenham Hotspur",
-          "fixture_id": 19722107,
-          "fixture_label": "Leeds United vs Tottenham Hotspur",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.33,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.33",
-            "summary": "Sandro Tonali (Tottenham Hotspur) won in 9/10 @1.33"
-          }
         }
       ],
       "2+ Shots": [
-        {
-          "id": "19713517:133955:2+ Shots:2",
-          "player_id": 133955,
-          "player_name": "Giacomo Cal\u00f2",
-          "team_id": 4070,
-          "team_name": "Frosinone",
-          "fixture_id": 19713517,
-          "fixture_label": "Cagliari vs Frosinone",
-          "league_id": 384,
-          "league_name": "Serie A",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 7,
-          "sample": 7,
-          "hit_rate": 1.0,
-          "odds": 1.67,
-          "display": {
-            "rate": "7/7",
-            "odds": "@1.67",
-            "summary": "Giacomo Cal\u00f2 (Frosinone) won in 7/7 @1.67"
-          }
-        },
         {
           "id": "19732627:186801:2+ Shots:2",
           "player_id": 186801,
@@ -271,6 +161,28 @@
             "rate": "7/7",
             "odds": "@1.44",
             "summary": "I\u00f1aki Williams (Athletic Club) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19713517:133955:2+ Shots:2",
+          "player_id": 133955,
+          "player_name": "Giacomo Cal\u00f2",
+          "team_id": 4070,
+          "team_name": "Frosinone",
+          "fixture_id": 19713517,
+          "fixture_label": "Cagliari vs Frosinone",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.40",
+            "summary": "Giacomo Cal\u00f2 (Frosinone) won in 7/7 @1.40"
           }
         },
         {
@@ -310,11 +222,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.5,
+          "odds": 1.44,
           "display": {
             "rate": "9/10",
-            "odds": "@1.50",
-            "summary": "Far\u00e8s Cha\u00efbi (Eintracht Frankfurt) won in 9/10 @1.50"
+            "odds": "@1.44",
+            "summary": "Far\u00e8s Cha\u00efbi (Eintracht Frankfurt) won in 9/10 @1.44"
           }
         }
       ],
@@ -386,28 +298,6 @@
           }
         },
         {
-          "id": "19728997:1592:1+ SOT:1",
-          "player_id": 1592,
-          "player_name": "Jarrod Bowen",
-          "team_id": 1,
-          "team_name": "West Ham United",
-          "fixture_id": 19728997,
-          "fixture_label": "Blackburn Rovers vs West Ham United",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 13,
-          "sample": 14,
-          "hit_rate": 0.9286,
-          "odds": 1.36,
-          "display": {
-            "rate": "13/14",
-            "odds": "@1.36",
-            "summary": "Jarrod Bowen (West Ham United) won in 13/14 @1.36"
-          }
-        },
-        {
           "id": "19713511:129429:1+ SOT:1",
           "player_id": 129429,
           "player_name": "Federico Bernardeschi",
@@ -427,28 +317,6 @@
             "rate": "10/11",
             "odds": "@1.36",
             "summary": "Federico Bernardeschi (Bologna) won in 10/11 @1.36"
-          }
-        },
-        {
-          "id": "19728987:5681:1+ SOT:1",
-          "player_id": 5681,
-          "player_name": "Kieffer Moore",
-          "team_id": 283,
-          "team_name": "Wrexham",
-          "fixture_id": 19728987,
-          "fixture_label": "Wrexham vs Wolverhampton Wanderers",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.5,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.50",
-            "summary": "Kieffer Moore (Wrexham) won in 9/10 @1.50"
           }
         },
         {
@@ -476,7 +344,7 @@
       ]
     }
   },
-  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 07 Nov 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 9\n\u2022 2+ Shots: 4\n\u2022 1+ SOT: 7\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 07 Nov 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 5\n\u2022 2+ Shots: 4\n\u2022 1+ SOT: 5\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
   "slides": [
     {
       "slide_type": "cover",
@@ -490,7 +358,7 @@
       "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
       "fixture_window": "Sat 07 Nov 2026",
       "stats": {
-        "total_players": 20,
+        "total_players": 14,
         "stat_types": 3,
         "hit_rate_threshold_pct": 90
       },
@@ -518,33 +386,11 @@
           "hits": 7,
           "sample": 7,
           "hit_rate": 1.0,
-          "odds": 1.57,
+          "odds": 1.44,
           "display": {
             "rate": "7/7",
-            "odds": "@1.57",
-            "summary": "Xaver Schlager (Nottingham Forest) won in 7/7 @1.57"
-          }
-        },
-        {
-          "id": "19722107:37593153:1+ Shot:1",
-          "player_id": 37593153,
-          "player_name": "Mateus Fernandes",
-          "team_id": 6,
-          "team_name": "Tottenham Hotspur",
-          "fixture_id": 19722107,
-          "fixture_label": "Leeds United vs Tottenham Hotspur",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 7,
-          "sample": 7,
-          "hit_rate": 1.0,
-          "odds": 1.4,
-          "display": {
-            "rate": "7/7",
-            "odds": "@1.40",
-            "summary": "Mateus Fernandes (Tottenham Hotspur) won in 7/7 @1.40"
+            "odds": "@1.44",
+            "summary": "Xaver Schlager (Nottingham Forest) won in 7/7 @1.44"
           }
         },
         {
@@ -567,28 +413,6 @@
             "rate": "8/8",
             "odds": "@1.33",
             "summary": "Callum Styles (West Bromwich Albion) won in 8/8 @1.33"
-          }
-        },
-        {
-          "id": "19728988:20692335:1+ Shot:1",
-          "player_id": 20692335,
-          "player_name": "Ousmane Diakit\u00e9",
-          "team_id": 10,
-          "team_name": "West Bromwich Albion",
-          "fixture_id": 19728988,
-          "fixture_label": "West Bromwich Albion vs Millwall",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 13,
-          "sample": 14,
-          "hit_rate": 0.9286,
-          "odds": 1.36,
-          "display": {
-            "rate": "13/14",
-            "odds": "@1.36",
-            "summary": "Ousmane Diakit\u00e9 (West Bromwich Albion) won in 13/14 @1.36"
           }
         },
         {
@@ -656,53 +480,9 @@
             "odds": "@1.36",
             "summary": "Tomoki Iwata (Birmingham City) won in 10/11 @1.36"
           }
-        },
-        {
-          "id": "19728992:37260515:1+ Shot:1",
-          "player_id": 37260515,
-          "player_name": "Terry Devlin",
-          "team_id": 5,
-          "team_name": "Portsmouth",
-          "fixture_id": 19728992,
-          "fixture_label": "Portsmouth vs Stoke City",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.36,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.36",
-            "summary": "Terry Devlin (Portsmouth) won in 9/10 @1.36"
-          }
-        },
-        {
-          "id": "19722107:2823228:1+ Shot:1",
-          "player_id": 2823228,
-          "player_name": "Sandro Tonali",
-          "team_id": 6,
-          "team_name": "Tottenham Hotspur",
-          "fixture_id": 19722107,
-          "fixture_label": "Leeds United vs Tottenham Hotspur",
-          "league_id": 8,
-          "league_name": "Premier League",
-          "stat_label": "1+ Shot",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.33,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.33",
-            "summary": "Sandro Tonali (Tottenham Hotspur) won in 9/10 @1.33"
-          }
         }
       ],
-      "section_total_rows": 9,
+      "section_total_rows": 5,
       "slide_number": 2,
       "slide_count": 4
     },
@@ -712,28 +492,6 @@
       "section_page": 1,
       "section_pages": 1,
       "rows": [
-        {
-          "id": "19713517:133955:2+ Shots:2",
-          "player_id": 133955,
-          "player_name": "Giacomo Cal\u00f2",
-          "team_id": 4070,
-          "team_name": "Frosinone",
-          "fixture_id": 19713517,
-          "fixture_label": "Cagliari vs Frosinone",
-          "league_id": 384,
-          "league_name": "Serie A",
-          "stat_label": "2+ Shots",
-          "threshold": 2,
-          "hits": 7,
-          "sample": 7,
-          "hit_rate": 1.0,
-          "odds": 1.67,
-          "display": {
-            "rate": "7/7",
-            "odds": "@1.67",
-            "summary": "Giacomo Cal\u00f2 (Frosinone) won in 7/7 @1.67"
-          }
-        },
         {
           "id": "19732627:186801:2+ Shots:2",
           "player_id": 186801,
@@ -754,6 +512,28 @@
             "rate": "7/7",
             "odds": "@1.44",
             "summary": "I\u00f1aki Williams (Athletic Club) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19713517:133955:2+ Shots:2",
+          "player_id": 133955,
+          "player_name": "Giacomo Cal\u00f2",
+          "team_id": 4070,
+          "team_name": "Frosinone",
+          "fixture_id": 19713517,
+          "fixture_label": "Cagliari vs Frosinone",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.4,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.40",
+            "summary": "Giacomo Cal\u00f2 (Frosinone) won in 7/7 @1.40"
           }
         },
         {
@@ -793,11 +573,11 @@
           "hits": 9,
           "sample": 10,
           "hit_rate": 0.9,
-          "odds": 1.5,
+          "odds": 1.44,
           "display": {
             "rate": "9/10",
-            "odds": "@1.50",
-            "summary": "Far\u00e8s Cha\u00efbi (Eintracht Frankfurt) won in 9/10 @1.50"
+            "odds": "@1.44",
+            "summary": "Far\u00e8s Cha\u00efbi (Eintracht Frankfurt) won in 9/10 @1.44"
           }
         }
       ],
@@ -878,28 +658,6 @@
           }
         },
         {
-          "id": "19728997:1592:1+ SOT:1",
-          "player_id": 1592,
-          "player_name": "Jarrod Bowen",
-          "team_id": 1,
-          "team_name": "West Ham United",
-          "fixture_id": 19728997,
-          "fixture_label": "Blackburn Rovers vs West Ham United",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 13,
-          "sample": 14,
-          "hit_rate": 0.9286,
-          "odds": 1.36,
-          "display": {
-            "rate": "13/14",
-            "odds": "@1.36",
-            "summary": "Jarrod Bowen (West Ham United) won in 13/14 @1.36"
-          }
-        },
-        {
           "id": "19713511:129429:1+ SOT:1",
           "player_id": 129429,
           "player_name": "Federico Bernardeschi",
@@ -919,28 +677,6 @@
             "rate": "10/11",
             "odds": "@1.36",
             "summary": "Federico Bernardeschi (Bologna) won in 10/11 @1.36"
-          }
-        },
-        {
-          "id": "19728987:5681:1+ SOT:1",
-          "player_id": 5681,
-          "player_name": "Kieffer Moore",
-          "team_id": 283,
-          "team_name": "Wrexham",
-          "fixture_id": 19728987,
-          "fixture_label": "Wrexham vs Wolverhampton Wanderers",
-          "league_id": 9,
-          "league_name": "Championship",
-          "stat_label": "1+ SOT",
-          "threshold": 1,
-          "hits": 9,
-          "sample": 10,
-          "hit_rate": 0.9,
-          "odds": 1.5,
-          "display": {
-            "rate": "9/10",
-            "odds": "@1.50",
-            "summary": "Kieffer Moore (Wrexham) won in 9/10 @1.50"
           }
         },
         {
@@ -966,7 +702,7 @@
           }
         }
       ],
-      "section_total_rows": 7,
+      "section_total_rows": 5,
       "slide_number": 4,
       "slide_count": 4
     }
@@ -975,5 +711,5 @@
     "ok": true,
     "issues": []
   },
-  "content_fingerprint": "8a040b13daa27e57cf51ce7a0cb785847b1d1c817c7e26f8a2c1514abeff58bb"
+  "content_fingerprint": "a3b88527c95074966ed0494c6be688941e3696b45c9d5c8b73ac9f826ae25988"
 }
