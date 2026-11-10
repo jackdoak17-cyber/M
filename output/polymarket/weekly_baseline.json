@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T14:55:57Z",
+  "generated_at": "2026-11-10T15:29:22Z",
   "source": {
     "base_url": "https://gamma-api.polymarket.com"
   },
@@ -1187,6 +1187,159 @@
           "best_bid": null,
           "best_ask": 0.001,
           "last_trade_price": 0.001,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player A",
+          "probability": 0.0,
+          "question": "Will Player A win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player B",
+          "probability": 0.0,
+          "question": "Will Player B win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player C",
+          "probability": 0.0,
+          "question": "Will Player C win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player D",
+          "probability": 0.0,
+          "question": "Will Player D win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player E",
+          "probability": 0.0,
+          "question": "Will Player E win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player F",
+          "probability": 0.0,
+          "question": "Will Player F win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player G",
+          "probability": 0.0,
+          "question": "Will Player G win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player H",
+          "probability": 0.0,
+          "question": "Will Player H win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player I",
+          "probability": 0.0,
+          "question": "Will Player I win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player J",
+          "probability": 0.0,
+          "question": "Will Player J win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player K",
+          "probability": 0.0,
+          "question": "Will Player K win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player L",
+          "probability": 0.0,
+          "question": "Will Player L win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player M",
+          "probability": 0.0,
+          "question": "Will Player M win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player N",
+          "probability": 0.0,
+          "question": "Will Player N win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player O",
+          "probability": 0.0,
+          "question": "Will Player O win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "Player P",
+          "probability": 0.0,
+          "question": "Will Player P win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
+          "outcome": "Yes"
+        },
+        {
+          "label": "another player",
+          "probability": 0.0,
+          "question": "Will another player win the 2026 PFA Player of the Year?",
+          "best_bid": 0,
+          "best_ask": 1,
+          "last_trade_price": 0,
           "outcome": "Yes"
         }
       ]
