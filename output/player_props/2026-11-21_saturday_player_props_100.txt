@@ -1,0 +1,42 @@
+As usual I've collated todays Premier League 1+ player stats (100% hit-rates) based on their last 5 games.
+
+Leave a like if you find these useful.
+
+📊1+ Shots on Target in ≥5/5📊
+- Evanilson (Bournemouth) = 1, 1, 1, 1, 1
+- N. Jackson (Aston Villa) = 1, 2, 2, 1, 2
+- P. Neto (Chelsea) = 1, 2, 2, 3, 1
+- E. Haaland (Man City) = 2, 1, 2, 2, 1
+
+📊1+ Fouls Drawn in ≥5/5📊
+- Evanilson (Bournemouth) = 2, 5, 1, 2, 2
+- E. Konsa (Arsenal) = 1, 2, 2, 2, 3
+- B. Kamara (Aston Villa) = 3, 3, 2, 4, 5
+- M. Rogers (Chelsea) = 3, 3, 2, 2, 1
+- J. Larsen (Palace) = 2, 2, 2, 1, 1
+- Q. Timber (Palace) = 3, 1, 4, 2, 2
+- Y. Pino (Palace) = 2, 1, 1, 1, 1
+- Emersonn (Ipswich Town) = 1, 1, 2, 2, 4
+- J. Enciso (Ipswich Town) = 3, 1, 2, 1, 1
+- J. Bogle (Leeds) = 3, 1, 2, 1, 1
+- E. Anderson (Man City) = 2, 2, 3, 8, 2
+- I. Ndiaye (Man City) = 1, 2, 1, 2, 2
+- L. Hall (Newcastle) = 3, 2, 4, 1, 1
+- B. Brobbey (Sunderland) = 1, 2, 2, 5, 2
+- E. Fée (Sunderland) = 1, 1, 2, 4, 1
+
+📊1+ Fouls Committed in ≥5/5📊
+- Evanilson (Bournemouth) = 1, 1, 2, 1, 1
+- T. Adams (Bournemouth) = 1, 2, 1, 1, 5
+- M. Rogers (Chelsea) = 1, 1, 1, 2, 1
+- D. Affengruber (Fulham) = 2, 1, 1, 2, 3
+- T. Castagne (Fulham) = 1, 1, 1, 1, 2
+- G. Gudmundsson (Leeds) = 2, 1, 1, 1, 1
+- J. Bogle (Leeds) = 3, 1, 2, 2, 1
+- E. Anderson (Man City) = 2, 4, 2, 1, 1
+- Y. Wissa (Newcastle) = 2, 1, 2, 1, 4
+- D. Muñoz (Nottm Forest) = 1, 2, 2, 4, 1
+- L. Delap (Nottm Forest) = 1, 4, 3, 2, 1
+- B. Brobbey (Sunderland) = 3, 1, 1, 1, 3
+- O. Marmoush (Spurs) = 2, 2, 2, 2, 1
+- S. Tonali (Spurs) = 2, 1, 1, 1, 1
