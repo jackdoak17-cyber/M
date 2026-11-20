@@ -1,0 +1,891 @@
+{
+  "version": 1,
+  "channel": "instagram",
+  "format": "carousel",
+  "source": "shot_props",
+  "post_type": "high_probability",
+  "generated_at": "2026-11-20T22:51:46+00:00",
+  "scheduled_for": "2026-11-21",
+  "source_target_date": "2026-11-21",
+  "fixture_dates": [
+    "2026-11-21"
+  ],
+  "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+  "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+  "odds_source": "Bet365",
+  "thresholds": {
+    "min_hit_pct": 0.9,
+    "min_odds": 1.3,
+    "min_starts": 7
+  },
+  "counts": {
+    "total_rows": 18,
+    "by_section": {
+      "1+ Shot": 8,
+      "2+ Shots": 6,
+      "1+ SOT": 4
+    }
+  },
+  "sections": {
+    "by_section": {
+      "1+ Shot": [
+        {
+          "id": "19728978:4536522:1+ Shot:1",
+          "player_id": 4536522,
+          "player_name": "Ethan Laird",
+          "team_id": 12,
+          "team_name": "Birmingham City",
+          "fixture_id": 19728978,
+          "fixture_label": "Stoke City vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Ethan Laird (Birmingham City) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19728977:20692335:1+ Shot:1",
+          "player_id": 20692335,
+          "player_name": "Ousmane Diakit\u00e9",
+          "team_id": 10,
+          "team_name": "West Bromwich Albion",
+          "fixture_id": 19728977,
+          "fixture_label": "Swansea City vs West Bromwich Albion",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 14,
+          "sample": 15,
+          "hit_rate": 0.9333,
+          "odds": 1.33,
+          "display": {
+            "rate": "14/15",
+            "odds": "@1.33",
+            "summary": "Ousmane Diakit\u00e9 (West Bromwich Albion) won in 14/15 @1.33"
+          }
+        },
+        {
+          "id": "19722741:3385:1+ Shot:1",
+          "player_id": 3385,
+          "player_name": "Aaron Tshibola",
+          "team_id": 180,
+          "team_name": "Kilmarnock",
+          "fixture_id": 19722741,
+          "fixture_label": "Kilmarnock vs Aberdeen",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.36,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.36",
+            "summary": "Aaron Tshibola (Kilmarnock) won in 12/13 @1.36"
+          }
+        },
+        {
+          "id": "19732613:32399:1+ Shot:1",
+          "player_id": 32399,
+          "player_name": "Marc Bartra",
+          "team_id": 485,
+          "team_name": "Real Betis",
+          "fixture_id": 19732613,
+          "fixture_label": "Sevilla vs Real Betis",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Marc Bartra (Real Betis) won in 9/10 @1.80"
+          }
+        },
+        {
+          "id": "19728977:10351:1+ Shot:1",
+          "player_id": 10351,
+          "player_name": "Callum Styles",
+          "team_id": 10,
+          "team_name": "West Bromwich Albion",
+          "fixture_id": 19728977,
+          "fixture_label": "Swansea City vs West Bromwich Albion",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.53,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.53",
+            "summary": "Callum Styles (West Bromwich Albion) won in 9/10 @1.53"
+          }
+        },
+        {
+          "id": "19728981:339122:1+ Shot:1",
+          "player_id": 339122,
+          "player_name": "Harry Darling",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19728981,
+          "fixture_label": "Norwich City vs Cardiff City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Harry Darling (Norwich City) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19728986:37260515:1+ Shot:1",
+          "player_id": 37260515,
+          "player_name": "Terry Devlin",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19728986,
+          "fixture_label": "Bolton Wanderers vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Terry Devlin (Portsmouth) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19722742:33608588:1+ Shot:1",
+          "player_id": 33608588,
+          "player_name": "Dylan Tait",
+          "team_id": 282,
+          "team_name": "Dundee United",
+          "fixture_id": 19722742,
+          "fixture_label": "Hibernian vs Dundee United",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.4,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.40",
+            "summary": "Dylan Tait (Dundee United) won in 9/10 @1.40"
+          }
+        }
+      ],
+      "2+ Shots": [
+        {
+          "id": "19713499:129467:2+ Shots:2",
+          "player_id": 129467,
+          "player_name": "Bryan Cristante",
+          "team_id": 37,
+          "team_name": "Roma",
+          "fixture_id": 19713499,
+          "fixture_label": "Parma vs Roma",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.83,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.83",
+            "summary": "Bryan Cristante (Roma) won in 7/7 @1.83"
+          }
+        },
+        {
+          "id": "19746552:3862121:2+ Shots:2",
+          "player_id": 3862121,
+          "player_name": "Ahmed Kutucu",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19746552,
+          "fixture_label": "Amed SK vs Rizespor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Ahmed Kutucu (Rizespor) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19722103:28912976:2+ Shots:2",
+          "player_id": 28912976,
+          "player_name": "Liam Delap",
+          "team_id": 63,
+          "team_name": "Nottingham Forest",
+          "fixture_id": 19722103,
+          "fixture_label": "AFC Bournemouth vs Nottingham Forest",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.33,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.33",
+            "summary": "Liam Delap (Nottingham Forest) won in 7/7 @1.33"
+          }
+        },
+        {
+          "id": "19728978:37259158:2+ Shots:2",
+          "player_id": 37259158,
+          "player_name": "Jay Stansfield",
+          "team_id": 12,
+          "team_name": "Birmingham City",
+          "fixture_id": 19728978,
+          "fixture_label": "Stoke City vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.4,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.40",
+            "summary": "Jay Stansfield (Birmingham City) won in 12/13 @1.40"
+          }
+        },
+        {
+          "id": "19735114:27441544:2+ Shots:2",
+          "player_id": 27441544,
+          "player_name": "Tim Lemperle",
+          "team_id": 2726,
+          "team_name": "TSG Hoffenheim",
+          "fixture_id": 19735114,
+          "fixture_label": "Eintracht Frankfurt vs TSG Hoffenheim",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.36,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.36",
+            "summary": "Tim Lemperle (TSG Hoffenheim) won in 12/13 @1.36"
+          }
+        },
+        {
+          "id": "19735114:37536482:2+ Shots:2",
+          "player_id": 37536482,
+          "player_name": "Far\u00e8s Cha\u00efbi",
+          "team_id": 366,
+          "team_name": "Eintracht Frankfurt",
+          "fixture_id": 19735114,
+          "fixture_label": "Eintracht Frankfurt vs TSG Hoffenheim",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.33,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.33",
+            "summary": "Far\u00e8s Cha\u00efbi (Eintracht Frankfurt) won in 10/11 @1.33"
+          }
+        }
+      ],
+      "1+ SOT": [
+        {
+          "id": "19728986:13355:1+ SOT:1",
+          "player_id": 13355,
+          "player_name": "Sam Dalby",
+          "team_id": 16,
+          "team_name": "Bolton Wanderers",
+          "fixture_id": 19728986,
+          "fixture_label": "Bolton Wanderers vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.67,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.67",
+            "summary": "Sam Dalby (Bolton Wanderers) won in 7/7 @1.67"
+          }
+        },
+        {
+          "id": "19722100:496775:1+ SOT:1",
+          "player_id": 496775,
+          "player_name": "Pedro Neto",
+          "team_id": 18,
+          "team_name": "Chelsea",
+          "fixture_id": 19722100,
+          "fixture_label": "Chelsea vs Leeds United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Pedro Neto (Chelsea) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19732613:37297124:1+ SOT:1",
+          "player_id": 37297124,
+          "player_name": "Abde Ezzalzouli",
+          "team_id": 485,
+          "team_name": "Real Betis",
+          "fixture_id": 19732613,
+          "fixture_label": "Sevilla vs Real Betis",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.5,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.50",
+            "summary": "Abde Ezzalzouli (Real Betis) won in 12/13 @1.50"
+          }
+        },
+        {
+          "id": "19746552:132244:1+ SOT:1",
+          "player_id": 132244,
+          "player_name": "Ali Sowe",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19746552,
+          "fixture_label": "Amed SK vs Rizespor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.57,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.57",
+            "summary": "Ali Sowe (Rizespor) won in 11/12 @1.57"
+          }
+        }
+      ]
+    }
+  },
+  "caption": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12\n\nFixtures: Sat 21 Nov 2026\n90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7\n\nIncluded sections:\n\u2022 1+ Shot: 8\n\u2022 2+ Shots: 6\n\u2022 1+ SOT: 4\n\nStarter-only sample (bench appearances excluded).\nPlayers can appear in multiple sections.\nAll odds Bet365.\n#ShotProps #FootballStats #HighProbability",
+  "slides": [
+    {
+      "slide_type": "cover",
+      "post_badge": "High Probability List",
+      "title_words": {
+        "primary": "HIGH",
+        "accent": "PROBABILITY"
+      },
+      "title": "\ud83d\udcca Today's High Probability Stats & Odds List \ud83d\udd12",
+      "intro": "Players hitting 1+, 2+ shots and 1+ SOT in 90%+ of recent games (min n=7) with odds >1.30 \u2014 any value here?",
+      "threshold_bar": "90%+ HIT RATE \u00b7 ODDS >1.30 \u00b7 MIN N=7",
+      "fixture_window": "Sat 21 Nov 2026",
+      "stats": {
+        "total_players": 18,
+        "stat_types": 3,
+        "hit_rate_threshold_pct": 90
+      },
+      "slide_number": 1,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ Shot",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19728978:4536522:1+ Shot:1",
+          "player_id": 4536522,
+          "player_name": "Ethan Laird",
+          "team_id": 12,
+          "team_name": "Birmingham City",
+          "fixture_id": 19728978,
+          "fixture_label": "Stoke City vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Ethan Laird (Birmingham City) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19728977:20692335:1+ Shot:1",
+          "player_id": 20692335,
+          "player_name": "Ousmane Diakit\u00e9",
+          "team_id": 10,
+          "team_name": "West Bromwich Albion",
+          "fixture_id": 19728977,
+          "fixture_label": "Swansea City vs West Bromwich Albion",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 14,
+          "sample": 15,
+          "hit_rate": 0.9333,
+          "odds": 1.33,
+          "display": {
+            "rate": "14/15",
+            "odds": "@1.33",
+            "summary": "Ousmane Diakit\u00e9 (West Bromwich Albion) won in 14/15 @1.33"
+          }
+        },
+        {
+          "id": "19722741:3385:1+ Shot:1",
+          "player_id": 3385,
+          "player_name": "Aaron Tshibola",
+          "team_id": 180,
+          "team_name": "Kilmarnock",
+          "fixture_id": 19722741,
+          "fixture_label": "Kilmarnock vs Aberdeen",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.36,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.36",
+            "summary": "Aaron Tshibola (Kilmarnock) won in 12/13 @1.36"
+          }
+        },
+        {
+          "id": "19732613:32399:1+ Shot:1",
+          "player_id": 32399,
+          "player_name": "Marc Bartra",
+          "team_id": 485,
+          "team_name": "Real Betis",
+          "fixture_id": 19732613,
+          "fixture_label": "Sevilla vs Real Betis",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.8,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.80",
+            "summary": "Marc Bartra (Real Betis) won in 9/10 @1.80"
+          }
+        },
+        {
+          "id": "19728977:10351:1+ Shot:1",
+          "player_id": 10351,
+          "player_name": "Callum Styles",
+          "team_id": 10,
+          "team_name": "West Bromwich Albion",
+          "fixture_id": 19728977,
+          "fixture_label": "Swansea City vs West Bromwich Albion",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.53,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.53",
+            "summary": "Callum Styles (West Bromwich Albion) won in 9/10 @1.53"
+          }
+        },
+        {
+          "id": "19728981:339122:1+ Shot:1",
+          "player_id": 339122,
+          "player_name": "Harry Darling",
+          "team_id": 33,
+          "team_name": "Norwich City",
+          "fixture_id": 19728981,
+          "fixture_label": "Norwich City vs Cardiff City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Harry Darling (Norwich City) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19728986:37260515:1+ Shot:1",
+          "player_id": 37260515,
+          "player_name": "Terry Devlin",
+          "team_id": 5,
+          "team_name": "Portsmouth",
+          "fixture_id": 19728986,
+          "fixture_label": "Bolton Wanderers vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.5,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.50",
+            "summary": "Terry Devlin (Portsmouth) won in 9/10 @1.50"
+          }
+        },
+        {
+          "id": "19722742:33608588:1+ Shot:1",
+          "player_id": 33608588,
+          "player_name": "Dylan Tait",
+          "team_id": 282,
+          "team_name": "Dundee United",
+          "fixture_id": 19722742,
+          "fixture_label": "Hibernian vs Dundee United",
+          "league_id": 501,
+          "league_name": "Scottish Premiership",
+          "stat_label": "1+ Shot",
+          "threshold": 1,
+          "hits": 9,
+          "sample": 10,
+          "hit_rate": 0.9,
+          "odds": 1.4,
+          "display": {
+            "rate": "9/10",
+            "odds": "@1.40",
+            "summary": "Dylan Tait (Dundee United) won in 9/10 @1.40"
+          }
+        }
+      ],
+      "section_total_rows": 8,
+      "slide_number": 2,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "2+ Shots",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19713499:129467:2+ Shots:2",
+          "player_id": 129467,
+          "player_name": "Bryan Cristante",
+          "team_id": 37,
+          "team_name": "Roma",
+          "fixture_id": 19713499,
+          "fixture_label": "Parma vs Roma",
+          "league_id": 384,
+          "league_name": "Serie A",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.83,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.83",
+            "summary": "Bryan Cristante (Roma) won in 7/7 @1.83"
+          }
+        },
+        {
+          "id": "19746552:3862121:2+ Shots:2",
+          "player_id": 3862121,
+          "player_name": "Ahmed Kutucu",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19746552,
+          "fixture_label": "Amed SK vs Rizespor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Ahmed Kutucu (Rizespor) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19722103:28912976:2+ Shots:2",
+          "player_id": 28912976,
+          "player_name": "Liam Delap",
+          "team_id": 63,
+          "team_name": "Nottingham Forest",
+          "fixture_id": 19722103,
+          "fixture_label": "AFC Bournemouth vs Nottingham Forest",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.33,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.33",
+            "summary": "Liam Delap (Nottingham Forest) won in 7/7 @1.33"
+          }
+        },
+        {
+          "id": "19728978:37259158:2+ Shots:2",
+          "player_id": 37259158,
+          "player_name": "Jay Stansfield",
+          "team_id": 12,
+          "team_name": "Birmingham City",
+          "fixture_id": 19728978,
+          "fixture_label": "Stoke City vs Birmingham City",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.4,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.40",
+            "summary": "Jay Stansfield (Birmingham City) won in 12/13 @1.40"
+          }
+        },
+        {
+          "id": "19735114:27441544:2+ Shots:2",
+          "player_id": 27441544,
+          "player_name": "Tim Lemperle",
+          "team_id": 2726,
+          "team_name": "TSG Hoffenheim",
+          "fixture_id": 19735114,
+          "fixture_label": "Eintracht Frankfurt vs TSG Hoffenheim",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.36,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.36",
+            "summary": "Tim Lemperle (TSG Hoffenheim) won in 12/13 @1.36"
+          }
+        },
+        {
+          "id": "19735114:37536482:2+ Shots:2",
+          "player_id": 37536482,
+          "player_name": "Far\u00e8s Cha\u00efbi",
+          "team_id": 366,
+          "team_name": "Eintracht Frankfurt",
+          "fixture_id": 19735114,
+          "fixture_label": "Eintracht Frankfurt vs TSG Hoffenheim",
+          "league_id": 82,
+          "league_name": "Bundesliga",
+          "stat_label": "2+ Shots",
+          "threshold": 2,
+          "hits": 10,
+          "sample": 11,
+          "hit_rate": 0.9091,
+          "odds": 1.33,
+          "display": {
+            "rate": "10/11",
+            "odds": "@1.33",
+            "summary": "Far\u00e8s Cha\u00efbi (Eintracht Frankfurt) won in 10/11 @1.33"
+          }
+        }
+      ],
+      "section_total_rows": 6,
+      "slide_number": 3,
+      "slide_count": 4
+    },
+    {
+      "slide_type": "section",
+      "section_label": "1+ SOT",
+      "section_page": 1,
+      "section_pages": 1,
+      "rows": [
+        {
+          "id": "19728986:13355:1+ SOT:1",
+          "player_id": 13355,
+          "player_name": "Sam Dalby",
+          "team_id": 16,
+          "team_name": "Bolton Wanderers",
+          "fixture_id": 19728986,
+          "fixture_label": "Bolton Wanderers vs Portsmouth",
+          "league_id": 9,
+          "league_name": "Championship",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.67,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.67",
+            "summary": "Sam Dalby (Bolton Wanderers) won in 7/7 @1.67"
+          }
+        },
+        {
+          "id": "19722100:496775:1+ SOT:1",
+          "player_id": 496775,
+          "player_name": "Pedro Neto",
+          "team_id": 18,
+          "team_name": "Chelsea",
+          "fixture_id": 19722100,
+          "fixture_label": "Chelsea vs Leeds United",
+          "league_id": 8,
+          "league_name": "Premier League",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 7,
+          "sample": 7,
+          "hit_rate": 1.0,
+          "odds": 1.44,
+          "display": {
+            "rate": "7/7",
+            "odds": "@1.44",
+            "summary": "Pedro Neto (Chelsea) won in 7/7 @1.44"
+          }
+        },
+        {
+          "id": "19732613:37297124:1+ SOT:1",
+          "player_id": 37297124,
+          "player_name": "Abde Ezzalzouli",
+          "team_id": 485,
+          "team_name": "Real Betis",
+          "fixture_id": 19732613,
+          "fixture_label": "Sevilla vs Real Betis",
+          "league_id": 564,
+          "league_name": "La Liga",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 12,
+          "sample": 13,
+          "hit_rate": 0.9231,
+          "odds": 1.5,
+          "display": {
+            "rate": "12/13",
+            "odds": "@1.50",
+            "summary": "Abde Ezzalzouli (Real Betis) won in 12/13 @1.50"
+          }
+        },
+        {
+          "id": "19746552:132244:1+ SOT:1",
+          "player_id": 132244,
+          "player_name": "Ali Sowe",
+          "team_id": 1041,
+          "team_name": "Rizespor",
+          "fixture_id": 19746552,
+          "fixture_label": "Amed SK vs Rizespor",
+          "league_id": 600,
+          "league_name": "Super Lig",
+          "stat_label": "1+ SOT",
+          "threshold": 1,
+          "hits": 11,
+          "sample": 12,
+          "hit_rate": 0.9167,
+          "odds": 1.57,
+          "display": {
+            "rate": "11/12",
+            "odds": "@1.57",
+            "summary": "Ali Sowe (Rizespor) won in 11/12 @1.57"
+          }
+        }
+      ],
+      "section_total_rows": 4,
+      "slide_number": 4,
+      "slide_count": 4
+    }
+  ],
+  "verification": {
+    "ok": true,
+    "issues": []
+  },
+  "content_fingerprint": "889fd51ded471407179cec1e689e9f48e3d51e5ceba544be4d12eea7bbf1ea91"
+}
